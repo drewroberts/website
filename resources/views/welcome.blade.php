@@ -5,91 +5,70 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Drew Roberts</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Drew Roberts",
+          "url": "https://DrewRoberts.com",
+          "sameAs": [
+            "https://www.facebook.com/DrewRoberts",
+            "https://twitter.com/DrewRoberts",
+            "https://www.linkedin.com/in/DrewRoberts",
+            "https://github.com/DrewRoberts",
+            "https://plus.google.com/+DrewRoberts"
+          ]
+        }
+        </script>
 
         <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+        <link href="css/drewroberts.css" rel="stylesheet" />
+        <link href="css/animate.css" rel="stylesheet" />
+        <script src="https://use.typekit.net/oda0fjf.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
+        <header class="animated bounceInDown">
+            <img src="drewrobertslogo.png" alt="Drew Roberts Logo" id="logo" />
+            <h1>an entrepreneur focused on digital business models.</h1>
+        </header>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+        <div id="left">
+            <div id="currently">
+                <h2>Currently</h2>
+                <ul>
+                    <li>CEO, <a href="https://Tipoff.com" target="_blank">Tipoff</a>.</li>
+                    <li>Consulting through <a href="https://triplecrownstrategy.com" target="_blank">Triple Crown Strategy</a>.</li>
+                    <li>Director of Analytics & Digital Marketing, <a href="http://breakoutgames.com" target="_blank">Breakout Games</a>.</li>
+                </ul>
+            </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            <div id="previously">
+                <h2>Interested In</h2>
+                <ul>
+                    <li>Database Design, <a href="https://www.mysql.com" target="_blank">MySQL</a> & <a href="https://en.wikipedia.org/wiki/NoSQL" target="_blank">NoSQL</a>.</li>
+                    <li>PHP Framework, <a href="https://laravel.com" target="_blank">Laravel</a>.</li>
+                    <li>Javascript, <a href="https://vuejs.org" target="_blank">Vue</a> & <a href="https://facebook.github.io/react/" target="_blank">React</a>.</li>
+                    <li><a href="https://www.polymer-project.org" target="_blank">Polymer</a>, <a href="https://www.webcomponents.org" target="_blank">Web Components</a> & <a href="https://material.io/guidelines/" target="_blank">Google Material Design</a>.</li>
+                </ul>
+            </div>
+
+            <div id="links">
+                <p><a href="https://medium.com/@DrewRoberts" target="_blank">Blog</a> &middot <a href="https://www.facebook.com/DrewRoberts" target="_blank">Facebook</a> &middot <a href="https://twitter.com/DrewRoberts" target="_blank">Twitter</a> &middot <a href="https://github.com/DrewRoberts" target="_blank">Github</a> &middot <a href="https://www.linkedin.com/in/DrewRoberts" target="_blank">LinkedIn</a>
+                </p>
             </div>
         </div>
+
+        <div id="face">
+            <a href="mailto:drew@roberts.email?subject=Hey Drew!"><img src="drewroberts.png" alt="Drew Roberts Headshot" width="944" height="630"/></a>
+        </div>
+        <script type="text/javascript" src="js/retina.js"></script>
     </body>
 </html>
