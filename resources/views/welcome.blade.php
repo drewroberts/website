@@ -57,7 +57,7 @@
                     <li>Database Design, <a href="https://www.mysql.com" target="_blank">MySQL</a> & <a href="https://en.wikipedia.org/wiki/NoSQL" target="_blank">NoSQL</a>.</li>
                     <li>PHP Framework, <a href="https://laravel.com" target="_blank">Laravel</a>.</li>
                     <li>Javascript, <a href="https://vuejs.org" target="_blank">Vue</a> & <a href="https://facebook.github.io/react/" target="_blank">React</a>.</li>
-                    <li><a href="https://www.polymer-project.org" target="_blank">Polymer</a>, <a href="https://www.webcomponents.org" target="_blank">Web Components</a> & <a href="https://material.io/guidelines/" target="_blank">Google Material Design</a>.</li>
+                    <li><a href="https://www.polymer-project.org" target="_blank">Polymer</a>, <a href="https://www.webcomponents.org" target="_blank">Web Components</a> & <a href="https://material.io/guidelines/" target="_blank">Material Design</a>.</li>
                 </ul>
             </div>
 
