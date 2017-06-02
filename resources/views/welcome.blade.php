@@ -25,7 +25,7 @@
         </script>
 
         <!-- Styles -->
-        <link href="css/drewroberts.css" rel="stylesheet" />
+        <link href="css/drewroberts.css?v=1.0" rel="stylesheet" />
         <link href="css/animate.css" rel="stylesheet" />
         <script src="https://use.typekit.net/oda0fjf.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -36,8 +36,9 @@
     </head>
     <body>
         <header class="animated bounceInDown">
-            <img src="drewrobertslogo.png" alt="Drew Roberts Logo" id="logo" />
-            <h1>an entrepreneur focused on digital business models.</h1>
+            <h1>Drew Roberts</h1>
+            <br>
+            <h3>an entrepreneur focused on digital media.</h3>
         </header>
 
         <div id="left">
@@ -45,8 +46,8 @@
                 <h2>Currently</h2>
                 <ul>
                     <li>CEO, <a href="https://Tipoff.com" target="_blank">Tipoff</a>.</li>
-                    <li>Consulting through <a href="https://triplecrownstrategy.com" target="_blank">Triple Crown Strategy</a>.</li>
-                    <li>Director of Analytics & Digital Marketing, <a href="http://breakoutgames.com" target="_blank">Breakout Games</a>.</li>
+                    <li>Consulting through <a href="https://TripleCrownStrategy.com" target="_blank">Triple Crown Strategy</a>.</li>
+                    <li>Director of Analytics & Digital Marketing, <a href="https://BreakoutGames.com" target="_blank">Breakout Games</a>.</li>
                 </ul>
             </div>
 
