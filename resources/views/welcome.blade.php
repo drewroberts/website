@@ -56,7 +56,7 @@
             <div id="currently">
                 <h2>Currently</h2>
                 <ul>
-                    <li>CEO, <a href="https://Tipoff.com" target="_blank">Tipoff</a>.</li>
+                    <li>Founder, <a href="https://Tipoff.com" target="_blank">Tipoff Project</a>.</li>
                     <li>Consulting through <a href="https://TripleCrownStrategy.com" target="_blank">Triple Crown Strategy</a>.</li>
                     <li>Director of Analytics & Digital Marketing, <a href="https://BreakoutGames.com" target="_blank">Breakout Games</a>.</li>
                 </ul>
