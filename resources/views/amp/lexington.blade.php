@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
+<title>Lexington Breakout Games</title>
 <link rel="canonical" href="https://drewroberts.com/lexington">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <style amp-custom>
@@ -13,6 +14,60 @@
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
+<style amp-custom>
+/* any custom style goes here */
+    body {
+        background-color: #E5E4DA;
+        font-family: courier-std, monospace;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.65em;
+    }
+    section {
+        width: 90%;
+        display: block;
+        margin: 50px 5%;
+    }
+    header, footer {
+        width: 90%;
+        padding: 20px 5%;
+        background-color: #0D0D0D;
+    }
+    h1, h2, h3 {
+        font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+        font-weight: normal;
+        font-size: 40px;
+    }
+    .button {
+        background-color: #E63C2F;
+        padding: 20px 20px;
+        color: #E5E4DA;
+        text-decoration: none;
+        margin: 20px 0;
+        display: block;
+        width: auto;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-color: #E63C2F;
+        border-top: 1px solid #eee;
+    }
+    .game-room {
+        padding: 30px 0;
+    }
+    .game-room h1 {
+        color: #E63C2F;
+    }
+    .game-room img.icon {
+        max-width: 100px;
+    }
+    .game-room .button {
+        margin-bottom: 40px;
+    }
+</style>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <header>
         <a href="https://breakoutgames.com/lexington/"><img src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"/></a> 
