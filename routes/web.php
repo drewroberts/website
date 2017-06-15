@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('lexington', function () {
+    return view('lexington');
+});
