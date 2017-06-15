@@ -58,7 +58,7 @@
             border-color: #E63C2F;
             border-top: 1px solid #E5E4DA;
         }
-        header img.logo {
+        header amp-img.logo {
             max-width: 180px;
             margin-top: 20px;
         }
@@ -162,9 +162,17 @@
 </head>
 <body>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-    
+
     <header>
-        <a href="https://breakoutgames.com/lexington/"><img class="logo" src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"/></a> 
+        <a href="https://breakoutgames.com/lexington/">
+            <amp-img class="logo"
+                alt="Breakout Games"
+                src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"
+                width="300"
+                height="37"
+                layout="fixed">
+            </amp-img>
+        </a> 
         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play Now</a>
     </header>
 
