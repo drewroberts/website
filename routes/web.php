@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('lexington', function () {
     return view('amp.lexington');
 });
+
+Route::get('images', function () {
+    return view('amp.images');
+});
