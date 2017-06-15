@@ -17,12 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('drew', function () {
-    return view('amp.lexington');
-});
-
-Auth::routes();
-
 Route::get('lexington', function () {
-    return view('lexington');
+    return view('amp.lexington');
 });
