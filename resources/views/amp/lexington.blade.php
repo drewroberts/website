@@ -126,11 +126,12 @@
             <h1>Derby Heist</h1>
             <p>A famous Veterinarian is on the loose after he is caught drugging racehorses. In a desperate effort to exact revenge he sneaks into the Derby and steals the Trophy, the $2 Million Purse and the Blanket of Roses. The Derby starts in one hour and your team must sneak into his house, recover all three items, and escape before it begins.</p>
 
-            <amp-youtube width="480"
-              height="270"
-              layout="responsive"
-              data-videoid="uaaUv7PCjnc">
-            </amp-youtube>              
+            <amp-img alt="Derby Heist"
+                src="http://2m14st1h0x1b30k8dw3a8fxi.wpengine.netdna-cdn.com/wp-content/uploads/2016/06/derby_heist-1.jpg"
+                width="1920"
+                height="1080"
+                layout="responsive">
+            </amp-img>
 
             <a class="button" href="https://breakoutgames.com/book-at-lexington/">Play at Lexington</a>
             <hr>
