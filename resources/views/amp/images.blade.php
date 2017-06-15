@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <title>Lexington Escape Room | Breakout Games</title>
     <link rel="canonical" href="https://drewroberts.com/lexington">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -227,13 +228,14 @@
                             <p>This spine-chilling adventure starts in the ruins of an old mansion – abandoned decades ago by a reclusive and eccentric family. Since then, rumors have spread about a presence looming over the old house. Work as a team to race the clock and uncover the mansion's secrets in this all-ages mystery adventure.</p>
                     </div>
                     <div class="column">
-                            <amp-img alt="Derby Heist"
-                                src="https://drewroberts.com/derby_heist.jpg"
+                        <a href="https://www.youtube.com/watch?v=uaaUv7PCjnc">
+                            <amp-img alt="Mystery Mansion"
+                                src="https://drewroberts.com/poster-mansion.jpg"
                                 width="600"
                                 height="338"
-                                layout="responsive"
-                                style amp-custom="margin-bottom: 30px;">
-                            </amp-img>             
+                                layout="responsive">
+                            </amp-img>
+                        </a>
                             <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
@@ -256,13 +258,14 @@
                         <p>The kidnapping begins with you and your fellow captives waking up handcuffed and blindfolded in a strange room. With nothing but collective brainpower, hidden clues and 60 minutes on your side, you have to free yourselves before the kidnapper returns. A heart-pumping thriller from start to finish, you can expect a rush of non-stop fun.</p>
                     </div>
                     <div class="column">
-                        <amp-img alt="Kidnapping"
-                            src="https://drewroberts.com/derby_heist.jpg"
-                            width="600"
-                            height="338"
-                            layout="responsive"
-                            style amp-custom="margin-bottom: 30px;">
-                        </amp-img>            
+                        <a href="https://www.youtube.com/watch?v=ZaK7eXNOu6A">
+                            <amp-img alt="Kidnapping"
+                                src="https://drewroberts.com/poster-kidnapping.jpg"
+                                width="600"
+                                height="338"
+                                layout="responsive">
+                            </amp-img>
+                        </a>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
@@ -289,8 +292,7 @@
                             src="https://drewroberts.com/derby_heist.jpg"
                             width="600"
                             height="338"
-                            layout="responsive"
-                            style amp-custom="margin-bottom: 30px;">
+                            layout="responsive">
                         </amp-img>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
@@ -314,13 +316,14 @@
                         <p>In this life-sized spy game, you will be sent on a trail of clues to discover the alias of a missing agent, and bring down the syndicate responsible for his disappearance. Follow unexpected twists and turns, break codes and channel your alter-ego secret agent to escape the room in an hour or less. If you’re down with espionage, this is your game.</p>
                     </div>
                     <div class="column">
-                        <amp-img alt="Derby Heist"
-                            src="https://drewroberts.com/derby_heist.jpg"
-                            width="600"
-                            height="338"
-                            layout="responsive"
-                            style amp-custom="margin-bottom: 30px;">
-                        </amp-img>             
+                        <a href="https://www.youtube.com/watch?v=jekUvwNxNPo">
+                            <amp-img alt="Operation Casino"
+                                src="https://drewroberts.com/poster-casino.jpg"
+                                width="600"
+                                height="338"
+                                layout="responsive">
+                            </amp-img>
+                        </a>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
@@ -343,14 +346,14 @@
                         <p>While vacationing on a tropical island, you awake to the sounds of a dormant volcano rumbling to life. The only people still on the island, you and your team are left to your own devices and must work together to discover the keys to safety before the lava reaches shore. Bring your inner explorer out to play for this adrenaline-packed adventure.</p>
                     </div>
                     <div class="column">
-                    <amp-img alt="Derby Heist"
-                            src="https://drewroberts.com/derby_heist.jpg"
-                            width="600"
-                            height="338"
-                            layout="responsive"
-                            style amp-custom="margin-bottom: 30px;">
-                        </amp-img>           
-                    <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
+                        <a href="https://www.youtube.com/watch?v=p8LuxQRIOhs">
+                            <amp-img alt="Island Escape"
+                                src="https://drewroberts.com/poster-island.jpg"
+                                width="600"
+                                height="338"
+                                layout="responsive">
+                            </amp-img>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -372,13 +375,14 @@
                         <p>While on a flight, your plane is hijacked and you lose consciousness as the cabin depressurizes. Later you wake up and realize you're trapped, handcuffed to your friends, in the hijackers headquarters. Can you lose your handcuffs, find out the details behind their hijacking and escape before time's up?</p>
                     </div>
                     <div class="column">
-                        <amp-img alt="Derby Heist"
-                            src="https://drewroberts.com/derby_heist.jpg"
-                            width="600"
-                            height="338"
-                            layout="responsive"
-                            style amp-custom="margin-bottom: 30px;">
-                        </amp-img>           
+                        <a href="https://www.youtube.com/watch?v=JOpURcCS800">
+                            <amp-img alt="Hostage"
+                                src="https://drewroberts.com/poster-hostage.jpg"
+                                width="600"
+                                height="338"
+                                layout="responsive">
+                            </amp-img>
+                        </a>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
