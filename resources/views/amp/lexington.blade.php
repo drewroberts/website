@@ -178,7 +178,12 @@
 
     <section class="hero">
         <h1>Open for Adventure</h1>
-        <img src="https://drewroberts.com/hero-image.jpg" />
+        <amp-img alt="Breakout Games"
+            src="https://drewroberts.com/hero-image.jpg"
+            width="600"
+            height="282"
+            layout="responsive">
+        </amp-img>
     </section>
 
     <section class="intro">
