@@ -178,7 +178,7 @@
 
     <section class="hero">
         <h1>Open for Adventure</h1>
-        <amp-img alt="Breakout Games"
+        <amp-img alt="Lexington Escape Room"
             src="https://drewroberts.com/hero-image.jpg"
             width="600"
             height="282"
@@ -250,7 +250,7 @@
             <p>A famous Veterinarian is on the loose after he is caught drugging racehorses. In a desperate effort to exact revenge he sneaks into the Derby and steals the Trophy, the $2 Million Purse and the Blanket of Roses. The Derby starts in one hour and your team must sneak into his house, recover all three items, and escape before it begins.</p>
 
             <amp-img alt="Derby Heist"
-                src="http://2m14st1h0x1b30k8dw3a8fxi.wpengine.netdna-cdn.com/wp-content/uploads/2016/06/derby_heist-1.jpg"
+                src="https://2m14st1h0x1b30k8dw3a8fxi.wpengine.netdna-cdn.com/wp-content/uploads/2016/06/derby_heist-1.jpg"
                 width="1920"
                 height="1080"
                 layout="responsive">
@@ -339,22 +339,28 @@
     </section>         
 
     <footer>
-    <img class="logo" src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/ftr-logo.svg"/>
-    <ul>
-        <li><a title="Team Building" href="https://breakoutgames.com/team-building/">Team Building</a></li>
-        <li><a title="Frequently Asked Questions" href="https://breakoutgames.com/faq-lexington/">Frequently Asked Questions</a></li>
-        <li><a title="Fill Out Waiver" href="https://breakoutgames.com/lexington-waiver/">Fill Out Waiver</a></li>
-        <li><a title="Gift Vouchers" href="https://breakoutgames.com/lexington-voucher/">Gift Vouchers</a></li>
-        <li><a title="Blog - Into the Maze" href="https://breakoutgames.com/blog/">Blog &#8211; Into the Maze</a></li>
-        <li><a title="Join our Team" href="https://breakoutgames.com/join-our-lexington-team/">Join our Team</a></li>
-        <li><a title="Contact Us" href="https://breakoutgames.com/contact-us/">Contact Us</a></li>
-        <li><a title="What Are Escape Rooms" href="https://breakoutgames.com/escape-rooms/">What are escape rooms?</a></li>
-    </ul>        
-    <!--<p>Follow Us!</p>
-    <a target="_blank" href="https://www.facebook.com/breakoutgameslexington"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-    <a target="_blank" href="https://www.instagram.com/breakoutlexington/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-    <a target="_blank" href="https://twitter.com/breakoutlex"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>-->
-    <p>&copy; copyright Breakout, 2017.</p>
+        <amp-img class="logo"
+            alt="Breakout Games Escape Rooms"
+            src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/ftr-logo.svg"
+            width="149"
+            height="150"
+            layout="fixed">
+        </amp-img>
+        <ul>
+            <li><a title="Team Building" href="https://breakoutgames.com/team-building/">Team Building</a></li>
+            <li><a title="Frequently Asked Questions" href="https://breakoutgames.com/faq-lexington/">Frequently Asked Questions</a></li>
+            <li><a title="Fill Out Waiver" href="https://breakoutgames.com/lexington-waiver/">Fill Out Waiver</a></li>
+            <li><a title="Gift Vouchers" href="https://breakoutgames.com/lexington-voucher/">Gift Vouchers</a></li>
+            <li><a title="Blog - Into the Maze" href="https://breakoutgames.com/blog/">Blog &#8211; Into the Maze</a></li>
+            <li><a title="Join our Team" href="https://breakoutgames.com/join-our-lexington-team/">Join our Team</a></li>
+            <li><a title="Contact Us" href="https://breakoutgames.com/contact-us/">Contact Us</a></li>
+            <li><a title="What Are Escape Rooms" href="https://breakoutgames.com/escape-rooms/">What are escape rooms?</a></li>
+        </ul>        
+        <!--<p>Follow Us!</p>
+        <a target="_blank" href="https://www.facebook.com/breakoutgameslexington"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://www.instagram.com/breakoutlexington/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://twitter.com/breakoutlex"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>-->
+        <p>&copy; copyright Breakout, 2017.</p>
     </footer>                
                         
     
