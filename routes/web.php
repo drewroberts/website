@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('drew', function () {
+    return view('welcome');
+});
+
 Auth::routes();
 
 Route::get('lexington', function () {
