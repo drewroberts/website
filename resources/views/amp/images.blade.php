@@ -82,6 +82,7 @@
         }
         section.intro h1, .game-room h1 {
             color: #E63C2F;
+            line-height: 50px;
         }
         section.intro p {
             color: #E5E4DA;
@@ -92,9 +93,6 @@
         }
         .game-room {
             padding: 30px 0;
-        }
-        .game-room .video img {
-            margin-bottom: 30px;
         }
         .game-room .button {
             margin-top: 20px;
@@ -200,8 +198,6 @@
     <section class="hero">
         <amp-img alt="Lexington Escape Room"
             src="https://drewroberts.com/hero-image-desktop.jpg"
-            srcset="https://drewroberts.com/hero-image-desktop.jpg 1000w,
-            https://drewroberts.com/hero-image-desktop.jpg 500w"
             width="600"
             height="282"
             layout="responsive">
@@ -228,7 +224,7 @@
                             <h1>Mystery Mansion</h1>
                             <p>This spine-chilling adventure starts in the ruins of an old mansion – abandoned decades ago by a reclusive and eccentric family. Since then, rumors have spread about a presence looming over the old house. Work as a team to race the clock and uncover the mansion's secrets in this all-ages mystery adventure.</p>
                     </div>
-                    <div class="column">
+                    <div class="column video">
                         <a href="https://www.youtube.com/watch?v=uaaUv7PCjnc">
                             <amp-img alt="Mystery Mansion"
                                 src="https://drewroberts.com/poster-mansion.jpg"
@@ -237,6 +233,7 @@
                                 layout="responsive">
                             </amp-img>
                         </a>
+                            <p>&nbsp;</p>
                             <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
@@ -267,6 +264,7 @@
                                 layout="responsive">
                             </amp-img>
                         </a>
+                        <p>&nbsp;</p>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
@@ -295,6 +293,7 @@
                             height="338"
                             layout="responsive">
                         </amp-img>
+                        <p>&nbsp;</p>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
@@ -325,6 +324,7 @@
                                 layout="responsive">
                             </amp-img>
                         </a>
+                        <p>&nbsp;</p>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
@@ -355,6 +355,7 @@
                                 layout="responsive">
                             </amp-img>
                         </a>
+                        <p>&nbsp;</p>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
@@ -385,6 +386,7 @@
                                 layout="responsive">
                             </amp-img>
                         </a>
+                        <p>&nbsp;</p>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
