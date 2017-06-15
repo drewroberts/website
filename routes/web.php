@@ -11,9 +11,14 @@
 |
 */
 
-Route::get('lexington', function () {
-    return view('lexington');
-});
+
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('lexington', function () {
+    return view('lexington');
 });
