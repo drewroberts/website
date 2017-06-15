@@ -93,7 +93,7 @@
         .game-room {
             padding: 30px 0;
         }
-        .game-room amp-youtube {
+        .game-room .video img {
             margin-bottom: 30px;
         }
         .game-room .button {
@@ -151,6 +151,7 @@
             font-size: 15px;
             display: inline;
         }
+        
         /* Column Structure */
         .column-wrap, .column {
             position: relative;
@@ -177,21 +178,22 @@
         }
         @media all and (max-width: 700px) {
         .column {
-            width: 95%;
+            width: 95% !important;
         }
         }       
     </style>
 </head>
 <body>    
     <header>
-
-        <amp-img class="logo"
-            alt="Breakout Games"
-            src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"
-            width="180"
-            height= "37"
-            layout="fixed">
-        </amp-img>       
+        <a href="https://breakoutgames.com">
+            <amp-img class="logo"
+                alt="Breakout Games"
+                src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"
+                width="180"
+                height= "37"
+                layout="fixed">
+            </amp-img>  
+        </a>
         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play Now</a>
     </header>
 
@@ -256,7 +258,7 @@
                         <h1>The Kidnapping</h1>
                         <p>The kidnapping begins with you and your fellow captives waking up handcuffed and blindfolded in a strange room. With nothing but collective brainpower, hidden clues and 60 minutes on your side, you have to free yourselves before the kidnapper returns. A heart-pumping thriller from start to finish, you can expect a rush of non-stop fun.</p>
                     </div>
-                    <div class="column">
+                    <div class="column video">
                         <a href="https://www.youtube.com/watch?v=ZaK7eXNOu6A">
                             <amp-img alt="Kidnapping"
                                 src="https://drewroberts.com/poster-kidnapping.jpg"
@@ -286,7 +288,7 @@
                         <h1>Derby Heist</h1>
                         <p>A famous Veterinarian is on the loose after he is caught drugging racehorses. In a desperate effort to exact revenge he sneaks into the Derby and steals the Trophy, the $2 Million Purse and the Blanket of Roses. The Derby starts in one hour and your team must sneak into his house, recover all three items, and escape before it begins.</p>
                     </div>
-                    <div class="column">
+                    <div class="column video">
                         <amp-img alt="Derby Heist"
                             src="https://drewroberts.com/derby_heist.jpg"
                             width="600"
@@ -314,7 +316,7 @@
                         <h1>Operation: Casino</h1>
                         <p>In this life-sized spy game, you will be sent on a trail of clues to discover the alias of a missing agent, and bring down the syndicate responsible for his disappearance. Follow unexpected twists and turns, break codes and channel your alter-ego secret agent to escape the room in an hour or less. If you’re down with espionage, this is your game.</p>
                     </div>
-                    <div class="column">
+                    <div class="column video">
                         <a href="https://www.youtube.com/watch?v=jekUvwNxNPo">
                             <amp-img alt="Operation Casino"
                                 src="https://drewroberts.com/poster-casino.jpg"
@@ -344,7 +346,7 @@
                         <h1>Island Escape</h1>
                         <p>While vacationing on a tropical island, you awake to the sounds of a dormant volcano rumbling to life. The only people still on the island, you and your team are left to your own devices and must work together to discover the keys to safety before the lava reaches shore. Bring your inner explorer out to play for this adrenaline-packed adventure.</p>
                     </div>
-                    <div class="column">
+                    <div class="column video">
                         <a href="https://www.youtube.com/watch?v=p8LuxQRIOhs">
                             <amp-img alt="Island Escape"
                                 src="https://drewroberts.com/poster-island.jpg"
@@ -353,6 +355,7 @@
                                 layout="responsive">
                             </amp-img>
                         </a>
+                        <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
                 </div>
             </div>
@@ -373,7 +376,7 @@
                         <h1>Hostage</h1>
                         <p>While on a flight, your plane is hijacked and you lose consciousness as the cabin depressurizes. Later you wake up and realize you're trapped, handcuffed to your friends, in the hijackers headquarters. Can you lose your handcuffs, find out the details behind their hijacking and escape before time's up?</p>
                     </div>
-                    <div class="column">
+                    <div class="column video">
                         <a href="https://www.youtube.com/watch?v=JOpURcCS800">
                             <amp-img alt="Hostage"
                                 src="https://drewroberts.com/poster-hostage.jpg"
