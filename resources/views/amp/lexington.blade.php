@@ -307,8 +307,8 @@
             <amp-img class="icon"
                 alt="Hostage Escape Room"
                 src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/hostage.svg"
-                width="300"
-                height="150"
+                width="100"
+                height="50"
                 layout="fixed">
             </amp-img>
             <h1>Hostage</h1>
