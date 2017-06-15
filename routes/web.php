@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('drew', function () {
-    return view('welcome');
+    return view('amp.lexington');
 });
 
 Auth::routes();
