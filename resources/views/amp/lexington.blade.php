@@ -1,93 +1,196 @@
 <!doctype html>
 <html ⚡>
 <head>
-<meta charset="utf-8">
-<script async src="https://cdn.ampproject.org/v0.js"></script>
-<title>Lexington Breakout Games</title>
-<link rel="canonical" href="https://drewroberts.com/lexington">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Lexington Breakout Games</title>
+    <link rel="canonical" href="https://drewroberts.com/lexington">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+    /* any custom style goes here */
+        body {
+            background-color: #E5E4DA;
+            color: #0D0D0D;
+            font-family: courier-std, monospace;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.65em;
+        }
+        section, header, footer {
+            width: 90%;
+            display: block;
+            margin: 30px 5%;
+        }
+        header, footer {
+            width: 90%;
+            margin: 0;
+            padding: 0 5%;
+            background-color: #0D0D0D;
+        }
+        header {
+            height: 65px;
+        }
+        h1, h2, h3 {
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+            font-weight: normal;
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        .button {
+            background-color: #E63C2F;
+            padding: 12px 20px;
+            color: #E5E4DA;
+            text-decoration: none;
+            display: block;
+            width: auto;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-color: #E63C2F;
+            border-top: 1px solid #E5E4DA;
+        }
+        header img.logo {
+            max-width: 180px;
+            margin-top: 20px;
+        }
+        header .button {
+            float: right;
+            width: auto;
+            padding: 8px 15px;
+            margin-top: 10px;
+        }
+        section.hero {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        section.hero h1 {
+            position: absolute;
+            top: 70px;
+            left: 5%;
+            font-size: 50px;
+            font-style: italic;
+            line-height: 80px;
+            color: #E5E4DA;
+        }
+        section.hero img {
+            width: 100%;
+        }
+        section.intro, section.location {
+            text-align: center;
+            background-color: #0D0D0D;
+            width: 90%;
+            margin: -10px 0 0 0;
+            padding: 30px 5%;
+        }
+        section.intro h1, .game-room h1 {
+            color: #E63C2F;
+        }
+        section.intro p {
+            color: #E5E4DA;
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 40px;
+        }
+        .game-room {
+            padding: 30px 0;
+        }
+        .game-room amp-img.icon {
+            max-width: 100px;
+        }
+        .game-room .button {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        section.location {
+            background-color: #E63C2F;
+        }
+        section.location h3, section.location p, section.location ul {
+            text-align: left;
+        }
+        section.location h3 {
+            margin-top: 40px;
+        }
+        section.location p {
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+            font-weight: normal;
+            font-size: 22px;
+        }
+        section.location p a {
+            text-decoration: none;
+            color: #0D0D0D;
+        }
+        footer {
+            padding-top: 50px;
+        }
+        footer img.logo {
+            max-width: 80px;
+        }
+        section.location ul, footer ul {
+            margin: 30px 0 40px 0;
+            padding: 0;
+            list-style: none;
+        }
+        section.location ul li, footer ul li {
+            margin: 7px 0 0 0;
+        }
+        section.location ul li a, footer ul li a {
+            color: #0D0D0D;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 300;
+        }
+        footer ul li a {
+            color: #E63C2F;
+        }
+        footer p {
+            color: #E5E4DA;
+            font-weight: 300;
+            font-size: 15px;
+        }
+    </style>
 </head>
-<style amp-custom>
-/* any custom style goes here */
-    body {
-        background-color: #E5E4DA;
-        font-family: courier-std, monospace;
-        font-size: 17px;
-        font-weight: 700;
-        line-height: 1.65em;
-    }
-    section {
-        width: 90%;
-        display: block;
-        margin: 50px 5%;
-    }
-    header, footer {
-        width: 90%;
-        padding: 20px 5%;
-        background-color: #0D0D0D;
-    }
-    h1, h2, h3 {
-        font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-        font-weight: normal;
-        font-size: 40px;
-    }
-    .button {
-        background-color: #E63C2F;
-        padding: 20px 20px;
-        color: #E5E4DA;
-        text-decoration: none;
-        margin: 20px 0;
-        display: block;
-        width: auto;
-        font-size: 15px;
-        font-weight: 300;
-    }
-    hr {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-color: #E63C2F;
-        border-top: 1px solid #eee;
-    }
-    .game-room {
-        padding: 30px 0;
-    }
-    .game-room h1 {
-        color: #E63C2F;
-    }
-    .game-room amp-img.icon {
-        max-width: 100px;
-    }
-    .game-room .button {
-        margin-bottom: 40px;
-    }
-</style>
 <body>
-<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    
     <header>
-        <a href="https://breakoutgames.com/lexington/"><img src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"/></a> 
-        <a href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play Now</a>
-        <i class="fa fa-map-marker"></i><span>KY - Lexington</span>
-        <i class="fa fa-map-marker"></i>Your Location: <span>Lexington</span>
+        <a href="https://breakoutgames.com/lexington/"><img class="logo" src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"/></a> 
+        <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play Now</a>
     </header>
 
     <section class="hero">
         <h1>Open for Adventure</h1>
+        <img src="https://drewroberts.com/hero-image.jpg" />
     </section>
 
     <section class="intro">
         <h1>Breakout Lexington</h1>
         <p>This isn’t your average outing or everyday experience—Breakout is for those who would rather solve mysteries than watch someone else have all the fun. With different rooms that follow unique storylines, you and your friends will have 60 minutes to escape your adventure of choice by cracking codes, solving puzzles and following clues. Part problem solving, part adrenaline, end-to-end fun.</p>
 
-        <h3>Breakout Brief</h3>
+<!--        <h3>Breakout Brief</h3>
         <p>A Life-Sized Game of Twists &amp; Turns</p>
-        <a href="#">Launch Video Briefing</a>
-    </section>         
-
+        <a href="#">Launch Video Briefing</a>-->
+    </section>
 
     <section class="games">
         <div class="game-room">
-            <img class="icon" src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/09/mysterymansion.svg" />
+            <amp-img class="icon"
+                alt="Mystery Mansion Escape Room"
+                src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/09/mysterymansion.svg"
+                width="144"
+                height="150"
+                layout="fixed">
+            </amp-img>
             <h1>Mystery Mansion</h1>
             <p>This spine-chilling adventure starts in the ruins of an old mansion – abandoned decades ago by a reclusive and eccentric family. Since then, rumors have spread about a presence looming over the old house. Work as a team to race the clock and uncover the mansion's secrets in this all-ages mystery adventure.</p>
 
@@ -102,7 +205,13 @@
         </div>
 
         <div class="game-room">
-            <img class="icon" src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/kidnapping.svg" />
+            <amp-img class="icon"
+                alt="Kidnapping Escape Room"
+                src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/kidnapping.svg"
+                width="144"
+                height="150"
+                layout="fixed">
+            </amp-img>
             <h1>The Kidnapping</h1>
             <p>The kidnapping begins with you and your fellow captives waking up handcuffed and blindfolded in a strange room. With nothing but collective brainpower, hidden clues and 60 minutes on your side, you have to free yourselves before the kidnapper returns. A heart-pumping thriller from start to finish, you can expect a rush of non-stop fun.</p>
 
@@ -117,7 +226,13 @@
         </div>
 
         <div class="game-room">
-            <img class="icon" src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/derby.svg" />
+            <amp-img class="icon"
+                alt="Derby Heist Escape Room"
+                src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/derby.svg"
+                width="148"
+                height="150"
+                layout="fixed">
+            </amp-img>
             <h1>Derby Heist</h1>
             <p>A famous Veterinarian is on the loose after he is caught drugging racehorses. In a desperate effort to exact revenge he sneaks into the Derby and steals the Trophy, the $2 Million Purse and the Blanket of Roses. The Derby starts in one hour and your team must sneak into his house, recover all three items, and escape before it begins.</p>
 
@@ -134,9 +249,10 @@
 
         <div class="game-room">
             <amp-img class="icon"
+                alt="Casino Royale Escape Room"
                 src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/casino-royale.svg"
-                width="1920"
-                height="1080"
+                width="150"
+                height="150"
                 layout="fixed">
             </amp-img>
             <h1>Operation: Casino</h1>
@@ -153,7 +269,13 @@
         </div>                       
 
         <div class="game-room">
-            <img class="icon" src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/island-escape.svg" />
+            <amp-img class="icon"
+                alt="Island Escape Room"
+                src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/island-escape.svg"
+                width="129"
+                height="150"
+                layout="fixed">
+            </amp-img>
             <h1>Island Escape</h1>
             <p>While vacationing on a tropical island, you awake to the sounds of a dormant volcano rumbling to life. The only people still on the island, you and your team are left to your own devices and must work together to discover the keys to safety before the lava reaches shore. Bring your inner explorer out to play for this adrenaline-packed adventure.</p>
 
@@ -168,7 +290,13 @@
         </div>                       
 
         <div class="game-room">
-            <img class="icon" src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/hostage.svg" />
+            <amp-img class="icon"
+                alt="Hostage Escape Room"
+                src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/hostage.svg"
+                width="300"
+                height="150"
+                layout="fixed">
+            </amp-img>
             <h1>Hostage</h1>
             <p>While on a flight, your plane is hijacked and you lose consciousness as the cabin depressurizes. Later you wake up and realize you're trapped, handcuffed to your friends, in the hijackers headquarters. Can you lose your handcuffs, find out the details behind their hijacking and escape before time's up?</p>
 
@@ -198,7 +326,7 @@
     </section>         
 
     <footer>
-    <img src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/ftr-logo.svg"/>
+    <img class="logo" src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/ftr-logo.svg"/>
     <ul>
         <li><a title="Team Building" href="https://breakoutgames.com/team-building/">Team Building</a></li>
         <li><a title="Frequently Asked Questions" href="https://breakoutgames.com/faq-lexington/">Frequently Asked Questions</a></li>
@@ -209,12 +337,11 @@
         <li><a title="Contact Us" href="https://breakoutgames.com/contact-us/">Contact Us</a></li>
         <li><a title="What Are Escape Rooms" href="https://breakoutgames.com/escape-rooms/">What are escape rooms?</a></li>
     </ul>        
-    <p>Follow Us!</p>
+    <!--<p>Follow Us!</p>
     <a target="_blank" href="https://www.facebook.com/breakoutgameslexington"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
     <a target="_blank" href="https://www.instagram.com/breakoutlexington/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-    <a target="_blank" href="https://twitter.com/breakoutlex"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-    <i class="fa fa-copyright icon-on-left"></i>copyright Breakout, 2017.</div>
-    <div id="fb-root"></div>
+    <a target="_blank" href="https://twitter.com/breakoutlex"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>-->
+    <p>&copy; copyright Breakout, 2017.</p>
     </footer>                
                         
     
