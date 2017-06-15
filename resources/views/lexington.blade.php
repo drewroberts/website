@@ -1,9 +1,5 @@
-<!-- v1.1 1.08.16 -->
-
-
-
-<!doctype html>
-<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
