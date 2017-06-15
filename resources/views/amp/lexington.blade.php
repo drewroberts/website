@@ -6,14 +6,8 @@
 <title>Lexington Breakout Games</title>
 <link rel="canonical" href="https://drewroberts.com/lexington">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<style amp-custom>
-  h1 {
-    color: red;
-  }
-</style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
-<body>
 <style amp-custom>
 /* any custom style goes here */
     body {
@@ -68,6 +62,7 @@
         margin-bottom: 40px;
     }
 </style>
+<body>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <header>
         <a href="https://breakoutgames.com/lexington/"><img src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"/></a> 
