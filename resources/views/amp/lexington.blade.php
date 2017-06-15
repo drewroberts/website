@@ -55,7 +55,7 @@
     .game-room h1 {
         color: #E63C2F;
     }
-    .game-room img.icon {
+    .game-room amp-img.icon {
         max-width: 100px;
     }
     .game-room .button {
@@ -137,7 +137,7 @@
                 src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/casino-royale.svg"
                 width="1920"
                 height="1080"
-                layout="responsive">
+                layout="fixed">
             </amp-img>
             <h1>Operation: Casino</h1>
             <p>In this life-sized spy game, you will be sent on a trail of clues to discover the alias of a missing agent, and bring down the syndicate responsible for his disappearance. Follow unexpected twists and turns, break codes and channel your alter-ego secret agent to escape the room in an hour or less. If you’re down with espionage, this is your game.</p>
