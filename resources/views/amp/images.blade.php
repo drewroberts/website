@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <title>Lexington Escape Room | Breakout Games</title>
     <link rel="canonical" href="https://drewroberts.com/lexington">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
