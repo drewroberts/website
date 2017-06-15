@@ -15,5 +15,9 @@
 <body>
 <h1>Lexington</h1>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-
+<amp-youtube width="480"
+  height="270"
+  layout="responsive"
+  data-videoid="uaaUv7PCjnc">
+</amp-youtube>
 </html>
