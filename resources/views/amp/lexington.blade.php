@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <title>Lexington Escape Room | Breakout Games</title>
     <link rel="canonical" href="https://drewroberts.com/lexington">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -177,25 +178,21 @@
         }
         @media all and (max-width: 700px) {
         .column {
-            width: 95% !important;
+            width: 95%;
         }
         }       
     </style>
-    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 </head>
-<body>
-    
-    
+<body>    
     <header>
-        <a href="https://breakoutgames.com/lexington/">
-            <amp-img class="logo"
-                alt="Breakout Games"
-                src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"
-                width="180"
-                height= "37"
-                layout="fixed">
-            </amp-img>   
-        </a>
+
+        <amp-img class="logo"
+            alt="Breakout Games"
+            src="https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Breakout-Logo.svg"
+            width="180"
+            height= "37"
+            layout="fixed">
+        </amp-img>       
         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play Now</a>
     </header>
 
@@ -290,7 +287,7 @@
                             width="600"
                             height="338"
                             layout="responsive"
-                            style="margin-bottom: 30px;">
+                            style amp-custom="margin-bottom: 30px;">
                         </amp-img>
                         <a class="button" href="https://checkout.breakoutgames.com/listing?location=3154P9J9J71491A95C747">Play at Lexington</a>
                     </div>
