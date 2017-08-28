@@ -71,7 +71,7 @@
             </div>
 
             <div id="links">
-                <p><a href="https://medium.com/@DrewRoberts" target="_blank">Blog</a> &middot <a href="https://www.facebook.com/DrewRoberts" target="_blank">Facebook</a> &middot <a href="https://twitter.com/DrewRoberts" target="_blank">Twitter</a> &middot <a href="https://github.com/DrewRoberts" target="_blank">Github</a> &middot <a href="https://www.linkedin.com/in/DrewRoberts" target="_blank">LinkedIn</a>
+                <p><a href="https://medium.com/@DrewRoberts" target="_blank">Blog</a> &middot <a href="https://www.facebook.com/DrewRoberts" target="_blank">Facebook</a> &middot <a href="https://twitter.com/DrewRoberts" target="_blank">Twitter</a> &middot <a href="https://github.com/DrewRoberts" target="_blank">GitHub</a> &middot <a href="https://www.linkedin.com/in/DrewRoberts" target="_blank">LinkedIn</a>
                 </p>
             </div>
         </div>
