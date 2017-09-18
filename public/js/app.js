@@ -2140,7 +2140,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "indigo darken-4",
     attrs: {
       "fixed": "",
-      "dark": ""
+      "dark": "",
+      "dense": ""
     }
   }, [_c('v-toolbar-side-icon', {
     on: {
@@ -2149,14 +2150,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.drawer = !_vm.drawer
       }
     }
-  }), _vm._v(" "), _c('v-toolbar-title', [_vm._v("Drew Roberts")]), _vm._v(" "), _c('v-spacer'), _vm._v(" "), _c('v-bottom-sheet', {
-    attrs: {
-      "light": ""
-    }
-  }, [_c('v-btn', {
-    staticClass: "light-blue lighten-1",
+  }), _vm._v(" "), _c('v-toolbar-title', [_vm._v("Drew Roberts")]), _vm._v(" "), _c('v-spacer'), _vm._v(" "), _c('v-bottom-sheet', [_c('v-btn', {
+    staticClass: "red accent-4",
     attrs: {
       "slot": "activator",
+      "flat": "",
       "dark": ""
     },
     slot: "activator"

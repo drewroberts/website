@@ -20,12 +20,12 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed dark class="indigo darken-4">
+    <v-toolbar fixed dark dense class="indigo darken-4">
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
               <v-toolbar-title>Drew Roberts</v-toolbar-title>
               <v-spacer></v-spacer>
-              <v-bottom-sheet light>
-                  <v-btn slot="activator" class="light-blue lighten-1" dark>Contact</v-btn>
+              <v-bottom-sheet>
+                  <v-btn slot="activator" flat class="red accent-4" dark>Contact</v-btn>
                   <v-list>
                     <v-subheader>Contact me through:</v-subheader>
                     <v-list-tile href="https://www.facebook.com/DrewRoberts">
