@@ -24,12 +24,13 @@
         }
         </script>
         <link rel="stylesheet" href="/css/app.css">
+        <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
     <body>
-        <div id="app">
-            <notification></notification>
-        </div>
-
+        <drewroberts id="app"></drewroberts>
         <script src="/js/app.js"></script>
     </body>
 </html>

@@ -9,7 +9,10 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-import Notification from './components/Notification.vue';
+import Vuetify from 'vuetify'
+ Vue.use(Vuetify)
+
+import drewroberts from './components/DrewRoberts.vue';
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -21,5 +24,5 @@ import Notification from './components/Notification.vue';
 const app = new Vue({
     el: '#app',
 
-    components: { Notification }
+    components: { drewroberts }
 });
