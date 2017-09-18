@@ -2082,7 +2082,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('v-app', {
     attrs: {
       "id": "example-8",
-      "dark": "",
       "toolbar": ""
     }
   }, [_c('v-navigation-drawer', {
@@ -2138,6 +2137,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_vm._v(_vm._s(item.icon))])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v(_vm._s(item.title))])], 1)], 1)
   })], 2)], 1), _vm._v(" "), _c('v-toolbar', {
+    staticClass: "indigo darken-4",
     attrs: {
       "fixed": "",
       "dark": ""
@@ -2154,7 +2154,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "light": ""
     }
   }, [_c('v-btn', {
-    staticClass: "indigo accent-4",
+    staticClass: "amber accent-4",
     attrs: {
       "slot": "activator",
       "dark": ""
