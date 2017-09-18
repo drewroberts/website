@@ -1,15 +1,10 @@
 <template>
 	<v-container
 		fluid
-		style="padding: 0"
+		style="max-width: 970px;"
 		grid-list-lg
 	>
-		<v-parallax height="700" src="https://vuetifyjs.com/static/doc-images/vbanner.jpg">
-			<v-layout column align-center justify-center>
-				<h1 class="white--text">Drew Roberts</h1>
-			</v-layout>
-		</v-parallax>
-		<v-layout style="max-width: 970px; padding:17px" row wrap>
+		<v-layout row wrap>
 			<v-flex xs12 sm6 offset-sm3>
 				<v-card light>
 					<v-card-media

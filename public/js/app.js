@@ -30278,11 +30278,6 @@ module.exports = Component.exports
 //
 //
 //
-//
-//
-//
-//
-//
 
 /***/ }),
 /* 44 */
@@ -30291,30 +30286,13 @@ module.exports = Component.exports
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('v-container', {
     staticStyle: {
-      "padding": "0"
+      "max-width": "970px"
     },
     attrs: {
       "fluid": "",
       "grid-list-lg": ""
     }
-  }, [_c('v-parallax', {
-    attrs: {
-      "height": "700",
-      "src": "https://vuetifyjs.com/static/doc-images/vbanner.jpg"
-    }
   }, [_c('v-layout', {
-    attrs: {
-      "column": "",
-      "align-center": "",
-      "justify-center": ""
-    }
-  }, [_c('h1', {
-    staticClass: "white--text"
-  }, [_vm._v("Drew Roberts")])])], 1), _vm._v(" "), _c('v-layout', {
-    staticStyle: {
-      "max-width": "970px",
-      "padding": "17px"
-    },
     attrs: {
       "row": "",
       "wrap": ""
