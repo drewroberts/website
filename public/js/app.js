@@ -1746,18 +1746,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2107,11 +2095,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('v-navigation-drawer', {
     attrs: {
-      "temporary": "",
-      "mini-variant": _vm.mini,
-      "dark": "",
-      "overflow": "",
-      "absolute": ""
+      "absolute": "",
+      "persistent": "",
+      "light": "",
+      "overflow": ""
     },
     model: {
       value: (_vm.drawer),
@@ -2122,14 +2109,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('v-list', {
     staticClass: "pa-1"
-  }, [(_vm.mini) ? _c('v-list-tile', {
-    on: {
-      "click": function($event) {
-        $event.stopPropagation();
-        _vm.mini = !_vm.mini
-      }
-    }
-  }, [_c('v-list-tile-action', [_c('v-icon', [_vm._v("chevron_right")])], 1)], 1) : _vm._e(), _vm._v(" "), _c('v-list-tile', {
+  }, [_c('v-list-tile', [_c('v-list-tile-action', [_c('v-icon', [_vm._v("chevron_right")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
     attrs: {
       "avatar": "",
       "tag": "div"
@@ -2138,17 +2118,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": "https://randomuser.me/api/portraits/men/85.jpg"
     }
-  })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Drew Roberts")])], 1), _vm._v(" "), _c('v-list-tile-action', [_c('v-btn', {
-    attrs: {
-      "icon": ""
-    },
-    on: {
-      "click": function($event) {
-        $event.stopPropagation();
-        _vm.mini = !_vm.mini
-      }
-    }
-  }, [_c('v-icon', [_vm._v("chevron_left")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-list', {
+  })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Drew Roberts")])], 1)], 1)], 1), _vm._v(" "), _c('v-list', {
     staticClass: "pt-0",
     attrs: {
       "dense": ""
@@ -2163,7 +2133,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       on: {
         "click": function($event) {}
       }
-    }, [_c('v-list-tile-action', [_c('v-icon', [_vm._v(_vm._s(item.icon))])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v(_vm._s(item.title))])], 1)], 1)
+    }, [_c('v-list-tile-action', [_c('v-icon', {
+      attrs: {
+        "light": ""
+      }
+    }, [_vm._v(_vm._s(item.icon))])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v(_vm._s(item.title))])], 1)], 1)
   })], 2)], 1), _vm._v(" "), _c('v-toolbar', {
     attrs: {
       "fixed": "",
@@ -2177,12 +2151,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }), _vm._v(" "), _c('v-toolbar-title', [_vm._v("Drew Roberts")]), _vm._v(" "), _c('v-spacer'), _vm._v(" "), _c('v-bottom-sheet', {
-    model: {
-      value: (_vm.sheet),
-      callback: function($$v) {
-        _vm.sheet = $$v
-      },
-      expression: "sheet"
+    attrs: {
+      "light": ""
     }
   }, [_c('v-btn', {
     staticClass: "indigo accent-4",
@@ -2191,7 +2161,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "dark": ""
     },
     slot: "activator"
-  }, [_vm._v("Say Hello")]), _vm._v(" "), _c('v-list', [_c('v-subheader', [_vm._v("Contact Drew Roberts via")]), _vm._v(" "), _c('v-list-tile', {
+  }, [_vm._v("Say Hello")]), _vm._v(" "), _c('v-list', [_c('v-subheader', [_vm._v("Contact me through:")]), _vm._v(" "), _c('v-list-tile', {
     attrs: {
       "href": "https://www.facebook.com/DrewRoberts"
     }
@@ -2239,7 +2209,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "medium": ""
     }
-  }, [_vm._v("mdi-email")])], 1), _vm._v(" "), _c('v-list-tile-title', [_vm._v("Email Me")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('main', {
+  }, [_vm._v("mdi-email")])], 1), _vm._v(" "), _c('v-list-tile-title', [_vm._v("Email")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('main', {
     staticClass: "grey lighten-1"
   }, [_c('v-container', {
     staticStyle: {

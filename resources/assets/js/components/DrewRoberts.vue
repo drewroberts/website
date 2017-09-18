@@ -1,15 +1,8 @@
 <template>
     <v-app id="example-8" dark toolbar>
-    <v-navigation-drawer
-      temporary
-      v-model="drawer"
-      :mini-variant="mini"
-      dark
-      overflow
-      absolute
-    >
+    <v-navigation-drawer absolute persistent light v-model="drawer" overflow>
       <v-list class="pa-1">
-        <v-list-tile v-if="mini" @click.stop="mini = !mini">
+        <v-list-tile>
           <v-list-tile-action>
             <v-icon>chevron_right</v-icon>
           </v-list-tile-action>
@@ -21,18 +14,13 @@
           <v-list-tile-content>
             <v-list-tile-title>Drew Roberts</v-list-tile-title>
           </v-list-tile-content>
-          <v-list-tile-action>
-            <v-btn icon @click.stop="mini = !mini">
-              <v-icon>chevron_left</v-icon>
-            </v-btn>
-          </v-list-tile-action>
         </v-list-tile>
       </v-list>
       <v-list class="pt-0" dense>
         <v-divider light></v-divider>
         <v-list-tile v-for="item in items" :key="item.title" @click="">
           <v-list-tile-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon light>{{ item.icon }}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
@@ -44,10 +32,10 @@
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
               <v-toolbar-title>Drew Roberts</v-toolbar-title>
               <v-spacer></v-spacer>
-              <v-bottom-sheet v-model="sheet">
+              <v-bottom-sheet light>
                   <v-btn slot="activator" class="indigo accent-4" dark>Say Hello</v-btn>
                   <v-list>
-                    <v-subheader>Contact Drew Roberts via</v-subheader>
+                    <v-subheader>Contact me through:</v-subheader>
                     <v-list-tile href="https://www.facebook.com/DrewRoberts">
                           <v-list-tile-avatar>
                             <v-icon medium>mdi-facebook-box</v-icon>
@@ -82,7 +70,7 @@
                           <v-list-tile-avatar>
                             <v-icon medium>mdi-email</v-icon>
                           </v-list-tile-avatar>
-                          <v-list-tile-title>Email Me</v-list-tile-title>
+                          <v-list-tile-title>Email</v-list-tile-title>
                     </v-list-tile>
                   </v-list>
                 </v-bottom-sheet>
