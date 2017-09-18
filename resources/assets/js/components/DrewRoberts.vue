@@ -1,6 +1,6 @@
 <template>
     <v-app id="example-8" toolbar>
-    <v-navigation-drawer absolute persistent light v-model="drawer" overflow>
+    <v-navigation-drawer persistent light v-model="drawer" overflow>
       <v-list class="pa-1">
         <div style="width:200px;margin:auto;padding-top:10px;padding-bottom:10px;">
           <v-list-tile-avatar tag="div" size="200px">
