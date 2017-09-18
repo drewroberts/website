@@ -13,6 +13,11 @@ import VueRouter from 'vue-router';
  const router = new VueRouter({ routes,
 	mode: 'history' });
 
+import VueAnalytics from 'vue-analytics'
+ Vue.use(VueAnalytics, {
+	id: 'UA-100534702-1'
+ })
+
 import drewroberts from './components/DrewRoberts.vue';
 
 /**
