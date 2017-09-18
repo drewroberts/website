@@ -1738,6 +1738,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2151,14 +2153,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }), _vm._v(" "), _c('v-toolbar-title', [_vm._v("Drew Roberts")]), _vm._v(" "), _c('v-spacer'), _vm._v(" "), _c('v-bottom-sheet', [_c('v-btn', {
-    staticClass: "red accent-4",
+    staticClass: "amber--text",
     attrs: {
       "slot": "activator",
-      "flat": "",
-      "dark": ""
+      "icon": ""
     },
     slot: "activator"
-  }, [_vm._v("Contact")]), _vm._v(" "), _c('v-list', [_c('v-subheader', [_vm._v("Contact me through:")]), _vm._v(" "), _c('v-list-tile', {
+  }, [_c('v-icon', [_vm._v("mdi-comment-account-outline")])], 1), _vm._v(" "), _c('v-list', [_c('v-subheader', [_vm._v("Reach out to me through:")]), _vm._v(" "), _c('v-list-tile', {
     attrs: {
       "href": "https://www.facebook.com/DrewRoberts"
     }
@@ -2206,7 +2207,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "medium": ""
     }
-  }, [_vm._v("mdi-email")])], 1), _vm._v(" "), _c('v-list-tile-title', [_vm._v("Email")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('main', {
+  }, [_vm._v("mdi-comment-text-outline")])], 1), _vm._v(" "), _c('v-list-tile-title', [_vm._v("Contact Form")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('main', {
     staticClass: "grey lighten-4"
   }, [_c('v-container', {
     staticStyle: {

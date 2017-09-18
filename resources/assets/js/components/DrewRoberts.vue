@@ -25,9 +25,11 @@
               <v-toolbar-title>Drew Roberts</v-toolbar-title>
               <v-spacer></v-spacer>
               <v-bottom-sheet>
-                  <v-btn slot="activator" flat class="red accent-4" dark>Contact</v-btn>
+                    <v-btn slot="activator" icon class="amber--text">
+                      <v-icon>mdi-comment-account-outline</v-icon>
+                    </v-btn>
                   <v-list>
-                    <v-subheader>Contact me through:</v-subheader>
+                    <v-subheader>Reach out to me through:</v-subheader>
                     <v-list-tile href="https://www.facebook.com/DrewRoberts">
                           <v-list-tile-avatar>
                             <v-icon medium>mdi-facebook-box</v-icon>
@@ -60,9 +62,9 @@
                     </v-list-tile>
                     <v-list-tile href="mailto:website@drewroberts.com?Subject=Hello%20Drew">
                           <v-list-tile-avatar>
-                            <v-icon medium>mdi-email</v-icon>
+                            <v-icon medium>mdi-comment-text-outline</v-icon>
                           </v-list-tile-avatar>
-                          <v-list-tile-title>Email</v-list-tile-title>
+                          <v-list-tile-title>Contact Form</v-list-tile-title>
                     </v-list-tile>
                   </v-list>
                 </v-bottom-sheet>
