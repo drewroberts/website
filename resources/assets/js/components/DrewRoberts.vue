@@ -10,12 +10,20 @@
       </v-list>
       <v-list class="pt-0" dense>
         <v-divider light></v-divider>
-        <v-list-tile v-for="item in items" :key="item.title" @click="">
+        <v-list-tile @click="visitHome">
           <v-list-tile-action>
-            <v-icon light>{{ item.icon }}</v-icon>
+            <v-icon light>dashboard</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+            <v-list-tile-title>Home</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile @click="visitAbout">
+          <v-list-tile-action>
+            <v-icon light>question_answer</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>About</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -52,12 +60,6 @@
                           </v-list-tile-avatar>
                           <v-list-tile-title>@DrewRoberts</v-list-tile-title>
                     </v-list-tile>
-                    <v-list-tile href="https://plus.google.com/+DrewRoberts">
-                          <v-list-tile-avatar>
-                            <v-icon medium>mdi-google-plus-box</v-icon>
-                          </v-list-tile-avatar>
-                          <v-list-tile-title>+DrewRoberts</v-list-tile-title>
-                    </v-list-tile>
                     <v-list-tile href="mailto:website@drewroberts.com?Subject=Hello%20Drew">
                           <v-list-tile-avatar>
                             <v-icon medium>mdi-comment-text-outline</v-icon>
@@ -68,43 +70,13 @@
                 </v-bottom-sheet>
         </v-toolbar>
         <main class="grey lighten-4">
-            <v-container
-        fluid
-        style="max-width: 970px;"
-        grid-list-lg
-      >
-        <v-layout row wrap>
-          <v-flex xs12 sm6 offset-sm3>
-      <v-card light>
-        <v-card-media
-          class="white--text"
-          height="200px"
-          src="https://vuetifyjs.com/static/doc-images/cards/docks.jpg"
-        >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <span class="headline">Top 10 Australian beaches</span>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card-media>
-        <v-card-title>
-          <div>
-            <span class="grey--text">Number 10</span><br>
-            <span>Whitehaven Beach</span><br>
-            <span>Whitsunday Island, Whitsunday Islands</span>
-          </div>
-        </v-card-title>
-        <v-card-actions>
-          <v-btn flat class="orange--text">Share</v-btn>
-          <v-btn flat class="orange--text">Explore</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-        </v-layout>
-      </v-container>
-        </main>        
+          <router-view
+            class="view"
+            keep-alive
+            transition
+            transition-mode="out-in">
+          </router-view>
+        </main>
     </v-app>
 </template>
 
@@ -114,12 +86,20 @@
       return {
         drawer: null,
         items: [
-          { title: 'Home', icon: 'dashboard' },
-          { title: 'About', icon: 'question_answer' }
+          { title: 'Home', icon: 'dashboard', url: '/', click: 'visitHome' },
+          { title: 'About', icon: 'question_answer', url: '/about', click: 'visitAbout' }
         ],
         mini: false,
         right: null
       }
+    },
+    methods: {
+        visitHome() {
+            this.$router.push({path: '/'});
+        },
+        visitAbout() {
+            this.$router.push({path: '/about'});
+        }
     }
   }
 </script>

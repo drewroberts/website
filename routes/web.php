@@ -12,11 +12,11 @@
 */
 
 
-
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/app', function () {
     return view('app');
 });
+
+Route::any('{all}', function () {
+    return view('app');
+})
+->where(['all' => '.*']);

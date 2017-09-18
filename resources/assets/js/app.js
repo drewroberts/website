@@ -7,10 +7,14 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+import VueRouter from 'vue-router';
+ Vue.use(VueRouter);
+ import { routes } from './routes.js';
+ const router = new VueRouter({ routes,
+	mode: 'history' });
 
-import Vuetify from 'vuetify'
- Vue.use(Vuetify)
+import Vuetify from 'vuetify';
+ Vue.use(Vuetify);
 
 import drewroberts from './components/DrewRoberts.vue';
 
@@ -23,6 +27,6 @@ import drewroberts from './components/DrewRoberts.vue';
 
 const app = new Vue({
     el: '#app',
-
+    router,
     components: { drewroberts }
 });
