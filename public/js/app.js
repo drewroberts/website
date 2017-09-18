@@ -30238,8 +30238,10 @@ module.exports = Component.exports
 
 /***/ }),
 /* 43 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
@@ -30278,6 +30280,90 @@ module.exports = Component.exports
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	methods: {
+		visitAbout: function visitAbout() {
+			this.$router.push('/about');
+		}
+	}
+});
 
 /***/ }),
 /* 44 */
@@ -30305,7 +30391,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('v-card', {
     attrs: {
-      "light": ""
+      "hover": ""
+    },
+    on: {
+      "click": _vm.visitAbout
     }
   }, [_c('v-card-media', {
     staticClass: "white--text",
@@ -30313,31 +30402,138 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "height": "200px",
       "src": "https://vuetifyjs.com/static/doc-images/cards/desert.jpg"
     }
-  }, [_c('v-container', {
-    attrs: {
-      "fill-height": "",
-      "fluid": ""
-    }
-  }, [_c('v-layout', {
-    attrs: {
-      "fill-height": ""
-    }
-  }, [_c('v-flex', {
-    attrs: {
-      "xs12": "",
-      "align-end": "",
-      "flexbox": ""
-    }
-  }, [_c('span', {
-    staticClass: "headline"
-  }, [_vm._v("Top 10 Florida beaches")])])], 1)], 1)], 1), _vm._v(" "), _c('v-card-title', [_c('div', [_c('span', {
+  }), _vm._v(" "), _c('v-card-title', [_c('div', [_c('span', [_vm._v("About Me")]), _c('br'), _vm._v(" "), _c('span', {
     staticClass: "grey--text"
-  }, [_vm._v("Number 10")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Whitehaven Beach")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Whitsunday Island, Whitsunday Islands")])])]), _vm._v(" "), _c('v-card-actions', [_c('v-btn', {
+  }, [_vm._v("I live in Orlando and enjoy full stack web development, digital marketing, and business analytics...")])])]), _vm._v(" "), _c('v-card-actions', [_c('v-btn', {
     staticClass: "orange--text",
     attrs: {
       "flat": ""
     }
-  }, [_vm._v("Explore")])], 1)], 1)], 1)], 1)], 1)
+  }, [_vm._v("Read More")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
+    attrs: {
+      "row": "",
+      "wrap": ""
+    }
+  }, [_c('v-flex', {
+    attrs: {
+      "xs12": "",
+      "sm6": "",
+      "offset-sm3": ""
+    }
+  }, [_c('v-card', {
+    attrs: {
+      "hover": ""
+    },
+    on: {
+      "click": _vm.visitAbout
+    }
+  }, [_c('v-card-media', {
+    staticClass: "white--text",
+    attrs: {
+      "height": "200px",
+      "src": "https://vuetifyjs.com/static/doc-images/cards/desert.jpg"
+    }
+  }), _vm._v(" "), _c('v-card-title', [_c('div', [_c('span', [_vm._v("Backend Web Development")]), _c('br'), _vm._v(" "), _c('span', {
+    staticClass: "grey--text"
+  }, [_vm._v("I create Databases and API's with Laravel.")])])]), _vm._v(" "), _c('v-card-actions', [_c('v-btn', {
+    staticClass: "orange--text",
+    attrs: {
+      "flat": ""
+    }
+  }, [_vm._v("Read More")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
+    attrs: {
+      "row": "",
+      "wrap": ""
+    }
+  }, [_c('v-flex', {
+    attrs: {
+      "xs12": "",
+      "sm6": "",
+      "offset-sm3": ""
+    }
+  }, [_c('v-card', {
+    attrs: {
+      "hover": ""
+    },
+    on: {
+      "click": _vm.visitAbout
+    }
+  }, [_c('v-card-media', {
+    staticClass: "white--text",
+    attrs: {
+      "height": "200px",
+      "src": "https://vuetifyjs.com/static/doc-images/cards/desert.jpg"
+    }
+  }), _vm._v(" "), _c('v-card-title', [_c('div', [_c('span', [_vm._v("Frontend Web Development")]), _c('br'), _vm._v(" "), _c('span', {
+    staticClass: "grey--text"
+  }, [_vm._v("I create Progrssive Web Apps with Vue and use a few design frameworks to style my projects.")])])]), _vm._v(" "), _c('v-card-actions', [_c('v-btn', {
+    staticClass: "orange--text",
+    attrs: {
+      "flat": ""
+    }
+  }, [_vm._v("Read More")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
+    attrs: {
+      "row": "",
+      "wrap": ""
+    }
+  }, [_c('v-flex', {
+    attrs: {
+      "xs12": "",
+      "sm6": "",
+      "offset-sm3": ""
+    }
+  }, [_c('v-card', {
+    attrs: {
+      "hover": ""
+    },
+    on: {
+      "click": _vm.visitAbout
+    }
+  }, [_c('v-card-media', {
+    staticClass: "white--text",
+    attrs: {
+      "height": "200px",
+      "src": "https://vuetifyjs.com/static/doc-images/cards/desert.jpg"
+    }
+  }), _vm._v(" "), _c('v-card-title', [_c('div', [_c('span', [_vm._v("Digital Marketing")]), _c('br'), _vm._v(" "), _c('span', {
+    staticClass: "grey--text"
+  }, [_vm._v("I utilize SEO strategies, AdWords & other advertising platforms, and social media broadcasts to drive traffic and engagement to content.")])])]), _vm._v(" "), _c('v-card-actions', [_c('v-btn', {
+    staticClass: "orange--text",
+    attrs: {
+      "flat": ""
+    }
+  }, [_vm._v("Learn More")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
+    attrs: {
+      "row": "",
+      "wrap": ""
+    }
+  }, [_c('v-flex', {
+    attrs: {
+      "xs12": "",
+      "sm6": "",
+      "offset-sm3": ""
+    }
+  }, [_c('v-card', {
+    attrs: {
+      "hover": ""
+    },
+    on: {
+      "click": _vm.visitAbout
+    }
+  }, [_c('v-card-media', {
+    staticClass: "white--text",
+    attrs: {
+      "height": "200px",
+      "src": "https://vuetifyjs.com/static/doc-images/cards/desert.jpg"
+    }
+  }), _vm._v(" "), _c('v-card-title', [_c('div', [_c('span', [_vm._v("Business Analytics")]), _c('br'), _vm._v(" "), _c('span', {
+    staticClass: "grey--text"
+  }, [_vm._v("Accurately measuring Key Performance Indicators and Return on Investment is crucial to every business. I enjoy using a variety of tools and techniques to gather information and make decisions based on this data.")])])]), _vm._v(" "), _c('v-card-actions', [_c('v-btn', {
+    staticClass: "orange--text",
+    attrs: {
+      "flat": ""
+    }
+  }, [_vm._v("Read More")])], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -30351,14 +30547,6 @@ if (false) {
 /* 45 */
 /***/ (function(module, exports) {
 
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -30459,36 +30647,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "height": "200px",
       "src": "https://vuetifyjs.com/static/doc-images/cards/docks.jpg"
     }
-  }, [_c('v-container', {
-    attrs: {
-      "fill-height": "",
-      "fluid": ""
-    }
-  }, [_c('v-layout', {
-    attrs: {
-      "fill-height": ""
-    }
-  }, [_c('v-flex', {
-    attrs: {
-      "xs12": "",
-      "align-end": "",
-      "flexbox": ""
-    }
-  }, [_c('span', {
-    staticClass: "headline"
-  }, [_vm._v("About")])])], 1)], 1)], 1), _vm._v(" "), _c('v-card-title', [_c('div', [_c('span', {
+  }), _vm._v(" "), _c('v-card-title', [_c('div', [_c('span', [_vm._v("About Me")]), _c('br'), _vm._v(" "), _c('span', {
     staticClass: "grey--text"
-  }, [_vm._v("Number 10")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Whitehaven Beach")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Whitsunday Island, Whitsunday Islands")])])]), _vm._v(" "), _c('v-card-actions', [_c('v-btn', {
+  }, [_vm._v("I live in Orlando and enjoy full stack web development, digital marketing, and business analytics.")])])]), _vm._v(" "), _c('v-card-actions', [_c('v-btn', {
     staticClass: "orange--text",
     attrs: {
       "flat": ""
     }
-  }, [_vm._v("Share")]), _vm._v(" "), _c('v-btn', {
+  }, [_vm._v("Articles")]), _vm._v(" "), _c('v-btn', {
     staticClass: "orange--text",
     attrs: {
       "flat": ""
     }
-  }, [_vm._v("Explore")])], 1)], 1)], 1)], 1)], 1)
+  }, [_vm._v("Discuss")])], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
