@@ -10,7 +10,7 @@
 						<v-card-media
 							class="white--text"
 							height="200px"
-							src="https://vuetifyjs.com/static/doc-images/cards/docks.jpg"
+							src="https://vuetifyjs.com/static/doc-images/cards/desert.jpg"
 						>
 							<v-container fill-height fluid>
 								<v-layout fill-height>
@@ -28,7 +28,6 @@
 							</div>
 						</v-card-title>
 						<v-card-actions>
-							<v-btn flat class="orange--text">Share</v-btn>
 							<v-btn flat class="orange--text">Explore</v-btn>
 						</v-card-actions>
 					</v-card>

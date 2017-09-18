@@ -10,7 +10,7 @@
       </v-list>
       <v-list class="pt-0" dense>
         <v-divider light></v-divider>
-        <v-list-tile @click="visitHome">
+        <v-list-tile :to="{ name: 'Home' }" exact>
           <v-list-tile-action>
             <v-icon light>dashboard</v-icon>
           </v-list-tile-action>
@@ -18,7 +18,7 @@
             <v-list-tile-title>Home</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile @click="visitAbout">
+        <v-list-tile :to="{ name: 'About' }">
           <v-list-tile-action>
             <v-icon light>question_answer</v-icon>
           </v-list-tile-action>
@@ -92,14 +92,6 @@
         mini: false,
         right: null
       }
-    },
-    methods: {
-        visitHome() {
-            this.$router.push({path: '/'});
-        },
-        visitAbout() {
-            this.$router.push({path: '/about'});
-        }
     }
   }
 </script>

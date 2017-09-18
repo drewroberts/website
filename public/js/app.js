@@ -1725,15 +1725,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       mini: false,
       right: null
     };
-  },
-
-  methods: {
-    visitHome: function visitHome() {
-      this.$router.push({ path: '/' });
-    },
-    visitAbout: function visitAbout() {
-      this.$router.push({ path: '/about' });
-    }
   }
 });
 
@@ -2115,16 +2106,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "light": ""
     }
   }), _vm._v(" "), _c('v-list-tile', {
-    on: {
-      "click": _vm.visitHome
+    attrs: {
+      "to": {
+        name: 'Home'
+      },
+      "exact": ""
     }
   }, [_c('v-list-tile-action', [_c('v-icon', {
     attrs: {
       "light": ""
     }
   }, [_vm._v("dashboard")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Home")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
-    on: {
-      "click": _vm.visitAbout
+    attrs: {
+      "to": {
+        name: 'About'
+      }
     }
   }, [_c('v-list-tile-action', [_c('v-icon', {
     attrs: {
@@ -30208,7 +30204,7 @@ if (inBrowser && window.Vue) {
 
 
 
-var routes = [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_0__components_Home_vue___default.a }, { path: '/about', component: __WEBPACK_IMPORTED_MODULE_1__components_About_vue___default.a }];
+var routes = [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_0__components_Home_vue___default.a, name: 'Home' }, { path: '/about', component: __WEBPACK_IMPORTED_MODULE_1__components_About_vue___default.a, name: 'About' }];
 
 /***/ }),
 /* 42 */
@@ -30286,7 +30282,6 @@ module.exports = Component.exports
 //
 //
 //
-//
 
 /***/ }),
 /* 44 */
@@ -30320,7 +30315,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "white--text",
     attrs: {
       "height": "200px",
-      "src": "https://vuetifyjs.com/static/doc-images/cards/docks.jpg"
+      "src": "https://vuetifyjs.com/static/doc-images/cards/desert.jpg"
     }
   }, [_c('v-container', {
     attrs: {
@@ -30342,11 +30337,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Top 10 Florida beaches")])])], 1)], 1)], 1), _vm._v(" "), _c('v-card-title', [_c('div', [_c('span', {
     staticClass: "grey--text"
   }, [_vm._v("Number 10")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Whitehaven Beach")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Whitsunday Island, Whitsunday Islands")])])]), _vm._v(" "), _c('v-card-actions', [_c('v-btn', {
-    staticClass: "orange--text",
-    attrs: {
-      "flat": ""
-    }
-  }, [_vm._v("Share")]), _vm._v(" "), _c('v-btn', {
     staticClass: "orange--text",
     attrs: {
       "flat": ""
