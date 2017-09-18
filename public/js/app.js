@@ -2154,13 +2154,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "light": ""
     }
   }, [_c('v-btn', {
-    staticClass: "amber accent-4",
+    staticClass: "light-blue lighten-1",
     attrs: {
       "slot": "activator",
       "dark": ""
     },
     slot: "activator"
-  }, [_vm._v("Say Hello")]), _vm._v(" "), _c('v-list', [_c('v-subheader', [_vm._v("Contact me through:")]), _vm._v(" "), _c('v-list-tile', {
+  }, [_vm._v("Contact")]), _vm._v(" "), _c('v-list', [_c('v-subheader', [_vm._v("Contact me through:")]), _vm._v(" "), _c('v-list-tile', {
     attrs: {
       "href": "https://www.facebook.com/DrewRoberts"
     }

@@ -25,7 +25,7 @@
               <v-toolbar-title>Drew Roberts</v-toolbar-title>
               <v-spacer></v-spacer>
               <v-bottom-sheet light>
-                  <v-btn slot="activator" class="amber accent-4" dark>Say Hello</v-btn>
+                  <v-btn slot="activator" class="light-blue lighten-1" dark>Contact</v-btn>
                   <v-list>
                     <v-subheader>Contact me through:</v-subheader>
                     <v-list-tile href="https://www.facebook.com/DrewRoberts">
