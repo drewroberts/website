@@ -25,9 +25,7 @@
               <v-toolbar-title>Drew Roberts</v-toolbar-title>
               <v-spacer></v-spacer>
               <v-bottom-sheet>
-                    <v-btn slot="activator" icon class="amber--text">
-                      <v-icon>mdi-comment-account-outline</v-icon>
-                    </v-btn>
+                    <v-btn slot="activator" outline class="amber--text">Contact</v-btn>
                   <v-list>
                     <v-subheader>Reach out to me through:</v-subheader>
                     <v-list-tile href="https://www.facebook.com/DrewRoberts">
@@ -69,7 +67,6 @@
                   </v-list>
                 </v-bottom-sheet>
         </v-toolbar>
-        
         <main class="grey lighten-4">
             <v-container
         fluid
