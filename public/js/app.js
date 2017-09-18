@@ -2169,7 +2169,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "light": ""
     }
-  }, [_vm._v("mdi-account-circle")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("About")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
+  }, [_vm._v("mdi-account-circle")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("About Me")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
     attrs: {
       "to": {
         name: 'Backend'
@@ -2179,7 +2179,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "light": ""
     }
-  }, [_vm._v("mdi-database")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Backend")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
+  }, [_vm._v("mdi-database")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Backend Development")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
     attrs: {
       "to": {
         name: 'Frontend'
@@ -2189,7 +2189,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "light": ""
     }
-  }, [_vm._v("web")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Frontend")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
+  }, [_vm._v("web")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Frontend Development")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
     attrs: {
       "to": {
         name: 'Marketing'
@@ -2199,7 +2199,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "light": ""
     }
-  }, [_vm._v("network_check")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Marketing")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
+  }, [_vm._v("network_check")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Digital Marketing")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
     attrs: {
       "to": {
         name: 'Analytics'
@@ -2209,7 +2209,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "light": ""
     }
-  }, [_vm._v("mdi-chart-areaspline")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Analytics")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
+  }, [_vm._v("mdi-chart-areaspline")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Business Analytics")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
     attrs: {
       "to": {
         name: 'Tools'
@@ -2219,7 +2219,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "light": ""
     }
-  }, [_vm._v("mdi-git")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Tools")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-toolbar', {
+  }, [_vm._v("mdi-git")])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Tools I Use")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-toolbar', {
     staticClass: "indigo darken-4",
     attrs: {
       "fixed": "",

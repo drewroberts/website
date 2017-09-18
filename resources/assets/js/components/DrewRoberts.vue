@@ -23,7 +23,7 @@
             <v-icon light>mdi-account-circle</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>About</v-list-tile-title>
+            <v-list-tile-title>About Me</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile :to="{ name: 'Backend' }">
@@ -31,7 +31,7 @@
             <v-icon light>mdi-database</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Backend</v-list-tile-title>
+            <v-list-tile-title>Backend Development</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile :to="{ name: 'Frontend' }">
@@ -39,7 +39,7 @@
             <v-icon light>web</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Frontend</v-list-tile-title>
+            <v-list-tile-title>Frontend Development</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile :to="{ name: 'Marketing' }">
@@ -47,7 +47,7 @@
             <v-icon light>network_check</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Marketing</v-list-tile-title>
+            <v-list-tile-title>Digital Marketing</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile :to="{ name: 'Analytics' }">
@@ -55,7 +55,7 @@
             <v-icon light>mdi-chart-areaspline</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Analytics</v-list-tile-title>
+            <v-list-tile-title>Business Analytics</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile :to="{ name: 'Tools' }">
@@ -63,7 +63,7 @@
             <v-icon light>mdi-git</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Tools</v-list-tile-title>
+            <v-list-tile-title>Tools I Use</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
