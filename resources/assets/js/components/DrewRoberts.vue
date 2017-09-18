@@ -2,19 +2,11 @@
     <v-app id="example-8" dark toolbar>
     <v-navigation-drawer absolute persistent light v-model="drawer" overflow>
       <v-list class="pa-1">
-        <v-list-tile>
-          <v-list-tile-action>
-            <v-icon>chevron_right</v-icon>
-          </v-list-tile-action>
-        </v-list-tile>
-        <v-list-tile avatar tag="div">
-          <v-list-tile-avatar>
-            <img src="https://randomuser.me/api/portraits/men/85.jpg" />
+        <div style="width:200px;margin:auto;padding-top:10px;padding-bottom:10px;">
+          <v-list-tile-avatar tag="div" size="200px">
+            <img src="/img/drewroberts.jpg" />
           </v-list-tile-avatar>
-          <v-list-tile-content>
-            <v-list-tile-title>Drew Roberts</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
+        </div>
       </v-list>
       <v-list class="pt-0" dense>
         <v-divider light></v-divider>
@@ -75,7 +67,7 @@
                   </v-list>
                 </v-bottom-sheet>
         </v-toolbar>
-        <main class="grey lighten-1">
+        <main class="grey lighten-4">
             <v-container
         fluid
         style="max-width: 970px;"

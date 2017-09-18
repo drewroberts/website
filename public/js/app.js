@@ -1738,14 +1738,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2109,16 +2101,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('v-list', {
     staticClass: "pa-1"
-  }, [_c('v-list-tile', [_c('v-list-tile-action', [_c('v-icon', [_vm._v("chevron_right")])], 1)], 1), _vm._v(" "), _c('v-list-tile', {
-    attrs: {
-      "avatar": "",
-      "tag": "div"
+  }, [_c('div', {
+    staticStyle: {
+      "width": "200px",
+      "margin": "auto",
+      "padding-top": "10px",
+      "padding-bottom": "10px"
     }
-  }, [_c('v-list-tile-avatar', [_c('img', {
+  }, [_c('v-list-tile-avatar', {
     attrs: {
-      "src": "https://randomuser.me/api/portraits/men/85.jpg"
+      "tag": "div",
+      "size": "200px"
     }
-  })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Drew Roberts")])], 1)], 1)], 1), _vm._v(" "), _c('v-list', {
+  }, [_c('img', {
+    attrs: {
+      "src": "/img/drewroberts.jpg"
+    }
+  })])], 1)]), _vm._v(" "), _c('v-list', {
     staticClass: "pt-0",
     attrs: {
       "dense": ""
@@ -2210,7 +2209,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "medium": ""
     }
   }, [_vm._v("mdi-email")])], 1), _vm._v(" "), _c('v-list-tile-title', [_vm._v("Email")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('main', {
-    staticClass: "grey lighten-1"
+    staticClass: "grey lighten-4"
   }, [_c('v-container', {
     staticStyle: {
       "max-width": "970px"
