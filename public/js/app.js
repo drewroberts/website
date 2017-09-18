@@ -30564,7 +30564,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "flat": ""
     }
-  }, [_vm._v("Read More")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
+  }, [_vm._v("Learn More")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
     attrs: {
       "row": "",
       "wrap": ""
@@ -30595,7 +30595,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "flat": ""
     }
-  }, [_vm._v("Read More")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
+  }, [_vm._v("Learn More")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
     attrs: {
       "row": "",
       "wrap": ""
@@ -30657,7 +30657,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "flat": ""
     }
-  }, [_vm._v("Read More")])], 1)], 1)], 1)], 1)], 1)
+  }, [_vm._v("Learn More")])], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

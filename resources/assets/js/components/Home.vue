@@ -41,7 +41,7 @@
 						</div>
 					</v-card-title>
 					<v-card-actions>
-						<v-btn flat class="orange--text">Read More</v-btn>
+						<v-btn flat class="orange--text">Learn More</v-btn>
 					</v-card-actions>
 				</v-card>
 			</v-flex>
@@ -62,7 +62,7 @@
 						</div>
 					</v-card-title>
 					<v-card-actions>
-						<v-btn flat class="orange--text">Read More</v-btn>
+						<v-btn flat class="orange--text">Learn More</v-btn>
 					</v-card-actions>
 				</v-card>
 			</v-flex>
@@ -104,7 +104,7 @@
 						</div>
 					</v-card-title>
 					<v-card-actions>
-						<v-btn flat class="orange--text">Read More</v-btn>
+						<v-btn flat class="orange--text">Learn More</v-btn>
 					</v-card-actions>
 				</v-card>
 			</v-flex>
