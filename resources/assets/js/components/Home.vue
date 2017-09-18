@@ -27,7 +27,7 @@
 		</v-layout>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 offset-sm3>
-				<v-card hover @click="visitAbout">
+				<v-card hover @click="visitBackend">
 					<v-card-media
 						class="white--text"
 						height="200px"
@@ -48,7 +48,7 @@
 		</v-layout>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 offset-sm3>
-				<v-card hover @click="visitAbout">
+				<v-card hover @click="visitFrontend">
 					<v-card-media
 						class="white--text"
 						height="200px"
@@ -69,7 +69,7 @@
 		</v-layout>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 offset-sm3>
-				<v-card hover @click="visitAbout">
+				<v-card hover @click="visitMarketing">
 					<v-card-media
 						class="white--text"
 						height="200px"
@@ -90,7 +90,7 @@
 		</v-layout>
 		<v-layout row wrap>
 			<v-flex xs12 sm6 offset-sm3>
-				<v-card hover @click="visitAbout">
+				<v-card hover @click="visitAnalytics">
 					<v-card-media
 						class="white--text"
 						height="200px"
@@ -117,6 +117,18 @@
 		methods: {
 			visitAbout() {
 				this.$router.push('/about');
+			},
+			visitBackend() {
+				this.$router.push('/backend');
+			},
+			visitFrontend() {
+				this.$router.push('/frontend');
+			},
+			visitMarketing() {
+				this.$router.push('/marketing');
+			},
+			visitAnalytics() {
+				this.$router.push('/analytics');
 			}
 		}
 	}

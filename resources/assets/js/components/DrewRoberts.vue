@@ -12,7 +12,7 @@
         <v-divider light></v-divider>
         <v-list-tile :to="{ name: 'Home' }" exact>
           <v-list-tile-action>
-            <v-icon light>dashboard</v-icon>
+            <v-icon light>mdi-home-automation</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>Home</v-list-tile-title>
@@ -20,10 +20,50 @@
         </v-list-tile>
         <v-list-tile :to="{ name: 'About' }">
           <v-list-tile-action>
-            <v-icon light>question_answer</v-icon>
+            <v-icon light>mdi-account-circle</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>About</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile :to="{ name: 'Backend' }">
+          <v-list-tile-action>
+            <v-icon light>mdi-database</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Backend</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile :to="{ name: 'Frontend' }">
+          <v-list-tile-action>
+            <v-icon light>web</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Frontend</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile :to="{ name: 'Marketing' }">
+          <v-list-tile-action>
+            <v-icon light>network_check</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Marketing</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile :to="{ name: 'Analytics' }">
+          <v-list-tile-action>
+            <v-icon light>mdi-chart-areaspline</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Analytics</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile :to="{ name: 'Tools' }">
+          <v-list-tile-action>
+            <v-icon light>mdi-git</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Tools</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
