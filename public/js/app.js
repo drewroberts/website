@@ -745,10 +745,8 @@ module.exports = function bind(fn, thisArg) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routes_js__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vuetify__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_DrewRoberts_vue__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_DrewRoberts_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_DrewRoberts_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_DrewRoberts_vue__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_DrewRoberts_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_DrewRoberts_vue__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -765,9 +763,6 @@ var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({ r
   mode: 'history' });
 
 
-Vue.use(__WEBPACK_IMPORTED_MODULE_2_vuetify___default.a);
-
-
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -778,7 +773,7 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_2_vuetify___default.a);
 var app = new Vue({
   el: '#app',
   router: router,
-  components: { drewroberts: __WEBPACK_IMPORTED_MODULE_3__components_DrewRoberts_vue___default.a }
+  components: { drewroberts: __WEBPACK_IMPORTED_MODULE_2__components_DrewRoberts_vue___default.a }
 });
 
 /***/ }),
@@ -1733,6 +1728,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports, __webpack_require__) {
 
 window.Vue = __webpack_require__(33);
+window.Vuetify = __webpack_require__(34);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -30282,6 +30278,11 @@ module.exports = Component.exports
 //
 //
 //
+//
+//
+//
+//
+//
 
 /***/ }),
 /* 44 */
@@ -30290,13 +30291,30 @@ module.exports = Component.exports
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('v-container', {
     staticStyle: {
-      "max-width": "970px"
+      "padding": "0"
     },
     attrs: {
       "fluid": "",
       "grid-list-lg": ""
     }
+  }, [_c('v-parallax', {
+    attrs: {
+      "height": "700",
+      "src": "https://vuetifyjs.com/static/doc-images/vbanner.jpg"
+    }
   }, [_c('v-layout', {
+    attrs: {
+      "column": "",
+      "align-center": "",
+      "justify-center": ""
+    }
+  }, [_c('h1', {
+    staticClass: "white--text"
+  }, [_vm._v("Drew Roberts")])])], 1), _vm._v(" "), _c('v-layout', {
+    staticStyle: {
+      "max-width": "970px",
+      "padding": "17px"
+    },
     attrs: {
       "row": "",
       "wrap": ""

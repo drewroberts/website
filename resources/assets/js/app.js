@@ -13,9 +13,6 @@ import VueRouter from 'vue-router';
  const router = new VueRouter({ routes,
 	mode: 'history' });
 
-import Vuetify from 'vuetify';
- Vue.use(Vuetify);
-
 import drewroberts from './components/DrewRoberts.vue';
 
 /**
@@ -23,7 +20,6 @@ import drewroberts from './components/DrewRoberts.vue';
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
 
 const app = new Vue({
     el: '#app',

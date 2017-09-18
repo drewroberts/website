@@ -1,4 +1,5 @@
 window.Vue = require('vue');
+window.Vuetify = require('vuetify');
 
 
 /**
