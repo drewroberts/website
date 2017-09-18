@@ -13,9 +13,12 @@ import VueRouter from 'vue-router';
  const router = new VueRouter({ routes,
 	mode: 'history' });
 
-import VueAnalytics from 'vue-analytics'
+import VueAnalytics from 'vue-ua';
  Vue.use(VueAnalytics, {
-	id: 'UA-100534702-1'
+	appName: 'web',
+	appVersion: 'analytics.js',
+	trackingId: 'UA-100534702-1',
+	vueRouter: router,
  })
 
 import drewroberts from './components/DrewRoberts.vue';
