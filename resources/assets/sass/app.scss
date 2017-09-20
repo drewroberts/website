@@ -3,5 +3,16 @@
 
 // Variables
 @import "variables";
+
+
+.slide-leave-active, .slide-enter-active {
+  transition: 0.4s;
+}
+.slide-enter {
+  transform: translate(100%, 0);
+}
+.slide-leave-to {
+  transform: translate(-100%, 0);
+}
  
 @require 'node_modules/vuetify/src/stylus/app'

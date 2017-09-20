@@ -110,12 +110,9 @@
                 </v-bottom-sheet>
         </v-toolbar>
         <main class="grey lighten-4">
-          <router-view
-            class="view"
-            keep-alive
-            transition
-            transition-mode="out-in">
-          </router-view>
+            <transition name="slide" mode="out-in">
+                <router-view class="view"></router-view>
+            </transition>
         </main>
     </v-app>
 </template>

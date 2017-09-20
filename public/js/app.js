@@ -1758,9 +1758,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2285,14 +2282,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("mdi-comment-text-outline")])], 1), _vm._v(" "), _c('v-list-tile-title', [_vm._v("Contact Form")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('main', {
     staticClass: "grey lighten-4"
-  }, [_c('router-view', {
-    staticClass: "view",
+  }, [_c('transition', {
     attrs: {
-      "keep-alive": "",
-      "transition": "",
-      "transition-mode": "out-in"
+      "name": "slide",
+      "mode": "out-in"
     }
-  })], 1)], 1)
+  }, [_c('router-view', {
+    staticClass: "view"
+  })], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
