@@ -13,7 +13,7 @@ class CreateTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('types', function (Blueprint $table) { // Used for everything that needs to be categorized. Resources, Sessions, Topics, etc.
+        Schema::create('types', function (Blueprint $table) { // Used for everything that needs to be categorized. Images, Videos, Resources, Sessions, Topics, etc.
             $table->increments('id');
             $table->timestamps();
         });
