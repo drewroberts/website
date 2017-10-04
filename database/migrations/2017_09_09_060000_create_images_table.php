@@ -23,6 +23,7 @@ class CreateImagesTable extends Migration
             $table->enum('mime', ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'psd']); // need to force lowercase
             $table->string('width');
             $table->string('height');
+            $table->string('credits')->nullable();
             $table->unsignedInteger('created_by')->index();
             $table->unsignedInteger('updated_by');
             $table->unsignedInteger('approved_by')->default(1);
