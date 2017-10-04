@@ -15,7 +15,14 @@ class CreateTypesTable extends Migration
     {
         Schema::create('types', function (Blueprint $table) { // Used for everything that needs to be categorized. Images, Videos, Resources, Sessions, Topics, etc.
             $table->increments('id');
+            $table->string('slug')->unique()->index();
+            $table->string('title')->unique();
+            $table->string('description');
+            $table->string('width')->nullable(); // Image & Video Types Only
+            $table->string('height')->nullable(); // Image & Video Types Only
+            $table->string('path')->nullable(); // Image & Video Types Only
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
