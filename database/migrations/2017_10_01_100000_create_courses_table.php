@@ -26,7 +26,7 @@ class CreateCoursesTable extends Migration
             $table->unsignedInteger('video_id')->nullable(); // Primary pomotional video for course. Can have more with videoable entries and types.
             $table->boolean('feature')->default(0)->index(); // If article is big news and should be featured, then put 1
             
-            // Need a model for course classes. Can't name it that. Doesn't look like I can name it Episodes either.
+            // Need a model for course classes. Can't name it that, naming Episodes.
             $table->unsignedInteger('taught_by')->default(1)->index(); // Primary teacher for course.
             $table->unsignedInteger('created_by');
             $table->unsignedInteger('updated_by');

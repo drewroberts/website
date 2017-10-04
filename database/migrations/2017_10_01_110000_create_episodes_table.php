@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateContestantsTable extends Migration
+class CreateEpisodesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateContestantsTable extends Migration
      */
     public function up()
     {
-        Schema::create('contestants', function (Blueprint $table) {
+        Schema::create('episodes', function (Blueprint $table) { // Typically for courses, but could also be Podcasts, article installments, and other things, so Polymorphic
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateContestantsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contestants');
+        Schema::dropIfExists('episodes');
     }
 }
