@@ -21,7 +21,7 @@ class CreateTypesTable extends Migration
             $table->string('width')->nullable(); // Image & Video Types Only
             $table->string('height')->nullable(); // Image & Video Types Only
             $table->string('path')->nullable(); // Image & Video Types Only
-            $table->string('source')->nullable(); // Image & Video Types Only. YouTube, Vimeo, Facebook, Instagram, Twitter, local video, etc.
+            $table->string('source')->nullable(); // Image, Video & Account Types Only. YouTube, Vimeo, Facebook, Instagram, Twitter, local video, etc.
             $table->timestamps();
             $table->softDeletes();
         });

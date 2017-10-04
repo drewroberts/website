@@ -17,7 +17,7 @@ class CreateImagesTable extends Migration
             $table->increments('id');
             $table->string('filename')->unique()->index(); // Includes mime type extension - need to force lowercase
             $table->string('path_prefix');
-            $table->unsignedInteger('image_type_id')->index(); // Allows groupings for image styles, purposes, positions in content, features, etc.
+            $table->unsignedInteger('type_id')->index(); // Allows groupings for image styles, purposes, positions in content, features, etc.
             $table->string('imageable_type')->index();
             $table->unsignedInteger('imageable_id')->index();
             $table->enum('mime', ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'psd']); // need to force lowercase
@@ -33,7 +33,7 @@ class CreateImagesTable extends Migration
         });
 
         Schema::table('images', function($table) {
-            $table->foreign('image_type_id')->references('id')->on('image_types')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('approved_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
@@ -48,7 +48,7 @@ class CreateImagesTable extends Migration
     public function down()
     {
         Schema::table('images', function ($table) {
-            $table->dropForeign(['image_type_id']);
+            $table->dropForeign(['type_id']);
             $table->dropForeign(['created_by']);
             $table->dropForeign(['updated_by']);
             $table->dropForeign(['approved_by']);
