@@ -17,7 +17,6 @@ class CreateQuizzesTable extends Migration
             $table->increments('id');
             $table->string('slug')->unique()->index();
             $table->unsignedInteger('type_id')->index(); // Allows groupings for positions in on homepage, features, treatment of topic, etc.
-            $table->unsignedInteger('state_id')->index(); // Allows the setting of the current state of the quiz. For example the question # or when it it linked from homepage or has ended. Need to flesh out this concept more.
             $table->string('title')->unique();
             $table->string('description');
             $table->string('excerpt'); // Longer description for homepage and parent topic pages.
