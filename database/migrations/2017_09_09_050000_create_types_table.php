@@ -35,6 +35,8 @@ class CreateTypesTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('types');
+        Schema::enableForeignKeyConstraints();
     }
 }
