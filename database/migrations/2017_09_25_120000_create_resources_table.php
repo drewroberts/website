@@ -21,7 +21,7 @@ class CreateResourcesTable extends Migration
             $table->string('title');
             $table->string('description'); // Really is an excerpt for social.
             $table->unsignedInteger('image_id')->index(); // path to edited cover image for article
-            $table->tinyInteger('order', 2)->unsigned()->default(1); // Use this to order the resources for the resource type on the topic. 1-99
+            $table->tinyInteger('order')->unsigned()->default(1); // Use this to order the resources for the resource type on the topic. 1-99
             $table->string('resourceable_type')->nullable(); // Link to internal resources on the topic
             $table->unsignedInteger('resourceable_id')->nullable();
             $table->text('content'); // Will be shown under video resources too

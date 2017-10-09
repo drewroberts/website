@@ -16,9 +16,9 @@ class CreateAnswersTable extends Migration
         Schema::create('answers', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('question_id')->index();
-            $table->tinyInteger('order', 2)->unsigned()->default(1); // Use this to order the questions on the quiz. 1-99
+            $table->tinyInteger('order')->unsigned()->default(1); // Use this to order the questions on the quiz. 1-99
             $table->boolean('correct')->default(0)->index(); // If is a correct answer to the question, then put 1
-            $table->tinyInteger('points', 2)->default(1); // Use this to assign a value to the answer. Positive or negative. (Negative if wrong, various positive points if multiple answers)
+            $table->tinyInteger('points')->default(1); // Use this to assign a value to the answer. Positive or negative. (Negative if wrong, various positive points if multiple answers)
             $table->string('text');
             $table->unsignedInteger('created_by');
             $table->unsignedInteger('updated_by');

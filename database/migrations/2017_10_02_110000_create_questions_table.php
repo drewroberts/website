@@ -16,7 +16,7 @@ class CreateQuestionsTable extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('quiz_id')->index();
-            $table->tinyInteger('order', 2)->unsigned()->default(1); // Use this to order the questions on the quiz. 1-99
+            $table->tinyInteger('order')->unsigned()->default(1); // Use this to order the questions on the quiz. 1-99
             $table->string('text'); // The questions text. For now, limit to 255 characters
             $table->unsignedInteger('created_by');
             $table->unsignedInteger('updated_by');
