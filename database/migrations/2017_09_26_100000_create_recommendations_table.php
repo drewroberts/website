@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateArticlesTable extends Migration
+class CreateRecommendationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,29 +13,27 @@ class CreateArticlesTable extends Migration
      */
     public function up()
     {
-        Schema::create('articles', function (Blueprint $table) {
+        Schema::create('recommendations', function (Blueprint $table) { // Use URL path of drewroberts.com/recommends/something. One to many relationship with brands, products, places, and reviews. Brands can also be topics, so recommends pages can link to topic page and display articles too.
             $table->increments('id');
-            $table->unsignedInteger('topic_id')->index();
             $table->string('slug')->unique()->index();
             $table->string('title');
             $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->index(); // path to edited cover image for article
+            $table->unsignedInteger('image_id')->index(); // path to edited cover image for the recommendation
             $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here.
-            $table->boolean('feature')->default(0)->index(); // If article is big news and should be featured, then put 1
+            $table->unsignedInteger('type_id')->index();
+            $table->boolean('feature')->default(0)->index(); // If recommendation is big traffic driver and should be featured, then put 1
             $table->text('content'); // Will be shown under video articles too
-            $table->string('pageviews')->nullable(); // Total current pageviews for article. Pageview time breakdowns will be in stats table.
-            $table->unsignedInteger('editor_id')->nullable(); // Will use later when have editorial system. All contributing authors will be in contributors table.
-            $table->unsignedInteger('created_by'); // Default author_id should be me! But can use this in case some need a different author down the road.
+            $table->string('pageviews')->nullable(); // Total current pageviews for recommendation. Pageview time breakdowns will be in stats table.
+            $table->unsignedInteger('created_by')->default(0);
             $table->unsignedInteger('updated_by');
             $table->timestamps();
             $table->softDeletes();
         });
 
-        Schema::table('articles', function($table) {
-            $table->foreign('topic_id')->references('id')->on('topics')->onDelete('restrict')->onUpdate('cascade');
+        Schema::table('recommendations', function($table) {
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('video_id')->references('id')->on('videos')->onDelete('restrict')->onUpdate('cascade');
-            $table->foreign('editor_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('type_id')->references('id')->on('topics')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
@@ -48,17 +46,16 @@ class CreateArticlesTable extends Migration
      */
     public function down()
     {
-        Schema::table('articles', function ($table) {
-            $table->dropForeign(['topic_id']);
+        Schema::table('recommendations', function ($table) {
             $table->dropForeign(['image_id']);
             $table->dropForeign(['video_id']);
-            $table->dropForeign(['editor_id']);
+            $table->dropForeign(['type_id']);
             $table->dropForeign(['created_by']);
             $table->dropForeign(['updated_by']);
         });
 
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('articles');
+        Schema::dropIfExists('recommendations');
         Schema::enableForeignKeyConstraints();
     }
 }
