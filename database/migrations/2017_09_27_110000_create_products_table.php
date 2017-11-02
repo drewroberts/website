@@ -21,9 +21,10 @@ class CreateProductsTable extends Migration
             $table->string('description'); // Really is an excerpt for social.
             $table->unsignedInteger('image_id')->index(); // path to edited cover image for the recommendation
             $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here.
+            $table->unsignedInteger('type_id')->nullable(); // Use for primary grouping of products by types. Can use other categories as well
             $table->date('launched')->nullable(); // Estimated date when product first available.
             $table->date('expired')->nullable();
-            $table->unsignedInteger('type_id')->nullable(); // Use for primary grouping of products by types. Can use other categories as well
+            $table->text('content'); // Will be shown under video articles too
             $table->string('facebook')->nullable()->unique(); // Username if product has own facebook page
             $table->string('instagram')->nullable()->unique(); // Username if product has own instagram account
             $table->string('twitter')->nullable()->unique(); // Username if product has own twitter account

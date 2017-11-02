@@ -22,11 +22,12 @@ class CreatePlacesTable extends Migration
             $table->string('description'); // Really is an excerpt for social.
             $table->unsignedInteger('image_id')->index(); // path to edited cover image for the recommendation
             $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here.
+            $table->unsignedInteger('type_id')->nullable(); // Use for primary grouping of places by types. Can use other categories as well
+            $table->text('content'); // Will be shown under video articles too
+            $table->boolean('multiple')->default(0); // If is a franchise or part of company with multiple locations then put 1
             $table->date('first_visit')->default('2015-01-01'); // First time I went to place
             $table->date('opened')->default('2015-01-01'); // Estimated open date
             $table->date('closed')->nullable();
-            $table->boolean('multiple')->default(0); // If is a franchise or part of company with multiple locations then put 1
-            $table->unsignedInteger('type_id')->nullable(); // Use for primary grouping of places by types. Can use other categories as well
             $table->string('address')->nullable();
             $table->string('city')->nullable();
             $table->string('state', 2)->nullable();
