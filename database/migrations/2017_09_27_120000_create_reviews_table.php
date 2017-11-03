@@ -13,7 +13,7 @@ class CreateReviewsTable extends Migration
      */
     public function up()
     {
-        Schema::create('reviews', function (Blueprint $table) { // Brands, products, places can all have multiple reviews. Polymorphic relationship of one review to one of those reviewable models. Reviews don't have their own URL, just show as content in a section on the other models' pages.
+        Schema::create('reviews', function (Blueprint $table) { // Brands, products, places can all have multiple reviews. Polymorphic relationship of one review to one of those reviewable models. Reviews don't have their own URL, just show as content in a section on the pages of other models.
             $table->increments('id');
             $table->string('reviewable_type')->index(); // Brands, products, places
             $table->unsignedInteger('reviewable_id')->index();

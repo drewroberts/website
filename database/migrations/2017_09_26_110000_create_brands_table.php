@@ -13,9 +13,8 @@ class CreateBrandsTable extends Migration
      */
     public function up()
     {
-        Schema::create('brands', function (Blueprint $table) {
+        Schema::create('brands', function (Blueprint $table) { // These do not have front end URL's. Used for organizational purposes as part of recommendations.
             $table->increments('id');
-            $table->string('slug')->unique()->index(); // How location will display on the front end of website. No underscores, only lowercase letters and dashes.
             $table->string('title')->unique(); // Name of place for display
             $table->string('description'); // Really is an excerpt for social.
             $table->unsignedInteger('image_id')->index(); // path to edited cover image for the recommendation
