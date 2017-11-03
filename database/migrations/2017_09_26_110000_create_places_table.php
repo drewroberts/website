@@ -13,14 +13,14 @@ class CreatePlacesTable extends Migration
      */
     public function up()
     {
-        Schema::create('places', function (Blueprint $table) {
+        Schema::create('places', function (Blueprint $table) { // Market_id used for URL structure. Example ./florida/orlando/corona or ./florida/winter-park/barnies
             $table->increments('id');
-            $table->unsignedInteger('market_id')->index(); // Use for URL structure. Example drewroberts.com/florida/corona
-            $table->unsignedInteger('brand_id')->index(); // If brand has own page, then assign here
+            $table->unsignedInteger('market_id')->index(); // Groups locations into cities, Orlando, Winter Park, Shelbyville, Lexington, etc.
+            $table->unsignedInteger('brand_id')->index(); // If have created brand for the business, then assign here
             $table->string('slug')->unique()->index(); // How location will display on the front end of website. No underscores, only lowercase letters and dashes.
             $table->string('title')->unique(); // Name of place for display
             $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->index(); // path to edited cover image for the place
+            $table->unsignedInteger('image_id')->nullable()->index(); // path to edited cover image for the place
             $table->unsignedInteger('video_id')->nullable(); // If want featured video at the top instead of image, then include the video id here.
             $table->unsignedInteger('type_id')->nullable(); // Use for primary grouping of places by types. Can use other categories as well, but this is primary industry (restaurants, coffee shops, cigars, parks, etc.)
             $table->text('content'); // Will be shown under video articles too

@@ -13,13 +13,14 @@ class CreateRecommendationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('recommendations', function (Blueprint $table) { // Use URL path of drewroberts.com/recommends/something. One to many relationship with brands, products, places, and reviews. Brands can also be topics, so recommends pages can link to topic page and display articles too.
+        Schema::create('recommendations', function (Blueprint $table) { // Use URL path of drewroberts.com/recommends/something. One to many relationship with brands, products, places, and reviews. Brands can also be topics, so brand recommendation pages can link to topic page and display articles too.
             $table->increments('id');
             $table->string('slug')->unique()->index();
             $table->string('title');
             $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->index(); // path to edited cover image for the recommendation
+            $table->unsignedInteger('image_id')->nullable()->index(); // path to edited cover image for the recommendation
             $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here.
+            $table->unsignedInteger('brand_id')->nullable()->unique()->index(); // If the recommendation is just one brand, then put brand_id here and this becomes the URL for the brand. 1 to 1 relationship.
             $table->unsignedInteger('type_id')->index();
             $table->boolean('feature')->default(0)->index(); // If recommendation is big traffic driver and should be featured, then put 1
             $table->text('content'); // Will be shown under video articles too

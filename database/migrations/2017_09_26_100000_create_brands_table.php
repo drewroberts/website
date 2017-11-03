@@ -15,10 +15,9 @@ class CreateBrandsTable extends Migration
     {
         Schema::create('brands', function (Blueprint $table) { // These do not have front end URL's. Used for organizational purposes as part of recommendations.
             $table->increments('id');
-            $table->string('title')->unique(); // Name of place for display
-            $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->index(); // path to edited cover image for the recommendation
-            $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here.
+            $table->string('title')->unique(); // Name of company
+            $table->string('description'); // Quick overview of what company does
+            $table->unsignedInteger('image_id')->nullable()->index(); // company logo
             $table->unsignedInteger('topic_id')->nullable(); // If brand is also a topic for articles/videos, then include the topic id here.
             $table->unsignedInteger('type_id')->nullable(); // Use for primary grouping of brands by types. Can use other categories as well
             $table->date('launched')->nullable(); // Estimated date when company started
@@ -36,7 +35,6 @@ class CreateBrandsTable extends Migration
 
         Schema::table('brands', function($table) {
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
-            $table->foreign('video_id')->references('id')->on('videos')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('topic_id')->references('id')->on('topics')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
@@ -54,7 +52,6 @@ class CreateBrandsTable extends Migration
         Schema::table('brands', function ($table) {
             $table->dropForeign(['brand_id']);
             $table->dropForeign(['image_id']);
-            $table->dropForeign(['video_id']);
             $table->dropForeign(['topic_id']);
             $table->dropForeign(['type_id']);
             $table->dropForeign(['created_by']);
