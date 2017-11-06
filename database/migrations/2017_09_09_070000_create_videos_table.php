@@ -18,7 +18,7 @@ class CreateVideosTable extends Migration
             $table->unsignedInteger('type_id')->index(); // Allows groupings for video sources (YouTube, FB, Vimeo), styles, purposes, positions in content, features, etc.
             $table->string('slug')->unique()->index(); // Used for video's URL on our frontend.
             $table->string('name')->unique()->index(); // Name = Identifier on external source. Depending on type, it should be the Youtube, Facebook or Vimeo ID and the slug if video is on our server.
-            $table->string('title')->nullable();
+            $table->string('title')->nullable(); // What we call the video.
             $table->string('description')->nullable();
             $table->string('videoable_type')->index();
             $table->unsignedInteger('videoable_id')->index();

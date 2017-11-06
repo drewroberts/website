@@ -13,7 +13,7 @@ class CreateResourcesTable extends Migration
      */
     public function up()
     {
-        Schema::create('resources', function (Blueprint $table) { // External links for more info on topic. Good articles, documentation, etc. sorted into topics & types.
+        Schema::create('resources', function (Blueprint $table) { // External links for more info on topic. Good articles, documentation, GitHub, etc. sorted into types.
             $table->increments('id');
             $table->unsignedInteger('topic_id')->index();
             $table->unsignedInteger('type_id')->index();
@@ -21,12 +21,11 @@ class CreateResourcesTable extends Migration
             $table->string('title');
             $table->string('description'); // Really is an excerpt for social.
             $table->unsignedInteger('image_id')->unsigned()->index(); // path to edited cover image for resource
-            $table->tinyInteger('order')->unsigned()->default(1); // Use this to order the resources for the resource type on the topic. 1-99
+            $table->string('url'); // For external resource that 
             $table->string('resourceable_type')->nullable(); // Link to internal resources on the topic
             $table->unsignedInteger('resourceable_id')->nullable();
-            $table->text('content'); // Will be shown under video resources too
-            $table->string('url'); // For external resources
-
+            $table->tinyInteger('order')->unsigned()->default(1); // Use this to order the resources for the resource type on the topic. 1-99
+            $table->text('content'); // Won't show on website, but good to copy content doe search purposes.
             $table->unsignedInteger('created_by');
             $table->unsignedInteger('updated_by');
             $table->timestamps();

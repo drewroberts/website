@@ -17,7 +17,7 @@ class CreateAccountsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('type_id')->index(); // Allows groupings for facebook, twitter, and other types of accounts. Also allows other categories (FB user account)
             $table->unsignedInteger('user_id')->index(); // Essentially the created_by but depending on the type, this could be for the user's account.
-            $table->string('name');
+            $table->string('title');
             $table->string('username'); // URL on social outlet
             $table->string('id_number')->nullable(); // Number used by facebook or twitter for the page
             $table->string('token')->nullable(); // Facebook API token for page

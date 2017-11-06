@@ -16,7 +16,6 @@ class CreateMarketsTable extends Migration
         Schema::create('markets', function (Blueprint $table) { // Regions/cities for places I visit.
             $table->increments('id');
             $table->string('slug')->unique()->index();
-            $table->string('name')->unique(); // Don't allow spaces. Letter & underscores only
             $table->string('title')->unique(); // Market Title for Display
             $table->string('state', 2); // Primary state for the market. Can span multiple states, but this is the main one.
             $table->string('state_slug')index(); // Do I need this?
