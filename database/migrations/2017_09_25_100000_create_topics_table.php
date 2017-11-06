@@ -22,7 +22,7 @@ class CreateTopicsTable extends Migration
             $table->string('description');
             $table->string('excerpt'); // Longer description for homepage and parent topic pages.
             $table->unsignedInteger('image_id')->nullable()->index(); // Featured image for social sharing.
-            $table->unsignedInteger('icon_id')->nullable(); // Topics have icons for menu navigation. SHould we have small icon and heroicon?
+            $table->unsignedInteger('icon_id')->nullable(); // Topics have icons for menu navigation. Should we have small icon and heroicon?
             $table->unsignedInteger('created_by')->index();
             $table->unsignedInteger('updated_by');
             $table->timestamps();
