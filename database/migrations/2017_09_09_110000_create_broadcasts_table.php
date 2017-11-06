@@ -13,7 +13,7 @@ class CreateBroadcastsTable extends Migration
      */
     public function up()
     {
-        Schema::create('broadcasts', function (Blueprint $table) {
+        Schema::create('broadcasts', function (Blueprint $table) { // Automated Social Media Broadcasts
             $table->increments('id');
             $table->unsignedInteger('account_id')->index();
             $table->unsignedInteger('type_id')->index(); // Allows groupings for facebook, twitter, and other types of social outlets. Also allows other categories of pushes.

@@ -13,7 +13,7 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) { // Various products or services that I recommend
             $table->increments('id');
             $table->unsignedInteger('brand_id')->index(); // If brand has own page, then assign here
             $table->string('slug')->unique()->index(); // How location will display on the front end of website. No underscores, only lowercase letters and dashes.

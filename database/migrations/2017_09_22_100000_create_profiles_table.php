@@ -13,7 +13,7 @@ class CreateProfilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('profiles', function (Blueprint $table) {
+        Schema::create('profiles', function (Blueprint $table) { // User Details
             $table->increments('id');
             $table->unsignedInteger('user_id')->unique();
             $table->string('first_name');

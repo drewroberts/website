@@ -13,7 +13,7 @@ class CreateTopicsTable extends Migration
      */
     public function up()
     {
-        Schema::create('topics', function (Blueprint $table) {
+        Schema::create('topics', function (Blueprint $table) { // Website sections, topics for content
             $table->increments('id');
             $table->string('slug')->unique()->index();
             $table->unsignedInteger('type_id')->index(); // Allows groupings for positions in on homepage, features, treatment of topic, etc.

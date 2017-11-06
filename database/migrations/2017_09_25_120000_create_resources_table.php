@@ -13,7 +13,7 @@ class CreateResourcesTable extends Migration
      */
     public function up()
     {
-        Schema::create('resources', function (Blueprint $table) { // External links for more info on topic. Good articles, documentation, etc. broken into types.
+        Schema::create('resources', function (Blueprint $table) { // External links for more info on topic. Good articles, documentation, etc. sorted into topics & types.
             $table->increments('id');
             $table->unsignedInteger('topic_id')->index();
             $table->unsignedInteger('type_id')->index();
