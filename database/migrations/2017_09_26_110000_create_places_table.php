@@ -30,7 +30,7 @@ class CreatePlacesTable extends Migration
             $table->date('closed')->nullable();
             $table->string('address')->nullable();
             $table->string('city')->nullable();
-            $table->string('state', 2)->nullable();
+            $table->unsignedInteger('state_id')->nullable(); // ID of place's state on states table
             $table->string('zip', 5)->nullable();
             $table->string('phone', 25)->nullable();
             $table->string('gmaps')->nullable()->unique(); // ID for location's Google Maps page
@@ -52,6 +52,7 @@ class CreatePlacesTable extends Migration
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('video_id')->references('id')->on('videos')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('state_id')->references('id')->on('states')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
@@ -70,6 +71,7 @@ class CreatePlacesTable extends Migration
             $table->dropForeign(['image_id']);
             $table->dropForeign(['video_id']);
             $table->dropForeign(['type_id']);
+            $table->dropForeign(['state_id']);
             $table->dropForeign(['created_by']);
             $table->dropForeign(['updated_by']);
         });

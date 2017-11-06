@@ -36,7 +36,7 @@ class CreateProfilesTable extends Migration
             $table->string('mailing_address')->nullable();
             $table->string('mailing_address_line_2')->nullable();
             $table->string('mailing_city')->nullable();
-            $table->string('mailing_state')->nullable();
+            $table->unsignedInteger('mailing_state')->nullable(); // ID of state on states table
             $table->string('mailing_zip', 25)->nullable();
             $table->string('mailing_country', 2)->nullable();
             $table->date('birth')->nullable();
@@ -64,6 +64,7 @@ class CreateProfilesTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('avatar')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('cover')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('mailing_state')->references('id')->on('states')->onDelete('restrict')->onUpdate('cascade');
         });
     }
 
@@ -78,6 +79,7 @@ class CreateProfilesTable extends Migration
             $table->dropForeign(['user_id']);
             $table->dropForeign(['avatar']);
             $table->dropForeign(['cover']);
+            $table->dropForeign(['mailing_state']);
         });
 
         Schema::disableForeignKeyConstraints();
