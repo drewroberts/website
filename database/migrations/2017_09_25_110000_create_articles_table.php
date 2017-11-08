@@ -17,9 +17,9 @@ class CreateArticlesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('topic_id')->index();
             $table->string('slug')->unique()->index();
-            $table->string('title');
+            $table->string('title')->unique();
             $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->index(); // path to edited cover image for article
+            $table->unsignedInteger('image_id')->nullable(); // path to edited cover image for article
             $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here.
             $table->boolean('feature')->default(0)->index(); // If article is big news and should be featured, then put 1
             $table->text('content'); // Will be shown under video articles too

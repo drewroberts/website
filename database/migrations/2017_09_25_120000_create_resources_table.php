@@ -20,7 +20,7 @@ class CreateResourcesTable extends Migration
             $table->string('slug')->unique()->index();
             $table->string('title');
             $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->unsigned()->index(); // path to edited cover image for resource
+            $table->unsignedInteger('image_id')->unsigned(); // path to edited cover image for resource
             $table->string('url'); // For external resource that 
             $table->string('resourceable_type')->nullable(); // Link to internal resources on the topic
             $table->unsignedInteger('resourceable_id')->nullable();
