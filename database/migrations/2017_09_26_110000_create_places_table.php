@@ -13,14 +13,15 @@ class CreatePlacesTable extends Migration
      */
     public function up()
     {
-        Schema::create('places', function (Blueprint $table) { // Market_id used for URL structure. Example ./florida/orlando/corona or ./florida/winter-park/barnies
+        Schema::create('places', function (Blueprint $table) { // Market_id used for URL structure. Just use the state. Example ./florida/corona or ./florida/barnies
             $table->increments('id');
             $table->unsignedInteger('market_id')->index(); // Groups locations into cities, Orlando, Winter Park, Shelbyville, Lexington, etc.
-            $table->unsignedInteger('brand_id')->index(); // If have created brand for the business, then assign here
+            $table->unsignedInteger('state_id')->index(); // ID of place's state on states table
+            $table->unsignedInteger('brand_id')->nullable()->index(); // If have created brand for the business, then assign here
             $table->string('slug')->unique()->index(); // How location will display on the front end of website. No underscores, only lowercase letters and dashes.
             $table->string('title')->unique(); // Name of place for display
             $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->nullable()->index(); // path to edited cover image for the place
+            $table->unsignedInteger('image_id')->nullable(); // path to edited cover image for the place
             $table->unsignedInteger('video_id')->nullable(); // If want featured video at the top instead of image, then include the video id here.
             $table->unsignedInteger('type_id')->nullable(); // Use for primary grouping of places by types. Can use other categories as well, but this is primary industry (restaurants, coffee shops, cigars, parks, etc.)
             $table->text('content'); // Will be shown under video articles too
@@ -29,8 +30,7 @@ class CreatePlacesTable extends Migration
             $table->date('opened')->default('2015-01-01'); // Estimated open date
             $table->date('closed')->nullable();
             $table->string('address')->nullable();
-            $table->string('city')->nullable();
-            $table->unsignedInteger('state_id')->nullable(); // ID of place's state on states table
+            $table->string('city')->nullable(); // State listed above.
             $table->string('zip', 5)->nullable();
             $table->string('phone', 25)->nullable();
             $table->string('gmaps')->nullable()->unique(); // ID for location's Google Maps page
