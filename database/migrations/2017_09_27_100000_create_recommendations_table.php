@@ -25,7 +25,7 @@ class CreateRecommendationsTable extends Migration
             $table->boolean('feature')->default(0)->index(); // If recommendation is big traffic driver and should be featured, then put 1
             $table->text('content'); // Will be shown under video articles too
             $table->string('pageviews')->nullable(); // Total current pageviews for recommendation. Pageview time breakdowns will be in stats table.
-            $table->unsignedInteger('created_by')->default(0);
+            $table->unsignedInteger('created_by')->default(1);
             $table->unsignedInteger('updated_by');
             $table->timestamps();
             $table->softDeletes();
