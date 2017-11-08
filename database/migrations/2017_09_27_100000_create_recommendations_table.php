@@ -18,7 +18,7 @@ class CreateRecommendationsTable extends Migration
             $table->string('slug')->unique()->index();
             $table->string('title');
             $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->nullable()->index(); // path to edited cover image for the recommendation
+            $table->unsignedInteger('image_id')->nullable(); // path to edited cover image for the recommendation
             $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here.
             $table->unsignedInteger('brand_id')->nullable()->unique()->index(); // If the recommendation is just one brand, then put brand_id here and this becomes the URL for the brand. 1 to 1 relationship.
             $table->unsignedInteger('type_id')->index();

@@ -15,6 +15,7 @@ class CreateEpisodesTable extends Migration
     {
         Schema::create('episodes', function (Blueprint $table) { // Typically for courses, but could also be Podcasts, article installments, and other things, so Polymorphic
             $table->increments('id');
+            
             $table->timestamps();
         });
     }

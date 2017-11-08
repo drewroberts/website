@@ -15,11 +15,11 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) { // Various products or services that I recommend
             $table->increments('id');
-            $table->unsignedInteger('brand_id')->index(); // If brand has own page, then assign here
+            $table->unsignedInteger('brand_id')->nullable()->index(); // If brand created, then assign here
             $table->string('slug')->unique()->index(); // How location will display on the front end of website. No underscores, only lowercase letters and dashes.
             $table->string('title')->unique(); // Name of place for display
             $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->nullable()->index(); // path to edited cover image for the recommendation
+            $table->unsignedInteger('image_id')->nullable(); // path to edited cover image for the recommendation
             $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here.
             $table->unsignedInteger('type_id')->nullable(); // Use for primary grouping of products by types. Can use other categories as well
             $table->date('launched')->nullable(); // Estimated date when product first available.

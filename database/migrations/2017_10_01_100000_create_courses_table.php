@@ -22,7 +22,7 @@ class CreateCoursesTable extends Migration
             $table->string('description'); // Really is an excerpt for social.
             $table->string('excerpt'); // Longer description for promo
             $table->text('intro'); // Even longer
-            $table->unsignedInteger('image_id')->index(); // path to edited cover image for article
+            $table->unsignedInteger('image_id')->nullable(); // path to edited cover image for article
             $table->unsignedInteger('video_id')->nullable(); // Primary pomotional video for course. Can have more with videoable entries and types.
             $table->boolean('feature')->default(0)->index(); // If article is big news and should be featured, then put 1
             
