@@ -15,8 +15,10 @@ class CreatePlacesTable extends Migration
     {
         Schema::create('places', function (Blueprint $table) { // Market_id used for URL structure. Just use the state. Example ./florida/corona or ./florida/barnies
             $table->increments('id');
-            $table->unsignedInteger('market_id')->index(); // Groups locations into cities, Orlando, Winter Park, Shelbyville, Lexington, etc.
             $table->unsignedInteger('state_id')->index(); // ID of place's state on states table
+            $table->unsignedInteger('market_id')->index(); // Groups locations into cities, Orlando, Winter Park, Shelbyville, Lexington, etc.
+            $table->unsignedInteger('address_id')->nullable()->index(); // Primary address of physical location
+            $table->unsignedInteger('mailing_id')->nullable()->index(); // If mailing address is different, then can define here. Otherwise, use address_id.
             $table->unsignedInteger('brand_id')->nullable()->index(); // If have created brand for the business, then assign here
             $table->string('slug')->unique()->index(); // How location will display on the front end of website. No underscores, only lowercase letters and dashes.
             $table->string('title')->unique(); // Name of place for display
@@ -29,9 +31,6 @@ class CreatePlacesTable extends Migration
             $table->date('first_visit')->default('2015-01-01'); // First time I went to place
             $table->date('opened')->default('2015-01-01'); // Estimated open date
             $table->date('closed')->nullable();
-            $table->string('address')->nullable();
-            $table->string('city')->nullable(); // State listed above.
-            $table->string('zip', 5)->nullable();
             $table->string('phone', 25)->nullable();
             $table->string('gmaps')->nullable()->unique(); // ID for location's Google Maps page
             $table->string('facebook')->nullable()->unique(); // Username for location's facebook page
