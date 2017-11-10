@@ -13,11 +13,11 @@ class CreateMarketsTable extends Migration
      */
     public function up()
     {
-        Schema::create('markets', function (Blueprint $table) { // Regions/cities for places I visit.
+        Schema::create('markets', function (Blueprint $table) { // Regions/cities for places I visit. URL = ./florida/cities/orlando or ./kentucky/cities/shelbyville
             $table->increments('id');
+            $table->unsignedInteger('state_id')->index(); // Primary state for market. All places will use state slug.
             $table->string('slug')->unique()->index();
             $table->string('title')->unique(); // Market Title for Display
-            $table->unsignedInteger('state_id');
             $table->unsignedInteger('created_by');
             $table->unsignedInteger('updated_by');
             $table->timestamps();

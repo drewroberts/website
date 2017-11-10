@@ -13,9 +13,8 @@ class CreatePlacesTable extends Migration
      */
     public function up()
     {
-        Schema::create('places', function (Blueprint $table) { // Market_id used for URL structure. Just use the state. Example ./florida/corona or ./florida/barnies
+        Schema::create('places', function (Blueprint $table) { // State slug under Market connection used for URL. Example ./florida/corona or ./florida/barnies
             $table->increments('id');
-            $table->unsignedInteger('state_id')->index(); // ID of place's state on states table
             $table->unsignedInteger('market_id')->index(); // Groups locations into cities, Orlando, Winter Park, Shelbyville, Lexington, etc.
             $table->unsignedInteger('address_id')->nullable()->index(); // Primary address of physical location
             $table->unsignedInteger('mailing_id')->nullable()->index(); // If mailing address is different (corporate office), then can define here. Otherwise, use address_id.
@@ -46,7 +45,6 @@ class CreatePlacesTable extends Migration
         });
 
         Schema::table('places', function($table) {
-            $table->foreign('state_id')->references('id')->on('states')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('market_id')->references('id')->on('markets')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('address_id')->references('id')->on('addresses')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('mailing_id')->references('id')->on('addresses')->onDelete('restrict')->onUpdate('cascade');
@@ -67,7 +65,6 @@ class CreatePlacesTable extends Migration
     public function down()
     {
         Schema::table('places', function ($table) {
-            $table->dropForeign(['state_id']);
             $table->dropForeign(['market_id']);
             $table->dropForeign(['address_id']);
             $table->dropForeign(['mailing_id']);
