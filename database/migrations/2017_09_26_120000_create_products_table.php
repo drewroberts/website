@@ -35,7 +35,7 @@ class CreateProductsTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('places', function($table) {
+        Schema::table('products', function($table) {
             $table->foreign('brand_id')->references('id')->on('brands')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('video_id')->references('id')->on('videos')->onDelete('restrict')->onUpdate('cascade');
@@ -52,7 +52,7 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::table('places', function ($table) {
+        Schema::table('products', function ($table) {
             $table->dropForeign(['brand_id']);
             $table->dropForeign(['image_id']);
             $table->dropForeign(['video_id']);
@@ -62,7 +62,7 @@ class CreateProductsTable extends Migration
         });
 
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('places');
+        Schema::dropIfExists('products');
         Schema::enableForeignKeyConstraints();
     }
 }
