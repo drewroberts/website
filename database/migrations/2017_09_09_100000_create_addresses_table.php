@@ -25,8 +25,8 @@ class CreateAddressesTable extends Migration
             $table->unsignedInteger('state_id')->index(); // ID of state on states table
             $table->string('zip', 25);
             $table->string('country', 2)->default('US');
-            $table->unsignedInteger('created_by');
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('created_by')->default(1);
+            $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
         });
 

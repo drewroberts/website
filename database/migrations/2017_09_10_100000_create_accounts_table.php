@@ -21,16 +21,16 @@ class CreateAccountsTable extends Migration
             $table->string('username'); // URL on social outlet
             $table->string('id_number')->nullable(); // Number used by facebook or twitter for the page
             $table->string('token')->nullable(); // Facebook API token for page
-            $table->unsignedInteger('avatar')->nullable();
-            $table->unsignedInteger('cover')->nullable();
+            $table->unsignedInteger('avatar_id')->nullable();
+            $table->unsignedInteger('cover_id')->nullable();
             $table->timestamps();
         });
 
         Schema::table('accounts', function($table) {
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
-            $table->foreign('avatar')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
-            $table->foreign('cover')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('avatar_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('cover_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
         });
     }
 
@@ -44,8 +44,8 @@ class CreateAccountsTable extends Migration
         Schema::table('accounts', function ($table) {
             $table->dropForeign(['type_id']);
             $table->dropForeign(['user_id']);
-            $table->dropForeign(['avatar']);
-            $table->dropForeign(['cover']);
+            $table->dropForeign(['avatar_id']);
+            $table->dropForeign(['cover_id']);
         });
 
         Schema::disableForeignKeyConstraints();

@@ -22,8 +22,8 @@ class CreateVideosTable extends Migration
             $table->string('description')->nullable();
             $table->string('videoable_type')->index();
             $table->unsignedInteger('videoable_id')->index();
-            $table->unsignedInteger('created_by')->index();
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('created_by')->index()->default(1);
+            $table->unsignedInteger('updated_by')->default(1);
             $table->unsignedInteger('approved_by')->default(1);
             $table->timestamp('approved_at')->nullable()->useCurrent();  // remove useCurrent() later when approval process finalized
             $table->timestamps();

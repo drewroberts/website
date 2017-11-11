@@ -20,8 +20,8 @@ class CreateAnswersTable extends Migration
             $table->boolean('correct')->default(0)->index(); // If is a correct answer to the question, then put 1
             $table->tinyInteger('points')->default(1); // Use this to assign a value to the answer. Positive or negative. (Negative if wrong, various positive points if multiple answers)
             $table->string('text');
-            $table->unsignedInteger('created_by');
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('created_by')->default(1);
+            $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });

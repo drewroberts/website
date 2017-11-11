@@ -26,7 +26,7 @@ class CreateRecommendationsTable extends Migration
             $table->text('content'); // Will be shown under video articles too
             $table->string('pageviews')->nullable(); // Total current pageviews for recommendation. Pageview time breakdowns will be in stats table.
             $table->unsignedInteger('created_by')->default(1);
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });

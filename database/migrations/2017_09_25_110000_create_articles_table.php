@@ -25,8 +25,8 @@ class CreateArticlesTable extends Migration
             $table->text('content'); // Will be shown under video articles too
             $table->string('pageviews')->nullable(); // Total current pageviews for article. Pageview time breakdowns will be in stats table.
             $table->unsignedInteger('editor_id')->nullable(); // Will use later when have editorial system. All contributing authors will be in contributors table.
-            $table->unsignedInteger('created_by'); // Default author_id should be me! But can use this in case some need a different author down the road.
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('created_by')->default(1); // Default author_id should be me! But can use this in case some need a different author down the road.
+            $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });

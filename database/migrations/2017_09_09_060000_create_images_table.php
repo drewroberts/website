@@ -24,8 +24,8 @@ class CreateImagesTable extends Migration
             $table->string('width');
             $table->string('height');
             $table->string('credits')->nullable();
-            $table->unsignedInteger('created_by')->index();
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('created_by')->default(1)->index();
+            $table->unsignedInteger('updated_by')->default(1);
             $table->unsignedInteger('approved_by')->default(1);
             $table->timestamp('approved_at')->nullable()->useCurrent();  // remove useCurrent() later when approval process for user submitted images
             $table->timestamps();

@@ -18,8 +18,8 @@ class CreateMarketsTable extends Migration
             $table->unsignedInteger('state_id')->index(); // Primary state for market. All places will use state slug.
             $table->string('slug')->unique()->index();
             $table->string('title')->unique(); // Market Title for Display
-            $table->unsignedInteger('created_by');
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('created_by')->default(1);
+            $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
         });
 

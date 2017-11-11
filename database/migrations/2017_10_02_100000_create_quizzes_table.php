@@ -21,8 +21,8 @@ class CreateQuizzesTable extends Migration
             $table->string('description');
             $table->string('excerpt'); // Longer description for homepage and parent topic pages.
             $table->unsignedInteger('image_id')->nullable(); // Featured image for social sharing.
-            $table->unsignedInteger('created_by')->index();
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('created_by')->default(1)->index();
+            $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });

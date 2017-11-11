@@ -26,8 +26,8 @@ class CreateResourcesTable extends Migration
             $table->unsignedInteger('resourceable_id')->nullable();
             $table->tinyInteger('order')->unsigned()->default(1); // Use this to order the resources for the resource type on the topic. 1-99
             $table->text('content'); // Won't show on website, but good to copy content doe search purposes.
-            $table->unsignedInteger('created_by');
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('created_by')->default(1);
+            $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });

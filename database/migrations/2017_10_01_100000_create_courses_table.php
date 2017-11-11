@@ -28,8 +28,8 @@ class CreateCoursesTable extends Migration
             
             // Need a model for course classes. Can't name it that, naming Episodes.
             $table->unsignedInteger('taught_by')->default(1)->index(); // Primary teacher for course.
-            $table->unsignedInteger('created_by');
-            $table->unsignedInteger('updated_by');
+            $table->unsignedInteger('created_by')->default(1);
+            $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });
