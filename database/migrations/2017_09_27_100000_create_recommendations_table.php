@@ -23,9 +23,9 @@ class CreateRecommendationsTable extends Migration
             $table->unsignedInteger('brand_id')->nullable()->unique()->index(); // If is a brand recommendation, then put brand_id here and this becomes the URL for the brand. 1 to 1 relationship. If is null, then is recommendation for product or for multiple places/products.
             $table->unsignedInteger('product_id')->nullable()->unique()->index(); // If is a product recommendation, then put product_id here and this becomes the URL for the product. 1 to 1 relationship. Brand_id should be null if product_id is listed unless brand only has one product and no places. If is null, then is recommendation for the brand or for multiple things.
             $table->unsignedInteger('type_id')->index();
-            $table->boolean('feature')->default(0)->index(); // If recommendation is big traffic driver and should be featured, then put 1
-            $table->text('content'); // Will be shown under video articles too
-            $table->string('pageviews')->nullable(); // Total current pageviews for recommendation. Pageview time breakdowns will be in stats table.
+            $table->boolean('feature')->default(0)->index(); // If recommendation is big traffic driver and should be featured on ./recommends, then put 1
+            $table->text('content'); // Will be shown under video recommendations too
+            $table->integer('pageviews')->default(0)->unsigned()->index(); // Total pageviews for recommendation. Updated periodically.
             $table->unsignedInteger('created_by')->default(1);
             $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
