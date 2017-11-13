@@ -51,7 +51,6 @@ class CreateBrandsTable extends Migration
     public function down()
     {
         Schema::table('brands', function ($table) {
-            $table->dropForeign(['brand_id']);
             $table->dropForeign(['image_id']);
             $table->dropForeign(['topic_id']);
             $table->dropForeign(['type_id']);
