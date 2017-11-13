@@ -13,7 +13,7 @@ class CreateRecommendationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('recommendations', function (Blueprint $table) { // Use URL path of drewroberts.com/recommends/something. Recommendations can be for a single brand, single product, or on many to many relationship with brands, products, places, and reviews. Products & Brands do not have their own URL's. Brands can also be topics, so brand recommendations can link to topic page and display articles too.
+        Schema::create('recommendations', function (Blueprint $table) { // Use URL path of drewroberts.com/recommends/something. 4 types of recommendations - single product, single brand (can include multiple places or products for that brand), or many to many relationship with brands, products, places, and reviews (top places, or favorite products in a category). Products & Brands do not have their own URL's. Brands can also be topics, so brand recommendations can link to topic page and display articles too.
             $table->increments('id');
             $table->string('slug')->unique()->index();
             $table->string('title');
