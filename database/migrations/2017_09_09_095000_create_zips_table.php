@@ -15,7 +15,7 @@ class CreateZipsTable extends Migration
     {
         Schema::create('zips', function (Blueprint $table) {
             $table->string('code', 5)->unique()->primary(); // Actual ZIP Code. Has to be string because can have leading zeros. Check model to see how it is made Primary Key.
-            $table->unsignedInteger('state_id')->index(); // Primary state for ZIP Code.
+            $table->unsignedInteger('state_id')->index(); // Primary state for ZIP Code. All ZIP Codes in a state start with the same number - http://www.zipboundary.com/zipcode_faqs.html
             $table->unsignedInteger('market_id')->nullable()->index(); // ID of market in which ZIP Code belongs
             $table->string('city', 50); // Primary city name.
             $table->string('city_alternate')->nullable();
