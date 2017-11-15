@@ -23,7 +23,8 @@ class CreateAddressesTable extends Migration
             $table->string('address_line_2')->nullable();
             $table->string('city');
             $table->unsignedInteger('state_id')->index(); // ID of state on states table
-            $table->string('zip', 25);
+            $table->string('zip_code', 5)->nullable();
+            $table->string('zip_extension', 20)->nullable(); // Use when is PO Box or has other number after ZIP Code
             $table->string('country', 2)->default('US');
             $table->unsignedInteger('created_by')->default(1);
             $table->unsignedInteger('updated_by')->default(1);
@@ -34,6 +35,7 @@ class CreateAddressesTable extends Migration
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('market_id')->references('id')->on('markets')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('state_id')->references('id')->on('states')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('zip_code')->references('code')->on('zips')->onDelete('restrict')->onUpdate('cascade'); // Notice primary key is 'code' and not 'id'
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
