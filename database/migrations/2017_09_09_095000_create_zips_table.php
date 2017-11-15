@@ -28,6 +28,11 @@ class CreateZipsTable extends Migration
             $table->unsignedInteger('population')->default('0');
             $table->timestamps();
         });
+
+        Schema::table('zips', function($table) {
+            $table->foreign('state_id')->references('id')->on('states')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('market_id')->references('id')->on('markets')->onDelete('restrict')->onUpdate('cascade');
+        });
     }
 
     /**
@@ -37,6 +42,13 @@ class CreateZipsTable extends Migration
      */
     public function down()
     {
+        Schema::table('zips', function ($table) {
+            $table->dropForeign(['state_id']);
+            $table->dropForeign(['market_id']);
+        });
+
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('zips');
+        Schema::enableForeignKeyConstraints();
     }
 }

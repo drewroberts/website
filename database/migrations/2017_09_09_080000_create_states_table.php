@@ -26,6 +26,11 @@ class CreateStatesTable extends Migration
             $table->integer('population_2016')->nullable();
             $table->timestamps();
         });
+
+        Schema::table('states', function($table) {
+            $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('icon_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+        });
     }
 
     /**
@@ -35,6 +40,13 @@ class CreateStatesTable extends Migration
      */
     public function down()
     {
+        Schema::table('states', function ($table) {
+            $table->dropForeign(['image_id']);
+            $table->dropForeign(['icon_id']);
+        });
+
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('states');
+        Schema::enableForeignKeyConstraints();
     }
 }
