@@ -13,7 +13,7 @@ class CreateProfilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('profiles', function (Blueprint $table) { // User Details
+        Schema::create('profiles', function (Blueprint $table) { // User Details. Can get market user is in by their current mailing address.
             $table->increments('id');
             $table->unsignedInteger('user_id')->unique()->index();
             $table->string('first_name');
