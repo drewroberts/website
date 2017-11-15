@@ -16,6 +16,8 @@ Route::get('/', function () {
     return view('app');
 });
 
+// Redirect ./recommendations to ./recommends
+
 Route::any('{all}', function () {
     return view('app');
 })
