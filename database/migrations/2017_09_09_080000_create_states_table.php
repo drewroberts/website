@@ -17,7 +17,7 @@ class CreateStatesTable extends Migration
             $table->increments('id');
             $table->string('slug')->unique()->index();
             $table->string('title')->unique();
-            $table->string('abbreviation')->unique(); // 2 digits
+            $table->string('abbreviation', 2)->unique();
             $table->string('description')->nullable(); // Description for search & social share purposes.
             $table->unsignedInteger('image_id')->nullable()->index(); // Featured image for social sharing.
             $table->unsignedInteger('icon_id')->nullable(); // If will use state outline for menu navigation. Should we have small icon and heroicon?
