@@ -13,7 +13,7 @@ class CreateStatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('states', function (Blueprint $table) { // Can also use foreign countries after id of 99 (>= 100). Friday Update.
+        Schema::create('states', function (Blueprint $table) { // Can also use foreign countries after id of 99 (>= 100).
             $table->increments('id');
             $table->string('slug')->unique()->index();
             $table->string('title')->unique();
