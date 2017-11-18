@@ -24,7 +24,7 @@ class CreateStatesTable extends Migration
             $table->string('capital')->nullable();
             $table->integer('population_2010')->nullable();
             $table->integer('population_2016')->nullable();
-            $table->boolean('country')->default(0)->index(); // If is a country instead of a state (or territory), then put 1. Must also use triple digit id numbers.
+            $table->boolean('country')->default(1)->index(); // If is a country instead of a state (or territory), then put 1. Must also use triple digit id numbers.
             $table->timestamps();
         });
 
