@@ -23,6 +23,7 @@ class CreateZipsTable extends Migration
             $table->string('city_alternate_3')->nullable();
             $table->string('city_alternate_4')->nullable(); // Is there any ZIP Code with more than 5 acceptable city names?
             $table->string('county')->nullable();
+            $table->string('timezone')->nullable();
             $table->decimal('latitude', 4, 2)->nullable();
             $table->decimal('longitude', 4, 2)->nullable();
             $table->unsignedInteger('population')->default('0');
