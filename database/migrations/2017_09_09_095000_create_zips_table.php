@@ -28,7 +28,7 @@ class CreateZipsTable extends Migration
             $table->decimal('longitude', 4, 2)->nullable();
             $table->unsignedInteger('population')->default(0);
             $table->boolean('decommissioned')->default(0)->index(); // 1 if decommissioned
-            $table->timestamps();
+            $table->timestamps(); // Need to increment the created_at dates in .csv file so they are in correct order.
         });
 
         Schema::table('zips', function($table) {
