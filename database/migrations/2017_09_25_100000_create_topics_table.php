@@ -20,7 +20,7 @@ class CreateTopicsTable extends Migration
             $table->unsignedInteger('parent_id')->nullable()->index(); // ID of the parent topic relationship. ID's below 20.
             $table->string('title')->unique();
             $table->string('description')->nullable();
-            $table->string('excerpt')->nullable(); // Longer description for homepage and parent topic pages.
+            $table->mediumText('excerpt')->nullable(); // Longer introduction for homepage and parent topic pages.
             $table->unsignedInteger('image_id')->nullable(); // Featured image for social sharing. Typically just heroicon on a stylized color background.
             $table->unsignedInteger('icon_id')->nullable(); // Topics have icons for menu navigation.
             $table->unsignedInteger('heroicon_id')->nullable(); // Topics have heroicons that display when featured.

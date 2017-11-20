@@ -17,7 +17,7 @@ class CreateAddressesTable extends Migration
             $table->increments('id');
             $table->string('addressable_type')->index(); // Users, Brands, Places, Contacts
             $table->unsignedInteger('addressable_id')->index();
-            $table->unsignedInteger('type_id')->index();
+            $table->unsignedInteger('type_id')->nullable()->index();
             $table->unsignedInteger('market_id')->nullable()->index(); // ID of market in which address belongs
             $table->string('address');
             $table->string('address_line_2')->nullable();
