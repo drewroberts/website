@@ -38,7 +38,6 @@ class ProfilesTableSeeder extends Seeder
                 'facebook' => 'DrewRoberts',
                 'instagram' => NULL,
                 'linkedin' => 'DrewRoberts',
-                'snapchat' => NULL,
                 'github' => 'DrewRoberts',
                 'birth' => '1983-05-20',
                 'last_read_announcements_at' => NULL,
