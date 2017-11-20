@@ -34,6 +34,8 @@ class CreateProfilesTable extends Migration
             $table->string('instagram')->nullable();
             $table->string('linkedin')->nullable();
             $table->string('github')->nullable();
+            $table->string('googleplus')->nullable();
+            $table->string('youtube')->nullable();
             $table->date('birth')->nullable();
             $table->timestamp('last_read_announcements_at')->nullable();
             $table->timestamps();
