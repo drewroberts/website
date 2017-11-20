@@ -25,15 +25,19 @@ class CreateZipsTable extends Migration
             $table->string('county')->nullable();
             $table->string('timezone')->nullable();
             $table->decimal('latitude', 4, 2)->nullable();
-            $table->decimal('longitude', 4, 2)->nullable();
-            $table->unsignedInteger('population')->default(0);
+            $table->decimal('longitude', 5, 2)->nullable();
+            $table->unsignedInteger('population')->default(NULL);
             $table->boolean('decommissioned')->default(0)->index(); // 1 if decommissioned
+            $table->unsignedInteger('created_by')->default(1);
+            $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps(); // Need to increment the created_at dates in .csv file so they are in correct order.
         });
 
         Schema::table('zips', function($table) {
             $table->foreign('state_id')->references('id')->on('states')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('market_id')->references('id')->on('markets')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
     }
 
@@ -47,6 +51,8 @@ class CreateZipsTable extends Migration
         Schema::table('zips', function ($table) {
             $table->dropForeign(['state_id']);
             $table->dropForeign(['market_id']);
+            $table->dropForeign(['created_by']);
+            $table->dropForeign(['updated_by']);
         });
 
         Schema::disableForeignKeyConstraints();

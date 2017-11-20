@@ -37,7 +37,7 @@ class CreatePlacesTable extends Migration
             $table->string('twitter')->nullable()->unique(); // Username for location's twitter account. Only enter if different than brand account.
             $table->string('youtube')->nullable()->unique(); // Username for location's YouTube channel. Only enter if different than brand channel.
             $table->decimal('latitude', 8, 6)->nullable(); // Need to get accurate latitude/longitude from my phone.
-            $table->decimal('longitude', 8, 6)->nullable();
+            $table->decimal('longitude', 9, 6)->nullable();
             $table->unsignedInteger('created_by')->default(1);
             $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
