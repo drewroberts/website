@@ -851,6 +851,166 @@ class StatesTableSeeder extends Seeder
             ),
             52 => 
             array (
+                'id' => 53,
+                'slug' => 'virgin-islands',
+                'title' => 'Virgin Islands',
+                'abbreviation' => 'VI',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            53 => 
+            array (
+                'id' => 54,
+                'slug' => 'guam',
+                'title' => 'Guam',
+                'abbreviation' => 'GU',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            54 => 
+            array (
+                'id' => 55,
+                'slug' => 'us-armed-forces-americas',
+                'title' => 'US Armed Forces – Americas',
+                'abbreviation' => 'AA',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            55 => 
+            array (
+                'id' => 56,
+                'slug' => 'us-armed-forces-europe',
+                'title' => 'US Armed Forces – Europe',
+                'abbreviation' => 'AE',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            56 => 
+            array (
+                'id' => 57,
+                'slug' => 'us-armed-forces-pacific',
+                'title' => 'US Armed Forces – Pacific',
+                'abbreviation' => 'AP',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            57 => 
+            array (
+                'id' => 58,
+                'slug' => 'samoa',
+                'title' => 'American Samoa',
+                'abbreviation' => 'AS',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            58 => 
+            array (
+                'id' => 59,
+                'slug' => 'micronesia',
+                'title' => 'Micronesia',
+                'abbreviation' => 'FM',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            59 => 
+            array (
+                'id' => 60,
+                'slug' => 'marshall-islands',
+                'title' => 'Marshall Islands',
+                'abbreviation' => 'MH',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            60 => 
+            array (
+                'id' => 61,
+                'slug' => 'mariana-islands',
+                'title' => 'Mariana Islands',
+                'abbreviation' => 'MP',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            61 => 
+            array (
+                'id' => 62,
+                'slug' => 'palau',
+                'title' => 'Palau',
+                'abbreviation' => 'PW',
+                'description' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'capital' => NULL,
+                'population_2010' => NULL,
+                'population_2016' => NULL,
+                'country' => 0,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+            ),
+            62 => 
+            array (
                 'id' => 100,
                 'slug' => 'usa',
                 'title' => 'United States',
@@ -865,7 +1025,7 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            53 => 
+            63 => 
             array (
                 'id' => 101,
                 'slug' => 'mexico',
@@ -881,7 +1041,7 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            54 => 
+            64 => 
             array (
                 'id' => 102,
                 'slug' => 'guatemala',
@@ -897,7 +1057,7 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            55 => 
+            65 => 
             array (
                 'id' => 103,
                 'slug' => 'belize',
@@ -913,7 +1073,7 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            56 => 
+            66 => 
             array (
                 'id' => 104,
                 'slug' => 'honduras',
@@ -929,7 +1089,7 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            57 => 
+            67 => 
             array (
                 'id' => 105,
                 'slug' => 'el-salvador',
@@ -945,7 +1105,7 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            58 => 
+            68 => 
             array (
                 'id' => 106,
                 'slug' => 'nicaragua',
@@ -961,7 +1121,7 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            59 => 
+            69 => 
             array (
                 'id' => 107,
                 'slug' => 'costa-rica',
@@ -977,7 +1137,7 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            60 => 
+            70 => 
             array (
                 'id' => 108,
                 'slug' => 'panama',
@@ -993,7 +1153,7 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            61 => 
+            71 => 
             array (
                 'id' => 109,
                 'slug' => 'columbia',

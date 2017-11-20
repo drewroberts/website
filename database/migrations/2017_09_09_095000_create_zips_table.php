@@ -26,7 +26,7 @@ class CreateZipsTable extends Migration
             $table->string('timezone')->nullable();
             $table->decimal('latitude', 4, 2)->nullable();
             $table->decimal('longitude', 5, 2)->nullable();
-            $table->unsignedInteger('population')->default(NULL);
+            $table->unsignedInteger('population')->nullable();
             $table->boolean('decommissioned')->default(0)->index(); // 1 if decommissioned
             $table->unsignedInteger('created_by')->default(1);
             $table->unsignedInteger('updated_by')->default(1);
