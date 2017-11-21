@@ -24,6 +24,7 @@ class CreateImagesTable extends Migration
             $table->string('width');
             $table->string('height');
             $table->string('credits')->nullable();
+            $table->string('credits_extra')->nullable(); // This is for an extra note that credits can be expanded to show. Such at date and camera used to take photo
             $table->unsignedInteger('created_by')->default(1)->index();
             $table->unsignedInteger('updated_by')->default(1);
             $table->unsignedInteger('approved_by')->default(1);
