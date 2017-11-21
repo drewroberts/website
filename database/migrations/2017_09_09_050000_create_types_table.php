@@ -19,7 +19,7 @@ class CreateTypesTable extends Migration
             $table->string('slug')->unique()->index();
             $table->string('title')->unique();
             $table->string('description')->nullable();
-            $table->string('note')->nullable(); // Just for reference purposes only, not displayed on website.
+            $table->string('note')->nullable(); // Just for internal reference purposes only, not displayed on website.
             $table->string('width')->nullable(); // Image & Video Types Only
             $table->string('height')->nullable(); // Image & Video Types Only
             $table->string('path')->nullable(); // Image & Video Types Only
