@@ -21,7 +21,7 @@ class CreateTopicsTable extends Migration
             $table->string('title')->unique();
             $table->string('description')->nullable();
             $table->mediumText('excerpt')->nullable(); // Longer introduction for homepage and parent topic pages.
-            $table->string('note')->nullable(); // Just for internal reference purposes only, not displayed on website.
+            $table->string('note')->nullable(); // Just for internal reference purposes only, not displayed on website. What type of articles should be posted vs other topics?
             $table->unsignedInteger('image_id')->nullable(); // Featured image for social sharing. Typically just heroicon on a stylized color background.
             $table->unsignedInteger('icon_id')->nullable(); // Topics have icons for menu navigation.
             $table->unsignedInteger('heroicon_id')->nullable(); // Topics have heroicons that display when featured.
