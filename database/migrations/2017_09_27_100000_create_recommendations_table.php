@@ -18,13 +18,15 @@ class CreateRecommendationsTable extends Migration
             $table->string('slug')->unique()->index();
             $table->string('title');
             $table->string('description'); // Really is an excerpt for social.
-            $table->unsignedInteger('image_id')->nullable(); // path to edited cover image for the recommendation
-            $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here.
+            $table->unsignedInteger('image_id')->nullable(); // Featured cover image for social sharing.
+            $table->unsignedInteger('video_id')->nullable(); // If video, then include the video id here. Will replace cover image on layout.
             $table->unsignedInteger('brand_id')->nullable()->unique()->index(); // If is a brand recommendation, then put brand_id here and this becomes the URL for the brand. 1 to 1 relationship. If is null, then is recommendation for product or for multiple places/products.
             $table->unsignedInteger('product_id')->nullable()->unique()->index(); // If is a product recommendation, then put product_id here and this becomes the URL for the product. 1 to 1 relationship. Brand_id should be null if product_id is listed unless brand only has one product and no places. If is null, then is recommendation for the brand or for multiple things.
             $table->unsignedInteger('type_id')->index();
+            $table->unsignedInteger('icon_id')->nullable(); // Some types of recommendations have icons for menu navigation.
+            $table->unsignedInteger('heroicon_id')->nullable(); // Some types of recommendations have heroicons that display when featured.
             $table->boolean('feature')->default(0)->index(); // If recommendation is big traffic driver and should be featured on ./recommends, then put 1
-            $table->text('content'); // Will be shown under video recommendations too
+            $table->text('content')->nullable(); // Nullable because sometimes will be completed later. Will be shown under video recommendations too
             $table->integer('pageviews')->default(0)->unsigned()->index(); // Total pageviews for recommendation. Updated periodically.
             $table->unsignedInteger('created_by')->default(1);
             $table->unsignedInteger('updated_by')->default(1);
@@ -38,6 +40,8 @@ class CreateRecommendationsTable extends Migration
             $table->foreign('brand_id')->references('id')->on('brands')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('product_id')->references('id')->on('products')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('type_id')->references('id')->on('topics')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('icon_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('heroicon_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
@@ -56,6 +60,8 @@ class CreateRecommendationsTable extends Migration
             $table->dropForeign(['brand_id']);
             $table->dropForeign(['product_id']);
             $table->dropForeign(['type_id']);
+            $table->dropForeign(['icon_id']);
+            $table->dropForeign(['heroicon_id']);
             $table->dropForeign(['created_by']);
             $table->dropForeign(['updated_by']);
         });
