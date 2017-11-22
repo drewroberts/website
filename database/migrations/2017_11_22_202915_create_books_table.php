@@ -13,7 +13,7 @@ class CreateBooksTable extends Migration
      */
     public function up()
     {
-        Schema::create('books', function (Blueprint $table) {
+        Schema::create('books', function (Blueprint $table) { // Books I'm currently ready and have read. Used for book recommendations. Need to include the Tipoff ID so can update info through Tipoff API.
             $table->increments('id');
             $table->timestamps();
         });

@@ -13,7 +13,7 @@ class CreateContactsTable extends Migration
      */
     public function up()
     {
-        Schema::create('contacts', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) { // People I know and want to store contact information. My digital address book. Also used to put managers, key people in my Places and Recommendations (when contactable to Brand) pages. 
             $table->increments('id');
             
             $table->timestamps();
