@@ -20,6 +20,7 @@ class CreateVideosTable extends Migration
             $table->string('name')->unique()->index(); // Name = Identifier on external source. Depending on type, it should be the Youtube, Facebook or Vimeo ID and the slug if video is on our server.
             $table->string('title')->nullable(); // What we call the video, not title on external source.
             $table->string('description')->nullable();
+            $table->integer('views')->default(0)->unsigned()->index(); // Total views on our created YouTube or other videos. Updated periodically.
             $table->string('videoable_type')->index();
             $table->unsignedInteger('videoable_id')->index();
             $table->unsignedInteger('created_by')->default(1)->index();

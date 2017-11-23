@@ -25,6 +25,9 @@ class CreateTopicsTable extends Migration
             $table->unsignedInteger('image_id')->nullable(); // Featured image for social sharing. Typically just heroicon on a stylized color background.
             $table->unsignedInteger('icon_id')->nullable(); // Topics have icons for menu navigation.
             $table->unsignedInteger('heroicon_id')->nullable(); // Topics have heroicons that display when featured.
+            $table->text('content')->nullable(); // If want to show content on article index page, put it here. Not necessary but helps SEO and user understanding.
+            $table->integer('pageviews')->default(0)->unsigned()->index(); // Total pageviews for topic index. Updated periodically.
+            $table->integer('pageviews_articles')->default(0)->unsigned()->index(); // Total pageviews for articles in the topic. Updated periodically.
             $table->unsignedInteger('created_by')->default(1)->index();
             $table->unsignedInteger('updated_by')->default(1);
             $table->timestamps();
