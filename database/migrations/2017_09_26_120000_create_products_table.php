@@ -25,6 +25,7 @@ class CreateProductsTable extends Migration
             $table->date('expired')->nullable();
             $table->text('content')->nullable(); // Expanded content section when multiple products included in recommendation. Main article when is a product recommendation.
             $table->string('website')->nullable()->unique(); // URL of external webpage for users to purchase product. Will include affiliate code from brand.
+            $table->string('amazon')->nullable()->unique(); // Amazon link to purchase product with View Price button. Will include affiliate code for Amazon.
             $table->string('facebook')->nullable()->unique(); // Username if product has own facebook page
             $table->string('instagram')->nullable()->unique(); // Username if product has own instagram account
             $table->string('twitter')->nullable()->unique(); // Username if product has own twitter account
