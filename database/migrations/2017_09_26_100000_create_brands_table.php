@@ -24,6 +24,7 @@ class CreateBrandsTable extends Migration
             $table->text('content'); // Will be shown under video articles too
             $table->string('affiliate')->nullable(); // Affiliate referral code that needs to be added to all of brand's URL's.
             $table->string('website')->nullable()->unique(); // URL of brand's website
+            $table->string('amazon')->nullable()->unique(); // If brand has official amazon page, can link here.
             $table->string('facebook')->nullable()->unique(); // Username of brand's facebook page
             $table->string('instagram')->nullable()->unique(); // Username of brand's instagram account
             $table->string('twitter')->nullable()->unique(); // Username of brand's twitter account
