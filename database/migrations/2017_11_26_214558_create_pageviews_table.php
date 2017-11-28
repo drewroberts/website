@@ -15,6 +15,7 @@ class CreatePageviewsTable extends Migration
     {
         Schema::create('pageviews', function (Blueprint $table) { // Simple table to log users & IP on each pageview
             $table->increments('id');
+            
             $table->timestamps();
         });
     }
