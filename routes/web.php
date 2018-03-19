@@ -25,3 +25,5 @@ Route::any('{all}', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Need to put all topics here.
