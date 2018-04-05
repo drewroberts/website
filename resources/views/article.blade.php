@@ -3,6 +3,23 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Drew Roberts",
+    "url": "https://DrewRoberts.com",
+    "sameAs": [
+      "https://www.facebook.com/DrewRoberts",
+      "https://twitter.com/DrewRoberts",
+      "https://www.linkedin.com/in/DrewRoberts",
+      "https://github.com/DrewRoberts",
+      "https://plus.google.com/+DrewRoberts"
+    ]
+  }
+  </script>
+  
   <title>The Photo Blog</title>
   <link rel="canonical" href="https://www.ampstart.com/templates/article.amp">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
