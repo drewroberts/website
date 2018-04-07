@@ -3,7 +3,7 @@
     <html AMP lang='en'>
       <head>
         <meta charset="utf-8">
-        <title>Vintage Photos Capture the Strange Magic of Rural Ireland - VICE</title>
+        <title>Vintage Photos Capture the Strange Magic of Rural Ireland</title>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
         <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
         <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
