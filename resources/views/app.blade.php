@@ -122,7 +122,7 @@
       		}
 
       		.logo svg {
-      			width: 150px;
+      			width: 300px;
       			height: 150px;
       		}
 
