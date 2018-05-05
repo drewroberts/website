@@ -19,6 +19,10 @@ Route::get('/example', function () {
     return view('example');
 });
 
+Route::get('/sample', function () {
+    return view('sample');
+});
+
 
 Route::get('/', function () {
     return view('app');
