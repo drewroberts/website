@@ -27,7 +27,7 @@
 
 
         <meta name="description" content="ORLANDO, FL - Drew Roberts enjoys web development and is passionate about growth marketing. This GitHub website contains his social media links.">
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
