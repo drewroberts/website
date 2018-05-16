@@ -191,7 +191,7 @@
       		</div>
       		<div class="footer">
       			<div class="left">
-      				<a href="https://github.com/DrewRoberts" alt="Drew Roberts GitHub" title="">GitHub</a>
+      				<a href="https://www.youtube.com/DrewRoberts" alt="Drew Roberts YouTube" title="" target="_blank">YouTube</a>
       			</div>
 
       			<div class="right">
@@ -199,7 +199,7 @@
       				<a href="https://www.facebook.com/DrewRoberts" alt="Drew Roberts Facebook" title="" target="_blank">Facebook</a>
               <a href="https://twitter.com/DrewRoberts" alt="Drew Roberts Twitter" title="" target="_blank">Twitter</a>
               <a href="https://dribbble.com/DrewRoberts" alt="Drew Roberts Dribbble" title="" target="_blank">Dribbble</a>
-              <a href="https://www.youtube.com/DrewRoberts" alt="Drew Roberts YouTube" title="" target="_blank">YouTube</a>
+              <a href="https://github.com/DrewRoberts" alt="Drew Roberts GitHub" title="" target="_blank">GitHub</a>
       			</div>
 
       		</div>
