@@ -1,6 +1,7 @@
-<!doctype html>
-<html ⚡="">
+<!DOCTYPE html>
+ <html AMP lang='en'>
   <head>
+    <meta charset="utf-8">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -44,11 +45,8 @@
       }
     </script>
     <title>LeBron&#39;s Free Agency Will Come, But for Now, Cavs Reflect on &#39;Whirlwind&#39; Season</title>
-    <link href="https://drewroberts.com/sample" rel="canonical" />
+    <link href="https://drewroberts.com/test" rel="canonical" />
     <script async='' custom-element='amp-social-share' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js'></script>
-    <script async='' custom-element='amp-ad' src='https://cdn.ampproject.org/v0/amp-ad-0.1.js'></script>
-    <script async='' custom-element='amp-facebook-comments' src='https://cdn.ampproject.org/v0/amp-facebook-comments-0.1.js'></script>
-    <meta charset="utf-8" />
     <meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport" />
     <meta content="LeBron&#39;s Free Agency Will Come, But for Now, Cavs Reflect on &#39;Whirlwind&#39; Season" property="og:title" />
     <meta content="website" property="og:type" />
