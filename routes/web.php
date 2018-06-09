@@ -19,11 +19,11 @@ Route::get('/amp', function () {
     return view('amp');
 });
 
-Route::get('/example', function () {
+Route::get('/test', function () {
     return view('test');
 });
 
-Route::get('/test', function () {
+Route::get('/example', function () {
     return view('example');
 });
 

@@ -46,6 +46,7 @@
     </script>
     <title>LeBron&#39;s Free Agency Will Come, But for Now, Cavs Reflect on &#39;Whirlwind&#39; Season</title>
     <link href="https://drewroberts.com/test" rel="canonical" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async='' custom-element='amp-social-share' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js'></script>
     <meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport" />
     <meta content="LeBron&#39;s Free Agency Will Come, But for Now, Cavs Reflect on &#39;Whirlwind&#39; Season" property="og:title" />
