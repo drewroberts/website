@@ -19,6 +19,10 @@ Route::get('/amp', function () {
     return view('amp');
 });
 
+Route::get('/sample', function () {
+    return view('sample');
+});
+
 Route::get('/example', function () {
     return view('example');
 });
