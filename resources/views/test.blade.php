@@ -885,10 +885,5 @@
     <div class="footer-logo-container">
       <amp-img height="38" layout="fixed" src="/images/br-logo-bw.png" width="50"></amp-img>
     </div>
-    <amp-list height="77px" id="branch-amp-journey" layout="fixed-height" on="tap:branch-amp-journey.hide" role="" src="https://br.app.link/branch-amp-journeys-pre?branch_key=key_live_ipgKWZ6R3Y6SIVulI4hbbichEwhTDTuN&amp;__aj_cid=CLIENT_ID(_s)&amp;__amp_viewer=VIEWER&amp;__aj_source_url=SOURCE_URL&amp;__aj_canonical_url=CANONICAL_URL&amp;__aj_v=1.0.0" tabindex="0"><template id="journey-template" type="amp-mustache"><a class="close" on="tap:branch-amp-journey.hide"></a>
-        <div class="hideme"></div>
-        <amp-iframe class="branch-amp-journey-inner {{do_not_display}}" frameborder="0" height="77px" layout="fixed-height" resizable="" sandbox="allow-scripts allow-top-navigation allow-same-origin" src="https://br.app.link/branch-amp-journeys?branch_key=key_live_ipgKWZ6R3Y6SIVulI4hbbichEwhTDTuN&amp;__aj_cid={{__aj_cid}}&amp;__aj_source_url={{__aj_source_url}}&amp;__aj_canonical_url={{__aj_canonical_url}}&amp;_audience_rule_id={{_audience_rule_id}}&amp;_branch_view_id={{_branch_view_id}}&amp;__aj_v=1.0.0&amp;$deeplink_path=article/bleacherreport.com/articles/2780269">
-          <div overflow=""></div>
-        </amp-iframe></template></amp-list>
   </body>
 </html>
