@@ -1,52 +1,9 @@
-<!DOCTYPE html>
- <html AMP lang='en'>
+<!doctype html>
+<html ⚡="">
   <head>
     <meta charset="utf-8">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "mainEntityOfPage": "https://bleacherreport.com/articles/2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season",
-        "headline": "LeBron's Free Agency Will Come, But for Now, Cavs Reflect on 'Whirlwind' Season",
-        "url": "https://syndication.bleacherreport.com/amp/2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season.amp.html",
-        "keywords": "Basketball,NBA,NBA Central,Cleveland Cavaliers,LeBron James,Opinion",
-        "datePublished": "2018-06-09T01:55:41-04:00",
-        "dateModified": "2018-06-09T02:57:49-04:00",
-        "author": {
-          "@type": "Person",
-          "@id": "https://bleacherreport.com/users/8494513",
-          "name": "Scott Sargent"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Bleacher Report",
-          "url": "https://bleacherreport.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://cdn.bleacherreport.net/images/icons/BR-wordmark.png",
-            "width": 441,
-            "height": 60
-          }
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://img.bleacherreport.net/img/images/photos/003/746/440/hi-res-c8275a4996c91ff0e489cfda62cbba2e_crop_north.jpg?1528523091&w=3072&h=2048",
-          "height": 2048,
-          "width": 3072,
-          "description": "Cleveland Cavaliers' LeBron James greets teammates as he taken out in the second half of Game 4 of basketball's NBA Finals, Friday, June 8, 2018, in Cleveland. The Warriors defeated the Cavaliers 108-85. (AP Photo/Carlos Osorio)"
-        },
-        "description": "CLEVELAND —  LeBron James  has long held to a mantra of not letting himself get too high during the best of times or too low during the worst...",
-        "about": {
-          "@context": "http://schema.org",
-          "@type": "SportsEvent",
-          "name": null,
-          "startDate": null
-        }
-      }
-    </script>
-    <title>LeBron&#39;s Free Agency Will Come, But for Now, Cavs Reflect on &#39;Whirlwind&#39; Season</title>
+    <title>Vintage Photos Capture the Strange Magic of Rural Ireland</title>
     <link href="https://drewroberts.com/test" rel="canonical" />
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async='' custom-element='amp-social-share' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js'></script>
     <meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport" />
     <meta content="LeBron&#39;s Free Agency Will Come, But for Now, Cavs Reflect on &#39;Whirlwind&#39; Season" property="og:title" />
@@ -815,9 +772,7 @@
       </figure>
     </section>
     <header>
-      <h1>
-        LeBron&#39;s Free Agency Will Come, But for Now, Cavs Reflect on &#39;Whirlwind&#39; Season
-      </h1>
+      <h1>The page title goes here</h1>
       <div class="published_info">
         <a class="author" href="https://bleacherreport.com/users/8494513" title="Featured Columnist I">Scott Sargent</a><a class="twitterHandle" href="https://twitter.com/WFNYScott" rel="noopener noreferrer" target="_blank"><svg class="twitter-icon" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg"><title>Twitter Logo</title><path d="M5.042 13.504c6.01 0 9.3-4.985 9.3-9.3 0-.14 0-.28-.006-.42.638-.46 1.192-1.04 1.632-1.697-.586.262-1.217.434-1.88.517.675-.402 1.192-1.046 1.44-1.81-.63.375-1.332.643-2.078.79C12.85.946 12.003.55 11.066.55c-1.804 0-3.27 1.467-3.27 3.27 0 .256.032.505.083.747-2.717-.134-5.126-1.44-6.74-3.417C.86 1.635.7 2.196.7 2.795c0 1.134.58 2.135 1.455 2.722-.536-.02-1.04-.166-1.48-.408v.043c0 1.58 1.13 2.907 2.62 3.207-.273.076-.56.115-.86.115-.21 0-.414-.02-.612-.058.414 1.3 1.626 2.244 3.053 2.27-1.12.88-2.53 1.402-4.06 1.402-.26 0-.523-.014-.778-.046 1.44.918 3.162 1.46 5.004 1.46"></path></svg></a><br /><time class="op-published">June 09, 2018</time>
       </div>
@@ -926,12 +881,6 @@
         </ul>
       </div>
     </section>
-
-
-    <!-- Nielsen -->
-    <div>
-      <amp-img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-204044h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" layout="fixed" alt="" />
-    </div>
 
     <div class="footer-logo-container">
       <amp-img height="38" layout="fixed" src="/images/br-logo-bw.png" width="50"></amp-img>
