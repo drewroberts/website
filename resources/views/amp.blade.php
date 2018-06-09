@@ -44,7 +44,7 @@
       }
     </script>
     <title>NFL Draft Grades 2018: Full List of Results and Scores for All 32 Teams</title>
-    <link href="http://bleacherreport.com/articles/2773377-nfl-draft-grades-2018-full-list-of-results-and-scores-for-all-32-teams" rel="canonical" />
+    <link href="https://drewroberts.com/amp" rel="canonical" />
     <script async='' custom-element='amp-social-share' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js'></script>
     <script async='' custom-element='amp-ad' src='https://cdn.ampproject.org/v0/amp-ad-0.1.js'></script>
     <script async='' custom-element='amp-facebook-comments' src='https://cdn.ampproject.org/v0/amp-facebook-comments-0.1.js'></script>
