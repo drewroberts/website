@@ -15,14 +15,13 @@ Route::get('/article', function () {
     return view('article');
 });
 
-Route::get('/example', function () {
-    return view('example');
-});
-
 Route::get('/sample', function () {
     return view('sample');
 });
 
+Route::get('/example', function () {
+    return view('example');
+});
 
 Route::get('/', function () {
     return view('app');

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" ⚡="">
-  <head> 
+  <head>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
