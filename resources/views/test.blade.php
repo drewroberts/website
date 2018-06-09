@@ -867,17 +867,13 @@
       ><span>&nbsp;</span></amp-social-share>
 
       </div>
-      <amp-facebook-comments data-href="http://bleacherreport.com/articles/2780269" data-mobile="true" data-numposts="5" data-order-by="reverse_time" height="657" layout="responsive" width="486"></amp-facebook-comments><div class="related-articles">
+      <div class="related-articles">
         <h1>
           Related Articles
         </h1>
         <ul class="content-list">
           <li>
-            <amp-analytics id="m-particle-content-selected-6467431550" type="mparticle">
-              <script type="application/json">
-                {"vars": {"apiKey": "12bb4ddb4c497e43a61bf40d9d807a76"},"triggers": {"trackAppEvent": {"on": "click","selector": "#related-6467431550","request": "event","vars": {"debug": "false","eventName": "Content Selected","eventType": "Navigation","eventAttributes_Keys": ["urlHash","contentType","screen","title","platform","contentID","articleID","permalink","source"],"eventAttributes_Values": ["94dd8af66a75938020bc9964bb68f5e41ca4f4d51359a2ef774e7a619a7ed55a","internal_article","Article","'You Can Give Everything You've Got and Still Come Up Short'","amp","6467431550","2780269","/articles/2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season","Bleacher Report"],"appVersion": "1.0"}}}}
-              </script>
-            </amp-analytics><a class="flex-row" href="https://br.app.link/25owhrUVFE?$deeplink_path=article/bleacherreport.com/articles/2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season&amp;$fallback_url=https://syndication.bleacherreport.com/amp/2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season.amp.html" id="related-6467431550">
+            <a class="flex-row" href="https://br.app.link/25owhrUVFE?$deeplink_path=article/bleacherreport.com/articles/2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season&amp;$fallback_url=https://syndication.bleacherreport.com/amp/2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season.amp.html" id="related-6467431550">
               <div class="row-content">
                 <h2>
                   'You Can Give Everything You've Got and Still Come Up Short'
@@ -890,11 +886,7 @@
             </a>
           </li>
           <li>
-            <amp-analytics id="m-particle-content-selected-6467431029" type="mparticle">
-              <script type="application/json">
-                {"vars": {"apiKey": "12bb4ddb4c497e43a61bf40d9d807a76"},"triggers": {"trackAppEvent": {"on": "click","selector": "#related-6467431029","request": "event","vars": {"debug": "false","eventName": "Content Selected","eventType": "Navigation","eventAttributes_Keys": ["urlHash","contentType","screen","title","platform","contentID","articleID","permalink","source"],"eventAttributes_Values": ["e55febed73e30c4104f3beff39b977b4a1f3599ccff4f9356cbd76ea410f721c","internal_article","Article","Family Will Impact LeBron's Choice","amp","6467431029","2780271","/articles/2780271-lebron-james-doesnt-know-where-hell-play-next-year-family-will-impact-choice","Bleacher Report"],"appVersion": "1.0"}}}}
-              </script>
-            </amp-analytics><a class="flex-row" href="https://br.app.link/25owhrUVFE?$deeplink_path=article/bleacherreport.com/articles/2780271-lebron-james-doesnt-know-where-hell-play-next-year-family-will-impact-choice&amp;$fallback_url=https://syndication.bleacherreport.com/amp/2780271-lebron-james-doesnt-know-where-hell-play-next-year-family-will-impact-choice.amp.html" id="related-6467431029">
+            <a class="flex-row" href="https://br.app.link/25owhrUVFE?$deeplink_path=article/bleacherreport.com/articles/2780271-lebron-james-doesnt-know-where-hell-play-next-year-family-will-impact-choice&amp;$fallback_url=https://syndication.bleacherreport.com/amp/2780271-lebron-james-doesnt-know-where-hell-play-next-year-family-will-impact-choice.amp.html" id="related-6467431029">
               <div class="row-content">
                 <h2>
                   Family Will Impact LeBron's Choice
@@ -907,11 +899,7 @@
             </a>
           </li>
           <li>
-            <amp-analytics id="m-particle-content-selected-6467432117" type="mparticle">
-              <script type="application/json">
-                {"vars": {"apiKey": "12bb4ddb4c497e43a61bf40d9d807a76"},"triggers": {"trackAppEvent": {"on": "click","selector": "#related-6467432117","request": "event","vars": {"debug": "false","eventName": "Content Selected","eventType": "Navigation","eventAttributes_Keys": ["urlHash","contentType","screen","title","platform","contentID","articleID","permalink","source"],"eventAttributes_Values": ["a6189df465c34d11f05d760e0f59c2a87f1a3b5ab6b1352d50aa284697b5015b","internal_article","Article","Early NBA Title Odds for 2018-19 Title","amp","6467432117","2780266","/articles/2780266-2018-19-nba-championship-odds-warriors-rockets-76ers-early-favorites","Bleacher Report"],"appVersion": "1.0"}}}}
-              </script>
-            </amp-analytics><a class="flex-row" href="https://br.app.link/25owhrUVFE?$deeplink_path=article/bleacherreport.com/articles/2780266-2018-19-nba-championship-odds-warriors-rockets-76ers-early-favorites&amp;$fallback_url=https://syndication.bleacherreport.com/amp/2780266-2018-19-nba-championship-odds-warriors-rockets-76ers-early-favorites.amp.html" id="related-6467432117">
+            <a class="flex-row" href="https://br.app.link/25owhrUVFE?$deeplink_path=article/bleacherreport.com/articles/2780266-2018-19-nba-championship-odds-warriors-rockets-76ers-early-favorites&amp;$fallback_url=https://syndication.bleacherreport.com/amp/2780266-2018-19-nba-championship-odds-warriors-rockets-76ers-early-favorites.amp.html" id="related-6467432117">
               <div class="row-content">
                 <h2>
                   Early NBA Title Odds for 2018-19 Title
@@ -924,11 +912,7 @@
             </a>
           </li>
           <li>
-            <amp-analytics id="m-particle-content-selected-6467416784" type="mparticle">
-              <script type="application/json">
-                {"vars": {"apiKey": "12bb4ddb4c497e43a61bf40d9d807a76"},"triggers": {"trackAppEvent": {"on": "click","selector": "#related-6467416784","request": "event","vars": {"debug": "false","eventName": "Content Selected","eventType": "Navigation","eventAttributes_Keys": ["urlHash","contentType","screen","title","platform","contentID","articleID","permalink","source"],"eventAttributes_Values": ["902dd5bafb2c66cf1cbe95d5f6b852b7c70eb6701be0efeaf391809b2d4cc44f","internal_article","Article","One Free Agent Cavs Should Target","amp","6467416784","2780002","/articles/2780002-1-realistic-target-every-contender-should-chase-in-2018-nba-free-agency","Bleacher Report"],"appVersion": "1.0"}}}}
-              </script>
-            </amp-analytics><a class="flex-row" href="https://br.app.link/25owhrUVFE?$deeplink_path=article/bleacherreport.com/articles/2780002-1-realistic-target-every-contender-should-chase-in-2018-nba-free-agency&amp;$fallback_url=https://syndication.bleacherreport.com/amp/2780002-1-realistic-target-every-contender-should-chase-in-2018-nba-free-agency.amp.html" id="related-6467416784">
+            <a class="flex-row" href="https://br.app.link/25owhrUVFE?$deeplink_path=article/bleacherreport.com/articles/2780002-1-realistic-target-every-contender-should-chase-in-2018-nba-free-agency&amp;$fallback_url=https://syndication.bleacherreport.com/amp/2780002-1-realistic-target-every-contender-should-chase-in-2018-nba-free-agency.amp.html" id="related-6467416784">
               <div class="row-content">
                 <h2>
                   One Free Agent Cavs Should Target
@@ -943,223 +927,7 @@
         </ul>
       </div>
     </section>
-    <amp-analytics type="comscore">
-      <script type="application/json">
-        {
-          "vars": { "c2": "6246855", "c7": "bleacherreport_amp" },
-          "extraUrlParams": { "comscorekw":"gamp"}
-        }
-      </script>
-    </amp-analytics>
 
-    <amp-analytics type="mparticle" id="m-particle-content-shared-facebook">
-      <script type="application/json">
-        {
-          "vars": {
-            "apiKey": "12bb4ddb4c497e43a61bf40d9d807a76"
-          },
-          "triggers": {
-            "trackAppEvent": {
-              "on": "click",
-              "request": "event",
-              "selector": "amp-social-share#facebook",
-              "vars": {
-                "debug": "false",
-                "clientId": "CLIENT_ID(cid-scope-cookie-fallback-name)",
-                "eventName": "Content Shared",
-                "eventType": "Navigation",
-                "userIdentities_Types" : ["CustomerId"],
-                "userIdentities_Values" : ["CLIENT_ID(cid-scope-cookie-fallback-name)"],
-                "eventAttributes_Keys": [
-                  "articleID",
-                  "articleType",
-                  "screen",
-                  "title",
-                  "tagsString",
-                  "platform",
-                  "permalink",
-                  "author",
-                  "team",
-                  "league",
-                  "shareMethod",
-                  "clientID"
-                ],
-                "eventAttributes_Values": [
-                  "2780269",
-                  "article",
-                  "Article",
-                  "LeBron's Free Agency Will Come` But for Now` Cavs Reflect on 'Whirlwind' Season",
-                  "Basketball;NBA;NBA_Central;Cleveland_Cavaliers;LeBron_James;Opinion",
-                  "amp",
-                  "2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season",
-                  "8494513",
-                  "Cleveland_Cavaliers",
-                  "NBA",
-                  "facebook",
-                  "CLIENT_ID(cid-scope-cookie-fallback-name)"
-                ],
-                "appVersion": "1.0"
-              }
-            }
-          }
-        }
-      </script>
-    </amp-analytics>
-    <amp-analytics type="mparticle" id="m-particle-content-shared-twitter">
-      <script type="application/json">
-        {
-          "vars": {
-            "apiKey": "12bb4ddb4c497e43a61bf40d9d807a76"
-          },
-          "triggers": {
-            "trackAppEvent": {
-              "on": "click",
-              "request": "event",
-              "selector": "amp-social-share#twitter",
-              "vars": {
-                "debug": "false",
-                "clientId": "CLIENT_ID(cid-scope-cookie-fallback-name)",
-                "eventName": "Content Shared",
-                "eventType": "Navigation",
-                "userIdentities_Types" : ["CustomerId"],
-                "userIdentities_Values" : ["CLIENT_ID(cid-scope-cookie-fallback-name)"],
-                "eventAttributes_Keys": [
-                  "articleID",
-                  "articleType",
-                  "screen",
-                  "title",
-                  "tagsString",
-                  "platform",
-                  "permalink",
-                  "author",
-                  "team",
-                  "league",
-                  "shareMethod",
-                  "clientID"
-                ],
-                "eventAttributes_Values": [
-                  "2780269",
-                  "article",
-                  "Article",
-                  "LeBron's Free Agency Will Come` But for Now` Cavs Reflect on 'Whirlwind' Season",
-                  "Basketball;NBA;NBA_Central;Cleveland_Cavaliers;LeBron_James;Opinion",
-                  "amp",
-                  "2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season",
-                  "8494513",
-                  "Cleveland_Cavaliers",
-                  "NBA",
-                  "twitter",
-                  "CLIENT_ID(cid-scope-cookie-fallback-name)"
-                ],
-                "appVersion": "1.0"
-              }
-            }
-          }
-        }
-      </script>
-    </amp-analytics>
-    <amp-analytics type="mparticle" id="m-particle-content-shared-email">
-      <script type="application/json">
-        {
-          "vars": {
-            "apiKey": "12bb4ddb4c497e43a61bf40d9d807a76"
-          },
-          "triggers": {
-            "trackAppEvent": {
-              "on": "click",
-              "request": "event",
-              "selector": "amp-social-share#email",
-              "vars": {
-                "debug": "false",
-                "clientId": "CLIENT_ID(cid-scope-cookie-fallback-name)",
-                "eventName": "Content Shared",
-                "eventType": "Navigation",
-                "userIdentities_Types" : ["CustomerId"],
-                "userIdentities_Values" : ["CLIENT_ID(cid-scope-cookie-fallback-name)"],
-                "eventAttributes_Keys": [
-                  "articleID",
-                  "articleType",
-                  "screen",
-                  "title",
-                  "tagsString",
-                  "platform",
-                  "permalink",
-                  "author",
-                  "team",
-                  "league",
-                  "shareMethod",
-                  "clientID"
-                ],
-                "eventAttributes_Values": [
-                  "2780269",
-                  "article",
-                  "Article",
-                  "LeBron's Free Agency Will Come` But for Now` Cavs Reflect on 'Whirlwind' Season",
-                  "Basketball;NBA;NBA_Central;Cleveland_Cavaliers;LeBron_James;Opinion",
-                  "amp",
-                  "2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season",
-                  "8494513",
-                  "Cleveland_Cavaliers",
-                  "NBA",
-                  "email",
-                  "CLIENT_ID(cid-scope-cookie-fallback-name)"
-                ],
-                "appVersion": "1.0"
-              }
-            }
-          }
-        }
-      </script>
-    </amp-analytics>
-
-    <amp-analytics type="mparticle" id="m-particle-content-viewed">
-      <script type="application/json">
-        {
-          "vars": {
-            "apiKey": "12bb4ddb4c497e43a61bf40d9d807a76"
-          },
-          "triggers": {
-            "trackAppEvent": {
-              "on": "visible",
-              "request": "event",
-              "vars": {
-                "debug": "false",
-                "clientId": "CLIENT_ID(cid-scope-cookie-fallback-name)",
-                "eventName": "Content Viewed",
-                "eventType": "Navigation",
-                "userIdentities_Types" : ["CustomerId"],
-                "userIdentities_Values" : ["CLIENT_ID(cid-scope-cookie-fallback-name)"],
-                "eventAttributes_Keys": [
-                  "articleID",
-                  "articleType",
-                  "screen",
-                  "title",
-                  "referrer_source",
-                  "tagsString",
-                  "platform",
-                  "permalink",
-                  "author",
-                  "clientID"
-                ],
-                "eventAttributes_Values": [
-                  "2780269",
-                  "article",
-                  "Article",
-                  "LeBron's Free Agency Will Come` But for Now` Cavs Reflect on 'Whirlwind' Season",
-                  "DOCUMENT_REFERRER",
-                  "Basketball;NBA;NBA_Central;Cleveland_Cavaliers;LeBron_James;Opinion",
-                  "amp",
-                  "2780269-lebrons-free-agency-will-come-but-for-now-cavs-reflect-on-whirlwind-season",
-                  "",
-                  "CLIENT_ID(cid-scope-cookie-fallback-name)"
-                ],
-                "appVersion": "1.0"
-              }
-            }
-          }
-        }
-      </script>
-    </amp-analytics>
 
     <!-- Nielsen -->
     <div>
