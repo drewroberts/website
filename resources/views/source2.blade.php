@@ -216,7 +216,7 @@
       }
 
       .full-bar {
-          background: #333 url(/images/polls-background.png) repeat-x 0 0;
+          background: #333 url(https://syndication.bleacherreport.com/images/polls-background.png) repeat-x 0 0;
           height: 19px;
           padding: 0 1px;
           position: relative;
@@ -234,7 +234,7 @@
       }
 
       .fill {
-          background: #ff4000 url(/images/polls-background.png) repeat-x 0 -19px;
+          background: #ff4000 url(https://syndication.bleacherreport.com/images/polls-background.png) repeat-x 0 -19px;
           height: 17px;
           position: relative;
           top: 1px;
@@ -566,8 +566,8 @@
 
       @font-face {
           font-family: 'FontAwesome';
-          src: url('/fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
-          src: url('/fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('/fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('/fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('/fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('/fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+          src: url('https://syndication.bleacherreport.com/fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
+          src: url('https://syndication.bleacherreport.com/fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://syndication.bleacherreport.com/fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://syndication.bleacherreport.com/fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://syndication.bleacherreport.com/fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://syndication.bleacherreport.com/fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
           font-weight: normal;
           font-style: normal;
       }
@@ -586,51 +586,51 @@
 
       @font-face {
           font-family: "Open Sans";
-          src: url("/fonts/open-sans/regular.eot");
-          src: url("/fonts/open-sans/regular.eot?#iefix")format("embedded-opentype"),
-          url("/fonts/open-sans/regular.woff") format("woff"),
-          url("/fonts/open-sans/regular.ttf") format("truetype");
+          src: url("https://syndication.bleacherreport.com/fonts/open-sans/regular.eot");
+          src: url("https://syndication.bleacherreport.com/fonts/open-sans/regular.eot?#iefix")format("embedded-opentype"),
+          url("https://syndication.bleacherreport.com/fonts/open-sans/regular.woff") format("woff"),
+          url("https://syndication.bleacherreport.com/fonts/open-sans/regular.ttf") format("truetype");
           font-style: normal;
           font-weight: normal;
       }
 
       @font-face {
           font-family: "Open Sans";
-          src: url("/fonts/open-sans/semibold.eot");
-          src: url("/fonts/open-sans/semibold.eot?#iefix")format("embedded-opentype"),
-          url("/fonts/open-sans/semibold.woff") format("woff"),
-          url("/fonts/open-sans/semibold.ttf") format("truetype");
+          src: url("https://syndication.bleacherreport.com/fonts/open-sans/semibold.eot");
+          src: url("https://syndication.bleacherreport.com/fonts/open-sans/semibold.eot?#iefix")format("embedded-opentype"),
+          url("https://syndication.bleacherreport.com/fonts/open-sans/semibold.woff") format("woff"),
+          url("https://syndication.bleacherreport.com/fonts/open-sans/semibold.ttf") format("truetype");
           font-style: normal;
           font-weight: bold;
       }
       @font-face {
           font-family: "Effra";
-          src: url("/fonts/effra/effra-rg.ttf") format("truetype");
+          src: url("https://syndication.bleacherreport.com/fonts/effra/effra-rg.ttf") format("truetype");
           font-weight: 400;
       }
       @font-face {
           font-family: "Effra";
-          src: url("/fonts/effra/effra-md.ttf") format("truetype");
+          src: url("https://syndication.bleacherreport.com/fonts/effra/effra-md.ttf") format("truetype");
           font-weight: 500;
       }
       @font-face {
           font-family: "Effra";
-          src: url("/fonts/effra/effra-bold.ttf") format("truetype");
+          src: url("https://syndication.bleacherreport.com/fonts/effra/effra-bold.ttf") format("truetype");
           font-weight: 700;
       }
       @font-face {
         font-family: "Proxima Nova";
-        src: url("/fonts/proxima-nova/proxima-nova-regular.otf") format("opentype");
+        src: url("https://syndication.bleacherreport.com/fonts/proxima-nova/proxima-nova-regular.otf") format("opentype");
         font-weight: 400;
       }
       @font-face {
         font-family: "Proxima Nova";
-        src: url("/fonts/proxima-nova/proxima-nova-medium.otf") format("opentype");
+        src: url("https://syndication.bleacherreport.com/fonts/proxima-nova/proxima-nova-medium.otf") format("opentype");
         font-weight: 500;
       }
       @font-face {
         font-family: "Proxima Nova";
-        src: url("/fonts/proxima-nova/proxima-nova-bold.otf") format("opentype");
+        src: url("https://syndication.bleacherreport.com/fonts/proxima-nova/proxima-nova-bold.otf") format("opentype");
         font-weight: 700;
       }
       .bleacher-table-container {
@@ -695,7 +695,7 @@
           <div class="navbar-trigger" on="tap:sidebar.toggle" role="button" tabindex="0">
             ☰
           </div>
-          <amp-img class="logo" height="35" layout="fixed" src="/images/br-logo-bw.png" width="47"></amp-img>
+          <amp-img class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
         </div>
       </section>
     </header>
@@ -883,7 +883,7 @@
     </section>
 
     <div class="footer-logo-container">
-      <amp-img height="38" layout="fixed" src="/images/br-logo-bw.png" width="50"></amp-img>
+      <amp-img height="38" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="50"></amp-img>
     </div>
   </body>
 </html>
