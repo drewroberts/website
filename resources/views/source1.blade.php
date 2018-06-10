@@ -556,7 +556,6 @@ amp-carousel > amp-img > img {
 	</aside>
 </footer>
 
-
 </article>
 
 
@@ -597,7 +596,7 @@ amp-carousel > amp-img > img {
 		<button class="amp-newsletter-button close-newsletter" on="tap:newsletter-lightbox.close" role="button" tabindex="0">
 		&times;
 		</button>
-		<form class="newsletter-article-signup" method="post" name="sailthru-signup" target="_top">
+		<form class="newsletter-article-signup" method="post" name="sailthru-signup" action-xhr="/wp-admin/admin-ajax.php" target="_top">
 
 	<div class="newsletter-article-inputs">
 		<h4 class="newsletter-article-tout">Stay undefeated with our culture and weekly recap newsletters:</h4>
