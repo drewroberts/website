@@ -512,9 +512,7 @@ amp-carousel > amp-img > img {
 <amp-social-share width="38" height="38" type="twitter" class="share-twitter"></amp-social-share><amp-social-share width="38" height="38" type="facebook" class="share-facebook" data-param-app_id="834240743288407"></amp-social-share><amp-social-share width="38" height="38" type="email" class="share-email"></amp-social-share>
 </div>
 <p><span class="time-posted"><a href="https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/">4:28 PM</a></span>Willie Taggart is a “see something, say something” kind of guy, and his good deed for 200 football campers this week is a testament to that.</p>
-<div class="amp-ad-wrapper">
-			<amp-ad width="300" height="250" type="doubleclick" data-slot="/6444/espn.theundefeated.us.com/story" json='{"targeting":{"pgtyp":["story"],"pgn":[""],"sp":["theundefeated"],"prof":["s"],"ls_segs":["456","227"]}}'></amp-ad>
-</div>
+
 <p>The Florida State University head coach, who was hired last December, happened to come upon Florida State’s Junior Noles football camp that was held Monday to Wednesday of this week. The camp for students entering first through eighth grade cost $230 and included an FSU football camp T-shirt, but it didn’t include lunch, according to the <em>Miami Herald</em>.</p>
 <p>Taggart, a Palmetto, Florida, native who himself played at Manatee High in Bradenton, wasn’t having that. According to a tweet from Palm Beach Nole, Taggart approached a man running the camp, which ran from 8 a.m. to 1 p.m., and inquired about lunch for the kids. When told that lunch was not included, Taggart jumped into coach mode, telling the man: “That’s not happening. Get on the phone and order some food for these kids.”</p>
 <p>Pizza arrived soon afterward, the tweet says, and on Tuesday Jimmy John’s and ice cream were on the menu — all courtesy of Taggart.</p>
@@ -629,7 +627,7 @@ amp-carousel > amp-img > img {
 	</div>
 	<div submit-error>
 		<template type="amp-mustache">
-			<p class="newsletter-status">Error: {{data}}.</p>
+			<p class="newsletter-status">Error.</p>
 		</template>
 	</div>
 	<p class="newsletter-article-success-message"></p>
