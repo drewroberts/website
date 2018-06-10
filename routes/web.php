@@ -11,30 +11,34 @@
 |
 */
 
-Route::get('/article', function () {
-    return view('article');
+Route::get('/source1', function () {
+    return view('source1');
 });
 
-Route::get('/amp', function () {
-    return view('amp');
+Route::get('/source2', function () {
+    return view('source2');
 });
 
-Route::get('/test', function () {
-    return view('test');
+Route::get('/source3', function () {
+    return view('source3');
 });
 
-Route::get('/example', function () {
-    return view('example');
+Route::get('/source4', function () {
+    return view('source4');
+});
+
+Route::get('/source5', function () {
+    return view('source5');
 });
 
 Route::get('/', function () {
-    return view('app');
+    return view('temporary');
 });
 
 // Redirect ./recommendations to ./recommends
 
 Route::any('{all}', function () {
-    return view('app');
+    return view('temporary');
 })
 ->where(['all' => '.*']);
 Auth::routes();
