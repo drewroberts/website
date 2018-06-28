@@ -509,10 +509,8 @@ amp-carousel > amp-img > img {
 <body class="">
 
 	<header class="primary-header" role="banner">
-				<p class="primary-heading">
-				<a class="link" href="https://theundefeated.com/">The Undefeated</a>
-			</p>
-				<button class="nav-global-open" on="tap:menusidebar-lightbox">
+			<amp-img class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
+			<button class="nav-global-open" on="tap:menusidebar-lightbox">
 				<span class="menu-text">Menu</span>
 				<span class="menu-icon" id="nav-global-toggle"><span class="invis-at-small">Menu</span></span>
 			</button>
