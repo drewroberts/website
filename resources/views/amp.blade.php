@@ -464,10 +464,7 @@ amp-carousel > amp-img > img {
 		<section class="br-header">
 			<div class="header-container">
 				<amp-img class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
-				<button class="nav-global-open" on="tap:menusidebar-lightbox">
-				<span class="menu-text">Menu</span>
-				<span class="menu-icon" id="nav-global-toggle"><span class="invis-at-small">Menu</span></span>
-			</button>
+				
 			</div>
 		</section>
 	</header>
