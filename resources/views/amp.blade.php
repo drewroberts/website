@@ -511,7 +511,6 @@ amp-carousel > amp-img > img {
 	<header class="primary-header" role="banner">
 			<amp-img class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
 			<button class="nav-global-open" on="tap:menusidebar-lightbox">
-				<span class="menu-text">Menu</span>
 				<span class="menu-icon" id="nav-global-toggle"><span class="invis-at-small">Menu</span></span>
 			</button>
 	</header>
@@ -523,7 +522,6 @@ amp-carousel > amp-img > img {
 					<a class="link" href="https://drewroberts.com">DrewRoberts.com</a>
 					<div class="close-nav">
 						<button class="nav-global-close" id="nav-global-toggle" on="tap:menusidebar-lightbox.close">
-							<span class="menu-text">Menu</span>
 							<span class="menu-icon" id="nav-global-toggle"><span class="invis-at-small">Menu</span></span>
 						</button>
 					</div>
