@@ -469,6 +469,7 @@ amp-carousel > amp-img > img {
 				<amp-img class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
 			</div>
 		</section>
+	</header>
 
 		<amp-lightbox id="menusidebar-lightbox" layout="nodisplay" scrollable>
 		<div class="lightbox">
@@ -515,7 +516,6 @@ amp-carousel > amp-img > img {
 			</nav>
 		</div>
 	</amp-lightbox>
-</header>
 
 
 <article class="amp-wp-article story">
