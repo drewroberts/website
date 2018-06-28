@@ -162,6 +162,32 @@ blockquote p:last-child {
 
 /* Header */
 
+.sticky-header{
+		margin: 0;
+		top: calc(0px);
+		position: fixed;
+		background: black;
+		display: block;
+		width: 100%;
+		z-index: 11;
+		box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.header-container{
+		text-align: center;
+}
+
+.header-logo-container {
+		background: black;
+		text-align: center;
+		padding-top: 16px;
+		padding-bottom: 12px;
+}
+
+.br-header .logo{
+		margin: 10px 0 10px -48px;
+}
+
 .amp-wp-header {
 	background-color: ;
 }
@@ -434,14 +460,16 @@ amp-carousel > amp-img > img {
 
 <body class="">
 
-<header class="primary-header" role="banner">
-			<p class="primary-heading">
-			<a class="link" href="https://drewroberts.com">DrewRoberts.com</a>
-		</p>
-			<button class="nav-global-open" on="tap:menusidebar-lightbox">
-			<span class="menu-text">Menu</span>
-			<span class="menu-icon" id="nav-global-toggle"><span class="invis-at-small">Menu</span></span>
-		</button>
+	<header class="sticky-header">
+		<section class="br-header">
+			<div class="header-container">
+				<div class="nav-global-open" on="tap:menusidebar-lightbox" role="button" tabindex="0">
+					☰
+				</div>
+				<amp-img class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
+			</div>
+		</section>
+
 		<amp-lightbox id="menusidebar-lightbox" layout="nodisplay" scrollable>
 		<div class="lightbox">
 			<nav class="navigation--secondary" id="secondary-navigation" role="navigation">

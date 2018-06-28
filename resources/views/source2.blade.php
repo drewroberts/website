@@ -301,12 +301,7 @@
           padding: 0 14px;
       }
 
-      .header-logo-container {
-          background: black;
-          text-align: center;
-          padding-top: 16px;
-          padding-bottom: 12px;
-      }
+
       .footer-logo-container {
           text-align: center;
           padding-bottom: 35px;
@@ -352,6 +347,13 @@
 
       .header-container{
           text-align: center;
+      }
+
+      .header-logo-container {
+          background: black;
+          text-align: center;
+          padding-top: 16px;
+          padding-bottom: 12px;
       }
 
       .br-header .logo{
