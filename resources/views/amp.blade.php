@@ -3,16 +3,33 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Drew Roberts",
+    "url": "https://DrewRoberts.com",
+    "sameAs": [
+      "https://www.facebook.com/DrewRoberts",
+      "https://twitter.com/DrewRoberts",
+      "https://www.linkedin.com/in/DrewRoberts",
+      "https://github.com/DrewRoberts",
+      "https://plus.google.com/+DrewRoberts"
+    ]
+  }
+  </script>
 	<script type='application/ld+json'>
 {"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/"},"headline":"FSU coach Willie Taggart buys lunch for local football campers, wins the day","datePublished":"2018-06-07T16:28:10+00:00","dateModified":"2018-06-07T17:16:22+00:00","publisher":{"@type":"Organization","name":"The Undefeated","logo":{"url":"https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/the-undefeated-logo-snippets.png","width":152,"height":60,"@type":"ImageObject"}},"author":{"@type":"Person","name":"Mark W. Wright"},"articleSection":"The Uplift","image":{"@type":"ImageObject","url":"https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700","width":700,"height":393}}
 </script>
+
+<title>FSU coach Willie Taggart buys lunch for local football campers, wins the day — The Undefeated</title>
+<link rel="canonical" href="https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/" />
 <meta name="DC.date.issued" content="2018-06-07 21:16:22" />
 <meta name="news_keywords" content="College Football, Florida State Seminoles, Willie Taggart" />
 <meta name="description" content="Willie Taggart is a “see something, say something” kind of guy, and his good deed for 200 football campers this week is a testament to that. The Florida State U&#8230;" />
-<meta name='author' content='Mark W. Wright' />
-<link rel='author' href='https://theundefeated.com/contributors/mark-w-wright/' />
+<meta name='author' content='Drew Roberts' />
+<link rel='author' href='https://drewroberts.com/about' />
 
-<!-- Jetpack Open Graph Tags -->
 <meta property="og:type" content="article" />
 <meta property="og:title" content="FSU coach Willie Taggart buys lunch for local football campers, wins the day The Seminoles coach filled stomachs, and filled hearts even more" />
 <meta property="og:url" content="https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/" />
@@ -28,7 +45,7 @@
 <meta property="article:publisher" content="https://www.facebook.com/theundefeatedsite" />
 <meta property="fb:app_id" content="834240743288407" />
 <meta property="fb:pages" content="1583598865225460" />
-<meta name="twitter:site" content="TheUndefeated" />
+<meta name="twitter:site" content="DrewRoberts.com" />
 <meta name="twitter:site:id" content="3033098871" />
 <meta name="twitter:widgets:csp" content="on" />
 <meta name="twitter:maxage" content="300" />
@@ -40,10 +57,8 @@
 <meta name="twitter:label2" content="Filed under" />
 <meta name="twitter:data2" content="College Football, Florida State Seminoles, Willie Taggart" />
 
-<!-- End Jetpack Open Graph Tags -->
-	<title>FSU coach Willie Taggart buys lunch for local football campers, wins the day — The Undefeated</title>
-		<link rel="canonical" href="https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/" />
-	<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
+
+<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-ad-0.1.js' async custom-element="amp-ad"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js' async custom-element="amp-social-share"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-form-0.1.js' async custom-element="amp-form"></script>
@@ -51,7 +66,6 @@
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-mustache-0.1.js' async custom-template="amp-mustache"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><meta name="generator" content="AMP Plugin v0.7.1" />	<style amp-custom>
-		/* Generic WP styling */
 
 .alignright {
 	float: right;
@@ -422,7 +436,7 @@ amp-carousel > amp-img > img {
 
 <header class="primary-header" role="banner">
 			<p class="primary-heading">
-			<a class="link" href="https://theundefeated.com/">The Undefeated</a>
+			<a class="link" href="https://drewroberts.com">DrewRoberts.com</a>
 		</p>
 			<button class="nav-global-open" on="tap:menusidebar-lightbox">
 			<span class="menu-text">Menu</span>
@@ -432,7 +446,7 @@ amp-carousel > amp-img > img {
 		<div class="lightbox">
 			<nav class="navigation--secondary" id="secondary-navigation" role="navigation">
 				<div class="topbar">
-					<a class="link" href="https://theundefeated.com/">The Undefeated</a>
+					<a class="link" href="https://drewroberts.com">DrewRoberts.com</a>
 					<div class="close-nav">
 						<button class="nav-global-close" id="nav-global-toggle" on="tap:menusidebar-lightbox.close">
 							<span class="menu-text">Menu</span>
@@ -459,8 +473,8 @@ amp-carousel > amp-img > img {
 <li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="https://theundefeated.com/about/">About</a></li>
 </ul>
 						<div class="menu menu--social">
-							<a class="facebook" href="https://www.facebook.com/theundefeatedsite" target="_blank">Facebook</a>
-							<a class="twitter" href="https://twitter.com/TheUndefeated" target="_blank">Twitter</a>
+							<a class="facebook" href="https://www.facebook.com/DrewRoberts" target="_blank">Facebook</a>
+							<a class="twitter" href="https://twitter.com/DrewRoberts" target="_blank">Twitter</a>
 							<a class="espn" href="http://www.espn.com/" target="_blank">ESPN</a>
 						</div>
 
