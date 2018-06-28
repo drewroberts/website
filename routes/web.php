@@ -11,6 +11,11 @@
 |
 */
 
+Route::get('/amp', function () {
+    return view('amp');
+});
+
+
 Route::get('/source1', function () {
     return view('source1');
 });
