@@ -633,8 +633,8 @@ amp-carousel > amp-img > img {
 .primary-footer__social a.facebook{background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-facebook-black.svg)}
 .primary-footer__social a.twitter{background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-twitter-black.svg)}
 .amp-wp-article{font-family:"ESPN Acta",serif;margin:0;max-width:none}
-.story-header{background:#222 url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/mine-shaft-bg.svg);color:#fff;background-size:6px;padding:20px;padding-top:100px;}
-.header-content{max-width: 1180px;margin: 0 auto;}
+.story-header{background:#222 url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/mine-shaft-bg.svg);color:#fff;background-size:6px;padding-top:100px;}
+.header-content{max-width: 1180px;margin: 0 auto;padding:20px;}
 .header-content>.term{color:#333334;background-color:#f7cf4f;background-position:0 0;background-size:100% 100%;background-image:svg-url('');display:inline-block;font:normal 400 12px/1 BentonSansComp,sans-serif;letter-spacing:1px;margin-bottom:10px;padding:5px 9px 4px;text-transform:uppercase;margin-bottom:15px}
 .header-content>.link{display:block;overflow:visible;line-height:25px}
 .header-content .heading,.header-content .subheading{display:block;overflow:visible;vertical-align:baseline;}
