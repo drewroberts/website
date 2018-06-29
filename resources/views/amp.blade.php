@@ -400,8 +400,6 @@ amp-carousel > amp-img > img {
 
 .amp-wp-article-footer .amp-wp-meta {
 	display: block;
-	max-width: 1180px;
-    margin: 0 auto;
 }
 
 .amp-wp-tax-category,
@@ -772,7 +770,8 @@ amp-carousel > amp-img > img {
 .ornamental-rule hr{border:none;border-top:1px solid #ddd;top:8px;margin:0;position:relative;width:100%}
 .ornamental-rule span{
 	background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNi4xIDIxIj48cGF0aCBmaWxsPSIjZGRkZGRkIiBkPSJNMTIuMyAyMWMtMy4yIDAtNC44LTIuMy00LjgtNi4xVjBIMHYxNWMwIDMuOCAxLjggNiAzLjggNmg4LjV6Ii8+PHBhdGggZmlsbD0iI2RkZGRkZCIgZD0iTTguNSAxNS4xYzAgMS45LjYgNSAzLjkgNVMxNiAxNi45IDE2IDE1VjYuMkg4LjV2OC45eiIvPjwvc3ZnPg==);background-size:14px;background-color:#fff;background-repeat:no-repeat;background-position:center;display:inline-block;width:30px;height:38px;top:-16px;position:relative;margin-bottom:-20px}
-.amp-wp-article-footer{padding:15px}
+.amp-wp-article-footer{padding:15px;max-width: 1180px;
+	margin: 0 auto;}
 aside.newsletter:focus{outline:0;}
 .newsletter .form{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .newsletter-article-success-message,.newsletter-status,.subscribe-span{font:14px/1.3 UnitedSansReg,sans-serif;font-weight:700;margin-bottom:15px}
