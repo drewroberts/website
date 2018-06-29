@@ -834,7 +834,9 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 <body class="">
 
 	<header class="primary-header" role="banner">
-			<amp-img style="flex-grow: 1;" class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
+			<div class="primary-section" style="flex-grow: 1;">
+				<amp-img class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
+			</div>
 			<button class="nav-global-open" on="tap:menusidebar-lightbox">
 				<span class="menu-icon" id="nav-global-toggle"><span class="invis-at-small">Menu</span></span>
 			</button>
