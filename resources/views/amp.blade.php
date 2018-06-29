@@ -553,9 +553,9 @@ amp-carousel > amp-img > img {
 	}
 
 		.primary-header:after{content:" ";display:none;position:absolute;top:0;right:150px;bottom:0;left:-50px;background-color:#f7cf4f;z-index:-1;-webkit-transform:skew(-35deg,0);transform:skew(-35deg,0);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}
-
+		.header-section{flex-grow: 1}
 		.primary-header button{border:none}
-.primary-header a{color:inherit;text-decoration:none}
+		.primary-header a{color:inherit;text-decoration:none}
 
 		.primary-heading{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;overflow:visible;padding-left:0;position:fixed;padding:0 0 0 10px}
 
@@ -834,7 +834,7 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 <body class="">
 
 	<header class="primary-header" role="banner">
-			<div class="primary-section" style="flex-grow: 1;">
+			<div class="header-section">
 				<amp-img class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
 			</div>
 			<button class="nav-global-open" on="tap:menusidebar-lightbox">
