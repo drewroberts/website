@@ -582,10 +582,10 @@ amp-carousel > amp-img > img {
 .primary-search button{cursor:pointer;position:absolute;top:7px;right:7px;width:44px;height:44px;opacity:.6}
 .primary-search button.submit--search{background:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-search.svg) no-repeat 50% 50%/22px}
 .navigation--primary,.navigation--secondary{font:800 13px/20px BentonSansComp,sans-serif;text-transform:uppercase;letter-spacing:1px}
-.nav-global-close,.nav-global-open{cursor:pointer;background-color:#fff;background-size:22px auto;display:block;cursor:pointer;color:#fff;height:60px;line-height:60px;margin:0;padding:0;padding-left:7px;text-align:left;width:99px}
+.nav-global-close,.nav-global-open{cursor:pointer;background-color:black;background-size:22px auto;display:block;cursor:pointer;color:#fff;height:60px;line-height:60px;margin:0;padding:0;padding-left:7px;text-align:left;width:99px}
 .nav-global-close:focus,.nav-global-open:focus{outline:0}
 .nav-global-close .menu-text,.nav-global-open .menu-text{font:800 13px/20px UnitedSansReg,sans-serif;letter-spacing:1px;line-height:60px;text-transform:uppercase}
-		.nav-global-close .menu-icon,.nav-global-open .menu-icon{width:24px;height:3px;display:block;padding:0;position:absolute;top:50%;right:18px;background-color:#fff;-webkit-transition-duration:.1s;transition-duration:.1s;overflow:visible}
+		.nav-global-close .menu-icon,.nav-global-open .menu-icon{width:24px;height:3px;display:block;padding:0;position:absolute;top:50%;right:18px;background-color:black;-webkit-transition-duration:.1s;transition-duration:.1s;overflow:visible}
 		.nav-global-close .menu-icon .invis-at-small,.nav-global-open .menu-icon .invis-at-small{clip:rect(1px,1px,1px,1px);position:absolute}
 		.nav-global-close .menu-icon:after,.nav-global-close .menu-icon:before,.nav-global-open .menu-icon:after,.nav-global-open .menu-icon:before{content:' ';display:block;position:absolute;left:0;right:0;height:3px;background-color:#fff}
 		.nav-global-close .menu-icon:before,.nav-global-open .menu-icon:before{top:-6px;-webkit-transform-origin:center bottom;transform-origin:center bottom}
