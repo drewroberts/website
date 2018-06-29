@@ -552,10 +552,11 @@ amp-carousel > amp-img > img {
 		width: 100%
 	}
 
-		.primary-header:after{content:" ";display:none;position:absolute;top:0;right:150px;bottom:0;left:-50px;background-color:#f7cf4f;z-index:-1;-webkit-transform:skew(-35deg,0);transform:skew(-35deg,0);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}
-		.header-section{flex-grow: 1}
-		.primary-header button{border:none}
-		.primary-header a{color:inherit;text-decoration:none}
+		.primary-header:after {content:" ";display:none;position:absolute;top:0;right:150px;bottom:0;left:-50px;background-color:#f7cf4f;z-index:-1;-webkit-transform:skew(-35deg,0);transform:skew(-35deg,0);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}
+		.header-section {flex-grow: 1}
+		.header-section a {flex-grow: 1}
+		.primary-header button {border:none}
+		.primary-header a {color:inherit;text-decoration:none}
 
 		.primary-heading{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;overflow:visible;padding-left:0;position:fixed;padding:0 0 0 10px}
 
@@ -835,7 +836,7 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 
 	<header class="primary-header" role="banner">
 			<div class="header-section">
-				<amp-img class="logo" height="35" layout="fixed" src="https://syndication.bleacherreport.com/images/br-logo-bw.png" width="47"></amp-img>
+				<a class="homepage" href="https://drewroberts.com">DrewRoberts.com</a>
 			</div>
 			<button class="nav-global-open" on="tap:menusidebar-lightbox">
 				<span class="menu-icon" id="nav-global-toggle"><span class="invis-at-small">Menu</span></span>
@@ -890,35 +891,35 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 
 <article class="amp-wp-article story">
 
-<div class="story-header">
-	<div class="header-content">
-		<a href="https://theundefeated.com/tag/college-football/" class="term" name="">College Football</a>
-		<h1 class="heading entry-title"><span>FSU coach Willie Taggart buys lunch for local football campers, wins the day</span></h1>
-		<p class="subheading">The Seminoles coach filled stomachs, and filled hearts even more</p>
+	<div class="story-header">
+		<div class="header-content">
+			<a href="https://theundefeated.com/tag/college-football/" class="term" name="">College Football</a>
+			<h1 class="heading entry-title"><span>FSU coach Willie Taggart buys lunch for local football campers, wins the day</span></h1>
+			<p class="subheading">The Seminoles coach filled stomachs, and filled hearts even more</p>
+		</div>
 	</div>
-</div>
 
-<div class="story-body story-blog">
-				<figure class="featured-image pull-out">
-				<amp-img width="700" height="393" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>					<figcaption class="featured-image__figcaption">
-													<span class="featured-image__caption">Florida State head coach Willie Taggart goes around the stadium high flving fans during the Florida State spring football game at Bobby Bowden Field at Doak Campbell Stadium in Tallahassee, FL on April, 14th, 2018. </span>
+	<div class="story-body story-blog">
+			<figure class="featured-image pull-out">
+				<amp-img width="700" height="393" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>
+				<figcaption class="featured-image__figcaption">
+						<span class="featured-image__caption">Florida State head coach Willie Taggart goes around the stadium high flving fans during the Florida State spring football game at Bobby Bowden Field at Doak Campbell Stadium in Tallahassee, FL on April, 14th, 2018. </span>
+						<span class="featured-image__credit">Logan Stanford/Icon Sportswire </span>
+				</figcaption>
+			</figure>
 
-													<span class="featured-image__credit">Logan Stanford/Icon Sportswire </span>
-											</figcaption>
-
-							</figure>
-				<div class="meta pull-out">
+		<div class="meta pull-out">
 			<div class="byline-timestamp-mod">
-													<div class="author-block author-block--headshot">
-											<a href="https://theundefeated.com/contributors/mark-w-wright/" class="avatar wright"><amp-img alt="Mark W. Wright" src="https://theundefeated.com/wp-content/uploads/2016/05/wright.png?quality=90&amp;strip=info&amp;w=90&amp;ssl=1" width="90" height="90" class="amp-wp-enforced-sizes" layout="intrinsic"></amp-img></a>
-						<span class="meta-author vcard">
-							<span class="byline">
-							By <a href="https://theundefeated.com/contributors/mark-w-wright/" title="" class="author url fn" rel="author">Mark W. Wright</a>							</span>
-															<a href="https://twitter.com/Wright_One" class="author-twitter">@Wright_One</a>
-													</span>
-					</div>
-						<time class="timestamp updated" datetime="2018-06-07T20:28:10+00:00">June 7, 2018</time>
-</div>		</div>
+				<div class="author-block author-block--headshot">
+					<a href="https://drewroberts.com/about" class="avatar wright"><amp-img alt="Drew Roberts" src="https://theundefeated.com/wp-content/uploads/2016/05/wright.png?quality=90&amp;strip=info&amp;w=90&amp;ssl=1" width="90" height="90" class="amp-wp-enforced-sizes" layout="intrinsic"></amp-img></a>
+					<span class="meta-author vcard">
+						<span class="byline">By <a href="https://drewroberts.com/about" title="" class="author url fn" rel="author">Drew Roberts</a></span>
+						<a href="https://twitter.com/DrewRoberts" class="author-twitter">@DrewRoberts</a>
+					</span>
+				</div>
+				<time class="timestamp updated" datetime="2018-06-07T20:28:10+00:00">June 7, 2018</time>
+			</div>
+		</div>
 
 	<div class="story-content">
 
@@ -938,26 +939,21 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 </span>
 
 		<div class="author-bio">
-	<p>Mark W. Wright is the director of special projects for The Undefeated. Born in England and raised in Jamaica, He sends referees running for the hills when they see the soccer dad (and Howard University alum) coming.</p>
-</div>
-<!-- .author-bio -->
+			<p>Mark W. Wright is the director of special projects for The Undefeated. Born in England and raised in Jamaica, He sends referees running for the hills when they see the soccer dad (and Howard University alum) coming.</p>
+		</div>
+
 	</div>
 
 </div>
 
 
-<div class="story-tags" id="story-tags">
-						<span class="heading">This Story Tagged:</span>
-
+	<div class="story-tags" id="story-tags">
+			<span class="heading">This Story Tagged:</span>
 			<a href="https://theundefeated.com/tag/college-football/" class="tag">College Football</a>
-
-
 			<a href="https://theundefeated.com/tag/florida-state-seminoles/" class="tag">Florida State Seminoles</a>
-
-
 			<a href="https://theundefeated.com/tag/willie-taggart/" class="tag">Willie Taggart</a>
+	</div>
 
-			</div><!-- .story-tags -->
 
 <footer class="amp-wp-article-footer">
 	<aside class="widget flexible newsletter" on="tap:newsletter-lightbox" role="complimentary" tabindex="0">
@@ -1004,6 +1000,8 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 		</div>
 	</div>
 </footer>
+
+
 
 <amp-lightbox id="newsletter-lightbox" layout="nodisplay">
 	<div class="lightbox">
