@@ -611,6 +611,8 @@ amp-carousel > amp-img > img {
 .navigation--secondary .menu--social a.facebook{background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-facebook.svg);background-size:60%}
 .navigation--secondary .menu--social a.twitter{background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-twitter.svg);background-size:60%}
 .navigation--secondary .menu--social a.espn{float:right;border-radius:0;width:56px;background:no-repeat center center;background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-espn.svg)}
+
+
 .page-content{background-color:#fff;position:relative;z-index:2;overflow:hidden;border-bottom:5px solid #f7cf4f}
 .primary-footer{background:#222 url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/mine-shaft-bg.svg);background-size:6px;color:#fff;z-index:1}
 .primary-footer__width{max-width:1180px;margin:0 auto;overflow:hidden;padding:14px}
@@ -906,7 +908,7 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 
 	<div class="story-body story-blog">
 			<figure class="featured-image pull-out">
-				<amp-img width="700" height="393" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>
+				<amp-img width="1400" height="786" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>
 				<figcaption class="featured-image__figcaption">
 						<span class="featured-image__caption">Florida State head coach Willie Taggart goes around the stadium high flving fans during the Florida State spring football game at Bobby Bowden Field at Doak Campbell Stadium in Tallahassee, FL on April, 14th, 2018. </span>
 						<span class="featured-image__credit">Logan Stanford/Icon Sportswire </span>
