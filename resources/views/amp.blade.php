@@ -554,7 +554,7 @@ amp-carousel > amp-img > img {
 
 		.primary-header:after {content:" ";display:none;position:absolute;top:0;right:150px;bottom:0;left:-50px;background-color:#f7cf4f;z-index:-1;-webkit-transform:skew(-35deg,0);transform:skew(-35deg,0);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}
 		.header-section {flex-grow: 1}
-		.header-section a {margin: 0 auto;}
+		.header-section a {margin: auto; width: 200px;}
 		.homepage svg {width: 200px; height: 50px; }
 		.primary-header button {border:none}
 		.primary-header a {color:inherit;text-decoration:none}
