@@ -648,12 +648,13 @@ amp-carousel > amp-img > img {
 .story-header{background:#222 url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/mine-shaft-bg.svg);color:#fff;background-size:6px;padding:20px}
 .story-header>.term{color:#333334;background-color:#f7cf4f;background-position:0 0;background-size:100% 100%;background-image:svg-url('');display:inline-block;font:normal 400 12px/1 BentonSansComp,sans-serif;letter-spacing:1px;margin-bottom:10px;padding:5px 9px 4px;text-transform:uppercase;margin-bottom:15px}
 .story-header>.link{display:block;overflow:visible;line-height:25px}
-.story-header .heading,.story-header .subheading{display:block;overflow:visible;vertical-align:baseline;    max-width: 1180px;}
+.story-header .heading,.story-header .subheading{display:block;overflow:visible;vertical-align:baseline;    max-width: 1180px;     margin: 0 auto; }
 .story-header .heading{color:#fff;font-weight:700;font-size:1.75rem;line-height:1.1em;margin-bottom:10px;margin-top:0}
 
 		.story-header .subheading{color:#989898;margin:0;font-style:italic;font-size:1.0625rem;line-height:1.4}
 .story-body{font-size:1.0625rem;line-height:1.625rem;position:relative;overflow:visible;
-	max-width: 1180px;}
+	max-width: 1180px;
+    margin: 0 auto;}
 .story-body .story-content li a,.story-body .story-content p a,.story-body>p a{color:inherit;-webkit-transition:color .15s ease;transition:color .15s ease;text-decoration:underline;-webkit-text-decoration-color:#fc214b;text-decoration-color:#fc214b}
 .story-body .videoplayer{overflow:hidden}
 .story-body .fb_iframe_widget,.story-body .story-content>.embed,.story-body .videoplayer,.story-body .wp-audio-shortcode,.story-body .wp-video{margin-bottom:20px}
