@@ -18,9 +18,42 @@
     ]
   }
   </script>
+	
 	<script type='application/ld+json'>
-{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/"},"headline":"FSU coach Willie Taggart buys lunch for local football campers, wins the day","datePublished":"2018-06-07T16:28:10+00:00","dateModified":"2018-06-07T17:16:22+00:00","publisher":{"@type":"Organization","name":"The Undefeated","logo":{"url":"https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/the-undefeated-logo-snippets.png","width":152,"height":60,"@type":"ImageObject"}},"author":{"@type":"Person","name":"Mark W. Wright"},"articleSection":"The Uplift","image":{"@type":"ImageObject","url":"https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700","width":700,"height":393}}
-</script>
+	{
+		"@context":"http://schema.org",
+		"@type":"NewsArticle",
+		"mainEntityOfPage":{"@type":"WebPage",
+		"@id":"https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/"},
+		"headline":"FSU coach Willie Taggart buys lunch for local football campers, wins the day","datePublished":"2018-06-07T16:28:10+00:00",
+		"dateModified":"2018-06-07T17:16:22+00:00",
+		"publisher":
+				{
+					"@type":"Organization",
+					"name":"The Undefeated",
+					"logo":
+							{
+								"url":"https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/the-undefeated-logo-snippets.png",
+								"width":152,
+								"height":60,
+								"@type":"ImageObject"
+							}
+					},
+			"author":
+					{
+						"@type":"Person",
+						"name":"Mark W. Wright"
+					},
+				"articleSection":"The Uplift",
+				"image":
+						{
+							"@type":"ImageObject",
+							"url":"https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700",
+							"width":700,
+							"height":393
+						}
+	}
+	</script>
 
 <title>FSU coach Willie Taggart buys lunch for local football campers, wins the day — The Undefeated</title>
 <link rel="canonical" href="https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/" />
@@ -65,9 +98,23 @@
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-lightbox-0.1.js' async custom-element="amp-lightbox"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-mustache-0.1.js' async custom-template="amp-mustache"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic">
 
-body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><meta name="generator" content="AMP Plugin v0.7.1" />	<style amp-custom>
+<style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+	body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<meta name="generator" content="AMP Plugin v0.7.1" />
+<style amp-custom>
 
 .alignright {
 	float: right;
@@ -718,8 +765,10 @@ amp-carousel > amp-img > img {
 .story-body.story-blog p .time-posted a{text-decoration:none}
 .ornamental-rule{text-align:center;clear:both}
 .ornamental-rule hr{border:none;border-top:1px solid #ddd;top:8px;margin:0;position:relative;width:100%}
-.ornamental-rule span{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNi4xIDIxIj48cGF0aCBmaWxsPSIjZGRkZGRkIiBkPSJNMTIuMyAyMWMtMy4yIDAtNC44LTIuMy00LjgtNi4xVjBIMHYxNWMwIDMuOCAxLjggNiAzLjggNmg4LjV6Ii8+PHBhdGggZmlsbD0iI2RkZGRkZCIgZD0iTTguNSAxNS4xYzAgMS45LjYgNSAzLjkgNVMxNiAxNi45IDE2IDE1VjYuMkg4LjV2OC45eiIvPjwvc3ZnPg==);background-size:14px;background-color:#fff;background-repeat:no-repeat;background-position:center;display:inline-block;width:30px;height:38px;top:-16px;position:relative;margin-bottom:-20px}
-.amp-wp-article-footer{padding:15px}aside.newsletter:focus{outline:0}
+.ornamental-rule span{
+	background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNi4xIDIxIj48cGF0aCBmaWxsPSIjZGRkZGRkIiBkPSJNMTIuMyAyMWMtMy4yIDAtNC44LTIuMy00LjgtNi4xVjBIMHYxNWMwIDMuOCAxLjggNiAzLjggNmg4LjV6Ii8+PHBhdGggZmlsbD0iI2RkZGRkZCIgZD0iTTguNSAxNS4xYzAgMS45LjYgNSAzLjkgNVMxNiAxNi45IDE2IDE1VjYuMkg4LjV2OC45eiIvPjwvc3ZnPg==);background-size:14px;background-color:#fff;background-repeat:no-repeat;background-position:center;display:inline-block;width:30px;height:38px;top:-16px;position:relative;margin-bottom:-20px}
+.amp-wp-article-footer{padding:15px}
+aside.newsletter:focus{outline:0}
 .newsletter .form{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .newsletter-article-success-message,.newsletter-status,.subscribe-span{font:14px/1.3 UnitedSansReg,sans-serif;font-weight:700;margin-bottom:15px}
 .newsletter-status{color:#fc214b}
@@ -733,7 +782,11 @@ amp-carousel > amp-img > img {
 .newsletter-subscribe,.subscribe-button{background:#fc214b;color:#fff;cursor:pointer;margin-left:-4px;text-transform:uppercase;-webkit-transition:background .25s ease-in-out;transition:background .25s ease-in-out;width:100px}
 .subscribe-button{width:auto;padding-left:10px;padding-right:10px;white-space:nowrap}
 .social-share{float:right;margin-left:10px;z-index:1}
-.social-share+p amp-img{float:left;min-width:100%}amp-social-share[type=email],amp-social-share[type=facebook],amp-social-share[type=twitter]{background-color:#fff;background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-twitter-black.svg);border:1px solid #999;border-bottom-width:0;background-size:50%;display:block;opacity:.4}amp-social-share[type=facebook]{background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-facebook-black.svg)}amp-social-share[type=email]{background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-email-black.svg);border-bottom-width:1px}amp-carousel{background-color:transparent;margin:40px -15px}
+.social-share+p amp-img{float:left;min-width:100%}
+amp-social-share[type=email],amp-social-share[type=facebook],amp-social-share[type=twitter]{background-color:#fff;background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-twitter-black.svg);border:1px solid #999;border-bottom-width:0;background-size:50%;display:block;opacity:.4}
+amp-social-share[type=facebook]{background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-facebook-black.svg)}
+amp-social-share[type=email]{background-image:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-email-black.svg);border-bottom-width:1px}
+amp-carousel{background-color:transparent;margin:40px -15px}
 .embedded-gallery-caption{color:#6f6f6f;display:block;font:800 12px/15px UnitedSansReg,sans-serif;margin-top:8px;overflow-y:auto;text-align:left;padding-top:5px;padding-left:15px;padding-right:15px;position:absolute;bottom:0;left:0;background:#fff}
 .video-placeholder{height:auto;position:relative;margin-bottom:1em}
 .video-placeholder .abc-player,.video-placeholder .play-wrapper,.video-placeholder .play-wrapper+video{position:absolute;top:0;left:0;width:100%;height:100%}
@@ -778,7 +831,10 @@ amp-carousel > amp-img > img {
 .story-body .story-content .espn-boxout ul li{list-style:none;border-bottom:1px solid rgba(0,0,0,.13);padding:10px 0;margin:0;font-size:15px;font-weight:700;font-style:normal;line-height:1.4em}
 .story-body .story-content .espn-boxout ul li:last-child{border-bottom:0}
 .story-body .story-content .espn-boxout ul li:before{content:'';padding:0;margin-left:0}
-.story-body .story-content .espn-boxout ul li a{color:#000;display:inline;-webkit-transition:background-size .3s cubic-bezier(.215,.61,.355,1);transition:background-size .3s cubic-bezier(.215,.61,.355,1);background-size:100% 150%;text-decoration:none;-webkit-text-decoration-color:none;text-decoration-color:none;font-family:"ESPN Acta",Georgia,Times,serif}a.podcast{background:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/podcasts/the-undefeated.svg) center no-repeat;border-radius:100%;display:block;height:90px;margin-top:20px;width:90px}a.podcast span{display:none}a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-play.svg);background-size:contain;content:'';display:block;height:20px;left:50%;margin-left:-8px;margin-top:-10px;position:absolute;top:50%;width:16px}
+.story-body .story-content .espn-boxout ul li a{color:#000;display:inline;-webkit-transition:background-size .3s cubic-bezier(.215,.61,.355,1);transition:background-size .3s cubic-bezier(.215,.61,.355,1);background-size:100% 150%;text-decoration:none;-webkit-text-decoration-color:none;text-decoration-color:none;font-family:"ESPN Acta",Georgia,Times,serif}
+a.podcast{background:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/podcasts/the-undefeated.svg) center no-repeat;border-radius:100%;display:block;height:90px;margin-top:20px;width:90px}
+a.podcast span{display:none}
+a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/symbol-play.svg);background-size:contain;content:'';display:block;height:20px;left:50%;margin-left:-8px;margin-top:-10px;position:absolute;top:50%;width:16px}
 		</style>
 </head>
 
