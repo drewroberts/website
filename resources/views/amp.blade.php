@@ -574,8 +574,10 @@ amp-carousel > amp-img > img {
 			margin-top: 0px;
 			margin-bottom: 40px;
 		}
-		@media only screen and (min-width: 1050px) .cinema {
+		@media screen and (min-width: 1050px) {
+		  .cinema {
 		    padding: 15px;
+		  }
 		}
 		.cinema-screen {
 			max-height: 610px;
@@ -981,7 +983,7 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 			<div class="featured-element">
 				<amp-img width="1400" height="786" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>
 			</div>
-			<div class="playlist-element">
+			<div class="playlist-element" media="(min-width: 650px)">
 				<amp-selector role="tablist"
 				  layout="container"
 				  class="ampTabContainer">
