@@ -92,7 +92,6 @@
 
 
 <script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
-<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-ad-0.1.js' async custom-element="amp-ad"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js' async custom-element="amp-social-share"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-form-0.1.js' async custom-element="amp-form"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-lightbox-0.1.js' async custom-element="amp-lightbox"></script>
@@ -139,7 +138,7 @@
 	}
 
 html {
-	background: ;
+	background: black;
 }
 
 body {
@@ -559,6 +558,15 @@ amp-carousel > amp-img > img {
 		.primary-header button {border:none}
 		.primary-header a {color:inherit;text-decoration:none}
 
+		.cinema {
+			background-color: #252525;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 40px;
+
+			height: 300px;
+		}
+
 		.primary-heading{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;overflow:visible;padding-left:0;position:fixed;padding:0 0 0 10px}
 
 		.navigation--secondary .topbar:before,.primary-heading:before{content:" ";display:block;position:absolute;top:0;bottom:0;background-color:#f7cf4f;-webkit-transform:skew(-35deg,0);transform:skew(-35deg,0);-webkit-transform-origin:0 0;transform-origin:0 0;left:0;width:97px}
@@ -897,6 +905,10 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 
 
 <article class="amp-wp-article story">
+
+	<div class="cinema">
+
+	</div>
 
 	<div class="story-header">
 		<div class="header-content">
