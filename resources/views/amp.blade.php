@@ -574,6 +574,11 @@ amp-carousel > amp-img > img {
 			margin-top: 0px;
 			margin-bottom: 40px;
 		}
+		.featured-element {
+			background-color: black;
+			max-width: 1085px;
+			max-height: 610px;
+		}
 
 		.ampTabContainer {
         display: flex;
@@ -981,13 +986,6 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 
 
 	<div class="story-body story-blog">
-			<figure class="featured-image pull-out">
-				<amp-img width="1400" height="786" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>
-				<figcaption class="featured-image__figcaption">
-						<span class="featured-image__caption">Florida State head coach Willie Taggart goes around the stadium high flving fans during the Florida State spring football game at Bobby Bowden Field at Doak Campbell Stadium in Tallahassee, FL on April, 14th, 2018. </span>
-						<span class="featured-image__credit">Logan Stanford/Icon Sportswire </span>
-				</figcaption>
-			</figure>
 
 		<div class="meta pull-out">
 			<div class="byline-timestamp-mod">
