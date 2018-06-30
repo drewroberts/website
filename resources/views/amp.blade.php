@@ -587,14 +587,14 @@ amp-carousel > amp-img > img {
     	margin: auto;
 			background-color: black;
 		}
-		@media screen and (min-width: 1050px) {
-		  .cinema-screen {
-				width: calc(100% - 365px);
-		  }
-		}
 		.featured-element {
 			max-width: 1085px;
 			max-height: 610px;
+		}
+		@media screen and (min-width: 1050px) {
+		  .featured-element {
+				width: calc(100% - 365px);
+		  }
 		}
 		@media screen and (max-width: 1050px) {
 		  .playlist-element {
