@@ -36,6 +36,10 @@ Route::get('/source5', function () {
     return view('source5');
 });
 
+Route::get('/source6', function () {
+    return view('source6');
+});
+
 Route::get('/', function () {
     return view('temporary');
 });
