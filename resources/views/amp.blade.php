@@ -95,6 +95,7 @@
 <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
 <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js' async custom-element="amp-social-share"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-form-0.1.js' async custom-element="amp-form"></script>
 <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-lightbox-0.1.js' async custom-element="amp-lightbox"></script>
@@ -1003,7 +1004,10 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 	<div class="cinema">
 		<div class="cinema-screen">
 			<div class="featured-element">
-				<amp-img width="1400" height="786" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>
+				<amp-youtube
+			    data-videoid="Bk8881Kv4oU"
+			    layout="responsive"
+			    width="1085" height="610"></amp-youtube>
 			</div>
 			<div class="playlist-element">
 				<amp-selector role="tablist"
