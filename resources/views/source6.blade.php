@@ -340,127 +340,10 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 })(window,document.documentElement,'async-hide','dataLayer',4000,
   {'GTM-NB56G74':true});</script>
 
-<!-- GA Tag -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', "UA-599058-159", 'auto');
-
-ga('require', 'GTM-NB56G74');
-
-
-</script>
-<!-- End GA Tag -->
-
-
-<!-- Quantcast Tag -->
-<script type="text/javascript">
-var _qevents = _qevents || [];
-(function() {
-var elem = document.createElement('script');
-elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
-elem.async = true;
-elem.type = "text/javascript";
-var scpt = document.getElementsByTagName('script')[0];
-scpt.parentNode.insertBefore(elem, scpt); })();
-_qevents.push({
-qacct:"p-6EzWtvBV9sFU3"
-});
-</script>
-<noscript>
-<div style="display:none;">
-<img src="//pixel.quantserve.com/pixel/p-6EzWtvBV9sFU3.gif" border="0" height="1" width="1" alt="Quantcast"/>
-</div>
-</noscript>
-<!-- End Quantcast tag -->
-<!-- Start Alexa Certify Javascript -->
-<script type="text/javascript">
-_atrk_opts = { atrk_acct:"x5HVh1aUXR00Gi", domain:"vice.com",dynamic: true};
-window.__LOGGER.atrk = {};
-window.__LOGGER.atrk[window.location.pathname] = true;
-(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
-</script>
-<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=x5HVh1aUXR00Gi" style="display:none" height="1" width="1" alt="" /></noscript>
-<!-- End Alexa Certify Javascript -->
-
-<!-- begin comscore tag -->
-<script>
-var _comscore = _comscore || [];
-_comscore.push({ c1: "2", c2: "8568956" });
-(function() {
-var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
-s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-el.parentNode.insertBefore(s, el);
-})();
-window.__LOGGER.comscore = {};
-window.__LOGGER.comscore[window.location.pathname] = true;
-</script>
-<noscript>
-<img src="http://b.scorecardresearch.com/p?c1=2&c2=8568956&cv=2.0&cj=1" />
-</noscript>
-<!-- end comscore tag -->
-
-<!--Austrian OEWA updated Tracker-->
-<script type="text/javascript" src="https://vice-publishers-cdn.vice.com/AT_CH/OEWA/oewa_pixel_updated.js" async></script>
-<!--End Austrian OEWA Tracker-->
-
-<!--Chartbeat-->
-<script type="text/javascript">
-var chartbeatUID = 8233;
-var _sf_startpt=(new Date()).getTime();
-var _sf_async_config = {};
-/** CONFIGURATION START **/
-_sf_async_config.sections = 'en_us';
-_sf_async_config.uid = chartbeatUID;
-_sf_async_config.domain = "video.vice.com";
-/** CONFIGURATION END **/
-(function(){
-function loadChartbeat(){
-window._sf_endpt=(new Date()).getTime();
-var e = document.createElement("script");
-e.setAttribute("language", "javascript");
-e.setAttribute("type", "text/javascript");
-e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
-
-e.onload = function () {
-  // Sets the pSUPERFLY object to a key on the window object for
-  // easier consumption by client-side app code
-  window.pSUPERFLY = pSUPERFLY;
-}
-document.body.appendChild(e);
-}
-var oldonload = window.onload;
-window.onload = (typeof window.onload != "function") ?
-loadChartbeat : function(){try{oldonload();}catch(e){loadChartbeat(); throw e}loadChartbeat();};
-})();
-</script>
-<!-- end chartbeat -->
 
 
 
-<!-- start nielsen -->
-<script>
-  // Static Queue Snippet
-!function(t,n){t[n]=t[n]||{nlsQ:function(e,o,c,r,s,i){return s=t.document,r=s.createElement("script"),r.async=1,r.src=("http:"===t.location.protocol?"http:":"https:")+"//cdn-gl.imrworldwide.com/conf/"+e+".js#name="+o+"&ns="+n,i=s.getElementsByTagName("script")[0],i.parentNode.insertBefore(r,i),t[n][o]=t[n][o]||{g:c||{},ggPM:function(e,c,r,s,i){(t[n][o].q=t[n][o].q||[]).push([e,c,r,s,i])}},t[n][o]}}}(window,"NOLBUNDLE");
 
-  // SDK Initialization
-  window.nielsenSdkInstance = NOLBUNDLE.nlsQ("P4C26DB7F-B32A-4668-8912-D429AFC4EC9D", "viceNielsen");
-  // Default Content Metadata
-  window.nielsenMetadata = {
-    type: "static",
-
-    assetid: "video.vice.com/en_us/video/tattoo-age-bold-tattooing-with-dan-santoro/5824c776d86650c25a756029?latest=1", // *DYNAMIC METADATA*: unique ID for each page **REQUIRED**
-    section: "video", // *DYNAMIC METADATA*: site name **REQUIRED**
-
-  };
-</script>
-
-
-
-<!-- end nielsen -->
 
 
 
@@ -523,19 +406,19 @@ loadChartbeat : function(){try{oldonload();}catch(e){loadChartbeat(); throw e}lo
 
 
   <!-- END VENDOR LIBRARIES -->
-  <script type="text/javascript" src="/static/vendor.c6d6dc4ccdfe7e3af9ad.js"></script>
-  <script type="text/javascript" src="/static/assets.e783357f0cd86d747d50.js"></script>
-  <script type="text/javascript" src="/static/common.0864584dcfd10236eb8f.js"></script>
-  <script type="text/javascript" src="/static/video.09f4202db6e88e83fe46.js"></script>
-  <script type="text/javascript" src="/static/font-loader.f484df6777f230b1b3d4.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/vendor.c6d6dc4ccdfe7e3af9ad.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/assets.e783357f0cd86d747d50.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/common.0864584dcfd10236eb8f.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/video.09f4202db6e88e83fe46.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/font-loader.f484df6777f230b1b3d4.js"></script>
 
-  <script type="text/javascript" src="/static/vice-grid-xs-m.20ae143e7be29e023a16.js"></script>
-  <script type="text/javascript" src="/static/vice-grid-l-hd.3cdeb38664d0ebe0bb38.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/vice-grid-xs-m.20ae143e7be29e023a16.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/vice-grid-l-hd.3cdeb38664d0ebe0bb38.js"></script>
 
-  <script type="text/javascript" src="/static/vice-spacing-xs-m.15f2fb2875923b9b8d5f.js"></script>
-  <script type="text/javascript" src="/static/vice-spacing-l-hd.b28e540d89266e81b69a.js"></script>
-  <script type="text/javascript" src="/static/vice-helpers-xs-m.91674cbdf7ac287d7d34.js"></script>
-  <script type="text/javascript" src="/static/vice-helpers-l-hd.4f0fc99d8ee79845c052.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/vice-spacing-xs-m.15f2fb2875923b9b8d5f.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/vice-spacing-l-hd.b28e540d89266e81b69a.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/vice-helpers-xs-m.91674cbdf7ac287d7d34.js"></script>
+  <script type="text/javascript" src="https://video.vice.com/static/vice-helpers-l-hd.4f0fc99d8ee79845c052.js"></script>
 
   <script>
     // fontLoader snippet
