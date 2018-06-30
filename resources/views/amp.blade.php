@@ -233,6 +233,7 @@ blockquote p:last-child {
 
 .amp-wp-article {
 	color: ;
+	background-color: #ffffff;
 	font-weight: 400;
 	margin: 1.5em auto;
 	max-width: 840px;
