@@ -362,26 +362,6 @@ blockquote p:last-child {
 
 /* AMP Media */
 
-amp-carousel {
-	background: ;
-	margin: 0 -16px 1.5em;
-}
-amp-iframe,
-amp-youtube,
-amp-instagram,
-amp-vine {
-	background: ;
-	margin: 0 -16px 1.5em;
-}
-
-.amp-wp-article-content amp-carousel amp-img {
-	border: none;
-}
-
-amp-carousel > amp-img > img {
-	object-fit: contain;
-}
-
 .amp-wp-iframe-placeholder {
 	background:  url( https://theundefeated.com/wp-content/plugins/vip/amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
 	background-size: 48px 48px;
