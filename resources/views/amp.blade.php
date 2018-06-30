@@ -599,13 +599,13 @@ blockquote p:last-child {
     }
 
     .tabButton[selected] {
-        outline: none;
         background: black;
 				color: #ffffff;
     }
 
     .tabButton {
         list-style: none;
+				outline: none;
 				height: 40px;
 				background: #ffffff;
 				color: black;
@@ -614,7 +614,7 @@ blockquote p:last-child {
         text-align: center;
         cursor: pointer;
 				font-family: HelveticaNeueArabic, NeueHelveticaW01, Helvetica, HelveticaWorld, Arial, TazuganeGothic, sans-serif;
-    		font-weight: 600;
+    		font-weight: 400;
     		line-height: 1.2;
 				padding: 12px 0px 13px;
     }
