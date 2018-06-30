@@ -574,10 +574,25 @@ amp-carousel > amp-img > img {
 			margin-top: 0px;
 			margin-bottom: 40px;
 		}
+		@media only screen and (min-width: 1050px) .cinema {
+		    padding: 15px;
+		}
+		.cinema-screen {
+			max-height: 610px;
+			max-width: 1450px;
+    	width: 100%;
+    	position: relative;
+    	margin: auto;
+			background-color: black;
+		}
 		.featured-element {
 			background-color: black;
 			max-width: 1085px;
 			max-height: 610px;
+		}
+		.playlist-element {
+			background-color: black;
+			width: 365px;
 		}
 
 		.ampTabContainer {
@@ -962,25 +977,27 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 	</div>
 
 	<div class="cinema">
-		<div class="featured-element">
-			<amp-img width="1400" height="786" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>
-		</div>
-		<div class="playlist-element">
-			<amp-selector role="tablist"
-			  layout="container"
-			  class="ampTabContainer">
-			  <div role="tab"
-			    class="tabButton"
-			    selected
-			    option="a">Playlist</div>
-			  <div role="tabpanel"
-			    class="tabContent">Tab one content... </div>
-			  <div role="tab"
-			    class="tabButton"
-			    option="b">Trending</div>
-			  <div role="tabpanel"
-			    class="tabContent">Trending tab content...</div>
-			</amp-selector>
+		<div class="cinema-screen">
+			<div class="featured-element">
+				<amp-img width="1400" height="786" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>
+			</div>
+			<div class="playlist-element">
+				<amp-selector role="tablist"
+				  layout="container"
+				  class="ampTabContainer">
+				  <div role="tab"
+				    class="tabButton"
+				    selected
+				    option="a">Playlist</div>
+				  <div role="tabpanel"
+				    class="tabContent">Tab one content... </div>
+				  <div role="tab"
+				    class="tabButton"
+				    option="b">Trending</div>
+				  <div role="tabpanel"
+				    class="tabContent">Trending tab content...</div>
+				</amp-selector>
+			</div>
 		</div>
 	</div>
 
