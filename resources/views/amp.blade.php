@@ -577,7 +577,6 @@ amp-carousel > amp-img > img {
 		@media screen and (min-width: 1050px) {
 		  .cinema {
 		    padding: 15px;
-				width: calc(100% - 365px);
 		  }
 		}
 		.cinema-screen {
@@ -587,6 +586,11 @@ amp-carousel > amp-img > img {
     	position: relative;
     	margin: auto;
 			background-color: black;
+		}
+		@media screen and (min-width: 1050px) {
+		  .cinema-screen {
+				width: calc(100% - 365px);
+		  }
 		}
 		.featured-element {
 			max-width: 1085px;
