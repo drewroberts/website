@@ -642,7 +642,14 @@ amp-carousel > amp-img > img {
         display: none;
 				color: #ffffff;
         width: 100%;
+				height: calc(100% - 40px);
         order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+				padding-bottom: 10px;
+    		margin-bottom: 0px;
+    		overflow-x: hidden;
+		    overflow-y: scroll;
+		    margin-right: -17px;
+		    padding-right: 17px;
     }
 
     .tabButton[selected]+.tabContent {
