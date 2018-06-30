@@ -612,10 +612,6 @@ amp-carousel > amp-img > img {
         text-align: center;
         padding-top: 140px;
     }
-    amp-selector {
-      padding: 1rem;
-      margin: 1rem;
-    }
 
 
 
@@ -962,6 +958,7 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 
 	<div class="cinema">
 		<div class="featured-element">
+			<amp-img width="1400" height="786" src="https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" layout="intrinsic"></amp-img>
 		</div>
 		<div class="playlist-element">
 			<amp-selector role="tablist"
@@ -982,13 +979,6 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 		</div>
 	</div>
 
-	<div class="story-header">
-		<div class="header-content">
-			<a href="https://theundefeated.com/tag/college-football/" class="term" name="">College Football</a>
-			<h1 class="heading entry-title"><span>FSU coach Willie Taggart buys lunch for local football campers, wins the day</span></h1>
-			<p class="subheading">The Seminoles coach filled stomachs, and filled hearts even more</p>
-		</div>
-	</div>
 
 	<div class="story-body story-blog">
 			<figure class="featured-image pull-out">
