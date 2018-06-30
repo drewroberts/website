@@ -619,36 +619,34 @@ amp-carousel > amp-img > img {
 
     .tabButton[selected] {
         outline: none;
-        background: #ccc;
+        background: black;
+				color: #ffffff;
     }
 
     .tabButton {
         list-style: none;
+				height: 40px;
+				background: #ffffff;
+				color: black;
+				text-transform: uppercase;
         flex-grow: 1;
         text-align: center;
         cursor: pointer;
+				font-family: HelveticaNeueArabic, NeueHelveticaW01, Helvetica, HelveticaWorld, Arial, TazuganeGothic, sans-serif;
+    		font-weight: 600;
+    		line-height: 1.2;
     }
 
     .tabContent {
         display: none;
         width: 100%;
         order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
-        border: 1px solid #ccc;
     }
 
     .tabButton[selected]+.tabContent {
         display: block;
     }
 
-    /* For example below (not required) */
-    .itemCustom {
-        border: 1px solid #000;
-        height: 280px;
-        width: 380px;
-        margin: 10px;
-        text-align: center;
-        padding-top: 140px;
-    }
 
 
 
