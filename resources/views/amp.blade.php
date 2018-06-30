@@ -142,7 +142,7 @@ html {
 }
 
 body {
-	background: ;
+	background: black;
 	color: ;
 	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
 	font-weight: 300;
@@ -561,7 +561,7 @@ amp-carousel > amp-img > img {
 		.cinema {
 			background-color: #252525;
 			width: 100%;
-			margin-top: 50px;
+			margin-top: 0px;
 			margin-bottom: 40px;
 
 			height: 300px;
