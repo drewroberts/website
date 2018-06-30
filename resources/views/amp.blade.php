@@ -562,6 +562,12 @@ amp-carousel > amp-img > img {
 		.primary-header button {border:none}
 		.primary-header a {color:inherit;text-decoration:none}
 
+		.behind-nav {
+			background-color: black;
+			margin-top: 0px;
+			width: 100%;
+			height: 50px;
+		}
 		.cinema {
 			background-color: #252525;
 			width: 100%;
@@ -951,6 +957,8 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 
 
 <article class="amp-wp-article story">
+	<div class="behind-nav">
+	</div>
 
 	<div class="cinema">
 		<div class="featured-element">
