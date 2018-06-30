@@ -1149,6 +1149,8 @@ Krux('scrape', {
       }
     });
 })();
-</script></span></div></body><iframe id="kx-proxy-KJFgnoRj" src="https://cdn.krxd.net/partnerjs/xdi/proxy.3d2100fd7107262ecb55ce6847f01fa5.html#!kxcid=KJFgnoRj&amp;kxt=https%3A%2F%2Fvideo.vice.com&amp;kxcl=cdn&amp;kxp=" style="display: none; visibility: hidden; height: 0; width: 0;"></iframe>
+</script></span></div>
+
+</body>
 
 </html>

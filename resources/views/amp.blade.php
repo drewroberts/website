@@ -568,64 +568,6 @@ amp-carousel > amp-img > img {
 
 
 
-		/*! CSS Used from: Embedded */
-		.m-b-1-xs{margin-bottom:5px;}
-		.m-b-5-xs{margin-bottom:30px;}
-		 @media only screen and (min-width:650px){
-		.m-b-6-m{margin-bottom:40px;}
-		}
-		/*! CSS Used from: https://video.vice.com/static/video.09f4202db6e88e83fe46.css */
-		*,:after,:before{box-sizing:inherit;}
-		a{background-color:transparent;}
-		a:active,a:hover{outline:0;}
-		img{border:0;}
-		.hed-xs{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;}
-		.hed-xs{font-size:12px;font-size:.75rem;}
-		p{margin:0 0 10px;}
-		a{color:#000;text-decoration:underline;}
-		a:active,a:focus,a:hover{color:#000;outline:none;text-decoration:none;}
-		img,picture{margin:0;max-width:100%;}
-		ul{margin:0 0 10px;padding:0;}
-		ul li{margin-bottom:10px;}
-		ul{list-style-position:inside;}
-		.video a,.video a:active,.video a:hover,.video a:visited{text-decoration:none;}
-		.video .video__playlist{background-color:#252525;width:100%;height:100%;margin-bottom:45px;overflow:hidden;display:block;}
-		 @media only screen and (min-width:1050px){
-		.video .video__playlist{display:none;}
-		}
-		.video .video__playlist__rows{overflow:scroll;height:calc(100% - 40px);max-height:514px;padding-bottom:10px;background-color:#000;margin-bottom:0;overflow-x:hidden;overflow-y:scroll;margin-right:-17px;padding-right:17px;}
-		.video .video__playlist__row{margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:10px 10px 0;cursor:pointer;}
-		.video .video__playlist__row .image__container{height:74px;width:132px;margin-right:10px;position:relative;}
-		.video .video__playlist__row .image__container>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%;width:100%;position:absolute;}
-		.video .video__playlist__row .image__container p{position:absolute;color:#fff;text-transform:uppercase;}
-		.video .video__playlist__row .image{width:100%;height:100%;}
-		.video .video__playlist__row .image__mask{width:100%;height:100%;position:absolute;top:0;background-color:rgba(0,0,0,.6);}
-		.video .video__playlist__row .image__mask--border{border:2px solid #fff;}
-		.video .video__playlist__row .info{color:#fff;text-decoration:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:row;-ms-flex-direction:column;flex-direction:column;max-width:calc(100% - 142px);}
-		.video .video__playlist__row .info .title{margin-bottom:0;}
-		.video .video__playlist__row .info .show__season__episode{color:#fff;font-size:10px;margin-bottom:5px;color:#909090;}
-		.video .video__playlist__tabs{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
-		.video .video__playlist__tab{width:50%;height:40px;text-align:center;text-transform:uppercase;padding:12px 0 13px;cursor:pointer;color:#000;background-color:#fff;border-top:1px solid #ebebeb;}
-		.video .video__playlist__tab--selected{box-sizing:border-box;cursor:default;background-color:#000;color:#fff;border-top:none;}
-		.video .video__playlist__tab p{margin-bottom:0;white-space:nowrap;}
-		.video .show__season__episode{color:$base-font-color;margin-bottom:5px;text-transform:uppercase;}
-		.video .watch-hub{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;width:100%;background-color:#252525;}
-		 @media only screen and (min-width:1050px){
-		.video .watch-hub{padding:15px;}
-		}
-		.video .watch-hub__container{margin:auto;max-width:1450px;width:100%;position:relative;}
-		.video .watch-hub__player-wrap{position:relative;width:100%;height:auto;}
-		.video .watch-hub__player-wrap:before{display:block;content:"";width:100%;padding-top:56.25%;}
-		.video .watch-hub__player-wrap>iframe{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;}
-		 @media only screen and (min-width:1050px){
-		.video .watch-hub__player-wrap{width:calc(100% - 365px);}
-		}
-		.video .watch-hub__embed{width:100%;height:100%;border:none;padding:0;margin:0;}
-		.video .watch-hub .video__playlist{display:none;}
-		 @media only screen and (min-width:1050px){
-		.video .watch-hub .video__playlist{display:block;position:absolute;top:0;right:0;margin-bottom:0;width:365px;}
-		}
-		.video .watch-hub .video__playlist__rows{max-height:100%;}
 
 
 		.primary-heading{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;overflow:visible;padding-left:0;position:fixed;padding:0 0 0 10px}
@@ -968,40 +910,25 @@ a.podcast::before{background:url(https://theundefeated.com/wp-content/themes/esp
 <article class="amp-wp-article story">
 
 	<div class="cinema">
-
-		<div class="watch-hub m-b-5-xs m-b-6-m">
-			<div class="watch-hub__container">
-				<div class="watch-hub__player-wrap">
-					<iframe class="watch-hub__embed" src="" allowfullscreen=""></iframe>
-				</div>
-				<div class="video__playlist">
-					<div class="video__playlist__tabs">
-						<div class="video__playlist__tab video__playlist__tab--selected hed-xs"><p> Latest </p></div>
-						<div class="video__playlist__tab hed-xs"><p> Trending </p></div></div>
-						<ul class="video__playlist__rows"><a href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0?latest=1">
-
-  <li class="video__playlist__row"><div class="image__container"><picture><source srcset="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55" media="(min-width: 0px)"><img class="" priority="5" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><p class="title hed-xs">New York City Tattoo Legend: Thom DeVita</p> </div></li></a><a href="/en_us/video/tattoo-age-the-nicest-guy-in-tattooing-freddy-corbin/5824c84212339f6b5f81aedf?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><source srcset="https://video-images.vice.com/videos/58/24/5824c84212339f6b5f81aedf/5824c84212339f6b5f81aedf-1530296274470.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55" media="(min-width: 0px)"><img class="" priority="5" src="https://video-images.vice.com/videos/58/24/5824c84212339f6b5f81aedf/5824c84212339f6b5f81aedf-1530296274470.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP7</span></div><p class="title hed-xs">The Nicest Guy in Tattooing, Freddy Corbin</p> </div></li></a><a href="/en_us/video/tattoo-age-new-yorks-tattoo-viking-troy-denning/5824c7e7d86650c25a75602a?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><source srcset="https://video-images.vice.com/videos/58/24/5824c7e7d86650c25a75602a/5824c7e7d86650c25a75602a-1530296079506.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55" media="(min-width: 0px)"><img class="" priority="5" src="https://video-images.vice.com/videos/58/24/5824c7e7d86650c25a75602a/5824c7e7d86650c25a75602a-1530296079506.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP6</span></div><p class="title hed-xs">New York's Tattoo Viking, Troy Denning</p> </div></li></a><a href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><source srcset="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55" media="(min-width: 0px)"><img class="" priority="5" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><p class="title hed-xs">England's Best Tattooer, Valerie Vargas</p> </div></li></a><a href="/en_us/video/tattoo-age-mutsuo-master-of-all-tattoo-styles/5824c725c0eac98a5f75d7a8?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><source srcset="https://video-images.vice.com/videos/58/24/5824c725c0eac98a5f75d7a8/5824c725c0eac98a5f75d7a8-1530295188295.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55" media="(min-width: 0px)"><img class="" priority="5" src="https://video-images.vice.com/videos/58/24/5824c725c0eac98a5f75d7a8/5824c725c0eac98a5f75d7a8-1530295188295.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP4</span></div><p class="title hed-xs">Mutsuo, Master of All Tattoo Styles</p> </div></li></a><a href="/en_us/video/tattoo-age-the-grime-style-of-tattooing/5824c79512339f6b5f81aedd?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><source srcset="https://video-images.vice.com/videos/58/24/5824c79512339f6b5f81aedd/5824c79512339f6b5f81aedd-1530294905024.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55" media="(min-width: 0px)"><img class="" priority="5" src="https://video-images.vice.com/videos/58/24/5824c79512339f6b5f81aedd/5824c79512339f6b5f81aedd-1530294905024.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP3</span></div><p class="title hed-xs">The Grime Style of Tattooing</p> </div></li></a><a href="/en_us/video/tattoo-age-mike-rubendalls-japanese-style-tattoos/5824c80c12339f6b5f81aede?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><img class="image" priority="5" src="https://vice-web-statics-cdn.vice.com/images/blank.png"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP2</span></div><p class="title hed-xs">Mike Rubendall's Japanese-Style Tattoos</p> </div></li></a><a href="/en_us/video/tattoo-age-bold-tattooing-with-dan-santoro/5824c776d86650c25a756029?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><div><div class="image__mask image__mask--border"></div><p class="hed-xs">Now Playing</p></div><picture><img class="image" priority="5" src="https://vice-web-statics-cdn.vice.com/images/blank.png"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP1</span></div><p class="title hed-xs">Bold Tattooing with Dan Santoro</p> </div></li></a><a href="/en_us/video/king-of-the-road-get-the-goddamn-pigs-feet/5b32a5eabe40777fda408b29?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><img class="image" priority="5" src="https://vice-web-statics-cdn.vice.com/images/blank.png"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>King of the Road / S3 EP1</span></div><p class="title hed-xs">Get the Goddamn Pig’s Feet</p> </div></li></a><a href="/en_us/video/fuck-thats-delicious-queens-a-food-thugs-paradise/5b280ed2f1cdb352e714d7c7?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><img class="image" priority="5" src="https://vice-web-statics-cdn.vice.com/images/blank.png"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>F*ck, That’s Delicious / S3 EP1</span></div><p class="title hed-xs">Queens: A Food Thug's Paradise</p> </div></li></a><a href="/en_us/video/most-expensivest-wet-dream/5b295bd3f1cdb3397e4c13ba?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><img class="image" priority="5" src="https://vice-web-statics-cdn.vice.com/images/blank.png"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>MOST EXPENSIVEST / S2 EP1</span></div><p class="title hed-xs">Wet Dream</p> </div></li></a><a href="/en_us/video/tattoo-age-the-master-of-all-tattoos-chris-garver/5b352fa7be40773e3f287b07?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><img class="image" priority="5" src="https://vice-web-statics-cdn.vice.com/images/blank.png"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S2 EP1</span></div><p class="title hed-xs">The Master of All Tattoos: Chris Garver</p> </div></li></a><a href="/en_us/video/hollywood-love-story-riiottt/59ce6d4395073d0905939ade?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><img class="image" priority="5" src="https://vice-web-statics-cdn.vice.com/images/blank.png"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>HOLLYWOOD LOVE STORY / S1 EP1</span></div><p class="title hed-xs">Riiottt</p> </div></li></a><a href="/en_us/video/mister-tachyon-do-humans-have-a-6th-sense/5a4fa8c8177dd4350a0f9bdb?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><img class="image" priority="5" src="https://vice-web-statics-cdn.vice.com/images/blank.png"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>MISTER TACHYON / S1 EP1</span></div><p class="title hed-xs">Do Humans Have A 6th Sense?</p> </div></li></a><a href="/en_us/video/post-radical-the-youth/5b33b8f4be40774e2d61911a?latest=1">
-  <li class="video__playlist__row"><div class="image__container"><picture><img class="image" priority="5" src="https://vice-web-statics-cdn.vice.com/images/blank.png"></picture></div><div class="info"><div class="show__season__episode hed-xs m-b-1-xs"><span>POST RADICAL / S1 EP1</span></div><p class="title hed-xs">The Youth</p> </div></li></a>
-
-</ul>
-</div>
-</div>
-</div>
-
-
+		<div class="featured-element">
+		</div>
+		<div class="playlist-element">
+			<amp-selector role="tablist"
+			  layout="container"
+			  class="ampTabContainer">
+			  <div role="tab"
+			    class="tabButton"
+			    selected
+			    option="a">Playlist</div>
+			  <div role="tabpanel"
+			    class="tabContent">Tab one content... </div>
+			  <div role="tab"
+			    class="tabButton"
+			    option="b">Trending</div>
+			  <div role="tabpanel"
+			    class="tabContent">Trending tab content...</div>
+			</amp-selector>
+		</div>
 	</div>
 
 	<div class="story-header">
