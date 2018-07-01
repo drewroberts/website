@@ -355,10 +355,10 @@
 		.cinema .playlist-rows{overflow:scroll;height:calc(100% - 40px);padding-bottom:10px;background-color:#000;margin-bottom:0;overflow-x:hidden;overflow-y:scroll;margin-right:-17px;padding-right:17px;}
 		.cinema .playlist-row{margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:10px 10px 0;cursor:pointer;}
 		.cinema .playlist-row .image__container{height:74px;width:132px;margin-right:10px;position:relative;}
-		.cinema .playlist-row .image__container>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%;width:100%;position:absolute;}
-		.cinema .playlist-row .image__container p{position:absolute;color:#fff;text-transform:uppercase;}
-		.cinema .playlist-row .image__mask{width:100%;height:100%;position:absolute;top:0;background-color:rgba(0,0,0,.6);}
-		.cinema .playlist-row .image__mask--border{border:2px solid #fff;}
+		.cinema .playlist-row .image__container>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%;width:100%;position:absolute;z-index: 10;}
+		.cinema .playlist-row .image__container p{position:absolute;color:#fff;text-transform:uppercase;z-index: 10;}
+		.cinema .playlist-row .image__mask{width:100%;height:100%;position:absolute;top:0;background-color:rgba(0,0,0,.6);z-index: 10;}
+		.cinema .playlist-row .image__mask--border{border:2px solid #fff;z-index: 10;}
 		.cinema .playlist-row .info{color:#fff;text-decoration:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:row;-ms-flex-direction:column;flex-direction:column;max-width:calc(100% - 142px);}
 		.cinema .playlist-row .info .episode_title{margin-bottom:0;}
 		.cinema .playlist-row .info .series_episode{color:#fff;font-size:10px;margin-bottom:5px;color:#909090;}
@@ -422,8 +422,8 @@
 						<ul class="playlist-rows">
 							<a href="/en_us/video/munchies-cholula-how-to-pizza-pocket-matty-matheson/5b087695f1cdb37607452231?latest=1"><li class="playlist-row">
 								<div class="image__container">
-									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/08/5b087695f1cdb37607452231/5b087695f1cdb37607452231-1527610510190.jpg?crop=0.9995494277732719xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 									<div><div class="image__mask image__mask--border"></div><p class="hed-xs">Now Playing</p></div>
+									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/08/5b087695f1cdb37607452231/5b087695f1cdb37607452231-1527610510190.jpg?crop=0.9995494277732719xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
 								<div class="info">
 									<div class="series_episode hed-xs m-b-1-xs"><span>How-To / S5 EP19</span></div>
