@@ -382,6 +382,7 @@
 			position:relative;
 			z-index:2;
 			min-height: 250px;
+			padding-top: 40px;
 		}
 
 
@@ -874,8 +875,8 @@
 		<section class="video-infocard">
 			<header>
 				<div class="video-infocard__show-card">
-					<a href="/en_us/show/tattoo-age-tv"><img class="thumbnail" src="https://video-images.vice.com/shows/59aed456cc16f4ca574cdee9/card/1530202279220-TATTOO_AGE_S2_KEYART.jpeg?crop=1xw:1xh;center,center"></a>
-					<a href="/en_us/channel/viceland"><img class="badge" src="https://vice-web-statics-cdn.vice.com/circle_logos/viceland.svg"></a>
+					<a href="/en_us/show/tattoo-age-tv"><amp-img class="thumbnail" src="https://video-images.vice.com/shows/59aed456cc16f4ca574cdee9/card/1530202279220-TATTOO_AGE_S2_KEYART.jpeg?crop=1xw:1xh;center,center"></amp-img></a>
+					<a href="/en_us/channel/viceland"><amp-img class="badge" src="https://vice-web-statics-cdn.vice.com/circle_logos/viceland.svg"></amp-img></a>
 				</div><div class="video-infocard__show-summary">
 					<h6 class="episode-info hed-xs"><a href="/en_us/show/tattoo-age-tv"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP1</span></div></a></h6>
 					<h4 class="video-title hed-l">Bold Tattooing with Dan Santoro</h4>
@@ -916,11 +917,11 @@
 				</div>
 				<div class="video-infocard__desktop-section">
 					<div class="video-infocard__share-icons">
-						<div class="video-infocard__share-icons__toggle"><img src="https://vice-web-statics-cdn.vice.com/icons/more.svg" class="icon icon-more"></div>
+						<div class="video-infocard__share-icons__toggle"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/more.svg" class="icon icon-more"></amp-img></div>
 						<div class="social-list m-0-xs p-0-xs dsp-flex-xs">
 							<ul class="main-list dsp-flex-xs m-0-xs">
-								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" class="icon icon-facebook"><span class="icon_text">SHARE</span></a></li>
-								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" class="icon icon-twitter"><span class="icon_text">TWEET</span></a></li>
+								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" class="icon icon-facebook"></amp-img><span class="icon_text">SHARE</span></a></li>
+								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" class="icon icon-twitter"></amp-img><span class="icon_text">TWEET</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -945,8 +946,8 @@
 			<div class="video-infocard__share-icons">
 				<div class="social-list m-0-xs p-0-xs dsp-flex-xs">
 					<ul class="main-list dsp-flex-xs m-0-xs">
-						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" class="icon icon-facebook"><span class="icon_text">SHARE</span></a></li>
-						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" class="icon icon-twitter"><span class="icon_text">TWEET</span></a></li>
+						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" class="icon icon-facebook"></amp-img><span class="icon_text">SHARE</span></a></li>
+						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" class="icon icon-twitter"></amp-img><span class="icon_text">TWEET</span></a></li>
 					</ul>
 				</div>
 			</div>
