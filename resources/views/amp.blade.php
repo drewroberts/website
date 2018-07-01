@@ -422,8 +422,8 @@
 						<ul class="playlist-rows">
 							<a href="/en_us/video/munchies-cholula-how-to-pizza-pocket-matty-matheson/5b087695f1cdb37607452231?latest=1"><li class="playlist-row">
 								<div class="image__container">
-									<div><div class="image__mask image__mask--border"></div><p class="hed-xs">Now Playing</p></div>
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/08/5b087695f1cdb37607452231/5b087695f1cdb37607452231-1527610510190.jpg?crop=0.9995494277732719xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
+									<div><div class="image__mask image__mask--border"></div><p class="hed-xs">Now Playing</p></div>
 								</div>
 								<div class="info">
 									<div class="series_episode hed-xs m-b-1-xs"><span>How-To / S5 EP19</span></div>
