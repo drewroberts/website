@@ -285,6 +285,7 @@
 		@media screen and (min-width: 1050px) {
 		  .playlist-element {
 				width: 365px;
+				max-height: 610px;
 				display: block;
 				position: absolute;
 				top: 0px;
@@ -350,18 +351,18 @@
 		ul li{margin-bottom:10px;}
 		ul{list-style-position:inside;}
 		.cinema a,.cinema a:active,.cinema a:hover,.cinema a:visited{text-decoration:none;}
-		.cinema .video__playlist__rows{overflow:scroll;height:calc(100% - 40px);max-height:514px;padding-bottom:10px;background-color:#000;margin-bottom:0;overflow-x:hidden;overflow-y:scroll;margin-right:-17px;padding-right:17px;}
-		.cinema .video__playlist__row{margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:10px 10px 0;cursor:pointer;}
-		.cinema .video__playlist__row .image__container{height:74px;width:132px;margin-right:10px;position:relative;}
-		.cinema .video__playlist__row .image__container>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%;width:100%;position:absolute;}
-		.cinema .video__playlist__row .image__container p{position:absolute;color:#fff;text-transform:uppercase;}
-		.cinema .video__playlist__row .image__mask{width:100%;height:100%;position:absolute;top:0;background-color:rgba(0,0,0,.6);}
-		.cinema .video__playlist__row .image__mask--border{border:2px solid #fff;}
-		.cinema .video__playlist__row .info{color:#fff;text-decoration:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:row;-ms-flex-direction:column;flex-direction:column;max-width:calc(100% - 142px);}
-		.cinema .video__playlist__row .info .episode_title{margin-bottom:0;}
-		.cinema .video__playlist__row .info .series_episode{color:#fff;font-size:10px;margin-bottom:5px;color:#909090;}
+		.cinema .playlist-rows{overflow:scroll;height:calc(100% - 40px);max-height:514px;padding-bottom:10px;background-color:#000;margin-bottom:0;overflow-x:hidden;overflow-y:scroll;margin-right:-17px;padding-right:17px;}
+		.cinema .playlist-row{margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:10px 10px 0;cursor:pointer;}
+		.cinema .playlist-row .image__container{height:74px;width:132px;margin-right:10px;position:relative;}
+		.cinema .playlist-row .image__container>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%;width:100%;position:absolute;}
+		.cinema .playlist-row .image__container p{position:absolute;color:#fff;text-transform:uppercase;}
+		.cinema .playlist-row .image__mask{width:100%;height:100%;position:absolute;top:0;background-color:rgba(0,0,0,.6);}
+		.cinema .playlist-row .image__mask--border{border:2px solid #fff;}
+		.cinema .playlist-row .info{color:#fff;text-decoration:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:row;-ms-flex-direction:column;flex-direction:column;max-width:calc(100% - 142px);}
+		.cinema .playlist-row .info .episode_title{margin-bottom:0;}
+		.cinema .playlist-row .info .series_episode{color:#fff;font-size:10px;margin-bottom:5px;color:#909090;}
 		.cinema .series_episode{color:$base-font-color;margin-bottom:5px;text-transform:uppercase;}
-		.cinema .watch-hub .video__playlist__rows{max-height:100%;}
+		.cinema .watch-hub .playlist-rows{max-height:100%;}
 
 
     .tabButton[selected]+.tabContent {
@@ -417,8 +418,8 @@
 				    selected
 				    option="a">Playlist</div>
 				  <div role="tabpanel" class="tabContent">
-						<ul class="video__playlist__rows">
-							<a href="/en_us/video/munchies-cholula-how-to-pizza-pocket-matty-matheson/5b087695f1cdb37607452231?latest=1"><li class="video__playlist__row">
+						<ul class="playlist-rows">
+							<a href="/en_us/video/munchies-cholula-how-to-pizza-pocket-matty-matheson/5b087695f1cdb37607452231?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<div><div class="image__mask image__mask--border"></div><p class="hed-xs">Now Playing</p></div>
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/08/5b087695f1cdb37607452231/5b087695f1cdb37607452231-1527610510190.jpg?crop=0.9995494277732719xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
@@ -428,7 +429,7 @@
 									<p class="episode_title hed-xs">Pizza Pocket with Matty Matheson</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/vice-oobah-the-time-i-faked-my-way-to-the-top-of-paris-fashion-week/5b291b3df1cdb33c1668b761?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/vice-oobah-the-time-i-faked-my-way-to-the-top-of-paris-fashion-week/5b291b3df1cdb33c1668b761?latest=1"><li class="playlist-row">
     						<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/29/5b291b3df1cdb33c1668b761/5b291b3df1cdb33c1668b761-1529682734447.jpg?crop=0.9995537706381079xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -437,7 +438,7 @@
 									<p class="episode_title hed-xs">I Made My Shed The #1 Restaurant In London</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/boardly-downtown-skateboarder-briana-king/5ac79951f1cdb33e9b684ee4?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/boardly-downtown-skateboarder-briana-king/5ac79951f1cdb33e9b684ee4?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/c7/5ac79951f1cdb33e9b684ee4/5ac79951f1cdb33e9b684ee4-1525798916348.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -446,7 +447,7 @@
 									<p class="episode_title hed-xs">Boardly: Downtown Skateboarder Briana King</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/34/5b3411a8be40774b08446ad1/5b3411a8be40774b08446ad1-1530193202923.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -455,7 +456,7 @@
 									<p class="episode_title hed-xs">The Mexican town that kicked out politicians and started over</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-and-friends-austin-cholula/5b1e66e3f1cdb365213285c8?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/munchies-and-friends-austin-cholula/5b1e66e3f1cdb365213285c8?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/1e/5b1e66e3f1cdb365213285c8/5b1e66e3f1cdb365213285c8-1528905566516.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -464,7 +465,7 @@
 									<p class="episode_title hed-xs">Munchies and Friends: Austin</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/33/5b33e5c5be40777db9781aaa/5b33e5c5be40777db9781aaa-1530199996953.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -473,7 +474,7 @@
 									<p class="episode_title hed-xs">Partying with Abraham Lincoln Presenters</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/vice-cutest-job-in-the-world-alaskan-sled-dogs/5b06d420f1cdb358d84b4981?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/vice-cutest-job-in-the-world-alaskan-sled-dogs/5b06d420f1cdb358d84b4981?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/06/5b06d420f1cdb358d84b4981/5b06d420f1cdb358d84b4981-1530035148488.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -482,7 +483,7 @@
 									<p class="episode_title hed-xs">Training Husky Puppies to Become Sled Dogs</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-cholula-how-to-short-rib-matty-matheson/5afc7d39f1cdb351db36e4b8?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/munchies-cholula-how-to-short-rib-matty-matheson/5afc7d39f1cdb351db36e4b8?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/fc/5afc7d39f1cdb351db36e4b8/5afc7d39f1cdb351db36e4b8-1526531426644.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -491,7 +492,7 @@
 									<p class="episode_title hed-xs">Short Rib with Matty Matheson</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/34/5b3411a8be40774b08446ad1/5b3411a8be40774b08446ad1-1530193202923.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -500,7 +501,7 @@
 									<p class="episode_title hed-xs">The Mexican town that kicked out politicians and started over</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-friends-matty-matheson-pizza-party-brooklyn/5b2a9f5bbe40773a1c6d7d61?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/munchies-friends-matty-matheson-pizza-party-brooklyn/5b2a9f5bbe40773a1c6d7d61?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/2a/5b2a9f5bbe40773a1c6d7d61/5b2a9f5bbe40773a1c6d7d61-1529679485052.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -509,7 +510,7 @@
 									<p class="episode_title hed-xs">MUNCHIES &amp; Friends: Matty Matheson Pizza Party!</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/33/5b33e5c5be40777db9781aaa/5b33e5c5be40777db9781aaa-1530199996953.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -518,7 +519,7 @@
 									<p class="episode_title hed-xs">Partying with Abraham Lincoln Presenters</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/broadly-hotline-young-professionalism-with-joey-king-and-jacob-elordi/5ae1e140f1cdb3589f359271?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/broadly-hotline-young-professionalism-with-joey-king-and-jacob-elordi/5ae1e140f1cdb3589f359271?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/e1/5ae1e140f1cdb3589f359271/5ae1e140f1cdb3589f359271-1526316083361.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -527,7 +528,7 @@
 									<p class="episode_title hed-xs">Young Professionalism with Joey King and Jacob Elordi</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/thursday-june-28-2018/5b045371f1cdb3530a677763?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/thursday-june-28-2018/5b045371f1cdb3530a677763?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/04/5b045371f1cdb3530a677763/5b045371f1cdb3530a677763-1530223149023.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -536,7 +537,7 @@
 									<p class="episode_title hed-xs">Thursday, June 28, 2018</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/minority-reports-white-student-historically-black-college-hbcu/5adf5125f1cdb31ca5086c63?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/minority-reports-white-student-historically-black-college-hbcu/5adf5125f1cdb31ca5086c63?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/df/5adf5125f1cdb31ca5086c63/5adf5125f1cdb31ca5086c63-1529508605533.jpg?crop=1xw%3A0.9908256880733946xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -545,7 +546,7 @@
 									<p class="episode_title hed-xs">Being a White Student at a Historically Black College</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/meet-the-migos/55d1fc771ce00c683baee839?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/meet-the-migos/55d1fc771ce00c683baee839?latest=1"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/images/video/184/lede/55d1fc771ce00c683baee839-1452634294684.jpg?crop=1xw%3A0.98765432098765xh%3Bcenter%2Ctop&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -560,8 +561,8 @@
 				    class="tabButton"
 				    option="b">Trending</div>
 				  <div role="tabpanel" class="tabContent">
-						<ul class="video__playlist__rows">
-							<a href="/en_us/video/vice-oobah-the-time-i-faked-my-way-to-the-top-of-paris-fashion-week/5b291b3df1cdb33c1668b761?latest=1"><li class="video__playlist__row">
+						<ul class="playlist-rows">
+							<a href="/en_us/video/vice-oobah-the-time-i-faked-my-way-to-the-top-of-paris-fashion-week/5b291b3df1cdb33c1668b761?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/29/5b291b3df1cdb33c1668b761/5b291b3df1cdb33c1668b761-1529682734447.jpg?crop=0.9995537706381079xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -570,7 +571,7 @@
 									<p class="episode_title hed-xs">I Made My Shed The #1 Restaurant In London</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/boardly-downtown-skateboarder-briana-king/5ac79951f1cdb33e9b684ee4?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/boardly-downtown-skateboarder-briana-king/5ac79951f1cdb33e9b684ee4?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/c7/5ac79951f1cdb33e9b684ee4/5ac79951f1cdb33e9b684ee4-1525798916348.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -579,7 +580,7 @@
 									<p class="episode_title hed-xs">Boardly: Downtown Skateboarder Briana King</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/34/5b3411a8be40774b08446ad1/5b3411a8be40774b08446ad1-1530193202923.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -588,7 +589,7 @@
 									<p class="episode_title hed-xs">The Mexican town that kicked out politicians and started over</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-and-friends-austin-cholula/5b1e66e3f1cdb365213285c8?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/munchies-and-friends-austin-cholula/5b1e66e3f1cdb365213285c8?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/1e/5b1e66e3f1cdb365213285c8/5b1e66e3f1cdb365213285c8-1528905566516.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -597,7 +598,7 @@
 									<p class="episode_title hed-xs">Munchies and Friends: Austin</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/33/5b33e5c5be40777db9781aaa/5b33e5c5be40777db9781aaa-1530199996953.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -606,7 +607,7 @@
 									<p class="episode_title hed-xs">Partying with Abraham Lincoln Presenters</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/vice-cutest-job-in-the-world-alaskan-sled-dogs/5b06d420f1cdb358d84b4981?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/vice-cutest-job-in-the-world-alaskan-sled-dogs/5b06d420f1cdb358d84b4981?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/06/5b06d420f1cdb358d84b4981/5b06d420f1cdb358d84b4981-1530035148488.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -615,7 +616,7 @@
 									<p class="episode_title hed-xs">Training Husky Puppies to Become Sled Dogs</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-cholula-how-to-short-rib-matty-matheson/5afc7d39f1cdb351db36e4b8?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/munchies-cholula-how-to-short-rib-matty-matheson/5afc7d39f1cdb351db36e4b8?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/fc/5afc7d39f1cdb351db36e4b8/5afc7d39f1cdb351db36e4b8-1526531426644.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -624,7 +625,7 @@
 									<p class="episode_title hed-xs">Short Rib with Matty Matheson</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-cholula-how-to-pizza-pocket-matty-matheson/5b087695f1cdb37607452231?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/munchies-cholula-how-to-pizza-pocket-matty-matheson/5b087695f1cdb37607452231?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<div><div class="image__mask image__mask--border"></div><p class="hed-xs">Now Playing</p></div>
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/08/5b087695f1cdb37607452231/5b087695f1cdb37607452231-1527610510190.jpg?crop=0.9995494277732719xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
@@ -634,7 +635,7 @@
 									<p class="episode_title hed-xs">Pizza Pocket with Matty Matheson</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/34/5b3411a8be40774b08446ad1/5b3411a8be40774b08446ad1-1530193202923.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -643,7 +644,7 @@
 									<p class="episode_title hed-xs">The Mexican town that kicked out politicians and started over</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-friends-matty-matheson-pizza-party-brooklyn/5b2a9f5bbe40773a1c6d7d61?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/munchies-friends-matty-matheson-pizza-party-brooklyn/5b2a9f5bbe40773a1c6d7d61?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/2a/5b2a9f5bbe40773a1c6d7d61/5b2a9f5bbe40773a1c6d7d61-1529679485052.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -652,7 +653,7 @@
 									<p class="episode_title hed-xs">MUNCHIES &amp; Friends: Matty Matheson Pizza Party!</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/33/5b33e5c5be40777db9781aaa/5b33e5c5be40777db9781aaa-1530199996953.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -661,7 +662,7 @@
 									<p class="episode_title hed-xs">Partying with Abraham Lincoln Presenters</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/broadly-hotline-young-professionalism-with-joey-king-and-jacob-elordi/5ae1e140f1cdb3589f359271?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/broadly-hotline-young-professionalism-with-joey-king-and-jacob-elordi/5ae1e140f1cdb3589f359271?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/e1/5ae1e140f1cdb3589f359271/5ae1e140f1cdb3589f359271-1526316083361.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -670,7 +671,7 @@
 									<p class="episode_title hed-xs">Young Professionalism with Joey King and Jacob Elordi</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/thursday-june-28-2018/5b045371f1cdb3530a677763?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/thursday-june-28-2018/5b045371f1cdb3530a677763?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/04/5b045371f1cdb3530a677763/5b045371f1cdb3530a677763-1530223149023.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -679,7 +680,7 @@
 									<p class="episode_title hed-xs">Thursday, June 28, 2018</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/minority-reports-white-student-historically-black-college-hbcu/5adf5125f1cdb31ca5086c63?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/minority-reports-white-student-historically-black-college-hbcu/5adf5125f1cdb31ca5086c63?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/df/5adf5125f1cdb31ca5086c63/5adf5125f1cdb31ca5086c63-1529508605533.jpg?crop=1xw%3A0.9908256880733946xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -688,7 +689,7 @@
 									<p class="episode_title hed-xs">Being a White Student at a Historically Black College</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/meet-the-migos/55d1fc771ce00c683baee839?latest=1"><li class="video__playlist__row">
+							<a href="/en_us/video/meet-the-migos/55d1fc771ce00c683baee839?latest=1"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/images/video/184/lede/55d1fc771ce00c683baee839-1452634294684.jpg?crop=1xw%3A0.98765432098765xh%3Bcenter%2Ctop&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
