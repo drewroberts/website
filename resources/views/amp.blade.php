@@ -223,11 +223,12 @@
 		.homepage svg {
 			width: 200px;
 			height: 35px;
-			padding:10px 7px;}
+			margin-top: 10px;
+		}
 		.navigation button {border:none}
 		.navigation a {color:inherit;text-decoration:none}
 		.navbar-trigger{
-			padding:10px 7px;
+			padding:10px 15px;
 			color:white;
 			font-size:1.2em;
 			width:30px;
