@@ -167,14 +167,13 @@
 		}
 
 		a,
-		a:visited {
-			color: ;
-		}
-
+		a:visited,
 		a:hover,
 		a:active,
 		a:focus {
-			color: ;
+			color: #000;
+			text-decoration:none;
+			outline:0;
 		}
 
 		/* Quotes */
@@ -344,14 +343,10 @@
 		.m-b-1-xs{margin-bottom:5px;}
 		/*! CSS Used from: https://video.vice.com/static/video.09f4202db6e88e83fe46.css */
 		*,:after,:before{box-sizing:inherit;}
-		a{background-color:transparent;}
-		a:active,a:hover{outline:0;}
 		img{border:0;}
 		.hed-xs{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;}
 		.hed-xs{font-size:12px;font-size:.75rem;}
 		p{margin:0 0 10px;}
-		a{color:#000;text-decoration:underline;}
-		a:active,a:focus,a:hover{color:#000;outline:none;text-decoration:none;}
 		img,amp-img{margin:0;max-width:100%;}
 		ul{margin:0 0 10px;padding:0;}
 		ul li{margin-bottom:10px;}
@@ -421,8 +416,6 @@
 		body .hed-l{font-size:1.75rem;}
 		}
 		h4,h6{margin:0 0 10px;}
-		a{color:#000;text-decoration:underline;}
-		a:active,a:focus,a:hover{color:#000;outline:none;text-decoration:none;}
 		.icon{-moz-osx-font-smoothing:grayscale;}
 		.icon{font-family:icons;speak:none;font-style:normal;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;}
 		img.icon.icon-facebook,img.icon.icon-more,img.icon.icon-twitter{width:15px;cursor:pointer;}
@@ -434,7 +427,6 @@
 		ul{margin:0 0 10px;padding:0;}
 		ul li{margin-bottom:10px;}
 		ul{list-style-position:inside;}
-		.video a,.video a:active,.video a:hover,.video a:visited{text-decoration:none;}
 		.page-content .social-tray__link{background-color:#fff;}
 		.page-content .social-list{list-style-type:none;}
 		.page-content .social-list--item{cursor:pointer;list-style:none;}
@@ -567,8 +559,6 @@
 /*! CSS Used from: https://video.vice.com/static/video.09f4202db6e88e83fe46.css */
 *,:after,:before{box-sizing:inherit;}
 section{display:block;}
-a{background-color:transparent;}
-a:active,a:hover{outline:0;}
 img{border:0;}
 button{color:inherit;font:inherit;margin:0;}
 button{overflow:visible;}
@@ -584,13 +574,10 @@ body .hed-l{font-size:1.75rem;}
 body .hed-s{font-size:1rem;}
 }
 h3,h6{margin:0 0 10px;}
-a{color:#000;text-decoration:underline;}
-a:active,a:focus,a:hover{color:#000;outline:none;text-decoration:none;}
 .icon{-moz-osx-font-smoothing:grayscale;}
 .icon{font-family:icons;speak:none;font-style:normal;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;}
 button{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 img,picture{margin:0;max-width:100%;}
-.video a,.video a:active,.video a:hover,.video a:visited{text-decoration:none;}
 .page-content .header{border-bottom:2px solid #000;margin-bottom:15px;}
 .page-content .header section{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:10px;}
 .page-content .header h3{text-transform:uppercase;margin-bottom:0;}
