@@ -162,9 +162,9 @@
 
 		.amp-wp-content,
 		.amp-wp-title-bar div {
-				margin: 0 auto;
+			margin: 0 auto;
 			max-width: 700px;
-			}
+		}
 
 		p,
 		ol,
@@ -232,37 +232,9 @@
 
 		/* Article */
 
-		.amp-wp-article {
-			color: ;
-			background-color: #ffffff;
-			font-weight: 400;
-			margin: 1.5em auto;
-			max-width: 840px;
+		.article {
 			overflow-wrap: break-word;
 			word-wrap: break-word;
-		}
-
-		/* Article Content */
-
-		.amp-wp-article-content {
-			margin: 0 16px;
-		}
-
-		.amp-wp-article-content ul,
-		.amp-wp-article-content ol {
-			margin-left: 1em;
-		}
-
-		.amp-wp-article-content amp-img {
-			margin: 0 auto;
-		}
-
-		.amp-wp-article-content amp-img.alignright {
-			margin: 0 0 1em 16px;
-		}
-
-		.amp-wp-article-content amp-img.alignleft {
-			margin: 0 16px 1em 0;
 		}
 
 		.primary-header{
@@ -385,15 +357,16 @@
         display: block;
     }
 
-
-
-
 		.primary-heading{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;overflow:visible;padding-left:0;position:fixed;padding:0 0 0 10px}
 
-
-
-
-.page-content{background-color:#fff;position:relative;z-index:2;overflow:hidden;border-bottom:5px solid #f7cf4f}
+		.page-content{
+			background-color:#fff;
+			position:relative;
+			z-index:2;
+			overflow:hidden;
+			border-bottom:5px solid #f7cf4f;
+			min-height: 250px;
+		}
 
 </style>
 </head>
@@ -413,7 +386,7 @@
 
 
 
-<article class="amp-wp-article story">
+<article class="article">
 	<div class="behind-nav">
 	</div>
 
@@ -445,6 +418,8 @@
 		</div>
 	</div>
 
+	<div class="page-content">
+	</div>
 
 
 </article>
