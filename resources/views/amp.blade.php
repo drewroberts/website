@@ -384,6 +384,166 @@
 			min-height: 250px;
 		}
 
+
+		/*! CSS Used from: Embedded */
+		.grd-just-center-xs{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+		.grd-algn-center-xs{-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+		.p-0-xs{padding:0;}
+		.m-b-0-xs{margin-bottom:0;}
+		.m-0-xs{margin:0;}
+		.m-b-1-xs{margin-bottom:5px;}
+		.dsp-none-xs{display:none;}
+		.dsp-flex-xs{display:-webkit-box;display:-ms-flexbox;display:flex;}
+		 @media only screen and (min-width:850px){
+		.dsp-block-l{display:block;}
+		.dsp-none-l{display:none;}
+		}
+		/*! CSS Used from: https://video.vice.com/static/video.09f4202db6e88e83fe46.css */
+		*,:after,:before{box-sizing:inherit;}
+		header,section{display:block;}
+		a{background-color:transparent;}
+		a:active,a:hover{outline:0;}
+		img{border:0;}
+		button{color:inherit;font:inherit;margin:0;}
+		button{overflow:visible;}
+		button{text-transform:none;}
+		button{-webkit-appearance:none;cursor:pointer;}
+		button::-moz-focus-inner{border:0;padding:0;}
+		.hed-l,.hed-xs{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;}
+		.bod-m,.bod-xs{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;font-weight:400;}
+		.bod-m,.bod-xs{line-height:1.6;}
+		.hed-l{font-size:20px;font-size:1.25rem;}
+		.hed-xs{font-size:12px;font-size:.75rem;}
+		.bod-m{font-size:17px;font-size:1.0625rem;}
+		.bod-xs{font-size:12px;font-size:.75rem;font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;}
+		 @media only screen and (min-width:650px){
+		body .hed-l{font-size:1.75rem;}
+		}
+		h4,h6{margin:0 0 10px;}
+		a{color:#000;text-decoration:underline;}
+		a:active,a:focus,a:hover{color:#000;outline:none;text-decoration:none;}
+		.icon{-moz-osx-font-smoothing:grayscale;}
+		.icon{font-family:icons;speak:none;font-style:normal;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;}
+		img.icon.icon-facebook,img.icon.icon-more,img.icon.icon-twitter{width:15px;cursor:pointer;}
+		button{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
+		img{margin:0;max-width:100%;}
+		.btn{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:#fff;color:#000;font:700 12px/1 HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font:700 .75rem/1 HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;cursor:pointer;border:none;text-transform:uppercase;outline:0;padding:20px;text-decoration:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;text-align:center;display:block;white-space:nowrap;}
+		.btn:hover{background-color:#000;color:#fff;}
+		.btn:disabled{background-color:#f1f1f1;color:#d8d8d8;cursor:not-allowed;}
+		ul{margin:0 0 10px;padding:0;}
+		ul li{margin-bottom:10px;}
+		ul{list-style-position:inside;}
+		.video a,.video a:active,.video a:hover,.video a:visited{text-decoration:none;}
+		.page-content .social-tray__link{background-color:#fff;}
+		.page-content .social-list{list-style-type:none;}
+		.page-content .social-list--item{cursor:pointer;list-style:none;}
+		.page-content .social-tray__link{background-color:#aaa;height:30px;width:30px;color:#fff;text-decoration:none;transition:background-color .25s ease-in;list-style:none;}
+		.page-content .social-tray__link:active,.page-content .social-tray__link:focus,.page-content .social-tray__link:hover,.page-content .social-tray__link:visited{color:#fff;}
+		.page-content .social-tray__link--facebook,.page-content .social-tray__link--twitter{width:148px;}
+		.page-content .social-tray__link .icon-facebook,.page-content .social-tray__link .icon-twitter{margin-right:5px;}
+		.page-content .video-infocard__share-icons .social-list{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+		.page-content .video-infocard__share-icons .social-tray__link{border-radius:50%;margin:0 5px;}
+		.page-content .video-infocard__share-icons .social-tray__link--facebook,.page-content .video-infocard__share-icons .social-tray__link--twitter{border-radius:500px;}
+		.page-content .social-tray__link--facebook{background-color:#3965a0;}
+		.page-content .social-tray__link--twitter{background-color:#4db6ee;}
+		.page-content .show__season__episode{color:$base-font-color;margin-bottom:5px;text-transform:uppercase;}
+		 @media only screen and (min-width:850px){
+		.page-content .video-infocard__desktop-section{margin:0 0 15px;display:block;}
+		}
+		 @media only screen and (min-width:1050px){
+		.page-content .video-infocard__desktop-section{margin:0 0 30px;}
+		}
+		 @media only screen and (min-width:850px){
+		.page-content .video-infocard__desktop-section .video-infocard__share-icons{display:block;}
+		}
+		.page-content .video-infocard{padding:0 15px 15px;border-bottom:1px solid #ebebeb;}
+		 @media only screen and (min-width:650px){
+		.page-content .video-infocard{padding:0 30px;}
+		}
+		 @media only screen and (min-width:850px){
+		.page-content .video-infocard{padding:0 40px 45px;border:none;}
+		}
+		 @media only screen and (min-width:1050px){
+		.page-content .video-infocard{padding:0 45px 60px;}
+		}
+		.page-content .video-infocard header{display:-webkit-box;display:-ms-flexbox;display:flex;}
+		.page-content .video-infocard__share-icons{margin:30px 0;}
+		 @media only screen and (min-width:850px){
+		.page-content .video-infocard__share-icons{display:none;}
+		}
+		.page-content .video-infocard__share-icons .social-list{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}
+		.page-content .video-infocard__share-icons .social-list img{margin-right:0;}
+		.page-content .video-infocard__share-icons .social-list .icon_text{display:none;}
+		 @media only screen and (min-width:850px){
+		.page-content .video-infocard__share-icons .social-list{-ms-flex-wrap:wrap;flex-wrap:wrap;}
+		}
+		.page-content .video-infocard__share-icons .social-list .main-list{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-ms-flex-pack:distribute;justify-content:space-around;}
+		 @media only screen and (min-width:400px){
+		.page-content .video-infocard__share-icons .social-list .main-list img{margin-right:5px;}
+		.page-content .video-infocard__share-icons .social-list .main-list .icon_text{display:block;}
+		}
+		 @media only screen and (min-width:650px){
+		.page-content .video-infocard__share-icons .social-list .main-list{margin:auto;}
+		}
+		 @media only screen and (min-width:850px){
+		.page-content .video-infocard__share-icons .social-list .main-list{width:300px;}
+		}
+		.page-content .video-infocard__share-icons .social-list .main-list .social-list--item{width:100%;}
+		.page-content .video-infocard__share-icons .social-list .main-list .social-list--item .social-tray__link{margin:0;width:90%;}
+		.page-content .video-infocard__share-icons__toggle{cursor:pointer;float:right;text-decoration:none;color:#f1f1f1;background:#aaa;border-radius:50%;width:30px;height:30px;position:relative;}
+		.page-content .video-infocard__share-icons__toggle:active,.page-content .video-infocard__share-icons__toggle:focus,.page-content .video-infocard__share-icons__toggle:hover,.page-content .video-infocard__share-icons__toggle:visited{color:#f1f1f1;}
+		.page-content .video-infocard__share-icons__toggle .icon{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);display:block;}
+		.page-content .video-infocard__show-card{position:relative;max-height:120px;}
+		 @media only screen and (min-width:1050px){
+		.page-content .video-infocard__show-card{max-height:150px;}
+		}
+		 @media only screen and (min-width:1250px){
+		.page-content .video-infocard__show-card{max-height:180px;}
+		}
+		.page-content .video-infocard__show-card .thumbnail{max-width:80px;}
+		 @media only screen and (min-width:1050px){
+		.page-content .video-infocard__show-card .thumbnail{max-width:100px;}
+		}
+		 @media only screen and (min-width:1250px){
+		.page-content .video-infocard__show-card .thumbnail{max-width:120px;}
+		}
+		.page-content .video-infocard__show-card .badge{width:28px;height:28px;position:absolute;bottom:-10px;right:-10px;}
+		 @media only screen and (min-width:1050px){
+		.page-content .video-infocard__show-card .badge{width:32px;height:32px;}
+		}
+		 @media only screen and (min-width:1250px){
+		.page-content .video-infocard__show-card .badge{width:40px;height:40px;}
+		}
+		.page-content .video-infocard__show-summary{width:100%;margin-left:20px;min-height:120px;}
+		 @media only screen and (min-width:1050px){
+		.page-content .video-infocard__show-summary{margin-left:24px;}
+		}
+		 @media only screen and (min-width:1250px){
+		.page-content .video-infocard__show-summary{margin-left:30px;}
+		}
+		.page-content .video-infocard__show-summary .episode-info{color:#000;text-transform:uppercase;}
+		.page-content .video-infocard__show-summary .video-title{color:#000;}
+		.page-content .video-infocard__show-summary .video-description{margin-bottom:15px;}
+		.page-content .video-infocard__desktop-section{display:none;margin-left:30px;}
+		 @media only screen and (min-width:850px){
+		.page-content .video-infocard__desktop-section{display:block;}
+		}
+		 @media only screen and (min-width:1050px){
+		.page-content .video-infocard__desktop-section{margin-left:45px;}
+		}
+		 @media only screen and (min-width:1250px){
+		.page-content .video-infocard__desktop-section{margin-left:60px;}
+		}
+		.page-content .less-info,.page-content .show-info{padding:12.5px;line-height:1;position:relative;border:1px solid #ebebeb;border-radius:0;display:block;}
+		.page-content .show-info.hide{display:none;}
+		.page-content .more-info-card{display:block;}
+		.page-content .more-info-card .topics{margin-top:7.5px;}
+		.page-content .more-info-card .topics ul{width:calc(100% - 100px);}
+		.page-content .more-info-card .topics ul li{display:inline-block;margin-right:5px;margin-bottom:5px;}
+		.page-content .more-info-card .topics ul li a{color:#fff;background:#000;padding:5px 10px;}
+		.page-content .more-info-card h4{display:inline-block;width:100px;text-transform:capitalize;}
+		.page-content .more-info-card a,.page-content .more-info-card span{display:inline-block;}
+
 </style>
 </head>
 
@@ -711,6 +871,87 @@
 	</div>
 
 	<div class="page-content">
+		<section class="video-infocard">
+			<header>
+				<div class="video-infocard__show-card">
+					<a href="/en_us/show/tattoo-age-tv"><img class="thumbnail" src="https://video-images.vice.com/shows/59aed456cc16f4ca574cdee9/card/1530202279220-TATTOO_AGE_S2_KEYART.jpeg?crop=1xw:1xh;center,center"></a>
+					<a href="/en_us/channel/viceland"><img class="badge" src="https://vice-web-statics-cdn.vice.com/circle_logos/viceland.svg"></a>
+				</div><div class="video-infocard__show-summary">
+					<h6 class="episode-info hed-xs"><a href="/en_us/show/tattoo-age-tv"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP1</span></div></a></h6>
+					<h4 class="video-title hed-l">Bold Tattooing with Dan Santoro</h4>
+					<div class="video-description bod-m">We head to Smith Street Tattoo Parlor in Brooklyn to get to know Dan Santoro, a tattooer known for his bold traditional American style tattoos.</div>
+					<button class="show-info hide btn">More Info</button>
+					<div class="dsp-none-xs dsp-block-l">
+						<div class="more-info-card">
+							<div class="details">
+				<section>
+					<div class="channel">
+						<h4 class="bod-xs">Channel</h4>
+						<a class="bod-xs" href="/en_us/channel/viceland">VICELAND</a>
+					</div>
+					<div class="runtime">
+						<h4 class="bod-xs">Runtime</h4>
+						<span class="bod-xs">21:58</span>
+					</div>
+					<div class="rating"><h4 class="bod-xs">Rating</h4><span class="bod-xs">TV-14</span></div>
+				</section>
+				<div class="topics dsp-flex-xs">
+					<h4 class="bod-xs">Topics</h4>
+						<ul>
+							<li><a href="/en_us/topic/japanese" class="hed-xs">JAPANESE</a></li>
+							<li><a href="/en_us/topic/documentary" class="hed-xs">DOCUMENTARY</a></li>
+							<li><a href="/en_us/topic/art" class="hed-xs">ART</a></li>
+							<li><a href="/en_us/topic/history" class="hed-xs">HISTORY</a></li>
+							<li><a href="/en_us/topic/tattoo" class="hed-xs">TATTOO</a></li>
+							<li><a href="/en_us/topic/body-modification" class="hed-xs">BODY MODIFICATION</a></li>
+							<li><a href="/en_us/topic/dan-santoro" class="hed-xs">DAN SANTORO</a></li>
+							<li><a href="/en_us/topic/traditional-american" class="hed-xs">TRADITIONAL AMERICAN</a></li>
+							<li><a href="/en_us/topic/skin-art" class="hed-xs">SKIN ART</a></li>
+						</ul>
+								</div>
+							</div>
+						</div>
+						<button class="less-info btn">Less Info</button>
+					</div>
+				</div>
+				<div class="video-infocard__desktop-section">
+					<div class="video-infocard__share-icons">
+						<div class="video-infocard__share-icons__toggle"><img src="https://vice-web-statics-cdn.vice.com/icons/more.svg" class="icon icon-more"></div>
+						<div class="social-list m-0-xs p-0-xs dsp-flex-xs">
+							<ul class="main-list dsp-flex-xs m-0-xs">
+								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" class="icon icon-facebook"><span class="icon_text">SHARE</span></a></li>
+								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" class="icon icon-twitter"><span class="icon_text">TWEET</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="dsp-none-l">
+				<div class="more-info-card">
+					<div class="details">
+						<section>
+							<div class="channel">
+								<h4 class="bod-xs">Channel</h4>
+								<a class="bod-xs" href="/en_us/channel/viceland">VICELAND</a>
+							</div>
+							<div class="runtime"><h4 class="bod-xs">Runtime</h4><span class="bod-xs">21:58</span></div>
+							<div class="rating"><h4 class="bod-xs">Rating</h4><span class="bod-xs">TV-14</span></div>
+						</section>
+						<div class="topics dsp-flex-xs"><h4 class="bod-xs">Topics</h4><ul><li><a href="/en_us/topic/japanese" class="hed-xs">JAPANESE</a></li><li><a href="/en_us/topic/documentary" class="hed-xs">DOCUMENTARY</a></li><li><a href="/en_us/topic/art" class="hed-xs">ART</a></li><li><a href="/en_us/topic/history" class="hed-xs">HISTORY</a></li><li><a href="/en_us/topic/tattoo" class="hed-xs">TATTOO</a></li><li><a href="/en_us/topic/body-modification" class="hed-xs">BODY MODIFICATION</a></li><li><a href="/en_us/topic/dan-santoro" class="hed-xs">DAN SANTORO</a></li><li><a href="/en_us/topic/traditional-american" class="hed-xs">TRADITIONAL AMERICAN</a></li><li><a href="/en_us/topic/skin-art" class="hed-xs">SKIN ART</a></li></ul></div>
+					</div>
+				</div>
+				<button class="less-info btn">Less Info</button>
+			</div>
+			<div class="video-infocard__share-icons">
+				<div class="social-list m-0-xs p-0-xs dsp-flex-xs">
+					<ul class="main-list dsp-flex-xs m-0-xs">
+						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" class="icon icon-facebook"><span class="icon_text">SHARE</span></a></li>
+						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" class="icon icon-twitter"><span class="icon_text">TWEET</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
 	</div>
 
 
