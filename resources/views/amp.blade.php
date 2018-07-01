@@ -162,7 +162,7 @@
 		ol,
 		ul,
 		figure {
-			margin: 0 0 1em;
+			margin:0 0 10px;
 			padding: 0;
 		}
 
@@ -223,7 +223,7 @@
 		.homepage svg {
 			width: 200px;
 			height: 35px;
-			margin-top: 7px;
+			margin-top: 6px;
 		}
 		.navigation button {border:none}
 		.navigation a {color:inherit;text-decoration:none}
@@ -302,13 +302,16 @@
     .tabButton[selected] {
         background: black;
 				color: #ffffff;
+				border-top:none;
+				box-sizing:border-box;
+				cursor:default;
     }
 
     .tabButton {
         list-style: none;
 				outline: none;
 				height: 40px;
-				background: #ffffff;
+				background: #fff;
 				color: black;
 				text-transform: uppercase;
         flex-grow: 1;
@@ -318,7 +321,9 @@
     		font-weight: 400;
     		line-height: 1.2;
 				padding: 12px 0px 13px;
+				border-top: 1px solid #ebebeb;
     }
+		.tabButton p{margin-bottom:0;white-space:nowrap;}
 
     .tabContent {
         display: none;
@@ -414,10 +419,9 @@
 				<amp-selector role="tablist"
 				  layout="container"
 				  class="ampTabContainer">
-				  <div role="tab"
-				    class="tabButton"
-				    selected
-				    option="a">Playlist</div>
+				  <div role="tab" class="tabButton hed-xs" selected option="a">
+						<p>Playlist</p>
+					</div>
 				  <div role="tabpanel" class="tabContent">
 						<ul class="playlist-rows">
 							<a href="/en_us/video/munchies-cholula-how-to-pizza-pocket-matty-matheson/5b087695f1cdb37607452231?latest=1"><li class="playlist-row">
@@ -558,9 +562,9 @@
 							</a>
 						</ul>
 					</div>
-				  <div role="tab"
-				    class="tabButton"
-				    option="b">Trending</div>
+				  <div role="tab" class="tabButton hed-xs" option="b">
+						<p>Trending</p>
+					</div>
 				  <div role="tabpanel" class="tabContent">
 						<ul class="playlist-rows">
 							<a href="/en_us/video/vice-oobah-the-time-i-faked-my-way-to-the-top-of-paris-fashion-week/5b291b3df1cdb33c1668b761?latest=1"><li class="playlist-row">
