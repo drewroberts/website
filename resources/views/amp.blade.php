@@ -920,8 +920,8 @@
 						<div class="video-infocard__share-icons__toggle"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/more.svg" class="icon icon-more"></amp-img></div>
 						<div class="social-list m-0-xs p-0-xs dsp-flex-xs">
 							<ul class="main-list dsp-flex-xs m-0-xs">
-								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" class="icon icon-facebook"></amp-img><span class="icon_text">SHARE</span></a></li>
-								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" class="icon icon-twitter"></amp-img><span class="icon_text">TWEET</span></a></li>
+								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg"></amp-img><span class="icon_text">SHARE</span></a></li>
+								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg"></amp-img><span class="icon_text">TWEET</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -946,8 +946,8 @@
 			<div class="video-infocard__share-icons">
 				<div class="social-list m-0-xs p-0-xs dsp-flex-xs">
 					<ul class="main-list dsp-flex-xs m-0-xs">
-						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" class="icon icon-facebook"></amp-img><span class="icon_text">SHARE</span></a></li>
-						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" class="icon icon-twitter"></amp-img><span class="icon_text">TWEET</span></a></li>
+						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg"></amp-img><span class="icon_text">SHARE</span></a></li>
+						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg"></amp-img><span class="icon_text">TWEET</span></a></li>
 					</ul>
 				</div>
 			</div>
