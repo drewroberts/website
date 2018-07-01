@@ -158,14 +158,6 @@
 			object-fit: contain;
 		}
 
-		/* Template Styles */
-
-		.amp-wp-content,
-		.amp-wp-title-bar div {
-			margin: 0 auto;
-			max-width: 700px;
-		}
-
 		p,
 		ol,
 		ul,
@@ -198,45 +190,14 @@
 		}
 
 		/* UI Fonts */
-		.amp-wp-meta,
-		.amp-wp-header div,
-		.amp-wp-title,
-		.wp-caption-text,
-		.amp-wp-tax-category,
-		.amp-wp-tax-tag,
-		.amp-wp-comments-link,
-		.amp-wp-footer p,
-		.back-to-top {
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-		}
+		 @font-face { font-family: "HelveticaNeueArabic"; src: url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3AHelveticaNeueLTArabic)(name%3AHelveticaNeueArabic)(unicodeRange%3AU%2B0600-06FF)(langs%3Aar).ttf'); font-style: normal; unicode-range: U+0600-06FF; font-weight: normal; }
+		 @font-face { font-family: "HelveticaNeueArabic"; src: url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3AHelveticaNeueLTArabicBold)(name%3AHelveticaNeueArabic)(weight%3A700)(unicodeRange%3AU%2B0600-06FF)(langs%3Aar).ttf'); font-style: normal; unicode-range: U+0600-06FF; font-weight: 700; }
+		 @font-face { font-family: "NeueHelveticaW01"; src: url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW014)(name%3ANeueHelveticaW01)(weight%3A400)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).woff2'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW014)(name%3ANeueHelveticaW01)(weight%3A400)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).woff2'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW014)(name%3ANeueHelveticaW01)(weight%3A400)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).ttf'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW014)(name%3ANeueHelveticaW01)(weight%3A400)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).eot'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW014)(name%3ANeueHelveticaW01)(weight%3A400)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).svg'); font-style: normal; unicode-range: U+0-10FFFF; font-weight: 400; }
+		 @font-face { font-family: "NeueHelveticaW01"; src: url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW017)(name%3ANeueHelveticaW01)(weight%3A700)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).woff2'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW017)(name%3ANeueHelveticaW01)(weight%3A700)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).woff2'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW017)(name%3ANeueHelveticaW01)(weight%3A700)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).ttf'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW017)(name%3ANeueHelveticaW01)(weight%3A700)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).eot'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ANeueHelveticaW017)(name%3ANeueHelveticaW01)(weight%3A700)(langs%3Abe%2Cbg%2Ccs%2Cda%2Cde%2Cen%2Ces%2Cfr%2Cgr%2Chu%2Cid%2Cit%2Cjp%2Cnl%2Cpl%2Cpt%2Cro%2Crs%2Cru%2Csl%2Csv).svg'); font-style: normal; unicode-range: U+0-10FFFF; font-weight: 700; }
+		 @font-face { font-family: "TazuganeGothic"; src: url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ATazuganeGothic)(name%3ATazuganeGothic)(langs%3Aja).otf'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ATazuganeGothic)(name%3ATazuganeGothic)(langs%3Aja).ttf'); font-style: normal; unicode-range: U+0-10FFFF; font-weight: normal; }
+		 @font-face { font-family: "TazuganeGothic"; src: url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ATazuganeGothicBold)(name%3ATazuganeGothic)(weight%3Abold)(langs%3Aja).otf'),url('https://vice-web-statics-cdn.vice.com/fonts/video/(id%3ATazuganeGothicBold)(name%3ATazuganeGothic)(weight%3Abold)(langs%3Aja).ttf'); font-style: normal; unicode-range: U+0-10FFFF; font-weight: bold; }
 
 		/* Header */
-		.amp-wp-header {
-			background-color: ;
-		}
-
-		.amp-wp-header div {
-			color: ;
-			font-size: 1em;
-			font-weight: 400;
-			margin: 0 auto;
-			max-width: calc(840px - 32px);
-			padding: .875em 16px;
-			position: relative;
-		}
-
-		.amp-wp-header a {
-			color: ;
-			text-decoration: none;
-		}
-
-		/* Article */
-
-		.article {
-			overflow-wrap: break-word;
-			word-wrap: break-word;
-		}
-
 		.primary-header{
 			position: fixed;
 			background: black;
@@ -269,11 +230,18 @@
 			width: 100%;
 			height: 50px;
 		}
+
+		/* Article */
+		.article {
+			overflow-wrap: break-word;
+			word-wrap: break-word;
+		}
+
 		.cinema {
 			background-color: #252525;
 			width: 100%;
 			margin-top: 0px;
-			margin-bottom: 40px;
+			margin-bottom: 0px;
 		}
 		@media screen and (min-width: 1050px) {
 		  .cinema {
@@ -371,7 +339,7 @@
 </style>
 </head>
 
-<body class="">
+<body>
 
 	<header class="primary-header" role="banner">
 			<div class="header-section">
