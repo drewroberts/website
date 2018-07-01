@@ -223,7 +223,7 @@
 		.homepage svg {
 			width: 200px;
 			height: 35px;
-			margin-top: 10px;
+			margin-top: 7px;
 		}
 		.navigation button {border:none}
 		.navigation a {color:inherit;text-decoration:none}
