@@ -220,11 +220,11 @@
 		.navigation:after {content:" ";display:none;position:absolute;top:0;right:150px;bottom:0;left:-50px;background-color:#f7cf4f;z-index:-1;-webkit-transform:skew(-35deg,0);transform:skew(-35deg,0);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}
 		.sticky-header {flex-grow: 1}
 		.sticky-header a {margin: auto; width: 200px; display: block;}
-		.homepage svg {width: 200px; height: 50px; }
+		.homepage svg {width: 200px; height: 40px; }
 		.navigation button {border:none}
 		.navigation a {color:inherit;text-decoration:none}
 		.navbar-trigger{
-			padding:15px 10px;
+			padding:7px 7px;
 			color:white;
 			font-size:1.2em;
 			width:30px;
