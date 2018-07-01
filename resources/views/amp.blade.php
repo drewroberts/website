@@ -875,8 +875,8 @@
 		<section class="video-infocard">
 			<header>
 				<div class="video-infocard__show-card">
-					<a href="/en_us/show/tattoo-age-tv"><amp-img class="thumbnail" src="https://video-images.vice.com/shows/59aed456cc16f4ca574cdee9/card/1530202279220-TATTOO_AGE_S2_KEYART.jpeg?crop=1xw:1xh;center,center" max-width="120px" max-height="180px"></amp-img></a>
-					<a href="/en_us/channel/viceland"><amp-img class="badge" src="https://vice-web-statics-cdn.vice.com/circle_logos/viceland.svg" max-width="40px" max-height="40px"></amp-img></a>
+					<a href="/en_us/show/tattoo-age-tv"><amp-img class="thumbnail" src="https://video-images.vice.com/shows/59aed456cc16f4ca574cdee9/card/1530202279220-TATTOO_AGE_S2_KEYART.jpeg?crop=1xw:1xh;center,center" width="120px" height="180px"></amp-img></a>
+					<a href="/en_us/channel/viceland"><amp-img class="badge" src="https://vice-web-statics-cdn.vice.com/circle_logos/viceland.svg" width="40px" height="40px"></amp-img></a>
 				</div><div class="video-infocard__show-summary">
 					<h6 class="episode-info hed-xs"><a href="/en_us/show/tattoo-age-tv"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP1</span></div></a></h6>
 					<h4 class="video-title hed-l">Bold Tattooing with Dan Santoro</h4>
