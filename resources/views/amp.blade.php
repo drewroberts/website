@@ -285,6 +285,7 @@
 		  .playlist-element {
 				width: 365px;
 				max-height: 610px;
+				height: 100%;
 				display: block;
 				position: absolute;
 				top: 0px;
