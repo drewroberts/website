@@ -297,6 +297,7 @@
 		.ampTabContainer {
         display: flex;
         flex-wrap: wrap;
+				height: 100%;
     }
 
     .tabButton[selected] {
