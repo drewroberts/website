@@ -353,7 +353,7 @@
 		ul li{margin-bottom:10px;}
 		ul{list-style-position:inside;}
 		.cinema a,.cinema a:active,.cinema a:hover,.cinema a:visited{text-decoration:none;}
-		.cinema .playlist-rows{overflow:scroll;height:calc(100% - 40px);padding-bottom:10px;background-color:#000;margin-bottom:0;overflow-x:hidden;overflow-y:scroll;margin-right:-17px;padding-right:17px;}
+		.cinema .playlist-rows{overflow:scroll;padding-bottom:10px;background-color:#000;margin-bottom:0;overflow-x:hidden;overflow-y:scroll;margin-right:-17px;padding-right:17px;}
 		.cinema .playlist-row{margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:10px 10px 0;cursor:pointer;}
 		.cinema .playlist-row .image__container{height:74px;width:132px;margin-right:10px;position:relative;}
 		.cinema .playlist-row .image__container>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%;width:100%;position:absolute;z-index: 10;}
