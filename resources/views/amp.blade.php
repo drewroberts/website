@@ -649,6 +649,7 @@ img,picture{margin:0;max-width:100%;}
 }
 
 .play-duration__wrapper::before {
+    content: "";
     width: 20px;
     background: url(https://vice-web-statics-cdn.vice.com/icons/play-white.svg) center center / 110%;
     background-position: center center;
