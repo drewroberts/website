@@ -654,6 +654,12 @@ img,picture{margin:0;max-width:100%;}
     background-position: center center;
 }
 
+.play-duration__duration {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+
 </style>
 </head>
 
