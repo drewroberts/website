@@ -330,6 +330,7 @@
         display: none;
 				color: #ffffff;
         width: 100%;
+				height: calc(100% - 40px);
 				max-height: 570px;
         order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
 				padding-bottom: 10px;
