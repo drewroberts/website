@@ -341,6 +341,17 @@
 		    padding-right: 17px;
     }
 
+		.tabContent .playlist-rows{max-height:100%;overflow:scroll;padding-bottom:10px;background-color:#000;margin-bottom:0;overflow-x:hidden;overflow-y:scroll;margin-right:-17px;padding-right:17px;}
+		.tabContent .playlist-row{margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:10px 10px 0;cursor:pointer;}
+		.tabContent .playlist-row .image__container{height:74px;width:132px;margin-right:10px;position:relative;}
+		.tabContent .playlist-row .image__container>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%;width:100%;position:absolute;z-index: 10;}
+		.tabContent .playlist-row .image__container p{position:absolute;color:#fff;text-transform:uppercase;z-index: 10;}
+		.tabContent .playlist-row .image__mask{width:100%;height:100%;position:absolute;top:0;background-color:rgba(0,0,0,.6);z-index: 10;}
+		.tabContent .playlist-row .image__mask--border{border:2px solid #fff;z-index: 10;}
+		.tabContent .playlist-row .info{color:#fff;text-decoration:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:row;-ms-flex-direction:column;flex-direction:column;max-width:calc(100% - 142px);}
+		.tabContent .playlist-row .info .episode_title{margin-bottom:0;}
+		.tabContent .playlist-row .info .series_episode{text-transform:uppercase;color:#fff;font-size:10px;margin-bottom:5px;color:#909090;}
+
 		/*! CSS Used from: Embedded */
 		.m-b-1-xs{margin-bottom:5px;}
 		/*! CSS Used from: https://video.vice.com/static/video.09f4202db6e88e83fe46.css */
@@ -353,19 +364,6 @@
 		ul{margin:0 0 10px;padding:0;}
 		ul li{margin-bottom:10px;}
 		ul{list-style-position:inside;}
-		.cinema a,.cinema a:active,.cinema a:hover,.cinema a:visited{text-decoration:none;}
-		.cinema .playlist-rows{overflow:scroll;padding-bottom:10px;background-color:#000;margin-bottom:0;overflow-x:hidden;overflow-y:scroll;margin-right:-17px;padding-right:17px;}
-		.cinema .playlist-row{margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:10px 10px 0;cursor:pointer;}
-		.cinema .playlist-row .image__container{height:74px;width:132px;margin-right:10px;position:relative;}
-		.cinema .playlist-row .image__container>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%;width:100%;position:absolute;z-index: 10;}
-		.cinema .playlist-row .image__container p{position:absolute;color:#fff;text-transform:uppercase;z-index: 10;}
-		.cinema .playlist-row .image__mask{width:100%;height:100%;position:absolute;top:0;background-color:rgba(0,0,0,.6);z-index: 10;}
-		.cinema .playlist-row .image__mask--border{border:2px solid #fff;z-index: 10;}
-		.cinema .playlist-row .info{color:#fff;text-decoration:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:row;-ms-flex-direction:column;flex-direction:column;max-width:calc(100% - 142px);}
-		.cinema .playlist-row .info .episode_title{margin-bottom:0;}
-		.cinema .playlist-row .info .series_episode{color:#fff;font-size:10px;margin-bottom:5px;color:#909090;}
-		.cinema .series_episode{color:$base-font-color;margin-bottom:5px;text-transform:uppercase;}
-		.cinema .watch-hub .playlist-rows{max-height:100%;}
 
 
     .tabButton[selected]+.tabContent {
