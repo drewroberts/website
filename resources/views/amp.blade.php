@@ -545,9 +545,18 @@
 
 
 
+/*! CSS Used from: Embedded */
+.m-l-1-xs{margin-left:5px;}
+/*! CSS Used from: https://video.vice.com/static/video.09f4202db6e88e83fe46.css */
+*,:after,:before{box-sizing:inherit;}
+.hed-xs{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;}
+.hed-xs{font-size:12px;font-size:.75rem;}
 
 
-		/*! CSS Used from: Embedded */
+
+
+
+/*! CSS Used from: Embedded */
 .col-12-xs{width:100%;}
 .m-b-1-xs{margin-bottom:5px;}
 .m-l-1-xs{margin-left:5px;}
@@ -631,6 +640,18 @@ img,picture{margin:0;max-width:100%;}
 .page-content .next-button--small{right:0;}
  @media only screen and (min-width:650px){
 .page-content .next-button--small{right:-30px;}
+}
+
+.play-duration__wrapper {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+.play-duration__wrapper::before {
+    width: 20px;
+    background: url(https://vice-web-statics-cdn.vice.com/icons/play-white.svg) center center / 110%;
+    background-position: center center;
 }
 
 </style>
@@ -1055,7 +1076,6 @@ img,picture{margin:0;max-width:100%;}
 					</section>
 				</div>
 				<div class="carousel-container carousel-container--small">
-					<button class="previous-button--small hide" style="height: 191px;"><img class="icon icon-left-arrow" src="https://vice-web-statics-cdn.vice.com/icons/left-arrow.svg"></button>
 					<div class="slick-initialized slick-slider">
 						<div class="slick-list">
 							<div class="slick-track" style="opacity: 1; transform: translate3d(-1418px, 0px, 0px); width: 6381px;">
@@ -1080,7 +1100,6 @@ img,picture{margin:0;max-width:100%;}
 							</div>
 						</div>
 					</div>
-					<button class="next-button--small" style="height: 191px;"><img class="icon icon-right-arrow" src="https://vice-web-statics-cdn.vice.com/icons/right-arrow.svg"></button>
 				</div>
 			</div>
 		</div>
