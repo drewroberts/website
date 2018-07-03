@@ -609,13 +609,7 @@ img,picture{margin:0;max-width:100%;}
 .page-content .slick-list{position:relative;display:block;margin:0;padding:0;}
 .page-content .slick-track{position:relative;top:0;left:0;}
 .page-content .slick-slide,.page-content .slick-track{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;}
-.page-content .slick-slide{height:100%;min-height:1px;margin-right:15px;outline: none; width: 354.5px;}
- @media only screen and (min-width:650px){
-.page-content .slick-slide{width:290px;}
-}
- @media only screen and (min-width:850px){
-.page-content .slick-slide{width:25%;}
-}
+.page-content .slick-slide{height:100%;min-height:1px;margin-right:15px;outline: none; width: 355px;}
 .page-content .slick-initialized .slick-slide{display:inline-block;}
 .page-content .slider__card{display:block;width:100%;}
 .page-content .slider__card__thumbnail{position:relative;margin-bottom:10px;}
@@ -625,22 +619,6 @@ img,picture{margin:0;max-width:100%;}
 .page-content .slider__card__thumbnail__container__small{background-color:#000;background-size:cover;width:100%;margin:0 15px 10px 0;padding-bottom:56.25%;}
 .page-content .slider__meta{margin:0;}
 .page-content .show__season__episode{color:$base-font-color;margin-bottom:5px;text-transform:uppercase;}
-.page-content .next-button--small,.page-content .previous-button--small{transition:height .25s;visibility:hidden;position:absolute;top:0;width:30px;padding:9px;z-index:2;border:0;border-radius:0;background:#000;border-color:#fff;}
- @media only screen and (min-width:650px){
-.page-content .next-button--small,.page-content .previous-button--small{visibility:visible;}
-}
-.page-content .previous-button--small{left:0;}
-.page-content .previous-button--small.hide{display:none;}
- @media only screen and (min-width:650px){
-.page-content .previous-button--small{left:-30px;}
-}
- @media only screen and (min-width:850px){
-.page-content .previous-button--small{left:-45px;}
-}
-.page-content .next-button--small{right:0;}
- @media only screen and (min-width:650px){
-.page-content .next-button--small{right:-30px;}
-}
 
 .play-duration__wrapper {
     position: absolute;
