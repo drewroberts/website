@@ -638,6 +638,15 @@ img,picture{margin:0;max-width:100%;}
     background-color: rgb(0, 0, 0);
 }
 
+.amp-carousel-button {
+
+}
+
+.amp-carousel-button-prev {
+  left: 16px;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13"><path d="M0 11.63L1.393 13 8 6.5 1.393 0 0 1.37 5.214 6.5z" fill="#fff" /></svg>');
+}
+
 
 </style>
 </head>
