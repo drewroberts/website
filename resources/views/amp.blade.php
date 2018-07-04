@@ -640,9 +640,9 @@ img,picture{margin:0;max-width:100%;}
 
 .amp-carousel-button {
 	transition: height .25s;
-  visibility: hidden;
   position: absolute;
   top: 0;
+	height: 100%;
   width: 30px;
   padding: 9px;
   z-index: 2;
