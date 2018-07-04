@@ -641,6 +641,7 @@ img,picture{margin:0;max-width:100%;}
 .amp-carousel-button {
 	transition: height .25s;
   position: absolute;
+	top: 33%;
 	height: 199px;
   width: 30px;
   padding: 9px;
