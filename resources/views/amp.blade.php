@@ -641,14 +641,13 @@ img,picture{margin:0;max-width:100%;}
 .amp-carousel-button {
 	transition: height .25s;
   position: absolute;
-  top: 0;
 	height: 100%;
   width: 30px;
   padding: 9px;
   z-index: 2;
   border: 0;
   border-radius: 0;
-  background: #000;
+  background-color: #000;
   border-color: #fff;
 }
 
