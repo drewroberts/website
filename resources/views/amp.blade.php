@@ -638,6 +638,10 @@ img,picture{margin:0;max-width:100%;}
     background-color: rgb(0, 0, 0);
 }
 
+.i-amphtml-scrollable-carousel-container {
+	padding: 0 30px;
+}
+
 .amp-carousel-button {
 	transition: height .25s;
   position: absolute;
