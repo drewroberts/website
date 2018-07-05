@@ -126,7 +126,6 @@
 
 		body {
 			background: black;
-			color: ;
 			font-family: 'Merriweather', 'Times New Roman', Times, Serif;
 			font-weight: 300;
 			line-height: 1.75em;

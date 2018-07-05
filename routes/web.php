@@ -15,6 +15,10 @@ Route::get('/amp', function () {
     return view('amp');
 });
 
+Route::get('/aos', function () {
+    return view('aos');
+});
+
 Route::get('/oldamp', function () {
     return view('oldamp');
 });
