@@ -193,65 +193,65 @@ table {
 
 @font-face {
   font-family: "Roboto Light";
-  src: url("../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  src: url("https://optimize.withgoogle.com/assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 100;
 }
 
 @font-face {
   font-family: "Roboto Regular";
-  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("https://optimize.withgoogle.com/assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Roboto Medium";
-  src: url("../assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("https://optimize.withgoogle.com/assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Roboto Bold";
-  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("https://optimize.withgoogle.com/assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Google Sans Regular";
-  src: url("../assets/fonts/GoogleSans/GoogleSans-Regular.ttf")
+  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSans-Regular.ttf")
     format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Google Sans Medium";
-  src: url("../assets/fonts/GoogleSans/GoogleSans-Medium.ttf")
+  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSans-Medium.ttf")
     format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Google Sans Bold";
-  src: url("../assets/fonts/GoogleSans/GoogleSans-Bold.ttf") format("truetype");
+  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSans-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Google Sans Display Regular";
-  src: url("../assets/fonts/GoogleSans/GoogleSansDisplay-Regular.ttf")
+  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSansDisplay-Regular.ttf")
     format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Google Sans Display Medium";
-  src: url("../assets/fonts/GoogleSans/GoogleSansDisplay-Medium.ttf")
+  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSansDisplay-Medium.ttf")
     format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Google Sans Display Bold";
-  src: url("../assets/fonts/GoogleSans/GoogleSansDisplay-Bold.ttf")
+  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSansDisplay-Bold.ttf")
     format("truetype");
   font-weight: 700;
 }
@@ -353,23 +353,23 @@ a.button:hover {
 }
 
 .banner--optimise {
-  background-image: url("../assets/hero-optimize.jpg");
+  background-image: url("https://optimize.withgoogle.com/assets/hero-optimize.jpg");
 }
 
 .banner--survey {
-  background-image: url("../assets/hero-survey.jpg");
+  background-image: url("https://optimize.withgoogle.com/assets/hero-survey.jpg");
 }
 
 .banner--datastudio {
-  background-image: url("../assets/hero-datastudio.jpg");
+  background-image: url("https://optimize.withgoogle.com/assets/hero-datastudio.jpg");
 }
 
 .banner--analytics {
-  background-image: url("../assets/hero-analytics.jpg");
+  background-image: url("https://optimize.withgoogle.com/assets/hero-analytics.jpg");
 }
 
 .banner--attribution {
-  background-image: url("../assets/hero-attribution.jpg");
+  background-image: url("https://optimize.withgoogle.com/assets/hero-attribution.jpg");
 }
 
 .banner--content {
