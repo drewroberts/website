@@ -1161,12 +1161,12 @@ a.button:hover {
 
 <section id="main">
   <nav id="navigation" class="nav">
-    <img class="logo" src="https://optimize.withgoogle.com/assets/google-optimize.png" alt="Google Optimize">
+    <amp-img width="225" height="33" class="logo" src="https://optimize.withgoogle.com/assets/google-optimize.png" alt="Google Optimize"></amp-img>
     <a id="navbutton" class="button" target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" data-g-event="Optimize: Microsite" data-g-action="Use It For Free" data-g-label="Global Nav CTA">use it for free</a>
   </nav>
   <section class="banner banner--optimise">
     <div class="container banner--content">
-      <img src="https://optimize.withgoogle.com/assets/google-optimise-logo.png" alt="Google Optimize">
+      <amp-img width="240" height="227" src="https://optimize.withgoogle.com/assets/google-optimise-logo.png" alt="Google Optimize"></amp-img>
       <h1>Your website is your store window.</h1>
       <p>Easily run tests and experiments on your website so it works better for your customers and your business &mdash; for free.</p>
       <a id="topbutton" class="button" target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" data-g-event="Optimize: Microsite" data-g-action="Use It For Free" data-g-label="Header CTA">use it for free</a>
