@@ -1166,7 +1166,7 @@ a.button:hover {
   </nav>
   <section class="banner banner--optimise">
     <div class="container banner--content">
-      <amp-img width="240" height="227" src="https://optimize.withgoogle.com/assets/google-optimise-logo.png" alt="Google Optimize"></amp-img>
+      <amp-img width="240" height="35" src="https://optimize.withgoogle.com/assets/google-optimise-logo.png" alt="Google Optimize"></amp-img>
       <h1>Your website is your store window.</h1>
       <p>Easily run tests and experiments on your website so it works better for your customers and your business &mdash; for free.</p>
       <a id="topbutton" class="button" target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" data-g-event="Optimize: Microsite" data-g-action="Use It For Free" data-g-label="Header CTA">use it for free</a>
