@@ -376,7 +376,7 @@ a.button:hover {
   z-index: 2;
 }
 
-.banner img {
+.banner amp-img {
   margin-left: -1px;
   max-width: 240px;
   padding-left: 1.5rem;
