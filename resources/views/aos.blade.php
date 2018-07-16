@@ -1175,22 +1175,22 @@ a.button:hover {
   <section class="grid container">
     <div class="row">
       <div class="col">
-        <amp-img width="300" height="184" src="https://optimize.withgoogle.com/assets/optimize-chart.png" alt="Chart"></amp-img>
+        <amp-img width="300" height="184" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-chart.png" alt="Chart"></amp-img>
         <h3>Let your data do the talking</h3>
         <p>Integrate with Google Analytics at the click of a button to understand how your website can be improved.</p>
       </div>
       <div class="col">
-        <amp-img width="300" height="184" src="https://optimize.withgoogle.com/assets/optimize-laptop.png" alt="Laptop"></amp-img>
+        <amp-img width="300" height="184" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-laptop.png" alt="Laptop"></amp-img>
         <h3>Test what works best</h3>
         <p>Easily run A/B tests on your website&#39;s content to learn what works best for your visitors.</p>
       </div>
       <div class="col">
-        <amp-img width="300" height="184" src="https://optimize.withgoogle.com/assets/optimize-calendar.png" alt="Calendar"></amp-img>
+        <amp-img width="300" height="184" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-calendar.png" alt="Calendar"></amp-img>
         <h3>Tailor a compelling experience</h3>
         <p>One size never fits all. Adapt your website's experience to suit different types of audiences.</p>
       </div>
       <div class="col">
-        <amp-img width="300" height="184" src="https://optimize.withgoogle.com/assets/optimize-clipboard.png" alt="Clipboard"></amp-img>
+        <amp-img width="300" height="184" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-clipboard.png" alt="Clipboard"></amp-img>
         <h3>Take matters in your own hands</h3>
         <p>Get set up to test your website in minutes. Drive better results from your own screen.</p>
       </div>
@@ -1202,24 +1202,24 @@ a.button:hover {
   </section>
   <section class="laptop">
     <h3>One, two, three, optimize.</h3>
-    <amp-img width="608" height="335" class="gif" src="https://optimize.withgoogle.com/assets/optimize-bottom.gif" alt="Optimize"></amp-img>
+    <amp-img width="608" height="335" class="gif" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-bottom.gif" alt="Optimize"></amp-img>
     <p>Business as usual? Or launching something new? When it comes to your website, there's always room for improvement &mdash; not for guess work.</p>
     <section class="cta">
       <a target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" id="bottombutton" class="button" data-g-event="Optimize: Microsite" data-g-action="Use It For Free" data-g-label="One Two Three Optimize CTA">use it for free</a>
       <div class="outbound">
-        <a id="outbound" target="_blank" rel="noopener" href="https://www.google.com/analytics/optimize/" data-g-event="Optimize: Microsite" data-g-action="Learn More" data-g-label="One Two Three Optimize">Learn More <amp-img width="18" height="18" class="image" src="https://optimize.withgoogle.com/assets/nextarrow.svg" alt="Next Arrow"></amp-img></a>
+        <a id="outbound" target="_blank" rel="noopener" href="https://www.google.com/analytics/optimize/" data-g-event="Optimize: Microsite" data-g-action="Learn More" data-g-label="One Two Three Optimize">Learn More <amp-img width="18" height="18" layout="responsive" class="image" src="https://optimize.withgoogle.com/assets/nextarrow.svg" alt="Next Arrow"></amp-img></a>
       </div>
     </section>
   </section>
   <footer class="footer">
     <div class="container">
-      <a class="google-logo" target="_blank" rel="noopener" href="https://www.google.com/" data-g-event="Optimize: Microsite" data-g-action="Logo" data-g-label="Footer"><amp-img width="86" height="28" id="googlefooter" src="https://optimize.withgoogle.com/assets/footer-google-logo.svg" alt="Google Logo"></amp-img></a>
+      <a class="google-logo" target="_blank" rel="noopener" href="https://www.google.com/" data-g-event="Optimize: Microsite" data-g-action="Logo" data-g-label="Footer"><amp-img width="86" height="28" layout="responsive" id="googlefooter" src="https://optimize.withgoogle.com/assets/footer-google-logo.svg" alt="Google Logo"></amp-img></a>
       <ul class="links">
         <li><a target="_blank" rel="noopener" href="https://www.google.com/intl/en/policies/privacy/" data-g-event="Optimize: Microsite" data-g-action="Privacy" data-g-label="Footer">Privacy</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.google.com/intl/en/policies/terms/" data-g-event="Optimize: Microsite" data-g-action="Terms" data-g-label="Footer">Terms</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.google.com/" data-g-event="Optimize: Microsite" data-g-action="About Google" data-g-label="Footer">About Google</a></li>
       </ul>
-      <div class="language"><a target="_blank" rel="noopener" href="https://support.google.com/360suite/optimize#topic=6314903" data-g-event="Optimize: Microsite" data-g-action="Help" data-g-label="Footer"><span><amp-img width="20" height="20" src="https://optimize.withgoogle.com/assets/help.svg" alt="Help Icon"></amp-img></span> Help</a></div>
+      <div class="language"><a target="_blank" rel="noopener" href="https://support.google.com/360suite/optimize#topic=6314903" data-g-event="Optimize: Microsite" data-g-action="Help" data-g-label="Footer"><span><amp-img width="20" height="20" layout="responsive" src="https://optimize.withgoogle.com/assets/help.svg" alt="Help Icon"></amp-img></span> Help</a></div>
     </div>
   </footer>
 </section>
