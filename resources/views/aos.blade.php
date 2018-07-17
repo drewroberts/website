@@ -60,7 +60,7 @@
   <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-lightbox-0.1.js' async custom-element="amp-lightbox"></script>
   <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-mustache-0.1.js' async custom-template="amp-mustache"></script>
   <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500" rel="stylesheet">
 
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -191,74 +191,9 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: "Roboto Light";
-  src: url("https://optimize.withgoogle.com/assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Roboto Regular";
-  src: url("https://optimize.withgoogle.com/assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Roboto Medium";
-  src: url("https://optimize.withgoogle.com/assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Roboto Bold";
-  src: url("https://optimize.withgoogle.com/assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Google Sans Regular";
-  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSans-Regular.ttf")
-    format("truetype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Google Sans Medium";
-  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSans-Medium.ttf")
-    format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Google Sans Bold";
-  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Google Sans Display Regular";
-  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSansDisplay-Regular.ttf")
-    format("truetype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Google Sans Display Medium";
-  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSansDisplay-Medium.ttf")
-    format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Google Sans Display Bold";
-  src: url("https://optimize.withgoogle.com/assets/fonts/GoogleSans/GoogleSansDisplay-Bold.ttf")
-    format("truetype");
-  font-weight: 700;
-}
-
 h1 {
   color: #fff;
-  font-family: "Google Sans Display Regular", sans-serif;
+  font-family: "Open Sans Regular", sans-serif;
   font-size: 40px;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
@@ -267,7 +202,7 @@ h1 {
 
 h3 {
   color: #444;
-  font-family: "Google Sans Regular", sans-serif;
+  font-family: "Open Sans Regular", sans-serif;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -392,7 +327,7 @@ a.button:hover {
 
 .banner p {
   color: #fff;
-  font-family: "Google Sans Regular", sans-serif;
+  font-family: "Open Sans Regular", sans-serif;
   max-width: 800px;
   padding: 1rem 1rem 0 1.5rem;
   /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.83); */
@@ -438,7 +373,7 @@ a.button:hover {
 
 .quote h3 {
   color: #fff;
-  font-family: "Google Sans Regular", sans-serif;
+  font-family: "Open Sans Regular", sans-serif;
   font-size: 24px;
   line-height: 1.33;
   margin: 0 auto;
@@ -573,7 +508,7 @@ a.button:hover {
   align-items: center;
   background-color: #fff;
   color: #444444;
-  font-family: "Google Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 200;
   justify-content: center;
@@ -639,7 +574,7 @@ a.button:hover {
 }
 
 .language a {
-  font-family: "Google Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   text-decoration: none;
   margin: 0;
