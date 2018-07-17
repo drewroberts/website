@@ -193,7 +193,7 @@ table {
 
 h1 {
   color: #fff;
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
@@ -202,7 +202,7 @@ h1 {
 
 h3 {
   color: #444;
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -210,7 +210,7 @@ h3 {
 
 p {
   color: #666;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.33;
   -webkit-font-smoothing: antialiased;
@@ -220,7 +220,7 @@ p {
 a.button {
   background-color: #0b8043;
   color: #fff;
-  font-family: "Roboto Medium", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
