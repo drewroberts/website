@@ -253,14 +253,6 @@ a.button:hover {
   width: 100%;
 }
 
-
-
-
-
-
-
-
-
 .nav {
   align-items: center;
   background-color: #fff;
@@ -275,13 +267,7 @@ a.button:hover {
   right: 0;
   top: 0;
   transition: opacity 0.2s linear, z-index 0.5s linear;
-  z-index: 0;
-}
-
-.nav--active {
-  opacity: 1;
-  transition: opacity 0.2s linear, z-index 0.1s linear;
-  z-index: 5;
+  z-index: 10;
 }
 
 .nav img {
