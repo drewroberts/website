@@ -55,16 +55,25 @@
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-  <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js' async custom-element="amp-social-share"></script>
-  <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-form-0.1.js' async custom-element="amp-form"></script>
-  <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-lightbox-0.1.js' async custom-element="amp-lightbox"></script>
-  <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-mustache-0.1.js' async custom-template="amp-mustache"></script>
-  <script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
+  <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+  <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500" rel="stylesheet">
 
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
   <style amp-custom>
+
+  #marker {
+      position: absolute;
+      top: 100px;
+      width: 0px;
+      height: 0px;
+    }
 
   html,
 body,
@@ -243,6 +252,14 @@ a.button:hover {
   position: relative;
   width: 100%;
 }
+
+
+
+
+
+
+
+
 
 .nav {
   align-items: center;
@@ -1097,6 +1114,46 @@ a.button:hover {
 </head>
 
 <body>
+
+  <amp-animation id="showAnim" layout="nodisplay">
+    <script type="application/json">
+      {
+        "duration": "200ms",
+        "fill": "both",
+        "iterations": "1",
+        "direction": "alternate",
+        "animations": [{
+          "selector": "#navigation",
+          "keyframes": [{
+            "opacity": "1",
+            "visibility": "visible"
+          }]
+        }]
+      }
+    </script>
+  </amp-animation>
+  <amp-animation id="hideAnim" layout="nodisplay">
+    <script type="application/json">
+      {
+        "duration": "200ms",
+        "fill": "both",
+        "iterations": "1",
+        "direction": "alternate",
+        "animations": [{
+          "selector": "#navigation",
+          "keyframes": [{
+            "opacity": "0",
+            "visibility": "hidden"
+          }]
+        }]
+      }
+    </script>
+  </amp-animation>
+  <!-- Invisible 0x0px marker div that sits 100px off the top -->
+    <div id="marker">
+      <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
+      </amp-position-observer>
+    </div>
 
 <section id="main">
   <nav id="navigation" class="nav">
