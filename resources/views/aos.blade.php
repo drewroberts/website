@@ -377,9 +377,7 @@ a.button:hover {
 }
 
 .bannerlogo {
-  margin-left: -1px;
   max-width: 240px;
-  padding-left: 24px;
   padding-top: 192px;
 }
 
@@ -1167,7 +1165,7 @@ a.button:hover {
   <section class="banner banner--optimise">
     <div class="container banner--content">
       <div class="bannerlogo">
-        <amp-img width="240" height="36" src="https://optimize.withgoogle.com/assets/google-optimise-logo.png" alt="Google Optimize"></amp-img>
+        <amp-img width="245" height="35" src="https://optimize.withgoogle.com/assets/google-optimise-logo.png" alt="Google Optimize"></amp-img>
       </div>
       <h1>Your website is your store window.</h1>
       <p>Easily run tests and experiments on your website so it works better for your customers and your business &mdash; for free.</p>
