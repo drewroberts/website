@@ -824,9 +824,6 @@ a.button:hover {
     padding: 7rem 0;
   }
 
-  .banner img {
-    margin-left: -1px;
-  }
 }
 
 @media screen and (min-width: 1120px) {
