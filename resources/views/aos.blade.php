@@ -379,8 +379,8 @@ a.button:hover {
 .bannerlogo {
   margin-left: -1px;
   max-width: 240px;
-  padding-left: 1.5rem;
-  padding-top: 3rem;
+  padding-left: 24px;
+  padding-top: 192px;
 }
 
 .banner h1 {
