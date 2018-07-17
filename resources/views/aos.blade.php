@@ -195,6 +195,7 @@ h1 {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 40px;
+  font-weight: 400;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -204,6 +205,7 @@ h3 {
   color: #444;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -212,6 +214,7 @@ p {
   color: #666;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.33;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -327,7 +330,8 @@ a.button:hover {
 
 .banner p {
   color: #fff;
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   max-width: 800px;
   padding: 1rem 1rem 0 1.5rem;
   /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.83); */
@@ -373,8 +377,9 @@ a.button:hover {
 
 .quote h3 {
   color: #fff;
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
+  font-weight: 400;
   line-height: 1.33;
   margin: 0 auto;
   max-width: 890px;
@@ -491,8 +496,9 @@ a.button:hover {
   align-items: center;
   color: #3367d6;
   display: flex;
-  font-family: "Roboto Medium", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
+  font-weight: 500;
   letter-spacing: 0.4px;
   text-decoration: none;
   text-transform: uppercase;
@@ -557,7 +563,8 @@ a.button:hover {
 .footer .links li a {
   color: #fff;
   font-size: 16px;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   letter-spacing: 0.3px;
   text-decoration: none;
 }
@@ -575,6 +582,7 @@ a.button:hover {
 
 .language a {
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   color: #fff;
   text-decoration: none;
   margin: 0;
@@ -859,7 +867,8 @@ a.button:hover {
 .banner--cta p {
   padding-bottom: 7rem;
   font-size: 14px;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .analytics-laptop .gif {
