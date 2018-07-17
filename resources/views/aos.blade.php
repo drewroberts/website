@@ -70,7 +70,7 @@
 
   #marker {
       position: absolute;
-      top: 100px;
+      top: 200px;
       width: 0px;
       height: 0px;
     }
@@ -1135,7 +1135,7 @@ a.button:hover {
       }
     </script>
   </amp-animation>
-  <!-- Invisible 0x0px marker div that sits 100px off the top -->
+  <!-- Invisible 0x0px marker div that sits 200px off the top -->
     <div id="marker">
       <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
       </amp-position-observer>
