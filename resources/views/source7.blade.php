@@ -321,140 +321,29 @@ with information you have provided to them in connection with their services.</p
 </li>
 </ul>
 </div>
-<amp-analytics>
-<script type="application/json">{
-	"requests": {
-		"pageview": "https://fast.forbes.com/fps/cookie_backup.php?ch=channel_74&se=section_1279&su=CANONICAL_URL&pt=GoogleAMP&i=blogAndPostId/blog/post/1174-42801&au=blogAuthorId/blog/author/6041&at=individual&ts=TIMESTAMP&re=DOCUMENT_REFERRER&rn=RANDOM&mb=t"
-	},
-	"triggers": {
-		"track pageview": {
-			"on": "visible",
-			"request": "pageview"
-		}
-	},
-	"transport": {
-		"beacon": false,
-		"xhrpost": false,
-		"image": true
-	}
-}</script>
-</amp-analytics>
-<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-MNSBDX&amp;gtm.url=SOURCE_URL" data-credentials="include" data-block-on-consent>
-<script type="application/json">{
-	"vars": {
-		"author": "Paul Tassi",
-		"site": "insertcoin",
-		"channel": "technology",
-		"slot": "none",
-		"contribType": "Contributor",
-		"schedule": "none",
-		"blogType": "individual",
-		"brandVoice": "none",
-		"pageType": "GoogleAMP",
-		"articleGallery": "none",
-		"dfpSite": "fdcmobile",
-		"dfpZone": "amp/article",
-		"publishDate": "2018-07-18",
-		"paragraphs": "12",
-		"categories": "Innovation,Games,Consumer,Hollywood & Entertainment ",
-		"editSlot": "none",
-		"hashtags": "GamingSales",
-		"shareParent": "none",
-		"shareChild": "none",
-		"naturalID": "blogAndPostId/blog/post/1174-42801",
-		"viewportSize": "none",
-		"adID": "none",
-		"errorType": "none",
-		"wordCount": "none",
-		"intendedPage": "none",
-		"pageNumber": "1",
-		"pageTotal": "1",
-		"publishHour": "10",
-		"updateDate": "2018-07-18",
-		"updateHour": "10",
-		"section": "games",
-		"pagination": "none",
-		"bucket": "none",
-		"videoPlacement": "none",
-		"hitID": "none",
-		"brandVoiceLive": "none",
-		"login": "false",
-		"hashtagsTrending": "none",
-		"heroImage": "false",
-		"imageCount": "2",
-		"customPage": "http://www.forbes.com/sites/insertcoin/2018/07/18/microsoft-teases-all-new-xbox-hardware-announcement-next-month/",
-		"weekdayPublish": "Wednesday",
-		"contribActive": "true",
-		"virtualPage": "false",
-		"leftRail": "false",
-		"primaryChannel": "Tech",
-		"primarySection": "Games",
-		"bvContentSource": "none",
-		"bvLeftRailHeadline": "none",
-		"bvProgramType": "none",
-		"coreBrands": "none",
-		"pageTitle": "Microsoft Teases 'All-New Xbox Hardware' Announcement Next Month",
-		"contribDivision": "FC",
-		"insights": "none",
-		"cbAuthor": "Paul Tassi",
-		"cbSections": "technology",
-		"bertie": "false"
-	}
-}</script>
-</amp-analytics>
-<amp-analytics type="comscore" data-block-on-consent>
-<script type="application/json">{
-	"vars": {
-		"c2": "6872493"
-	},
-	"extraUrlParams": {
-		"comscorekw": "amp"
-	}
-}</script>
-</amp-analytics>
-<amp-analytics type="simplereach" data-block-on-consent>
-<script type="application/json">{
-	"vars": {"pid":"50e4a8434240cf5c4b000009","title":"Microsoft Teases 'All-New Xbox Hardware' Announcement Next Month","authors":["Paul Tassi"],"published_at":"2018-07-18T14:15:00.000Z","categories":["technology"],"tags":["site::insertcoin","slot::","type::GoogleAMP"],"article_id":"blogAndPostId/blog/post/1174-42801","ignore_metadata":true}
-}</script>
-</amp-analytics>
-<amp-analytics type="quantcast" data-block-on-consent>
-<script type="application/json">{
-	"vars": {
-		"pcode": "p-3bmCtEkzhulVU",
-		"labels": ["AMP","Channel.technology","Section.games","Hashtag.GamingSales","Author.Paul Tassi.Microsoft Teases 'All-New Xbox Hardware' Announcement Next Month"]
-	}
-}</script>
-</amp-analytics>
-<amp-analytics type="nielsen-marketing-cloud" data-block-on-consent>
-<script type="application/json">{"vars":{"pubId":"234","siteId":"003"},"extraUrlParams":{"channelNames":"Innovation,Consumer","sectionNames":"Innovation:Games,Consumer:Hollywood & Entertainment ","hashtags":"GamingSales"}}</script>
-</amp-analytics>
-<amp-pixel height="1" width="1" layout="nodisplay" src="https://q.quora.com/_/ad/f9873342e9544d1c8a1dff65dfec5ec8/pixel?tag=ViewContent&amp;u=CANONICAL_URL&amp;=1">
-</amp-pixel>
+
+
+
 <amp-lightbox id="share-lightbox" layout="nodisplay">
-<div class="share-lightbox">
-<div class="share-lightbox-content">
-<div class="close-button-wrapper" on="tap:share-lightbox.close" role="button" tabindex="0">
-<svg class="close-button" id="close" fill="#FFFFFF" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
-<path d="M448,402.745L301.255,256L448,109.255L402.745,64L256,210.745L109.255,64L64,109.255L210.745,256L64,402.745L109.255,448L256,301.255L402.745,448L448,402.745z">
-</path>
-</svg>
-</div>
-<div class="share-text">Share</div>
-<div class="social-wrapper">
-<a class="email-share-link" href="mailto:?subject=Microsoft Teases 'All-New Xbox Hardware' Announcement Next Month%20-%20Forbes&amp;body=Hi,%0A%0AI%20thought%20you'd%20like%20this%3A%0Ahttps://www.forbes.com/sites/insertcoin/2018/07/18/microsoft-teases-all-new-xbox-hardware-announcement-next-month/%0A%0AMicrosoft Teases 'All-New Xbox Hardware' Announcement Next Month%20-%20Forbes" data-ga-track="Email Click">
-</a>
-<amp-social-share type="facebook" width="60" height="44" layout="responsive" data-param-app_id="123694841080850" data-ga-track="Facebook Click">
-</amp-social-share>
-<amp-social-share type="twitter" width="60" height="44" data-param-text="Microsoft Teases 'All-New Xbox Hardware' Announcement Next Month via @forbes" layout="responsive" data-ga-track="Twitter Click">
-</amp-social-share>
-<amp-social-share type="linkedin" width="60" height="44" layout="responsive" data-ga-track="Linkedin Click">
-</amp-social-share>
-<amp-social-share type="gplus" width="60" height="44" layout="responsive" data-ga-track="Google Plus Click">
-</amp-social-share>
-</div>
-</div>
-</div>
+  <div class="share-lightbox">
+    <div class="share-lightbox-content">
+      <div class="close-button-wrapper" on="tap:share-lightbox.close" role="button" tabindex="0">
+        <svg class="close-button" id="close" fill="#FFFFFF" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><path d="M448,402.745L301.255,256L448,109.255L402.745,64L256,210.745L109.255,64L64,109.255L210.745,256L64,402.745L109.255,448L256,301.255L402.745,448L448,402.745z"></path></svg>
+      </div>
+      <div class="share-text">Share</div>
+      <div class="social-wrapper">
+        <a class="email-share-link" href="mailto:?subject=Microsoft Teases 'All-New Xbox Hardware' Announcement Next Month%20-%20Forbes&amp;body=Hi,%0A%0AI%20thought%20you'd%20like%20this%3A%0Ahttps://www.forbes.com/sites/insertcoin/2018/07/18/microsoft-teases-all-new-xbox-hardware-announcement-next-month/%0A%0AMicrosoft Teases 'All-New Xbox Hardware' Announcement Next Month%20-%20Forbes" data-ga-track="Email Click"></a>
+        <amp-social-share type="facebook" width="60" height="44" layout="responsive" data-param-app_id="123694841080850" data-ga-track="Facebook Click"></amp-social-share>
+        <amp-social-share type="twitter" width="60" height="44" data-param-text="Microsoft Teases 'All-New Xbox Hardware' Announcement Next Month via @forbes" layout="responsive" data-ga-track="Twitter Click"></amp-social-share>
+        <amp-social-share type="linkedin" width="60" height="44" layout="responsive" data-ga-track="Linkedin Click"></amp-social-share>
+        <amp-social-share type="gplus" width="60" height="44" layout="responsive" data-ga-track="Google Plus Click"></amp-social-share>
+      </div>
+    </div>
+  </div>
 </amp-lightbox>
+
+
+
 <amp-lightbox id="header-lightbox" layout="nodisplay" scrollable="" on="lightboxOpen:AMP.setState({headerState: { isHeaderOpen: !headerState.isHeaderOpen }});lightboxClose:AMP.setState({headerState: { isHeaderOpen: !headerState.isHeaderOpen }})">
 <amp-accordion id="header-accordion" disable-session-states="" expand-single-section="">
 <section class="header__channel">
