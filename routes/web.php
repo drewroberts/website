@@ -48,6 +48,10 @@ Route::get('/source6', function () {
     return view('source6');
 });
 
+Route::get('/source7', function () {
+    return view('source7');
+});
+
 Route::get('/', function () {
     return view('temporary');
 });
