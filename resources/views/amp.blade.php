@@ -683,8 +683,8 @@ img,picture{margin:0;max-width:100%;}
 .share-lightbox-content{margin:0 auto;}
 .close-button-wrapper{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:48px;padding-right:1rem;text-align:right}
 .close-button-wrapper .close-button{height:16px;margin-left:auto;width:16px}
-.share-text{color:#fff;font-family:Work Sans,sans-serif;font-size:20px;margin-left:10%;margin-bottom:15px;text-transform:uppercase}
-.social-wrapper{font-size:0;text-align:center;width:100%;z-index:11}
+.share-text{color:#fff;font-family:Work Sans,sans-serif;font-size:20px;margin-left:10%;margin-bottom:15px;text-transform:uppercase;max-width:900px;}
+.social-wrapper{font-size:0;text-align:center;width:100%;z-index:11;max-width:900px;}
 .email-share-link,.social-wrapper amp-social-share{display:inline-block;height:45px;padding:0;margin:0;margin-right:4%;max-width:-webkit-calc(140px + 2%);max-width:calc(140px + 2%);width:12%}
 .email-share-link{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
 
