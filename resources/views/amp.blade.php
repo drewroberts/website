@@ -679,7 +679,7 @@ img,picture{margin:0;max-width:100%;}
 
 
 
-.share-lightbox{background:rgba(0,0,0,.8);height:100%;left:0;max-width:700px;margin:0 auto;position:absolute;right:0;width:100%;z-index:11}
+.share-lightbox{background:rgba(0,0,0,.8);height:100%;left:0;margin:0 auto;position:absolute;right:0;width:100%;z-index:11}
 .share-lightbox-content{margin:0 auto;}
 .close-button-wrapper{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:48px;padding-right:1rem;text-align:right}
 .close-button-wrapper .close-button{height:16px;margin-left:auto;width:16px}
