@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+
 	<script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -68,9 +70,9 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
-<title>FSU coach Willie Taggart buys lunch for local football campers, wins the day — The Undefeated</title>
+<title>AMP Project Tutorial by Drew Roberts</title>
 <meta name="description" content="Willie Taggart is a “see something, say something” kind of guy, and his good deed for 200 football campers this week is a testament to that. The Florida State U&#8230;" />
-<link rel="canonical" href="https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/" />
+<link rel="canonical" href="https://drewroberts.com/amp" />
 <meta name="DC.date.issued" content="2018-06-07 21:16:22" />
 <meta name="news_keywords" content="Web Development, AMP Project, Laravel, PHP" />
 <meta name='author' content='Drew Roberts' />
@@ -87,8 +89,8 @@
 <meta property="og:image:width" content="1500" />
 <meta property="og:image:height" content="842" />
 <meta property="og:locale" content="en_US" />
-<meta property="article:author" content="https://theundefeated.com/contributors/mark-w-wright/" />
-<meta property="article:publisher" content="https://www.facebook.com/theundefeatedsite" />
+<meta property="article:author" content="https://drewroberts.com/about" />
+<meta property="article:publisher" content="https://www.facebook.com/DrewRoberts" />
 <meta property="fb:app_id" content="834240743288407" />
 <meta property="fb:pages" content="1583598865225460" />
 <meta name="twitter:site" content="DrewRoberts.com" />
@@ -96,10 +98,10 @@
 <meta name="twitter:widgets:csp" content="on" />
 <meta name="twitter:maxage" content="300" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:creator" content="Wright_One" />
+<meta name="twitter:creator" content="DrewRoberts" />
 <meta name="twitter:creator:id" content="19672582" />
 <meta name="twitter:label1" content="Written by" />
-<meta name="twitter:data1" content="Mark W. Wright" />
+<meta name="twitter:data1" content="Drew Roberts" />
 <meta name="twitter:label2" content="Filed under" />
 <meta name="twitter:data2" content="College Football, Florida State Seminoles, Willie Taggart" />
 
@@ -109,11 +111,11 @@
 <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js' async custom-element="amp-social-share"></script>
-<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-form-0.1.js' async custom-element="amp-form"></script>
-<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-lightbox-0.1.js' async custom-element="amp-lightbox"></script>
-<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-mustache-0.1.js' async custom-template="amp-mustache"></script>
-<script type='text/javascript' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic">
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -701,6 +703,40 @@ img,picture{margin:0;max-width:100%;}
 
 
 
+/*! CSS for Footer */
+a,div,li,ul{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline;}
+ul{list-style:none;}
+*,:after,:before{box-sizing:inherit;}
+a{color:#696969;text-decoration:none;}
+a:focus,a:hover{outline:none;}
+[class^=icon-]{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.icon-facebook:before{content:"\e912";}
+.icon-twitter:before{content:"\e913";}
+.icon-tumblr:before{content:"\e91c";}
+.icon-youtube:before{content:"\e91b";}
+.icon-instagram:before{content:"\e91a";}
+.main-footer{position:absolute;right:0;bottom:0;left:0;text-align:center;width:100%;height:15.4375rem;padding:2.8125rem 0;background:#000;color:#aaa;}
+.main-footer .viceland-logo-svg{width:200px;}
+.main-footer ul{display:block;}
+.main-footer .socials{position:relative;margin:1.625rem 0 1.5rem;}
+.main-footer .socials li{display:inline-block;margin:0 .8125rem;}
+.main-footer .socials li .icon-facebook{position:relative;top:-.125rem;left:-.0625rem;font-size:1.09375rem;}
+.main-footer .socials li a{color:#fff;}
+.main-footer .links{max-width:16.25rem;margin:0 auto;}
+@media only screen and (min-width:40.625em){
+.main-footer .links{margin:0;max-width:100%;}
+}
+.main-footer .links li{display:inline-block;margin:0 .5rem;}
+.main-footer .links li a{text-transform:uppercase;font:700 .75rem/1em HelveticaNeueLT,Helvetica Neue,Helvetica,Arial,sans-serif;color:#aaa;}
+.main-footer .links li a:active,.main-footer .links li a:hover{text-decoration:underline;}
+.main-footer .copyright{font:.6875rem HelveticaNeueLT,Helvetica Neue,Helvetica,Arial,sans-serif;text-align:center;margin:1.25rem 0;}
+/*! CSS Used fontfaces */
+@font-face{font-family:icomoon;src:url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.eot);src:url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.eot#iefix) format("embedded-opentype"),url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.woff2) format("woff2"),url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.woff) format("woff"),url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.ttf) format("truetype"),url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.svg#icomoon) format("svg");}
+@font-face{font-family:HelveticaNeueLT;font-weight:400;src:url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.eot);src:url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.eot#iefix) format("embedded-opentype"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.woff2) format("woff2"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.woff) format("woff"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.ttf) format("truetype"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.svg#HelveticaNeueLT) format("svg");}
+@font-face{font-family:HelveticaNeueLT;font-weight:700;src:url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.eot);src:url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.eot#iefix) format("embedded-opentype"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.woff2) format("woff2"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.woff) format("woff"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.ttf) format("truetype"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.svg#HelveticaNeueLT) format("svg");}
+
+
+
 </style>
 </head>
 
@@ -1156,10 +1192,25 @@ img,picture{margin:0;max-width:100%;}
 </article>
 
 
-<footer class="primary-footer">
 
-
-</footer>
+	<footer class="main-footer">
+    <svg class="viceland-logo-svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 101 14"><g class="layer"><title>VICElAND Logo</title><path class="viceland-logo-svg-letters" fill="#FFF" d="M0 .4h4.4l2.3 8.9L9.1.4h4.4L8.9 13.7H4.5L0 .4zm14.2 13.4V.5h4.4v13.3h-4.4zm14.9-8.3c-.1-1.4-1-2.2-2.4-2.2-1.5 0-2.5 1.3-2.5 3.9 0 1.9.4 3.6 2.6 3.6 1.4 0 2.1-1 2.2-2.3h4.2c-.4 3.4-2.8 5.5-6.4 5.5-4.4 0-7.1-2.7-7.1-7s2.9-7 6.6-7c4.1 0 6.3 2 6.7 5.4l-3.9.1zm5.7 8.3V.5h10.9v3.1h-6.5v1.9h5.9v3.1h-5.9v2.1H46v3.1H34.8zm13 0V.5h4.4v10.2h6v3.1H47.8zm11 0L63.6.5H68l4.8 13.3h-4.4l-.5-1.8h-4.3l-.5 1.8h-4.3zm7-9.3l-1.4 4.8h2.8l-1.4-4.8zm16.5 3.2l-.2-3V.5h4.2v13.3h-4.1l-4.7-7.2.2 3v4.2h-4.2V.5h4.1l4.7 7.2zm5.9 6.1V.5H94c4.3 0 7 2 7 6.4 0 5-2.8 6.9-7.1 6.9h-5.7zm4.3-3.1h.9c2 0 3.1-1.1 3.1-3.6 0-2.8-.9-3.5-3.2-3.5h-.8v7.1z"></path></g></svg>
+    <ul class="socials">
+			<li><a target="_blank" href="https://www.youtube.com/DrewRoberts"><i class="icon-youtube"></i></a></li>
+      <li><a target="_blank" href="https://facebook.com/DrewRoberts"><i class="icon-facebook"></i></a></li>
+    	<li><a target="_blank" href="http://twitter.com/DrewRoberts"><i class="icon-twitter"></i></a></li>
+    	<li><a target="_blank" href="http://instagram.com/VICELAND"><i class="icon-instagram"></i></a></li>
+			<li><a target="_blank" href="http://viceland.tumblr.com"><i class="icon-tumblr"></i></a></li>
+    </ul>
+    <ul class="links">
+        <li><a href="https://drewroberts.com/about">About</a></li>
+        <li><a href="https://drewroberts.com/contact">Contact</a></li>
+				<li><a href="https://drewroberts.com/terms">Privacy &amp; Terms</a></li>
+        <li><a href="https://Tipoff.com">Tipoff</a></li>
+        <li><a href="https://confirmsubscription.com/h/i/EF720F59A49B5676">Newsletter</a></li>
+    </ul>
+    <div class="copyright">© 2018 DrewRoberts.com LLC</div>
+	</footer>
 
 <amp-lightbox id="menu-lightbox" layout="nodisplay">
   <div class="menu-lightbox">
