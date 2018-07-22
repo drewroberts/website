@@ -229,8 +229,9 @@
 			padding:10px 15px;
 			margin-left:5px;
 			color:white;
-			font-size:19px;
+			font-size:20px;
 			width:70px;
+			height:50px;
 			float:left;
 			transform:scale(1.3,1);
 		}
