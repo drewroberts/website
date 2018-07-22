@@ -227,9 +227,9 @@
 		.navigation a {color:inherit;text-decoration:none}
 		.navbar-menu{
 			padding:10px 15px;
-			margin-left:3px;
+			margin-left:5px;
 			color:white;
-			font-size:18px;
+			font-size:19px;
 			width:70px;
 			float:left;
 			transform:scale(1.3,1);
