@@ -229,7 +229,7 @@
 			padding:10px 15px;
 			margin-left:3px;
 			color:white;
-			font-size:20px;
+			font-size:18px;
 			width:70px;
 			float:left;
 			transform:scale(1.3,1);
