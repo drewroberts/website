@@ -672,7 +672,6 @@ img,picture{margin:0;max-width:100%;}
 	padding:10px 15px;
 	color:white;
 	font-size:1.2em;
-	width:30px;
 	height:50px;
 	float:right;
 }
