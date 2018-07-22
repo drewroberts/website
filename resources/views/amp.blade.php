@@ -669,12 +669,12 @@ img,picture{margin:0;max-width:100%;}
 .close__btn,.hamburger__btn{background-color:transparent;border:none;padding:0}
 .close__btn svg,.hamburger__btn svg{height:1rem;width:1rem}
 .navbar-share{
-	padding:10px 15px;
+	padding:12px 0px;
 	color:white;
 	font-size:1.2em;
 	width:30px;
 	float:right;
-	transform:scale(1.3,1);
+	transform:scale(1.6,1.4);
 }
 .navbar-share svg{height:1rem;width:1rem}
 
