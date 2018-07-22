@@ -694,8 +694,8 @@ img,picture{margin:0;max-width:100%;}
 
 .menu-lightbox{background:black;position:absolute;width:100%;height:100%;z-index:11}
 .menu-lightbox-content{margin:0 auto;}
-.menu-close-button-wrapper{padding:12px 15px;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:50px;text-align:right}
-.menu-close-button-wrapper .close-button{width:24px;height:24px;margin-left:auto;}
+.menu-close-button-wrapper{padding:12px 15px;height:50px;float:right;}
+.menu-close-button-wrapper .menu-close-button{width:24px;height:24px;}
 
 
 
