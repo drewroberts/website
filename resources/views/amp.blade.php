@@ -669,7 +669,7 @@ img,picture{margin:0;max-width:100%;}
 .close__btn,.hamburger__btn{background-color:transparent;border:none;padding:0}
 .close__btn svg,.hamburger__btn svg{height:1rem;width:1rem}
 .navbar-share{
-	padding:10px 15px;
+	padding:12px 15px;
 	color:white;
 	font-size:1.2em;
 	height:50px;
@@ -681,8 +681,8 @@ img,picture{margin:0;max-width:100%;}
 
 .share-lightbox{background:rgba(0,0,0,.8);position:absolute;width:100%;height:100%;z-index:11}
 .share-lightbox-content{margin:0 auto;}
-.close-button-wrapper{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:48px;padding-right:1rem;text-align:right}
-.close-button-wrapper .close-button{height:16px;margin-left:auto;width:16px}
+.close-button-wrapper{padding:12px 15px;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:50px;text-align:right}
+.close-button-wrapper .close-button{width:24px;height:24px;margin-left:auto;}
 .share-text{color:#fff;font-family:Work Sans,sans-serif;font-size:20px;max-width:900px;padding-left:10%;margin: 150px auto 15px auto;text-transform:uppercase;}
 .social-wrapper{font-size:0;text-align:center;width:100%;z-index:11;max-width:900px;margin-left:auto;margin-right:auto;}
 .email-share-link,.social-wrapper amp-social-share{display:inline-block;height:45px;padding:0;margin:0;margin-right:4%;max-width:-webkit-calc(140px + 2%);max-width:calc(140px + 2%);width:12%}
