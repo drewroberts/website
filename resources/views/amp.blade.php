@@ -228,8 +228,8 @@
 		.navbar-menu{
 			padding:10px 15px;
 			color:white;
-			font-size:1.2em;
-			width:30px;
+			font-size:20px;
+			width:70px;
 			float:left;
 			transform:scale(1.3,1);
 		}
