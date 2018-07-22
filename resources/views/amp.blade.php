@@ -227,6 +227,7 @@
 		.navigation a {color:inherit;text-decoration:none}
 		.navbar-menu{
 			padding:10px 15px;
+			margin-left:3px;
 			color:white;
 			font-size:20px;
 			width:70px;
