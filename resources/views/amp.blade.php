@@ -715,7 +715,7 @@ a:focus,a:hover{outline:none;}
 .icon-tumblr:before{content:"\e91c";}
 .icon-youtube:before{content:"\e91b";}
 .icon-instagram:before{content:"\e91a";}
-.main-footer{position:absolute;right:0;bottom:0;left:0;text-align:center;width:100%;height:15.4375rem;padding:2.8125rem 0;background:#000;color:#aaa;}
+.main-footer{right:0;bottom:0;left:0;text-align:center;width:100%;height:15.4375rem;padding:2.8125rem 0;background:#000;color:#aaa;}
 .main-footer .viceland-logo-svg{width:200px;}
 .main-footer ul{display:block;}
 .main-footer .socials{position:relative;margin:1.625rem 0 1.5rem;}
@@ -730,11 +730,6 @@ a:focus,a:hover{outline:none;}
 .main-footer .links li a{text-transform:uppercase;font:700 .75rem/1em HelveticaNeueLT,Helvetica Neue,Helvetica,Arial,sans-serif;color:#aaa;}
 .main-footer .links li a:active,.main-footer .links li a:hover{text-decoration:underline;}
 .main-footer .copyright{font:.6875rem HelveticaNeueLT,Helvetica Neue,Helvetica,Arial,sans-serif;text-align:center;margin:1.25rem 0;}
-/*! CSS Used fontfaces */
-@font-face{font-family:icomoon;src:url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.eot);src:url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.eot#iefix) format("embedded-opentype"),url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.woff2) format("woff2"),url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.woff) format("woff"),url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.ttf) format("truetype"),url(https://www.viceland.com/assets/viceland/fonts/icomoon/icomoon.svg#icomoon) format("svg");}
-@font-face{font-family:HelveticaNeueLT;font-weight:400;src:url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.eot);src:url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.eot#iefix) format("embedded-opentype"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.woff2) format("woff2"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.woff) format("woff"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.ttf) format("truetype"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Roman.svg#HelveticaNeueLT) format("svg");}
-@font-face{font-family:HelveticaNeueLT;font-weight:700;src:url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.eot);src:url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.eot#iefix) format("embedded-opentype"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.woff2) format("woff2"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.woff) format("woff"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.ttf) format("truetype"),url(https://www.viceland.com/assets/viceland/fonts/HelveticaNeue/HelveticaNeueLTCom-Bd.svg#HelveticaNeueLT) format("svg");}
-
 
 
 </style>
