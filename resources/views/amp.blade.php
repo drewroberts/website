@@ -710,11 +710,11 @@ ul{list-style:none;}
 a{color:#696969;text-decoration:none;}
 a:focus,a:hover{outline:none;}
 [class^=icon-]{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.icon-facebook:before{content:"\e912";}
-.icon-twitter:before{content:"\e913";}
-.icon-tumblr:before{content:"\e91c";}
-.icon-youtube:before{content:"\e91b";}
-.icon-instagram:before{content:"\e91a";}
+.icon-youtube{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
+.icon-linkedin{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
+.icon-facebook{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
+.icon-twitter{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
+.icon-github{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
 .main-footer{right:0;bottom:0;left:0;text-align:center;width:100%;height:15.4375rem;padding:2.8125rem 0;background:#000;color:#aaa;}
 .main-footer .viceland-logo-svg{width:200px;}
 .main-footer ul{display:block;}
@@ -1192,10 +1192,10 @@ a:focus,a:hover{outline:none;}
     <svg class="viceland-logo-svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 101 14"><g class="layer"><title>VICElAND Logo</title><path class="viceland-logo-svg-letters" fill="#FFF" d="M0 .4h4.4l2.3 8.9L9.1.4h4.4L8.9 13.7H4.5L0 .4zm14.2 13.4V.5h4.4v13.3h-4.4zm14.9-8.3c-.1-1.4-1-2.2-2.4-2.2-1.5 0-2.5 1.3-2.5 3.9 0 1.9.4 3.6 2.6 3.6 1.4 0 2.1-1 2.2-2.3h4.2c-.4 3.4-2.8 5.5-6.4 5.5-4.4 0-7.1-2.7-7.1-7s2.9-7 6.6-7c4.1 0 6.3 2 6.7 5.4l-3.9.1zm5.7 8.3V.5h10.9v3.1h-6.5v1.9h5.9v3.1h-5.9v2.1H46v3.1H34.8zm13 0V.5h4.4v10.2h6v3.1H47.8zm11 0L63.6.5H68l4.8 13.3h-4.4l-.5-1.8h-4.3l-.5 1.8h-4.3zm7-9.3l-1.4 4.8h2.8l-1.4-4.8zm16.5 3.2l-.2-3V.5h4.2v13.3h-4.1l-4.7-7.2.2 3v4.2h-4.2V.5h4.1l4.7 7.2zm5.9 6.1V.5H94c4.3 0 7 2 7 6.4 0 5-2.8 6.9-7.1 6.9h-5.7zm4.3-3.1h.9c2 0 3.1-1.1 3.1-3.6 0-2.8-.9-3.5-3.2-3.5h-.8v7.1z"></path></g></svg>
     <ul class="socials">
 			<li><a target="_blank" href="https://www.youtube.com/DrewRoberts"><i class="icon-youtube"></i></a></li>
+			<li><a target="_blank" href="https://linkedin.com/in/DrewRoberts"><i class="icon-linkedin"></i></a></li>
       <li><a target="_blank" href="https://facebook.com/DrewRoberts"><i class="icon-facebook"></i></a></li>
-    	<li><a target="_blank" href="http://twitter.com/DrewRoberts"><i class="icon-twitter"></i></a></li>
-    	<li><a target="_blank" href="http://instagram.com/VICELAND"><i class="icon-instagram"></i></a></li>
-			<li><a target="_blank" href="http://viceland.tumblr.com"><i class="icon-tumblr"></i></a></li>
+    	<li><a target="_blank" href="https://twitter.com/DrewRoberts"><i class="icon-twitter"></i></a></li>
+    	<li><a target="_blank" href="https://github.com/DrewRoberts"><i class="icon-github"></i></a></li>
     </ul>
     <ul class="links">
         <li><a href="https://drewroberts.com/about">About</a></li>
