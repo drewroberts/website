@@ -720,7 +720,7 @@ a:focus,a:hover{outline:none;}
 .main-footer ul{display:block;}
 .main-footer .socials{position:relative;margin:1.625rem 0 1.5rem;}
 .main-footer .socials li{display:inline-block;margin:0 .8125rem;width:24px;height:24px;}
-.main-footer .socials li a{color:#fff;}
+.main-footer .socials li a{color:#fff;width:24px;height:24px;}
 .main-footer .links{max-width:16.25rem;margin:0 auto;}
 @media only screen and (min-width:40.625em){
 .main-footer .links{margin:0;max-width:100%;}
