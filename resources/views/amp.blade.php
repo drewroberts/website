@@ -704,21 +704,10 @@ img,picture{margin:0;max-width:100%;}
 
 
 /*! CSS for Footer */
-a,div,li,ul{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline;}
-ul{list-style:none;}
-*,:after,:before{box-sizing:inherit;}
-a{color:#696969;text-decoration:none;}
-a:focus,a:hover{outline:none;}
-[class^=icon-]{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.icon-youtube{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Drew Roberts YouTube</title><path class="a" d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>');width:24px;height:24px;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
-.icon-linkedin{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
-.icon-facebook{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
-.icon-twitter{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
-.icon-github{background-image:url('data: image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>');background-color:#666;background-repeat:no-repeat;background-position:50%;-webkit-background-size:contain;background-size:contain;cursor:pointer;text-decoration:none}
 .main-footer{right:0;bottom:0;left:0;text-align:center;width:100%;height:15.4375rem;padding:2.8125rem 0;background:#000;color:#aaa;}
 .main-footer ul{display:block;}
 .main-footer .socials{position:relative;margin:1.625rem 0 1.5rem;}
-.main-footer .socials li{display:inline-block;margin:0 .8125rem;width:24px;height:24px;}
+.main-footer .socials li{display:inline-block;margin:0 .8125rem;width:24px;height:24px;vertical-align:middle;}
 .main-footer .socials li a{color:#fff;width:24px;height:24px;}
 .main-footer .links{max-width:16.25rem;margin:0 auto;}
 @media only screen and (min-width:40.625em){
