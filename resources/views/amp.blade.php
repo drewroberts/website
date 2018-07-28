@@ -707,8 +707,8 @@ img,picture{margin:0;max-width:100%;}
 .main-footer{right:0;bottom:0;left:0;text-align:center;width:100%;height:15.4375rem;padding:2.8125rem 0;background:#000;color:#aaa;}
 .main-footer ul{display:block;}
 .main-footer .socials{position:relative;margin:1.625rem 0 1.5rem;}
-.main-footer .socials li{display:inline-block;margin:0 .8125rem;width:24px;height:24px;vertical-align:middle;}
-.main-footer .socials li a{color:#fff;width:24px;height:24px;}
+.main-footer .socials li{display:inline-block;margin:0 .8125rem;width:24px;height:24px;}
+.main-footer .socials li a{color:#fff;width:24px;height:24px;vertical-align:middle;}
 .main-footer .links{max-width:16.25rem;margin:0 auto;}
 @media only screen and (min-width:40.625em){
 .main-footer .links{margin:0;max-width:100%;}
