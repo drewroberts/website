@@ -56,6 +56,13 @@ Route::get('/', function () {
     return view('temporary');
 });
 
+Route::get('/revenue', function () {
+  return response()->json([
+    'name' => 'Abigail',
+    'state' => 'CA'
+  ]);
+});
+
 // Redirect ./recommendations to ./recommends
 
 Route::any('{all}', function () {
