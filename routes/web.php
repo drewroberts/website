@@ -15,18 +15,19 @@ Route::get('/', function () {
     return view('temporary');
 });
 
-Route::get('/amp', function () {
+Route::get('amp', function () {
     return view('amp');
 });
 
-Route::get('/aos', function () {
+Route::get('aos', function () {
     return view('aos');
 });
 
-Route::get('/recommends', 'RecommendationController@index')->name('recommendations');
-// And all subURLs of /recommends/ will be in those controllers
-// Redirect ./recommendations to ./recommends
-
+Route::get('recommendations', function () { return redirect('recommends'); });
+Route::get('recommends', 'RecommendationController@index')->name('recommendations');
+Route::group(['prefix' => 'recommends'], function () {
+  // All subURLs of /recommends/ will be in those controllersa nd included in this group.
+});
 
 Route::get('{topic}/resources', 'ResourceController@index');
 Route::get('{topic}/resources/{resource}', 'ResourceController@show');
