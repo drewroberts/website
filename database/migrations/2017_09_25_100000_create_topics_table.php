@@ -17,7 +17,6 @@ class CreateTopicsTable extends Migration
             $table->increments('id');
             $table->string('slug')->unique()->index();
             $table->unsignedInteger('type_id')->nullable()->index(); // Allows groupings for positions in on homepage, features, treatment of topic, etc.
-            $table->unsignedInteger('parent_id')->nullable()->index(); // ID of the parent topic relationship. ID's below 20.
             $table->string('title')->unique();
             $table->string('description')->nullable();
             $table->mediumText('excerpt')->nullable(); // Longer introduction for homepage and parent topic pages.
@@ -38,10 +37,11 @@ class CreateTopicsTable extends Migration
 
         Schema::table('topics', function($table) {
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
-            $table->foreign('parent_id')->references('id')->on('topics')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('icon_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('heroicon_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('cover_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('ogimage_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
@@ -56,10 +56,11 @@ class CreateTopicsTable extends Migration
     {
         Schema::table('topics', function ($table) {
             $table->dropForeign(['type_id']);
-            $table->dropForeign(['parent_id']);
             $table->dropForeign(['image_id']);
             $table->dropForeign(['icon_id']);
             $table->dropForeign(['heroicon_id']);
+            $table->dropForeign(['cover_id']);
+            $table->dropForeign(['ogimage_id']);
             $table->dropForeign(['created_by']);
             $table->dropForeign(['updated_by']);
         });

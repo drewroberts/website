@@ -13,7 +13,7 @@ class CreateTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('types', function (Blueprint $table) { // Used for everything that needs to be categorized. Images, Videos, Resources, Sessions, Topics, etc. ON Topic pages, it determines the sections (Tutorials, Articles, Previews, Clips, Projects, etc.)
+        Schema::create('types', function (Blueprint $table) { // Used for everything that needs to be categorized. Images, Videos, Resources, Sessions, Topics, Posts, etc. ON Topic pages, it determines the sections (Tutorials, Articles, Previews, Clips, Projects, etc.)
             $table->increments('id');
             $table->string('table')->index(); // Each type can only be used on one other database table. Example = 'images', 'videos', etc. These are strings, so must be recorded exactly the same. We'll use the lowercase plural table name.
             $table->string('slug')->unique()->index();
