@@ -15,11 +15,12 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('topic_id')->index(); // Determines URL and determines if is a Project instead of other type of post.
+            $table->unsignedInteger('topic_id')->index(); // Determines URL and determines if is a Project or Interview instead of other type of post.
             $table->string('slug')->unique()->index();
             $table->string('title')->unique();
             $table->string('description'); // Really is an excerpt for social.
             $table->unsignedInteger('image_id')->nullable(); // path to edited cover image for post
+            $table->unsignedInteger('ogimage_id')->nullable(); // External open graph image id. Featured image for social sharing. Will default to image_id unless this is used. Allows override for play button or words on image.
             $table->unsignedInteger('type_id')->index(); // Determines if is Article, Tutorial, Clip, Trailer, etc.
             $table->unsignedInteger('video_id')->unique()->nullable(); // If video, then include the video id here. A video can only be assigned to one post.
             $table->unsignedInteger('episode')->index(); // Episode number if needs one. Used for Tutorial Series.
