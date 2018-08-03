@@ -120,10 +120,10 @@ class TopicsTableSeeder extends Seeder
             5 =>
             array (
                 'id' => 6,
-                'slug' => 'css',
+                'slug' => 'styling',
                 'type_id' => NULL,
                 'parent_id' => NULL,
-                'title' => 'CSS',
+                'title' => 'CSS Styling',
                 'description' => NULL,
                 'excerpt' => NULL,
                 'image_id' => NULL,

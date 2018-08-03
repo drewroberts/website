@@ -21,12 +21,12 @@ class CreatePostsTable extends Migration
             $table->string('description'); // Really is an excerpt for social.
             $table->unsignedInteger('image_id')->nullable(); // path to edited cover image for post
             $table->unsignedInteger('ogimage_id')->nullable(); // External open graph image id. Featured image for social sharing. Will default to image_id unless this is used. Allows override for play button or words on image.
-            $table->unsignedInteger('type_id')->index(); // Determines if is Article, Tutorial, Clip, Trailer, etc.
+            $table->unsignedInteger('type_id')->index(); // Determines if is Article, Tutorial, Tip / Short Clip, Trailer / Ads, etc.
             $table->unsignedInteger('video_id')->unique()->nullable(); // If video, then include the video id here. A video can only be assigned to one post.
             $table->unsignedInteger('episode')->index(); // Episode number if needs one. Used for Tutorial Series.
             $table->boolean('feature')->default(0)->index(); // If post is big news and should be featured, then put 1
             $table->text('content'); // Will be written in Markdown.
-            $table->unsignedInteger('pageviews')->nullable(); // Total current pageviews for post. Pageview time breakdowns will be in stats table.
+            $table->integer('pageviews')->default(0)->unsigned()->index(); // Total current pageviews for post. Pageview time breakdowns will be in stats table.
             $table->unsignedInteger('editor_id')->nullable(); // Will use later when have editorial system. All contributing authors will be in contributors table.
             $table->unsignedInteger('created_by')->default(1); // Default author_id should be me! But can use this in case some need a different author down the road.
             $table->unsignedInteger('updated_by')->default(1);
