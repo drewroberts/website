@@ -13,7 +13,7 @@ class CreateVideosTable extends Migration
      */
     public function up()
     {
-        Schema::create('videos', function (Blueprint $table) {
+        Schema::create('videos', function (Blueprint $table) { // Organizational and data purposes only. No frontend url unless used in a Post (Tutorial, Trailer, Clip, Extra)
             $table->increments('id');
             $table->unsignedInteger('type_id')->index(); // Allows groupings for video sources (YouTube, FB, Vimeo), styles, purposes, positions in content, features, etc.
             $table->string('slug')->unique()->index(); // Used for video's URL on our frontend.
