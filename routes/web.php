@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/', function () {
+    return view('temporary');
+});
+
 Route::get('/amp', function () {
     return view('amp');
 });
@@ -52,16 +56,7 @@ Route::get('/source7', function () {
     return view('source7');
 });
 
-Route::get('/', function () {
-    return view('temporary');
-});
 
-Route::get('/revenue', function () {
-  return response()->json([
-    'name' => 'Abigail',
-    'state' => 'CA'
-  ]);
-});
 
 // Redirect ./recommendations to ./recommends
 
