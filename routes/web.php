@@ -23,42 +23,16 @@ Route::get('/aos', function () {
     return view('aos');
 });
 
-Route::get('/oldamp', function () {
-    return view('oldamp');
-});
-
-
-Route::get('/source1', function () {
-    return view('source1');
-});
-
-Route::get('/source2', function () {
-    return view('source2');
-});
-
-Route::get('/source3', function () {
-    return view('source3');
-});
-
-Route::get('/source4', function () {
-    return view('source4');
-});
-
-Route::get('/source5', function () {
-    return view('source5');
-});
-
-Route::get('/source6', function () {
-    return view('source6');
-});
-
-Route::get('/source7', function () {
-    return view('source7');
-});
-
-
-
+Route::get('/recommends', 'RecommendationController@index')->name('recommendations');
+// And all subURLs of /recommends/ will be in those controllers
 // Redirect ./recommendations to ./recommends
+
+
+Route::get('{topic}/resources', 'ResourceController@index');
+Route::get('{topic}/resources/{resource}', 'ResourceController@show');
+Route::get('{topic}/{post}', 'PostController@show');
+Route::get('{topic}', 'TopicController@show');
+
 
 Route::any('{all}', function () {
     return view('temporary');
