@@ -712,8 +712,8 @@ img,picture{margin:0;max-width:100%;}
 
 
 .share-lightbox{background:rgba(0,0,0,.8);position:absolute;width:100%;height:100%;z-index:11}
-.share-lightbox-content{margin:0 auto;}
-.close-button-wrapper{padding:12px 15px;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:50px;text-align:right}
+.share-lightbox-content{margin:0 auto;max-width:1480px;}
+.close-button-wrapper{padding:12px 15px;height:50px;text-align:right}
 .close-button-wrapper .close-button{width:24px;height:24px;margin-left:auto;}
 .share-text{color:#fff;font-family:Work Sans,sans-serif;font-size:20px;max-width:900px;padding-left:10%;margin: 150px auto 15px auto;text-transform:uppercase;}
 @media only screen and (min-width:900px){
@@ -1127,7 +1127,7 @@ img,picture{margin:0;max-width:100%;}
 				</div>
 				<div class="video-infocard__desktop-section">
 					<div class="video-infocard__share-icons">
-						<div class="video-infocard__share-icons__toggle" on="tap:share-lightbox" role="button"><amp-img width="15px" height="15px" src="https://vice-web-statics-cdn.vice.com/icons/more.svg" class="icon icon-more"></amp-img></div>
+						<div class="video-infocard__share-icons__toggle" on="tap:share-lightbox" role="button" tabindex="3"><amp-img width="15px" height="15px" src="https://vice-web-statics-cdn.vice.com/icons/more.svg" class="icon icon-more"></amp-img></div>
 						<div class="social-list m-0-xs p-0-xs dsp-flex-xs">
 							<ul class="main-list dsp-flex-xs m-0-xs">
 								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" width="15px" height="15px" class="icon icon-facebook"></amp-img><span class="icon_text">SHARE</span></a></li>
