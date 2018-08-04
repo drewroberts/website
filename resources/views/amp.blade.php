@@ -618,7 +618,6 @@ button::-moz-focus-inner{border:0;padding:0;}
 .hed-l{font-size:20px;}
 .hed-s{font-size:14px;}
 .hed-xs{font-size:12px;font-size:.75rem;}
- @media only screen and (min-width:650px){
 h3,h6{margin:0 0 10px;}
 .icon{-moz-osx-font-smoothing:grayscale;}
 .icon{font-family:icons;speak:none;font-style:normal;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;}
