@@ -614,7 +614,7 @@ button{overflow:visible;}
 button{text-transform:none;}
 button{-webkit-appearance:none;cursor:pointer;}
 button::-moz-focus-inner{border:0;padding:0;}
-.hed-l,.hed-s,.hed-xs{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;white-space: normal!important;}
+.hed-l,.hed-s,.hed-xs{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;white-space: normal;}
 .hed-l{font-size:20px;}
 .hed-s{font-size:14px;}
 .hed-xs{font-size:12px;font-size:.75rem;}
