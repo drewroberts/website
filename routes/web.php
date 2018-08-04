@@ -40,7 +40,3 @@ Route::any('{all}', function () {
 })
 ->where(['all' => '.*']);
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-// Need to put all topics here.

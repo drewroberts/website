@@ -20,6 +20,26 @@ class TopicsTableSeeder extends Seeder
             0 =>
             array (
                 'id' => 1,
+                'slug' => 'about',
+                'type_id' => NULL,
+                'parent_id' => NULL,
+                'title' => 'About Drew Roberts',
+                'description' => NULL,
+                'excerpt' => NULL,
+                'image_id' => NULL,
+                'icon_id' => NULL,
+                'heroicon_id' => NULL,
+                'cover_id' => NULL,
+                'ogimage_id' => NULL,
+                'created_by' => 1,
+                'updated_by' => 1,
+                'created_at' => '2017-11-10 21:48:05',
+                'updated_at' => '2017-11-10 21:48:05',
+                'deleted_at' => NULL,
+            ),
+            1 =>
+            array (
+                'id' => 2,
                 'slug' => 'interviews',
                 'type_id' => NULL,
                 'parent_id' => NULL,
@@ -37,9 +57,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            1 =>
+            2 =>
             array (
-                'id' => 2,
+                'id' => 3,
                 'slug' => 'projects',
                 'type_id' => NULL,
                 'parent_id' => NULL,
@@ -57,9 +77,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            2 =>
+            3 =>
             array (
-                'id' => 3,
+                'id' => 4,
                 'slug' => 'markdown',
                 'type_id' => NULL,
                 'parent_id' => NULL,
@@ -77,9 +97,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            3 =>
+            4 =>
             array (
-                'id' => 4,
+                'id' => 5,
                 'slug' => 'git',
                 'type_id' => NULL,
                 'parent_id' => NULL,
@@ -97,9 +117,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            4 =>
+            5 =>
             array (
-                'id' => 5,
+                'id' => 6,
                 'slug' => 'html',
                 'type_id' => NULL,
                 'parent_id' => NULL,
@@ -117,9 +137,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            5 =>
+            6 =>
             array (
-                'id' => 6,
+                'id' => 7,
                 'slug' => 'styling',
                 'type_id' => NULL,
                 'parent_id' => NULL,
@@ -137,9 +157,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            6 =>
+            7 =>
             array (
-                'id' => 7,
+                'id' => 8,
                 'slug' => 'php',
                 'type_id' => NULL,
                 'parent_id' => 2,
@@ -157,9 +177,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            7 =>
+            8 =>
             array (
-                'id' => 8,
+                'id' => 9,
                 'slug' => 'laravel',
                 'type_id' => NULL,
                 'parent_id' => 2,
@@ -177,9 +197,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            8 =>
+            9 =>
             array (
-                'id' => 9,
+                'id' => 10,
                 'slug' => 'javascript',
                 'type_id' => NULL,
                 'parent_id' => 2,
@@ -197,9 +217,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            9 =>
+            10 =>
             array (
-                'id' => 10,
+                'id' => 11,
                 'slug' => 'react',
                 'type_id' => NULL,
                 'parent_id' => 2,
@@ -217,9 +237,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            10 =>
+            11 =>
             array (
-                'id' => 11,
+                'id' => 12,
                 'slug' => 'vue',
                 'type_id' => NULL,
                 'parent_id' => 2,
@@ -237,9 +257,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            11 =>
+            12 =>
             array (
-                'id' => 12,
+                'id' => 13,
                 'slug' => 'amp',
                 'type_id' => NULL,
                 'parent_id' => 2,
@@ -257,9 +277,9 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => NULL,
             ),
-            12 =>
+            13 =>
             array (
-                'id' => 13,
+                'id' => 14,
                 'slug' => 'svg',
                 'type_id' => NULL,
                 'parent_id' => 2,

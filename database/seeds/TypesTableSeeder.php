@@ -18,8 +18,8 @@ class TypesTableSeeder extends Seeder
           array (
               'id' => 1,
               'table' => 'posts',
-              'slug' => 'interviews',
-              'title' => 'Interviews',
+              'slug' => 'about',
+              'title' => 'About Me',
               'parent_id' => NULL,
               'description' => NULL,
               'note' => NULL,
@@ -35,8 +35,8 @@ class TypesTableSeeder extends Seeder
           array (
               'id' => 2,
               'table' => 'posts',
-              'slug' => 'projects',
-              'title' => 'Projects',
+              'slug' => 'interviews',
+              'title' => 'Interviews',
               'parent_id' => NULL,
               'description' => NULL,
               'note' => NULL,
@@ -51,6 +51,23 @@ class TypesTableSeeder extends Seeder
           2 =>
           array (
               'id' => 3,
+              'table' => 'posts',
+              'slug' => 'projects',
+              'title' => 'Projects',
+              'parent_id' => NULL,
+              'description' => NULL,
+              'note' => NULL,
+              'width' => NULL,
+              'height' => NULL,
+              'path' => NULL,
+              'source' => NULL,
+              'created_at' => '2017-11-10 21:48:05',
+              'updated_at' => '2017-11-10 21:48:05',
+              'deleted_at' => NULL,
+          ),
+          3 =>
+          array (
+              'id' => 4,
               'table' => 'posts',
               'slug' => 'tutorials',
               'title' => 'Tutorials',
