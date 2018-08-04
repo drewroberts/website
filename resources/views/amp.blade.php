@@ -283,11 +283,44 @@
 		}
 
 		/* Article */
-		.article {
-			max-width: 1480;
-			padding: 15px;
+		article {
 			overflow-wrap: break-word;
 			word-wrap: break-word;
+			display: grid;
+		  grid-gap: 10px;
+			max-width: 1480px;
+			padding: 15px;
+			margin: 0 auto;
+			min-height: 200px;
+		  grid-template-areas:
+		    "content"
+				"sidebar"
+				"sidebar"
+		    "content-expandable";
+		}
+
+		@media (min-width: 1050px) {
+		  article {
+		    grid-template-columns: 1fr 355px;
+		    grid-template-areas:
+		      "content  						sidebar"
+		      "content-expandable		sidebar";
+		  }
+			.sidebar {
+				width: 355px;
+			}
+		}
+
+		.content {
+			max-width: 1085px;
+		}
+
+		.sidebar {
+			grid-row: span 2;
+		}
+
+		.expandable-content {
+			max-width: 1085px;
 		}
 
 		.cinema {
@@ -420,6 +453,7 @@
 			z-index:2;
 			min-height: 250px;
 			padding-top: 40px;
+			width: 100%;
 		}
 
 
@@ -1065,16 +1099,17 @@ img,picture{margin:0;max-width:100%;}
 		</div>
 	</div>
 
-	<article>
-		<div class="content">
-		</div>
-		<div class="sidebar">
-		</div>
-		<div class="content-expandable">
-		</div>
-	</article>
-
 	<div class="page-content">
+		<article>
+			<div class="content">
+			</div>
+			<div class="sidebar">
+			</div>
+			<div class="content-expandable">
+			</div>
+		</article>
+
+
 		<section class="video-infocard">
 			<header>
 				<div class="video-infocard__show-card">
