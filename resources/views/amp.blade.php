@@ -114,7 +114,7 @@
 <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
-<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic">
 
@@ -284,6 +284,8 @@
 
 		/* Article */
 		.article {
+			max-width: 1480;
+			padding: 15px;
 			overflow-wrap: break-word;
 			word-wrap: break-word;
 		}
@@ -489,7 +491,7 @@
 		 @media only screen and (min-width:850px){
 		.page-content .video-infocard__desktop-section .video-infocard__share-icons{display:block;}
 		}
-		.page-content .video-infocard{padding:0 15px 15px;border-bottom:1px solid #ebebeb;}
+		.page-content .video-infocard{padding:0 15px 15px;}
 		 @media only screen and (min-width:650px){
 		.page-content .video-infocard{padding:0 30px;}
 		}
@@ -756,7 +758,7 @@ img,picture{margin:0;max-width:100%;}
 
 
 
-<article class="article">
+<div class="page">
 	<div class="behind-nav">
 	</div>
 
@@ -1063,6 +1065,15 @@ img,picture{margin:0;max-width:100%;}
 		</div>
 	</div>
 
+	<article>
+		<div class="content">
+		</div>
+		<div class="sidebar">
+		</div>
+		<div class="content-expandable">
+		</div>
+	</article>
+
 	<div class="page-content">
 		<section class="video-infocard">
 			<header>
@@ -1146,6 +1157,8 @@ img,picture{margin:0;max-width:100%;}
 		</section>
 
 
+
+
 		<div class="slider-container">
 			<div class="slider-wrapper">
 				<div class="header hed-l m-r-3-xs">
@@ -1224,7 +1237,7 @@ img,picture{margin:0;max-width:100%;}
 	</div>
 
 
-</article>
+</div>
 
 
 
