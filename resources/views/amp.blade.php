@@ -614,14 +614,11 @@ button{overflow:visible;}
 button{text-transform:none;}
 button{-webkit-appearance:none;cursor:pointer;}
 button::-moz-focus-inner{border:0;padding:0;}
-.hed-l,.hed-s,.hed-xs{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;}
-.hed-l{font-size:20px;font-size:1.25rem;}
-.hed-s{font-size:14px;font-size:.875rem;}
+.hed-l,.hed-s,.hed-xs{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;white-space: normal!important;}
+.hed-l{font-size:20px;}
+.hed-s{font-size:14px;}
 .hed-xs{font-size:12px;font-size:.75rem;}
  @media only screen and (min-width:650px){
-body .hed-l{font-size:1.75rem;}
-body .hed-s{font-size:1rem;}
-}
 h3,h6{margin:0 0 10px;}
 .icon{-moz-osx-font-smoothing:grayscale;}
 .icon{font-family:icons;speak:none;font-style:normal;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;}
@@ -630,26 +627,12 @@ img,picture{margin:0;max-width:100%;}
 .page-content .header{border-bottom:2px solid #000;margin-bottom:15px;}
 .page-content .header section{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:10px;}
 .page-content .header h3{text-transform:uppercase;margin-bottom:0;}
-.page-content .slider-wrapper{margin-left:15px;}
- @media only screen and (min-width:650px){
-.page-content .slider-wrapper{margin:0;padding:0 30px;}
-}
- @media only screen and (min-width:850px){
-.page-content .slider-wrapper{padding-left:45px;}
-}
-.page-content .carousel-container{position:relative;margin-right:15px;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-ms-flex-flow:row;flex-flow:row;}
- @media only screen and (min-width:650px){
-.page-content .carousel-container{margin-right:0;}
-}
-.page-content .slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;overflow:hidden;margin:0 auto 30px;}
- @media only screen and (min-width:650px){
-.page-content .slick-slider{margin-bottom:40px;}
-}
+.slider-wrapper{margin: 0 auto; padding: 0 0 0 15px; max-width: 1480px;}
 .page-content .slick-slider .slick-list,.page-content .slick-slider .slick-track{-webkit-transform:translateZ(0);transform:translateZ(0);}
 .page-content .slick-list{position:relative;display:block;margin:0;padding:0;}
 .page-content .slick-track{position:relative;top:0;left:0;}
 .page-content .slick-slide,.page-content .slick-track{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;}
-.page-content .slick-slide{height:100%;min-height:1px;margin-right:15px;outline: none; width: 355px;}
+.page-content .slick-slide{height:100%;min-height:1px;margin-right:15px;outline: none; width: 240px; height: 270px;}
 .page-content .slick-initialized .slick-slide{display:inline-block;}
 .page-content .slider__card{display:block;width:100%;}
 .page-content .slider__card__thumbnail{position:relative;margin-bottom:10px;}
@@ -681,8 +664,8 @@ img,picture{margin:0;max-width:100%;}
 .amp-carousel-button {
 	transition: height .25s;
   position: absolute;
-	top: 33%;
-	height: 199px;
+	top: 25%;
+	height: 135px;
   width: 30px;
   padding: 9px;
   z-index: 2;
@@ -1168,20 +1151,20 @@ img,picture{margin:0;max-width:100%;}
 			<div class="slider-wrapper">
 				<div class="header hed-l m-r-3-xs">
 					<section>
-						<h3 class="hed-l">More Videos from Drew Roberts</h3>
+						<h3 class="hed-l">AMP Tutorials</h3>
 					</section>
 				</div>
 				<div class="carousel-container carousel-container--small">
-					<amp-carousel height="300"
+					<amp-carousel height="270"
 			      layout="fixed-height"
 			      type="carousel">
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="355px" height="199px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-the-nicest-guy-in-tattooing-freddy-corbin/5824c84212339f6b5f81aedf"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="355px" height="199px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c84212339f6b5f81aedf/5824c84212339f6b5f81aedf-1530296274470.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP7</span></div><h6 class="slider__meta__title hed-s">The Nicest Guy in Tattooing, Freddy Corbin</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-the-nicest-guy-in-tattooing-freddy-corbin/5824c84212339f6b5f81aedf"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c84212339f6b5f81aedf/5824c84212339f6b5f81aedf-1530296274470.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP7</span></div><h6 class="slider__meta__title hed-s">The Nicest Guy in Tattooing, Freddy Corbin</h6>    </div></a></div>
 							<div class="slick-slide">
 								<a class="slider__card" href="/en_us/video/tattoo-age-new-yorks-tattoo-viking-troy-denning/5824c7e7d86650c25a75602a">
 									<div class="slider__card__thumbnail small">
 										<div class="slider__card__thumbnail__container__small"></div>
-										<amp-img width="355px" height="199px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c7e7d86650c25a75602a/5824c7e7d86650c25a75602a-1530296079506.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
+										<amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c7e7d86650c25a75602a/5824c7e7d86650c25a75602a-1530296079506.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 										<div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs">
 											<div class="play-duration__duration m-l-1-xs hed-xs">22:38</div>
 										</div>
@@ -1192,9 +1175,9 @@ img,picture{margin:0;max-width:100%;}
 									</div>
 								</a>
 							</div>
-				      <div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="355px" height="199px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">England's Best Tattooer, Valerie Vargas</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="355px" height="199px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="355px" height="199px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">England's Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+				      <div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">England's Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">England's Best Tattooer, Valerie Vargas</h6>    </div></a></div>
 					</amp-carousel>
 				</div>
 			</div>
