@@ -13,10 +13,10 @@ class CreateBlastsTable extends Migration
      */
     public function up()
     {
-        Schema::create('blasts', function (Blueprint $table) { // Automated Social Media Blasts (Formerly known as Broadcasts) to our controlled social outlets (accounts)
+        Schema::create('blasts', function (Blueprint $table) { // Automated Social Media Blasts (Formerly known as Broadcasts) to our controlled social platforms (accounts)
             $table->increments('id');
-            $table->unsignedInteger('outlet_id')->index();
-            $table->unsignedInteger('type_id')->index(); // Allows groupings for facebook, twitter, and other types of social outlets. Also allows other categories of pushes.
+            $table->unsignedInteger('platform_id')->index();
+            $table->unsignedInteger('type_id')->index(); // Allows groupings for facebook, twitter, and other types of social platforms. Also allows other categories of pushes.
             $table->string('blastable_type')->index(); // Type of content being broadcasted. Can be a post, image, video, recommendations, etc.
             $table->unsignedInteger('blastable_id')->index();
             $table->string('url')->nullable(); // URL of the post on facebook or tweet. Nullable because won't have it at first.
@@ -38,7 +38,7 @@ class CreateBlastsTable extends Migration
         });
 
         Schema::table('blasts', function($table) {
-            $table->foreign('outlet_id')->references('id')->on('outlets')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('platform_id')->references('id')->on('platforms')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
@@ -52,7 +52,7 @@ class CreateBlastsTable extends Migration
     public function down()
     {
         Schema::table('blasts', function ($table) {
-            $table->dropForeign(['outlet_id']);
+            $table->dropForeign(['platform_id']);
             $table->dropForeign(['type_id']);
             $table->dropForeign(['created_by']);
         });

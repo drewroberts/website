@@ -59,7 +59,7 @@ class CreateTopicsTable extends Migration
             $table->dropForeign(['image_id']);
             $table->dropForeign(['icon_id']);
             $table->dropForeign(['heroicon_id']);
-            $table->dropForeign(['cover_id']);
+            $table->dropForeign(['poster_id']);
             $table->dropForeign(['ogimage_id']);
             $table->dropForeign(['created_by']);
             $table->dropForeign(['updated_by']);

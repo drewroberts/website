@@ -45,6 +45,23 @@ class CreateRecommendationsTable extends Migration
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
+
+
+        Schema::create('recommendables', function (Blueprint $table) {
+            $table->increments('id');
+            $table->unsignedInteger('recommendation_id')->index();
+            $table->string('recommendable_type')->index(); // Brands, products, places
+            $table->unsignedInteger('recommendable_id')->index();
+            $table->timestamps();
+        });
+
+        Schema::table('recommendables', function ($table) {
+            $table->foreign('recommendation_id')->references('id')->on('recommendations')->onDelete('restrict')->onUpdate('cascade');
+        });
+
+        Schema::table('recommendables', function($table) {
+            $table->unique(['recommendation_id', 'recommendable_type', 'recommendable_id'], 'unique_item');
+        });
     }
 
     /**
@@ -68,6 +85,14 @@ class CreateRecommendationsTable extends Migration
 
         Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('recommendations');
+        Schema::enableForeignKeyConstraints();
+
+        Schema::table('recommendables', function ($table) {
+            $table->dropForeign(['recommendation_id']);
+        });
+
+        Schema::disableForeignKeyConstraints();
+        Schema::dropIfExists('recommendables');
         Schema::enableForeignKeyConstraints();
     }
 }

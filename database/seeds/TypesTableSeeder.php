@@ -103,6 +103,23 @@ class TypesTableSeeder extends Seeder
           array (
               'id' => 6,
               'table' => 'posts',
+              'slug' => 'definitions',
+              'title' => 'Definitions',
+              'parent_id' => NULL,
+              'description' => 'Basic or SEO targeted information like: What is AMP? Why learn AMP?',
+              'note' => NULL,
+              'width' => NULL,
+              'height' => NULL,
+              'path' => NULL,
+              'source' => NULL,
+              'created_at' => '2017-11-10 21:48:05',
+              'updated_at' => '2017-11-10 21:48:05',
+              'deleted_at' => NULL,
+          ),
+          6 =>
+          array (
+              'id' => 7,
+              'table' => 'posts',
               'slug' => 'tips',
               'title' => 'Quick Tips / Short Clips',
               'parent_id' => NULL,
@@ -116,9 +133,9 @@ class TypesTableSeeder extends Seeder
               'updated_at' => '2017-11-10 21:48:05',
               'deleted_at' => NULL,
           ),
-          6 =>
+          7 =>
           array (
-              'id' => 7,
+              'id' => 8,
               'table' => 'posts',
               'slug' => 'trailers',
               'title' => 'Topic or Tutorial Series Trailers (Promoted Ads)',

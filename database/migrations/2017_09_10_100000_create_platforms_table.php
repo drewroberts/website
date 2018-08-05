@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOutletsTable extends Migration
+class CreatePlatformsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateOutletsTable extends Migration
      */
     public function up()
     {
-        Schema::create('outlets', function (Blueprint $table) { // Social Media Outlets/Accounts that I can push blasts/updates/broadcasts to their audiences
+        Schema::create('platforms', function (Blueprint $table) { // Social Media Platforms/Accounts that I can push blasts/updates/broadcasts to their audiences
             $table->increments('id');
             $table->unsignedInteger('type_id')->index(); // Allows groupings for facebook, twitter, and other types of accounts. Also allows other categories (FB user account)
             $table->unsignedInteger('user_id')->index(); // Essentially the created_by but depending on the type, this could be for the user's account.
             $table->string('title');
-            $table->string('username'); // URL on social outlet
+            $table->string('username'); // URL on social platform
             $table->string('id_number')->nullable(); // Number used by facebook or twitter for the page
             $table->string('token')->nullable(); // Facebook API token for page
             $table->unsignedInteger('avatar_id')->nullable();
@@ -26,7 +26,7 @@ class CreateOutletsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('outlets', function($table) {
+        Schema::table('platforms', function($table) {
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('avatar_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
@@ -41,7 +41,7 @@ class CreateOutletsTable extends Migration
      */
     public function down()
     {
-        Schema::table('outlets', function ($table) {
+        Schema::table('platforms', function ($table) {
             $table->dropForeign(['type_id']);
             $table->dropForeign(['user_id']);
             $table->dropForeign(['avatar_id']);
@@ -49,7 +49,7 @@ class CreateOutletsTable extends Migration
         });
 
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('outlets');
+        Schema::dropIfExists('platforms');
         Schema::enableForeignKeyConstraints();
     }
 }
