@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAccountsTable extends Migration
+class CreateOutletsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAccountsTable extends Migration
      */
     public function up()
     {
-        Schema::create('accounts', function (Blueprint $table) { // Social Media Accounts that I can push updates/broadcasts to their audiences
+        Schema::create('outlets', function (Blueprint $table) { // Social Media Outlets/Accounts that I can push blasts/updates/broadcasts to their audiences
             $table->increments('id');
             $table->unsignedInteger('type_id')->index(); // Allows groupings for facebook, twitter, and other types of accounts. Also allows other categories (FB user account)
             $table->unsignedInteger('user_id')->index(); // Essentially the created_by but depending on the type, this could be for the user's account.
@@ -26,7 +26,7 @@ class CreateAccountsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('accounts', function($table) {
+        Schema::table('outlets', function($table) {
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('avatar_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
@@ -41,7 +41,7 @@ class CreateAccountsTable extends Migration
      */
     public function down()
     {
-        Schema::table('accounts', function ($table) {
+        Schema::table('outlets', function ($table) {
             $table->dropForeign(['type_id']);
             $table->dropForeign(['user_id']);
             $table->dropForeign(['avatar_id']);
@@ -49,7 +49,7 @@ class CreateAccountsTable extends Migration
         });
 
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('accounts');
+        Schema::dropIfExists('outlets');
         Schema::enableForeignKeyConstraints();
     }
 }

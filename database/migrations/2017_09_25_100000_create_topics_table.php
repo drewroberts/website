@@ -24,7 +24,7 @@ class CreateTopicsTable extends Migration
             $table->unsignedInteger('image_id')->nullable(); // Featured image for the topic. Typically just heroicon on a stylized color background.
             $table->unsignedInteger('icon_id')->nullable(); // Topics have icons for menu navigation.
             $table->unsignedInteger('heroicon_id')->nullable(); // Topics have heroicons that display when featured.
-            $table->unsignedInteger('cover_id')->nullable(); // Topics have book cover / movie cover style images for homepage.
+            $table->unsignedInteger('poster_id')->nullable(); // Topics have posters that are link book cover / movie cover style images for homepage.
             $table->unsignedInteger('ogimage_id')->nullable(); // External open graph image id. Featured image for social sharing. Will default to image_id unless this is used. Allows override for play button or words on image.
             $table->text('content')->nullable(); // If want to show content on article index page, put it here. Not necessary but helps SEO and user understanding.
             $table->integer('pageviews')->default(0)->unsigned()->index(); // Total pageviews for topic index. Updated periodically.
@@ -40,7 +40,7 @@ class CreateTopicsTable extends Migration
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('icon_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('heroicon_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
-            $table->foreign('cover_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('poster_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('ogimage_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
