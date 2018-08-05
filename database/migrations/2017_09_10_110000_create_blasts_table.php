@@ -17,7 +17,7 @@ class CreateBlastsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('outlet_id')->index();
             $table->unsignedInteger('type_id')->index(); // Allows groupings for facebook, twitter, and other types of social outlets. Also allows other categories of pushes.
-            $table->string('blastable_type')->index(); // Type of content being broadcasted. Can be an image, video, article, etc.
+            $table->string('blastable_type')->index(); // Type of content being broadcasted. Can be a post, image, video, recommendations, etc.
             $table->unsignedInteger('blastable_id')->index();
             $table->string('url')->nullable(); // URL of the post on facebook or tweet. Nullable because won't have it at first.
             $table->string('id_number')->nullable(); // ID number for post or tweet.
