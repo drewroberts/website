@@ -23,10 +23,18 @@ Route::get('aos', function () {
     return view('aos');
 });
 
+Route::get('newsletter', 'RegistrationController@register')->name('newsletter');
+Route::group(['prefix' => 'newsletter'], function () {
+  get('thanks', 'RegistrationController@thanks');
+  post('subscribe', 'RegistrationController@postRegister');
+  get('confirm/{token}', 'RegistrationController@confirmEmail');
+});
+
+
 Route::get('recommendations', function () { return redirect('recommends'); });
 Route::get('recommends', 'RecommendationController@index')->name('recommendations');
 Route::group(['prefix' => 'recommends'], function () {
-  // All subURLs of /recommends/ will be in those controllersa nd included in this group.
+  // All subURLs of /recommends/ will be in those controllers and included in this group.
 });
 
 Route::get('{topic}/resources', 'ResourceController@index');
