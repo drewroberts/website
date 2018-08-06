@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ZipsTableSeeder::class);
         $this->call(ProfilesTableSeeder::class);
         $this->call(TopicsTableSeeder::class);
+        $this->call(AddressesTableSeeder::class);
     }
 }
