@@ -74,4 +74,15 @@ class RegisterController extends Controller
             'id_token' => str_random(30),
         ]);
     }
+
+    /**
+     * Show the application registration form.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showNewsletter()
+    {
+        return view('auth.newsletter');
+    }
+
 }

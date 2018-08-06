@@ -30,7 +30,7 @@ Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('newsletter', 'Auth\RegisterController@showRegistrationForm')->name('newsletter');
+Route::get('newsletter', 'Auth\RegisterController@showNewsletter')->name('newsletter');
 Route::group(['prefix' => 'newsletter'], function () {
   Route::get('subscribe', 'Auth\RegisterController@showRegistrationForm')->name('register');
   Route::post('subscribe', 'Auth\RegisterController@register');
