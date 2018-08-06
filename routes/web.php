@@ -23,12 +23,7 @@ Route::get('aos', function () {
     return view('aos');
 });
 
-Route::get('newsletter', 'RegistrationController@register')->name('newsletter');
-Route::group(['prefix' => 'newsletter'], function () {
-  get('thanks', 'RegistrationController@thanks');
-  post('subscribe', 'RegistrationController@postRegister');
-  get('confirm/{token}', 'RegistrationController@confirmEmail');
-});
+Auth::routes();
 
 
 Route::get('recommendations', function () { return redirect('recommends'); });
@@ -47,4 +42,3 @@ Route::any('{all}', function () {
     return view('temporary');
 })
 ->where(['all' => '.*']);
-Auth::routes();
