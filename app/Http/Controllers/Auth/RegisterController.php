@@ -64,7 +64,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $lastid = DB::select('select Max(id) as id from users');
-        $newusername = 'user' . Carbon::now('America/Kentucky/Louisville')->format('ym') . ($lastid[0]->id + 1);
+        $newusername = 'user' . Carbon::now('America/Kentucky/Louisville')->format('ym') . sprintf("%'.03d", $lastid[0]->id + 1);
 
         return User::create([
             'name' => $data['name'],
