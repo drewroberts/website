@@ -29,10 +29,10 @@ class CreateProfilesTable extends Migration
             $table->string('phone', 25)->nullable(); // Cell Phone only. Will use for texting users.
             $table->unsignedInteger('billing_id')->nullable()->index(); // Primary address for account billing.
             $table->unsignedInteger('mailing_id')->nullable()->index(); // If mailing address is different, then can define here.
-            $table->string('website_personal');
-            $table->string('website_work');
-            $table->string('website_work2');
-            $table->string('website_work3');
+            $table->string('website_personal')->nullable();
+            $table->string('website_work')->nullable();
+            $table->string('website_work2')->nullable();
+            $table->string('website_work3')->nullable();
             $table->string('twitter')->nullable();
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
