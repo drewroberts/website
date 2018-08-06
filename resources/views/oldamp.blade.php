@@ -4,20 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 	<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Person",
-    "name": "Drew Roberts",
-    "url": "https://DrewRoberts.com",
-    "sameAs": [
-      "https://www.facebook.com/DrewRoberts",
-      "https://twitter.com/DrewRoberts",
-      "https://www.linkedin.com/in/DrewRoberts",
-      "https://github.com/DrewRoberts",
-      "https://plus.google.com/+DrewRoberts"
-    ]
-  }
-  </script>
+	{
+		"@context": "http://schema.org",
+		"@type": "Person",
+		"name": "Drew Roberts",
+		"url": "https://DrewRoberts.com",
+		"sameAs": [
+		"https://www.facebook.com/DrewRoberts",
+		"https://twitter.com/DrewRoberts",
+		"https://www.linkedin.com/in/DrewRoberts",
+		"https://github.com/DrewRoberts",
+		"https://plus.google.com/+DrewRoberts"
+		]
+	}
+  	</script>
 
 	<script type='application/ld+json'>
 	{

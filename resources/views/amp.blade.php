@@ -6,20 +6,20 @@
 
 
 	<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Person",
-    "name": "Drew Roberts",
-    "url": "https://DrewRoberts.com",
-    "sameAs": [
-      "https://www.facebook.com/DrewRoberts",
-      "https://twitter.com/DrewRoberts",
-      "https://www.linkedin.com/in/DrewRoberts",
-      "https://github.com/DrewRoberts",
-      "https://plus.google.com/+DrewRoberts"
-    ]
-  }
-  </script>
+	{
+		"@context": "http://schema.org",
+		"@type": "Person",
+		"name": "Drew Roberts",
+		"url": "https://DrewRoberts.com",
+		"sameAs": [
+			"https://www.facebook.com/DrewRoberts",
+			"https://twitter.com/DrewRoberts",
+			"https://www.linkedin.com/in/DrewRoberts",
+			"https://github.com/DrewRoberts",
+			"https://plus.google.com/+DrewRoberts"
+		]
+	}
+	</script>
 
 	<script type='application/ld+json'>
 	{
@@ -29,31 +29,27 @@
 		"@id":"https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/"},
 		"headline":"FSU coach Willie Taggart buys lunch for local football campers, wins the day","datePublished":"2018-06-07T16:28:10+00:00",
 		"dateModified":"2018-06-07T17:16:22+00:00",
-		"publisher":
-				{
-					"@type":"Organization",
-					"name":"DrewRoberts.com",
-					"logo":
-							{
-								"url":"https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/the-undefeated-logo-snippets.png",
-								"width":152,
-								"height":60,
-								"@type":"ImageObject"
-							}
-					},
-			"author":
-					{
-						"@type":"Person",
-						"name":"Drew Roberts"
-					},
-				"articleSection":"AMP Project",
-				"image":
-						{
-							"@type":"ImageObject",
-							"url":"https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700",
-							"width":700,
-							"height":393
-						}
+		"publisher": {
+			"@type":"Organization",
+			"name":"DrewRoberts.com",
+			"logo": {
+				"url":"https://theundefeated.com/wp-content/themes/espn-theundefeated/assets/images/the-undefeated-logo-snippets.png",
+				"width":152,
+				"height":60,
+				"@type":"ImageObject"
+			}
+		},
+		"author": {
+			"@type":"Person",
+			"name":"Drew Roberts"
+		},
+		"articleSection":"AMP Project",
+		"image": {
+			"@type":"ImageObject",
+			"url":"https://theundefeated.com/wp-content/uploads/2018/06/CHL180414052_FSU_Spring_Game_24155707-e1528403123382.jpg?w=700",
+			"width":700,
+			"height":393
+		}
 	}
 	</script>
 
@@ -376,44 +372,44 @@
     }
 
     .tabButton[selected] {
-        background: black;
-				color: #ffffff;
-				border-top:none;
-				box-sizing:border-box;
-				cursor:default;
+		background: black;
+		color: #ffffff;
+		border-top:none;
+		box-sizing:border-box;
+		cursor:default;
     }
 
     .tabButton {
-        list-style: none;
-				outline: none;
-				height: 40px;
-				background: #fff;
-				color: black;
-				text-transform: uppercase;
-        flex-grow: 1;
-        text-align: center;
-        cursor: pointer;
-				font-family: HelveticaNeueArabic, NeueHelveticaW01, Helvetica, HelveticaWorld, Arial, TazuganeGothic, sans-serif;
-    		font-weight: 400;
-    		line-height: 1.2;
-				padding: 12px 0px 13px;
-				border-top: 1px solid #ebebeb;
+		list-style: none;
+		outline: none;
+		height: 40px;
+		background: #fff;
+		color: black;
+		text-transform: uppercase;
+		flex-grow: 1;
+		text-align: center;
+		cursor: pointer;
+		font-family: HelveticaNeueArabic, NeueHelveticaW01, Helvetica, HelveticaWorld, Arial, TazuganeGothic, sans-serif;
+		font-weight: 400;
+		line-height: 1.2;
+		padding: 12px 0px 13px;
+		border-top: 1px solid #ebebeb;
     }
-		.tabButton p{margin-bottom:0;white-space:nowrap;}
+	.tabButton p{margin-bottom:0;white-space:nowrap;}
 
     .tabContent {
-        display: none;
-				color: #ffffff;
-        width: 100%;
-				height: calc(100% - 40px);
-				max-height: 570px;
-        order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
-				padding-bottom: 10px;
-    		margin-bottom: 0px;
-    		overflow-x: hidden;
-		    overflow-y: scroll;
-		    margin-right: -17px;
-		    padding-right: 17px;
+		display: none;
+		color: #ffffff;
+		width: 100%;
+		height: calc(100% - 40px);
+		max-height: 570px;
+		order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+		padding-bottom: 10px;
+		margin-bottom: 0px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		margin-right: -17px;
+		padding-right: 17px;
     }
 
 		.tabContent .playlist-rows{max-height:100%;overflow:scroll;padding-bottom:10px;background-color:#000;margin-bottom:0;overflow-x:hidden;overflow-y:scroll;margin-right:-17px;padding-right:17px;}
@@ -1216,13 +1212,13 @@ img,picture{margin:0;max-width:100%;}
 									</div>
 									<div class="slider__meta">
 										<div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP6</span></div>
-										<h6 class="slider__meta__title hed-s">New York's Tattoo Viking, Troy Denning</h6>
+										<h6 class="slider__meta__title hed-s">New York Tattoo Viking, Troy Denning</h6>
 									</div>
 								</a>
 							</div>
-				      <div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">England's Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+				      <div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
 							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">England's Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
 					</amp-carousel>
 				</div>
 			</div>
@@ -1238,7 +1234,7 @@ img,picture{margin:0;max-width:100%;}
 				</div>
 				<div class="carousel-container carousel-container--small">
 					<amp-carousel height="270" layout="fixed-height" type="carousel" controls >
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">England's Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
 							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
 							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-the-nicest-guy-in-tattooing-freddy-corbin/5824c84212339f6b5f81aedf"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c84212339f6b5f81aedf/5824c84212339f6b5f81aedf-1530296274470.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP7</span></div><h6 class="slider__meta__title hed-s">The Nicest Guy in Tattooing, Freddy Corbin</h6>    </div></a></div>
 							<div class="slick-slide">
@@ -1252,13 +1248,13 @@ img,picture{margin:0;max-width:100%;}
 									</div>
 									<div class="slider__meta">
 										<div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP6</span></div>
-										<h6 class="slider__meta__title hed-s">New York's Tattoo Viking, Troy Denning</h6>
+										<h6 class="slider__meta__title hed-s">New York Tattoo Viking, Troy Denning</h6>
 									</div>
 								</a>
 							</div>
-				      <div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">England's Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+				      <div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
 							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">England's Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
 					</amp-carousel>
 				</div>
 			</div>
