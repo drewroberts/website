@@ -14,8 +14,9 @@ class UsersTableSeeder extends Seeder
         $now = date('Y-m-d H:i:s');
 
         DB::table('users')->insert([
-            'username'      => 'DrewRoberts',
+            'name'          => 'Drew Roberts',
             'email'         => 'drew@drewroberts.com',
+            'username'      => 'DrewRoberts',
             'password'      => bcrypt('password'),
             'subscriber'    => 1,
             'verified'      => 1,
