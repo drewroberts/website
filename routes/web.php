@@ -25,23 +25,22 @@ Route::get('aos', function () {
 
 Route::get('home', 'HomeController@index')->name('home');
 
-// Authentication Routes...
-Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('login', 'Auth\LoginController@login');
-Route::post('logout', 'Auth\LoginController@logout')->name('logout');
-
 Route::get('newsletter', 'Auth\RegisterController@showNewsletter')->name('newsletter');
 Route::group(['prefix' => 'newsletter'], function () {
   Route::get('subscribe', 'Auth\RegisterController@showRegistrationForm')->name('register');
   Route::post('subscribe', 'Auth\RegisterController@register');
   Route::get('thanks', 'HomeController@index')->name('home');
   Route::get('confirm/{token}', 'Auth\RegisterController@confirmEmail');
+  // Authentication Routes...
+  Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+  Route::post('login', 'Auth\LoginController@login');
+  Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+  Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+  Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+  Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+  Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 });
-// Password Reset Routes...
-Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
-Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
-Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
-Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+
 
 
 Route::get('recommendations', function () { return redirect('recommends'); });
