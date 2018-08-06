@@ -11,9 +11,9 @@ class AddressesTableSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('markets')->delete();
+        \DB::table('addresses')->delete();
 
-        \DB::table('markets')->insert(array (
+        \DB::table('addresses')->insert(array (
             0 =>
             array (
                 'id' => 1,
