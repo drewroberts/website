@@ -3,8 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
-use Carbon\Carbon;
-use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -63,15 +61,9 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $lastid = DB::select('select Max(id) as id from users');
-        $newusername = 'user' . Carbon::now('America/Kentucky/Louisville')->format('ym') . sprintf("%'.03d", $lastid[0]->id + 1);
-
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'username' => $newusername,
-            'password' => bcrypt(str_random(7)),
-            'id_token' => str_random(30),
         ]);
     }
 
