@@ -18,27 +18,6 @@ class UserController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  \App\User  $user
@@ -47,6 +26,28 @@ class UserController extends Controller
     public function show(User $user)
     {
         //
+    }
+
+    /**
+     * Confirm a user's email address.
+     *
+     * @param  string $id_token
+     * @return mixed
+     */
+    public function confirmEmail($id_token)
+    {
+        User::whereIdToken($id_token)->firstOrFail()->confirmEmail();
+        return redirect('newsletter/confirm');
+    }
+
+    /**
+     * Show the confirmation page that the user has confirmed email.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showConfirmed()
+    {
+        return view('auth.confirmed');
     }
 
     /**

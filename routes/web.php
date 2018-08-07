@@ -30,7 +30,8 @@ Route::group(['prefix' => 'newsletter'], function () {
   Route::get('subscribe', 'Auth\RegisterController@showRegistrationForm')->name('register');
   Route::post('subscribe', 'Auth\RegisterController@register');
   Route::get('thanks', 'HomeController@index')->name('home');
-  Route::get('confirm/{token}', 'Auth\RegisterController@confirmEmail');
+  Route::get('confirm/{id_token}', 'UserController@confirmEmail');
+  Route::get('confirm', 'UserController@showConfirmed')->name('confirmed');
   // Authentication Routes...
   Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
   Route::post('login', 'Auth\LoginController@login');

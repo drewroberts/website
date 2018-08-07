@@ -1,12 +1,14 @@
-@component('mail::message')
+@component('mail::message', ['user' => $user])
 # Introduction
 
-The body of your message.
+Thank you for subscribing to my weekly newsletter, {{ $user->name }}. 
 
-@component('mail::button', ['url' => ''])
-Button Text
+Please confirm your email address by clicking the link below:
+
+@component('mail::button', ['url' => 'https://drewroberts.com/newsletter/confirm/' . $user->id_token])
+Confirm Email
 @endcomponent
 
-Thanks,<br>
-{{ config('app.name') }}
+Thank you,<br>
+Drew Roberts
 @endcomponent
