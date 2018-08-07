@@ -8,7 +8,7 @@
                 <div class="card-header">Subscribe to my Weekly Newsletter</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
+                    <form method="POST" action="{{ route('subscribe') }}" aria-label="{{ __('Subscribe') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -42,7 +42,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ __('Subscribe') }}
                                 </button>
                             </div>
                         </div>
