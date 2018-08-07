@@ -15,7 +15,7 @@ return [
     */
 
     'mailgun' => [
-        'domain' => 'mg.drewroberts.com',
+        'domain' => 'newsletter.drewroberts.com',
         'secret' => env('MAILGUN_SECRET'),
     ],
 
