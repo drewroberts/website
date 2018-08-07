@@ -18,7 +18,6 @@ class UsersTableSeeder extends Seeder
             'email'         => 'drew@drewroberts.com',
             'username'      => 'DrewRoberts',
             'password'      => bcrypt('password'),
-            'subscriber'    => 1,
             'verified'      => 1,
             'id_token'      => NULL,
             'created_at'    => $now,

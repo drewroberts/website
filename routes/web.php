@@ -25,11 +25,11 @@ Route::get('aos', function () {
 
 Route::get('home', 'HomeController@index')->name('home');
 
-Route::get('newsletter', 'Auth\RegisterController@showNewsletter')->name('newsletter');
+Route::get('newsletter', 'Auth\RegisterController@showNewsletter')->name('newsletter'); // Build longer style landing page
 Route::group(['prefix' => 'newsletter'], function () {
-  Route::get('subscribe', 'Auth\RegisterController@showRegistrationForm')->name('register');
+  Route::get('subscribe', 'Auth\RegisterController@showRegistrationForm')->name('subscribe'); // Build short form landing page
   Route::post('subscribe', 'Auth\RegisterController@register');
-  Route::get('thanks', 'HomeController@index')->name('home');
+  Route::get('thanks', 'ProfileController@thanks')->name('requested');
   Route::get('confirm/{id_token}', 'UserController@confirmEmail');
   Route::get('confirm', 'UserController@showConfirmed')->name('confirmed');
   // Authentication Routes...
