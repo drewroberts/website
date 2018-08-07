@@ -3,6 +3,8 @@
 namespace App;
 
 use Carbon\Carbon;
+use App\Mail\Confirm;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -52,6 +54,8 @@ class User extends Authenticatable
             $user->username = $newusername;
             $user->password = bcrypt(str_random(7));
             $user->id_token = str_random(30);
+
+            Mail::to($user)->send(new Confirm($user));
         });
     }
 
