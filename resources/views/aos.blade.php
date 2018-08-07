@@ -1143,13 +1143,13 @@ a.button:hover {
 
 <section id="main">
   <nav id="navigation" class="nav">
-    <amp-img width="225" height="33" class="logo" src="https://drewroberts.com/img/aos_white.png" alt="America&#700;s Office Source"></amp-img>
+    <amp-img width="93" height="33" class="logo" src="https://drewroberts.com/img/aos_logo.jpg" alt="America&#700;s Office Source"></amp-img>
     <a id="navbutton" class="button" target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" data-g-event="Optimize: Microsite" data-g-action="Find Out More" data-g-label="Global Nav CTA">Find Out More</a>
   </nav>
   <section class="banner banner--optimise">
     <div class="container banner--content">
       <div class="bannerlogo">
-        <amp-img width="245" height="35" src="https://drewroberts.com/img/aos_logo.jpg" alt="America&#700;s Office Source"></amp-img>
+        <amp-img width="245" height="77" src="https://drewroberts.com/img/aos_white.png" alt="America&#700;s Office Source"></amp-img>
       </div>
       <h1>Office Furniture for Every Project</h1>
       <p>Our team can assist with the design and planning all the way through to delivery and assembly of your vision - no matter the size.</p>
