@@ -1143,53 +1143,53 @@ a.button:hover {
 
 <section id="main">
   <nav id="navigation" class="nav">
-    <amp-img width="225" height="33" class="logo" src="https://optimize.withgoogle.com/assets/google-optimize.png" alt="Google Optimize"></amp-img>
-    <a id="navbutton" class="button" target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" data-g-event="Optimize: Microsite" data-g-action="Use It For Free" data-g-label="Global Nav CTA">use it for free</a>
+    <amp-img width="225" height="33" class="logo" src="https://drewroberts.com/img/aos_white.png" alt="America&#700;s Office Source"></amp-img>
+    <a id="navbutton" class="button" target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" data-g-event="Optimize: Microsite" data-g-action="Find Out More" data-g-label="Global Nav CTA">Find Out More</a>
   </nav>
   <section class="banner banner--optimise">
     <div class="container banner--content">
       <div class="bannerlogo">
-        <amp-img width="245" height="35" src="https://optimize.withgoogle.com/assets/google-optimise-logo.png" alt="Google Optimize"></amp-img>
+        <amp-img width="245" height="35" src="https://drewroberts.com/img/aos_logo.jpg" alt="America&#700;s Office Source"></amp-img>
       </div>
-      <h1>Your website is your store window.</h1>
-      <p>Easily run tests and experiments on your website so it works better for your customers and your business &mdash; for free.</p>
-      <a id="topbutton" class="button" target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" data-g-event="Optimize: Microsite" data-g-action="Use It For Free" data-g-label="Header CTA">use it for free</a>
+      <h1>Office Furniture for Every Project</h1>
+      <p>Our team can assist with the design and planning all the way through to delivery and assembly of your vision - no matter the size.</p>
+      <a id="topbutton" class="button" target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" data-g-event="Optimize: Microsite" data-g-action="Find Out More" data-g-label="Header CTA">Find Out More</a>
     </div>
   </section>
   <section class="grid container">
     <div class="row">
       <div class="col">
         <amp-img width="300" height="184" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-chart.png" class="imgicon" alt="Chart"></amp-img>
-        <h3>Let your data do the talking</h3>
+        <h3>Individual Pieces</h3>
         <p>Integrate with Google Analytics at the click of a button to understand how your website can be improved.</p>
       </div>
       <div class="col">
         <amp-img width="300" height="184" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-laptop.png" class="imgicon" alt="Laptop"></amp-img>
-        <h3>Test what works best</h3>
+        <h3>Tailored Workspace Build-Outs</h3>
         <p>Easily run A/B tests on your website&#39;s content to learn what works best for your visitors.</p>
       </div>
       <div class="col">
         <amp-img width="300" height="184" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-calendar.png" class="imgicon" alt="Calendar"></amp-img>
-        <h3>Tailor a compelling experience</h3>
-        <p>One size never fits all. Adapt your website's experience to suit different types of audiences.</p>
+        <h3>Complete Seating Options</h3>
+        <p>One size never fits all. Adapt your website experience to suit different types of audiences.</p>
       </div>
       <div class="col">
         <amp-img width="300" height="184" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-clipboard.png" class="imgicon" alt="Clipboard"></amp-img>
-        <h3>Take matters in your own hands</h3>
+        <h3>Trusted Brands at Every Price Point</h3>
         <p>Get set up to test your website in minutes. Drive better results from your own screen.</p>
       </div>
     </div>
   </section>
   <section class="quote">
-    <h3><span>"</span>Google Optimize makes testing easy for us. The metrics give us better insights into how many clicks we're getting for each message. We're reaching more people who want to come to our conferences.<span>"</span></h3>
+    <h3><span>"</span>A small, modest upgrade? Or a large, upscale renovation? When it comes to your office space, you deserve attention to every detail.<span>"</span></h3>
     <p class="source">Martijn Scheijbeler, The Next Web</p>
   </section>
   <section class="laptop">
     <h3>One, two, three, optimize.</h3>
     <amp-img width="608" height="335" class="gif" layout="responsive" src="https://optimize.withgoogle.com/assets/optimize-bottom.gif" alt="Optimize"></amp-img>
-    <p>Business as usual? Or launching something new? When it comes to your website, there's always room for improvement &mdash; not for guess work.</p>
+    <p>Business as usual? Or launching something new? When it comes to your website, there always room for improvement &mdash; not for guess work.</p>
     <section class="cta">
-      <a target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" id="bottombutton" class="button" data-g-event="Optimize: Microsite" data-g-action="Use It For Free" data-g-label="One Two Three Optimize CTA">use it for free</a>
+      <a target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" id="bottombutton" class="button" data-g-event="Optimize: Microsite" data-g-action="Find Out More" data-g-label="One Two Three Optimize CTA">Find Out More</a>
       <div class="outbound">
         <a id="outbound" target="_blank" rel="noopener" href="https://www.google.com/analytics/optimize/" data-g-event="Optimize: Microsite" data-g-action="Learn More" data-g-label="One Two Three Optimize">Learn More <amp-img width="18" height="18" class="image" src="https://optimize.withgoogle.com/assets/nextarrow.svg" alt="Next Arrow"></amp-img></a>
       </div>
