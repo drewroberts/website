@@ -23,20 +23,18 @@ Route::get('aos', function () {
     return view('aos');
 });
 
-Route::get('home', 'HomeController@index')->name('home');
-
 Route::get('newsletter', 'Auth\RegisterController@showNewsletter')->name('newsletter'); // Build longer style landing page
 Route::group(['prefix' => 'newsletter'], function () {
     Route::get('subscribe', 'Auth\RegisterController@showRegistrationForm')->name('subscribe'); // Build short form landing page
     Route::post('subscribe', 'Auth\RegisterController@register');
-    Route::get('thanks', 'ProfileController@thanks')->name('requested');
-    Route::get('confirm/{id_token}', 'UserController@confirmEmail');
-    Route::get('confirm', 'UserController@showConfirmed')->name('confirmed');
+    Route::get('thanks', 'Auth\ProfileController@thanks')->name('requested');
+    Route::get('confirm/{id_token}', 'Auth\UserController@confirmEmail');
+    Route::get('confirm', 'Auth\UserController@showConfirmed')->name('confirmed');
 });
 
-Route::get('together', 'ProfileController@index')->name('together'); // Not index of profiles, but index of things subscribers can do with me. Password protected.
+Route::get('together', 'Auth\ProfileController@index')->name('together'); // Not index of profiles, but index of things subscribers can do with me. Password protected.
 Route::group(['prefix' => 'together'], function () {
-    Route::get('you', 'ProfileController@show')->name('profile');
+    Route::get('you', 'Auth\ProfileController@show')->name('profile');
     // Authentication Routes...
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
     Route::post('login', 'Auth\LoginController@login');
@@ -46,8 +44,8 @@ Route::group(['prefix' => 'together'], function () {
     Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('password/reset', 'Auth\ResetPasswordController@reset');
     // Contact/Message Routes...
-    Route::get('contact', 'MessageController@contact')->name('contact'); // Contact me is for subscribers only to send messages.
-    Route::post('messages', 'MessageController@index'); // Historical correspondence with the subscriber.
+    Route::get('contact', 'Auth\MessageController@contact')->name('contact'); // Contact me is for subscribers only to send messages.
+    Route::post('messages', 'Auth\MessageController@index'); // Historical correspondence with the subscriber.
 });
 
 
