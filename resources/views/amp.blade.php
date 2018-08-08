@@ -1100,9 +1100,9 @@ img,picture{margin:0;max-width:100%;}
 					</div>
 				</div>
 				<div class="video-infocard__show-summary">
-					<h6 class="episode-info hed-xs"><a href="/amp"><div class="show__season__episode hed-xs m-b-1-xs"><span>AMP  / EP1</span></div></a></h6>
+					<h6 class="episode-info hed-xs"><a href="/amp"><div class="show__season__episode hed-xs m-b-1-xs"><span>AMP / EP1</span></div></a></h6>
 					<h4 class="video-title hed-l">AMP and PWA</h4>
-					<div class="video-description bod-m">We head to Smith Street Tattoo Parlor in Brooklyn to get to know Dan Santoro, a tattooer known for his bold traditional American style tattoos.</div>
+					<div class="video-description bod-m">In this tutorial we dive into integrating both AMP (Accelerated Mobile Pages) and PWA (Progressive Web Apps) in your web development. AMP can preload the service worker for your PWA and Progressive Webs Apps can serve Accelerated Mobile Pages. This framework is important for fast first pageloads and fast subsequent views.</div>
 					<div class="more-info-card">
 						<div class="details">
 							<section>
