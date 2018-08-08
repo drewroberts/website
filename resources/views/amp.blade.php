@@ -444,11 +444,10 @@
 		.primary-heading{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;overflow:visible;padding-left:0;position:fixed;padding:0 0 0 10px}
 
 		.page-content{
-			background-color:#ffffff;
+			background-color: #ffffff;
 			position:relative;
 			z-index:2;
 			min-height: 250px;
-			padding-top: 40px;
 			width: 100%;
 		}
 
@@ -499,115 +498,105 @@
 		ul{margin:0 0 10px;padding:0;}
 		ul li{margin-bottom:10px;}
 		ul{list-style-position:inside;}
-		.page-content .social-tray__link{background-color:#fff;}
-		.page-content .social-list{list-style-type:none;}
-		.page-content .social-list--item{cursor:pointer;list-style:none;}
-		.page-content .social-tray__link{background-color:#aaa;height:30px;width:30px;color:#fff;text-decoration:none;transition:background-color .25s ease-in;list-style:none;}
-		.page-content .social-tray__link:active,.page-content .social-tray__link:focus,.page-content .social-tray__link:hover,.page-content .social-tray__link:visited{color:#fff;}
-		.page-content .social-tray__link--facebook,.page-content .social-tray__link--twitter{width:148px;}
-		.page-content .social-tray__link .icon-facebook,.page-content .social-tray__link .icon-twitter{margin-right:5px;}
-		.page-content .video-infocard__share-icons .social-list{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
-		.page-content .video-infocard__share-icons .social-tray__link{border-radius:50%;margin:0 5px;}
-		.page-content .video-infocard__share-icons .social-tray__link--facebook,.page-content .video-infocard__share-icons .social-tray__link--twitter{border-radius:500px;}
-		.page-content .social-tray__link--facebook{background-color:#3965a0;}
-		.page-content .social-tray__link--twitter{background-color:#4db6ee;}
-		.page-content .show__season__episode{color:$base-font-color;margin-bottom:5px;text-transform:uppercase;}
-		 @media only screen and (min-width:850px){
-		.page-content .video-infocard__desktop-section{margin:0 0 15px;display:block;}
-		}
+		.social-tray__link{background-color:#fff;}
+		.social-list{list-style-type:none;}
+		.social-list--item{cursor:pointer;list-style:none;}
+		.social-tray__link{background-color:#aaa;height:30px;width:30px;color:#fff;text-decoration:none;transition:background-color .25s ease-in;list-style:none;}
+		.social-tray__link:active,.social-tray__link:focus,.social-tray__link:hover,.social-tray__link:visited{color:#fff;}
+		.social-tray__link--facebook,.social-tray__link--twitter{width:148px;}
+		.social-tray__link .icon-facebook,.social-tray__link .icon-twitter{margin-right:5px;}
+		.video-infocard__share-icons .social-list{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+		.video-infocard__share-icons .social-tray__link{border-radius:50%;margin:0 5px;}
+		.social-tray__link--facebook{background-color:#3965a0;}
+		.social-tray__link--twitter{background-color:#4db6ee;}
+		.show__season__episode{color:$base-font-color;margin-bottom:5px;text-transform:uppercase;}
 		 @media only screen and (min-width:1050px){
-		.page-content .video-infocard__desktop-section{margin:0 0 30px;}
+		.video-infocard__desktop-section{margin:0 0 30px;}
 		}
-		 @media only screen and (min-width:850px){
-		.page-content .video-infocard__desktop-section .video-infocard__share-icons{display:block;}
-		}
-		.page-content .video-infocard{padding:0 15px 15px;}
+		.video-infocard{padding:0 15px 15px;}
 		 @media only screen and (min-width:650px){
-		.page-content .video-infocard{padding:0 30px;}
+		.video-infocard{padding:0 30px;}
 		}
 		 @media only screen and (min-width:850px){
-		.page-content .video-infocard{padding:0 40px 45px;border:none;}
+		.video-infocard{padding:0 40px 45px;border:none;}
 		}
 		 @media only screen and (min-width:1050px){
-		.page-content .video-infocard{padding:0 45px 60px;}
+		.video-infocard{padding:0 45px 60px;}
 		}
-		.page-content .video-infocard header{display:-webkit-box;display:-ms-flexbox;display:flex;}
-		.page-content .video-infocard__share-icons{margin:30px 0;}
+		.video-infocard header{display:-webkit-box;display:-ms-flexbox;display:flex;}
+
+		.video-infocard__share-icons .social-list{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}
+		.video-infocard__share-icons .social-list img{margin-right:0;}
+		.video-infocard__share-icons .social-list .icon_text{display:none;}
 		 @media only screen and (min-width:850px){
-		.page-content .video-infocard__share-icons{display:none;}
+		.video-infocard__share-icons .social-list{-ms-flex-wrap:wrap;flex-wrap:wrap;}
 		}
-		.page-content .video-infocard__share-icons .social-list{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}
-		.page-content .video-infocard__share-icons .social-list img{margin-right:0;}
-		.page-content .video-infocard__share-icons .social-list .icon_text{display:none;}
-		 @media only screen and (min-width:850px){
-		.page-content .video-infocard__share-icons .social-list{-ms-flex-wrap:wrap;flex-wrap:wrap;}
-		}
-		.page-content .video-infocard__share-icons .social-list .main-list{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-ms-flex-pack:distribute;justify-content:space-around;}
+		.video-infocard__share-icons .social-list .main-list{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-ms-flex-pack:distribute;justify-content:space-around;}
 		 @media only screen and (min-width:400px){
-		.page-content .video-infocard__share-icons .social-list .main-list img{margin-right:5px;}
-		.page-content .video-infocard__share-icons .social-list .main-list .icon_text{display:block;}
+		.video-infocard__share-icons .social-list .main-list img{margin-right:5px;}
+		.video-infocard__share-icons .social-list .main-list .icon_text{display:block;}
 		}
 		 @media only screen and (min-width:650px){
-		.page-content .video-infocard__share-icons .social-list .main-list{margin:auto;}
+		.video-infocard__share-icons .social-list .main-list{margin:auto;}
 		}
 		 @media only screen and (min-width:850px){
-		.page-content .video-infocard__share-icons .social-list .main-list{width:300px;}
+		.video-infocard__share-icons .social-list .main-list{width:300px;}
 		}
-		.page-content .video-infocard__share-icons .social-list .main-list .social-list--item{width:100%;}
-		.page-content .video-infocard__share-icons .social-list .main-list .social-list--item .social-tray__link{margin:0;width:90%;}
-		.page-content .video-infocard__share-icons__toggle{cursor:pointer;float:right;text-decoration:none;color:#f1f1f1;background:#aaa;border-radius:50%;width:30px;height:30px;position:relative;}
-		.page-content .video-infocard__share-icons__toggle:active,.page-content .video-infocard__share-icons__toggle:focus,.page-content .video-infocard__share-icons__toggle:hover,.page-content .video-infocard__share-icons__toggle:visited{color:#f1f1f1;}
-		.page-content .video-infocard__share-icons__toggle .icon{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);display:block;}
-		.page-content .video-infocard__show-card{position:relative;max-height:120px;}
+		.video-infocard__share-icons .social-list .main-list .social-list--item{width:100%;}
+		.video-infocard__share-icons .social-list .main-list .social-list--item .social-tray__link{margin:0;width:90%;}
+		.video-infocard__share-icons__toggle{cursor:pointer;float:right;text-decoration:none;color:#f1f1f1;background:#aaa;border-radius:50%;width:30px;height:30px;position:relative;}
+		.video-infocard__share-icons__toggle:active,.video-infocard__share-icons__toggle:focus,.video-infocard__share-icons__toggle:hover,.video-infocard__share-icons__toggle:visited{color:#f1f1f1;}
+		.video-infocard__share-icons__toggle .icon{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);display:block;}
+		.video-infocard__show-card{position:relative;max-height:120px;}
 		 @media only screen and (min-width:1050px){
-		.page-content .video-infocard__show-card{max-height:150px;}
+		.video-infocard__show-card{max-height:150px;}
 		}
 		 @media only screen and (min-width:1250px){
-		.page-content .video-infocard__show-card{max-height:180px;}
+		.video-infocard__show-card{max-height:180px;}
 		}
-		.page-content .video-infocard__show-card .thumbnail{max-width:80px;}
+		.video-infocard__show-card .thumbnail{max-width:80px;}
 		 @media only screen and (min-width:1050px){
-		.page-content .video-infocard__show-card .thumbnail{max-width:100px;}
+		.video-infocard__show-card .thumbnail{max-width:100px;}
 		}
 		 @media only screen and (min-width:1250px){
-		.page-content .video-infocard__show-card .thumbnail{max-width:120px;}
+		.video-infocard__show-card .thumbnail{max-width:120px;}
 		}
-		.page-content .video-infocard__show-card .badge{width:28px;height:28px;position:absolute;bottom:-10px;right:-10px;}
+		.video-infocard__show-card .badge{width:28px;height:28px;position:absolute;bottom:-10px;right:-10px;}
 		 @media only screen and (min-width:1050px){
-		.page-content .video-infocard__show-card .badge{width:32px;height:32px;}
+		.video-infocard__show-card .badge{width:32px;height:32px;}
 		}
 		 @media only screen and (min-width:1250px){
-		.page-content .video-infocard__show-card .badge{width:40px;height:40px;}
+		.video-infocard__show-card .badge{width:40px;height:40px;}
 		}
-		.page-content .video-infocard__show-summary{width:100%;margin-left:20px;min-height:120px;}
-		 @media only screen and (min-width:1050px){
-		.page-content .video-infocard__show-summary{margin-left:24px;}
-		}
-		 @media only screen and (min-width:1250px){
-		.page-content .video-infocard__show-summary{margin-left:30px;}
-		}
-		.page-content .video-infocard__show-summary .episode-info{color:#000;text-transform:uppercase;}
-		.page-content .video-infocard__show-summary .video-title{color:#000;}
-		.page-content .video-infocard__show-summary .video-description{margin-bottom:15px;}
-		.page-content .video-infocard__desktop-section{display:none;margin-left:30px;}
+		.video-infocard__show-summary{width:100%;min-height:120px;}
+
+
+		.video-infocard__show-summary .episode-info{color:#000;text-transform:uppercase;}
+		.video-infocard__show-summary .video-title{color:#000;}
+		.video-infocard__show-summary .video-description{margin-bottom:15px;}
+		.video-infocard__desktop-section{display:block;margin:0 0 15px 30px;}
 		 @media only screen and (min-width:850px){
-		.page-content .video-infocard__desktop-section{display:block;}
+		.video-infocard__desktop-section{display:block;}
 		}
 		 @media only screen and (min-width:1050px){
-		.page-content .video-infocard__desktop-section{margin-left:45px;}
+		.video-infocard__desktop-section{margin-left:45px;}
 		}
 		 @media only screen and (min-width:1250px){
-		.page-content .video-infocard__desktop-section{margin-left:60px;}
+		.video-infocard__desktop-section{margin-left:60px;}
 		}
-		.page-content .less-info,.page-content .show-info{padding:12.5px;line-height:1;position:relative;border:1px solid #ebebeb;border-radius:0;display:block;}
-		.page-content .show-info.hide{display:none;}
-		.page-content .more-info-card{display:block;}
-		.page-content .more-info-card .topics{margin-top:7.5px;}
-		.page-content .more-info-card .topics ul{width:calc(100% - 100px);}
-		.page-content .more-info-card .topics ul li{display:inline-block;margin-right:5px;margin-bottom:5px;}
-		.page-content .more-info-card .topics ul li a{color:#fff;background:#000;padding:5px 10px;}
-		.page-content .more-info-card h4{display:inline-block;width:100px;text-transform:capitalize;}
-		.page-content .more-info-card a,.page-content .more-info-card span{display:inline-block;}
+		.less-info,.show-info{padding:12.5px;line-height:1;position:relative;border:1px solid #ebebeb;border-radius:0;display:block;}
+		.show-info.hide{display:none;}
+		.more-info-card{display:block;}
+		.more-info-card .topics{margin-top:7.5px;}
+		.more-info-card .topics ul{width:calc(100% - 100px);}
+		.more-info-card .topics ul li{display:inline-block;margin-right:5px;margin-bottom:5px;}
+		.more-info-card .topics ul li a {
+			color:#fff;
+			background:#000;
+			padding:5px 10px;
+		}
+		.more-info-card h4{display:inline-block;width:100px;text-transform:capitalize;}
+		.more-info-card a,.more-info-card span{display:inline-block;}
 
 
 
@@ -655,24 +644,24 @@ h3,h6{margin:0 0 10px;}
 .icon{font-family:icons;speak:none;font-style:normal;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;}
 button{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 img,picture{margin:0;max-width:100%;}
-.page-content .header{border-bottom:2px solid #000;margin-bottom:15px;}
-.page-content .header section{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:10px;}
-.page-content .header h3{text-transform:uppercase;margin-bottom:0;}
+.header{border-bottom:2px solid #000;margin-bottom:15px;}
+.header section{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:10px;}
+.header h3{text-transform:uppercase;margin-bottom:0;}
 .slider-wrapper{margin: 0 auto; padding: 0 0 0 15px; max-width: 1480px;}
-.page-content .slick-slider .slick-list,.page-content .slick-slider .slick-track{-webkit-transform:translateZ(0);transform:translateZ(0);}
-.page-content .slick-list{position:relative;display:block;margin:0;padding:0;}
-.page-content .slick-track{position:relative;top:0;left:0;}
-.page-content .slick-slide,.page-content .slick-track{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;}
-.page-content .slick-slide{height:100%;min-height:1px;margin-right:15px;outline: none; width: 240px; height: 270px;}
-.page-content .slick-initialized .slick-slide{display:inline-block;}
-.page-content .slider__card{display:block;width:100%;}
-.page-content .slider__card__thumbnail{position:relative;margin-bottom:10px;}
-.page-content .slider__card__thumbnail .slider-image {position:absolute;top:0;left:0;}
-.page-content .slider__card__thumbnail .attribution .slider-image {display:block;position:absolute;top:5px;right:8px;bottom:auto;left:auto;height:12px;width:auto;z-index:1;}
-.page-content .slider__card__thumbnail .attribution .slider-image {max-height:12px;max-width:100%;}
-.page-content .slider__card__thumbnail__container__small{background-color:#000;background-size:cover;width:100%;margin:0 15px 10px 0;padding-bottom:56.25%;}
-.page-content .slider__meta{margin:0;}
-.page-content .show__season__episode{color:$base-font-color;margin-bottom:5px;text-transform:uppercase;}
+.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translateZ(0);transform:translateZ(0);}
+.slick-list{position:relative;display:block;margin:0;padding:0;}
+.slick-track{position:relative;top:0;left:0;}
+.slick-slide,.slick-track{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;}
+.slick-slide{height:100%;min-height:1px;margin-right:15px;outline: none; width: 240px; height: 270px;}
+.slick-initialized .slick-slide{display:inline-block;}
+.slider__card{display:block;width:100%;}
+.slider__card__thumbnail{position:relative;margin-bottom:10px;}
+.slider__card__thumbnail .slider-image {position:absolute;top:0;left:0;}
+.slider__card__thumbnail .attribution .slider-image {display:block;position:absolute;top:5px;right:8px;bottom:auto;left:auto;height:12px;width:auto;z-index:1;}
+.slider__card__thumbnail .attribution .slider-image {max-height:12px;max-width:100%;}
+.slider__card__thumbnail__container__small{background-color:#000;background-size:cover;width:100%;margin:0 15px 10px 0;padding-bottom:56.25%;}
+.slider__meta{margin:0;}
+.show__season__episode{color:$base-font-color;margin-bottom:5px;text-transform:uppercase;}
 
 .play-duration__wrapper {
     position: absolute;
@@ -1098,94 +1087,53 @@ img,picture{margin:0;max-width:100%;}
 	<div class="page-content">
 		<article>
 			<div class="content">
+				<div class="video-infocard__desktop-section">
+					<div class="video-infocard__share-icons">
+						<div class="video-infocard__share-icons__toggle" on="tap:share-lightbox" role="button" tabindex="3">
+							<amp-img width="15px" height="15px" src="https://vice-web-statics-cdn.vice.com/icons/more.svg" class="icon icon-more"></amp-img>
+						</div>
+					</div>
+				</div>
+				<div class="video-infocard__show-summary">
+					<h6 class="episode-info hed-xs"><a href="/en_us/show/tattoo-age-tv"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP1</span></div></a></h6>
+					<h4 class="video-title hed-l">Bold Tattooing with Dan Santoro</h4>
+					<div class="video-description bod-m">We head to Smith Street Tattoo Parlor in Brooklyn to get to know Dan Santoro, a tattooer known for his bold traditional American style tattoos.</div>
+					<div class="more-info-card">
+						<div class="details">
+							<section>
+								<div class="channel">
+									<h4 class="bod-xs">Channel</h4>
+									<a class="bod-xs" href="/en_us/channel/viceland">VICELAND</a>
+								</div>
+								<div class="runtime">
+									<h4 class="bod-xs">Runtime</h4>
+									<span class="bod-xs">21:58</span>
+								</div>
+								<div class="rating"><h4 class="bod-xs">Rating</h4><span class="bod-xs">TV-14</span></div>
+							</section>
+							<div class="topics dsp-flex-xs">
+								<h4 class="bod-xs">Topics</h4>
+								<ul>
+									<li><a href="/en_us/topic/japanese" class="hed-xs">JAPANESE</a></li>
+									<li><a href="/en_us/topic/documentary" class="hed-xs">DOCUMENTARY</a></li>
+									<li><a href="/en_us/topic/art" class="hed-xs">ART</a></li>
+									<li><a href="/en_us/topic/history" class="hed-xs">HISTORY</a></li>
+									<li><a href="/en_us/topic/tattoo" class="hed-xs">TATTOO</a></li>
+									<li><a href="/en_us/topic/body-modification" class="hed-xs">BODY MODIFICATION</a></li>
+									<li><a href="/en_us/topic/dan-santoro" class="hed-xs">DAN SANTORO</a></li>
+									<li><a href="/en_us/topic/traditional-american" class="hed-xs">TRADITIONAL AMERICAN</a></li>
+									<li><a href="/en_us/topic/skin-art" class="hed-xs">SKIN ART</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="sidebar">
 			</div>
 			<div class="content-expandable">
 			</div>
 		</article>
-
-
-		<section class="video-infocard">
-			<header>
-				<div class="video-infocard__show-card">
-					<a href="/en_us/show/tattoo-age-tv"><amp-img class="thumbnail" src="https://video-images.vice.com/shows/59aed456cc16f4ca574cdee9/card/1530202279220-TATTOO_AGE_S2_KEYART.jpeg?crop=1xw:1xh;center,center" width="120px" height="180px"></amp-img></a>
-					<a href="/en_us/channel/viceland"><amp-img class="badge" src="https://vice-web-statics-cdn.vice.com/circle_logos/viceland.svg" width="40px" height="40px"></amp-img></a>
-				</div><div class="video-infocard__show-summary">
-					<h6 class="episode-info hed-xs"><a href="/en_us/show/tattoo-age-tv"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP1</span></div></a></h6>
-					<h4 class="video-title hed-l">Bold Tattooing with Dan Santoro</h4>
-					<div class="video-description bod-m">We head to Smith Street Tattoo Parlor in Brooklyn to get to know Dan Santoro, a tattooer known for his bold traditional American style tattoos.</div>
-					<button class="show-info hide btn">More Info</button>
-					<div class="dsp-none-xs dsp-block-l">
-						<div class="more-info-card">
-							<div class="details">
-				<section>
-					<div class="channel">
-						<h4 class="bod-xs">Channel</h4>
-						<a class="bod-xs" href="/en_us/channel/viceland">VICELAND</a>
-					</div>
-					<div class="runtime">
-						<h4 class="bod-xs">Runtime</h4>
-						<span class="bod-xs">21:58</span>
-					</div>
-					<div class="rating"><h4 class="bod-xs">Rating</h4><span class="bod-xs">TV-14</span></div>
-				</section>
-				<div class="topics dsp-flex-xs">
-					<h4 class="bod-xs">Topics</h4>
-						<ul>
-							<li><a href="/en_us/topic/japanese" class="hed-xs">JAPANESE</a></li>
-							<li><a href="/en_us/topic/documentary" class="hed-xs">DOCUMENTARY</a></li>
-							<li><a href="/en_us/topic/art" class="hed-xs">ART</a></li>
-							<li><a href="/en_us/topic/history" class="hed-xs">HISTORY</a></li>
-							<li><a href="/en_us/topic/tattoo" class="hed-xs">TATTOO</a></li>
-							<li><a href="/en_us/topic/body-modification" class="hed-xs">BODY MODIFICATION</a></li>
-							<li><a href="/en_us/topic/dan-santoro" class="hed-xs">DAN SANTORO</a></li>
-							<li><a href="/en_us/topic/traditional-american" class="hed-xs">TRADITIONAL AMERICAN</a></li>
-							<li><a href="/en_us/topic/skin-art" class="hed-xs">SKIN ART</a></li>
-						</ul>
-								</div>
-							</div>
-						</div>
-						<button class="less-info btn">Less Info</button>
-					</div>
-				</div>
-				<div class="video-infocard__desktop-section">
-					<div class="video-infocard__share-icons">
-						<div class="video-infocard__share-icons__toggle" on="tap:share-lightbox" role="button" tabindex="3"><amp-img width="15px" height="15px" src="https://vice-web-statics-cdn.vice.com/icons/more.svg" class="icon icon-more"></amp-img></div>
-						<div class="social-list m-0-xs p-0-xs dsp-flex-xs">
-							<ul class="main-list dsp-flex-xs m-0-xs">
-								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" width="15px" height="15px" class="icon icon-facebook"></amp-img><span class="icon_text">SHARE</span></a></li>
-								<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" width="15px" height="15px" class="icon icon-twitter"></amp-img><span class="icon_text">TWEET</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</header>
-			<div class="dsp-none-l">
-				<div class="more-info-card">
-					<div class="details">
-						<section>
-							<div class="channel">
-								<h4 class="bod-xs">Channel</h4>
-								<a class="bod-xs" href="/en_us/channel/viceland">VICELAND</a>
-							</div>
-							<div class="runtime"><h4 class="bod-xs">Runtime</h4><span class="bod-xs">21:58</span></div>
-							<div class="rating"><h4 class="bod-xs">Rating</h4><span class="bod-xs">TV-14</span></div>
-						</section>
-						<div class="topics dsp-flex-xs"><h4 class="bod-xs">Topics</h4><ul><li><a href="/en_us/topic/japanese" class="hed-xs">JAPANESE</a></li><li><a href="/en_us/topic/documentary" class="hed-xs">DOCUMENTARY</a></li><li><a href="/en_us/topic/art" class="hed-xs">ART</a></li><li><a href="/en_us/topic/history" class="hed-xs">HISTORY</a></li><li><a href="/en_us/topic/tattoo" class="hed-xs">TATTOO</a></li><li><a href="/en_us/topic/body-modification" class="hed-xs">BODY MODIFICATION</a></li><li><a href="/en_us/topic/dan-santoro" class="hed-xs">DAN SANTORO</a></li><li><a href="/en_us/topic/traditional-american" class="hed-xs">TRADITIONAL AMERICAN</a></li><li><a href="/en_us/topic/skin-art" class="hed-xs">SKIN ART</a></li></ul></div>
-					</div>
-				</div>
-				<button class="less-info btn">Less Info</button>
-			</div>
-			<div class="video-infocard__share-icons">
-				<div class="social-list m-0-xs p-0-xs dsp-flex-xs">
-					<ul class="main-list dsp-flex-xs m-0-xs">
-						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--facebook hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/facebook.svg" width="15px" height="15px" class="icon icon-facebook"></amp-img><span class="icon_text">SHARE</span></a></li>
-						<li class="social-list--item m-b-0-xs"><a class="social-tray__link dsp-flex-xs grd-algn-center-xs grd-just-center-xs social-tray__link--twitter hed-xs"><amp-img src="https://vice-web-statics-cdn.vice.com/icons/twitter.svg" width="15px" height="15px" class="icon icon-twitter"></amp-img><span class="icon_text">TWEET</span></a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
 
 
 
