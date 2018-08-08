@@ -1182,9 +1182,9 @@ a.button:hover {
   </section>
   <section class="quote">
     <h3>A small, modest upgrade? Or a large, upscale renovation? When it comes to your office space, you deserve attention to every detail.</h3>
-    <div class="outbound">
-        <a id="outbound" target="_blank" rel="noopener" href="https://www.google.com/analytics/optimize/" data-g-event="Optimize: Microsite" data-g-action="Learn More" data-g-label="One Two Three Optimize">Learn More <amp-img width="18" height="18" class="image" src="https://optimize.withgoogle.com/assets/nextarrow.svg" alt="Next Arrow"></amp-img></a>
-      </div>
+    <section class="cta">
+      <a target="_blank" rel="noopener" href="https://optimize.google.com/optimize/home/#/accounts" id="bottombutton" class="button" data-g-event="Optimize: Microsite" data-g-action="Find Out More" data-g-label="One Two Three Optimize CTA">Find Out More</a>
+    </section>
   </section>
   
   <footer class="footer">
