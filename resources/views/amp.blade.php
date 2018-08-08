@@ -1084,6 +1084,11 @@ img,picture{margin:0;max-width:100%;}
 		</div>
 	</div>
 
+
+
+
+
+
 	<div class="page-content">
 		<article>
 			<div class="content">
@@ -1095,15 +1100,15 @@ img,picture{margin:0;max-width:100%;}
 					</div>
 				</div>
 				<div class="video-infocard__show-summary">
-					<h6 class="episode-info hed-xs"><a href="/en_us/show/tattoo-age-tv"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP1</span></div></a></h6>
-					<h4 class="video-title hed-l">Bold Tattooing with Dan Santoro</h4>
+					<h6 class="episode-info hed-xs"><a href="/amp"><div class="show__season__episode hed-xs m-b-1-xs"><span>AMP  / EP1</span></div></a></h6>
+					<h4 class="video-title hed-l">AMP and PWA</h4>
 					<div class="video-description bod-m">We head to Smith Street Tattoo Parlor in Brooklyn to get to know Dan Santoro, a tattooer known for his bold traditional American style tattoos.</div>
 					<div class="more-info-card">
 						<div class="details">
 							<section>
 								<div class="channel">
-									<h4 class="bod-xs">Channel</h4>
-									<a class="bod-xs" href="/en_us/channel/viceland">VICELAND</a>
+									<h4 class="bod-xs">Topic</h4>
+									<a class="bod-xs" href="/amp">AMP</a>
 								</div>
 								<div class="runtime">
 									<h4 class="bod-xs">Runtime</h4>
@@ -1112,7 +1117,7 @@ img,picture{margin:0;max-width:100%;}
 								<div class="rating"><h4 class="bod-xs">Rating</h4><span class="bod-xs">TV-14</span></div>
 							</section>
 							<div class="topics dsp-flex-xs">
-								<h4 class="bod-xs">Topics</h4>
+								<h4 class="bod-xs">Tags</h4>
 								<ul>
 									<li><a href="/en_us/topic/japanese" class="hed-xs">JAPANESE</a></li>
 									<li><a href="/en_us/topic/documentary" class="hed-xs">DOCUMENTARY</a></li>
