@@ -1150,38 +1150,52 @@ form.amp-form-submit-success.hide-inputs > input {
 			</div>
 			<div class="sidebar">
 				<form method="post"
-					class="p2"
-					action="/newsletter/subscribe"
-					target="_top">
-					<p>Form Submission with Page Update</p>
-					<div class="ampstart-input inline-block relative m0 p0 mb3">
-						<input type="text"
-						class="block border-none p0 m0"
-						name="name"
-						placeholder="Name..."
-						required>
-						<input type="email"
-						class="block border-none p0 m0"
-						name="email"
-						placeholder="Email..."
-						required>
-					</div>
-					<input type="submit"
-						value="Subscribe"
-						class="ampstart-btn caps">
-					<div submit-success>
-						<template type="amp-mustache">
-						Success! Thanks @{{name}} for trying the
-						<code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
-						<code>amp-form</code> handles errors.
-						</template>
-					</div>
-					<div submit-error>
-						<template type="amp-mustache">
-						Error! Thanks @{{name}} for trying the
-						<code>amp-form</code> demo with an error response.
-						</template>
-					</div>
+				class="p2"
+				action-xhr="{{ route('subscribe') }}"
+				target="_top"
+				custom-validation-reporting="show-first-on-submit">
+				<div class="ampstart-input inline-block relative m0 p0 mb3">
+					<input type="text"
+					class="block border-none p0 m0"
+					id="show-first-on-submit-name"
+					name="name"
+					placeholder="Name..."
+					required
+					pattern="\p{L}+\s\p{L}+">
+					<span visible-when-invalid="valueMissing"
+					validation-for="show-first-on-submit-name"></span>
+					<span visible-when-invalid="patternMismatch"
+					validation-for="show-first-on-submit-name">
+					Please enter your first and last name separated by a space (e.g. John Snow)
+					</span>
+					<input type="email"
+					class="block border-none p0 m0"
+					id="show-first-on-submit-email"
+					name="email"
+					placeholder="Email..."
+					required>
+					<span visible-when-invalid="valueMissing"
+					validation-for="show-first-on-submit-email"></span>
+					<span visible-when-invalid="typeMismatch"
+					validation-for="show-first-on-submit-email"></span>
+				</div>
+				{{csrf_field()}}
+				<input type="submit"
+					value="Subscribe"
+					class="ampstart-btn caps">
+				<div submit-success>
+					<template type="amp-mustache">
+					Success! Thanks @{{name}} for trying the
+					<code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
+					<code>amp-form</code> handles errors.
+					</template>
+				</div>
+				<div submit-error>
+					<template type="amp-mustache">
+					Error! Thanks @{{name}} for trying the
+					<code>amp-form</code> demo with an error response.
+					</template>
+				</div>
 				</form>
 			</div>
 			<div class="content-expandable">
