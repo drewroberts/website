@@ -707,6 +707,20 @@ img,picture{margin:0;max-width:100%;}
 		background-size: 8px 13px;
 }
 
+form.amp-form-submit-success [submit-success],
+form.amp-form-submit-error [submit-error]{
+  margin-top: 16px;
+}
+form.amp-form-submit-success [submit-success] {
+  color: green;
+}
+form.amp-form-submit-error [submit-error] {
+  color: red;
+}
+form.amp-form-submit-success.hide-inputs > input {
+  display: none;
+}
+
 
 .icon__close--show,.icon__hamburger--show{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex}
 .icon__close--hide,.icon__hamburger--hide{display:none}
@@ -1135,6 +1149,40 @@ img,picture{margin:0;max-width:100%;}
 				</div>
 			</div>
 			<div class="sidebar">
+				<form method="post"
+					class="p2"
+					action-xhr="/components/amp-form/submit-form-input-text-xhr"
+					target="_top">
+					<p>Form Submission with Page Update</p>
+					<div class="ampstart-input inline-block relative m0 p0 mb3">
+						<input type="text"
+						class="block border-none p0 m0"
+						name="name"
+						placeholder="Name..."
+						required>
+						<input type="email"
+						class="block border-none p0 m0"
+						name="email"
+						placeholder="Email..."
+						required>
+					</div>
+					<input type="submit"
+						value="Subscribe"
+						class="ampstart-btn caps">
+					<div submit-success>
+						<template type="amp-mustache">
+						Success! Thanks {{name}} for trying the
+						<code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
+						<code>amp-form</code> handles errors.
+						</template>
+					</div>
+					<div submit-error>
+						<template type="amp-mustache">
+						Error! Thanks {{name}} for trying the
+						<code>amp-form</code> demo with an error response.
+						</template>
+					</div>
+				</form>
 			</div>
 			<div class="content-expandable">
 			</div>
