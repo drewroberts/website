@@ -1151,7 +1151,7 @@ form.amp-form-submit-success.hide-inputs > input {
 			<div class="sidebar">
 				<form method="post"
 					class="p2"
-					action-xhr="/components/amp-form/submit-form-input-text-xhr"
+					action="/newsletter/subscribe"
 					target="_top">
 					<p>Form Submission with Page Update</p>
 					<div class="ampstart-input inline-block relative m0 p0 mb3">
