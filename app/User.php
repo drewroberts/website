@@ -76,7 +76,7 @@ class User extends Authenticatable
      */
     public function confirmEmail()
     {
-        $this->verified = true;
+        $this->verified_at = Carbon::now();
         $this->id_token = null;
         $this->save();
     }

@@ -19,10 +19,10 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('username')->unique(); // Default generated for user on newsletter registration
             $table->string('password', 60); // Random generated for user on newsletter registration
-            $table->boolean('verified')->default(false); // Change to true when email verified
             $table->string('id_token')->nullable(); // Unique random token for the user. Generated when register, deleted when verify email.
             $table->rememberToken();
             $table->timestamps();
+            $table->timestamp('verified_at')->nullable(); // NUll before email verified
             $table->timestamp('unsubscribed_at')->nullable(); // By default, verified users are newsletter subscribers. Mark time if unsubscribe.
             $table->softDeletes();
         });
