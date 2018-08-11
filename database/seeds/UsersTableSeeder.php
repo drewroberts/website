@@ -18,10 +18,10 @@ class UsersTableSeeder extends Seeder
             'email'         => 'drew@drewroberts.com',
             'username'      => 'DrewRoberts',
             'password'      => bcrypt('password'),
-            'verified'      => 1,
             'id_token'      => NULL,
             'created_at'    => $now,
             'updated_at'    => $now,
+            'verified_at'   => $now,
         ]);
     }
 }
