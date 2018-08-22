@@ -1222,75 +1222,55 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 				</div>
 			</div>
 			<div class="sidebar">
-				<div class="newsletter p-4-xs p-5-m dsp-flex-xs flex-wrap col-12-xs">
-					<div class="newsletter__text col-12-xs">
-						<h2 class="newsletter__heading hed-l m-b-3-xs">Newsletters are the new newsletters.</h2>
-						<p class="newsletter__subheading hed-xs">Sign up for the best of VICE, delivered to your inbox daily.</p>
-					</div>
-					<div class="newsletter__input__container__top dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
-						<div class="newsletter__input dsp-flex-xs">
-							<input id="newsletter__email" type="email" placeholder="Email Address" class="bod-s" value="">
-						</div>
-					</div>
-					<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
-						<div class="newsletter__input dsp-flex-xs">
-							<input id="newsletter__name" type="name" placeholder="Name" class="bod-s" value="">
-						</div>
-						<button class="newsletter__submit__button btn btn-branded dsp-block-xs">subscribe</button>
-					</div>
-				</div>
-
-
 				<form method="post"
 				class="p2"
 				action-xhr="{{ route('subscribe') }}"
 				target="_top"
 				custom-validation-reporting="show-first-on-submit">
-				<div class="ampstart-input inline-block relative m0 p0 mb3">
-					<input type="text"
-					class="block border-none p0 m0"
-					id="show-first-on-submit-name"
-					name="name"
-					placeholder="Name..."
-					required
-					pattern="\p{L}+\s\p{L}+">
-					<span visible-when-invalid="valueMissing"
-					validation-for="show-first-on-submit-name"></span>
-					<span visible-when-invalid="patternMismatch"
-					validation-for="show-first-on-submit-name">
-					Please enter your first and last name separated by a space (e.g. John Snow)
-					</span>
-					<input type="email"
-					class="block border-none p0 m0"
-					id="show-first-on-submit-email"
-					name="email"
-					placeholder="Email..."
-					required>
-					<span visible-when-invalid="valueMissing"
-					validation-for="show-first-on-submit-email"></span>
-					<span visible-when-invalid="typeMismatch"
-					validation-for="show-first-on-submit-email"></span>
-				</div>
-				{{csrf_field()}}
-				<input type="submit"
-					value="Subscribe"
-					class="ampstart-btn caps">
-				<div submit-success>
-					<template type="amp-mustache">
-					Success! Thanks @{{name}} for trying the
-					<code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
-					<code>amp-form</code> handles errors.
-					</template>
-				</div>
-				<div submit-error>
-					<template type="amp-mustache">
-					Error! Thanks @{{name}} for trying the
-					<code>amp-form</code> demo with an error response.
-					</template>
-				</div>
+					{{csrf_field()}}
+					<div class="newsletter p-4-xs p-5-m dsp-flex-xs flex-wrap col-12-xs">
+						<div class="newsletter__text col-12-xs">
+							<h2 class="newsletter__heading hed-l m-b-3-xs">Newsletters are the new newsletters.</h2>
+							<p class="newsletter__subheading hed-xs">Sign up for the best of VICE, delivered to your inbox daily.</p>
+						</div>
+						<div class="newsletter__input__container__top dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
+							<div class="newsletter__input dsp-flex-xs">
+								<input id="newsletter__email" type="email" required placeholder="Email Address" class="bod-s" value="">
+							</div>
+						</div>
+						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-name"></span>
+						
+						<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
+							<div class="newsletter__input dsp-flex-xs">
+								<input id="newsletter__name" type="text" required placeholder="Name" class="bod-s" value="">
+							</div>
+							<input type="submit"
+							value="Subscribe"
+							class="newsletter__submit__button btn btn-branded dsp-block-xs">
+						</div>
+						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-email"></span>
+						<span visible-when-invalid="typeMismatch" validation-for="show-first-on-submit-email"></span>
+					</div>
+					
+					
+					<div submit-success>
+						<template type="amp-mustache">
+						Success! Thanks @{{name}} for trying the
+						<code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
+						<code>amp-form</code> handles errors.
+						</template>
+					</div>
+					<div submit-error>
+						<template type="amp-mustache">
+						Error! Thanks @{{name}} for trying the
+						<code>amp-form</code> demo with an error response.
+						</template>
+					</div>
 				</form>
+
 			</div>
 			<div class="content-expandable">
+
 			</div>
 		</article>
 
