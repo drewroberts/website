@@ -764,6 +764,69 @@ form.amp-form-submit-success.hide-inputs > input {
 .main-footer .copyright{font:.6875rem HelveticaNeueLT,Helvetica Neue,Helvetica,Arial,sans-serif;text-align:center;margin:1.25rem 0;}
 
 
+
+
+
+
+
+/*! CSS Used from: Embedded */
+.grd *,.grd :after,.grd :before{box-sizing:border-box;}
+.grd-algn-item-flex-end-xs{-ms-flex-item-align:end;align-self:flex-end;}
+.col-12-xs{width:100%;}
+.m-b-3-xs{margin-bottom:15px;}
+.p-4-xs{padding:20px;}
+@media only screen and (min-width:650px){
+.p-5-m{padding:30px;}
+}
+.flex-wrap{-ms-flex-wrap:wrap;flex-wrap:wrap;}
+.dsp-block-xs{display:block;}
+.dsp-flex-xs{display:-webkit-box;display:-ms-flexbox;display:flex;}
+/*! CSS Used from: https://www.vice.com/static/vice.422003584069387815cd.css */
+*,:after,:before{box-sizing:inherit;}
+button,input{color:inherit;font:inherit;margin:0;}
+button{overflow:visible;}
+button{text-transform:none;}
+button{-webkit-appearance:none;cursor:pointer;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+input{line-height:normal;}
+.hed-l,.hed-xs,h2{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;}
+.bod-s{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;font-weight:400;}
+.bod-s{line-height:1.6;}
+.hed-l{font-size:20px;font-size:1.25rem;}
+.hed-xs{font-size:12px;font-size:.75rem;}
+.bod-s{font-size:14px;font-size:.875rem;font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;}
+@media only screen and (min-width:650px){
+body .hed-l{font-size:1.75rem;}
+}
+h2,p{margin:0 0 10px;}
+button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
+input[type=email]{display:inline-block;padding:20px;border:1px solid #f1f1f1;width:100%;}
+input[type=email]:focus{outline:0;}
+.btn{-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer;border:none;outline:0;padding:20px;text-decoration:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;text-align:center;white-space:nowrap;font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:700;font-size:12px;font-size:.75rem;font-style:normal;color:#fff;background-color:#000;text-transform:uppercase;}
+.btn:active,.btn:hover{color:#fff;background-color:#aaa;}
+.btn.btn-branded{color:#fff;background-color:#000;}
+.btn.btn-branded:active,.btn.btn-branded:hover{color:#fff;background-color:#aaa;}
+.btn:disabled{background-color:#f1f1f1;color:#d8d8d8;cursor:not-allowed;}
+/*! CSS Used from: Embedded */
+.newsletter{color:#ffffff;background-color:#f1f1f1;}
+.newsletter__input{color:#000000;background-color:#ffffff;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;}
+.newsletter__input input[type="email"]{height:auto;border:0;color:#000000;}
+.newsletter__submit__button{border:0;border-radius:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;line-height:1.6;}
+.newsletter__heading{color:#000000;text-transform:normal;}
+.newsletter__subheading{color:#000000;text-transform:uppercase;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;src:local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;src:local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;src:local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;src:local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;src:local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;src:local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v12/0QIgMX1D_JOuO7HeNtFumtus-7zu-Q.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;src:local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v12/0QIgMX1D_JOuO7HeNthumtus-7zu-Q.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;src:local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v12/0QIgMX1D_JOuO7HeNtNumtus-7zu-Q.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;src:local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v12/0QIgMX1D_JOuO7HeNtJumtus-7zu-Q.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;src:local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v12/0QIgMX1D_JOuO7HeNtxumtus-7w.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
+
 </style>
 </head>
 
@@ -1149,6 +1212,9 @@ form.amp-form-submit-success.hide-inputs > input {
 				</div>
 			</div>
 			<div class="sidebar">
+				<div class="newsletter p-4-xs p-5-m dsp-flex-xs flex-wrap col-12-xs"><div class="newsletter__text col-12-xs"><h2 class="newsletter__heading hed-l m-b-3-xs">Newsletters are the new newsletters.</h2><p class="newsletter__subheading hed-xs">Sign up for the best of VICE, delivered to your inbox daily.</p></div><div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs"><div class="newsletter__input dsp-flex-xs"><input id="newsletter__email" type="email" placeholder="Email Address" class="bod-s" value=""></div><button class="newsletter__submit__button btn btn-branded dsp-block-xs">subscribe</button></div></div>
+
+
 				<form method="post"
 				class="p2"
 				action-xhr="{{ route('subscribe') }}"
