@@ -1227,6 +1227,8 @@ input[type=email]:focus{outline:0;}
 						<div class="newsletter__input dsp-flex-xs">
 							<input id="newsletter__email" type="email" placeholder="Name" class="bod-s" value="">
 						</div>
+					</div>
+					<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
 						<div class="newsletter__input dsp-flex-xs">
 							<input id="newsletter__email" type="email" placeholder="Email Address" class="bod-s" value="">
 						</div>
