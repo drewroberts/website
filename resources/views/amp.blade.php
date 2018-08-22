@@ -1218,7 +1218,21 @@ input[type=email]:focus{outline:0;}
 				</div>
 			</div>
 			<div class="sidebar">
-				<div class="newsletter p-4-xs p-5-m dsp-flex-xs flex-wrap col-12-xs"><div class="newsletter__text col-12-xs"><h2 class="newsletter__heading hed-l m-b-3-xs">Newsletters are the new newsletters.</h2><p class="newsletter__subheading hed-xs">Sign up for the best of VICE, delivered to your inbox daily.</p></div><div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs"><div class="newsletter__input dsp-flex-xs"><input id="newsletter__email" type="email" placeholder="Email Address" class="bod-s" value=""></div><button class="newsletter__submit__button btn btn-branded dsp-block-xs">subscribe</button></div></div>
+				<div class="newsletter p-4-xs p-5-m dsp-flex-xs flex-wrap col-12-xs">
+					<div class="newsletter__text col-12-xs">
+						<h2 class="newsletter__heading hed-l m-b-3-xs">Newsletters are the new newsletters.</h2>
+						<p class="newsletter__subheading hed-xs">Sign up for the best of VICE, delivered to your inbox daily.</p>
+					</div>
+					<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
+						<div class="newsletter__input dsp-flex-xs">
+							<input id="newsletter__email" type="email" placeholder="Name" class="bod-s" value="">
+						</div>
+						<div class="newsletter__input dsp-flex-xs">
+							<input id="newsletter__email" type="email" placeholder="Email Address" class="bod-s" value="">
+						</div>
+						<button class="newsletter__submit__button btn btn-branded dsp-block-xs">subscribe</button>
+					</div>
+				</div>
 
 
 				<form method="post"
