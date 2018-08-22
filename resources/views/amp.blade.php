@@ -777,6 +777,11 @@ form.amp-form-submit-success.hide-inputs > input {
 
 /*! CSS Used for Sidebar */
 .newsletter__input__container__top {margin-bottom: 10px;}
+input[type=email]{display:inline-block;padding:20px;border:1px solid #f1f1f1;width:100%;}
+input[type=email]:focus{outline:0;}
+input[type=name]{display:inline-block;padding:20px;border:1px solid #f1f1f1;width:100%;}
+input[type=name]:focus{outline:0;}
+
 .grd *,.grd :after,.grd :before{box-sizing:border-box;}
 .grd-algn-item-flex-end-xs{-ms-flex-item-align:end;align-self:flex-end;}
 .col-12-xs{width:100%;}
@@ -807,8 +812,6 @@ body .hed-l{font-size:1.75rem;}
 }
 h2,p{margin:0 0 10px;}
 button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
-input[type=email]{display:inline-block;padding:20px;border:1px solid #f1f1f1;width:100%;}
-input[type=email]:focus{outline:0;}
 .btn{-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer;border:none;outline:0;padding:20px;text-decoration:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;text-align:center;white-space:nowrap;font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:700;font-size:12px;font-size:.75rem;font-style:normal;color:#fff;background-color:#000;text-transform:uppercase;}
 .btn:active,.btn:hover{color:#fff;background-color:#aaa;}
 .btn.btn-branded{color:#fff;background-color:#000;}
