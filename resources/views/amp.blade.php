@@ -571,8 +571,14 @@
 		.video-infocard__show-summary{width:100%;min-height:120px;}
 
 
-		.video-infocard__show-summary .episode-info{color:#000;text-transform:uppercase;}
-		.video-infocard__show-summary .video-title{color:#000;}
+		.video-infocard__show-summary .episode-info{ 
+			color:#000; 
+			text-transform:uppercase; 
+			max-width: 80%; 
+		}
+		.video-infocard__show-summary .video-title{ 
+			color:#000;
+		}
 		.video-infocard__show-summary .video-description{margin-bottom:15px;}
 		.video-infocard__desktop-section{display:block;margin:0 0 15px 30px;}
 		 @media only screen and (min-width:850px){
