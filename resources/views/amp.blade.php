@@ -775,7 +775,8 @@ form.amp-form-submit-success.hide-inputs > input {
 
 
 
-/*! CSS Used from: Embedded */
+/*! CSS Used for Sidebar */
+.newsletter__input__container__top {margin-bottom: 10px;}
 .grd *,.grd :after,.grd :before{box-sizing:border-box;}
 .grd-algn-item-flex-end-xs{-ms-flex-item-align:end;align-self:flex-end;}
 .col-12-xs{width:100%;}
@@ -1223,14 +1224,14 @@ input[type=email]:focus{outline:0;}
 						<h2 class="newsletter__heading hed-l m-b-3-xs">Newsletters are the new newsletters.</h2>
 						<p class="newsletter__subheading hed-xs">Sign up for the best of VICE, delivered to your inbox daily.</p>
 					</div>
-					<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
+					<div class="newsletter__input__container__top dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
 						<div class="newsletter__input dsp-flex-xs">
-							<input id="newsletter__email" type="email" placeholder="Name" class="bod-s" value="">
+							<input id="newsletter__email" type="email" placeholder="Email Address" class="bod-s" value="">
 						</div>
 					</div>
 					<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
 						<div class="newsletter__input dsp-flex-xs">
-							<input id="newsletter__email" type="email" placeholder="Email Address" class="bod-s" value="">
+							<input id="newsletter__name" type="name" placeholder="Name" class="bod-s" value="">
 						</div>
 						<button class="newsletter__submit__button btn btn-branded dsp-block-xs">subscribe</button>
 					</div>
