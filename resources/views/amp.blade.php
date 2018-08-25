@@ -1250,20 +1250,20 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 						</div>
 						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-email"></span>
 						<span visible-when-invalid="typeMismatch" validation-for="show-first-on-submit-email"></span>
-					</div>
-					
-					<div submit-success>
-						<template type="amp-mustache">
-						Success! Thanks @{{name}} for trying the
-						<code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
-						<code>amp-form</code> handles errors.
-						</template>
-					</div>
-					<div submit-error>
-						<template type="amp-mustache">
-						Error! Thanks @{{name}} for trying the
-						<code>amp-form</code> demo with an error response.
-						</template>
+
+						<div submit-success>
+								<template type="amp-mustache">
+								Success! Thanks @{{name}} for trying the
+								<code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
+								<code>amp-form</code> handles errors.
+								</template>
+							</div>
+							<div submit-error>
+								<template type="amp-mustache">
+								Error! Thanks @{{name}} for trying the
+								<code>amp-form</code> demo with an error response.
+								</template>
+							</div>
 					</div>
 				</form>
 
