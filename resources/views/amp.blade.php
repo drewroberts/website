@@ -1235,14 +1235,14 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 						</div>
 						<div class="newsletter__input__container__top dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
 							<div class="newsletter__input dsp-flex-xs">
-								<input id="newsletter__email" type="email" required placeholder="Email Address" class="bod-s" value="">
+								<input id="email" type="email" required placeholder="Email Address" class="bod-s" value="">
 							</div>
 						</div>
 						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-name"></span>
 						
 						<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
 							<div class="newsletter__input dsp-flex-xs">
-								<input id="newsletter__name" type="text" required placeholder="Name" class="bod-s" value="">
+								<input id="name" type="text" required placeholder="Name" class="bod-s" value="">
 							</div>
 							<input type="submit"
 							value="Subscribe"
