@@ -779,8 +779,8 @@ form.amp-form-submit-success.hide-inputs > input {
 .newsletter__input__container__top {margin-bottom: 10px;}
 input[type=email]{display:inline-block;padding:20px;border:1px solid #f1f1f1;width:100%;}
 input[type=email]:focus{outline:0;}
-input[type=name]{display:inline-block;padding:20px;border:1px solid #f1f1f1;width:100%;}
-input[type=name]:focus{outline:0;}
+input[type=text]{display:inline-block;padding:20px;border:1px solid #f1f1f1;width:100%;}
+input[type=text]:focus{outline:0;}
 
 .grd *,.grd :after,.grd :before{box-sizing:border-box;}
 .grd-algn-item-flex-end-xs{-ms-flex-item-align:end;align-self:flex-end;}
@@ -1251,7 +1251,6 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-email"></span>
 						<span visible-when-invalid="typeMismatch" validation-for="show-first-on-submit-email"></span>
 					</div>
-					
 					
 					<div submit-success>
 						<template type="amp-mustache">
