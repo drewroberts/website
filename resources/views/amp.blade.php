@@ -1217,7 +1217,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 					{{csrf_field()}}
 					<div class="newsletter p-4-xs p-5-m dsp-flex-xs flex-wrap col-12-xs">
 						<div class="newsletter__text col-12-xs">
-							<h2 class="newsletter__heading hed-l m-b-3-xs">Get the best Newsletters for Web Developers.</h2>
+							<h2 class="newsletter__heading hed-l m-b-3-xs">Get the #1 Newsletter for Programmers.</h2>
 							<p class="newsletter__subheading hed-xs">Sign up for coding tips and personalized insights, delivered weekly.</p>
 						</div>
 						<div class="newsletter__input__container__top dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
