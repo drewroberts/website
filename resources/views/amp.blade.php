@@ -680,28 +680,29 @@ img,picture{margin:0;max-width:100%;}
 
 .amp-carousel-button {
 	transition: height .25s;
-  position: absolute;
+	position: absolute;
 	top: 25%;
 	height: 135px;
-  width: 30px;
-  padding: 9px;
-  z-index: 2;
-  border: 0;
-  border-radius: 0;
-  background-color: #000;
-  border-color: #fff;
+	width: 30px;
+	padding: 9px;
+	z-index: 2;
+	border: 0;
+	border-radius: 0;
+	background-color: #000;
+	border-color: #fff;
+	cursor: pointer;
 }
 
 .amp-carousel-button-prev {
-  left: 0px;
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13"><path d="M8 11.63L6.607 13 0 6.5 6.607 0 8 1.37 2.786 6.5z" fill="#fff" /></svg>');
+	left: 0px;
+	background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13"><path d="M8 11.63L6.607 13 0 6.5 6.607 0 8 1.37 2.786 6.5z" fill="#fff" /></svg>');
 	background-size: 8px 13px;
 }
 
 .amp-carousel-button-next {
-    right: 0px;
-		background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13"><path d="M0 11.63L1.393 13 8 6.5 1.393 0 0 1.37 5.214 6.5z" fill="#fff" /></svg>');
-		background-size: 8px 13px;
+	right: 0px;
+	background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13"><path d="M0 11.63L1.393 13 8 6.5 1.393 0 0 1.37 5.214 6.5z" fill="#fff" /></svg>');
+	background-size: 8px 13px;
 }
 
 form.amp-form-submit-success [submit-success],
