@@ -269,6 +269,7 @@
 			height:50px;
 			float:right;
 			transform:scale(1.3,1);
+			cursor: pointer;
 		}
 
 		.behind-nav {
@@ -561,7 +562,7 @@
 			padding: 10px 15px;
 			margin-right: 10px;
 			text-transform: uppercase;
-			cursor:pointer;
+			cursor: pointer;
 		}
 		.video-infocard__show-summary .video-title{ 
 			color:#000;
@@ -723,8 +724,8 @@ form.amp-form-submit-success.hide-inputs > input {
 
 .share-lightbox{background:rgba(0,0,0,.8);position:absolute;width:100%;height:100%;z-index:11}
 .share-lightbox-content{margin:0 auto;max-width:1480px;}
-.close-button-wrapper{padding:12px 15px;height:50px;text-align:right}
-.close-button-wrapper .close-button{width:24px;height:24px;margin-left:auto;}
+.close-button-wrapper{padding:12px 15px;height:50px;text-align:right;}
+.close-button-wrapper .close-button{width:24px;height:24px;margin-left:auto; cursor: pointer;}
 .share-text{color:#fff;font-family:Work Sans,sans-serif;font-size:20px;max-width:900px;padding-left:10%;margin: 150px auto 15px auto;text-transform:uppercase;}
 @media only screen and (min-width:900px){
 .share-text{padding-left:90px;}
