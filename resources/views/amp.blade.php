@@ -569,6 +569,9 @@
 		.video-infocard__show-card .badge{width:40px;height:40px;}
 		}
 		.video-infocard__show-summary{width:100%;min-height:120px;}
+		.season-and-share{
+			justify-content: space-between;
+		}
 
 
 		.video-infocard__show-summary .episode-info{ 
@@ -1187,9 +1190,9 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 					</div>
 				</div>
 				<div class="video-infocard__show-summary">
-					<div class="dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
+					<div class="season-and-share dsp-flex-xs">
 						<div><h6 class="episode-info hed-xs"><a href="/amp"><div class="show__season__episode hed-xs m-b-1-xs"><span>AMP / EP1</span></div></a></h6></div>
-						<div>Share</div>
+						<div class="share-button hed-xs" on="tap:share-lightbox" role="button" tabindex="3">Share</div>
 					</div>
 					<h4 class="video-title hed-l">AMP and PWA</h4>
 					<div class="video-description bod-m">In this tutorial we dive into integrating both AMP (Accelerated Mobile Pages) and PWA (Progressive Web Apps) in your web development. AMP can preload the service worker for your PWA and Progressive Webs Apps can serve Accelerated Mobile Pages. This framework is important for fast first pageloads and fast subsequent views.</div>
