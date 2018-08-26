@@ -572,12 +572,16 @@
 		.season-and-share{
 			justify-content: space-between;
 		}
-
-
-		.video-infocard__show-summary .episode-info{ 
+		.episode-info{ 
 			color:#000; 
-			text-transform:uppercase; 
-			max-width: 80%; 
+			text-transform:uppercase;
+		}
+		.share-button{ 
+			color: #ffffff;
+			background: #000000;
+			padding: 10px 15px;
+			margin-right: 10px;
+			text-transform: uppercase;
 		}
 		.video-infocard__show-summary .video-title{ 
 			color:#000;
