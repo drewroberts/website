@@ -1187,7 +1187,10 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 					</div>
 				</div>
 				<div class="video-infocard__show-summary">
-					<h6 class="episode-info hed-xs"><a href="/amp"><div class="show__season__episode hed-xs m-b-1-xs"><span>AMP / EP1</span></div></a></h6>
+					<div class="dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
+						<div><h6 class="episode-info hed-xs"><a href="/amp"><div class="show__season__episode hed-xs m-b-1-xs"><span>AMP / EP1</span></div></a></h6></div>
+						<div>Share</div>
+					</div>
 					<h4 class="video-title hed-l">AMP and PWA</h4>
 					<div class="video-description bod-m">In this tutorial we dive into integrating both AMP (Accelerated Mobile Pages) and PWA (Progressive Web Apps) in your web development. AMP can preload the service worker for your PWA and Progressive Webs Apps can serve Accelerated Mobile Pages. This framework is important for fast first pageloads and fast subsequent views.</div>
 					<div class="more-info-card">
