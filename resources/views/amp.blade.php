@@ -525,28 +525,7 @@
 		}
 		.video-infocard header{display:-webkit-box;display:-ms-flexbox;display:flex;}
 
-		.video-infocard__share-icons .social-list{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}
-		.video-infocard__share-icons .social-list img{margin-right:0;}
-		.video-infocard__share-icons .social-list .icon_text{display:none;}
-		 @media only screen and (min-width:850px){
-		.video-infocard__share-icons .social-list{-ms-flex-wrap:wrap;flex-wrap:wrap;}
-		}
-		.video-infocard__share-icons .social-list .main-list{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-ms-flex-pack:distribute;justify-content:space-around;}
-		 @media only screen and (min-width:400px){
-		.video-infocard__share-icons .social-list .main-list img{margin-right:5px;}
-		.video-infocard__share-icons .social-list .main-list .icon_text{display:block;}
-		}
-		 @media only screen and (min-width:650px){
-		.video-infocard__share-icons .social-list .main-list{margin:auto;}
-		}
-		 @media only screen and (min-width:850px){
-		.video-infocard__share-icons .social-list .main-list{width:300px;}
-		}
-		.video-infocard__share-icons .social-list .main-list .social-list--item{width:100%;}
-		.video-infocard__share-icons .social-list .main-list .social-list--item .social-tray__link{margin:0;width:90%;}
-		.video-infocard__share-icons__toggle{cursor:pointer;float:right;text-decoration:none;color:#f1f1f1;background:#aaa;border-radius:50%;width:30px;height:30px;position:relative;}
-		.video-infocard__share-icons__toggle:active,.video-infocard__share-icons__toggle:focus,.video-infocard__share-icons__toggle:hover,.video-infocard__share-icons__toggle:visited{color:#f1f1f1;}
-		.video-infocard__share-icons__toggle .icon{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);display:block;}
+		
 		.video-infocard__show-card{position:relative;max-height:120px;}
 		 @media only screen and (min-width:1050px){
 		.video-infocard__show-card{max-height:150px;}
@@ -576,12 +555,13 @@
 			color:#000; 
 			text-transform:uppercase;
 		}
-		.share-button{ 
+		.share-button{
 			color: #ffffff;
 			background: #000000;
 			padding: 10px 15px;
 			margin-right: 10px;
 			text-transform: uppercase;
+			cursor:pointer;
 		}
 		.video-infocard__show-summary .video-title{ 
 			color:#000;
@@ -1186,13 +1166,6 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 	<div class="page-content">
 		<article>
 			<div class="content">
-				<div class="video-infocard__desktop-section">
-					<div class="video-infocard__share-icons">
-						<div class="video-infocard__share-icons__toggle" on="tap:share-lightbox" role="button" tabindex="3">
-							<amp-img width="15px" height="15px" src="https://vice-web-statics-cdn.vice.com/icons/more.svg" class="icon icon-more"></amp-img>
-						</div>
-					</div>
-				</div>
 				<div class="video-infocard__show-summary">
 					<div class="season-and-share dsp-flex-xs">
 						<div><h6 class="episode-info hed-xs"><a href="/amp"><div class="show__season__episode hed-xs m-b-1-xs"><span>AMP / EP1</span></div></a></h6></div>
