@@ -564,6 +564,9 @@
 			text-transform: uppercase;
 			cursor: pointer;
 		}
+		.share-button:hover {
+			background:#aaa;
+		}
 		.video-infocard__show-summary .video-title{ 
 			color:#000;
 		}
@@ -738,7 +741,7 @@ form.amp-form-submit-success.hide-inputs > input {
 .menu-lightbox{background:black;position:absolute;width:100%;height:100%;z-index:11}
 .menu-lightbox-content{margin:0 auto;}
 .menu-close-button-wrapper{padding:12px 15px;height:50px;float:right;}
-.menu-close-button-wrapper .menu-close-button{width:24px;height:24px;}
+.menu-close-button-wrapper .menu-close-button{width:24px;height:24px; cursor: pointer;}
 
 
 
