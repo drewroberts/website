@@ -1240,7 +1240,7 @@ div.button:hover {
 <amp-lightbox id="contact-lightbox" layout="nodisplay">
     <div class="contact-lightbox">
       <div class="contact-lightbox-content">
-        <div class="close-button-wrapper" on="tap:share-lightbox.close" role="button" tabindex="0">
+        <div class="close-button-wrapper" on="tap:contact-lightbox.close" role="button" tabindex="0">
           <svg class="close-button" id="close" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><path d="M448,402.745L301.255,256L448,109.255L402.745,64L256,210.745L109.255,64L64,109.255L210.745,256L64,402.745L109.255,448L256,301.255L402.745,448L448,402.745z"></path></svg>
         </div>
         
