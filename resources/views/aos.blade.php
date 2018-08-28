@@ -264,7 +264,7 @@ div.button:hover {
   background-color: #0f9d58;
 }
 
-.contact-lightbox{background:rgba(0,0,0,.8);position:absolute;width:100%;height:100%;z-index:11}
+.contact-lightbox{background:#FFFFFF;position:absolute;width:100%;height:100%;z-index:11}
 .contact-lightbox-content{margin:0 auto;max-width:1480px;}
 .close-button-wrapper{padding:12px 15px;height:50px;text-align:right;}
 .close-button-wrapper .close-button{width:24px;height:24px;margin-left:auto; cursor: pointer;}
