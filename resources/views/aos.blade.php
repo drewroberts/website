@@ -328,7 +328,7 @@ div.button:hover {
 }
 
 .banner--optimise {
-  background-image: url("https://optimize.withgoogle.com/assets/hero-optimize.jpg");
+  background-image: url("https://drewroberts.com/img/office-downtown.jpg");
 }
 
 .banner--survey {
