@@ -1282,7 +1282,48 @@ div.button:hover {
         <div class="close-button-wrapper" on="tap:contact-lightbox.close" role="button" tabindex="0">
           <svg class="close-button" id="close" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><path d="M448,402.745L301.255,256L448,109.255L402.745,64L256,210.745L109.255,64L64,109.255L210.745,256L64,402.745L109.255,448L256,301.255L402.745,448L448,402.745z"></path></svg>
         </div>
+        <div class="">
+          <form method="post"
+          action-xhr="/inquiry/furniture"
+          target="_top"
+          on="submit:msg.hide;submit-success:success-lightbox;submit-error:error-lightbox">
+            @csrf
+            <fieldset>
+                <span>Name</span>
+                <input placeholder="Full Name" type="text" name="name" id="name" required>
+            </fieldset>
         
+            <fieldset>  
+                <span>Email</span>
+                <input placeholder="Email" type="email" name="email" id="email" required>
+            </fieldset>
+        
+            <fieldset>  
+                <span>Phone</span>
+                <input placeholder="Phone" type="text" name="phone" id="phone">
+            </fieldset>
+        
+            <fieldset class="btn">
+                <input class="btn-primary" type="submit" value="Request Free Consultation">
+            </fieldset>
+        
+            <!--Error Messages-->
+            <span visible-when-invalid="valueMissing" validation-for="name"></span>
+            <span visible-when-invalid="valueMissing" validation-for="email"></span>
+            <span visible-when-invalid="valueMissing" validation-for="phone"></span>
+        
+            <span visible-when-invalid="typeMismatch" validation-for="name"></span>
+            <span visible-when-invalid="typeMismatch" validation-for="email"></span>
+            <span visible-when-invalid="typeMismatch" validation-for="phone"></span>
+            <!--End Error Messages-->
+        
+            <div submit-error>
+                <template type="amp-mustache">
+                    Oops!, Something went wrong. Please try again.
+                </template>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </amp-lightbox>

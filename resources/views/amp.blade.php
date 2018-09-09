@@ -1257,6 +1257,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 
 			</div>
 			<div class="content-expandable">
+				
 
 			</div>
 		</article>
@@ -1396,7 +1397,6 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 				</div>
 		</header>
     <div class="menu-lightbox-content">
-
 
     </div>
   </div>
