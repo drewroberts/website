@@ -1320,7 +1320,7 @@ div.button:hover {
         
             <div submit-error>
                 <template type="amp-mustache">
-                    Oops!, Something went wrong. Please try again.
+                    Oops! Something went wrong. Please try again.
                 </template>
             </div>
           </form>
