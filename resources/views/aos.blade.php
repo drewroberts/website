@@ -1159,6 +1159,28 @@ div.button:hover {
   bottom: 0;
 } */
 
+.contact-form {
+  max-width: 800px;
+  margin: 30px auto 0px auto;
+}
+
+/*! CSS Used from: https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css */
+*,::after,::before{box-sizing:border-box;}
+input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+input{overflow:visible;}
+.form-control{display:block;width:100%;padding:.375rem .75rem;font-size:1rem;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.form-control::-ms-expand{background-color:transparent;border:0;}
+.form-control:focus{color:#495057;background-color:#fff;border-color:#80bdff;outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25);}
+.form-control::-webkit-input-placeholder{color:#6c757d;opacity:1;}
+.form-control::-moz-placeholder{color:#6c757d;opacity:1;}
+.form-control:-ms-input-placeholder{color:#6c757d;opacity:1;}
+.form-control::-ms-input-placeholder{color:#6c757d;opacity:1;}
+.form-control::placeholder{color:#6c757d;opacity:1;}
+.form-control:disabled{background-color:#e9ecef;opacity:1;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+}
+
   </style>
 </head>
 
@@ -1282,7 +1304,7 @@ div.button:hover {
         <div class="close-button-wrapper" on="tap:contact-lightbox.close" role="button" tabindex="0">
           <svg class="close-button" id="close" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><path d="M448,402.745L301.255,256L448,109.255L402.745,64L256,210.745L109.255,64L64,109.255L210.745,256L64,402.745L109.255,448L256,301.255L402.745,448L448,402.745z"></path></svg>
         </div>
-        <div class="">
+        <div class="contact-form">
           <form id="contact"
           method="post"
           action-xhr="/inquiry/furniture"
