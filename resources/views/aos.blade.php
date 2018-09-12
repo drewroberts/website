@@ -1178,7 +1178,7 @@ input{overflow:visible;}
 .form-control::placeholder{color:#6c757d;opacity:1;}
 .form-control:disabled{background-color:#e9ecef;opacity:1;}
 @media print{
-*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+*,::after,::before{text-shadow:none;box-shadow:none;}
 }
 
   </style>
