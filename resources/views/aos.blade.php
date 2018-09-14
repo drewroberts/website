@@ -1178,6 +1178,9 @@ label{display:inline-block;margin-bottom:.5rem;}
 .form-control::-ms-input-placeholder{color:#6c757d;opacity:1;}
 .form-control::placeholder{color:#6c757d;opacity:1;}
 .form-control:disabled{background-color:#e9ecef;opacity:1;}
+.form-group{margin-bottom:1rem;}
+.form-text{display:block;margin-top:.25rem;}
+.text-muted{color:#6c757d;}
 @media print{
 *,::after,::before{text-shadow:none;box-shadow:none;}
 }
@@ -1312,20 +1315,20 @@ label{display:inline-block;margin-bottom:.5rem;}
           target="_top"
           on="submit:msg.hide;submit-success:success-lightbox;submit-error:error-lightbox">
             @csrf
-            <fieldset>
-                <span>Name</span>
-                <input placeholder="Full Name" type="text" name="name" id="name" required>
-            </fieldset>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Full Name" required>
+            </div>
         
-            <fieldset>  
-                <span>Email</span>
-                <input placeholder="Email" type="email" name="email" id="email" required>
-            </fieldset>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email" required>
+            </div>
         
-            <fieldset>  
-                <span>Phone</span>
-                <input placeholder="Phone" type="text" name="phone" id="phone">
-            </fieldset>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
+            </div>
         
             <fieldset class="btn">
                 <input class="btn-primary" type="submit" value="Request Free Consultation">
