@@ -264,6 +264,24 @@ div.button:hover {
   background-color: #0f9d58;
 }
 
+input.button {
+  cursor: pointer;
+  background-color: #0b8043;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  transition: background-color 0.1s linear;
+  -webkit-font-smoothing: antialiased;
+}
+
+input.button:hover {
+  background-color: #0f9d58;
+}
+
 .contact-lightbox{background:#FFFFFF;position:absolute;width:100%;height:100%;z-index:11}
 .contact-lightbox-content{margin:0 auto;max-width:1480px;}
 .close-button-wrapper{padding:12px 15px;height:50px;text-align:right;}
@@ -1331,7 +1349,7 @@ label{display:inline-block;margin-bottom:.5rem;}
             </div>
         
             <fieldset class="btn">
-                <input class="btn-primary" type="submit" value="Request Free Consultation">
+                <input class="button" type="submit" value="Request Free Consultation">
             </fieldset>
         
             <!--Error Messages-->
