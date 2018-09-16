@@ -1347,10 +1347,8 @@ label{display:inline-block;margin-bottom:.5rem;}
                 <label for="phone">Phone</label>
                 <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
             </div>
-        
-            <fieldset class="btn">
-                <input class="button" type="submit" value="Request Free Consultation">
-            </fieldset>
+
+            <input class="button" type="submit" value="Request Free Consultation">
         
             <!--Error Messages-->
             <span visible-when-invalid="valueMissing" validation-for="name"></span>
