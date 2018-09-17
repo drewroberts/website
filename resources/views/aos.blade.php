@@ -282,6 +282,15 @@ input.button:hover {
   background-color: #0f9d58;
 }
 
+.btn .button {
+  border-radius: 3px;
+  display: block;
+  margin: 3rem auto 0 auto;
+  max-width: 170px;
+  padding: 1rem;
+  text-align: center;
+}
+
 .contact-lightbox{background:#FFFFFF;position:absolute;width:100%;height:100%;z-index:11}
 .contact-lightbox-content{margin:0 auto;max-width:1480px;}
 .close-button-wrapper{padding:12px 15px;height:50px;text-align:right;}
@@ -1347,8 +1356,10 @@ label{display:inline-block;margin-bottom:.5rem;}
                 <label for="phone">Phone</label>
                 <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
             </div>
-
-            <input class="button" type="submit" value="Request Free Consultation">
+        
+            <fieldset class="btn">
+                <input class="button" type="submit" value="Request Free Consultation">
+            </fieldset>
         
             <!--Error Messages-->
             <span visible-when-invalid="valueMissing" validation-for="name"></span>
