@@ -286,7 +286,6 @@ input.button:hover {
   border-radius: 3px;
   display: block;
   margin: 3rem auto 0 auto;
-  max-width: 170px;
   padding: 1rem;
   text-align: center;
 }
@@ -1189,6 +1188,7 @@ input.button:hover {
 .contact-form {
   max-width: 800px;
   margin: 30px auto 0px auto;
+  padding: 10px;
 }
 
 /*! CSS Used from: https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css */
