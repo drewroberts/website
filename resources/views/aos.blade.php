@@ -1188,7 +1188,7 @@ input.button:hover {
 .contact-form {
   max-width: 800px;
   margin: 30px auto 0px auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 /*! CSS Used from: https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css */
