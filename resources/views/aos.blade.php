@@ -1186,7 +1186,7 @@ input.button:hover {
 } */
 
 .contact-form {
-  max-width: 800px;
+  max-width: 700px;
   margin: 30px auto 0px auto;
   padding: 20px;
 }
