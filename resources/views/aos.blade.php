@@ -1338,7 +1338,7 @@ label{display:inline-block;margin-bottom:.5rem;}
         <div class="contact-form">
           <form id="contact"
           method="post"
-          action-xhr="/inquiry/furniture"
+          action-xhr="https://aos.drewroberts.com/forms/furniture"
           target="_top"
           on="submit:msg.hide;submit-success:success-lightbox;submit-error:error-lightbox">
             @csrf
