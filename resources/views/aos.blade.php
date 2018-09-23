@@ -1339,8 +1339,7 @@ label{display:inline-block;margin-bottom:.5rem;}
           <form id="contact"
           method="post"
           action-xhr="https://aos.drewroberts.com/forms/furniture"
-          target="_top"
-          on="submit:msg.hide;submit-success:success-lightbox;submit-error:error-lightbox">
+          target="_top">
             @csrf
             <div class="form-group">
                 <label for="name">Name</label>
