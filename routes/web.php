@@ -19,10 +19,6 @@ Route::get('amp', function () {
     return view('amp');
 });
 
-Route::get('aos', function () {
-    return view('aos');
-});
-
 Route::get('newsletter', 'Auth\RegisterController@showNewsletter')->name('newsletter'); // Build longer style landing page
 Route::group(['prefix' => 'newsletter'], function () {
     Route::get('subscribe', 'Auth\RegisterController@showRegistrationForm')->name('subscribe'); // Build short form landing page
@@ -50,10 +46,12 @@ Route::group(['prefix' => 'together'], function () {
 
 
 
-Route::get('recommendations', function () { return redirect('recommends'); });
+Route::get('recommendations', function () {
+    return redirect('recommends');
+});
 Route::get('recommends', 'RecommendationController@index')->name('recommendations');
 Route::group(['prefix' => 'recommends'], function () {
-  // All subURLs of /recommends/ will be in those controllers and included in this group.
+    // All subURLs of /recommends/ will be in those controllers and included in this group.
 });
 
 Route::get('{topic}/resources', 'ResourceController@index');
