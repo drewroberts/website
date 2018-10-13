@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/drewroberts
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://drewroberts.com
+  * I am drewroberts (https://keybase.io/drewroberts) on keybase.
+  * I have a public key ASB7rB2MHG-Lpx4VNTRPwiX2seOwKsJ_YngU34051-l-kwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207bac1d8c1c6f8ba71e1535344fc225f6b1e3b02ac27f627814df8d39d7e97e930a",
+      "host": "keybase.io",
+      "kid": "01207bac1d8c1c6f8ba71e1535344fc225f6b1e3b02ac27f627814df8d39d7e97e930a",
+      "uid": "6b1fe644e7f2bf0c1c00b7075cbf2119",
+      "username": "drewroberts"
+    },
+    "merkle_root": {
+      "ctime": 1544458719,
+      "hash": "1f061e71dcee73864fd91b5869084a203c28f31af5e417f646a6d2139fe884249dbdd60c3aeb83e505c57c7c27d45ab849c4758bb5d5b0121db83b2162d54096",
+      "hash_meta": "2f2de55c6e81bb5269caad028eb6a938e9e52f05eb2b71f964b9fb124986dc11",
+      "seqno": 4085781
+    },
+    "service": {
+      "entropy": "astzq+2bs2S+jY99zEzkJaeq",
+      "hostname": "drewroberts.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.11.0"
+  },
+  "ctime": 1544458724,
+  "expire_in": 504576000,
+  "prev": "178646e51147771d55d79c889786537693905c49cb633020497a2821b4d42ce8",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEge6wdjBxvi6ceFTU0T8Il9rHjsCrCf2J4FN+NOdfpfpMKp3BheWxvYWTESpcCBsQgF4ZG5RFHdx1V15yIl4ZTdpOQXEnLYzAgSXooIbTULOjEIHW4ouoKVrRbxsbc5d7Cx20gvYvusb2Weez2WjYb4HcvAgHCo3NpZ8RAuXvm+kjOn8M/65zMtd7qKcyRVYISIMf7zBczOPE1twfuqdGhmic9Vj3beRUgVflmTtfunb7h6LGzfVdl9kKNDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMczFWm5P/14LDIWO/iSqW3KfMZHYWWajPKFf+SiQZLVo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/drewroberts
+
+==================================================================
