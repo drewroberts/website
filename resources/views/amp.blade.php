@@ -16,7 +16,7 @@
 			"https://twitter.com/DrewRoberts",
 			"https://www.linkedin.com/in/DrewRoberts",
 			"https://github.com/DrewRoberts",
-			"https://plus.google.com/+DrewRoberts"
+			"https://www.youtube.com/DrewRoberts"
 		]
 	}
 	</script>
@@ -25,9 +25,12 @@
 	{
 		"@context":"http://schema.org",
 		"@type":"NewsArticle",
-		"mainEntityOfPage":{"@type":"WebPage",
-		"@id":"https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/"},
-		"headline":"FSU coach Willie Taggart buys lunch for local football campers, wins the day","datePublished":"2018-06-07T16:28:10+00:00",
+		"mainEntityOfPage": {
+			"@type":"WebPage",
+			"@id":"https://theundefeated.com/whhw/fsu-coach-willie-taggart-buys-lunch-for-local-football-campers-wins-the-day/"
+		},
+		"headline":"FSU coach Willie Taggart buys lunch for local football campers, wins the day",
+		"datePublished":"2018-06-07T16:28:10+00:00",
 		"dateModified":"2018-06-07T17:16:22+00:00",
 		"publisher": {
 			"@type":"Organization",
@@ -877,7 +880,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 					</div>
 				  <div role="tabpanel" class="tabContent">
 						<ul class="playlist-rows">
-							<a href="/en_us/video/munchies-cholula-how-to-pizza-pocket-matty-matheson/5b087695f1cdb37607452231?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<div><div class="image__mask image__mask--border"></div><p class="hed-xs">Now Playing</p></div>
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/08/5b087695f1cdb37607452231/5b087695f1cdb37607452231-1527610510190.jpg?crop=0.9995494277732719xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
@@ -887,7 +890,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Pizza Pocket with Matty Matheson</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/vice-oobah-the-time-i-faked-my-way-to-the-top-of-paris-fashion-week/5b291b3df1cdb33c1668b761?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/29/5b291b3df1cdb33c1668b761/5b291b3df1cdb33c1668b761-1529682734447.jpg?crop=0.9995537706381079xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -896,7 +899,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">I Made My Shed The #1 Restaurant In London</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/boardly-downtown-skateboarder-briana-king/5ac79951f1cdb33e9b684ee4?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/c7/5ac79951f1cdb33e9b684ee4/5ac79951f1cdb33e9b684ee4-1525798916348.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -905,7 +908,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Boardly: Downtown Skateboarder Briana King</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/34/5b3411a8be40774b08446ad1/5b3411a8be40774b08446ad1-1530193202923.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -914,7 +917,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">The Mexican town that kicked out politicians and started over</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-and-friends-austin-cholula/5b1e66e3f1cdb365213285c8?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/1e/5b1e66e3f1cdb365213285c8/5b1e66e3f1cdb365213285c8-1528905566516.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -923,7 +926,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Munchies and Friends: Austin</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/33/5b33e5c5be40777db9781aaa/5b33e5c5be40777db9781aaa-1530199996953.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -932,7 +935,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Partying with Abraham Lincoln Presenters</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/vice-cutest-job-in-the-world-alaskan-sled-dogs/5b06d420f1cdb358d84b4981?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/06/5b06d420f1cdb358d84b4981/5b06d420f1cdb358d84b4981-1530035148488.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -941,7 +944,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Training Husky Puppies to Become Sled Dogs</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-cholula-how-to-short-rib-matty-matheson/5afc7d39f1cdb351db36e4b8?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/fc/5afc7d39f1cdb351db36e4b8/5afc7d39f1cdb351db36e4b8-1526531426644.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -950,7 +953,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Short Rib with Matty Matheson</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/34/5b3411a8be40774b08446ad1/5b3411a8be40774b08446ad1-1530193202923.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -959,7 +962,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">The Mexican town that kicked out politicians and started over</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-friends-matty-matheson-pizza-party-brooklyn/5b2a9f5bbe40773a1c6d7d61?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/2a/5b2a9f5bbe40773a1c6d7d61/5b2a9f5bbe40773a1c6d7d61-1529679485052.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -968,7 +971,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">MUNCHIES &amp; Friends: Matty Matheson Pizza Party!</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/33/5b33e5c5be40777db9781aaa/5b33e5c5be40777db9781aaa-1530199996953.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -977,7 +980,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Partying with Abraham Lincoln Presenters</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/broadly-hotline-young-professionalism-with-joey-king-and-jacob-elordi/5ae1e140f1cdb3589f359271?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/e1/5ae1e140f1cdb3589f359271/5ae1e140f1cdb3589f359271-1526316083361.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -986,7 +989,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Young Professionalism with Joey King and Jacob Elordi</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/thursday-june-28-2018/5b045371f1cdb3530a677763?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/04/5b045371f1cdb3530a677763/5b045371f1cdb3530a677763-1530223149023.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -995,7 +998,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Thursday, June 28, 2018</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/minority-reports-white-student-historically-black-college-hbcu/5adf5125f1cdb31ca5086c63?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/df/5adf5125f1cdb31ca5086c63/5adf5125f1cdb31ca5086c63-1529508605533.jpg?crop=1xw%3A0.9908256880733946xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1004,7 +1007,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Being a White Student at a Historically Black College</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/meet-the-migos/55d1fc771ce00c683baee839?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
     						<div class="image__container">
   								<amp-img width="172px" height="74px" src="https://video-images.vice.com/images/video/184/lede/55d1fc771ce00c683baee839-1452634294684.jpg?crop=1xw%3A0.98765432098765xh%3Bcenter%2Ctop&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1020,7 +1023,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 					</div>
 				  <div role="tabpanel" class="tabContent">
 						<ul class="playlist-rows">
-							<a href="/en_us/video/vice-oobah-the-time-i-faked-my-way-to-the-top-of-paris-fashion-week/5b291b3df1cdb33c1668b761?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/29/5b291b3df1cdb33c1668b761/5b291b3df1cdb33c1668b761-1529682734447.jpg?crop=0.9995537706381079xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1029,7 +1032,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">I Made My Shed The #1 Restaurant In London</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/boardly-downtown-skateboarder-briana-king/5ac79951f1cdb33e9b684ee4?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/c7/5ac79951f1cdb33e9b684ee4/5ac79951f1cdb33e9b684ee4-1525798916348.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1038,7 +1041,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Boardly: Downtown Skateboarder Briana King</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/34/5b3411a8be40774b08446ad1/5b3411a8be40774b08446ad1-1530193202923.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1047,7 +1050,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">The Mexican town that kicked out politicians and started over</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-and-friends-austin-cholula/5b1e66e3f1cdb365213285c8?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/1e/5b1e66e3f1cdb365213285c8/5b1e66e3f1cdb365213285c8-1528905566516.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1056,7 +1059,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Munchies and Friends: Austin</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/33/5b33e5c5be40777db9781aaa/5b33e5c5be40777db9781aaa-1530199996953.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1065,7 +1068,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Partying with Abraham Lincoln Presenters</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/vice-cutest-job-in-the-world-alaskan-sled-dogs/5b06d420f1cdb358d84b4981?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/06/5b06d420f1cdb358d84b4981/5b06d420f1cdb358d84b4981-1530035148488.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1074,7 +1077,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Training Husky Puppies to Become Sled Dogs</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-cholula-how-to-short-rib-matty-matheson/5afc7d39f1cdb351db36e4b8?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/fc/5afc7d39f1cdb351db36e4b8/5afc7d39f1cdb351db36e4b8-1526531426644.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1083,7 +1086,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Short Rib with Matty Matheson</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-cholula-how-to-pizza-pocket-matty-matheson/5b087695f1cdb37607452231?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<div><div class="image__mask image__mask--border"></div><p class="hed-xs">Now Playing</p></div>
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/08/5b087695f1cdb37607452231/5b087695f1cdb37607452231-1527610510190.jpg?crop=0.9995494277732719xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
@@ -1093,7 +1096,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Pizza Pocket with Matty Matheson</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/the-mexican-town-that-kicked-out-politicians-and-started-over/5b3411a8be40774b08446ad1?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/34/5b3411a8be40774b08446ad1/5b3411a8be40774b08446ad1-1530193202923.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1102,7 +1105,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">The Mexican town that kicked out politicians and started over</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/munchies-friends-matty-matheson-pizza-party-brooklyn/5b2a9f5bbe40773a1c6d7d61?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/2a/5b2a9f5bbe40773a1c6d7d61/5b2a9f5bbe40773a1c6d7d61-1529679485052.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1111,7 +1114,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">MUNCHIES &amp; Friends: Matty Matheson Pizza Party!</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/american-conventions-annual-abraham-lincoln-presenters/5b33e5c5be40777db9781aaa?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/33/5b33e5c5be40777db9781aaa/5b33e5c5be40777db9781aaa-1530199996953.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1120,7 +1123,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Partying with Abraham Lincoln Presenters</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/broadly-hotline-young-professionalism-with-joey-king-and-jacob-elordi/5ae1e140f1cdb3589f359271?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/e1/5ae1e140f1cdb3589f359271/5ae1e140f1cdb3589f359271-1526316083361.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1129,7 +1132,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Young Professionalism with Joey King and Jacob Elordi</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/thursday-june-28-2018/5b045371f1cdb3530a677763?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5b/04/5b045371f1cdb3530a677763/5b045371f1cdb3530a677763-1530223149023.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1138,7 +1141,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Thursday, June 28, 2018</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/minority-reports-white-student-historically-black-college-hbcu/5adf5125f1cdb31ca5086c63?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/videos/5a/df/5adf5125f1cdb31ca5086c63/5adf5125f1cdb31ca5086c63-1529508605533.jpg?crop=1xw%3A0.9908256880733946xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1147,7 +1150,7 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									<p class="episode_title hed-xs">Being a White Student at a Historically Black College</p>
 								</div></li>
 							</a>
-							<a href="/en_us/video/meet-the-migos/55d1fc771ce00c683baee839?latest=1"><li class="playlist-row">
+							<a href="/amp/video"><li class="playlist-row">
 								<div class="image__container">
 									<amp-img width="172px" height="74px" src="https://video-images.vice.com/images/video/184/lede/55d1fc771ce00c683baee839-1452634294684.jpg?crop=1xw%3A0.98765432098765xh%3Bcenter%2Ctop&amp;resize=650%3A*&amp;output-quality=55"></amp-img>
 								</div>
@@ -1194,15 +1197,15 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 							<div class="topics dsp-flex-xs">
 								<h4 class="bod-xs">Tags</h4>
 								<ul>
-									<li><a href="/en_us/topic/japanese" class="hed-xs">JAPANESE</a></li>
-									<li><a href="/en_us/topic/documentary" class="hed-xs">DOCUMENTARY</a></li>
-									<li><a href="/en_us/topic/art" class="hed-xs">ART</a></li>
-									<li><a href="/en_us/topic/history" class="hed-xs">HISTORY</a></li>
-									<li><a href="/en_us/topic/tattoo" class="hed-xs">TATTOO</a></li>
-									<li><a href="/en_us/topic/body-modification" class="hed-xs">BODY MODIFICATION</a></li>
-									<li><a href="/en_us/topic/dan-santoro" class="hed-xs">DAN SANTORO</a></li>
-									<li><a href="/en_us/topic/traditional-american" class="hed-xs">TRADITIONAL AMERICAN</a></li>
-									<li><a href="/en_us/topic/skin-art" class="hed-xs">SKIN ART</a></li>
+									<li><a href="/topics/japanese" class="hed-xs">JAPANESE</a></li>
+									<li><a href="/topics/documentary" class="hed-xs">DOCUMENTARY</a></li>
+									<li><a href="/topics/art" class="hed-xs">ART</a></li>
+									<li><a href="/topics/history" class="hed-xs">HISTORY</a></li>
+									<li><a href="/topics/tattoo" class="hed-xs">TATTOO</a></li>
+									<li><a href="/topics/body-modification" class="hed-xs">BODY MODIFICATION</a></li>
+									<li><a href="/topics/dan-santoro" class="hed-xs">DAN SANTORO</a></li>
+									<li><a href="/topics/traditional-american" class="hed-xs">TRADITIONAL AMERICAN</a></li>
+									<li><a href="/topics/skin-art" class="hed-xs">SKIN ART</a></li>
 								</ul>
 							</div>
 						</div>
@@ -1274,8 +1277,8 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 				</div>
 				<div class="carousel-container carousel-container--small">
 					<amp-carousel height="270" layout="fixed-height" type="carousel" controls >
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-the-nicest-guy-in-tattooing-freddy-corbin/5824c84212339f6b5f81aedf"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c84212339f6b5f81aedf/5824c84212339f6b5f81aedf-1530296274470.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP7</span></div><h6 class="slider__meta__title hed-s">The Nicest Guy in Tattooing, Freddy Corbin</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c84212339f6b5f81aedf/5824c84212339f6b5f81aedf-1530296274470.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP7</span></div><h6 class="slider__meta__title hed-s">The Nicest Guy in Tattooing, Freddy Corbin</h6>    </div></a></div>
 							<div class="slick-slide">
 								<a class="slider__card" href="/en_us/video/tattoo-age-new-yorks-tattoo-viking-troy-denning/5824c7e7d86650c25a75602a">
 									<div class="slider__card__thumbnail small">
@@ -1291,9 +1294,9 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									</div>
 								</a>
 							</div>
-				      <div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+				      <div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
 					</amp-carousel>
 				</div>
 			</div>
@@ -1309,9 +1312,9 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 				</div>
 				<div class="carousel-container carousel-container--small">
 					<amp-carousel height="270" layout="fixed-height" type="carousel" controls >
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-the-nicest-guy-in-tattooing-freddy-corbin/5824c84212339f6b5f81aedf"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c84212339f6b5f81aedf/5824c84212339f6b5f81aedf-1530296274470.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP7</span></div><h6 class="slider__meta__title hed-s">The Nicest Guy in Tattooing, Freddy Corbin</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c84212339f6b5f81aedf/5824c84212339f6b5f81aedf-1530296274470.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP7</span></div><h6 class="slider__meta__title hed-s">The Nicest Guy in Tattooing, Freddy Corbin</h6>    </div></a></div>
 							<div class="slick-slide">
 								<a class="slider__card" href="/en_us/video/tattoo-age-new-yorks-tattoo-viking-troy-denning/5824c7e7d86650c25a75602a">
 									<div class="slider__card__thumbnail small">
@@ -1327,9 +1330,9 @@ button,input{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;}
 									</div>
 								</a>
 							</div>
-				      <div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-new-york-city-tattoo-legend-thom-devita/5824c86f12339f6b5f81aee0"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
-							<div class="slick-slide"><a class="slider__card" href="/en_us/video/tattoo-age-englands-best-tattooer-valerie-vargas/5824c6a7cea4a681539277dc"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+				      <div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c86f12339f6b5f81aee0/5824c86f12339f6b5f81aee0-1530296289302.jpg?crop=1xw%3A0.9990749306197965xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">44:10</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP8</span></div><h6 class="slider__meta__title hed-s">New York City Tattoo Legend: Thom DeVita</h6>    </div></a></div>
+							<div class="slick-slide"><a class="slider__card" href="/amp/video"><div class="slider__card__thumbnail small"><div class="slider__card__thumbnail__container__small"></div><amp-img width="240px" height="135px" class="slider-image" src="https://video-images.vice.com/videos/58/24/5824c6a7cea4a681539277dc/5824c6a7cea4a681539277dc-1530294306454.jpg?crop=1xw%3A1xh%3Bcenter%2Ccenter&amp;resize=650%3A*&amp;output-quality=55"></amp-img><div class="play-duration__wrapper dsp-flex-xs p-t-2-xs p-b-2-xs p-2-xs"><div class="play-duration__duration m-l-1-xs hed-xs">22:38</div></div></div><div class="slider__meta"><div class="show__season__episode hed-xs m-b-1-xs"><span>TATTOO AGE  / S1 EP5</span></div><h6 class="slider__meta__title hed-s">Englands Best Tattooer, Valerie Vargas</h6>    </div></a></div>
 					</amp-carousel>
 				</div>
 			</div>
