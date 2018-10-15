@@ -13,20 +13,20 @@ class AddressesTableSeeder extends Seeder
     {
         \DB::table('addresses')->delete();
 
-        \DB::table('addresses')->insert(array (
+        \DB::table('addresses')->insert(array(
             0 =>
-            array (
+            array(
                 'id' => 1,
                 'addressable_type' => 'Users',
                 'addressable_id' => 1,
-                'type_id' => NULL,
+                'type_id' => null,
                 'market_id' => 3,
                 'address' => '237 Ridgewood St',
-                'address_line_2' => NULL,
+                'address_line_2' => null,
                 'city' => 'Altamonte Springs',
                 'state_id' => 1,
                 'zip_code' => 32701,
-                'zip_extension' => NULL,
+                'zip_extension' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 08:57:47',

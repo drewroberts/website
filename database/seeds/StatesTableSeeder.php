@@ -12,20 +12,18 @@ class StatesTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('states')->delete();
         
-        \DB::table('states')->insert(array (
-            0 => 
-            array (
+        \DB::table('states')->insert(array(
+            0 =>
+            array(
                 'id' => 1,
                 'slug' => 'florida',
                 'title' => 'Florida',
                 'abbreviation' => 'FL',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Tallahassee',
                 'population_2010' => 18801310,
                 'population_2016' => 20612439,
@@ -33,15 +31,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            1 => 
-            array (
+            1 =>
+            array(
                 'id' => 2,
                 'slug' => 'kentucky',
                 'title' => 'Kentucky',
                 'abbreviation' => 'KY',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Frankfort',
                 'population_2010' => 4339367,
                 'population_2016' => 4436974,
@@ -49,15 +47,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            2 => 
-            array (
+            2 =>
+            array(
                 'id' => 3,
                 'slug' => 'alabama',
                 'title' => 'Alabama',
                 'abbreviation' => 'AL',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Montgomery',
                 'population_2010' => 4779736,
                 'population_2016' => 4863300,
@@ -65,15 +63,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            3 => 
-            array (
+            3 =>
+            array(
                 'id' => 4,
                 'slug' => 'alaska',
                 'title' => 'Alaska',
                 'abbreviation' => 'AK',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Juneau',
                 'population_2010' => 710231,
                 'population_2016' => 741894,
@@ -81,15 +79,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            4 => 
-            array (
+            4 =>
+            array(
                 'id' => 5,
                 'slug' => 'arizona',
                 'title' => 'Arizona',
                 'abbreviation' => 'AZ',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Phoenix',
                 'population_2010' => 6392017,
                 'population_2016' => 6931071,
@@ -97,15 +95,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            5 => 
-            array (
+            5 =>
+            array(
                 'id' => 6,
                 'slug' => 'arkansas',
                 'title' => 'Arkansas',
                 'abbreviation' => 'AR',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Little Rock',
                 'population_2010' => 2915918,
                 'population_2016' => 2988248,
@@ -113,15 +111,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            6 => 
-            array (
+            6 =>
+            array(
                 'id' => 7,
                 'slug' => 'california',
                 'title' => 'California',
                 'abbreviation' => 'CA',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Sacramento',
                 'population_2010' => 37253956,
                 'population_2016' => 39250017,
@@ -129,15 +127,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            7 => 
-            array (
+            7 =>
+            array(
                 'id' => 8,
                 'slug' => 'colorado',
                 'title' => 'Colorado',
                 'abbreviation' => 'CO',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Denver',
                 'population_2010' => 5029196,
                 'population_2016' => 5540545,
@@ -145,15 +143,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            8 => 
-            array (
+            8 =>
+            array(
                 'id' => 9,
                 'slug' => 'connecticut',
                 'title' => 'Connecticut',
                 'abbreviation' => 'CT',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Hartford',
                 'population_2010' => 3574097,
                 'population_2016' => 3576452,
@@ -161,15 +159,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            9 => 
-            array (
+            9 =>
+            array(
                 'id' => 10,
                 'slug' => 'delaware',
                 'title' => 'Delaware',
                 'abbreviation' => 'DE',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Dover',
                 'population_2010' => 897934,
                 'population_2016' => 952065,
@@ -177,15 +175,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            10 => 
-            array (
+            10 =>
+            array(
                 'id' => 11,
                 'slug' => 'georgia',
                 'title' => 'Georgia',
                 'abbreviation' => 'GA',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Atlanta',
                 'population_2010' => 9687653,
                 'population_2016' => 10310371,
@@ -193,15 +191,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            11 => 
-            array (
+            11 =>
+            array(
                 'id' => 12,
                 'slug' => 'hawaii',
                 'title' => 'Hawaii',
                 'abbreviation' => 'HI',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Honolulu',
                 'population_2010' => 1360301,
                 'population_2016' => 1428557,
@@ -209,15 +207,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            12 => 
-            array (
+            12 =>
+            array(
                 'id' => 13,
                 'slug' => 'idaho',
                 'title' => 'Idaho',
                 'abbreviation' => 'ID',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Boise',
                 'population_2010' => 1567582,
                 'population_2016' => 1683140,
@@ -225,15 +223,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            13 => 
-            array (
+            13 =>
+            array(
                 'id' => 14,
                 'slug' => 'illinois',
                 'title' => 'Illinois',
                 'abbreviation' => 'IL',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Springfield',
                 'population_2010' => 12830632,
                 'population_2016' => 12801539,
@@ -241,15 +239,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            14 => 
-            array (
+            14 =>
+            array(
                 'id' => 15,
                 'slug' => 'indiana',
                 'title' => 'Indiana',
                 'abbreviation' => 'IN',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Indianapolis',
                 'population_2010' => 6483802,
                 'population_2016' => 6633053,
@@ -257,15 +255,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            15 => 
-            array (
+            15 =>
+            array(
                 'id' => 16,
                 'slug' => 'iowa',
                 'title' => 'Iowa',
                 'abbreviation' => 'IA',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Des Moines',
                 'population_2010' => 3046355,
                 'population_2016' => 3134693,
@@ -273,15 +271,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            16 => 
-            array (
+            16 =>
+            array(
                 'id' => 17,
                 'slug' => 'kansas',
                 'title' => 'Kansas',
                 'abbreviation' => 'KS',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Topeka',
                 'population_2010' => 2853118,
                 'population_2016' => 2907289,
@@ -289,15 +287,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            17 => 
-            array (
+            17 =>
+            array(
                 'id' => 18,
                 'slug' => 'louisiana',
                 'title' => 'Louisiana',
                 'abbreviation' => 'LA',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Baton Rouge',
                 'population_2010' => 4533372,
                 'population_2016' => 4681666,
@@ -305,15 +303,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            18 => 
-            array (
+            18 =>
+            array(
                 'id' => 19,
                 'slug' => 'maine',
                 'title' => 'Maine',
                 'abbreviation' => 'ME',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Augusta',
                 'population_2010' => 1328361,
                 'population_2016' => 1331479,
@@ -321,15 +319,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            19 => 
-            array (
+            19 =>
+            array(
                 'id' => 20,
                 'slug' => 'maryland',
                 'title' => 'Maryland',
                 'abbreviation' => 'MD',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Annapolis',
                 'population_2010' => 5773552,
                 'population_2016' => 6016447,
@@ -337,15 +335,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            20 => 
-            array (
+            20 =>
+            array(
                 'id' => 21,
                 'slug' => 'massachusetts',
                 'title' => 'Massachusetts',
                 'abbreviation' => 'MA',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Boston',
                 'population_2010' => 6547629,
                 'population_2016' => 6811779,
@@ -353,15 +351,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            21 => 
-            array (
+            21 =>
+            array(
                 'id' => 22,
                 'slug' => 'michigan',
                 'title' => 'Michigan',
                 'abbreviation' => 'MI',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Lansing',
                 'population_2010' => 9883640,
                 'population_2016' => 9928300,
@@ -369,15 +367,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            22 => 
-            array (
+            22 =>
+            array(
                 'id' => 23,
                 'slug' => 'minnesota',
                 'title' => 'Minnesota',
                 'abbreviation' => 'MN',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Saint Paul',
                 'population_2010' => 5303925,
                 'population_2016' => 5519952,
@@ -385,15 +383,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            23 => 
-            array (
+            23 =>
+            array(
                 'id' => 24,
                 'slug' => 'mississippi',
                 'title' => 'Mississippi',
                 'abbreviation' => 'MS',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Jackson',
                 'population_2010' => 2967297,
                 'population_2016' => 2988726,
@@ -401,15 +399,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            24 => 
-            array (
+            24 =>
+            array(
                 'id' => 25,
                 'slug' => 'missouri',
                 'title' => 'Missouri',
                 'abbreviation' => 'MO',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Jefferson City',
                 'population_2010' => 5988927,
                 'population_2016' => 6093000,
@@ -417,15 +415,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            25 => 
-            array (
+            25 =>
+            array(
                 'id' => 26,
                 'slug' => 'montana',
                 'title' => 'Montana',
                 'abbreviation' => 'MT',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Helena',
                 'population_2010' => 989415,
                 'population_2016' => 1042520,
@@ -433,15 +431,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            26 => 
-            array (
+            26 =>
+            array(
                 'id' => 27,
                 'slug' => 'nebraska',
                 'title' => 'Nebraska',
                 'abbreviation' => 'NE',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Lincoln',
                 'population_2010' => 1826341,
                 'population_2016' => 1907116,
@@ -449,15 +447,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            27 => 
-            array (
+            27 =>
+            array(
                 'id' => 28,
                 'slug' => 'nevada',
                 'title' => 'Nevada',
                 'abbreviation' => 'NV',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Carson City',
                 'population_2010' => 2700551,
                 'population_2016' => 2940058,
@@ -465,15 +463,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            28 => 
-            array (
+            28 =>
+            array(
                 'id' => 29,
                 'slug' => 'new-hampshire',
                 'title' => 'New Hampshire',
                 'abbreviation' => 'NH',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Concord',
                 'population_2010' => 1316470,
                 'population_2016' => 1334795,
@@ -481,15 +479,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            29 => 
-            array (
+            29 =>
+            array(
                 'id' => 30,
                 'slug' => 'new-jersey',
                 'title' => 'New Jersey',
                 'abbreviation' => 'NJ',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Trenton',
                 'population_2010' => 8791894,
                 'population_2016' => 8944469,
@@ -497,15 +495,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            30 => 
-            array (
+            30 =>
+            array(
                 'id' => 31,
                 'slug' => 'new-mexico',
                 'title' => 'New Mexico',
                 'abbreviation' => 'NM',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Santa Fe',
                 'population_2010' => 2059179,
                 'population_2016' => 2081015,
@@ -513,15 +511,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            31 => 
-            array (
+            31 =>
+            array(
                 'id' => 32,
                 'slug' => 'new-york',
                 'title' => 'New York',
                 'abbreviation' => 'NY',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Albany',
                 'population_2010' => 19378102,
                 'population_2016' => 19745289,
@@ -529,15 +527,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            32 => 
-            array (
+            32 =>
+            array(
                 'id' => 33,
                 'slug' => 'north-carolina',
                 'title' => 'North Carolina',
                 'abbreviation' => 'NC',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Raleigh',
                 'population_2010' => 9535483,
                 'population_2016' => 10146788,
@@ -545,15 +543,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            33 => 
-            array (
+            33 =>
+            array(
                 'id' => 34,
                 'slug' => 'north-dakota',
                 'title' => 'North Dakota',
                 'abbreviation' => 'ND',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Bismarck',
                 'population_2010' => 672591,
                 'population_2016' => 757952,
@@ -561,15 +559,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            34 => 
-            array (
+            34 =>
+            array(
                 'id' => 35,
                 'slug' => 'ohio',
                 'title' => 'Ohio',
                 'abbreviation' => 'OH',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Columbus',
                 'population_2010' => 11536504,
                 'population_2016' => 11614373,
@@ -577,15 +575,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            35 => 
-            array (
+            35 =>
+            array(
                 'id' => 36,
                 'slug' => 'oklahoma',
                 'title' => 'Oklahoma',
                 'abbreviation' => 'OK',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Oklahoma City',
                 'population_2010' => 3751351,
                 'population_2016' => 3923561,
@@ -593,15 +591,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            36 => 
-            array (
+            36 =>
+            array(
                 'id' => 37,
                 'slug' => 'oregon',
                 'title' => 'Oregon',
                 'abbreviation' => 'OR',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Salem',
                 'population_2010' => 3831074,
                 'population_2016' => 4093465,
@@ -609,15 +607,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            37 => 
-            array (
+            37 =>
+            array(
                 'id' => 38,
                 'slug' => 'pennsylvania',
                 'title' => 'Pennsylvania',
                 'abbreviation' => 'PA',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Harrisburg',
                 'population_2010' => 12702379,
                 'population_2016' => 12784227,
@@ -625,15 +623,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            38 => 
-            array (
+            38 =>
+            array(
                 'id' => 39,
                 'slug' => 'rhode-island',
                 'title' => 'Rhode Island',
                 'abbreviation' => 'RI',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Providence',
                 'population_2010' => 1052567,
                 'population_2016' => 1056426,
@@ -641,15 +639,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            39 => 
-            array (
+            39 =>
+            array(
                 'id' => 40,
                 'slug' => 'south-carolina',
                 'title' => 'South Carolina',
                 'abbreviation' => 'SC',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Columbia',
                 'population_2010' => 4625364,
                 'population_2016' => 4961119,
@@ -657,15 +655,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            40 => 
-            array (
+            40 =>
+            array(
                 'id' => 41,
                 'slug' => 'south-dakota',
                 'title' => 'South Dakota',
                 'abbreviation' => 'SD',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Pierre',
                 'population_2010' => 814180,
                 'population_2016' => 865454,
@@ -673,15 +671,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            41 => 
-            array (
+            41 =>
+            array(
                 'id' => 42,
                 'slug' => 'tennessee',
                 'title' => 'Tennessee',
                 'abbreviation' => 'TN',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Nashville',
                 'population_2010' => 6346105,
                 'population_2016' => 6651194,
@@ -689,15 +687,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            42 => 
-            array (
+            42 =>
+            array(
                 'id' => 43,
                 'slug' => 'texas',
                 'title' => 'Texas',
                 'abbreviation' => 'TX',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Austin',
                 'population_2010' => 25145561,
                 'population_2016' => 27862596,
@@ -705,15 +703,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            43 => 
-            array (
+            43 =>
+            array(
                 'id' => 44,
                 'slug' => 'utah',
                 'title' => 'Utah',
                 'abbreviation' => 'UT',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Salt Lake City',
                 'population_2010' => 2763885,
                 'population_2016' => 3051217,
@@ -721,15 +719,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            44 => 
-            array (
+            44 =>
+            array(
                 'id' => 45,
                 'slug' => 'vermont',
                 'title' => 'Vermont',
                 'abbreviation' => 'VT',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Montpelier',
                 'population_2010' => 625741,
                 'population_2016' => 624594,
@@ -737,15 +735,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            45 => 
-            array (
+            45 =>
+            array(
                 'id' => 46,
                 'slug' => 'virginia',
                 'title' => 'Virginia',
                 'abbreviation' => 'VA',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Richmond',
                 'population_2010' => 8001024,
                 'population_2016' => 8411808,
@@ -753,15 +751,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            46 => 
-            array (
+            46 =>
+            array(
                 'id' => 47,
                 'slug' => 'washington',
                 'title' => 'Washington',
                 'abbreviation' => 'WA',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Olympia',
                 'population_2010' => 6724540,
                 'population_2016' => 7288000,
@@ -769,15 +767,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            47 => 
-            array (
+            47 =>
+            array(
                 'id' => 48,
                 'slug' => 'west-virginia',
                 'title' => 'West Virginia',
                 'abbreviation' => 'WV',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Charleston',
                 'population_2010' => 1852994,
                 'population_2016' => 1831102,
@@ -785,15 +783,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            48 => 
-            array (
+            48 =>
+            array(
                 'id' => 49,
                 'slug' => 'wisconsin',
                 'title' => 'Wisconsin',
                 'abbreviation' => 'WI',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Madison',
                 'population_2010' => 5686986,
                 'population_2016' => 5778708,
@@ -801,15 +799,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            49 => 
-            array (
+            49 =>
+            array(
                 'id' => 50,
                 'slug' => 'wyoming',
                 'title' => 'Wyoming',
                 'abbreviation' => 'WY',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Cheyenne',
                 'population_2010' => 563626,
                 'population_2016' => 585501,
@@ -817,15 +815,15 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            50 => 
-            array (
+            50 =>
+            array(
                 'id' => 51,
                 'slug' => 'dc',
                 'title' => 'District of Columbia',
                 'abbreviation' => 'DC',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Washington',
                 'population_2010' => 601723,
                 'population_2016' => 681170,
@@ -833,191 +831,191 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            51 => 
-            array (
+            51 =>
+            array(
                 'id' => 52,
                 'slug' => 'puerto-rico',
                 'title' => 'Puerto Rico',
                 'abbreviation' => 'PR',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'San Juan',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 3411307,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            52 => 
-            array (
+            52 =>
+            array(
                 'id' => 53,
                 'slug' => 'virgin-islands',
                 'title' => 'Virgin Islands',
                 'abbreviation' => 'VI',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            53 => 
-            array (
+            53 =>
+            array(
                 'id' => 54,
                 'slug' => 'guam',
                 'title' => 'Guam',
                 'abbreviation' => 'GU',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            54 => 
-            array (
+            54 =>
+            array(
                 'id' => 55,
                 'slug' => 'us-armed-forces-americas',
                 'title' => 'US Armed Forces – Americas',
                 'abbreviation' => 'AA',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            55 => 
-            array (
+            55 =>
+            array(
                 'id' => 56,
                 'slug' => 'us-armed-forces-europe',
                 'title' => 'US Armed Forces – Europe',
                 'abbreviation' => 'AE',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            56 => 
-            array (
+            56 =>
+            array(
                 'id' => 57,
                 'slug' => 'us-armed-forces-pacific',
                 'title' => 'US Armed Forces – Pacific',
                 'abbreviation' => 'AP',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            57 => 
-            array (
+            57 =>
+            array(
                 'id' => 58,
                 'slug' => 'samoa',
                 'title' => 'American Samoa',
                 'abbreviation' => 'AS',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            58 => 
-            array (
+            58 =>
+            array(
                 'id' => 59,
                 'slug' => 'micronesia',
                 'title' => 'Micronesia',
                 'abbreviation' => 'FM',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            59 => 
-            array (
+            59 =>
+            array(
                 'id' => 60,
                 'slug' => 'marshall-islands',
                 'title' => 'Marshall Islands',
                 'abbreviation' => 'MH',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            60 => 
-            array (
+            60 =>
+            array(
                 'id' => 61,
                 'slug' => 'mariana-islands',
                 'title' => 'Mariana Islands',
                 'abbreviation' => 'MP',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            61 => 
-            array (
+            61 =>
+            array(
                 'id' => 62,
                 'slug' => 'palau',
                 'title' => 'Palau',
                 'abbreviation' => 'PW',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
-                'capital' => NULL,
-                'population_2010' => NULL,
-                'population_2016' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
+                'capital' => null,
+                'population_2010' => null,
+                'population_2016' => null,
                 'country' => 0,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            62 => 
-            array (
+            62 =>
+            array(
                 'id' => 100,
                 'slug' => 'usa',
                 'title' => 'United States',
                 'abbreviation' => 'US',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Washington DC',
                 'population_2010' => 308745538,
                 'population_2016' => 322762018,
@@ -1025,152 +1023,150 @@ class StatesTableSeeder extends Seeder
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            63 => 
-            array (
+            63 =>
+            array(
                 'id' => 101,
                 'slug' => 'mexico',
                 'title' => 'Mexico',
                 'abbreviation' => 'MX',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Mexico City',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 127540423,
                 'country' => 1,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            64 => 
-            array (
+            64 =>
+            array(
                 'id' => 102,
                 'slug' => 'guatemala',
                 'title' => 'Guatemala',
                 'abbreviation' => 'GT',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Guatemala City',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 16582469,
                 'country' => 1,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            65 => 
-            array (
+            65 =>
+            array(
                 'id' => 103,
                 'slug' => 'belize',
                 'title' => 'Belize',
                 'abbreviation' => 'BZ',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Belmopan',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 366954,
                 'country' => 1,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            66 => 
-            array (
+            66 =>
+            array(
                 'id' => 104,
                 'slug' => 'honduras',
                 'title' => 'Honduras',
                 'abbreviation' => 'HN',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Tegucigalpa',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 9112867,
                 'country' => 1,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            67 => 
-            array (
+            67 =>
+            array(
                 'id' => 105,
                 'slug' => 'el-salvador',
                 'title' => 'El Salvador',
                 'abbreviation' => 'SV',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'San Salvador',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 6344722,
                 'country' => 1,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            68 => 
-            array (
+            68 =>
+            array(
                 'id' => 106,
                 'slug' => 'nicaragua',
                 'title' => 'Nicaragua',
                 'abbreviation' => 'NI',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Managua',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 6149928,
                 'country' => 1,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            69 => 
-            array (
+            69 =>
+            array(
                 'id' => 107,
                 'slug' => 'costa-rica',
                 'title' => 'Costa Rica',
                 'abbreviation' => 'CR',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'San Jose',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 4857274,
                 'country' => 1,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            70 => 
-            array (
+            70 =>
+            array(
                 'id' => 108,
                 'slug' => 'panama',
                 'title' => 'Panama',
                 'abbreviation' => 'PN',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Panama City',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 4034119,
                 'country' => 1,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
-            71 => 
-            array (
+            71 =>
+            array(
                 'id' => 109,
                 'slug' => 'columbia',
                 'title' => 'Columbia',
                 'abbreviation' => 'CB',
-                'description' => NULL,
-                'image_id' => NULL,
-                'icon_id' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'icon_id' => null,
                 'capital' => 'Bogota',
-                'population_2010' => NULL,
+                'population_2010' => null,
                 'population_2016' => 49364592,
                 'country' => 1,
                 'created_at' => '2017-11-10 21:48:05',
                 'updated_at' => '2017-11-10 21:48:05',
             ),
         ));
-        
-        
     }
 }

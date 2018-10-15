@@ -12,373 +12,369 @@ class MarketsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('markets')->delete();
         
-        \DB::table('markets')->insert(array (
-            0 => 
-            array (
+        \DB::table('markets')->insert(array(
+            0 =>
+            array(
                 'id' => 1,
                 'state_id' => 1,
                 'slug' => 'orlando',
                 'title' => 'Orlando',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 08:57:47',
                 'updated_at' => '2017-11-13 08:57:47',
             ),
-            1 => 
-            array (
+            1 =>
+            array(
                 'id' => 2,
                 'state_id' => 1,
                 'slug' => 'winter-park',
                 'title' => 'Winter Park',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 08:59:58',
                 'updated_at' => '2017-11-13 08:59:58',
             ),
-            2 => 
-            array (
+            2 =>
+            array(
                 'id' => 3,
                 'state_id' => 1,
                 'slug' => 'maitland-longwood',
                 'title' => 'Maitland to Longwood',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:01:23',
                 'updated_at' => '2017-11-13 09:01:23',
             ),
-            3 => 
-            array (
+            3 =>
+            array(
                 'id' => 4,
                 'state_id' => 1,
                 'slug' => 'sanford-lake-mary',
                 'title' => 'Lake Mary, Sanford, DeBary',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:02:26',
                 'updated_at' => '2017-11-13 09:02:26',
             ),
-            4 => 
-            array (
+            4 =>
+            array(
                 'id' => 5,
                 'state_id' => 1,
                 'slug' => 'deland',
                 'title' => 'DeLand',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:03:24',
                 'updated_at' => '2017-11-13 09:03:24',
             ),
-            5 => 
-            array (
+            5 =>
+            array(
                 'id' => 6,
                 'state_id' => 1,
                 'slug' => 'new-smyrna',
                 'title' => 'New Smyrna',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:05:18',
                 'updated_at' => '2017-11-13 09:05:18',
             ),
-            6 => 
-            array (
+            6 =>
+            array(
                 'id' => 7,
                 'state_id' => 1,
                 'slug' => 'st-augustine',
                 'title' => 'Daytona to St. Augustine',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:06:45',
                 'updated_at' => '2017-11-13 09:06:45',
             ),
-            7 => 
-            array (
+            7 =>
+            array(
                 'id' => 8,
                 'state_id' => 1,
                 'slug' => 'kissimmee',
                 'title' => 'Kissimmee to Lakeland',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:08:06',
                 'updated_at' => '2017-11-13 09:08:06',
             ),
-            8 => 
-            array (
+            8 =>
+            array(
                 'id' => 9,
                 'state_id' => 1,
                 'slug' => 'tampa',
                 'title' => 'Tampa',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:09:20',
                 'updated_at' => '2017-11-13 09:09:20',
             ),
-            9 => 
-            array (
+            9 =>
+            array(
                 'id' => 10,
                 'state_id' => 1,
                 'slug' => 'sarasota',
                 'title' => 'Sarasota',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:09:59',
                 'updated_at' => '2017-11-13 09:09:59',
             ),
-            10 => 
-            array (
+            10 =>
+            array(
                 'id' => 11,
                 'state_id' => 1,
                 'slug' => 'naples',
                 'title' => 'Naples',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:10:32',
                 'updated_at' => '2017-11-13 09:10:32',
             ),
-            11 => 
-            array (
+            11 =>
+            array(
                 'id' => 12,
                 'state_id' => 1,
                 'slug' => 'south-atlantic',
                 'title' => 'South Atlantic Coast',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:14:57',
                 'updated_at' => '2017-11-13 09:14:57',
             ),
-            12 => 
-            array (
+            12 =>
+            array(
                 'id' => 13,
                 'state_id' => 1,
                 'slug' => 'miami',
                 'title' => 'Miami',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:16:07',
                 'updated_at' => '2017-11-13 09:16:07',
             ),
-            13 => 
-            array (
+            13 =>
+            array(
                 'id' => 14,
                 'state_id' => 1,
                 'slug' => 'jacksonville',
                 'title' => 'Jacksonville',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:16:45',
                 'updated_at' => '2017-11-13 09:16:45',
             ),
-            14 => 
-            array (
+            14 =>
+            array(
                 'id' => 15,
                 'state_id' => 1,
                 'slug' => 'amelia-island',
                 'title' => 'Amelia Island',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:17:27',
                 'updated_at' => '2017-11-13 09:17:27',
             ),
-            15 => 
-            array (
+            15 =>
+            array(
                 'id' => 16,
                 'state_id' => 1,
                 'slug' => 'gulf-coast',
                 'title' => 'North Gulf Coast',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:19:05',
                 'updated_at' => '2017-11-13 09:19:05',
             ),
-            16 => 
-            array (
+            16 =>
+            array(
                 'id' => 17,
                 'state_id' => 1,
                 'slug' => 'tallahassee',
                 'title' => 'Tallahassee',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:19:42',
                 'updated_at' => '2017-11-13 09:19:42',
             ),
-            17 => 
-            array (
+            17 =>
+            array(
                 'id' => 18,
                 'state_id' => 1,
                 'slug' => 'panhandle',
                 'title' => 'Panhandle',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:20:20',
                 'updated_at' => '2017-11-13 09:20:20',
             ),
-            18 => 
-            array (
+            18 =>
+            array(
                 'id' => 20,
                 'state_id' => 2,
                 'slug' => 'shelbyville',
                 'title' => 'Shelbyville',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:21:00',
                 'updated_at' => '2017-11-13 09:21:00',
             ),
-            19 => 
-            array (
+            19 =>
+            array(
                 'id' => 21,
                 'state_id' => 2,
                 'slug' => 'frankfort',
                 'title' => 'Frankfort',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:22:04',
                 'updated_at' => '2017-11-13 09:22:04',
             ),
-            20 => 
-            array (
+            20 =>
+            array(
                 'id' => 22,
                 'state_id' => 2,
                 'slug' => 'lexington',
                 'title' => 'Lexington',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:22:36',
                 'updated_at' => '2017-11-13 09:22:36',
             ),
-            21 => 
-            array (
+            21 =>
+            array(
                 'id' => 23,
                 'state_id' => 2,
                 'slug' => 'louisville',
                 'title' => 'Louisville',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:23:21',
                 'updated_at' => '2017-11-13 09:23:21',
             ),
-            22 => 
-            array (
+            22 =>
+            array(
                 'id' => 24,
                 'state_id' => 2,
                 'slug' => 'bardstown',
                 'title' => 'Bardstown',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:23:55',
                 'updated_at' => '2017-11-13 09:23:55',
             ),
-            23 => 
-            array (
+            23 =>
+            array(
                 'id' => 30,
                 'state_id' => 3,
                 'slug' => 'birmingham',
                 'title' => 'Birmingham',
-                'description' => NULL,
-                'image_id' => NULL,
-                'video_id' => NULL,
-                'content' => NULL,
+                'description' => null,
+                'image_id' => null,
+                'video_id' => null,
+                'content' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => '2017-11-13 09:29:45',
                 'updated_at' => '2017-11-13 09:29:45',
             ),
         ));
-        
-        
     }
 }
