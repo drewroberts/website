@@ -87,9 +87,9 @@ class TopicsTableSeeder extends Seeder
             3 =>
             array(
                 'id' => 4,
-                'slug' => 'markdown',
+                'slug' => 'git',
                 'type_id' => null,
-                'title' => 'Markdown',
+                'title' => 'Git',
                 'description' => null,
                 'excerpt' => null,
                 'note' => null,
@@ -110,9 +110,9 @@ class TopicsTableSeeder extends Seeder
             4 =>
             array(
                 'id' => 5,
-                'slug' => 'git',
+                'slug' => 'markdown',
                 'type_id' => null,
-                'title' => 'Git',
+                'title' => 'Markdown',
                 'description' => null,
                 'excerpt' => null,
                 'note' => null,
@@ -317,9 +317,9 @@ class TopicsTableSeeder extends Seeder
             13 =>
             array(
                 'id' => 14,
-                'slug' => 'svg',
+                'slug' => 'schema',
                 'type_id' => null,
-                'title' => 'SVG',
+                'title' => 'Schema',
                 'description' => null,
                 'excerpt' => null,
                 'note' => null,
@@ -337,12 +337,12 @@ class TopicsTableSeeder extends Seeder
                 'updated_at' => '2017-11-10 21:48:05',
                 'deleted_at' => null,
             ),
-            15 =>
+            14 =>
             array(
                 'id' => 15,
-                'slug' => 'schema',
+                'slug' => 'svg',
                 'type_id' => null,
-                'title' => 'Schema',
+                'title' => 'SVG',
                 'description' => null,
                 'excerpt' => null,
                 'note' => null,
