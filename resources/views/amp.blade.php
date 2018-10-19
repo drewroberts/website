@@ -1407,11 +1407,10 @@
       </div>
       <div class="share-text">Share</div>
       <div class="social-wrapper">
-        <a class="email-share-link" href="mailto:?subject=Microsoft Teases 'All-New Xbox Hardware' Announcement Next Month%20-%20Forbes&amp;body=Hi,%0A%0AI%20thought%20you'd%20like%20this%3A%0Ahttps://www.forbes.com/sites/insertcoin/2018/07/18/microsoft-teases-all-new-xbox-hardware-announcement-next-month/%0A%0AMicrosoft Teases 'All-New Xbox Hardware' Announcement Next Month%20-%20Forbes" data-ga-track="Email Click"></a>
-        <amp-social-share type="facebook" width="60" height="44" layout="responsive" data-param-app_id="123694841080850" data-ga-track="Facebook Click"></amp-social-share>
-        <amp-social-share type="twitter" width="60" height="44" layout="responsive" data-ga-track="Twitter Click" data-param-text="Check this out from @DrewRoberts "></amp-social-share>
-        <amp-social-share type="linkedin" width="60" height="44" layout="responsive" data-ga-track="Linkedin Click"></amp-social-share>
-        <amp-social-share type="gplus" width="60" height="44" layout="responsive" data-ga-track="Google Plus Click"></amp-social-share>
+        <a class="email-share-link" href="mailto:?subject=Microsoft Teases 'All-New Xbox Hardware' Announcement Next Month%20-%20Forbes&amp;body=Hi,%0A%0AI%20thought%20you'd%20like%20this%3A%0Ahttps://www.forbes.com/sites/insertcoin/2018/07/18/microsoft-teases-all-new-xbox-hardware-announcement-next-month/%0A%0AMicrosoft Teases 'All-New Xbox Hardware' Announcement Next Month%20-%20Forbes" data-ga-track="Email Share"></a>
+        <amp-social-share type="facebook" width="60" height="44" layout="responsive" data-param-app_id="123694841080850" data-ga-track="Facebook Share"></amp-social-share>
+        <amp-social-share type="twitter" width="60" height="44" layout="responsive" data-ga-track="Twitter Share" data-param-text="Check this out from @DrewRoberts "></amp-social-share>
+        <amp-social-share type="linkedin" width="60" height="44" layout="responsive" data-ga-track="Linkedin Share"></amp-social-share>
       </div>
     </div>
   </div>
