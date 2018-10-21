@@ -760,9 +760,6 @@
 
 
 
-
-
-
 	/*! CSS Used for Sidebar */
 	.newsletter__input__container__top {margin-bottom: 10px;}
 	input[type=email]{display:inline-block;padding:20px;border:1px solid #f1f1f1;width:100%;}
@@ -790,11 +787,9 @@
 	button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 	input{line-height:normal;}
 	.hed-l,.hed-xs,h2{font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:600;line-height:1.2;}
-	.bod-s{font-family:HelveticaNeueArabic,Lora,Georgia,TazuganeGothic,serif;font-weight:400;}
-	.bod-s{line-height:1.6;}
+	.input-text{line-height:1.6;font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;font-weight:400;font-size:14px;font-size:.875rem;}
 	.hed-l{font-size:20px;font-size:1.25rem;}
 	.hed-xs{font-size:12px;font-size:.75rem;}
-	.bod-s{font-size:14px;font-size:.875rem;font-family:HelveticaNeueArabic,NeueHelveticaW01,Helvetica,HelveticaWorld,Arial,TazuganeGothic,sans-serif;}
 	@media only screen and (min-width:650px){
 	body .hed-l{font-size:1.75rem;}
 	}
@@ -1217,14 +1212,14 @@
 						</div>
 						<div class="newsletter__input__container__top dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
 							<div class="newsletter__input dsp-flex-xs">
-								<input id="email" type="email" required placeholder="Email Address" class="bod-s" value="">
+								<input id="email" type="email" required placeholder="Email Address" class="input-text" value="">
 							</div>
 						</div>
 						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-name"></span>
 						
 						<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
 							<div class="newsletter__input dsp-flex-xs">
-								<input id="name" type="text" required placeholder="Name" class="bod-s" value="">
+								<input id="name" type="text" required placeholder="Name" class="input-text" value="">
 							</div>
 							<input type="submit"
 							value="Subscribe"
