@@ -102,7 +102,7 @@
 <meta name="twitter:label1" content="Written by" />
 <meta name="twitter:data1" content="Drew Roberts" />
 <meta name="twitter:label2" content="Filed under" />
-<meta name="twitter:data2" content="College Football, Florida State Seminoles, Willie Taggart" />
+<meta name="twitter:data2" content="AMP, Accelerated Mobile Pages, Web Development, Programming Tutorials, Coding Tutorials, Drew Roberts" />
 
 
 <script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
