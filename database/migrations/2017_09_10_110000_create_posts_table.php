@@ -34,10 +34,11 @@ class CreatePostsTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('posts', function($table) {
+        Schema::table('posts', function ($table) {
             $table->foreign('topic_id')->references('id')->on('topics')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('ogimage_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
+            $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('video_id')->references('id')->on('videos')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('editor_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
@@ -56,6 +57,7 @@ class CreatePostsTable extends Migration
             $table->dropForeign(['topic_id']);
             $table->dropForeign(['image_id']);
             $table->dropForeign(['ogimage_id']);
+            $table->dropForeign(['type_id']);
             $table->dropForeign(['video_id']);
             $table->dropForeign(['editor_id']);
             $table->dropForeign(['created_by']);
