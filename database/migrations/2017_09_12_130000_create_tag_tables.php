@@ -33,28 +33,8 @@ class CreateTagTables extends Migration
             $table->foreign('tag_id')->references('id')->on('tags')->onDelete('restrict')->onUpdate('cascade');
         });
 
-        Schema::table('taggables', function($table) {
+        Schema::table('taggables', function ($table) {
             $table->unique(['tag_id', 'taggable_type', 'taggable_id'], 'unique_tag');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('tags');
-        Schema::enableForeignKeyConstraints();
-
-        Schema::table('taggables', function ($table) {
-            $table->dropForeign(['tag_id']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('taggables');
-        Schema::enableForeignKeyConstraints();
     }
 }

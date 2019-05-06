@@ -37,28 +37,10 @@ class CreateBlastsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('blasts', function($table) {
+        Schema::table('blasts', function ($table) {
             $table->foreign('platform_id')->references('id')->on('platforms')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('blasts', function ($table) {
-            $table->dropForeign(['platform_id']);
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['created_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('blasts');
-        Schema::enableForeignKeyConstraints();
     }
 }

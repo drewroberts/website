@@ -45,27 +45,4 @@ class CreatePostsTable extends Migration
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
     }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('posts', function ($table) {
-            $table->dropForeign(['topic_id']);
-            $table->dropForeign(['image_id']);
-            $table->dropForeign(['ogimage_id']);
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['video_id']);
-            $table->dropForeign(['editor_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('posts');
-        Schema::enableForeignKeyConstraints();
-    }
 }

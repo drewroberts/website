@@ -33,30 +33,11 @@ class CreateImagesTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('images', function($table) {
+        Schema::table('images', function ($table) {
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('approved_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('images', function ($table) {
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-            $table->dropForeign(['approved_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('images');
-        Schema::enableForeignKeyConstraints();
     }
 }

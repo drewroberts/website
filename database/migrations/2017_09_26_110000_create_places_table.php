@@ -44,7 +44,7 @@ class CreatePlacesTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('places', function($table) {
+        Schema::table('places', function ($table) {
             $table->foreign('market_id')->references('id')->on('markets')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('address_id')->references('id')->on('addresses')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('mailing_id')->references('id')->on('addresses')->onDelete('restrict')->onUpdate('cascade');
@@ -55,29 +55,5 @@ class CreatePlacesTable extends Migration
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('places', function ($table) {
-            $table->dropForeign(['market_id']);
-            $table->dropForeign(['address_id']);
-            $table->dropForeign(['mailing_id']);
-            $table->dropForeign(['brand_id']);
-            $table->dropForeign(['image_id']);
-            $table->dropForeign(['video_id']);
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('places');
-        Schema::enableForeignKeyConstraints();
     }
 }

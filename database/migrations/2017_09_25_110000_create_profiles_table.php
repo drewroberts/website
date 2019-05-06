@@ -45,32 +45,12 @@ class CreateProfilesTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('profiles', function($table) {
+        Schema::table('profiles', function ($table) {
             $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('avatar_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('cover_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('billing_id')->references('id')->on('addresses')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('mailing_id')->references('id')->on('addresses')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('profiles', function ($table) {
-            $table->dropForeign(['user_id']);
-            $table->dropForeign(['avatar_id']);
-            $table->dropForeign(['cover_id']);
-            $table->dropForeign(['billing_id']);
-            $table->dropForeign(['mailing_id']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('profiles');
-        Schema::enableForeignKeyConstraints();
     }
 }

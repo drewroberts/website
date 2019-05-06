@@ -35,32 +35,12 @@ class CreateBrandsTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('brands', function($table) {
+        Schema::table('brands', function ($table) {
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('topic_id')->references('id')->on('topics')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('brands', function ($table) {
-            $table->dropForeign(['image_id']);
-            $table->dropForeign(['topic_id']);
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('brands');
-        Schema::enableForeignKeyConstraints();
     }
 }

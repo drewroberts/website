@@ -30,7 +30,7 @@ class CreateAddressesTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('addresses', function($table) {
+        Schema::table('addresses', function ($table) {
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('market_id')->references('id')->on('markets')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('state_id')->references('id')->on('states')->onDelete('restrict')->onUpdate('cascade');
@@ -38,25 +38,5 @@ class CreateAddressesTable extends Migration
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('addresses', function ($table) {
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['market_id']);
-            $table->dropForeign(['state_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('addresses');
-        Schema::enableForeignKeyConstraints();
     }
 }

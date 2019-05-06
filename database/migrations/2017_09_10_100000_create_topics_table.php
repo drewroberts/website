@@ -35,7 +35,7 @@ class CreateTopicsTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('topics', function($table) {
+        Schema::table('topics', function ($table) {
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('icon_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
@@ -45,28 +45,5 @@ class CreateTopicsTable extends Migration
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('topics', function ($table) {
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['image_id']);
-            $table->dropForeign(['icon_id']);
-            $table->dropForeign(['heroicon_id']);
-            $table->dropForeign(['poster_id']);
-            $table->dropForeign(['ogimage_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('topics');
-        Schema::enableForeignKeyConstraints();
     }
 }

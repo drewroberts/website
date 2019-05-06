@@ -27,32 +27,12 @@ class CreateMarketsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('markets', function($table) {
+        Schema::table('markets', function ($table) {
             $table->foreign('state_id')->references('id')->on('states')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('video_id')->references('id')->on('videos')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('markets', function ($table) {
-            $table->dropForeign(['state_id']);
-            $table->dropForeign(['image_id']);
-            $table->dropForeign(['video_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('markets');
-        Schema::enableForeignKeyConstraints();
     }
 }

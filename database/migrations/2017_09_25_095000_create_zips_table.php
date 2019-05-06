@@ -33,30 +33,11 @@ class CreateZipsTable extends Migration
             $table->timestamps(); // Need to increment the created_at dates in .csv file so they are in correct order.
         });
 
-        Schema::table('zips', function($table) {
+        Schema::table('zips', function ($table) {
             $table->foreign('state_id')->references('id')->on('states')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('market_id')->references('id')->on('markets')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('zips', function ($table) {
-            $table->dropForeign(['state_id']);
-            $table->dropForeign(['market_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('zips');
-        Schema::enableForeignKeyConstraints();
     }
 }

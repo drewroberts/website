@@ -29,24 +29,8 @@ class CreateTypesTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('types', function($table) {
+        Schema::table('types', function ($table) {
             $table->foreign('parent_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('types', function ($table) {
-            $table->dropForeign(['parent_id']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('types');
-        Schema::enableForeignKeyConstraints();
     }
 }

@@ -30,30 +30,11 @@ class CreateReviewsTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('reviews', function($table) {
+        Schema::table('reviews', function ($table) {
             $table->foreign('video_id')->references('id')->on('videos')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('created_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('reviews', function ($table) {
-            $table->dropForeign(['video_id']);
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('reviews');
-        Schema::enableForeignKeyConstraints();
     }
 }

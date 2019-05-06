@@ -28,26 +28,9 @@ class CreateStatesTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('states', function($table) {
+        Schema::table('states', function ($table) {
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('icon_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('states', function ($table) {
-            $table->dropForeign(['image_id']);
-            $table->dropForeign(['icon_id']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('states');
-        Schema::enableForeignKeyConstraints();
     }
 }

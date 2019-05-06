@@ -26,30 +26,11 @@ class CreatePlatformsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('platforms', function($table) {
+        Schema::table('platforms', function ($table) {
             $table->foreign('type_id')->references('id')->on('types')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('avatar_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('cover_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('platforms', function ($table) {
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['user_id']);
-            $table->dropForeign(['avatar_id']);
-            $table->dropForeign(['cover_id']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('platforms');
-        Schema::enableForeignKeyConstraints();
     }
 }

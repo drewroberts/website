@@ -34,7 +34,7 @@ class CreateRecommendationTables extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('recommendations', function($table) {
+        Schema::table('recommendations', function ($table) {
             $table->foreign('image_id')->references('id')->on('images')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('video_id')->references('id')->on('videos')->onDelete('restrict')->onUpdate('cascade');
             $table->foreign('brand_id')->references('id')->on('brands')->onDelete('restrict')->onUpdate('cascade');
@@ -59,40 +59,8 @@ class CreateRecommendationTables extends Migration
             $table->foreign('recommendation_id')->references('id')->on('recommendations')->onDelete('restrict')->onUpdate('cascade');
         });
 
-        Schema::table('recommendables', function($table) {
+        Schema::table('recommendables', function ($table) {
             $table->unique(['recommendation_id', 'recommendable_type', 'recommendable_id'], 'unique_item');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('recommendations', function ($table) {
-            $table->dropForeign(['image_id']);
-            $table->dropForeign(['video_id']);
-            $table->dropForeign(['brand_id']);
-            $table->dropForeign(['product_id']);
-            $table->dropForeign(['type_id']);
-            $table->dropForeign(['icon_id']);
-            $table->dropForeign(['heroicon_id']);
-            $table->dropForeign(['created_by']);
-            $table->dropForeign(['updated_by']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('recommendations');
-        Schema::enableForeignKeyConstraints();
-
-        Schema::table('recommendables', function ($table) {
-            $table->dropForeign(['recommendation_id']);
-        });
-
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('recommendables');
-        Schema::enableForeignKeyConstraints();
     }
 }
