@@ -13,7 +13,7 @@ class CreateTopicsTable extends Migration
      */
     public function up()
     {
-        Schema::create('topics', function (Blueprint $table) { // Website sections, topics for content.
+        Schema::create('topics', function (Blueprint $table) { // Website sections, topics for content. Should rename to series. Also, I am seperating out Projects from this. Going to call them projects and nest under /projects with iterations as the name of the various episodes for them. Leaving posts as the name of each video or article in a series.
             $table->increments('id');
             $table->string('slug')->unique()->index();
             $table->unsignedInteger('type_id')->nullable()->index(); // Allows groupings for positions in on homepage, features, treatment of topic, etc.
