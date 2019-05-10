@@ -13,7 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) { // Need to create a roles table. Also likely need something else for Auth with AMP Login
             $table->increments('id');
             $table->string('name'); // Will override with profile display_name if profile completed. User won't be able to edit this.
             $table->string('email')->unique();
