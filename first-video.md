@@ -1,11 +1,11 @@
-# Thoughts before Launching Your Website
+# Thoughts & Resources for Your Website
 
-- I'm a marketing guy who enjoys web development, so here's how I approach launching a website
-- Have a number of friends launching websites, so figured it would be best to consolidate my 2 cents into a few quick videos so I could text them a link
+- I'm a marketing guy who enjoys web development, so here are some thoughts on how I approach launching a website
+- Why am I making this video? Have a number of friends launching websites, so figured it would be best to consolidate my 2 cents into a few quick videos so I could text them a link
 - Most of my videos are private/unlisted but I'm willing to make this public cause it could be helpful for folks
 - Feel free to share if you think it would be useful for anyone you know
 
-- Should I change the title to be more clickbait like Tim Ferriss & Ramit Sethi? "Required Reading: 10 Considerations Before Launching Website" "7 Shocking Things You Must Know If You Have a Website!!!"
+- Before we get into it, I thought about being like Tim Ferriss & Ramit Sethi and here are my best clickbait optional titles: "Required Reading: 10 Considerations Before Launching Website" "7 Shocking Things You Must Know If You Have a Website!!!"
 
 ## There are a 1,000 ways to build a site, do your thing
 
@@ -14,16 +14,14 @@
 - Concept of iteration key to this medium. Organic/transient in nature
 - Think about input/output concept. Elon Musk articulates this best as communication interface with pictures, thumbs, etc. Internet just a better medium for increasing bandwidth and communication with others, join the organism
 
-## Concept of Art Constraints
+## Embrace the concept of Art Constraints
 
 - Embrace the medium and what it can do and can't do. Then set additional constraints on your application
 - Constraints not restraints
-- Haiku, etc.
 
 ## Distribution of Content
 
-- Most important thing is to consider the distribution of your content
-
+- Most important thing is to consider how you're going to distribute your content
 - Play the game, follow the rules, which are set by Google & Facebook.
 - Most website decisions based on core SEO principles
 
@@ -58,6 +56,8 @@
 ## Version control is your best friend
 
 - Meet GitHub
+- Learn the basic of git (gettinggit.com)
+- Think in Packages. If you're into php, Marcel Pociot is your guy
 
 ## Minimum Viable Product
 
@@ -80,26 +80,37 @@
 - Aspire to be like Addy Osmani & Paul Irish
 - Google Lighthouse
 
+## Automate everything
+
+- Think about your process for adding content to the website and free your time to be creative not do busy work
+
+## Consistency Wins
+
+- Seth Godin and seths.blog
+
 ## SVG is amazing
 
 - Google Sarah Drasner & Sara Soueidan
 
 ## Commit to lifelong learning
 
-- The web is a trendy place, keep an eye on where things are heading
-- Wes Bos, Jeffrey Way, all Google , and web conference talks are better than college
+- The web is a trendy place, keep an eye on the trendsetters and where things are heading
+- Wes Bos, Jeffrey Way, all Google Developer Advocates, and web conference talks are better than college
 - Plenty of resources like Treehouse, Udacity, and Udemy, so no excuses
+- Start here: My top 5 web conference talks as of right now
 
 ## My two cents
 
+- Open Source is the real bomb.com
+- Markdown everything
 - AMP as a web framework (Paul Baukus even makes a pitch in Japanese)
 - Laravel if you need a backend (Taylor Otwell & that community are a gift to mankind. Tighten is amazing.)
-- Markdown everything
 - Burn the trailing backslashes and www
+- Google Domains will reduce friction in your life
 
 
 
 
-Leave a comment if you have additional suggestions. If I completely missed something, I will make this into a series and add that to the next video and give credit where it's due. Thank you for your time, hopefully this was helpful.
+Leave a comment if you have additional suggestions. If I completely missed something, I will make this into a series and add your suggestions to the next video and give credit where it's due. Thank you for your time, hopefully this was helpful.
 
 I am also committing to read every comment left on this video, so feel free to ask questions specific to your website and I'll respond.
