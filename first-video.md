@@ -14,10 +14,16 @@
 - Concept of iteration key to this medium. Organic/transient in nature
 - Think about input/output concept. Elon Musk articulates this best as communication interface with pictures, thumbs, etc. Internet just a better medium for increasing bandwidth and communication with others, join the organism
 
+## Open Source is a gift to mankind
+
+- Just accept the gift
+- Hundreds of thousands of hours are devoted to some of these projects and you get to download that work for free and use however you want. It will blow your mind if you think about it.
+
 ## Embrace the concept of Art Constraints
 
 - Embrace the medium and what it can do and can't do. Then set additional constraints on your application
 - Constraints not restraints
+- "Within a constraint, within a limitation, is infinite freedom."
 
 ## Distribution of Content
 
@@ -87,6 +93,8 @@
 ## Consistency Wins
 
 - Seth Godin and seths.blog
+- Just show up. Read Steven Pressfield if you need a kick in the pants.
+- Josh Waitzkin also good on this topic. He references Hemmingway ended the day with something left to do.
 
 ## SVG is amazing
 
@@ -97,15 +105,17 @@
 - The web is a trendy place, keep an eye on the trendsetters and where things are heading
 - Wes Bos, Jeffrey Way, all Google Developer Advocates, and web conference talks are better than college
 - Plenty of resources like Treehouse, Udacity, and Udemy, so no excuses
-- Start here: My top 5 web conference talks as of right now
+- Start here: "My top 5 web conference talks as of right now" will be next video in this series
 
 ## My two cents
 
-- Open Source is the real bomb.com
 - Markdown everything
 - AMP as a web framework (Paul Baukus even makes a pitch in Japanese)
-- Laravel if you need a backend (Taylor Otwell & that community are a gift to mankind. Tighten is amazing.)
+- Laravel if you need a backend (Taylor Otwell & that community will make you a web artisan. Tighten is amazing.)
 - Burn the trailing backslashes and www
+- I prefer server rendered sites over javascript SPA
+- Web components could be a game changer
+- 5G is definately a game changer similar to iphone
 - Google Domains will reduce friction in your life
 
 
