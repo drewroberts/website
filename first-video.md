@@ -1,13 +1,15 @@
 # Thoughts & Resources for Your Website
 
-- I'm a marketing guy who enjoys web development, so here are some thoughts on how I approach launching a website
-- Why am I making this video? Have a number of friends launching websites, so figured it would be best to consolidate my 2 cents into a few quick videos so I could text them a link
-- Most of my videos are private/unlisted but I'm willing to make this public cause it could be helpful for folks
-- Feel free to share if you think it would be useful for anyone you know
+- Want some thoughts to consider for your website? I also recommend a few resources to check out and will briefly reference them. Links in the show notes.
+- I'm a marketing guy who enjoys web development. I have a few friends launching websites, so I figured it would be best to consolidate my 2 cents for them into short video clips
+- I'm basically scratching my own itch so I could just text them a link
+- Most of my videos are private/unlisted but I'm willing to make this public cause it could be helpful for other folks
+- Don't say, just post on screen: Feel free to share if you think it would be useful for anyone you know. MIT license.
 
-- Before we get into it, I thought about being like Tim Ferriss & Ramit Sethi and here are my best clickbait optional titles: "Required Reading: 10 Considerations Before Launching Website" "7 Shocking Things You Must Know If You Have a Website!!!"
+- Before we get into it, I thought about being like Tim Ferriss & Ramit Sethi and using a clickbait title.
+- Don't say these, just show them on the screen on Buzzfeed, Forbes, etc: "Required Reading: 10 Considerations Before Launching Website" "7 Shocking Things You Must Know If You Have a Website!!!"
 
-## There are a 1,000 ways to build a site, do your thing
+## There are a 1,000 ways to build a website, do your thing
 
 - Don't let the need for perfection be what holds you back from launching
 - Feel free to move fast & break things
@@ -18,6 +20,7 @@
 
 - Just accept the gift
 - Hundreds of thousands of hours are devoted to some of these projects and you get to download that work for free and use however you want. It will blow your mind if you think about it.
+- Stand on the shoulders of those that came before you
 
 ## Embrace the concept of Art Constraints
 
@@ -29,7 +32,14 @@
 
 - Most important thing is to consider how you're going to distribute your content
 - Play the game, follow the rules, which are set by Google & Facebook.
-- Most website decisions based on core SEO principles
+- If you want to know what distribution options are available to you, Traction by Gabriel Weinberg provides a helpful framework and will give you the terminology to dive deeper on the ones that apply to your website
+- I base most of my website decisions on core SEO principles
+
+## Growth Hacks
+
+- If you have not never heard of growth hacking, listen on Audible to Ryan Holiday's quick intro
+- Sean Ellis goes into more depth with his Hacking Growth book
+- Reforge by Brian Balfour &  is the best resource I've found. Good ROI for me.
 
 ## Know Your Tools
 
@@ -121,6 +131,10 @@
 
 
 
-Leave a comment if you have additional suggestions. If I completely missed something, I will make this into a series and add your suggestions to the next video and give credit where it's due. Thank you for your time, hopefully this was helpful.
+Leave a comment if you have additional suggestions. If I completely missed something, I will make this into a series and add your suggestions to the next video and give credit where it's due.
+
+I'll have a better video camera for any additional videos in this series. I just shot this one on my phone. #teampixel
+
+Thank you for your time, hopefully this was helpful.
 
 I am also committing to read every comment left on this video, so feel free to ask questions specific to your website and I'll respond.
