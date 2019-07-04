@@ -76,6 +76,7 @@
 ## Power of the Web
 
 - Unrivaled distribution system in the history of mankind
+- https://justinjackson.ca/words.html
 - Really is amazing when you think about it. Try explaining to somebody who lived 100 years ago. Jeremiah's comedian clip
 
 ## Version control is your best friend
