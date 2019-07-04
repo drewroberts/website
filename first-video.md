@@ -3,7 +3,6 @@
 - Want some thoughts to consider for your website? I also have some resources to recommend and will throw those links in the show notes.
 - I'm a marketing guy who enjoys web development. I have a few friends launching websites, so I figured it would be best to consolidate my 2 cents for them into this video
 - Hopefully some other people find this helpful
-- Maybe I should use Tim Ferriss & Ramit Sethi style title when posting to YouTube
 
 ## There are a 1,000 ways to build a website, do your thing
 
@@ -47,13 +46,16 @@
 ## Other Distribution/Marketing theories worth understanding
 
 - Click Funnels by Russell Brunson
-- Permission marketing by Seth Godin
+- Permission Marketing by Seth Godin
 - Perennial Seller by Ryan Holiday
+- Experience Economy by Joseph Pine & James Gilmore
+- Flywheel by Jim Collins
 
 ## Keep Customers First
 
 - https://sivers.org/caremore
 - Oakley Quote
+- Don't oversell, even if you use clickbait style titles like Tim Ferriss & Ramit Sethi make sure you have real substance
 
 ## Call To Action
 
