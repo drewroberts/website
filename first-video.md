@@ -122,6 +122,7 @@
 
 - Seth Godin and seths.blog
 - Just show up. Read Steven Pressfield if you need a kick in the pants.
+- Everybody Writes by Ann Handley
 - Josh Waitzkin also good on this topic. He references Hemmingway ended the day with something left to do.
 
 ## Analytics
