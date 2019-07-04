@@ -1,14 +1,9 @@
 # Thoughts & Resources for Your Website
 
 - Want some thoughts to consider for your website? I also have some resources to recommend and will throw those links in the show notes.
-- I'm a marketing guy who enjoys web development. I have a few friends launching websites, so I figured it would be best to consolidate my 2 cents for them into short video clips
-- I'm basically scratching my own itch so I could just text them a link
+- I'm a marketing guy who enjoys web development. I have a few friends launching websites, so I figured it would be best to consolidate my 2 cents for them into this video
 - Hopefully some other people find this helpful
 - Maybe I should use Tim Ferriss & Ramit Sethi style title when posting to YouTube
-
-- Don't say: Most of my videos are private/unlisted but I'm willing to make this public cause it could be helpful for other folks
-- Don't say, just post on screen: Feel free to share if you think it would be useful for anyone you know. MIT license.
-- Don't say these, just show the clickbait titles on Buzzfeed, Forbes, etc: "Required Reading: 10 Considerations Before Launching Website" "7 Shocking Things You Must Know If You Have a Website!!!"
 
 ## There are a 1,000 ways to build a website, do your thing
 
