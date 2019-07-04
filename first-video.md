@@ -18,6 +18,13 @@
 - Hundreds of thousands of hours are devoted to some of these projects and you get to download that work for free and use however you want. It will blow your mind if you think about it.
 - Stand on the shoulders of those that came before you
 
+## Know Your Tools
+
+- Google Webmasters
+- Moz or Ahrefs
+- EDI, your code editor. I use VSCode 'cause John Papa
+- Don't be scared of the command line. Hyper from Zeit will change your world
+
 ## Embrace the concept of Art Constraints
 
 - Embrace the medium and what it can do and can't do. Then set additional constraints on your application
@@ -37,12 +44,16 @@
 - Sean Ellis goes into more depth with his Hacking Growth book
 - Reforge by Brian Balfour & Andrew Chen is the best resource I've found. Good ROI for me.
 
-## Know Your Tools
+## Other Distribution/Marketing theories worth understanding
 
-- Google Webmasters
-- Moz or Ahrefs
-- EDI, your code editor. I use VSCode 'cause John Papa
-- Don't be scared of the command line. Hyper from Zeit will change your world
+- Click Funnels by Russell Brunson
+- Permission marketing by Seth Godin
+- Perennial Seller by Ryan Holiday
+
+## Keep Customers First
+
+- https://sivers.org/caremore
+- Oakley Quote
 
 ## Call To Action
 
@@ -68,7 +79,7 @@
 ## Version control is your best friend
 
 - Meet GitHub (show my profile)
-- Learn the basic of git (gettinggit.com)
+- Learn the basics of git (gettinggit.com)
 - Think in Packages. If you're into php, Marcel Pociot is your guy
 
 ## Minimum Viable Product
@@ -87,10 +98,18 @@
 
 - Look at Joe Rogan
 
+## Rich Content
+
+- Go in depth, the internet doesn't need more surface level clickbait content
+
 ## Speed Matters!
 
 - Aspire to be like Addy Osmani & Paul Irish
 - Google Lighthouse
+
+## Design for Mobile
+
+- Quote from Andrew Hardgrove
 
 ## Automate everything
 
@@ -101,6 +120,10 @@
 - Seth Godin and seths.blog
 - Just show up. Read Steven Pressfield if you need a kick in the pants.
 - Josh Waitzkin also good on this topic. He references Hemmingway ended the day with something left to do.
+
+## Analytics
+
+- Measure what Matters by John Doerr
 
 ## SVG is amazing
 
