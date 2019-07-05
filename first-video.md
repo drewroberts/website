@@ -23,6 +23,7 @@
 - Moz or Ahrefs
 - EDI, your code editor. I use VSCode 'cause John Papa
 - Don't be scared of the command line. Hyper from Zeit will change your world
+- Distributed Teams
 
 ## Embrace the concept of Art Constraints
 
@@ -147,6 +148,7 @@
 - Laravel if you need a backend (Taylor Otwell & that community will make you a web artisan. Tighten is amazing.)
 - Burn the trailing backslashes and www
 - I prefer server rendered sites over javascript SPA
+- Serverless is even better
 - Web components could be a game changer
 - 5G is definately a game changer similar to iphone
 - Google Domains will reduce friction in your life
