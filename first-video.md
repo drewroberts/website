@@ -70,9 +70,11 @@
 - Give it for free as a resource to begin the relationship with your visitor
 - Aspire to be like Jason Fried and DHH. What a legacy to leave on the world!
 
-## Be memorable, short dot com makes that easier
+## Brand Positioning
 
+- Be memorable, short dot com makes that easier
 - Ma.tt is the exception, but anything he does is awesome
+- Tradeoffs concept by Michael Porter, also define what you're not
 
 ## Power of the Web
 
@@ -90,34 +92,29 @@
 
 - Keep things simple, add to them only when you need it
 
-## Make Good Art
+## Be Creative
 
-- Neil Gaiman commencement is the perfect way to start your project
-
-## Feel free to imitate
-
-- Naval says creativity is merging two different concepts, so take something you like and apply it to your field
-
-## But be authentic
-
-- Look at Joe Rogan
-
-## Rich Content
-
-- Go in depth, the internet doesn't need more surface level clickbait content
+- Make Good Art - Neil Gaiman commencement is the perfect way to start your project
+- Feel free to imitate - Naval says creativity is merging two different concepts, so take something you like and apply it to your field
+- Be Authentic - Look at Joe Rogan
+- Rich COntent - Go in depth, the internet doesn't need more surface level clickbait content
 
 ## Speed Matters!
 
 - Aspire to be like Addy Osmani & Paul Irish
 - Google Lighthouse
 
-## Design for Mobile
+## Good Style Helps Communicate
 
-- Quote from Andrew Hardgrove
+- Design for Mobile - Quote from Andrew Hardgrove
+- SVG is Amazing - Sarah Drasner & Sara Soueidan
+- Utility-First CSS Frameworks are worth checking out - Tailwindcss.com
 
 ## Automate everything
 
 - Think about your process for adding content to the website and free your time to be creative not do busy work
+- After you automate testing, your confidence in the code increases
+- Continuous Integration
 
 ## Consistency Wins
 
@@ -129,10 +126,6 @@
 ## Analytics
 
 - Measure what Matters by John Doerr
-
-## SVG is amazing
-
-- Google Sarah Drasner & Sara Soueidan
 
 ## Commit to lifelong learning
 
