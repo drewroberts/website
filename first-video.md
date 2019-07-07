@@ -10,12 +10,30 @@
 - Feel free to move fast & break things
 - Concept of iteration key to this medium. Organic/transient in nature
 - Think about input/output concept. Elon Musk articulates this best as communication interface with pictures, thumbs, etc. Internet just a better medium for increasing bandwidth and communication with others, join the organism
+### Power of the Web
+- Unrivaled distribution system in the history of mankind
+- https://justinjackson.ca/words.html
+- Really is amazing when you think about it. Try explaining to somebody who lived 100 years ago. Jeremiah's comedian clip
+### Be Creative
+- Make Good Art - Neil Gaiman commencement is the perfect way to start your project
+- Feel free to imitate - Naval says creativity is merging two different concepts, so take something you like and apply it to your field
+- Be Authentic - Look at Joe Rogan
+- Rich Content - Go in depth, the internet doesn't need more surface level clickbait content
 
-## Open Source is a gift to mankind
+## Open Source Mentaility
 
-- Just accept the gift
+- Open Source is a gift, just accept it. No need to reinvent the wheel
 - Hundreds of thousands of hours are devoted to some of these projects and you get to download that work for free and use however you want. It will blow your mind if you think about it.
 - Stand on the shoulders of those that came before you
+- Pay it forward with either a contribution to open source code or a contribution of ideas/content
+- Contribute something valuable to the interwebs that only you can provide
+- Snowball effect if you keep this on point for your brand to build the identity
+- Give it for free as a resource to begin the relationship with your visitor
+- Aspire to be like Jason Fried and DHH. What a legacy to leave on the world!
+### Keep Customers First
+- https://sivers.org/caremore
+- Oakley Quote
+- Don't oversell, even if you use clickbait style titles like Tim Ferriss & Ramit Sethi make sure you have real substance
 
 ## Know Your Tools
 
@@ -24,6 +42,10 @@
 - EDI, your code editor. I use VSCode 'cause John Papa
 - Don't be scared of the command line. Hyper from Zeit will change your world
 - Distributed Teams
+### Version control is your best friend
+- Meet GitHub (show my profile)
+- Learn the basics of git (gettinggit.com)
+- Think in Packages. If you're into php, Marcel Pociot is your guy
 
 ## Embrace the concept of Art Constraints
 
@@ -37,38 +59,16 @@
 - Play the game, follow the rules, which are set by Google & Facebook.
 - If you want to know what distribution options are available to you, Traction by Gabriel Weinberg provides a helpful framework and will give you the terminology to dive deeper on the ones that apply to your website
 - I base most of my website decisions on core SEO principles
-
-## Growth Hacks
-
+### Growth Hacks
 - If you have not never heard of growth hacking, listen on Audible to Ryan Holiday's quick intro
 - Sean Ellis goes into more depth with his Hacking Growth book
 - Reforge by Brian Balfour & Andrew Chen is the best resource I've found. Good ROI for me.
-
-## Other Distribution/Marketing theories worth understanding
-
+### Other Distribution/Marketing theories worth understanding
 - Click Funnels by Russell Brunson
 - Permission Marketing by Seth Godin
 - Perennial Seller by Ryan Holiday
 - Experience Economy by Joseph Pine & James Gilmore
 - Flywheel by Jim Collins
-
-## Keep Customers First
-
-- https://sivers.org/caremore
-- Oakley Quote
-- Don't oversell, even if you use clickbait style titles like Tim Ferriss & Ramit Sethi make sure you have real substance
-
-## Call To Action
-
-- Should only have one primary call to action
-- What is your call and what's the best CTA?
-
-## What can you give for free?
-
-- Contribute something valuable to the interwebs that only you can provide
-- Keep this on point for your brand to build the identity
-- Give it for free as a resource to begin the relationship with your visitor
-- Aspire to be like Jason Fried and DHH. What a legacy to leave on the world!
 
 ## Brand Positioning
 
@@ -76,39 +76,20 @@
 - Ma.tt is the exception, but anything he does is awesome
 - Tradeoffs concept by Michael Porter, also define what you're not
 
-## Power of the Web
+## Good Style Helps Clear Communication
 
-- Unrivaled distribution system in the history of mankind
-- https://justinjackson.ca/words.html
-- Really is amazing when you think about it. Try explaining to somebody who lived 100 years ago. Jeremiah's comedian clip
-
-## Version control is your best friend
-
-- Meet GitHub (show my profile)
-- Learn the basics of git (gettinggit.com)
-- Think in Packages. If you're into php, Marcel Pociot is your guy
-
-## Minimum Viable Product
-
+- Minimum Viable Product
 - Keep things simple, add to them only when you need it
-
-## Be Creative
-
-- Make Good Art - Neil Gaiman commencement is the perfect way to start your project
-- Feel free to imitate - Naval says creativity is merging two different concepts, so take something you like and apply it to your field
-- Be Authentic - Look at Joe Rogan
-- Rich COntent - Go in depth, the internet doesn't need more surface level clickbait content
-
-## Speed Matters!
-
+- Design for Mobile - Quote from Andrew Hardgrove
+### Speed Matters!
 - Aspire to be like Addy Osmani & Paul Irish
 - Google Lighthouse
-
-## Good Style Helps Communicate
-
-- Design for Mobile - Quote from Andrew Hardgrove
 - SVG is Amazing - Sarah Drasner & Sara Soueidan
 - Utility-First CSS Frameworks are worth checking out - Tailwindcss.com
+- Make it accessible to everyone - ARIA (Accessible Rich Internet Applications)
+### Tactical Strategy
+- Should only have one primary call to action
+- What is your call and what's the best CTA?
 
 ## Automate everything
 
@@ -126,6 +107,8 @@
 ## Analytics
 
 - Measure what Matters by John Doerr
+- Continual Iteration
+- Quote about how a company is able to learn by number of tests they are able to do
 
 ## Commit to lifelong learning
 
