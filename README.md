@@ -1,6 +1,6 @@
 # Welcome to the Internet Home of Drew Roberts
 
-[This GitHub Repository](https://github.com/drewroberts/website) contains the code behind the website of Drew Roberts - [DrewRoberts.com](https://drewroberts.com "Drew Roberts")
+This [GitHub Repository](https://github.com/drewroberts/website) contains the code behind the website of Drew Roberts - [DrewRoberts.com](https://drewroberts.com "Drew Roberts")
 
 ## Connect with Drew Roberts
 
