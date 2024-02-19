@@ -1,0 +1,61 @@
+{
+    "name": "tipoff/addresses",
+    "description": "Laravel Package for opinionated addresses style",
+    "keywords": [
+        "tipoff",
+        "addresses"
+    ],
+    "homepage": "https://github.com/tipoff/addresses",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tipoff",
+            "email": "packages@tipoff.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "giggsey/libphonenumber-for-php": "^8.12",
+        "tipoff/authorization": "^2.8.6",
+        "tipoff/laravel-google-api": "^2.1.0",
+        "tipoff/support": "^2.1.5"
+    },
+    "require-dev": {
+        "tipoff/test-support": "^2.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tipoff\\Addresses\\": "src",
+            "Tipoff\\Addresses\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tipoff\\Addresses\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tipoff\\Addresses\\AddressesServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

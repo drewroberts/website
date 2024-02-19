@@ -1,0 +1,39 @@
+{
+    "name": "carlosocarvalho/flysystem-cloudinary",
+    "description": "Flysystem adapter for Cloudinary",
+    "license": "MIT",
+    "keywords": ["cloudinary", "flysystem"],
+    "homepage": "http://carlosocarvalho.github.io/flysystem-cloudinary",
+    "require": {
+        "php": ">=5.6.0",
+        "cloudinary/cloudinary_php": "^1.16",
+        "league/flysystem": "^1.0.66"
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "CarlosOCarvalho\\Flysystem\\Cloudinary\\": "src/",
+            "CarlosOCarvalho\\Flysystem\\Cloudinary\\Test\\":"tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.0.*",
+        "mockery/mockery": "0.9.*",
+        "phpunit/php-code-coverage": "^8.0.1",
+        "vlucas/phpdotenv": "^4.1",
+        "symfony/var-dumper": "^3.4.39"
+    },
+    "authors": [{
+        "name": "carlosocarvalho",
+        "email": "carlosocarvalho.com.br@gmail.com",
+        "homepage": "https://carlosocarvalho.com.br",
+        "role": "Owner"
+    }],
+    "minimum-stability": "stable",
+    "config": {
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "tdd": "bin/phpunit"
+    }
+}

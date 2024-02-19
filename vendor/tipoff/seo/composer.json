@@ -1,0 +1,67 @@
+{
+    "name": "tipoff/seo",
+    "description": "Laravel Package for tracking SEO keywords",
+    "keywords": [
+        "tipoff",
+        "seo"
+    ],
+    "homepage": "https://github.com/tipoff/seo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tipoff",
+            "email": "packages@tipoff.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "drewroberts/media": "^3.5.0",
+        "tipoff/addresses": "^2.9.0",
+        "tipoff/authorization": "^2.8.6",
+        "tipoff/laravel-google-api": "^2.1.1",
+        "tipoff/laravel-serpapi": "^2.0.0",
+        "tipoff/support": "^2.1.5"
+    },
+    "require-dev": {
+        "tipoff/test-support": "^2.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tipoff\\Seo\\": "src",
+            "Tipoff\\Seo\\Database\\Factories\\": "database/factories"
+        },
+        "files": [
+            "src/Helpers/GetFaviconUrl.php",
+            "src/Helpers/ParseUrl.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tipoff\\Seo\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tipoff\\Seo\\SeoServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
