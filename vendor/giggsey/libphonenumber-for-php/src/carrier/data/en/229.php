@@ -11,7 +11,9 @@
  */
 
 return array (
-  2294 => 'SBIN',
+  2294 => 'Celtiis',
+  22942 => 'MTN',
+  22946 => 'MTN',
   2295 => 'MTN',
   22955 => 'Moov',
   22956 => 'Moov',

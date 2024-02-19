@@ -37,7 +37,7 @@ class InstallCommand extends Command
         'memcached',
         'meilisearch',
         'minio',
-        'mailhog',
+        'mailpit',
         'selenium',
     ];
 
@@ -51,7 +51,7 @@ class InstallCommand extends Command
         if ($this->option('with')) {
             $services = $this->option('with') == 'none' ? [] : explode(',', $this->option('with'));
         } elseif ($this->option('no-interaction')) {
-            $services = ['mysql', 'redis', 'selenium', 'mailhog'];
+            $services = ['mysql', 'redis', 'selenium', 'mailpit'];
         } else {
             $services = $this->gatherServicesWithSymfonyMenu();
         }
@@ -220,13 +220,22 @@ class InstallCommand extends Command
             return;
         }
 
+        if (count($services) > 0) {
+            $status = $this->runCommands([
+                './vendor/bin/sail pull '.implode(' ', $services),
+            ]);
+
+            if ($status === 0) {
+                $this->info('Sail images installed successfully.');
+            }
+        }
+
         $status = $this->runCommands([
-            './vendor/bin/sail pull '.implode(' ', $services),
             './vendor/bin/sail build',
         ]);
 
         if ($status === 0) {
-            $this->info('Sail images installed successfully.');
+            $this->info('Sail build successful.');
         }
     }
 

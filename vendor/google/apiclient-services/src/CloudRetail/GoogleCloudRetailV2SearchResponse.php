@@ -32,6 +32,8 @@ class GoogleCloudRetailV2SearchResponse extends \Google\Collection
    * @var string
    */
   public $correctedQuery;
+  protected $experimentInfoType = GoogleCloudRetailV2ExperimentInfo::class;
+  protected $experimentInfoDataType = 'array';
   protected $facetsType = GoogleCloudRetailV2SearchResponseFacet::class;
   protected $facetsDataType = 'array';
   protected $invalidConditionBoostSpecsType = GoogleCloudRetailV2SearchRequestBoostSpecConditionBoostSpec::class;
@@ -94,6 +96,20 @@ class GoogleCloudRetailV2SearchResponse extends \Google\Collection
   public function getCorrectedQuery()
   {
     return $this->correctedQuery;
+  }
+  /**
+   * @param GoogleCloudRetailV2ExperimentInfo[]
+   */
+  public function setExperimentInfo($experimentInfo)
+  {
+    $this->experimentInfo = $experimentInfo;
+  }
+  /**
+   * @return GoogleCloudRetailV2ExperimentInfo[]
+   */
+  public function getExperimentInfo()
+  {
+    return $this->experimentInfo;
   }
   /**
    * @param GoogleCloudRetailV2SearchResponseFacet[]

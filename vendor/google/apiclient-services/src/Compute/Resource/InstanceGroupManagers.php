@@ -77,6 +77,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function abandonInstances($project, $zone, $instanceGroupManager, InstanceGroupManagersAbandonInstancesRequest $postBody, $optParams = [])
   {
@@ -94,34 +95,35 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * @opt_param string filter A filter expression that filters resources listed in
    * the response. Most Compute resources support two types of filter expressions:
    * expressions that support regular expressions and expressions that follow API
-   * improvement proposal AIP-160. If you want to use AIP-160, your expression
-   * must specify the field name, an operator, and the value that you want to use
-   * for filtering. The value must be a string, a number, or a boolean. The
-   * operator must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example,
-   * if you are filtering Compute Engine instances, you can exclude instances
-   * named `example-instance` by specifying `name != example-instance`. The `:`
-   * operator can be used with string fields to match substrings. For non-string
-   * fields it is equivalent to the `=` operator. The `:*` comparison can be used
-   * to test whether a key has been defined. For example, to find all objects with
-   * `owner` label use: ``` labels.owner:* ``` You can also filter nested fields.
-   * For example, you could specify `scheduling.automaticRestart = false` to
-   * include instances only if they are not scheduled for automatic restarts. You
-   * can use filtering on nested fields to filter based on resource labels. To
-   * filter on multiple expressions, provide each separate expression within
-   * parentheses. For example: ``` (scheduling.automaticRestart = true)
-   * (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND`
-   * expression. However, you can include `AND` and `OR` expressions explicitly.
-   * For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel
-   * Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a
-   * regular expression, use the `eq` (equal) or `ne` (not equal) operator against
-   * a single un-parenthesized expression with or without quotes or against
-   * multiple parenthesized expressions. Examples: `fieldname eq unquoted literal`
+   * improvement proposal AIP-160. These two types of filter expressions cannot be
+   * mixed in one request. If you want to use AIP-160, your expression must
+   * specify the field name, an operator, and the value that you want to use for
+   * filtering. The value must be a string, a number, or a boolean. The operator
+   * must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example, if you
+   * are filtering Compute Engine instances, you can exclude instances named
+   * `example-instance` by specifying `name != example-instance`. The `:*`
+   * comparison can be used to test whether a key has been defined. For example,
+   * to find all objects with `owner` label use: ``` labels.owner:* ``` You can
+   * also filter nested fields. For example, you could specify
+   * `scheduling.automaticRestart = false` to include instances only if they are
+   * not scheduled for automatic restarts. You can use filtering on nested fields
+   * to filter based on resource labels. To filter on multiple expressions,
+   * provide each separate expression within parentheses. For example: ```
+   * (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By
+   * default, each expression is an `AND` expression. However, you can include
+   * `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel
+   * Skylake") OR (cpuPlatform = "Intel Broadwell") AND
+   * (scheduling.automaticRestart = true) ``` If you want to use a regular
+   * expression, use the `eq` (equal) or `ne` (not equal) operator against a
+   * single un-parenthesized expression with or without quotes or against multiple
+   * parenthesized expressions. Examples: `fieldname eq unquoted literal`
    * `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"`
    * `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is
    * interpreted as a regular expression using Google RE2 library syntax. The
    * literal value must match the entire field. For example, to filter for
    * instances that do not end with name "instance", you would use `name ne
-   * .*instance`.
+   * .*instance`. You cannot combine constraints on multiple fields using regular
+   * expressions.
    * @opt_param bool includeAllScopes Indicates whether every visible scope for
    * each scope type (zone, region, global) should be included in the response.
    * For new resource types added after this field, the flag has no effect as new
@@ -148,7 +150,11 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * @opt_param bool returnPartialSuccess Opt-in for partial success behavior
    * which provides partial results in case of failure. The default value is
    * false.
+   * @opt_param string serviceProjectNumber The Shared VPC service project id or
+   * service project number for which aggregated list request is invoked for
+   * subnetworks list-usable api.
    * @return InstanceGroupManagerAggregatedList
+   * @throws \Google\Service\Exception
    */
   public function aggregatedList($project, $optParams = [])
   {
@@ -169,6 +175,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * @param InstanceGroupManagersApplyUpdatesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function applyUpdatesToInstances($project, $zone, $instanceGroupManager, InstanceGroupManagersApplyUpdatesRequest $postBody, $optParams = [])
   {
@@ -202,6 +209,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function createInstances($project, $zone, $instanceGroupManager, InstanceGroupManagersCreateInstancesRequest $postBody, $optParams = [])
   {
@@ -233,6 +241,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($project, $zone, $instanceGroupManager, $optParams = [])
   {
@@ -271,6 +280,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function deleteInstances($project, $zone, $instanceGroupManager, InstanceGroupManagersDeleteInstancesRequest $postBody, $optParams = [])
   {
@@ -290,6 +300,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * @param InstanceGroupManagersDeletePerInstanceConfigsReq $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function deletePerInstanceConfigs($project, $zone, $instanceGroupManager, InstanceGroupManagersDeletePerInstanceConfigsReq $postBody, $optParams = [])
   {
@@ -298,8 +309,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
     return $this->call('deletePerInstanceConfigs', [$params], Operation::class);
   }
   /**
-   * Returns all of the details about the specified managed instance group. Gets a
-   * list of available managed instance groups by making a list() request.
+   * Returns all of the details about the specified managed instance group.
    * (instanceGroupManagers.get)
    *
    * @param string $project Project ID for this request.
@@ -308,6 +318,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * @param string $instanceGroupManager The name of the managed instance group.
    * @param array $optParams Optional parameters.
    * @return InstanceGroupManager
+   * @throws \Google\Service\Exception
    */
   public function get($project, $zone, $instanceGroupManager, $optParams = [])
   {
@@ -342,6 +353,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function insert($project, $zone, InstanceGroupManager $postBody, $optParams = [])
   {
@@ -361,34 +373,35 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * @opt_param string filter A filter expression that filters resources listed in
    * the response. Most Compute resources support two types of filter expressions:
    * expressions that support regular expressions and expressions that follow API
-   * improvement proposal AIP-160. If you want to use AIP-160, your expression
-   * must specify the field name, an operator, and the value that you want to use
-   * for filtering. The value must be a string, a number, or a boolean. The
-   * operator must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example,
-   * if you are filtering Compute Engine instances, you can exclude instances
-   * named `example-instance` by specifying `name != example-instance`. The `:`
-   * operator can be used with string fields to match substrings. For non-string
-   * fields it is equivalent to the `=` operator. The `:*` comparison can be used
-   * to test whether a key has been defined. For example, to find all objects with
-   * `owner` label use: ``` labels.owner:* ``` You can also filter nested fields.
-   * For example, you could specify `scheduling.automaticRestart = false` to
-   * include instances only if they are not scheduled for automatic restarts. You
-   * can use filtering on nested fields to filter based on resource labels. To
-   * filter on multiple expressions, provide each separate expression within
-   * parentheses. For example: ``` (scheduling.automaticRestart = true)
-   * (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND`
-   * expression. However, you can include `AND` and `OR` expressions explicitly.
-   * For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel
-   * Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a
-   * regular expression, use the `eq` (equal) or `ne` (not equal) operator against
-   * a single un-parenthesized expression with or without quotes or against
-   * multiple parenthesized expressions. Examples: `fieldname eq unquoted literal`
+   * improvement proposal AIP-160. These two types of filter expressions cannot be
+   * mixed in one request. If you want to use AIP-160, your expression must
+   * specify the field name, an operator, and the value that you want to use for
+   * filtering. The value must be a string, a number, or a boolean. The operator
+   * must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example, if you
+   * are filtering Compute Engine instances, you can exclude instances named
+   * `example-instance` by specifying `name != example-instance`. The `:*`
+   * comparison can be used to test whether a key has been defined. For example,
+   * to find all objects with `owner` label use: ``` labels.owner:* ``` You can
+   * also filter nested fields. For example, you could specify
+   * `scheduling.automaticRestart = false` to include instances only if they are
+   * not scheduled for automatic restarts. You can use filtering on nested fields
+   * to filter based on resource labels. To filter on multiple expressions,
+   * provide each separate expression within parentheses. For example: ```
+   * (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By
+   * default, each expression is an `AND` expression. However, you can include
+   * `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel
+   * Skylake") OR (cpuPlatform = "Intel Broadwell") AND
+   * (scheduling.automaticRestart = true) ``` If you want to use a regular
+   * expression, use the `eq` (equal) or `ne` (not equal) operator against a
+   * single un-parenthesized expression with or without quotes or against multiple
+   * parenthesized expressions. Examples: `fieldname eq unquoted literal`
    * `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"`
    * `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is
    * interpreted as a regular expression using Google RE2 library syntax. The
    * literal value must match the entire field. For example, to filter for
    * instances that do not end with name "instance", you would use `name ne
-   * .*instance`.
+   * .*instance`. You cannot combine constraints on multiple fields using regular
+   * expressions.
    * @opt_param string maxResults The maximum number of results per page that
    * should be returned. If the number of available results is larger than
    * `maxResults`, Compute Engine returns a `nextPageToken` that can be used to
@@ -409,6 +422,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * which provides partial results in case of failure. The default value is
    * false.
    * @return InstanceGroupManagerList
+   * @throws \Google\Service\Exception
    */
   public function listInstanceGroupManagers($project, $zone, $optParams = [])
   {
@@ -433,34 +447,35 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * @opt_param string filter A filter expression that filters resources listed in
    * the response. Most Compute resources support two types of filter expressions:
    * expressions that support regular expressions and expressions that follow API
-   * improvement proposal AIP-160. If you want to use AIP-160, your expression
-   * must specify the field name, an operator, and the value that you want to use
-   * for filtering. The value must be a string, a number, or a boolean. The
-   * operator must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example,
-   * if you are filtering Compute Engine instances, you can exclude instances
-   * named `example-instance` by specifying `name != example-instance`. The `:`
-   * operator can be used with string fields to match substrings. For non-string
-   * fields it is equivalent to the `=` operator. The `:*` comparison can be used
-   * to test whether a key has been defined. For example, to find all objects with
-   * `owner` label use: ``` labels.owner:* ``` You can also filter nested fields.
-   * For example, you could specify `scheduling.automaticRestart = false` to
-   * include instances only if they are not scheduled for automatic restarts. You
-   * can use filtering on nested fields to filter based on resource labels. To
-   * filter on multiple expressions, provide each separate expression within
-   * parentheses. For example: ``` (scheduling.automaticRestart = true)
-   * (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND`
-   * expression. However, you can include `AND` and `OR` expressions explicitly.
-   * For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel
-   * Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a
-   * regular expression, use the `eq` (equal) or `ne` (not equal) operator against
-   * a single un-parenthesized expression with or without quotes or against
-   * multiple parenthesized expressions. Examples: `fieldname eq unquoted literal`
+   * improvement proposal AIP-160. These two types of filter expressions cannot be
+   * mixed in one request. If you want to use AIP-160, your expression must
+   * specify the field name, an operator, and the value that you want to use for
+   * filtering. The value must be a string, a number, or a boolean. The operator
+   * must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example, if you
+   * are filtering Compute Engine instances, you can exclude instances named
+   * `example-instance` by specifying `name != example-instance`. The `:*`
+   * comparison can be used to test whether a key has been defined. For example,
+   * to find all objects with `owner` label use: ``` labels.owner:* ``` You can
+   * also filter nested fields. For example, you could specify
+   * `scheduling.automaticRestart = false` to include instances only if they are
+   * not scheduled for automatic restarts. You can use filtering on nested fields
+   * to filter based on resource labels. To filter on multiple expressions,
+   * provide each separate expression within parentheses. For example: ```
+   * (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By
+   * default, each expression is an `AND` expression. However, you can include
+   * `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel
+   * Skylake") OR (cpuPlatform = "Intel Broadwell") AND
+   * (scheduling.automaticRestart = true) ``` If you want to use a regular
+   * expression, use the `eq` (equal) or `ne` (not equal) operator against a
+   * single un-parenthesized expression with or without quotes or against multiple
+   * parenthesized expressions. Examples: `fieldname eq unquoted literal`
    * `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"`
    * `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is
    * interpreted as a regular expression using Google RE2 library syntax. The
    * literal value must match the entire field. For example, to filter for
    * instances that do not end with name "instance", you would use `name ne
-   * .*instance`.
+   * .*instance`. You cannot combine constraints on multiple fields using regular
+   * expressions.
    * @opt_param string maxResults The maximum number of results per page that
    * should be returned. If the number of available results is larger than
    * `maxResults`, Compute Engine returns a `nextPageToken` that can be used to
@@ -481,6 +496,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * which provides partial results in case of failure. The default value is
    * false.
    * @return InstanceGroupManagersListErrorsResponse
+   * @throws \Google\Service\Exception
    */
   public function listErrors($project, $zone, $instanceGroupManager, $optParams = [])
   {
@@ -495,9 +511,8 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * still creating an instance, the currentAction is CREATING. If a previous
    * action failed, the list displays the errors for that failed action. The
    * orderBy query parameter is not supported. The `pageToken` query parameter is
-   * supported only in the alpha and beta API and only if the group's
-   * `listManagedInstancesResults` field is set to `PAGINATED`.
-   * (instanceGroupManagers.listManagedInstances)
+   * supported only if the group's `listManagedInstancesResults` field is set to
+   * `PAGINATED`. (instanceGroupManagers.listManagedInstances)
    *
    * @param string $project Project ID for this request.
    * @param string $zone The name of the zone where the managed instance group is
@@ -508,34 +523,35 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * @opt_param string filter A filter expression that filters resources listed in
    * the response. Most Compute resources support two types of filter expressions:
    * expressions that support regular expressions and expressions that follow API
-   * improvement proposal AIP-160. If you want to use AIP-160, your expression
-   * must specify the field name, an operator, and the value that you want to use
-   * for filtering. The value must be a string, a number, or a boolean. The
-   * operator must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example,
-   * if you are filtering Compute Engine instances, you can exclude instances
-   * named `example-instance` by specifying `name != example-instance`. The `:`
-   * operator can be used with string fields to match substrings. For non-string
-   * fields it is equivalent to the `=` operator. The `:*` comparison can be used
-   * to test whether a key has been defined. For example, to find all objects with
-   * `owner` label use: ``` labels.owner:* ``` You can also filter nested fields.
-   * For example, you could specify `scheduling.automaticRestart = false` to
-   * include instances only if they are not scheduled for automatic restarts. You
-   * can use filtering on nested fields to filter based on resource labels. To
-   * filter on multiple expressions, provide each separate expression within
-   * parentheses. For example: ``` (scheduling.automaticRestart = true)
-   * (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND`
-   * expression. However, you can include `AND` and `OR` expressions explicitly.
-   * For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel
-   * Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a
-   * regular expression, use the `eq` (equal) or `ne` (not equal) operator against
-   * a single un-parenthesized expression with or without quotes or against
-   * multiple parenthesized expressions. Examples: `fieldname eq unquoted literal`
+   * improvement proposal AIP-160. These two types of filter expressions cannot be
+   * mixed in one request. If you want to use AIP-160, your expression must
+   * specify the field name, an operator, and the value that you want to use for
+   * filtering. The value must be a string, a number, or a boolean. The operator
+   * must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example, if you
+   * are filtering Compute Engine instances, you can exclude instances named
+   * `example-instance` by specifying `name != example-instance`. The `:*`
+   * comparison can be used to test whether a key has been defined. For example,
+   * to find all objects with `owner` label use: ``` labels.owner:* ``` You can
+   * also filter nested fields. For example, you could specify
+   * `scheduling.automaticRestart = false` to include instances only if they are
+   * not scheduled for automatic restarts. You can use filtering on nested fields
+   * to filter based on resource labels. To filter on multiple expressions,
+   * provide each separate expression within parentheses. For example: ```
+   * (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By
+   * default, each expression is an `AND` expression. However, you can include
+   * `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel
+   * Skylake") OR (cpuPlatform = "Intel Broadwell") AND
+   * (scheduling.automaticRestart = true) ``` If you want to use a regular
+   * expression, use the `eq` (equal) or `ne` (not equal) operator against a
+   * single un-parenthesized expression with or without quotes or against multiple
+   * parenthesized expressions. Examples: `fieldname eq unquoted literal`
    * `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"`
    * `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is
    * interpreted as a regular expression using Google RE2 library syntax. The
    * literal value must match the entire field. For example, to filter for
    * instances that do not end with name "instance", you would use `name ne
-   * .*instance`.
+   * .*instance`. You cannot combine constraints on multiple fields using regular
+   * expressions.
    * @opt_param string maxResults The maximum number of results per page that
    * should be returned. If the number of available results is larger than
    * `maxResults`, Compute Engine returns a `nextPageToken` that can be used to
@@ -556,6 +572,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * which provides partial results in case of failure. The default value is
    * false.
    * @return InstanceGroupManagersListManagedInstancesResponse
+   * @throws \Google\Service\Exception
    */
   public function listManagedInstances($project, $zone, $instanceGroupManager, $optParams = [])
   {
@@ -578,34 +595,35 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * @opt_param string filter A filter expression that filters resources listed in
    * the response. Most Compute resources support two types of filter expressions:
    * expressions that support regular expressions and expressions that follow API
-   * improvement proposal AIP-160. If you want to use AIP-160, your expression
-   * must specify the field name, an operator, and the value that you want to use
-   * for filtering. The value must be a string, a number, or a boolean. The
-   * operator must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example,
-   * if you are filtering Compute Engine instances, you can exclude instances
-   * named `example-instance` by specifying `name != example-instance`. The `:`
-   * operator can be used with string fields to match substrings. For non-string
-   * fields it is equivalent to the `=` operator. The `:*` comparison can be used
-   * to test whether a key has been defined. For example, to find all objects with
-   * `owner` label use: ``` labels.owner:* ``` You can also filter nested fields.
-   * For example, you could specify `scheduling.automaticRestart = false` to
-   * include instances only if they are not scheduled for automatic restarts. You
-   * can use filtering on nested fields to filter based on resource labels. To
-   * filter on multiple expressions, provide each separate expression within
-   * parentheses. For example: ``` (scheduling.automaticRestart = true)
-   * (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND`
-   * expression. However, you can include `AND` and `OR` expressions explicitly.
-   * For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel
-   * Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a
-   * regular expression, use the `eq` (equal) or `ne` (not equal) operator against
-   * a single un-parenthesized expression with or without quotes or against
-   * multiple parenthesized expressions. Examples: `fieldname eq unquoted literal`
+   * improvement proposal AIP-160. These two types of filter expressions cannot be
+   * mixed in one request. If you want to use AIP-160, your expression must
+   * specify the field name, an operator, and the value that you want to use for
+   * filtering. The value must be a string, a number, or a boolean. The operator
+   * must be either `=`, `!=`, `>`, `<`, `<=`, `>=` or `:`. For example, if you
+   * are filtering Compute Engine instances, you can exclude instances named
+   * `example-instance` by specifying `name != example-instance`. The `:*`
+   * comparison can be used to test whether a key has been defined. For example,
+   * to find all objects with `owner` label use: ``` labels.owner:* ``` You can
+   * also filter nested fields. For example, you could specify
+   * `scheduling.automaticRestart = false` to include instances only if they are
+   * not scheduled for automatic restarts. You can use filtering on nested fields
+   * to filter based on resource labels. To filter on multiple expressions,
+   * provide each separate expression within parentheses. For example: ```
+   * (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By
+   * default, each expression is an `AND` expression. However, you can include
+   * `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel
+   * Skylake") OR (cpuPlatform = "Intel Broadwell") AND
+   * (scheduling.automaticRestart = true) ``` If you want to use a regular
+   * expression, use the `eq` (equal) or `ne` (not equal) operator against a
+   * single un-parenthesized expression with or without quotes or against multiple
+   * parenthesized expressions. Examples: `fieldname eq unquoted literal`
    * `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"`
    * `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is
    * interpreted as a regular expression using Google RE2 library syntax. The
    * literal value must match the entire field. For example, to filter for
    * instances that do not end with name "instance", you would use `name ne
-   * .*instance`.
+   * .*instance`. You cannot combine constraints on multiple fields using regular
+   * expressions.
    * @opt_param string maxResults The maximum number of results per page that
    * should be returned. If the number of available results is larger than
    * `maxResults`, Compute Engine returns a `nextPageToken` that can be used to
@@ -626,6 +644,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * which provides partial results in case of failure. The default value is
    * false.
    * @return InstanceGroupManagersListPerInstanceConfigsResp
+   * @throws \Google\Service\Exception
    */
   public function listPerInstanceConfigs($project, $zone, $instanceGroupManager, $optParams = [])
   {
@@ -663,6 +682,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($project, $zone, $instanceGroupManager, InstanceGroupManager $postBody, $optParams = [])
   {
@@ -694,6 +714,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patchPerInstanceConfigs($project, $zone, $instanceGroupManager, InstanceGroupManagersPatchPerInstanceConfigsReq $postBody, $optParams = [])
   {
@@ -732,6 +753,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function recreateInstances($project, $zone, $instanceGroupManager, InstanceGroupManagersRecreateInstancesRequest $postBody, $optParams = [])
   {
@@ -777,6 +799,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function resize($project, $zone, $instanceGroupManager, $size, $optParams = [])
   {
@@ -808,6 +831,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function setInstanceTemplate($project, $zone, $instanceGroupManager, InstanceGroupManagersSetInstanceTemplateRequest $postBody, $optParams = [])
   {
@@ -842,6 +866,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function setTargetPools($project, $zone, $instanceGroupManager, InstanceGroupManagersSetTargetPoolsRequest $postBody, $optParams = [])
   {
@@ -873,6 +898,7 @@ class InstanceGroupManagers extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported (
    * 00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function updatePerInstanceConfigs($project, $zone, $instanceGroupManager, InstanceGroupManagersUpdatePerInstanceConfigsReq $postBody, $optParams = [])
   {

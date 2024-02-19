@@ -25,7 +25,7 @@ use Google\Service\VMMigrationService\ReplicationCycle;
  * Typical usage is:
  *  <code>
  *   $vmmigrationService = new Google\Service\VMMigrationService(...);
- *   $replicationCycles = $vmmigrationService->replicationCycles;
+ *   $replicationCycles = $vmmigrationService->projects_locations_sources_migratingVms_replicationCycles;
  *  </code>
  */
 class ProjectsLocationsSourcesMigratingVmsReplicationCycles extends \Google\Service\Resource
@@ -36,6 +36,7 @@ class ProjectsLocationsSourcesMigratingVmsReplicationCycles extends \Google\Serv
    * @param string $name Required. The name of the ReplicationCycle.
    * @param array $optParams Optional parameters.
    * @return ReplicationCycle
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -62,6 +63,7 @@ class ProjectsLocationsSourcesMigratingVmsReplicationCycles extends \Google\Serv
    * When paginating, all other parameters provided to `ListReplicationCycles`
    * must match the call that provided the page token.
    * @return ListReplicationCyclesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsSourcesMigratingVmsReplicationCycles($parent, $optParams = [])
   {

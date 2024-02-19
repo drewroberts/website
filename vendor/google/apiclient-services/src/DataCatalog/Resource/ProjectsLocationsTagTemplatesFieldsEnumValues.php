@@ -25,7 +25,7 @@ use Google\Service\DataCatalog\GoogleCloudDatacatalogV1TagTemplateField;
  * Typical usage is:
  *  <code>
  *   $datacatalogService = new Google\Service\DataCatalog(...);
- *   $enumValues = $datacatalogService->enumValues;
+ *   $enumValues = $datacatalogService->projects_locations_tagTemplates_fields_enumValues;
  *  </code>
  */
 class ProjectsLocationsTagTemplatesFieldsEnumValues extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class ProjectsLocationsTagTemplatesFieldsEnumValues extends \Google\Service\Reso
    * @param GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDatacatalogV1TagTemplateField
+   * @throws \Google\Service\Exception
    */
   public function rename($name, GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest $postBody, $optParams = [])
   {

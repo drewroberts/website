@@ -28,18 +28,20 @@ use Google\Service\Baremetalsolution\VolumeSnapshot;
  * Typical usage is:
  *  <code>
  *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $snapshots = $baremetalsolutionService->snapshots;
+ *   $snapshots = $baremetalsolutionService->projects_locations_volumes_snapshots;
  *  </code>
  */
 class ProjectsLocationsVolumesSnapshots extends \Google\Service\Resource
 {
   /**
-   * Create a storage volume snapshot in a containing volume. (snapshots.create)
+   * Takes a snapshot of a boot volume. Returns INVALID_ARGUMENT if called for a
+   * non-boot volume. (snapshots.create)
    *
    * @param string $parent Required. The volume to snapshot.
    * @param VolumeSnapshot $postBody
    * @param array $optParams Optional parameters.
    * @return VolumeSnapshot
+   * @throws \Google\Service\Exception
    */
   public function create($parent, VolumeSnapshot $postBody, $optParams = [])
   {
@@ -48,11 +50,13 @@ class ProjectsLocationsVolumesSnapshots extends \Google\Service\Resource
     return $this->call('create', [$params], VolumeSnapshot::class);
   }
   /**
-   * Deletes a storage volume snapshot for a given volume. (snapshots.delete)
+   * Deletes a volume snapshot. Returns INVALID_ARGUMENT if called for a non-boot
+   * volume. (snapshots.delete)
    *
    * @param string $name Required. The name of the snapshot to delete.
    * @param array $optParams Optional parameters.
    * @return BaremetalsolutionEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -61,11 +65,13 @@ class ProjectsLocationsVolumesSnapshots extends \Google\Service\Resource
     return $this->call('delete', [$params], BaremetalsolutionEmpty::class);
   }
   /**
-   * Get details of a single storage volume snapshot. (snapshots.get)
+   * Returns the specified snapshot resource. Returns INVALID_ARGUMENT if called
+   * for a non-boot volume. (snapshots.get)
    *
-   * @param string $name Required. Name of the resource.
+   * @param string $name Required. The name of the snapshot.
    * @param array $optParams Optional parameters.
    * @return VolumeSnapshot
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -74,7 +80,8 @@ class ProjectsLocationsVolumesSnapshots extends \Google\Service\Resource
     return $this->call('get', [$params], VolumeSnapshot::class);
   }
   /**
-   * List storage volume snapshots for given storage volume.
+   * Retrieves the list of snapshots for the specified volume. Returns a response
+   * with an empty list of snapshots if called for a non-boot volume.
    * (snapshots.listProjectsLocationsVolumesSnapshots)
    *
    * @param string $parent Required. Parent value for ListVolumesRequest.
@@ -86,6 +93,7 @@ class ProjectsLocationsVolumesSnapshots extends \Google\Service\Resource
    * @opt_param string pageToken A token identifying a page of results from the
    * server.
    * @return ListVolumeSnapshotsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsVolumesSnapshots($parent, $optParams = [])
   {
@@ -94,13 +102,16 @@ class ProjectsLocationsVolumesSnapshots extends \Google\Service\Resource
     return $this->call('list', [$params], ListVolumeSnapshotsResponse::class);
   }
   /**
-   * Restore a storage volume snapshot to its containing volume.
+   * Uses the specified snapshot to restore its parent volume. Returns
+   * INVALID_ARGUMENT if called for a non-boot volume.
    * (snapshots.restoreVolumeSnapshot)
    *
-   * @param string $volumeSnapshot Required. Name of the resource.
+   * @param string $volumeSnapshot Required. Name of the snapshot which will be
+   * used to restore its parent volume.
    * @param RestoreVolumeSnapshotRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function restoreVolumeSnapshot($volumeSnapshot, RestoreVolumeSnapshotRequest $postBody, $optParams = [])
   {

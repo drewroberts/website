@@ -20,6 +20,12 @@ namespace Google\Service\Logging;
 class Settings extends \Google\Model
 {
   /**
+   * @var string
+   */
+  public $analyticsMode;
+  protected $defaultSinkConfigType = DefaultSinkConfig::class;
+  protected $defaultSinkConfigDataType = '';
+  /**
    * @var bool
    */
   public $disableDefaultSink;
@@ -34,12 +40,44 @@ class Settings extends \Google\Model
   /**
    * @var string
    */
+  public $loggingServiceAccountId;
+  /**
+   * @var string
+   */
   public $name;
   /**
    * @var string
    */
   public $storageLocation;
 
+  /**
+   * @param string
+   */
+  public function setAnalyticsMode($analyticsMode)
+  {
+    $this->analyticsMode = $analyticsMode;
+  }
+  /**
+   * @return string
+   */
+  public function getAnalyticsMode()
+  {
+    return $this->analyticsMode;
+  }
+  /**
+   * @param DefaultSinkConfig
+   */
+  public function setDefaultSinkConfig(DefaultSinkConfig $defaultSinkConfig)
+  {
+    $this->defaultSinkConfig = $defaultSinkConfig;
+  }
+  /**
+   * @return DefaultSinkConfig
+   */
+  public function getDefaultSinkConfig()
+  {
+    return $this->defaultSinkConfig;
+  }
   /**
    * @param bool
    */
@@ -81,6 +119,20 @@ class Settings extends \Google\Model
   public function getKmsServiceAccountId()
   {
     return $this->kmsServiceAccountId;
+  }
+  /**
+   * @param string
+   */
+  public function setLoggingServiceAccountId($loggingServiceAccountId)
+  {
+    $this->loggingServiceAccountId = $loggingServiceAccountId;
+  }
+  /**
+   * @return string
+   */
+  public function getLoggingServiceAccountId()
+  {
+    return $this->loggingServiceAccountId;
   }
   /**
    * @param string

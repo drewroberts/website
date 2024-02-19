@@ -29,7 +29,7 @@ class AppsDynamiteSharedSpaceInfo extends \Google\Model
    * @var string
    */
   public $description;
-  protected $groupIdType = AppsDynamiteGroupId::class;
+  protected $groupIdType = GroupId::class;
   protected $groupIdDataType = '';
   /**
    * @var string
@@ -47,6 +47,8 @@ class AppsDynamiteSharedSpaceInfo extends \Google\Model
    * @var int
    */
   public $numMembers;
+  protected $segmentedMembershipCountsType = AppsDynamiteSharedSegmentedMembershipCounts::class;
+  protected $segmentedMembershipCountsDataType = '';
   /**
    * @var string
    */
@@ -95,14 +97,14 @@ class AppsDynamiteSharedSpaceInfo extends \Google\Model
     return $this->description;
   }
   /**
-   * @param AppsDynamiteGroupId
+   * @param GroupId
    */
-  public function setGroupId(AppsDynamiteGroupId $groupId)
+  public function setGroupId(GroupId $groupId)
   {
     $this->groupId = $groupId;
   }
   /**
-   * @return AppsDynamiteGroupId
+   * @return GroupId
    */
   public function getGroupId()
   {
@@ -163,6 +165,20 @@ class AppsDynamiteSharedSpaceInfo extends \Google\Model
   public function getNumMembers()
   {
     return $this->numMembers;
+  }
+  /**
+   * @param AppsDynamiteSharedSegmentedMembershipCounts
+   */
+  public function setSegmentedMembershipCounts(AppsDynamiteSharedSegmentedMembershipCounts $segmentedMembershipCounts)
+  {
+    $this->segmentedMembershipCounts = $segmentedMembershipCounts;
+  }
+  /**
+   * @return AppsDynamiteSharedSegmentedMembershipCounts
+   */
+  public function getSegmentedMembershipCounts()
+  {
+    return $this->segmentedMembershipCounts;
   }
   /**
    * @param string

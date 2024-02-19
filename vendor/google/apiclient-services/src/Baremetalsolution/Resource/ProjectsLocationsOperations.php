@@ -24,18 +24,18 @@ use Google\Service\Baremetalsolution\Operation;
  * Typical usage is:
  *  <code>
  *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $operations = $baremetalsolutionService->operations;
+ *   $operations = $baremetalsolutionService->projects_locations_operations;
  *  </code>
  */
 class ProjectsLocationsOperations extends \Google\Service\Resource
 {
   /**
-   * Get details about an operation. This method used only to work around CCFE
-   * lack of passthrough LRO support (b/221498758). (operations.get)
+   * Get details about an operation. (operations.get)
    *
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

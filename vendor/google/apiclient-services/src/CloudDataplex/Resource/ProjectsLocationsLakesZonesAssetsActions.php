@@ -24,7 +24,7 @@ use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListActionsResponse;
  * Typical usage is:
  *  <code>
  *   $dataplexService = new Google\Service\CloudDataplex(...);
- *   $actions = $dataplexService->actions;
+ *   $actions = $dataplexService->projects_locations_lakes_zones_assets_actions;
  *  </code>
  */
 class ProjectsLocationsLakesZonesAssetsActions extends \Google\Service\Resource
@@ -47,6 +47,7 @@ class ProjectsLocationsLakesZonesAssetsActions extends \Google\Service\Resource
    * paginating, all other parameters provided to ListAssetActions must match the
    * call that provided the page token.
    * @return GoogleCloudDataplexV1ListActionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsLakesZonesAssetsActions($parent, $optParams = [])
   {

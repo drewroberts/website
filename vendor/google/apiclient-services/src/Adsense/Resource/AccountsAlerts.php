@@ -24,7 +24,7 @@ use Google\Service\Adsense\ListAlertsResponse;
  * Typical usage is:
  *  <code>
  *   $adsenseService = new Google\Service\Adsense(...);
- *   $alerts = $adsenseService->alerts;
+ *   $alerts = $adsenseService->accounts_alerts;
  *  </code>
  */
 class AccountsAlerts extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class AccountsAlerts extends \Google\Service\Resource
    * language is specified as an [IETF BCP-47 language
    * code](https://en.wikipedia.org/wiki/IETF_language_tag).
    * @return ListAlertsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsAlerts($parent, $optParams = [])
   {

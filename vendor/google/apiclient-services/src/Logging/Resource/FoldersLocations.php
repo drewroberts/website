@@ -25,7 +25,7 @@ use Google\Service\Logging\Location;
  * Typical usage is:
  *  <code>
  *   $loggingService = new Google\Service\Logging(...);
- *   $locations = $loggingService->locations;
+ *   $locations = $loggingService->folders_locations;
  *  </code>
  */
 class FoldersLocations extends \Google\Service\Resource
@@ -36,6 +36,7 @@ class FoldersLocations extends \Google\Service\Resource
    * @param string $name Resource name for the location.
    * @param array $optParams Optional parameters.
    * @return Location
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -59,6 +60,7 @@ class FoldersLocations extends \Google\Service\Resource
    * @opt_param string pageToken A page token received from the next_page_token
    * field in the response. Send that page token to receive the subsequent page.
    * @return ListLocationsResponse
+   * @throws \Google\Service\Exception
    */
   public function listFoldersLocations($name, $optParams = [])
   {

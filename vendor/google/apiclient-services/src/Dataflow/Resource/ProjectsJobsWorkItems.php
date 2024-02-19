@@ -27,7 +27,7 @@ use Google\Service\Dataflow\ReportWorkItemStatusResponse;
  * Typical usage is:
  *  <code>
  *   $dataflowService = new Google\Service\Dataflow(...);
- *   $workItems = $dataflowService->workItems;
+ *   $workItems = $dataflowService->projects_jobs_workItems;
  *  </code>
  */
 class ProjectsJobsWorkItems extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class ProjectsJobsWorkItems extends \Google\Service\Resource
    * @param LeaseWorkItemRequest $postBody
    * @param array $optParams Optional parameters.
    * @return LeaseWorkItemResponse
+   * @throws \Google\Service\Exception
    */
   public function lease($projectId, $jobId, LeaseWorkItemRequest $postBody, $optParams = [])
   {
@@ -56,6 +57,7 @@ class ProjectsJobsWorkItems extends \Google\Service\Resource
    * @param ReportWorkItemStatusRequest $postBody
    * @param array $optParams Optional parameters.
    * @return ReportWorkItemStatusResponse
+   * @throws \Google\Service\Exception
    */
   public function reportStatus($projectId, $jobId, ReportWorkItemStatusRequest $postBody, $optParams = [])
   {

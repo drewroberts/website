@@ -42,6 +42,10 @@ class AttachedDisk extends \Google\Collection
    * @var string
    */
   public $diskSizeGb;
+  /**
+   * @var bool
+   */
+  public $forceAttach;
   protected $guestOsFeaturesType = GuestOsFeature::class;
   protected $guestOsFeaturesDataType = 'array';
   /**
@@ -66,6 +70,10 @@ class AttachedDisk extends \Google\Collection
    * @var string
    */
   public $mode;
+  /**
+   * @var string
+   */
+  public $savedState;
   protected $shieldedInstanceInitialStateType = InitialStateConfig::class;
   protected $shieldedInstanceInitialStateDataType = '';
   /**
@@ -160,6 +168,20 @@ class AttachedDisk extends \Google\Collection
   public function getDiskSizeGb()
   {
     return $this->diskSizeGb;
+  }
+  /**
+   * @param bool
+   */
+  public function setForceAttach($forceAttach)
+  {
+    $this->forceAttach = $forceAttach;
+  }
+  /**
+   * @return bool
+   */
+  public function getForceAttach()
+  {
+    return $this->forceAttach;
   }
   /**
    * @param GuestOsFeature[]
@@ -258,6 +280,20 @@ class AttachedDisk extends \Google\Collection
   public function getMode()
   {
     return $this->mode;
+  }
+  /**
+   * @param string
+   */
+  public function setSavedState($savedState)
+  {
+    $this->savedState = $savedState;
+  }
+  /**
+   * @return string
+   */
+  public function getSavedState()
+  {
+    return $this->savedState;
   }
   /**
    * @param InitialStateConfig

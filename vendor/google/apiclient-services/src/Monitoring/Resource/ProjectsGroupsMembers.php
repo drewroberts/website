@@ -24,7 +24,7 @@ use Google\Service\Monitoring\ListGroupMembersResponse;
  * Typical usage is:
  *  <code>
  *   $monitoringService = new Google\Service\Monitoring(...);
- *   $members = $monitoringService->members;
+ *   $members = $monitoringService->projects_groups_members;
  *  </code>
  */
 class ProjectsGroupsMembers extends \Google\Service\Resource
@@ -54,6 +54,7 @@ class ProjectsGroupsMembers extends \Google\Service\Resource
    * this field causes the method to return additional results from the previous
    * method call.
    * @return ListGroupMembersResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsGroupsMembers($name, $optParams = [])
   {

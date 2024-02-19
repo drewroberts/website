@@ -28,7 +28,7 @@ use Google\Service\DisplayVideo\ListAssignedInventorySourcesResponse;
  * Typical usage is:
  *  <code>
  *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $assignedInventorySources = $displayvideoService->assignedInventorySources;
+ *   $assignedInventorySources = $displayvideoService->inventorySourceGroups_assignedInventorySources;
  *  </code>
  */
 class InventorySourceGroupsAssignedInventorySources extends \Google\Service\Resource
@@ -47,6 +47,7 @@ class InventorySourceGroupsAssignedInventorySources extends \Google\Service\Reso
    * @param BulkEditAssignedInventorySourcesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return BulkEditAssignedInventorySourcesResponse
+   * @throws \Google\Service\Exception
    */
   public function bulkEdit($inventorySourceGroupId, BulkEditAssignedInventorySourcesRequest $postBody, $optParams = [])
   {
@@ -70,6 +71,7 @@ class InventorySourceGroupsAssignedInventorySources extends \Google\Service\Reso
    * inventory source group. Only this partner will have write access to this
    * assigned inventory source.
    * @return AssignedInventorySource
+   * @throws \Google\Service\Exception
    */
   public function create($inventorySourceGroupId, AssignedInventorySource $postBody, $optParams = [])
   {
@@ -94,6 +96,7 @@ class InventorySourceGroupsAssignedInventorySources extends \Google\Service\Reso
    * inventory source group. Only this partner has write access to this assigned
    * inventory source.
    * @return DisplayvideoEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($inventorySourceGroupId, $assignedInventorySourceId, $optParams = [])
   {
@@ -115,10 +118,12 @@ class InventorySourceGroupsAssignedInventorySources extends \Google\Service\Reso
    * assigned inventory source.
    * @opt_param string filter Allows filtering by assigned inventory source
    * fields. Supported syntax: * Filter expressions are made up of one or more
-   * restrictions. * Restrictions can be combined by the logical operator `OR`. *
-   * A restriction has the form of `{field} {operator} {value}`. * The operator
-   * must be `EQUALS (=)`. * Supported fields: - `assignedInventorySourceId` The
-   * length of this field should be no more than 500 characters.
+   * restrictions. * Restrictions can be combined by the `OR` logical operator. *
+   * A restriction has the form of `{field} {operator} {value}`. * All fields must
+   * use the `EQUALS (=)` operator. Supported fields: *
+   * `assignedInventorySourceId` The length of this field should be no more than
+   * 500 characters. Reference our [filter `LIST` requests](/display-
+   * video/api/guides/how-tos/filters) guide for more information.
    * @opt_param string orderBy Field by which to sort the list. Acceptable values
    * are: * `assignedInventorySourceId` (default) The default sorting order is
    * ascending. To specify descending order for a field, a suffix " desc" should
@@ -134,6 +139,7 @@ class InventorySourceGroupsAssignedInventorySources extends \Google\Service\Reso
    * assignment. If the parent inventory source group is advertiser-owned, the
    * assignment cannot be accessed via a partner.
    * @return ListAssignedInventorySourcesResponse
+   * @throws \Google\Service\Exception
    */
   public function listInventorySourceGroupsAssignedInventorySources($inventorySourceGroupId, $optParams = [])
   {

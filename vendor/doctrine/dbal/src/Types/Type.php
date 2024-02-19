@@ -50,9 +50,7 @@ abstract class Type
 
     private static ?TypeRegistry $typeRegistry = null;
 
-    /**
-     * @internal Do not instantiate directly - use {@see Type::addType()} method instead.
-     */
+    /** @internal Do not instantiate directly - use {@see Type::addType()} method instead. */
     final public function __construct()
     {
     }
@@ -102,7 +100,8 @@ abstract class Type
     /**
      * Gets the name of this type.
      *
-     * @deprecated this method will be removed in Doctrine DBAL 4.0.
+     * @deprecated this method will be removed in Doctrine DBAL 4.0,
+     *             use {@see TypeRegistry::lookupName()} instead.
      *
      * @return string
      */
@@ -137,6 +136,16 @@ abstract class Type
     public static function getType($name)
     {
         return self::getTypeRegistry()->get($name);
+    }
+
+    /**
+     * Finds a name for the given type.
+     *
+     * @throws Exception
+     */
+    public static function lookupName(self $type): string
+    {
+        return self::getTypeRegistry()->lookupName($type);
     }
 
     /**
@@ -206,7 +215,7 @@ abstract class Type
             static function (Type $type): string {
                 return get_class($type);
             },
-            self::getTypeRegistry()->getMap()
+            self::getTypeRegistry()->getMap(),
         );
     }
 
@@ -279,7 +288,7 @@ abstract class Type
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5509',
             '%s is deprecated.',
-            __METHOD__
+            __METHOD__,
         );
 
         return false;

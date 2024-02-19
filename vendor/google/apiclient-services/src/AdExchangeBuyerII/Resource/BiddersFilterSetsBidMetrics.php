@@ -24,7 +24,7 @@ use Google\Service\AdExchangeBuyerII\ListBidMetricsResponse;
  * Typical usage is:
  *  <code>
  *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
- *   $bidMetrics = $adexchangebuyer2Service->bidMetrics;
+ *   $bidMetrics = $adexchangebuyer2Service->bidders_filterSets_bidMetrics;
  *  </code>
  */
 class BiddersFilterSetsBidMetrics extends \Google\Service\Resource
@@ -50,6 +50,7 @@ class BiddersFilterSetsBidMetrics extends \Google\Service\Resource
    * ListBidMetricsResponse.nextPageToken returned from the previous call to the
    * bidMetrics.list method.
    * @return ListBidMetricsResponse
+   * @throws \Google\Service\Exception
    */
   public function listBiddersFilterSetsBidMetrics($filterSetName, $optParams = [])
   {

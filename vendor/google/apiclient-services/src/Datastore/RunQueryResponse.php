@@ -23,6 +23,10 @@ class RunQueryResponse extends \Google\Model
   protected $batchDataType = '';
   protected $queryType = Query::class;
   protected $queryDataType = '';
+  /**
+   * @var string
+   */
+  public $transaction;
 
   /**
    * @param QueryResultBatch
@@ -51,6 +55,20 @@ class RunQueryResponse extends \Google\Model
   public function getQuery()
   {
     return $this->query;
+  }
+  /**
+   * @param string
+   */
+  public function setTransaction($transaction)
+  {
+    $this->transaction = $transaction;
+  }
+  /**
+   * @return string
+   */
+  public function getTransaction()
+  {
+    return $this->transaction;
   }
 }
 

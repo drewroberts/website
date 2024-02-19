@@ -25,7 +25,7 @@ use Google\Service\Dataflow\Snapshot;
  * Typical usage is:
  *  <code>
  *   $dataflowService = new Google\Service\Dataflow(...);
- *   $snapshots = $dataflowService->snapshots;
+ *   $snapshots = $dataflowService->projects_snapshots;
  *  </code>
  */
 class ProjectsSnapshots extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class ProjectsSnapshots extends \Google\Service\Resource
    *
    * @opt_param string location The location that contains this snapshot.
    * @return Snapshot
+   * @throws \Google\Service\Exception
    */
   public function get($projectId, $snapshotId, $optParams = [])
   {
@@ -56,6 +57,7 @@ class ProjectsSnapshots extends \Google\Service\Resource
    * @opt_param string jobId If specified, list snapshots created from this job.
    * @opt_param string location The location to list snapshots in.
    * @return ListSnapshotsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsSnapshots($projectId, $optParams = [])
   {

@@ -25,7 +25,7 @@ use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SearchExampleCompa
  * Typical usage is:
  *  <code>
  *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $exampleComparisons = $datalabelingService->exampleComparisons;
+ *   $exampleComparisons = $datalabelingService->projects_datasets_evaluations_exampleComparisons;
  *  </code>
  */
 class ProjectsDatasetsEvaluationsExampleComparisons extends \Google\Service\Resource
@@ -41,6 +41,7 @@ class ProjectsDatasetsEvaluationsExampleComparisons extends \Google\Service\Reso
    * @param GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse
+   * @throws \Google\Service\Exception
    */
   public function search($parent, GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest $postBody, $optParams = [])
   {

@@ -6,7 +6,6 @@ use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver;
 use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Exception;
-use Doctrine\DBAL\LockMode;
 use Doctrine\Deprecations\Deprecation;
 use Throwable;
 
@@ -85,7 +84,7 @@ class TableGenerator
         $this->conn = DriverManager::getConnection(
             $conn->getParams(),
             $conn->getConfiguration(),
-            $conn->getEventManager()
+            $conn->getEventManager(),
         );
 
         $this->generatorTableName = $generatorTableName;
@@ -115,11 +114,13 @@ class TableGenerator
         $this->conn->beginTransaction();
 
         try {
-            $platform = $this->conn->getDatabasePlatform();
-            $sql      = 'SELECT sequence_value, sequence_increment_by'
-                . ' FROM ' . $platform->appendLockHint($this->generatorTableName, LockMode::PESSIMISTIC_WRITE)
-                . ' WHERE sequence_name = ? ' . $platform->getWriteLockSQL();
-            $row      = $this->conn->fetchAssociative($sql, [$sequence]);
+            $row = $this->conn->createQueryBuilder()
+                ->select('sequence_value', 'sequence_increment_by')
+                ->from($this->generatorTableName)
+                ->where('sequence_name = ?')
+                ->forUpdate()
+                ->setParameter(1, $sequence)
+                ->fetchAssociative();
 
             if ($row !== false) {
                 $row = array_change_key_case($row, CASE_LOWER);
@@ -147,7 +148,7 @@ class TableGenerator
             } else {
                 $this->conn->insert(
                     $this->generatorTableName,
-                    ['sequence_name' => $sequence, 'sequence_value' => 1, 'sequence_increment_by' => 1]
+                    ['sequence_name' => $sequence, 'sequence_value' => 1, 'sequence_increment_by' => 1],
                 );
                 $value = 1;
             }
@@ -159,7 +160,7 @@ class TableGenerator
             throw new Exception(
                 'Error occurred while generating ID with TableGenerator, aborted generation: ' . $e->getMessage(),
                 0,
-                $e
+                $e,
             );
         }
 

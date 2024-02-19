@@ -24,7 +24,7 @@ use Google\Service\Dataflow\ListSnapshotsResponse;
  * Typical usage is:
  *  <code>
  *   $dataflowService = new Google\Service\Dataflow(...);
- *   $snapshots = $dataflowService->snapshots;
+ *   $snapshots = $dataflowService->projects_locations_jobs_snapshots;
  *  </code>
  */
 class ProjectsLocationsJobsSnapshots extends \Google\Service\Resource
@@ -37,6 +37,7 @@ class ProjectsLocationsJobsSnapshots extends \Google\Service\Resource
    * @param string $jobId If specified, list snapshots created from this job.
    * @param array $optParams Optional parameters.
    * @return ListSnapshotsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsJobsSnapshots($projectId, $location, $jobId, $optParams = [])
   {

@@ -33,23 +33,24 @@ use Google\Service\DisplayVideo\Partner;
 class Partners extends \Google\Service\Resource
 {
   /**
-   * Bulk edits targeting options under a single partner. The operation will
-   * delete the assigned targeting options provided in
+   * Edits targeting options under a single partner. The operation will delete the
+   * assigned targeting options provided in
    * BulkEditPartnerAssignedTargetingOptionsRequest.deleteRequests and then create
    * the assigned targeting options provided in
    * BulkEditPartnerAssignedTargetingOptionsRequest.createRequests .
-   * (partners.bulkEditPartnerAssignedTargetingOptions)
+   * (partners.editAssignedTargetingOptions)
    *
    * @param string $partnerId Required. The ID of the partner.
    * @param BulkEditPartnerAssignedTargetingOptionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return BulkEditPartnerAssignedTargetingOptionsResponse
+   * @throws \Google\Service\Exception
    */
-  public function bulkEditPartnerAssignedTargetingOptions($partnerId, BulkEditPartnerAssignedTargetingOptionsRequest $postBody, $optParams = [])
+  public function editAssignedTargetingOptions($partnerId, BulkEditPartnerAssignedTargetingOptionsRequest $postBody, $optParams = [])
   {
     $params = ['partnerId' => $partnerId, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);
-    return $this->call('bulkEditPartnerAssignedTargetingOptions', [$params], BulkEditPartnerAssignedTargetingOptionsResponse::class);
+    return $this->call('editAssignedTargetingOptions', [$params], BulkEditPartnerAssignedTargetingOptionsResponse::class);
   }
   /**
    * Gets a partner. (partners.get)
@@ -57,6 +58,7 @@ class Partners extends \Google\Service\Resource
    * @param string $partnerId Required. The ID of the partner to fetch.
    * @param array $optParams Optional parameters.
    * @return Partner
+   * @throws \Google\Service\Exception
    */
   public function get($partnerId, $optParams = [])
   {
@@ -70,25 +72,27 @@ class Partners extends \Google\Service\Resource
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filter Allows filtering by partner properties. Supported
+   * @opt_param string filter Allows filtering by partner fields. Supported
    * syntax: * Filter expressions are made up of one or more restrictions. *
    * Restrictions can be combined by `AND` or `OR` logical operators. A sequence
    * of restrictions implicitly uses `AND`. * A restriction has the form of
-   * `{field} {operator} {value}`. * The operator must be `EQUALS (=)`. *
-   * Supported fields: - `entityStatus` Examples: * All active partners:
+   * `{field} {operator} {value}`. * All fields must use the `EQUALS (=)`
+   * operator. Supported fields: * `entityStatus` Examples: * All active partners:
    * `entityStatus="ENTITY_STATUS_ACTIVE"` The length of this field should be no
-   * more than 500 characters.
+   * more than 500 characters. Reference our [filter `LIST` requests](/display-
+   * video/api/guides/how-tos/filters) guide for more information.
    * @opt_param string orderBy Field by which to sort the list. Acceptable values
    * are: * `displayName` The default sorting order is ascending. To specify
    * descending order for a field, a suffix "desc" should be added to the field
    * name. For example, `displayName desc`.
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
    * If unspecified will default to `100`.
    * @opt_param string pageToken A token identifying a page of results the server
    * should return. Typically, this is the value of next_page_token returned from
    * the previous call to `ListPartners` method. If not specified, the first page
    * of results will be returned.
    * @return ListPartnersResponse
+   * @throws \Google\Service\Exception
    */
   public function listPartners($optParams = [])
   {

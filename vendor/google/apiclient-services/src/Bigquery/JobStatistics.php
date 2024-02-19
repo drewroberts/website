@@ -30,12 +30,18 @@ class JobStatistics extends \Google\Collection
    * @var string
    */
   public $creationTime;
+  protected $dataMaskingStatisticsType = DataMaskingStatistics::class;
+  protected $dataMaskingStatisticsDataType = '';
   /**
    * @var string
    */
   public $endTime;
   protected $extractType = JobStatistics4::class;
   protected $extractDataType = '';
+  /**
+   * @var string
+   */
+  public $finalExecutionDurationMs;
   protected $loadType = JobStatistics3::class;
   protected $loadDataType = '';
   /**
@@ -116,6 +122,20 @@ class JobStatistics extends \Google\Collection
     return $this->creationTime;
   }
   /**
+   * @param DataMaskingStatistics
+   */
+  public function setDataMaskingStatistics(DataMaskingStatistics $dataMaskingStatistics)
+  {
+    $this->dataMaskingStatistics = $dataMaskingStatistics;
+  }
+  /**
+   * @return DataMaskingStatistics
+   */
+  public function getDataMaskingStatistics()
+  {
+    return $this->dataMaskingStatistics;
+  }
+  /**
    * @param string
    */
   public function setEndTime($endTime)
@@ -142,6 +162,20 @@ class JobStatistics extends \Google\Collection
   public function getExtract()
   {
     return $this->extract;
+  }
+  /**
+   * @param string
+   */
+  public function setFinalExecutionDurationMs($finalExecutionDurationMs)
+  {
+    $this->finalExecutionDurationMs = $finalExecutionDurationMs;
+  }
+  /**
+   * @return string
+   */
+  public function getFinalExecutionDurationMs()
+  {
+    return $this->finalExecutionDurationMs;
   }
   /**
    * @param JobStatistics3

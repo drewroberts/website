@@ -31,16 +31,17 @@ use Google\Service\CloudRun\GoogleLongrunningOperation;
  * Typical usage is:
  *  <code>
  *   $runService = new Google\Service\CloudRun(...);
- *   $jobs = $runService->jobs;
+ *   $jobs = $runService->projects_locations_jobs;
  *  </code>
  */
 class ProjectsLocationsJobs extends \Google\Service\Resource
 {
   /**
-   * Create a Job. (jobs.create)
+   * Creates a Job. (jobs.create)
    *
    * @param string $parent Required. The location and project in which this Job
-   * should be created. Format: projects/{projectnumber}/locations/{location}
+   * should be created. Format: projects/{project}/locations/{location}, where
+   * {project} can be project id or number.
    * @param GoogleCloudRunV2Job $postBody
    * @param array $optParams Optional parameters.
    *
@@ -50,6 +51,7 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
    * and default values populated, without persisting the request or creating any
    * resources.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudRunV2Job $postBody, $optParams = [])
   {
@@ -61,18 +63,16 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
    * Deletes a Job. (jobs.delete)
    *
    * @param string $name Required. The full name of the Job. Format:
-   * projects/{projectnumber}/locations/{location}/jobs/{job}
+   * projects/{project}/locations/{location}/jobs/{job}, where {project} can be
+   * project id or number.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string etag A system-generated fingerprint for this version of the
    * resource. May be used to detect modification conflict during updates.
-   * @opt_param bool force If set to true, the Job and its Executions will be
-   * deleted no matter whether any Executions are still running or not. If set to
-   * false or unset, the Job and its Executions can only be deleted if there are
-   * no running Executions. Any running Execution will fail the deletion.
    * @opt_param bool validateOnly Indicates that the request should be validated
    * without actually deleting any resources.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -84,9 +84,11 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
    * Gets information about a Job. (jobs.get)
    *
    * @param string $name Required. The full name of the Job. Format:
-   * projects/{projectnumber}/locations/{location}/jobs/{job}
+   * projects/{project}/locations/{location}/jobs/{job}, where {project} can be
+   * project id or number.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRunV2Job
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -95,8 +97,8 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
     return $this->call('get', [$params], GoogleCloudRunV2Job::class);
   }
   /**
-   * Get the IAM Access Control policy currently in effect for the given Job. This
-   * result does not include any inherited policies. (jobs.getIamPolicy)
+   * Gets the IAM Access Control policy currently in effect for the given Job.
+   * This result does not include any inherited policies. (jobs.getIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
    * requested. See [Resource
@@ -117,6 +119,7 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
    * documentation](https://cloud.google.com/iam/help/conditions/resource-
    * policies).
    * @return GoogleIamV1Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, $optParams = [])
   {
@@ -125,10 +128,11 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
     return $this->call('getIamPolicy', [$params], GoogleIamV1Policy::class);
   }
   /**
-   * List Jobs. (jobs.listProjectsLocationsJobs)
+   * Lists Jobs. (jobs.listProjectsLocationsJobs)
    *
    * @param string $parent Required. The location and project to list resources
-   * on. Format: projects/{projectnumber}/locations/{location}
+   * on. Format: projects/{project}/locations/{location}, where {project} can be
+   * project id or number.
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize Maximum number of Jobs to return in this call.
@@ -137,6 +141,7 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
    * @opt_param bool showDeleted If true, returns deleted (but unexpired)
    * resources along with active ones.
    * @return GoogleCloudRunV2ListJobsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsJobs($parent, $optParams = [])
   {
@@ -159,6 +164,7 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
    * and default values populated, without persisting the request or updating any
    * resources.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, GoogleCloudRunV2Job $postBody, $optParams = [])
   {
@@ -170,10 +176,12 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
    * Triggers creation of a new Execution of this Job. (jobs.run)
    *
    * @param string $name Required. The full name of the Job. Format:
-   * projects/{projectnumber}/locations/{location}/jobs/{job}
+   * projects/{project}/locations/{location}/jobs/{job}, where {project} can be
+   * project id or number.
    * @param GoogleCloudRunV2RunJobRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function run($name, GoogleCloudRunV2RunJobRequest $postBody, $optParams = [])
   {
@@ -192,6 +200,7 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
    * @param GoogleIamV1SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleIamV1Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, GoogleIamV1SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -210,6 +219,7 @@ class ProjectsLocationsJobs extends \Google\Service\Resource
    * @param GoogleIamV1TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleIamV1TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, GoogleIamV1TestIamPermissionsRequest $postBody, $optParams = [])
   {

@@ -24,7 +24,7 @@ use Google\Service\ShoppingContent\ReturnShippingLabel;
  * Typical usage is:
  *  <code>
  *   $contentService = new Google\Service\ShoppingContent(...);
- *   $labels = $contentService->labels;
+ *   $labels = $contentService->orderreturns_labels;
  *  </code>
  */
 class OrderreturnsLabels extends \Google\Service\Resource
@@ -43,6 +43,7 @@ class OrderreturnsLabels extends \Google\Service\Resource
    * @param ReturnShippingLabel $postBody
    * @param array $optParams Optional parameters.
    * @return ReturnShippingLabel
+   * @throws \Google\Service\Exception
    */
   public function create($merchantId, $returnId, ReturnShippingLabel $postBody, $optParams = [])
   {

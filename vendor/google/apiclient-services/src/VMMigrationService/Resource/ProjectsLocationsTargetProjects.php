@@ -26,7 +26,7 @@ use Google\Service\VMMigrationService\TargetProject;
  * Typical usage is:
  *  <code>
  *   $vmmigrationService = new Google\Service\VMMigrationService(...);
- *   $targetProjects = $vmmigrationService->targetProjects;
+ *   $targetProjects = $vmmigrationService->projects_locations_targetProjects;
  *  </code>
  */
 class ProjectsLocationsTargetProjects extends \Google\Service\Resource
@@ -44,7 +44,7 @@ class ProjectsLocationsTargetProjects extends \Google\Service\Resource
    * unique request ID so that if you must retry your request, the server will
    * know to ignore the request if it has already been completed. The server will
    * guarantee that for at least 60 minutes since the first request. For example,
-   * consider a situation where you make an initial request and t he request times
+   * consider a situation where you make an initial request and the request times
    * out. If you make the request again with the same request ID, the server can
    * check if original operation with the same request ID was received, and if so,
    * will ignore the second request. This prevents clients from accidentally
@@ -53,6 +53,7 @@ class ProjectsLocationsTargetProjects extends \Google\Service\Resource
    * (00000000-0000-0000-0000-000000000000).
    * @opt_param string targetProjectId Required. The target_project identifier.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, TargetProject $postBody, $optParams = [])
   {
@@ -72,7 +73,7 @@ class ProjectsLocationsTargetProjects extends \Google\Service\Resource
    * Specify a unique request ID so that if you must retry your request, the
    * server will know to ignore the request if it has already been completed. The
    * server will guarantee that for at least 60 minutes after the first request.
-   * For example, consider a situation where you make an initial request and t he
+   * For example, consider a situation where you make an initial request and the
    * request times out. If you make the request again with the same request ID,
    * the server can check if original operation with the same request ID was
    * received, and if so, will ignore the second request. This prevents clients
@@ -80,6 +81,7 @@ class ProjectsLocationsTargetProjects extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported
    * (00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -95,6 +97,7 @@ class ProjectsLocationsTargetProjects extends \Google\Service\Resource
    * @param string $name Required. The TargetProject name.
    * @param array $optParams Optional parameters.
    * @return TargetProject
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -122,6 +125,7 @@ class ProjectsLocationsTargetProjects extends \Google\Service\Resource
    * paginating, all other parameters provided to `ListTargets` must match the
    * call that provided the page token.
    * @return ListTargetProjectsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsTargetProjects($parent, $optParams = [])
   {
@@ -142,7 +146,7 @@ class ProjectsLocationsTargetProjects extends \Google\Service\Resource
    * unique request ID so that if you must retry your request, the server will
    * know to ignore the request if it has already been completed. The server will
    * guarantee that for at least 60 minutes since the first request. For example,
-   * consider a situation where you make an initial request and t he request times
+   * consider a situation where you make an initial request and the request times
    * out. If you make the request again with the same request ID, the server can
    * check if original operation with the same request ID was received, and if so,
    * will ignore the second request. This prevents clients from accidentally
@@ -155,6 +159,7 @@ class ProjectsLocationsTargetProjects extends \Google\Service\Resource
    * field will be overwritten if it is in the mask. If the user does not provide
    * a mask then all fields will be overwritten.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, TargetProject $postBody, $optParams = [])
   {

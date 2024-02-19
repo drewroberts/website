@@ -24,7 +24,7 @@ use Google\Service\WebRisk\GoogleCloudWebriskV1Submission;
  * Typical usage is:
  *  <code>
  *   $webriskService = new Google\Service\WebRisk(...);
- *   $submissions = $webriskService->submissions;
+ *   $submissions = $webriskService->projects_submissions;
  *  </code>
  */
 class ProjectsSubmissions extends \Google\Service\Resource
@@ -43,6 +43,7 @@ class ProjectsSubmissions extends \Google\Service\Resource
    * @param GoogleCloudWebriskV1Submission $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudWebriskV1Submission
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudWebriskV1Submission $postBody, $optParams = [])
   {

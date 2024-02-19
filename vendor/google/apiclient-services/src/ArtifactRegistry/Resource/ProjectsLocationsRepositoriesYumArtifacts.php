@@ -27,7 +27,7 @@ use Google\Service\ArtifactRegistry\UploadYumArtifactRequest;
  * Typical usage is:
  *  <code>
  *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $yumArtifacts = $artifactregistryService->yumArtifacts;
+ *   $yumArtifacts = $artifactregistryService->projects_locations_repositories_yumArtifacts;
  *  </code>
  */
 class ProjectsLocationsRepositoriesYumArtifacts extends \Google\Service\Resource
@@ -43,6 +43,7 @@ class ProjectsLocationsRepositoriesYumArtifacts extends \Google\Service\Resource
    * @param ImportYumArtifactsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function import($parent, ImportYumArtifactsRequest $postBody, $optParams = [])
   {
@@ -61,6 +62,7 @@ class ProjectsLocationsRepositoriesYumArtifacts extends \Google\Service\Resource
    * @param UploadYumArtifactRequest $postBody
    * @param array $optParams Optional parameters.
    * @return UploadYumArtifactMediaResponse
+   * @throws \Google\Service\Exception
    */
   public function upload($parent, UploadYumArtifactRequest $postBody, $optParams = [])
   {

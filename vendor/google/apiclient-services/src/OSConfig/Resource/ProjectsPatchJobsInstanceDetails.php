@@ -24,7 +24,7 @@ use Google\Service\OSConfig\ListPatchJobInstanceDetailsResponse;
  * Typical usage is:
  *  <code>
  *   $osconfigService = new Google\Service\OSConfig(...);
- *   $instanceDetails = $osconfigService->instanceDetails;
+ *   $instanceDetails = $osconfigService->projects_patchJobs_instanceDetails;
  *  </code>
  */
 class ProjectsPatchJobsInstanceDetails extends \Google\Service\Resource
@@ -45,6 +45,7 @@ class ProjectsPatchJobsInstanceDetails extends \Google\Service\Resource
    * @opt_param string pageToken A pagination token returned from a previous call
    * that indicates where this listing should continue from.
    * @return ListPatchJobInstanceDetailsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsPatchJobsInstanceDetails($parent, $optParams = [])
   {

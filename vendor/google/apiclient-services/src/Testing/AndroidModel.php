@@ -52,6 +52,8 @@ class AndroidModel extends \Google\Collection
    * @var string
    */
   public $name;
+  protected $perVersionInfoType = PerAndroidVersionInfo::class;
+  protected $perVersionInfoDataType = 'array';
   /**
    * @var int
    */
@@ -192,6 +194,20 @@ class AndroidModel extends \Google\Collection
   public function getName()
   {
     return $this->name;
+  }
+  /**
+   * @param PerAndroidVersionInfo[]
+   */
+  public function setPerVersionInfo($perVersionInfo)
+  {
+    $this->perVersionInfo = $perVersionInfo;
+  }
+  /**
+   * @return PerAndroidVersionInfo[]
+   */
+  public function getPerVersionInfo()
+  {
+    return $this->perVersionInfo;
   }
   /**
    * @param int

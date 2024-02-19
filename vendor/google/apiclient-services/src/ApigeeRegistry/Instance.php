@@ -19,6 +19,8 @@ namespace Google\Service\ApigeeRegistry;
 
 class Instance extends \Google\Model
 {
+  protected $buildType = Build::class;
+  protected $buildDataType = '';
   protected $configType = Config::class;
   protected $configDataType = '';
   /**
@@ -42,6 +44,20 @@ class Instance extends \Google\Model
    */
   public $updateTime;
 
+  /**
+   * @param Build
+   */
+  public function setBuild(Build $build)
+  {
+    $this->build = $build;
+  }
+  /**
+   * @return Build
+   */
+  public function getBuild()
+  {
+    return $this->build;
+  }
   /**
    * @param Config
    */

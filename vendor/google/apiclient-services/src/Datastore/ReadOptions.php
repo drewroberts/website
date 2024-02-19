@@ -19,6 +19,8 @@ namespace Google\Service\Datastore;
 
 class ReadOptions extends \Google\Model
 {
+  protected $newTransactionType = TransactionOptions::class;
+  protected $newTransactionDataType = '';
   /**
    * @var string
    */
@@ -32,6 +34,20 @@ class ReadOptions extends \Google\Model
    */
   public $transaction;
 
+  /**
+   * @param TransactionOptions
+   */
+  public function setNewTransaction(TransactionOptions $newTransaction)
+  {
+    $this->newTransaction = $newTransaction;
+  }
+  /**
+   * @return TransactionOptions
+   */
+  public function getNewTransaction()
+  {
+    return $this->newTransaction;
+  }
   /**
    * @param string
    */

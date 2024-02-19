@@ -24,7 +24,7 @@ use Google\Service\CloudBuild\ListBitbucketServerRepositoriesResponse;
  * Typical usage is:
  *  <code>
  *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $repos = $cloudbuildService->repos;
+ *   $repos = $cloudbuildService->projects_locations_bitbucketServerConfigs_repos;
  *  </code>
  */
 class ProjectsLocationsBitbucketServerConfigsRepos extends \Google\Service\Resource
@@ -37,9 +37,8 @@ class ProjectsLocationsBitbucketServerConfigsRepos extends \Google\Service\Resou
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize The maximum number of configs to return. The service
-   * may return fewer than this value. If unspecified, at most 50 configs will be
-   * returned. The maximum value is 1000; values above 1000 will be coerced to
-   * 1000.
+   * may return fewer than this value. The maximum value is 1000; values above
+   * 1000 will be coerced to 1000.
    * @opt_param string pageToken A page token, received from a previous
    * `ListBitbucketServerRepositoriesRequest` call. Provide this to retrieve the
    * subsequent page. When paginating, all other parameters provided to

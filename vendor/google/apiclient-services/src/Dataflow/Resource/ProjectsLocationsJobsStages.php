@@ -24,7 +24,7 @@ use Google\Service\Dataflow\StageExecutionDetails;
  * Typical usage is:
  *  <code>
  *   $dataflowService = new Google\Service\Dataflow(...);
- *   $stages = $dataflowService->stages;
+ *   $stages = $dataflowService->projects_locations_jobs_stages;
  *  </code>
  */
 class ProjectsLocationsJobsStages extends \Google\Service\Resource
@@ -53,6 +53,7 @@ class ProjectsLocationsJobsStages extends \Google\Service\Resource
    * @opt_param string startTime Lower time bound of work items to include, by
    * start time.
    * @return StageExecutionDetails
+   * @throws \Google\Service\Exception
    */
   public function getExecutionDetails($projectId, $location, $jobId, $stageId, $optParams = [])
   {

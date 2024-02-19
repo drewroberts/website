@@ -25,7 +25,7 @@ use Google\Service\OnDemandScanning\Operation;
  * Typical usage is:
  *  <code>
  *   $ondemandscanningService = new Google\Service\OnDemandScanning(...);
- *   $scans = $ondemandscanningService->scans;
+ *   $scans = $ondemandscanningService->projects_locations_scans;
  *  </code>
  */
 class ProjectsLocationsScans extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class ProjectsLocationsScans extends \Google\Service\Resource
    * @param AnalyzePackagesRequestV1 $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function analyzePackages($parent, AnalyzePackagesRequestV1 $postBody, $optParams = [])
   {

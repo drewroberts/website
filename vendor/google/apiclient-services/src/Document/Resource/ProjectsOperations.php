@@ -24,7 +24,7 @@ use Google\Service\Document\GoogleLongrunningOperation;
  * Typical usage is:
  *  <code>
  *   $documentaiService = new Google\Service\Document(...);
- *   $operations = $documentaiService->operations;
+ *   $operations = $documentaiService->projects_operations;
  *  </code>
  */
 class ProjectsOperations extends \Google\Service\Resource
@@ -37,6 +37,7 @@ class ProjectsOperations extends \Google\Service\Resource
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

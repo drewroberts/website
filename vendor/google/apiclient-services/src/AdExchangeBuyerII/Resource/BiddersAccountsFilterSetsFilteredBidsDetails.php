@@ -24,7 +24,7 @@ use Google\Service\AdExchangeBuyerII\ListCreativeStatusBreakdownByDetailResponse
  * Typical usage is:
  *  <code>
  *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
- *   $details = $adexchangebuyer2Service->details;
+ *   $details = $adexchangebuyer2Service->bidders_accounts_filterSets_filteredBids_details;
  *  </code>
  */
 class BiddersAccountsFilterSetsFilteredBidsDetails extends \Google\Service\Resource
@@ -43,9 +43,9 @@ class BiddersAccountsFilterSetsFilteredBidsDetails extends \Google\Service\Resou
    * `bidders/123/accounts/456/filterSets/abc`
    * @param int $creativeStatusId The ID of the creative status for which to
    * retrieve a breakdown by detail. See [creative-status-
-   * codes](https://developers.google.com/authorized-buyers/rtb/downloads
-   * /creative-status-codes). Details are only available for statuses 10, 14, 15,
-   * 17, 18, 19, 86, and 87.
+   * codes](https://developers.google.com/authorized-
+   * buyers/rtb/downloads/creative-status-codes). Details are only available for
+   * statuses 10, 14, 15, 17, 18, 19, 86, and 87.
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize Requested page size. The server may return fewer
@@ -56,6 +56,7 @@ class BiddersAccountsFilterSetsFilteredBidsDetails extends \Google\Service\Resou
    * ListCreativeStatusBreakdownByDetailResponse.nextPageToken returned from the
    * previous call to the filteredBids.details.list method.
    * @return ListCreativeStatusBreakdownByDetailResponse
+   * @throws \Google\Service\Exception
    */
   public function listBiddersAccountsFilterSetsFilteredBidsDetails($filterSetName, $creativeStatusId, $optParams = [])
   {

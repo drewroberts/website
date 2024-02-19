@@ -11,7 +11,7 @@ use Doctrine\Deprecations\Deprecation;
 class GuidType extends StringType
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getSQLDeclaration(array $column, AbstractPlatform $platform)
     {
@@ -19,7 +19,7 @@ class GuidType extends StringType
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getName()
     {
@@ -27,7 +27,7 @@ class GuidType extends StringType
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated
      */
@@ -37,7 +37,7 @@ class GuidType extends StringType
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5509',
             '%s is deprecated.',
-            __METHOD__
+            __METHOD__,
         );
 
         return ! $platform->hasNativeGuidType();

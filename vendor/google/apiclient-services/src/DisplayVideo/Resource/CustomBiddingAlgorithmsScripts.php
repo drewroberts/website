@@ -25,7 +25,7 @@ use Google\Service\DisplayVideo\ListCustomBiddingScriptsResponse;
  * Typical usage is:
  *  <code>
  *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $scripts = $displayvideoService->scripts;
+ *   $scripts = $displayvideoService->customBiddingAlgorithms_scripts;
  *  </code>
  */
 class CustomBiddingAlgorithmsScripts extends \Google\Service\Resource
@@ -45,6 +45,7 @@ class CustomBiddingAlgorithmsScripts extends \Google\Service\Resource
    * bidding algorithm. Only this partner will have write access to this custom
    * bidding script.
    * @return CustomBiddingScript
+   * @throws \Google\Service\Exception
    */
   public function create($customBiddingAlgorithmId, CustomBiddingScript $postBody, $optParams = [])
   {
@@ -67,6 +68,7 @@ class CustomBiddingAlgorithmsScripts extends \Google\Service\Resource
    * bidding algorithm. Only this partner will have write access to this custom
    * bidding script.
    * @return CustomBiddingScript
+   * @throws \Google\Service\Exception
    */
   public function get($customBiddingAlgorithmId, $customBiddingScriptId, $optParams = [])
   {
@@ -89,7 +91,7 @@ class CustomBiddingAlgorithmsScripts extends \Google\Service\Resource
    * are: * `createTime desc` (default) The default sorting order is descending.
    * To specify ascending order for a field, the suffix "desc" should be removed.
    * Example: `createTime`.
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
    * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
    * if an invalid value is specified.
    * @opt_param string pageToken A token identifying a page of results the server
@@ -100,6 +102,7 @@ class CustomBiddingAlgorithmsScripts extends \Google\Service\Resource
    * bidding algorithm. Only this partner will have write access to this custom
    * bidding script.
    * @return ListCustomBiddingScriptsResponse
+   * @throws \Google\Service\Exception
    */
   public function listCustomBiddingAlgorithmsScripts($customBiddingAlgorithmId, $optParams = [])
   {

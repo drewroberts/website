@@ -2,6 +2,7 @@
 
 return [
     'Names' => [
+        'Adlm' => 'Adlam',
         'Afak' => 'Afaka',
         'Aghb' => 'Kafkas Albanyası',
         'Arab' => 'Arap',
@@ -88,6 +89,7 @@ return [
         'Lydi' => 'Lidya',
         'Mahj' => 'Mahajani',
         'Mand' => 'Manden',
+        'Mani' => 'Maniheist',
         'Maya' => 'Maya Hiyeroglifleri',
         'Mend' => 'Mende',
         'Merc' => 'Meroitik El Yazısı',
@@ -121,6 +123,7 @@ return [
         'Prti' => 'Partça Kitabe Dili',
         'Qaag' => 'Zawgyi',
         'Rjng' => 'Rejang',
+        'Rohg' => 'Hanifi',
         'Roro' => 'Rongorongo',
         'Runr' => 'Runik',
         'Samr' => 'Samarit',
@@ -149,7 +152,7 @@ return [
         'Tavt' => 'Tai Viet',
         'Telu' => 'Telugu',
         'Teng' => 'Tengvar',
-        'Tfng' => 'Tifinagh',
+        'Tfng' => 'Tifinag',
         'Tglg' => 'Takalot',
         'Thaa' => 'Thaana',
         'Thai' => 'Tay',

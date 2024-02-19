@@ -43,6 +43,10 @@ class FlexTemplateRuntimeEnvironment extends \Google\Collection
   /**
    * @var bool
    */
+  public $enableLauncherVmSerialPortLogging;
+  /**
+   * @var bool
+   */
   public $enableStreamingEngine;
   /**
    * @var string
@@ -92,6 +96,10 @@ class FlexTemplateRuntimeEnvironment extends \Google\Collection
    * @var string
    */
   public $stagingLocation;
+  /**
+   * @var string
+   */
+  public $streamingMode;
   /**
    * @var string
    */
@@ -182,6 +190,20 @@ class FlexTemplateRuntimeEnvironment extends \Google\Collection
   public function getDumpHeapOnOom()
   {
     return $this->dumpHeapOnOom;
+  }
+  /**
+   * @param bool
+   */
+  public function setEnableLauncherVmSerialPortLogging($enableLauncherVmSerialPortLogging)
+  {
+    $this->enableLauncherVmSerialPortLogging = $enableLauncherVmSerialPortLogging;
+  }
+  /**
+   * @return bool
+   */
+  public function getEnableLauncherVmSerialPortLogging()
+  {
+    return $this->enableLauncherVmSerialPortLogging;
   }
   /**
    * @param bool
@@ -364,6 +386,20 @@ class FlexTemplateRuntimeEnvironment extends \Google\Collection
   public function getStagingLocation()
   {
     return $this->stagingLocation;
+  }
+  /**
+   * @param string
+   */
+  public function setStreamingMode($streamingMode)
+  {
+    $this->streamingMode = $streamingMode;
+  }
+  /**
+   * @return string
+   */
+  public function getStreamingMode()
+  {
+    return $this->streamingMode;
   }
   /**
    * @param string

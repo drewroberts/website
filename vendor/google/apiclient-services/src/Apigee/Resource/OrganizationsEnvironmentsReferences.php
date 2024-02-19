@@ -24,7 +24,7 @@ use Google\Service\Apigee\GoogleCloudApigeeV1Reference;
  * Typical usage is:
  *  <code>
  *   $apigeeService = new Google\Service\Apigee(...);
- *   $references = $apigeeService->references;
+ *   $references = $apigeeService->organizations_environments_references;
  *  </code>
  */
 class OrganizationsEnvironmentsReferences extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class OrganizationsEnvironmentsReferences extends \Google\Service\Resource
    * @param GoogleCloudApigeeV1Reference $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1Reference
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudApigeeV1Reference $postBody, $optParams = [])
   {
@@ -53,6 +54,7 @@ class OrganizationsEnvironmentsReferences extends \Google\Service\Resource
    * the form `organizations/{org}/environments/{env}/references/{ref}`.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1Reference
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -67,6 +69,7 @@ class OrganizationsEnvironmentsReferences extends \Google\Service\Resource
    * the form `organizations/{org}/environments/{env}/references/{ref}`.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1Reference
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -84,6 +87,7 @@ class OrganizationsEnvironmentsReferences extends \Google\Service\Resource
    * @param GoogleCloudApigeeV1Reference $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1Reference
+   * @throws \Google\Service\Exception
    */
   public function update($name, GoogleCloudApigeeV1Reference $postBody, $optParams = [])
   {

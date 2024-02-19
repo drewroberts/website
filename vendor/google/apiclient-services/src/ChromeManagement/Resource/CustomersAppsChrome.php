@@ -24,7 +24,7 @@ use Google\Service\ChromeManagement\GoogleChromeManagementV1AppDetails;
  * Typical usage is:
  *  <code>
  *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $chrome = $chromemanagementService->chrome;
+ *   $chrome = $chromemanagementService->customers_apps_chrome;
  *  </code>
  */
 class CustomersAppsChrome extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class CustomersAppsChrome extends \Google\Service\Resource
    * Google Drive Android app's latest version.
    * @param array $optParams Optional parameters.
    * @return GoogleChromeManagementV1AppDetails
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

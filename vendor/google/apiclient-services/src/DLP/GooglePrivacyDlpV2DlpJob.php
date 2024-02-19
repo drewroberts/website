@@ -20,6 +20,8 @@ namespace Google\Service\DLP;
 class GooglePrivacyDlpV2DlpJob extends \Google\Collection
 {
   protected $collection_key = 'errors';
+  protected $actionDetailsType = GooglePrivacyDlpV2ActionDetails::class;
+  protected $actionDetailsDataType = 'array';
   /**
    * @var string
    */
@@ -39,6 +41,10 @@ class GooglePrivacyDlpV2DlpJob extends \Google\Collection
   /**
    * @var string
    */
+  public $lastModified;
+  /**
+   * @var string
+   */
   public $name;
   protected $riskDetailsType = GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails::class;
   protected $riskDetailsDataType = '';
@@ -55,6 +61,20 @@ class GooglePrivacyDlpV2DlpJob extends \Google\Collection
    */
   public $type;
 
+  /**
+   * @param GooglePrivacyDlpV2ActionDetails[]
+   */
+  public function setActionDetails($actionDetails)
+  {
+    $this->actionDetails = $actionDetails;
+  }
+  /**
+   * @return GooglePrivacyDlpV2ActionDetails[]
+   */
+  public function getActionDetails()
+  {
+    return $this->actionDetails;
+  }
   /**
    * @param string
    */
@@ -124,6 +144,20 @@ class GooglePrivacyDlpV2DlpJob extends \Google\Collection
   public function getJobTriggerName()
   {
     return $this->jobTriggerName;
+  }
+  /**
+   * @param string
+   */
+  public function setLastModified($lastModified)
+  {
+    $this->lastModified = $lastModified;
+  }
+  /**
+   * @return string
+   */
+  public function getLastModified()
+  {
+    return $this->lastModified;
   }
   /**
    * @param string

@@ -24,7 +24,7 @@ use Google\Service\Cloudbilling\ListProjectBillingInfoResponse;
  * Typical usage is:
  *  <code>
  *   $cloudbillingService = new Google\Service\Cloudbilling(...);
- *   $projects = $cloudbillingService->projects;
+ *   $projects = $cloudbillingService->billingAccounts_projects;
  *  </code>
  */
 class BillingAccountsProjects extends \Google\Service\Resource
@@ -48,6 +48,7 @@ class BillingAccountsProjects extends \Google\Service\Resource
    * `ListProjectBillingInfo` call. If unspecified, the first page of results is
    * returned.
    * @return ListProjectBillingInfoResponse
+   * @throws \Google\Service\Exception
    */
   public function listBillingAccountsProjects($name, $optParams = [])
   {

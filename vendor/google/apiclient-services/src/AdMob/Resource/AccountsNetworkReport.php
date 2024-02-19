@@ -25,7 +25,7 @@ use Google\Service\AdMob\GenerateNetworkReportResponse;
  * Typical usage is:
  *  <code>
  *   $admobService = new Google\Service\AdMob(...);
- *   $networkReport = $admobService->networkReport;
+ *   $networkReport = $admobService->accounts_networkReport;
  *  </code>
  */
 class AccountsNetworkReport extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class AccountsNetworkReport extends \Google\Service\Resource
    * @param GenerateNetworkReportRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GenerateNetworkReportResponse
+   * @throws \Google\Service\Exception
    */
   public function generate($parent, GenerateNetworkReportRequest $postBody, $optParams = [])
   {

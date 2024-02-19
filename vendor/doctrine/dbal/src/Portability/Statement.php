@@ -24,13 +24,13 @@ final class Statement extends AbstractStatementMiddleware
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function execute($params = null): ResultInterface
     {
         return new Result(
             parent::execute($params),
-            $this->converter
+            $this->converter,
         );
     }
 }

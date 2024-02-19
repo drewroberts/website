@@ -24,7 +24,7 @@ use Google\Service\Storage\ServiceAccount;
  * Typical usage is:
  *  <code>
  *   $storageService = new Google\Service\Storage(...);
- *   $serviceAccount = $storageService->serviceAccount;
+ *   $serviceAccount = $storageService->projects_serviceAccount;
  *  </code>
  */
 class ProjectsServiceAccount extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class ProjectsServiceAccount extends \Google\Service\Resource
    *
    * @opt_param string userProject The project to be billed for this request.
    * @return ServiceAccount
+   * @throws \Google\Service\Exception
    */
   public function get($projectId, $optParams = [])
   {

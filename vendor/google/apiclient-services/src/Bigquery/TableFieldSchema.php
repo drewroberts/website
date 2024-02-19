@@ -54,6 +54,12 @@ class TableFieldSchema extends \Google\Collection
    * @var string
    */
   public $precision;
+  protected $rangeElementTypeType = TableFieldSchemaRangeElementType::class;
+  protected $rangeElementTypeDataType = '';
+  /**
+   * @var string
+   */
+  public $roundingMode;
   /**
    * @var string
    */
@@ -202,6 +208,34 @@ class TableFieldSchema extends \Google\Collection
   public function getPrecision()
   {
     return $this->precision;
+  }
+  /**
+   * @param TableFieldSchemaRangeElementType
+   */
+  public function setRangeElementType(TableFieldSchemaRangeElementType $rangeElementType)
+  {
+    $this->rangeElementType = $rangeElementType;
+  }
+  /**
+   * @return TableFieldSchemaRangeElementType
+   */
+  public function getRangeElementType()
+  {
+    return $this->rangeElementType;
+  }
+  /**
+   * @param string
+   */
+  public function setRoundingMode($roundingMode)
+  {
+    $this->roundingMode = $roundingMode;
+  }
+  /**
+   * @return string
+   */
+  public function getRoundingMode()
+  {
+    return $this->roundingMode;
   }
   /**
    * @param string

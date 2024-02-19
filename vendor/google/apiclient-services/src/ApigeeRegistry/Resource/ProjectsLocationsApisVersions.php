@@ -30,16 +30,16 @@ use Google\Service\ApigeeRegistry\TestIamPermissionsResponse;
  * Typical usage is:
  *  <code>
  *   $apigeeregistryService = new Google\Service\ApigeeRegistry(...);
- *   $versions = $apigeeregistryService->versions;
+ *   $versions = $apigeeregistryService->projects_locations_apis_versions;
  *  </code>
  */
 class ProjectsLocationsApisVersions extends \Google\Service\Resource
 {
   /**
-   * CreateApiVersion creates a specified version. (versions.create)
+   * Creates a specified version. (versions.create)
    *
    * @param string $parent Required. The parent, which owns this collection of
-   * versions. Format: projects/locations/apis
+   * versions. Format: `projects/locations/apis`
    * @param ApiVersion $postBody
    * @param array $optParams Optional parameters.
    *
@@ -48,6 +48,7 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
    * should be 1-63 characters, and valid characters are /a-z-/. Following
    * AIP-162, IDs must not have the form of a UUID.
    * @return ApiVersion
+   * @throws \Google\Service\Exception
    */
   public function create($parent, ApiVersion $postBody, $optParams = [])
   {
@@ -56,17 +57,18 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
     return $this->call('create', [$params], ApiVersion::class);
   }
   /**
-   * DeleteApiVersion removes a specified version and all of the resources that it
-   * owns. (versions.delete)
+   * Removes a specified version and all of the resources that it owns.
+   * (versions.delete)
    *
    * @param string $name Required. The name of the version to delete. Format:
-   * projects/locations/apis/versions
+   * `projects/locations/apis/versions`
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool force If set to true, any child resources will also be
    * deleted. (Otherwise, the request will only work if there are no child
    * resources.)
    * @return ApigeeregistryEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -75,12 +77,13 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
     return $this->call('delete', [$params], ApigeeregistryEmpty::class);
   }
   /**
-   * GetApiVersion returns a specified version. (versions.get)
+   * Returns a specified version. (versions.get)
    *
    * @param string $name Required. The name of the version to retrieve. Format:
-   * projects/locations/apis/versions
+   * `projects/locations/apis/versions`
    * @param array $optParams Optional parameters.
    * @return ApiVersion
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -111,6 +114,7 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
    * documentation](https://cloud.google.com/iam/help/conditions/resource-
    * policies).
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, $optParams = [])
   {
@@ -119,16 +123,18 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
     return $this->call('getIamPolicy', [$params], Policy::class);
   }
   /**
-   * ListApiVersions returns matching versions.
-   * (versions.listProjectsLocationsApisVersions)
+   * Returns matching versions. (versions.listProjectsLocationsApisVersions)
    *
    * @param string $parent Required. The parent, which owns this collection of
-   * versions. Format: projects/locations/apis
+   * versions. Format: `projects/locations/apis`
    * @param array $optParams Optional parameters.
    *
    * @opt_param string filter An expression that can be used to filter the list.
    * Filters use the Common Expression Language and can refer to all message
    * fields.
+   * @opt_param string orderBy A comma-separated list of fields, e.g. "foo,bar"
+   * Fields can be sorted in descending order using the "desc" identifier, e.g.
+   * "foo desc,bar"
    * @opt_param int pageSize The maximum number of versions to return. The service
    * may return fewer than this value. If unspecified, at most 50 values will be
    * returned. The maximum is 1000; values above 1000 will be coerced to 1000.
@@ -137,6 +143,7 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
    * paginating, all other parameters provided to `ListApiVersions` must match the
    * call that provided the page token.
    * @return ListApiVersionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsApisVersions($parent, $optParams = [])
   {
@@ -145,7 +152,7 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
     return $this->call('list', [$params], ListApiVersionsResponse::class);
   }
   /**
-   * UpdateApiVersion can be used to modify a specified version. (versions.patch)
+   * Used to modify a specified version. (versions.patch)
    *
    * @param string $name Resource name.
    * @param ApiVersion $postBody
@@ -155,9 +162,10 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
    * new version will be created. In this situation, `update_mask` is ignored.
    * @opt_param string updateMask The list of fields to be updated. If omitted,
    * all fields are updated that are set in the request message (fields set to
-   * default values are ignored). If a "*" is specified, all fields are updated,
-   * including fields that are unspecified/default in the request.
+   * default values are ignored). If an asterisk "*" is specified, all fields are
+   * updated, including fields that are unspecified/default in the request.
    * @return ApiVersion
+   * @throws \Google\Service\Exception
    */
   public function patch($name, ApiVersion $postBody, $optParams = [])
   {
@@ -177,6 +185,7 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
    * @param SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -198,6 +207,7 @@ class ProjectsLocationsApisVersions extends \Google\Service\Resource
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
   {

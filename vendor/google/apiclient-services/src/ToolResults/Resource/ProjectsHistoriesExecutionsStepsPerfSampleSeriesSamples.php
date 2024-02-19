@@ -26,7 +26,7 @@ use Google\Service\ToolResults\ListPerfSamplesResponse;
  * Typical usage is:
  *  <code>
  *   $toolresultsService = new Google\Service\ToolResults(...);
- *   $samples = $toolresultsService->samples;
+ *   $samples = $toolresultsService->projects_histories_executions_steps_perfSampleSeries_samples;
  *  </code>
  */
 class ProjectsHistoriesExecutionsStepsPerfSampleSeriesSamples extends \Google\Service\Resource
@@ -49,6 +49,7 @@ class ProjectsHistoriesExecutionsStepsPerfSampleSeriesSamples extends \Google\Se
    * @param BatchCreatePerfSamplesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return BatchCreatePerfSamplesResponse
+   * @throws \Google\Service\Exception
    */
   public function batchCreate($projectId, $historyId, $executionId, $stepId, $sampleSeriesId, BatchCreatePerfSamplesRequest $postBody, $optParams = [])
   {
@@ -80,6 +81,7 @@ class ProjectsHistoriesExecutionsStepsPerfSampleSeriesSamples extends \Google\Se
    * @opt_param string pageToken Optional, the next_page_token returned in the
    * previous response
    * @return ListPerfSamplesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsHistoriesExecutionsStepsPerfSampleSeriesSamples($projectId, $historyId, $executionId, $stepId, $sampleSeriesId, $optParams = [])
   {

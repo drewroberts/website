@@ -24,7 +24,7 @@ use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SearchEvaluationsR
  * Typical usage is:
  *  <code>
  *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $evaluations = $datalabelingService->evaluations;
+ *   $evaluations = $datalabelingService->projects_evaluations;
  *  </code>
  */
 class ProjectsEvaluations extends \Google\Service\Resource
@@ -59,6 +59,7 @@ class ProjectsEvaluations extends \Google\Service\Resource
    * response to a previous search request. If you don't specify this field, the
    * API call requests the first page of the search.
    * @return GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse
+   * @throws \Google\Service\Exception
    */
   public function search($parent, $optParams = [])
   {

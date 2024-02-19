@@ -19,11 +19,27 @@ namespace Google\Service\PlayIntegrity;
 
 class AccountDetails extends \Google\Model
 {
+  protected $accountActivityType = AccountActivity::class;
+  protected $accountActivityDataType = '';
   /**
    * @var string
    */
   public $appLicensingVerdict;
 
+  /**
+   * @param AccountActivity
+   */
+  public function setAccountActivity(AccountActivity $accountActivity)
+  {
+    $this->accountActivity = $accountActivity;
+  }
+  /**
+   * @return AccountActivity
+   */
+  public function getAccountActivity()
+  {
+    return $this->accountActivity;
+  }
   /**
    * @param string
    */

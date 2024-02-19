@@ -9,9 +9,7 @@ use function array_values;
 use function count;
 use function reset;
 
-/**
- * @internal The class is internal to the caching layer implementation.
- */
+/** @internal The class is internal to the caching layer implementation. */
 final class ArrayResult implements Result
 {
     /** @var list<array<string, mixed>> */
@@ -20,9 +18,7 @@ final class ArrayResult implements Result
     private int $columnCount = 0;
     private int $num         = 0;
 
-    /**
-     * @param list<array<string, mixed>> $data
-     */
+    /** @param list<array<string, mixed>> $data */
     public function __construct(array $data)
     {
         $this->data = $data;
@@ -34,7 +30,7 @@ final class ArrayResult implements Result
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function fetchNumeric()
     {
@@ -48,7 +44,7 @@ final class ArrayResult implements Result
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function fetchAssociative()
     {
@@ -56,7 +52,7 @@ final class ArrayResult implements Result
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function fetchOne()
     {
@@ -70,7 +66,7 @@ final class ArrayResult implements Result
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function fetchAllNumeric(): array
     {
@@ -78,7 +74,7 @@ final class ArrayResult implements Result
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function fetchAllAssociative(): array
     {
@@ -86,7 +82,7 @@ final class ArrayResult implements Result
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function fetchFirstColumn(): array
     {
@@ -108,9 +104,7 @@ final class ArrayResult implements Result
         $this->data = [];
     }
 
-    /**
-     * @return array<string, mixed>|false
-     */
+    /** @return array<string, mixed>|false */
     private function fetch()
     {
         if (! isset($this->data[$this->num])) {

@@ -25,7 +25,7 @@ use Google\Service\Document\GoogleLongrunningOperation;
  * Typical usage is:
  *  <code>
  *   $documentaiService = new Google\Service\Document(...);
- *   $humanReviewConfig = $documentaiService->humanReviewConfig;
+ *   $humanReviewConfig = $documentaiService->projects_locations_processors_humanReviewConfig;
  *  </code>
  */
 class ProjectsLocationsProcessorsHumanReviewConfig extends \Google\Service\Resource
@@ -39,6 +39,7 @@ class ProjectsLocationsProcessorsHumanReviewConfig extends \Google\Service\Resou
    * @param GoogleCloudDocumentaiV1ReviewDocumentRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function reviewDocument($humanReviewConfig, GoogleCloudDocumentaiV1ReviewDocumentRequest $postBody, $optParams = [])
   {

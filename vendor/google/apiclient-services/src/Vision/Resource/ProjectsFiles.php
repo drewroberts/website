@@ -27,7 +27,7 @@ use Google\Service\Vision\Operation;
  * Typical usage is:
  *  <code>
  *   $visionService = new Google\Service\Vision(...);
- *   $files = $visionService->files;
+ *   $files = $visionService->projects_files;
  *  </code>
  */
 class ProjectsFiles extends \Google\Service\Resource
@@ -48,6 +48,7 @@ class ProjectsFiles extends \Google\Service\Resource
    * @param BatchAnnotateFilesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return BatchAnnotateFilesResponse
+   * @throws \Google\Service\Exception
    */
   public function annotate($parent, BatchAnnotateFilesRequest $postBody, $optParams = [])
   {
@@ -71,6 +72,7 @@ class ProjectsFiles extends \Google\Service\Resource
    * @param AsyncBatchAnnotateFilesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function asyncBatchAnnotate($parent, AsyncBatchAnnotateFilesRequest $postBody, $optParams = [])
   {

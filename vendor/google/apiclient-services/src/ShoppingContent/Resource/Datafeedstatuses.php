@@ -39,6 +39,7 @@ class Datafeedstatuses extends \Google\Service\Resource
    * @param DatafeedstatusesCustomBatchRequest $postBody
    * @param array $optParams Optional parameters.
    * @return DatafeedstatusesCustomBatchResponse
+   * @throws \Google\Service\Exception
    */
   public function custombatch(DatafeedstatusesCustomBatchRequest $postBody, $optParams = [])
   {
@@ -55,15 +56,21 @@ class Datafeedstatuses extends \Google\Service\Resource
    * @param string $datafeedId The ID of the datafeed.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string country The country for which to get the datafeed status.
-   * If this parameter is provided then language must also be provided. Note that
+   * @opt_param string country Deprecated. Use `feedLabel` instead. The country to
+   * get the datafeed status for. If this parameter is provided then `language`
+   * must also be provided. Note that this parameter is required for feeds
+   * targeting multiple countries and languages, since a feed may have a different
+   * status for each target.
+   * @opt_param string feedLabel The feed label to get the datafeed status for. If
+   * this parameter is provided then `language` must also be provided. Note that
    * this parameter is required for feeds targeting multiple countries and
    * languages, since a feed may have a different status for each target.
-   * @opt_param string language The language for which to get the datafeed status.
-   * If this parameter is provided then country must also be provided. Note that
+   * @opt_param string language The language to get the datafeed status for. If
+   * this parameter is provided then `country` must also be provided. Note that
    * this parameter is required for feeds targeting multiple countries and
    * languages, since a feed may have a different status for each target.
    * @return DatafeedStatus
+   * @throws \Google\Service\Exception
    */
   public function get($merchantId, $datafeedId, $optParams = [])
   {
@@ -83,6 +90,7 @@ class Datafeedstatuses extends \Google\Service\Resource
    * response, used for paging.
    * @opt_param string pageToken The token returned by the previous request.
    * @return DatafeedstatusesListResponse
+   * @throws \Google\Service\Exception
    */
   public function listDatafeedstatuses($merchantId, $optParams = [])
   {

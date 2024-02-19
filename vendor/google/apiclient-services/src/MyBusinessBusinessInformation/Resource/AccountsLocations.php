@@ -25,7 +25,7 @@ use Google\Service\MyBusinessBusinessInformation\Location;
  * Typical usage is:
  *  <code>
  *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
- *   $locations = $mybusinessbusinessinformationService->locations;
+ *   $locations = $mybusinessbusinessinformationService->accounts_locations;
  *  </code>
  */
 class AccountsLocations extends \Google\Service\Resource
@@ -45,6 +45,7 @@ class AccountsLocations extends \Google\Service\Resource
    * @opt_param bool validateOnly Optional. If true, the request is validated
    * without actually creating the location.
    * @return Location
+   * @throws \Google\Service\Exception
    */
   public function create($parent, Location $postBody, $optParams = [])
   {
@@ -83,6 +84,7 @@ class AccountsLocations extends \Google\Service\Resource
    * @opt_param string readMask Required. Read mask to specify what fields will be
    * returned in the response.
    * @return ListLocationsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsLocations($parent, $optParams = [])
   {

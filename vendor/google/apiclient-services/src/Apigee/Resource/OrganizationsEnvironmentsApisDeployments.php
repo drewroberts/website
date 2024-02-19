@@ -24,7 +24,7 @@ use Google\Service\Apigee\GoogleCloudApigeeV1ListDeploymentsResponse;
  * Typical usage is:
  *  <code>
  *   $apigeeService = new Google\Service\Apigee(...);
- *   $deployments = $apigeeService->deployments;
+ *   $deployments = $apigeeService->organizations_environments_apis_deployments;
  *  </code>
  */
 class OrganizationsEnvironmentsApisDeployments extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class OrganizationsEnvironmentsApisDeployments extends \Google\Service\Resource
    * `organizations/{org}/environments/{env}/apis/{api}`
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1ListDeploymentsResponse
+   * @throws \Google\Service\Exception
    */
   public function listOrganizationsEnvironmentsApisDeployments($parent, $optParams = [])
   {

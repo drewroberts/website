@@ -24,7 +24,7 @@ use Google\Service\Analytics\Segments;
  * Typical usage is:
  *  <code>
  *   $analyticsService = new Google\Service\Analytics(...);
- *   $segments = $analyticsService->segments;
+ *   $segments = $analyticsService->management_segments;
  *  </code>
  */
 class ManagementSegments extends \Google\Service\Resource
@@ -41,6 +41,7 @@ class ManagementSegments extends \Google\Service\Resource
    * this parameter as a pagination mechanism along with the max-results
    * parameter.
    * @return Segments
+   * @throws \Google\Service\Exception
    */
   public function listManagementSegments($optParams = [])
   {

@@ -27,7 +27,7 @@ use Google\Service\Dataflow\SendDebugCaptureResponse;
  * Typical usage is:
  *  <code>
  *   $dataflowService = new Google\Service\Dataflow(...);
- *   $debug = $dataflowService->debug;
+ *   $debug = $dataflowService->projects_locations_jobs_debug;
  *  </code>
  */
 class ProjectsLocationsJobsDebug extends \Google\Service\Resource
@@ -44,6 +44,7 @@ class ProjectsLocationsJobsDebug extends \Google\Service\Resource
    * @param GetDebugConfigRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GetDebugConfigResponse
+   * @throws \Google\Service\Exception
    */
   public function getConfig($projectId, $location, $jobId, GetDebugConfigRequest $postBody, $optParams = [])
   {
@@ -62,6 +63,7 @@ class ProjectsLocationsJobsDebug extends \Google\Service\Resource
    * @param SendDebugCaptureRequest $postBody
    * @param array $optParams Optional parameters.
    * @return SendDebugCaptureResponse
+   * @throws \Google\Service\Exception
    */
   public function sendCapture($projectId, $location, $jobId, SendDebugCaptureRequest $postBody, $optParams = [])
   {

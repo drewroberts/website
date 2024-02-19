@@ -20,6 +20,8 @@ namespace Google\Service\Apigee;
 class GoogleCloudApigeeV1EnvironmentConfig extends \Google\Collection
 {
   protected $collection_key = 'targets';
+  protected $addonsConfigType = GoogleCloudApigeeV1RuntimeAddonsConfig::class;
+  protected $addonsConfigDataType = '';
   /**
    * @var string
    */
@@ -32,8 +34,14 @@ class GoogleCloudApigeeV1EnvironmentConfig extends \Google\Collection
   protected $dataCollectorsDataType = 'array';
   protected $debugMaskType = GoogleCloudApigeeV1DebugMask::class;
   protected $debugMaskDataType = '';
+  protected $deploymentGroupsType = GoogleCloudApigeeV1DeploymentGroupConfig::class;
+  protected $deploymentGroupsDataType = 'array';
   protected $deploymentsType = GoogleCloudApigeeV1DeploymentConfig::class;
   protected $deploymentsDataType = 'array';
+  /**
+   * @var string
+   */
+  public $envScopedRevisionId;
   /**
    * @var string[]
    */
@@ -83,6 +91,20 @@ class GoogleCloudApigeeV1EnvironmentConfig extends \Google\Collection
    */
   public $uid;
 
+  /**
+   * @param GoogleCloudApigeeV1RuntimeAddonsConfig
+   */
+  public function setAddonsConfig(GoogleCloudApigeeV1RuntimeAddonsConfig $addonsConfig)
+  {
+    $this->addonsConfig = $addonsConfig;
+  }
+  /**
+   * @return GoogleCloudApigeeV1RuntimeAddonsConfig
+   */
+  public function getAddonsConfig()
+  {
+    return $this->addonsConfig;
+  }
   /**
    * @param string
    */
@@ -140,6 +162,20 @@ class GoogleCloudApigeeV1EnvironmentConfig extends \Google\Collection
     return $this->debugMask;
   }
   /**
+   * @param GoogleCloudApigeeV1DeploymentGroupConfig[]
+   */
+  public function setDeploymentGroups($deploymentGroups)
+  {
+    $this->deploymentGroups = $deploymentGroups;
+  }
+  /**
+   * @return GoogleCloudApigeeV1DeploymentGroupConfig[]
+   */
+  public function getDeploymentGroups()
+  {
+    return $this->deploymentGroups;
+  }
+  /**
    * @param GoogleCloudApigeeV1DeploymentConfig[]
    */
   public function setDeployments($deployments)
@@ -152,6 +188,20 @@ class GoogleCloudApigeeV1EnvironmentConfig extends \Google\Collection
   public function getDeployments()
   {
     return $this->deployments;
+  }
+  /**
+   * @param string
+   */
+  public function setEnvScopedRevisionId($envScopedRevisionId)
+  {
+    $this->envScopedRevisionId = $envScopedRevisionId;
+  }
+  /**
+   * @return string
+   */
+  public function getEnvScopedRevisionId()
+  {
+    return $this->envScopedRevisionId;
   }
   /**
    * @param string[]

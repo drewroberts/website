@@ -22,6 +22,10 @@ class AutoRenewingBasePlanType extends \Google\Model
   /**
    * @var string
    */
+  public $accountHoldDuration;
+  /**
+   * @var string
+   */
   public $billingPeriodDuration;
   /**
    * @var string
@@ -34,12 +38,30 @@ class AutoRenewingBasePlanType extends \Google\Model
   /**
    * @var string
    */
+  public $legacyCompatibleSubscriptionOfferId;
+  /**
+   * @var string
+   */
   public $prorationMode;
   /**
    * @var string
    */
   public $resubscribeState;
 
+  /**
+   * @param string
+   */
+  public function setAccountHoldDuration($accountHoldDuration)
+  {
+    $this->accountHoldDuration = $accountHoldDuration;
+  }
+  /**
+   * @return string
+   */
+  public function getAccountHoldDuration()
+  {
+    return $this->accountHoldDuration;
+  }
   /**
    * @param string
    */
@@ -81,6 +103,20 @@ class AutoRenewingBasePlanType extends \Google\Model
   public function getLegacyCompatible()
   {
     return $this->legacyCompatible;
+  }
+  /**
+   * @param string
+   */
+  public function setLegacyCompatibleSubscriptionOfferId($legacyCompatibleSubscriptionOfferId)
+  {
+    $this->legacyCompatibleSubscriptionOfferId = $legacyCompatibleSubscriptionOfferId;
+  }
+  /**
+   * @return string
+   */
+  public function getLegacyCompatibleSubscriptionOfferId()
+  {
+    return $this->legacyCompatibleSubscriptionOfferId;
   }
   /**
    * @param string

@@ -24,7 +24,7 @@ use Google\Service\DataFusion\ListAvailableVersionsResponse;
  * Typical usage is:
  *  <code>
  *   $datafusionService = new Google\Service\DataFusion(...);
- *   $versions = $datafusionService->versions;
+ *   $versions = $datafusionService->projects_locations_versions;
  *  </code>
  */
 class ProjectsLocationsVersions extends \Google\Service\Resource
@@ -46,6 +46,7 @@ class ProjectsLocationsVersions extends \Google\Service\Resource
    * @opt_param string pageToken The next_page_token value to use if there are
    * additional results to retrieve for this list request.
    * @return ListAvailableVersionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsVersions($parent, $optParams = [])
   {

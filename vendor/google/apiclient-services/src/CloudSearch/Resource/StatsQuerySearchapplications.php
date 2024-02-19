@@ -24,7 +24,7 @@ use Google\Service\CloudSearch\GetSearchApplicationQueryStatsResponse;
  * Typical usage is:
  *  <code>
  *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $searchapplications = $cloudsearchService->searchapplications;
+ *   $searchapplications = $cloudsearchService->stats_query_searchapplications;
  *  </code>
  */
 class StatsQuerySearchapplications extends \Google\Service\Resource
@@ -46,6 +46,7 @@ class StatsQuerySearchapplications extends \Google\Service\Resource
    * @opt_param int toDate.month Month of date. Must be from 1 to 12.
    * @opt_param int toDate.year Year of date. Must be from 1 to 9999.
    * @return GetSearchApplicationQueryStatsResponse
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

@@ -26,7 +26,7 @@ use Google\Service\SASPortalTesting\SasPortalListDevicesResponse;
  * Typical usage is:
  *  <code>
  *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
- *   $devices = $prod_tt_sasportalService->devices;
+ *   $devices = $prod_tt_sasportalService->nodes_nodes_devices;
  *  </code>
  */
 class NodesNodesDevices extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class NodesNodesDevices extends \Google\Service\Resource
    * @param SasPortalDevice $postBody
    * @param array $optParams Optional parameters.
    * @return SasPortalDevice
+   * @throws \Google\Service\Exception
    */
   public function create($parent, SasPortalDevice $postBody, $optParams = [])
   {
@@ -52,6 +53,7 @@ class NodesNodesDevices extends \Google\Service\Resource
    * @param SasPortalCreateSignedDeviceRequest $postBody
    * @param array $optParams Optional parameters.
    * @return SasPortalDevice
+   * @throws \Google\Service\Exception
    */
   public function createSigned($parent, SasPortalCreateSignedDeviceRequest $postBody, $optParams = [])
   {
@@ -74,6 +76,7 @@ class NodesNodesDevices extends \Google\Service\Resource
    * @opt_param string pageToken A pagination token returned from a previous call
    * to ListDevices that indicates where this listing should continue from.
    * @return SasPortalListDevicesResponse
+   * @throws \Google\Service\Exception
    */
   public function listNodesNodesDevices($parent, $optParams = [])
   {

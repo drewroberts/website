@@ -10,7 +10,7 @@ use Doctrine\Deprecations\Deprecation;
 class OracleKeywords extends KeywordList
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated
      */
@@ -19,14 +19,14 @@ class OracleKeywords extends KeywordList
         Deprecation::triggerIfCalledFromOutside(
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5433',
-            'OracleKeywords::getName() is deprecated.'
+            'OracleKeywords::getName() is deprecated.',
         );
 
         return 'Oracle';
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     protected function getKeywords()
     {

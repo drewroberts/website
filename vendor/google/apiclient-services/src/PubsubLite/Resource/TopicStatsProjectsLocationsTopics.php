@@ -29,7 +29,7 @@ use Google\Service\PubsubLite\ComputeTimeCursorResponse;
  * Typical usage is:
  *  <code>
  *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $topics = $pubsubliteService->topics;
+ *   $topics = $pubsubliteService->topicStats_projects_locations_topics;
  *  </code>
  */
 class TopicStatsProjectsLocationsTopics extends \Google\Service\Resource
@@ -46,6 +46,7 @@ class TopicStatsProjectsLocationsTopics extends \Google\Service\Resource
    * @param ComputeHeadCursorRequest $postBody
    * @param array $optParams Optional parameters.
    * @return ComputeHeadCursorResponse
+   * @throws \Google\Service\Exception
    */
   public function computeHeadCursor($topic, ComputeHeadCursorRequest $postBody, $optParams = [])
   {
@@ -62,6 +63,7 @@ class TopicStatsProjectsLocationsTopics extends \Google\Service\Resource
    * @param ComputeMessageStatsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return ComputeMessageStatsResponse
+   * @throws \Google\Service\Exception
    */
   public function computeMessageStats($topic, ComputeMessageStatsRequest $postBody, $optParams = [])
   {
@@ -78,6 +80,7 @@ class TopicStatsProjectsLocationsTopics extends \Google\Service\Resource
    * @param ComputeTimeCursorRequest $postBody
    * @param array $optParams Optional parameters.
    * @return ComputeTimeCursorResponse
+   * @throws \Google\Service\Exception
    */
   public function computeTimeCursor($topic, ComputeTimeCursorRequest $postBody, $optParams = [])
   {

@@ -25,7 +25,7 @@ use Google\Service\PubsubLite\CommitCursorResponse;
  * Typical usage is:
  *  <code>
  *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $subscriptions = $pubsubliteService->subscriptions;
+ *   $subscriptions = $pubsubliteService->cursor_projects_locations_subscriptions;
  *  </code>
  */
 class CursorProjectsLocationsSubscriptions extends \Google\Service\Resource
@@ -37,6 +37,7 @@ class CursorProjectsLocationsSubscriptions extends \Google\Service\Resource
    * @param CommitCursorRequest $postBody
    * @param array $optParams Optional parameters.
    * @return CommitCursorResponse
+   * @throws \Google\Service\Exception
    */
   public function commitCursor($subscription, CommitCursorRequest $postBody, $optParams = [])
   {

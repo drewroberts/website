@@ -2,6 +2,7 @@
 
 return [
     'Names' => [
+        'Adlm' => 'adlami',
         'Afak' => 'afaka',
         'Aghb' => 'albaani',
         'Ahom' => 'ahomi',
@@ -41,6 +42,7 @@ return [
         'Egyh' => 'egiptuse hieraatiline',
         'Egyp' => 'egiptuse hieroglüüfkiri',
         'Elba' => 'Elbasani',
+        'Elym' => 'elümi',
         'Ethi' => 'etioopia',
         'Geok' => 'hutsuri',
         'Geor' => 'gruusia',
@@ -73,6 +75,7 @@ return [
         'Jurc' => 'tšurtšeni',
         'Kali' => 'kaja-lii',
         'Kana' => 'katakana',
+        'Kawi' => 'kaavi',
         'Khar' => 'kharoshthi',
         'Khmr' => 'khmeeri',
         'Khoj' => 'hodžki',
@@ -110,6 +113,7 @@ return [
         'Mtei' => 'meitei',
         'Mult' => 'Multani',
         'Mymr' => 'birma',
+        'Nagm' => 'Nagi mundari',
         'Narb' => 'Põhja-Araabia',
         'Nbat' => 'Nabatea',
         'Newa' => 'nevari',
@@ -182,6 +186,7 @@ return [
         'Wole' => 'voleai',
         'Xpeo' => 'vanapärsia',
         'Xsux' => 'sumeri-akadi kiilkiri',
+        'Yezi' => 'jeziidi',
         'Yiii' => 'jii',
         'Zanb' => 'Dzanabadzari ruutkiri',
         'Zinh' => 'päritud',

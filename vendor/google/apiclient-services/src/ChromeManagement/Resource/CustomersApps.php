@@ -24,7 +24,7 @@ use Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeAppReques
  * Typical usage is:
  *  <code>
  *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $apps = $chromemanagementService->apps;
+ *   $apps = $chromemanagementService->customers_apps;
  *  </code>
  */
 class CustomersApps extends \Google\Service\Resource
@@ -44,6 +44,7 @@ class CustomersApps extends \Google\Service\Resource
    * @opt_param string pageToken Token to specify the page of the request to be
    * returned.
    * @return GoogleChromeManagementV1CountChromeAppRequestsResponse
+   * @throws \Google\Service\Exception
    */
   public function countChromeAppRequests($customer, $optParams = [])
   {

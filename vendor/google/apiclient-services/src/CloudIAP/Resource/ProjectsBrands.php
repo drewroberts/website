@@ -25,7 +25,7 @@ use Google\Service\CloudIAP\ListBrandsResponse;
  * Typical usage is:
  *  <code>
  *   $iapService = new Google\Service\CloudIAP(...);
- *   $brands = $iapService->brands;
+ *   $brands = $iapService->projects_brands;
  *  </code>
  */
 class ProjectsBrands extends \Google\Service\Resource
@@ -44,6 +44,7 @@ class ProjectsBrands extends \Google\Service\Resource
    * @param Brand $postBody
    * @param array $optParams Optional parameters.
    * @return Brand
+   * @throws \Google\Service\Exception
    */
   public function create($parent, Brand $postBody, $optParams = [])
   {
@@ -58,6 +59,7 @@ class ProjectsBrands extends \Google\Service\Resource
    * following format: projects/{project_number/id}/brands/{brand}.
    * @param array $optParams Optional parameters.
    * @return Brand
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -72,6 +74,7 @@ class ProjectsBrands extends \Google\Service\Resource
    * format: projects/{project_number/id}.
    * @param array $optParams Optional parameters.
    * @return ListBrandsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsBrands($parent, $optParams = [])
   {

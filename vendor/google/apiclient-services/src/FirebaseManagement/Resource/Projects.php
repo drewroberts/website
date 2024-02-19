@@ -74,6 +74,7 @@ class Projects extends \Google\Service\Resource
    * @param AddFirebaseRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function addFirebase($project, AddFirebaseRequest $postBody, $optParams = [])
   {
@@ -127,6 +128,7 @@ class Projects extends \Google\Service\Resource
    * @param AddGoogleAnalyticsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function addGoogleAnalytics($parent, AddGoogleAnalyticsRequest $postBody, $optParams = [])
   {
@@ -143,6 +145,7 @@ class Projects extends \Google\Service\Resource
    * PROJECT_IDENTIFIER values.
    * @param array $optParams Optional parameters.
    * @return FirebaseProject
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -163,6 +166,7 @@ class Projects extends \Google\Service\Resource
    * PROJECT_IDENTIFIER values.
    * @param array $optParams Optional parameters.
    * @return AdminSdkConfig
+   * @throws \Google\Service\Exception
    */
   public function getAdminSdkConfig($name, $optParams = [])
   {
@@ -182,6 +186,7 @@ class Projects extends \Google\Service\Resource
    * PROJECT_IDENTIFIER values.
    * @param array $optParams Optional parameters.
    * @return AnalyticsDetails
+   * @throws \Google\Service\Exception
    */
   public function getAnalyticsDetails($name, $optParams = [])
   {
@@ -208,7 +213,11 @@ class Projects extends \Google\Service\Resource
    * @opt_param string pageToken Token returned from a previous call to
    * `ListFirebaseProjects` indicating where in the set of Projects to resume
    * listing.
+   * @opt_param bool showDeleted Optional. Controls whether Projects in the
+   * DELETED state should be returned in the response. If not specified, only
+   * `ACTIVE` Projects will be returned.
    * @return ListFirebaseProjectsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjects($optParams = [])
   {
@@ -231,10 +240,15 @@ class Projects extends \Google\Service\Resource
    * @param FirebaseProject $postBody
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string updateMask Specifies which fields to update. If this list
-   * is empty, then no state will be updated. Note that the fields `name`,
-   * `projectId`, and `projectNumber` are all immutable.
+   * @opt_param string updateMask Specifies which fields of the FirebaseProject to
+   * update. Note that the following fields are immutable: `name`, `project_id`,
+   * and `project_number`. To update `state`, use any of the following Google
+   * Cloud endpoints: [`projects.delete`](https://cloud.google.com/resource-
+   * manager/reference/rest/v1/projects/delete) or
+   * [`projects.undelete`](https://cloud.google.com/resource-
+   * manager/reference/rest/v1/projects/undelete)
    * @return FirebaseProject
+   * @throws \Google\Service\Exception
    */
   public function patch($name, FirebaseProject $postBody, $optParams = [])
   {
@@ -263,6 +277,7 @@ class Projects extends \Google\Service\Resource
    * @param RemoveAnalyticsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return FirebaseEmpty
+   * @throws \Google\Service\Exception
    */
   public function removeAnalytics($parent, RemoveAnalyticsRequest $postBody, $optParams = [])
   {
@@ -282,26 +297,26 @@ class Projects extends \Google\Service\Resource
    * PROJECT_IDENTIFIER values.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filter A query string compatible with Google's
-   * [AIP-160](https://google.aip.dev/160) standard. Use any of the following
-   * fields in a query: *
-   * [`app_id`](../projects.apps#FirebaseAppInfo.FIELDS.app_id) *
-   * [`namespace`](../projects.apps#FirebaseAppInfo.FIELDS.namespace) *
-   * [`platform`](../projects.apps#FirebaseAppInfo.FIELDS.platform) We also
-   * support the following "virtual" fields (fields which are not actually part of
-   * the returned resource object, but can be queried as if they are pre-populated
-   * with specific values): * `sha1_hash` or `sha1_hashes`: This field is
-   * considered to be a repeated `string` field, populated with the list of all
-   * SHA-1 certificate fingerprints registered with the app. This list is empty if
-   * the app is not an Android app. * `sha256_hash` or `sha256_hashes`: This field
-   * is considered to be a repeated `string` field, populated with the list of all
-   * SHA-256 certificate fingerprints registered with the app. This list is empty
-   * if the app is not an Android app. * `app_store_id`: This field is considered
-   * to be a singular `string` field, populated with the Apple App Store ID
-   * registered with the app. This field is empty if the app is not an iOS app. *
-   * `team_id`: This field is considered to be a singular `string` field,
-   * populated with the Apple team ID registered with the app. This field is empty
-   * if the app is not an iOS app.
+   * @opt_param string filter A query string compatible with Google's [AIP-160
+   * standard](https://google.aip.dev/160). Use any of the following fields in a
+   * query: * [`app_id`](../projects/searchApps#FirebaseAppInfo.FIELDS.app_id) *
+   * [`namespace`](../projects/searchApps#FirebaseAppInfo.FIELDS.namespace) *
+   * [`platform`](../projects/searchApps#FirebaseAppInfo.FIELDS.platform) This
+   * query also supports the following "virtual" fields. These are fields which
+   * are not actually part of the returned resource object, but they can be
+   * queried as if they are pre-populated with specific values. * `sha1_hash` or
+   * `sha1_hashes`: This field is considered to be a _repeated_ `string` field,
+   * populated with the list of all SHA-1 certificate fingerprints registered with
+   * the AndroidApp. This list is empty if the App is not an `AndroidApp`. *
+   * `sha256_hash` or `sha256_hashes`: This field is considered to be a _repeated_
+   * `string` field, populated with the list of all SHA-256 certificate
+   * fingerprints registered with the AndroidApp. This list is empty if the App is
+   * not an `AndroidApp`. * `app_store_id`: This field is considered to be a
+   * _singular_ `string` field, populated with the Apple App Store ID registered
+   * with the IosApp. This field is empty if the App is not an `IosApp`. *
+   * `team_id`: This field is considered to be a _singular_ `string` field,
+   * populated with the Apple team ID registered with the IosApp. This field is
+   * empty if the App is not an `IosApp`.
    * @opt_param int pageSize The maximum number of Apps to return in the response.
    * The server may return fewer than this value at its discretion. If no value is
    * specified (or too large a value is specified), then the server will impose
@@ -309,8 +324,9 @@ class Projects extends \Google\Service\Resource
    * @opt_param string pageToken Token returned from a previous call to
    * `SearchFirebaseApps` indicating where in the set of Apps to resume listing.
    * @opt_param bool showDeleted Controls whether Apps in the DELETED state should
-   * be returned. Defaults to false.
+   * be returned. If not specified, only `ACTIVE` Apps will be returned.
    * @return SearchFirebaseAppsResponse
+   * @throws \Google\Service\Exception
    */
   public function searchApps($parent, $optParams = [])
   {

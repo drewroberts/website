@@ -25,7 +25,7 @@ use Google\Service\Monitoring\CreateCollectdTimeSeriesResponse;
  * Typical usage is:
  *  <code>
  *   $monitoringService = new Google\Service\Monitoring(...);
- *   $collectdTimeSeries = $monitoringService->collectdTimeSeries;
+ *   $collectdTimeSeries = $monitoringService->projects_collectdTimeSeries;
  *  </code>
  */
 class ProjectsCollectdTimeSeries extends \Google\Service\Resource
@@ -41,6 +41,7 @@ class ProjectsCollectdTimeSeries extends \Google\Service\Resource
    * @param CreateCollectdTimeSeriesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return CreateCollectdTimeSeriesResponse
+   * @throws \Google\Service\Exception
    */
   public function create($name, CreateCollectdTimeSeriesRequest $postBody, $optParams = [])
   {

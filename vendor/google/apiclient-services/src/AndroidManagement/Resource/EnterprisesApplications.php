@@ -24,7 +24,7 @@ use Google\Service\AndroidManagement\Application;
  * Typical usage is:
  *  <code>
  *   $androidmanagementService = new Google\Service\AndroidManagement(...);
- *   $applications = $androidmanagementService->applications;
+ *   $applications = $androidmanagementService->enterprises_applications;
  *  </code>
  */
 class EnterprisesApplications extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class EnterprisesApplications extends \Google\Service\Resource
    * application info, as a BCP47 tag (e.g. "en-US", "de"). If not specified the
    * default language of the application will be used.
    * @return Application
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

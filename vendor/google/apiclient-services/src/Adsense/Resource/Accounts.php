@@ -18,6 +18,7 @@
 namespace Google\Service\Adsense\Resource;
 
 use Google\Service\Adsense\Account;
+use Google\Service\Adsense\AdBlockingRecoveryTag;
 use Google\Service\Adsense\ListAccountsResponse;
 use Google\Service\Adsense\ListChildAccountsResponse;
 
@@ -38,12 +39,29 @@ class Accounts extends \Google\Service\Resource
    * accounts/{account}
    * @param array $optParams Optional parameters.
    * @return Account
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
     $params = ['name' => $name];
     $params = array_merge($params, $optParams);
     return $this->call('get', [$params], Account::class);
+  }
+  /**
+   * Gets the ad blocking recovery tag of an account.
+   * (accounts.getAdBlockingRecoveryTag)
+   *
+   * @param string $name Required. The name of the account to get the tag for.
+   * Format: accounts/{account}
+   * @param array $optParams Optional parameters.
+   * @return AdBlockingRecoveryTag
+   * @throws \Google\Service\Exception
+   */
+  public function getAdBlockingRecoveryTag($name, $optParams = [])
+  {
+    $params = ['name' => $name];
+    $params = array_merge($params, $optParams);
+    return $this->call('getAdBlockingRecoveryTag', [$params], AdBlockingRecoveryTag::class);
   }
   /**
    * Lists all accounts available to this user. (accounts.listAccounts)
@@ -59,6 +77,7 @@ class Accounts extends \Google\Service\Resource
    * paginating, all other parameters provided to `ListAccounts` must match the
    * call that provided the page token.
    * @return ListAccountsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccounts($optParams = [])
   {
@@ -79,10 +98,11 @@ class Accounts extends \Google\Service\Resource
    * returned. The maximum value is 10000; values above 10000 will be coerced to
    * 10000.
    * @opt_param string pageToken A page token, received from a previous
-   * `ListAccounts` call. Provide this to retrieve the subsequent page. When
-   * paginating, all other parameters provided to `ListAccounts` must match the
-   * call that provided the page token.
+   * `ListChildAccounts` call. Provide this to retrieve the subsequent page. When
+   * paginating, all other parameters provided to `ListChildAccounts` must match
+   * the call that provided the page token.
    * @return ListChildAccountsResponse
+   * @throws \Google\Service\Exception
    */
   public function listChildAccounts($parent, $optParams = [])
   {

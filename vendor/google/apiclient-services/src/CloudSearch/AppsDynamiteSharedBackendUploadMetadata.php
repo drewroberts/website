@@ -17,8 +17,9 @@
 
 namespace Google\Service\CloudSearch;
 
-class AppsDynamiteSharedBackendUploadMetadata extends \Google\Model
+class AppsDynamiteSharedBackendUploadMetadata extends \Google\Collection
 {
+  protected $collection_key = 'experiment';
   /**
    * @var string
    */
@@ -39,13 +40,23 @@ class AppsDynamiteSharedBackendUploadMetadata extends \Google\Model
    * @var string
    */
   public $dlpScanOutcome;
-  protected $dlpScanSummaryType = AppsDynamiteBackendDlpScanSummary::class;
+  protected $dlpScanSummaryType = DlpScanSummary::class;
   protected $dlpScanSummaryDataType = '';
-  protected $groupIdType = AppsDynamiteGroupId::class;
+  /**
+   * @var string[]
+   */
+  public $experiment;
+  protected $groupIdType = GroupId::class;
   protected $groupIdDataType = '';
+  /**
+   * @var bool
+   */
+  public $isClientSideTranscodedVideo;
+  protected $migratedFromHangoutsMetadataType = AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata::class;
+  protected $migratedFromHangoutsMetadataDataType = '';
   protected $originalDimensionType = AppsDynamiteSharedDimension::class;
   protected $originalDimensionDataType = '';
-  protected $quoteReplyMessageIdType = AppsDynamiteMessageId::class;
+  protected $quoteReplyMessageIdType = MessageId::class;
   protected $quoteReplyMessageIdDataType = '';
   /**
    * @var string
@@ -143,32 +154,74 @@ class AppsDynamiteSharedBackendUploadMetadata extends \Google\Model
     return $this->dlpScanOutcome;
   }
   /**
-   * @param AppsDynamiteBackendDlpScanSummary
+   * @param DlpScanSummary
    */
-  public function setDlpScanSummary(AppsDynamiteBackendDlpScanSummary $dlpScanSummary)
+  public function setDlpScanSummary(DlpScanSummary $dlpScanSummary)
   {
     $this->dlpScanSummary = $dlpScanSummary;
   }
   /**
-   * @return AppsDynamiteBackendDlpScanSummary
+   * @return DlpScanSummary
    */
   public function getDlpScanSummary()
   {
     return $this->dlpScanSummary;
   }
   /**
-   * @param AppsDynamiteGroupId
+   * @param string[]
    */
-  public function setGroupId(AppsDynamiteGroupId $groupId)
+  public function setExperiment($experiment)
+  {
+    $this->experiment = $experiment;
+  }
+  /**
+   * @return string[]
+   */
+  public function getExperiment()
+  {
+    return $this->experiment;
+  }
+  /**
+   * @param GroupId
+   */
+  public function setGroupId(GroupId $groupId)
   {
     $this->groupId = $groupId;
   }
   /**
-   * @return AppsDynamiteGroupId
+   * @return GroupId
    */
   public function getGroupId()
   {
     return $this->groupId;
+  }
+  /**
+   * @param bool
+   */
+  public function setIsClientSideTranscodedVideo($isClientSideTranscodedVideo)
+  {
+    $this->isClientSideTranscodedVideo = $isClientSideTranscodedVideo;
+  }
+  /**
+   * @return bool
+   */
+  public function getIsClientSideTranscodedVideo()
+  {
+    return $this->isClientSideTranscodedVideo;
+  }
+  /**
+   * @param AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata
+   */
+  public function setMigratedFromHangoutsMetadata(AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata $migratedFromHangoutsMetadata)
+  {
+    $this->migratedFromHangoutsMetadata = $migratedFromHangoutsMetadata;
+  }
+  /**
+   * @return AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata
+   */
+  public function getMigratedFromHangoutsMetadata()
+  {
+    return $this->migratedFromHangoutsMetadata;
   }
   /**
    * @param AppsDynamiteSharedDimension
@@ -185,14 +238,14 @@ class AppsDynamiteSharedBackendUploadMetadata extends \Google\Model
     return $this->originalDimension;
   }
   /**
-   * @param AppsDynamiteMessageId
+   * @param MessageId
    */
-  public function setQuoteReplyMessageId(AppsDynamiteMessageId $quoteReplyMessageId)
+  public function setQuoteReplyMessageId(MessageId $quoteReplyMessageId)
   {
     $this->quoteReplyMessageId = $quoteReplyMessageId;
   }
   /**
-   * @return AppsDynamiteMessageId
+   * @return MessageId
    */
   public function getQuoteReplyMessageId()
   {

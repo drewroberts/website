@@ -48,6 +48,7 @@ class Accounts extends \Google\Service\Resource
    *
    * @param array $optParams Optional parameters.
    * @return AccountsAuthInfoResponse
+   * @throws \Google\Service\Exception
    */
   public function authinfo($optParams = [])
   {
@@ -56,7 +57,9 @@ class Accounts extends \Google\Service\Resource
     return $this->call('authinfo', [$params], AccountsAuthInfoResponse::class);
   }
   /**
-   * Claims the website of a Merchant Center sub-account. (accounts.claimwebsite)
+   * Claims the website of a Merchant Center sub-account. Merchant accounts with
+   * approved third-party CSSs aren't required to claim a website.
+   * (accounts.claimwebsite)
    *
    * @param string $merchantId The ID of the managing account. If this parameter
    * is not the same as accountId, then this account must be a multi-client
@@ -69,6 +72,7 @@ class Accounts extends \Google\Service\Resource
    * option removes any existing claim on the requested website and replaces it
    * with a claim from the account that makes the request.
    * @return AccountsClaimWebsiteResponse
+   * @throws \Google\Service\Exception
    */
   public function claimwebsite($merchantId, $accountId, $optParams = [])
   {
@@ -83,6 +87,7 @@ class Accounts extends \Google\Service\Resource
    * @param AccountsCustomBatchRequest $postBody
    * @param array $optParams Optional parameters.
    * @return AccountsCustomBatchResponse
+   * @throws \Google\Service\Exception
    */
   public function custombatch(AccountsCustomBatchRequest $postBody, $optParams = [])
   {
@@ -101,6 +106,7 @@ class Accounts extends \Google\Service\Resource
    *
    * @opt_param bool force Option to delete sub-accounts with products. The
    * default value is false.
+   * @throws \Google\Service\Exception
    */
   public function delete($merchantId, $accountId, $optParams = [])
   {
@@ -120,6 +126,7 @@ class Accounts extends \Google\Service\Resource
    * @opt_param string view Controls which fields will be populated. Acceptable
    * values are: "merchant" and "css". The default value is "merchant".
    * @return Account
+   * @throws \Google\Service\Exception
    */
   public function get($merchantId, $accountId, $optParams = [])
   {
@@ -135,6 +142,7 @@ class Accounts extends \Google\Service\Resource
    * @param Account $postBody
    * @param array $optParams Optional parameters.
    * @return Account
+   * @throws \Google\Service\Exception
    */
   public function insert($merchantId, Account $postBody, $optParams = [])
   {
@@ -153,6 +161,7 @@ class Accounts extends \Google\Service\Resource
    * @param AccountsLinkRequest $postBody
    * @param array $optParams Optional parameters.
    * @return AccountsLinkResponse
+   * @throws \Google\Service\Exception
    */
   public function link($merchantId, $accountId, AccountsLinkRequest $postBody, $optParams = [])
   {
@@ -178,6 +187,7 @@ class Accounts extends \Google\Service\Resource
    * @opt_param string view Controls which fields will be populated. Acceptable
    * values are: "merchant" and "css". The default value is "merchant".
    * @return AccountsListResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccounts($merchantId, $optParams = [])
   {
@@ -201,6 +211,7 @@ class Accounts extends \Google\Service\Resource
    * to 5.
    * @opt_param string pageToken The token returned by the previous request.
    * @return AccountsListLinksResponse
+   * @throws \Google\Service\Exception
    */
   public function listlinks($merchantId, $accountId, $optParams = [])
   {
@@ -219,6 +230,7 @@ class Accounts extends \Google\Service\Resource
    * @param RequestPhoneVerificationRequest $postBody
    * @param array $optParams Optional parameters.
    * @return RequestPhoneVerificationResponse
+   * @throws \Google\Service\Exception
    */
   public function requestphoneverification($merchantId, $accountId, RequestPhoneVerificationRequest $postBody, $optParams = [])
   {
@@ -237,6 +249,7 @@ class Accounts extends \Google\Service\Resource
    * @param Account $postBody
    * @param array $optParams Optional parameters.
    * @return Account
+   * @throws \Google\Service\Exception
    */
   public function update($merchantId, $accountId, Account $postBody, $optParams = [])
   {
@@ -253,6 +266,7 @@ class Accounts extends \Google\Service\Resource
    * @param AccountsUpdateLabelsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return AccountsUpdateLabelsResponse
+   * @throws \Google\Service\Exception
    */
   public function updatelabels($merchantId, $accountId, AccountsUpdateLabelsRequest $postBody, $optParams = [])
   {
@@ -273,6 +287,7 @@ class Accounts extends \Google\Service\Resource
    * @param VerifyPhoneNumberRequest $postBody
    * @param array $optParams Optional parameters.
    * @return VerifyPhoneNumberResponse
+   * @throws \Google\Service\Exception
    */
   public function verifyphonenumber($merchantId, $accountId, VerifyPhoneNumberRequest $postBody, $optParams = [])
   {

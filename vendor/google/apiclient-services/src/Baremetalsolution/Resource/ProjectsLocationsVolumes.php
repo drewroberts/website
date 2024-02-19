@@ -17,8 +17,10 @@
 
 namespace Google\Service\Baremetalsolution\Resource;
 
+use Google\Service\Baremetalsolution\EvictVolumeRequest;
 use Google\Service\Baremetalsolution\ListVolumesResponse;
 use Google\Service\Baremetalsolution\Operation;
+use Google\Service\Baremetalsolution\RenameVolumeRequest;
 use Google\Service\Baremetalsolution\ResizeVolumeRequest;
 use Google\Service\Baremetalsolution\Volume;
 
@@ -27,17 +29,34 @@ use Google\Service\Baremetalsolution\Volume;
  * Typical usage is:
  *  <code>
  *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $volumes = $baremetalsolutionService->volumes;
+ *   $volumes = $baremetalsolutionService->projects_locations_volumes;
  *  </code>
  */
 class ProjectsLocationsVolumes extends \Google\Service\Resource
 {
+  /**
+   * Skips volume's cooloff and deletes it now. Volume must be in cooloff state.
+   * (volumes.evict)
+   *
+   * @param string $name Required. The name of the Volume.
+   * @param EvictVolumeRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Operation
+   * @throws \Google\Service\Exception
+   */
+  public function evict($name, EvictVolumeRequest $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('evict', [$params], Operation::class);
+  }
   /**
    * Get details of a single storage volume. (volumes.get)
    *
    * @param string $name Required. Name of the resource.
    * @param array $optParams Optional parameters.
    * @return Volume
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -59,6 +78,7 @@ class ProjectsLocationsVolumes extends \Google\Service\Resource
    * @opt_param string pageToken A token identifying a page of results from the
    * server.
    * @return ListVolumesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsVolumes($parent, $optParams = [])
   {
@@ -79,6 +99,7 @@ class ProjectsLocationsVolumes extends \Google\Service\Resource
    * @opt_param string updateMask The list of fields to update. The only currently
    * supported fields are: 'labels'
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, Volume $postBody, $optParams = [])
   {
@@ -87,12 +108,30 @@ class ProjectsLocationsVolumes extends \Google\Service\Resource
     return $this->call('patch', [$params], Operation::class);
   }
   /**
+   * RenameVolume sets a new name for a volume. Use with caution, previous names
+   * become immediately invalidated. (volumes.rename)
+   *
+   * @param string $name Required. The `name` field is used to identify the
+   * volume. Format: projects/{project}/locations/{location}/volumes/{volume}
+   * @param RenameVolumeRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Volume
+   * @throws \Google\Service\Exception
+   */
+  public function rename($name, RenameVolumeRequest $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('rename', [$params], Volume::class);
+  }
+  /**
    * Emergency Volume resize. (volumes.resize)
    *
    * @param string $volume Required. Volume to resize.
    * @param ResizeVolumeRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function resize($volume, ResizeVolumeRequest $postBody, $optParams = [])
   {

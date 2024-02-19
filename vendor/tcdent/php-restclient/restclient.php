@@ -12,6 +12,7 @@ class RestClient implements Iterator, ArrayAccess {
     
     public $options;
     public $handle; // cURL resource handle.
+    public $url;
     
     // Populated after execution:
     public $response; // Response body.
@@ -148,7 +149,7 @@ class RestClient implements Iterator, ArrayAccess {
             $headers = array_merge($client->options['headers'], $headers);
             foreach($headers as $key => $values){
                 foreach(is_array($values)? $values : [$values] as $value){
-                    $curlopt[CURLOPT_HTTPHEADER][] = sprintf("%s:%s", $key, $value);
+                    $curlopt[CURLOPT_HTTPHEADER][] = sprintf("%s: %s", $key, $value);
                 }
             }
         }
@@ -187,9 +188,9 @@ class RestClient implements Iterator, ArrayAccess {
         }
         
         if($client->options['base_url']){
-            if($client->url[0] !== '/' && substr($client->options['base_url'], -1) !== '/')
-                $client->url = '/' . $client->url;
-            $client->url = $client->options['base_url'] . $client->url;
+            $client->url = sprintf("%s/%s",
+                rtrim((string) $client->options['base_url'], '/'), 
+                ltrim((string) $client->url, '/'));
         }
         $curlopt[CURLOPT_URL] = $client->url;
         
@@ -265,7 +266,7 @@ class RestClient implements Iterator, ArrayAccess {
         if(empty($this->decoded_response)){
             $format = $this->get_response_format();
             if(!array_key_exists($format, $this->options['decoders']))
-                throw new RestClientException("'${format}' is not a supported ".
+                throw new RestClientException("'{$format}' is not a supported ".
                     "format, register a decoder to handle this response.");
             
             $this->decoded_response = call_user_func(

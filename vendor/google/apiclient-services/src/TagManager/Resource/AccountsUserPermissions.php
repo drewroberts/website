@@ -25,7 +25,7 @@ use Google\Service\TagManager\UserPermission;
  * Typical usage is:
  *  <code>
  *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $user_permissions = $tagmanagerService->user_permissions;
+ *   $user_permissions = $tagmanagerService->accounts_user_permissions;
  *  </code>
  */
 class AccountsUserPermissions extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class AccountsUserPermissions extends \Google\Service\Resource
    * @param UserPermission $postBody
    * @param array $optParams Optional parameters.
    * @return UserPermission
+   * @throws \Google\Service\Exception
    */
   public function create($parent, UserPermission $postBody, $optParams = [])
   {
@@ -52,6 +53,7 @@ class AccountsUserPermissions extends \Google\Service\Resource
    * @param string $path GTM UserPermission's API relative path. Example:
    * accounts/{account_id}/user_permissions/{user_permission_id}
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function delete($path, $optParams = [])
   {
@@ -66,6 +68,7 @@ class AccountsUserPermissions extends \Google\Service\Resource
    * accounts/{account_id}/user_permissions/{user_permission_id}
    * @param array $optParams Optional parameters.
    * @return UserPermission
+   * @throws \Google\Service\Exception
    */
   public function get($path, $optParams = [])
   {
@@ -78,13 +81,14 @@ class AccountsUserPermissions extends \Google\Service\Resource
    * Container user access granted to each of them.
    * (user_permissions.listAccountsUserPermissions)
    *
-   * @param string $parent GTM Accounts's API relative path. Example:
+   * @param string $parent GTM Account's API relative path. Example:
    * accounts/{account_id}
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pageToken Continuation token for fetching the next page of
    * results.
    * @return ListUserPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsUserPermissions($parent, $optParams = [])
   {
@@ -100,6 +104,7 @@ class AccountsUserPermissions extends \Google\Service\Resource
    * @param UserPermission $postBody
    * @param array $optParams Optional parameters.
    * @return UserPermission
+   * @throws \Google\Service\Exception
    */
   public function update($path, UserPermission $postBody, $optParams = [])
   {

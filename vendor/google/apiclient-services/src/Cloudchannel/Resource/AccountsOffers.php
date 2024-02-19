@@ -24,7 +24,7 @@ use Google\Service\Cloudchannel\GoogleCloudChannelV1ListOffersResponse;
  * Typical usage is:
  *  <code>
  *   $cloudchannelService = new Google\Service\Cloudchannel(...);
- *   $offers = $cloudchannelService->offers;
+ *   $offers = $cloudchannelService->accounts_offers;
  *  </code>
  */
 class AccountsOffers extends \Google\Service\Resource
@@ -50,7 +50,12 @@ class AccountsOffers extends \Google\Service\Resource
    * maximum value is 1000; the server will coerce values above 1000.
    * @opt_param string pageToken Optional. A token for a page of results other
    * than the first page.
+   * @opt_param bool showFutureOffers Optional. A boolean flag that determines if
+   * a response returns future offers 30 days from now. If the show_future_offers
+   * is true, the response will only contain offers that are scheduled to be
+   * available 30 days from now.
    * @return GoogleCloudChannelV1ListOffersResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsOffers($parent, $optParams = [])
   {

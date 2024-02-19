@@ -18,6 +18,7 @@
 namespace Google\Service\Apigee\Resource;
 
 use Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentGroup;
+use Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentGroupConfig;
 use Google\Service\Apigee\GoogleCloudApigeeV1ListEnvironmentGroupsResponse;
 use Google\Service\Apigee\GoogleLongrunningOperation;
 
@@ -26,7 +27,7 @@ use Google\Service\Apigee\GoogleLongrunningOperation;
  * Typical usage is:
  *  <code>
  *   $apigeeService = new Google\Service\Apigee(...);
- *   $envgroups = $apigeeService->envgroups;
+ *   $envgroups = $apigeeService->organizations_envgroups;
  *  </code>
  */
 class OrganizationsEnvgroups extends \Google\Service\Resource
@@ -39,9 +40,10 @@ class OrganizationsEnvgroups extends \Google\Service\Resource
    * @param GoogleCloudApigeeV1EnvironmentGroup $postBody
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string name ID of the environment group. Overrides any ID in the
-   * environment_group resource.
+   * @opt_param string name Optional. ID of the environment group. Overrides any
+   * ID in the environment_group resource.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudApigeeV1EnvironmentGroup $postBody, $optParams = [])
   {
@@ -56,6 +58,7 @@ class OrganizationsEnvgroups extends \Google\Service\Resource
    * format: `organizations/{org}/envgroups/{envgroup}`.
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -70,12 +73,34 @@ class OrganizationsEnvgroups extends \Google\Service\Resource
    * format: `organizations/{org}/envgroups/{envgroup}`.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1EnvironmentGroup
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
     $params = ['name' => $name];
     $params = array_merge($params, $optParams);
     return $this->call('get', [$params], GoogleCloudApigeeV1EnvironmentGroup::class);
+  }
+  /**
+   * Gets the deployed ingress configuration for an environment group.
+   * (envgroups.getDeployedIngressConfig)
+   *
+   * @param string $name Required. Name of the deployed configuration for the
+   * environment group in the following format:
+   * 'organizations/{org}/envgroups/{envgroup}/deployedIngressConfig'.
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string view When set to FULL, additional details about the
+   * specific deployments receiving traffic will be included in the IngressConfig
+   * response's RoutingRules.
+   * @return GoogleCloudApigeeV1EnvironmentGroupConfig
+   * @throws \Google\Service\Exception
+   */
+  public function getDeployedIngressConfig($name, $optParams = [])
+  {
+    $params = ['name' => $name];
+    $params = array_merge($params, $optParams);
+    return $this->call('getDeployedIngressConfig', [$params], GoogleCloudApigeeV1EnvironmentGroupConfig::class);
   }
   /**
    * Lists all environment groups. (envgroups.listOrganizationsEnvgroups)
@@ -89,6 +114,7 @@ class OrganizationsEnvgroups extends \Google\Service\Resource
    * @opt_param string pageToken Page token, returned from a previous
    * ListEnvironmentGroups call, that you can use to retrieve the next page.
    * @return GoogleCloudApigeeV1ListEnvironmentGroupsResponse
+   * @throws \Google\Service\Exception
    */
   public function listOrganizationsEnvgroups($parent, $optParams = [])
   {
@@ -104,8 +130,9 @@ class OrganizationsEnvgroups extends \Google\Service\Resource
    * @param GoogleCloudApigeeV1EnvironmentGroup $postBody
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string updateMask List of fields to be updated.
+   * @opt_param string updateMask Optional. List of fields to be updated.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, GoogleCloudApigeeV1EnvironmentGroup $postBody, $optParams = [])
   {

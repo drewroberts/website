@@ -27,7 +27,7 @@ use Google\Service\CloudRetail\GoogleCloudRetailV2SearchResponse;
  * Typical usage is:
  *  <code>
  *   $retailService = new Google\Service\CloudRetail(...);
- *   $placements = $retailService->placements;
+ *   $placements = $retailService->projects_locations_catalogs_placements;
  *  </code>
  */
 class ProjectsLocationsCatalogsPlacements extends \Google\Service\Resource
@@ -41,13 +41,14 @@ class ProjectsLocationsCatalogsPlacements extends \Google\Service\Resource
    * We recommend using the `servingConfigs` resource. `placements` is a legacy
    * resource. The ID of the Recommendations AI serving config or placement.
    * Before you can request predictions from your model, you must create at least
-   * one serving config or placement for it. For more information, see [Managing
-   * serving configurations] (https://cloud.google.com/retail/docs/manage-
-   * configs). The full list of available serving configs can be seen at
+   * one serving config or placement for it. For more information, see [Manage
+   * serving configs] (https://cloud.google.com/retail/docs/manage-configs). The
+   * full list of available serving configs can be seen at
    * https://console.cloud.google.com/ai/retail/catalogs/default_catalog/configs
    * @param GoogleCloudRetailV2PredictRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRetailV2PredictResponse
+   * @throws \Google\Service\Exception
    */
   public function predict($placement, GoogleCloudRetailV2PredictRequest $postBody, $optParams = [])
   {
@@ -57,18 +58,19 @@ class ProjectsLocationsCatalogsPlacements extends \Google\Service\Resource
   }
   /**
    * Performs a search. This feature is only available for users who have Retail
-   * Search enabled. Please enable Retail Search on Cloud Console before using
-   * this feature. (placements.search)
+   * Search enabled. Enable Retail Search on Cloud Console before using this
+   * feature. (placements.search)
    *
    * @param string $placement Required. The resource name of the Retail Search
    * serving config, such as `projects/locations/global/catalogs/default_catalog/s
    * ervingConfigs/default_serving_config` or the name of the legacy placement
    * resource, such as `projects/locations/global/catalogs/default_catalog/placeme
-   * nts/default_search`. This field is used to identify the serving configuration
-   * name and the set of models that will be used to make the search.
+   * nts/default_search`. This field is used to identify the serving config name
+   * and the set of models that are used to make the search.
    * @param GoogleCloudRetailV2SearchRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRetailV2SearchResponse
+   * @throws \Google\Service\Exception
    */
   public function search($placement, GoogleCloudRetailV2SearchRequest $postBody, $optParams = [])
   {

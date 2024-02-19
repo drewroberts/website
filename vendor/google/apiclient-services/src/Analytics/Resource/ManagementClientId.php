@@ -25,7 +25,7 @@ use Google\Service\Analytics\HashClientIdResponse;
  * Typical usage is:
  *  <code>
  *   $analyticsService = new Google\Service\Analytics(...);
- *   $clientId = $analyticsService->clientId;
+ *   $clientId = $analyticsService->management_clientId;
  *  </code>
  */
 class ManagementClientId extends \Google\Service\Resource
@@ -36,6 +36,7 @@ class ManagementClientId extends \Google\Service\Resource
    * @param HashClientIdRequest $postBody
    * @param array $optParams Optional parameters.
    * @return HashClientIdResponse
+   * @throws \Google\Service\Exception
    */
   public function hashClientId(HashClientIdRequest $postBody, $optParams = [])
   {

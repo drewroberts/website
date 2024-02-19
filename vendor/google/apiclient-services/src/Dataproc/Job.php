@@ -32,6 +32,10 @@ class Job extends \Google\Collection
    * @var string
    */
   public $driverOutputResourceUri;
+  protected $driverSchedulingConfigType = DriverSchedulingConfig::class;
+  protected $driverSchedulingConfigDataType = '';
+  protected $flinkJobType = FlinkJob::class;
+  protected $flinkJobDataType = '';
   protected $hadoopJobType = HadoopJob::class;
   protected $hadoopJobDataType = '';
   protected $hiveJobType = HiveJob::class;
@@ -66,6 +70,8 @@ class Job extends \Google\Collection
   protected $statusDataType = '';
   protected $statusHistoryType = JobStatus::class;
   protected $statusHistoryDataType = 'array';
+  protected $trinoJobType = TrinoJob::class;
+  protected $trinoJobDataType = '';
   protected $yarnApplicationsType = YarnApplication::class;
   protected $yarnApplicationsDataType = 'array';
 
@@ -110,6 +116,34 @@ class Job extends \Google\Collection
   public function getDriverOutputResourceUri()
   {
     return $this->driverOutputResourceUri;
+  }
+  /**
+   * @param DriverSchedulingConfig
+   */
+  public function setDriverSchedulingConfig(DriverSchedulingConfig $driverSchedulingConfig)
+  {
+    $this->driverSchedulingConfig = $driverSchedulingConfig;
+  }
+  /**
+   * @return DriverSchedulingConfig
+   */
+  public function getDriverSchedulingConfig()
+  {
+    return $this->driverSchedulingConfig;
+  }
+  /**
+   * @param FlinkJob
+   */
+  public function setFlinkJob(FlinkJob $flinkJob)
+  {
+    $this->flinkJob = $flinkJob;
+  }
+  /**
+   * @return FlinkJob
+   */
+  public function getFlinkJob()
+  {
+    return $this->flinkJob;
   }
   /**
    * @param HadoopJob
@@ -320,6 +354,20 @@ class Job extends \Google\Collection
   public function getStatusHistory()
   {
     return $this->statusHistory;
+  }
+  /**
+   * @param TrinoJob
+   */
+  public function setTrinoJob(TrinoJob $trinoJob)
+  {
+    $this->trinoJob = $trinoJob;
+  }
+  /**
+   * @return TrinoJob
+   */
+  public function getTrinoJob()
+  {
+    return $this->trinoJob;
   }
   /**
    * @param YarnApplication[]

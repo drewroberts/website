@@ -19,7 +19,9 @@ namespace Google\Service\TPU;
 
 class Node extends \Google\Collection
 {
-  protected $collection_key = 'symptoms';
+  protected $collection_key = 'tags';
+  protected $acceleratorConfigType = AcceleratorConfig::class;
+  protected $acceleratorConfigDataType = '';
   /**
    * @var string
    */
@@ -36,6 +38,8 @@ class Node extends \Google\Collection
    * @var string
    */
   public $createTime;
+  protected $dataDisksType = AttachedDisk::class;
+  protected $dataDisksDataType = 'array';
   /**
    * @var string
    */
@@ -51,31 +55,41 @@ class Node extends \Google\Collection
   /**
    * @var string
    */
-  public $ipAddress;
+  public $id;
   /**
    * @var string[]
    */
   public $labels;
   /**
-   * @var string
+   * @var string[]
    */
-  public $name;
+  public $metadata;
+  /**
+   * @var bool
+   */
+  public $multisliceNode;
   /**
    * @var string
    */
-  public $network;
+  public $name;
+  protected $networkConfigType = NetworkConfig::class;
+  protected $networkConfigDataType = '';
   protected $networkEndpointsType = NetworkEndpoint::class;
   protected $networkEndpointsDataType = 'array';
   /**
    * @var string
    */
-  public $port;
-  protected $schedulingConfigType = SchedulingConfig::class;
-  protected $schedulingConfigDataType = '';
+  public $queuedResource;
   /**
    * @var string
    */
-  public $serviceAccount;
+  public $runtimeVersion;
+  protected $schedulingConfigType = SchedulingConfig::class;
+  protected $schedulingConfigDataType = '';
+  protected $serviceAccountType = ServiceAccount::class;
+  protected $serviceAccountDataType = '';
+  protected $shieldedInstanceConfigType = ShieldedInstanceConfig::class;
+  protected $shieldedInstanceConfigDataType = '';
   /**
    * @var string
    */
@@ -83,14 +97,24 @@ class Node extends \Google\Collection
   protected $symptomsType = Symptom::class;
   protected $symptomsDataType = 'array';
   /**
-   * @var string
+   * @var string[]
    */
-  public $tensorflowVersion;
-  /**
-   * @var bool
-   */
-  public $useServiceNetworking;
+  public $tags;
 
+  /**
+   * @param AcceleratorConfig
+   */
+  public function setAcceleratorConfig(AcceleratorConfig $acceleratorConfig)
+  {
+    $this->acceleratorConfig = $acceleratorConfig;
+  }
+  /**
+   * @return AcceleratorConfig
+   */
+  public function getAcceleratorConfig()
+  {
+    return $this->acceleratorConfig;
+  }
   /**
    * @param string
    */
@@ -148,6 +172,20 @@ class Node extends \Google\Collection
     return $this->createTime;
   }
   /**
+   * @param AttachedDisk[]
+   */
+  public function setDataDisks($dataDisks)
+  {
+    $this->dataDisks = $dataDisks;
+  }
+  /**
+   * @return AttachedDisk[]
+   */
+  public function getDataDisks()
+  {
+    return $this->dataDisks;
+  }
+  /**
    * @param string
    */
   public function setDescription($description)
@@ -192,16 +230,16 @@ class Node extends \Google\Collection
   /**
    * @param string
    */
-  public function setIpAddress($ipAddress)
+  public function setId($id)
   {
-    $this->ipAddress = $ipAddress;
+    $this->id = $id;
   }
   /**
    * @return string
    */
-  public function getIpAddress()
+  public function getId()
   {
-    return $this->ipAddress;
+    return $this->id;
   }
   /**
    * @param string[]
@@ -218,6 +256,34 @@ class Node extends \Google\Collection
     return $this->labels;
   }
   /**
+   * @param string[]
+   */
+  public function setMetadata($metadata)
+  {
+    $this->metadata = $metadata;
+  }
+  /**
+   * @return string[]
+   */
+  public function getMetadata()
+  {
+    return $this->metadata;
+  }
+  /**
+   * @param bool
+   */
+  public function setMultisliceNode($multisliceNode)
+  {
+    $this->multisliceNode = $multisliceNode;
+  }
+  /**
+   * @return bool
+   */
+  public function getMultisliceNode()
+  {
+    return $this->multisliceNode;
+  }
+  /**
    * @param string
    */
   public function setName($name)
@@ -232,18 +298,18 @@ class Node extends \Google\Collection
     return $this->name;
   }
   /**
-   * @param string
+   * @param NetworkConfig
    */
-  public function setNetwork($network)
+  public function setNetworkConfig(NetworkConfig $networkConfig)
   {
-    $this->network = $network;
+    $this->networkConfig = $networkConfig;
   }
   /**
-   * @return string
+   * @return NetworkConfig
    */
-  public function getNetwork()
+  public function getNetworkConfig()
   {
-    return $this->network;
+    return $this->networkConfig;
   }
   /**
    * @param NetworkEndpoint[]
@@ -262,16 +328,30 @@ class Node extends \Google\Collection
   /**
    * @param string
    */
-  public function setPort($port)
+  public function setQueuedResource($queuedResource)
   {
-    $this->port = $port;
+    $this->queuedResource = $queuedResource;
   }
   /**
    * @return string
    */
-  public function getPort()
+  public function getQueuedResource()
   {
-    return $this->port;
+    return $this->queuedResource;
+  }
+  /**
+   * @param string
+   */
+  public function setRuntimeVersion($runtimeVersion)
+  {
+    $this->runtimeVersion = $runtimeVersion;
+  }
+  /**
+   * @return string
+   */
+  public function getRuntimeVersion()
+  {
+    return $this->runtimeVersion;
   }
   /**
    * @param SchedulingConfig
@@ -288,18 +368,32 @@ class Node extends \Google\Collection
     return $this->schedulingConfig;
   }
   /**
-   * @param string
+   * @param ServiceAccount
    */
-  public function setServiceAccount($serviceAccount)
+  public function setServiceAccount(ServiceAccount $serviceAccount)
   {
     $this->serviceAccount = $serviceAccount;
   }
   /**
-   * @return string
+   * @return ServiceAccount
    */
   public function getServiceAccount()
   {
     return $this->serviceAccount;
+  }
+  /**
+   * @param ShieldedInstanceConfig
+   */
+  public function setShieldedInstanceConfig(ShieldedInstanceConfig $shieldedInstanceConfig)
+  {
+    $this->shieldedInstanceConfig = $shieldedInstanceConfig;
+  }
+  /**
+   * @return ShieldedInstanceConfig
+   */
+  public function getShieldedInstanceConfig()
+  {
+    return $this->shieldedInstanceConfig;
   }
   /**
    * @param string
@@ -330,32 +424,18 @@ class Node extends \Google\Collection
     return $this->symptoms;
   }
   /**
-   * @param string
+   * @param string[]
    */
-  public function setTensorflowVersion($tensorflowVersion)
+  public function setTags($tags)
   {
-    $this->tensorflowVersion = $tensorflowVersion;
+    $this->tags = $tags;
   }
   /**
-   * @return string
+   * @return string[]
    */
-  public function getTensorflowVersion()
+  public function getTags()
   {
-    return $this->tensorflowVersion;
-  }
-  /**
-   * @param bool
-   */
-  public function setUseServiceNetworking($useServiceNetworking)
-  {
-    $this->useServiceNetworking = $useServiceNetworking;
-  }
-  /**
-   * @return bool
-   */
-  public function getUseServiceNetworking()
-  {
-    return $this->useServiceNetworking;
+    return $this->tags;
   }
 }
 

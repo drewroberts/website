@@ -23,6 +23,10 @@ class SourceObjectIdentifier extends \Google\Model
   protected $mysqlIdentifierDataType = '';
   protected $oracleIdentifierType = OracleObjectIdentifier::class;
   protected $oracleIdentifierDataType = '';
+  protected $postgresqlIdentifierType = PostgresqlObjectIdentifier::class;
+  protected $postgresqlIdentifierDataType = '';
+  protected $sqlServerIdentifierType = SqlServerObjectIdentifier::class;
+  protected $sqlServerIdentifierDataType = '';
 
   /**
    * @param MysqlObjectIdentifier
@@ -51,6 +55,34 @@ class SourceObjectIdentifier extends \Google\Model
   public function getOracleIdentifier()
   {
     return $this->oracleIdentifier;
+  }
+  /**
+   * @param PostgresqlObjectIdentifier
+   */
+  public function setPostgresqlIdentifier(PostgresqlObjectIdentifier $postgresqlIdentifier)
+  {
+    $this->postgresqlIdentifier = $postgresqlIdentifier;
+  }
+  /**
+   * @return PostgresqlObjectIdentifier
+   */
+  public function getPostgresqlIdentifier()
+  {
+    return $this->postgresqlIdentifier;
+  }
+  /**
+   * @param SqlServerObjectIdentifier
+   */
+  public function setSqlServerIdentifier(SqlServerObjectIdentifier $sqlServerIdentifier)
+  {
+    $this->sqlServerIdentifier = $sqlServerIdentifier;
+  }
+  /**
+   * @return SqlServerObjectIdentifier
+   */
+  public function getSqlServerIdentifier()
+  {
+    return $this->sqlServerIdentifier;
   }
 }
 

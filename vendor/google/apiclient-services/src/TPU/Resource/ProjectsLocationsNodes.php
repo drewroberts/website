@@ -17,10 +17,11 @@
 
 namespace Google\Service\TPU\Resource;
 
+use Google\Service\TPU\GetGuestAttributesRequest;
+use Google\Service\TPU\GetGuestAttributesResponse;
 use Google\Service\TPU\ListNodesResponse;
 use Google\Service\TPU\Node;
 use Google\Service\TPU\Operation;
-use Google\Service\TPU\ReimageNodeRequest;
 use Google\Service\TPU\StartNodeRequest;
 use Google\Service\TPU\StopNodeRequest;
 
@@ -29,7 +30,7 @@ use Google\Service\TPU\StopNodeRequest;
  * Typical usage is:
  *  <code>
  *   $tpuService = new Google\Service\TPU(...);
- *   $nodes = $tpuService->nodes;
+ *   $nodes = $tpuService->projects_locations_nodes;
  *  </code>
  */
 class ProjectsLocationsNodes extends \Google\Service\Resource
@@ -43,6 +44,7 @@ class ProjectsLocationsNodes extends \Google\Service\Resource
    *
    * @opt_param string nodeId The unqualified resource name.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, Node $postBody, $optParams = [])
   {
@@ -56,6 +58,7 @@ class ProjectsLocationsNodes extends \Google\Service\Resource
    * @param string $name Required. The resource name.
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -69,12 +72,28 @@ class ProjectsLocationsNodes extends \Google\Service\Resource
    * @param string $name Required. The resource name.
    * @param array $optParams Optional parameters.
    * @return Node
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
     $params = ['name' => $name];
     $params = array_merge($params, $optParams);
     return $this->call('get', [$params], Node::class);
+  }
+  /**
+   * Retrieves the guest attributes for the node. (nodes.getGuestAttributes)
+   *
+   * @param string $name Required. The resource name.
+   * @param GetGuestAttributesRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return GetGuestAttributesResponse
+   * @throws \Google\Service\Exception
+   */
+  public function getGuestAttributes($name, GetGuestAttributesRequest $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('getGuestAttributes', [$params], GetGuestAttributesResponse::class);
   }
   /**
    * Lists nodes. (nodes.listProjectsLocationsNodes)
@@ -86,6 +105,7 @@ class ProjectsLocationsNodes extends \Google\Service\Resource
    * @opt_param string pageToken The next_page_token value returned from a
    * previous List request, if any.
    * @return ListNodesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsNodes($parent, $optParams = [])
   {
@@ -94,26 +114,32 @@ class ProjectsLocationsNodes extends \Google\Service\Resource
     return $this->call('list', [$params], ListNodesResponse::class);
   }
   /**
-   * Reimages a node's OS. (nodes.reimage)
+   * Updates the configurations of a node. (nodes.patch)
    *
-   * @param string $name The resource name.
-   * @param ReimageNodeRequest $postBody
+   * @param string $name Output only. Immutable. The name of the TPU.
+   * @param Node $postBody
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string updateMask Required. Mask of fields from Node to update.
+   * Supported fields: [description, tags, labels, metadata,
+   * network_config.enable_external_ips].
    * @return Operation
+   * @throws \Google\Service\Exception
    */
-  public function reimage($name, ReimageNodeRequest $postBody, $optParams = [])
+  public function patch($name, Node $postBody, $optParams = [])
   {
     $params = ['name' => $name, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);
-    return $this->call('reimage', [$params], Operation::class);
+    return $this->call('patch', [$params], Operation::class);
   }
   /**
    * Starts a node. (nodes.start)
    *
-   * @param string $name The resource name.
+   * @param string $name Required. The resource name.
    * @param StartNodeRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function start($name, StartNodeRequest $postBody, $optParams = [])
   {
@@ -122,13 +148,14 @@ class ProjectsLocationsNodes extends \Google\Service\Resource
     return $this->call('start', [$params], Operation::class);
   }
   /**
-   * Stops a node, this operation is only available with single TPU nodes.
+   * Stops a node. This operation is only available with single TPU nodes.
    * (nodes.stop)
    *
-   * @param string $name The resource name.
+   * @param string $name Required. The resource name.
    * @param StopNodeRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function stop($name, StopNodeRequest $postBody, $optParams = [])
   {

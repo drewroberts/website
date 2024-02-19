@@ -44,6 +44,7 @@ class GuaranteedOrders extends \Google\Service\Resource
    * @opt_param string partnerId The ID of the partner that the request is being
    * made within.
    * @return GuaranteedOrder
+   * @throws \Google\Service\Exception
    */
   public function create(GuaranteedOrder $postBody, $optParams = [])
   {
@@ -60,6 +61,7 @@ class GuaranteedOrders extends \Google\Service\Resource
    * @param EditGuaranteedOrderReadAccessorsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return EditGuaranteedOrderReadAccessorsResponse
+   * @throws \Google\Service\Exception
    */
   public function editGuaranteedOrderReadAccessors($guaranteedOrderId, EditGuaranteedOrderReadAccessorsRequest $postBody, $optParams = [])
   {
@@ -79,6 +81,7 @@ class GuaranteedOrders extends \Google\Service\Resource
    * @opt_param string partnerId The ID of the partner that has access to the
    * guaranteed order.
    * @return GuaranteedOrder
+   * @throws \Google\Service\Exception
    */
   public function get($guaranteedOrderId, $optParams = [])
   {
@@ -96,23 +99,25 @@ class GuaranteedOrders extends \Google\Service\Resource
    *
    * @opt_param string advertiserId The ID of the advertiser that has access to
    * the guaranteed order.
-   * @opt_param string filter Allows filtering by guaranteed order properties. *
+   * @opt_param string filter Allows filtering by guaranteed order fields. *
    * Filter expressions are made up of one or more restrictions. * Restrictions
    * can be combined by `AND` or `OR` logical operators. A sequence of
    * restrictions implicitly uses `AND`. * A restriction has the form of `{field}
-   * {operator} {value}`. * The operator must be `EQUALS (=)`. * Supported fields:
-   * - `guaranteed_order_id` - `exchange` - `display_name` - `status.entityStatus`
-   * Examples: * All active guaranteed orders:
+   * {operator} {value}`. * All fields must use the `EQUALS (=)` operator.
+   * Supported fields: * `guaranteed_order_id` * `exchange` * `display_name` *
+   * `status.entityStatus` Examples: * All active guaranteed orders:
    * `status.entityStatus="ENTITY_STATUS_ACTIVE"` * Guaranteed orders belonging to
    * Google Ad Manager or Rubicon exchanges:
    * `exchange="EXCHANGE_GOOGLE_AD_MANAGER" OR exchange="EXCHANGE_RUBICON"` The
-   * length of this field should be no more than 500 characters.
+   * length of this field should be no more than 500 characters. Reference our
+   * [filter `LIST` requests](/display-video/api/guides/how-tos/filters) guide for
+   * more information.
    * @opt_param string orderBy Field by which to sort the list. Acceptable values
    * are: * `displayName` (default) The default sorting order is ascending. To
    * specify descending order for a field, a suffix "desc" should be added to the
    * field name. For example, `displayName desc`.
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
-   * If unspecified or greater than `100` will default to `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
+   * If unspecified will default to `100`.
    * @opt_param string pageToken A token identifying a page of results the server
    * should return. Typically, this is the value of next_page_token returned from
    * the previous call to `ListGuaranteedOrders` method. If not specified, the
@@ -120,6 +125,7 @@ class GuaranteedOrders extends \Google\Service\Resource
    * @opt_param string partnerId The ID of the partner that has access to the
    * guaranteed order.
    * @return ListGuaranteedOrdersResponse
+   * @throws \Google\Service\Exception
    */
   public function listGuaranteedOrders($optParams = [])
   {
@@ -144,6 +150,7 @@ class GuaranteedOrders extends \Google\Service\Resource
    * @opt_param string updateMask Required. The mask to control which fields to
    * update.
    * @return GuaranteedOrder
+   * @throws \Google\Service\Exception
    */
   public function patch($guaranteedOrderId, GuaranteedOrder $postBody, $optParams = [])
   {

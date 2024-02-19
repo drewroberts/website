@@ -26,7 +26,7 @@ use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1Stu
  * Typical usage is:
  *  <code>
  *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
- *   $stuckbackgroundwakelockrate = $playdeveloperreportingService->stuckbackgroundwakelockrate;
+ *   $stuckbackgroundwakelockrate = $playdeveloperreportingService->vitals_stuckbackgroundwakelockrate;
  *  </code>
  */
 class VitalsStuckbackgroundwakelockrate extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class VitalsStuckbackgroundwakelockrate extends \Google\Service\Resource
    * apps/{app}/stuckBackgroundWakelockRateMetricSet
    * @param array $optParams Optional parameters.
    * @return GooglePlayDeveloperReportingV1beta1StuckBackgroundWakelockRateMetricSet
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -53,6 +54,7 @@ class VitalsStuckbackgroundwakelockrate extends \Google\Service\Resource
    * @param GooglePlayDeveloperReportingV1beta1QueryStuckBackgroundWakelockRateMetricSetRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GooglePlayDeveloperReportingV1beta1QueryStuckBackgroundWakelockRateMetricSetResponse
+   * @throws \Google\Service\Exception
    */
   public function query($name, GooglePlayDeveloperReportingV1beta1QueryStuckBackgroundWakelockRateMetricSetRequest $postBody, $optParams = [])
   {

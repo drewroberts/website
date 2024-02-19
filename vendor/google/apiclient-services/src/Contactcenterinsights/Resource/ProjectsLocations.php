@@ -24,7 +24,7 @@ use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Setti
  * Typical usage is:
  *  <code>
  *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $locations = $contactcenterinsightsService->locations;
+ *   $locations = $contactcenterinsightsService->projects_locations;
  *  </code>
  */
 class ProjectsLocations extends \Google\Service\Resource
@@ -35,6 +35,7 @@ class ProjectsLocations extends \Google\Service\Resource
    * @param string $name Required. The name of the settings resource to get.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudContactcenterinsightsV1Settings
+   * @throws \Google\Service\Exception
    */
   public function getSettings($name, $optParams = [])
   {
@@ -52,6 +53,7 @@ class ProjectsLocations extends \Google\Service\Resource
    *
    * @opt_param string updateMask Required. The list of fields to be updated.
    * @return GoogleCloudContactcenterinsightsV1Settings
+   * @throws \Google\Service\Exception
    */
   public function updateSettings($name, GoogleCloudContactcenterinsightsV1Settings $postBody, $optParams = [])
   {

@@ -17,7 +17,7 @@ use Doctrine\Deprecations\Deprecation;
 class MySQL57Platform extends MySQLPlatform
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated
      */
@@ -27,14 +27,14 @@ class MySQL57Platform extends MySQLPlatform
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5509',
             '%s is deprecated.',
-            __METHOD__
+            __METHOD__,
         );
 
         return true;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getJsonTypeDeclarationSQL(array $column)
     {
@@ -47,7 +47,7 @@ class MySQL57Platform extends MySQLPlatform
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     protected function getPreAlterTableRenameIndexForeignKeySQL(TableDiff $diff)
     {
@@ -55,7 +55,7 @@ class MySQL57Platform extends MySQLPlatform
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     protected function getPostAlterTableRenameIndexForeignKeySQL(TableDiff $diff)
     {
@@ -63,7 +63,7 @@ class MySQL57Platform extends MySQLPlatform
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     protected function getRenameIndexSQL($oldIndexName, Index $index, $tableName)
     {
@@ -71,7 +71,7 @@ class MySQL57Platform extends MySQLPlatform
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated Implement {@see createReservedKeywordsList()} instead.
      */
@@ -81,14 +81,14 @@ class MySQL57Platform extends MySQLPlatform
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/issues/4510',
             'MySQL57Platform::getReservedKeywordsClass() is deprecated,'
-                . ' use MySQL57Platform::createReservedKeywordsList() instead.'
+                . ' use MySQL57Platform::createReservedKeywordsList() instead.',
         );
 
         return Keywords\MySQL57Keywords::class;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     protected function initializeDoctrineTypeMappings()
     {

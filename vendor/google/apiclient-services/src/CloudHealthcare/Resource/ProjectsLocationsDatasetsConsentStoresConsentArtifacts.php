@@ -26,7 +26,7 @@ use Google\Service\CloudHealthcare\ListConsentArtifactsResponse;
  * Typical usage is:
  *  <code>
  *   $healthcareService = new Google\Service\CloudHealthcare(...);
- *   $consentArtifacts = $healthcareService->consentArtifacts;
+ *   $consentArtifacts = $healthcareService->projects_locations_datasets_consentStores_consentArtifacts;
  *  </code>
  */
 class ProjectsLocationsDatasetsConsentStoresConsentArtifacts extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class ProjectsLocationsDatasetsConsentStoresConsentArtifacts extends \Google\Ser
    * @param ConsentArtifact $postBody
    * @param array $optParams Optional parameters.
    * @return ConsentArtifact
+   * @throws \Google\Service\Exception
    */
   public function create($parent, ConsentArtifact $postBody, $optParams = [])
   {
@@ -56,6 +57,7 @@ class ProjectsLocationsDatasetsConsentStoresConsentArtifacts extends \Google\Ser
    * the latest revision of a Consent cannot be deleted.
    * @param array $optParams Optional parameters.
    * @return HealthcareEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -70,6 +72,7 @@ class ProjectsLocationsDatasetsConsentStoresConsentArtifacts extends \Google\Ser
    * retrieve.
    * @param array $optParams Optional parameters.
    * @return ConsentArtifact
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -116,6 +119,7 @@ class ProjectsLocationsDatasetsConsentStoresConsentArtifacts extends \Google\Ser
    * @opt_param string pageToken Optional. The next_page_token value returned from
    * the previous List request, if any.
    * @return ListConsentArtifactsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsDatasetsConsentStoresConsentArtifacts($parent, $optParams = [])
   {

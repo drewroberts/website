@@ -33,6 +33,10 @@ class Instance extends \Google\Collection
    */
   public $authorizedNetwork;
   /**
+   * @var string[]
+   */
+  public $availableMaintenanceVersions;
+  /**
    * @var string
    */
   public $connectMode;
@@ -68,6 +72,10 @@ class Instance extends \Google\Collection
   protected $maintenancePolicyDataType = '';
   protected $maintenanceScheduleType = MaintenanceSchedule::class;
   protected $maintenanceScheduleDataType = '';
+  /**
+   * @var string
+   */
+  public $maintenanceVersion;
   /**
    * @var int
    */
@@ -116,6 +124,14 @@ class Instance extends \Google\Collection
    * @var string
    */
   public $reservedIpRange;
+  /**
+   * @var bool
+   */
+  public $satisfiesPzi;
+  /**
+   * @var bool
+   */
+  public $satisfiesPzs;
   /**
    * @var string
    */
@@ -184,6 +200,20 @@ class Instance extends \Google\Collection
   public function getAuthorizedNetwork()
   {
     return $this->authorizedNetwork;
+  }
+  /**
+   * @param string[]
+   */
+  public function setAvailableMaintenanceVersions($availableMaintenanceVersions)
+  {
+    $this->availableMaintenanceVersions = $availableMaintenanceVersions;
+  }
+  /**
+   * @return string[]
+   */
+  public function getAvailableMaintenanceVersions()
+  {
+    return $this->availableMaintenanceVersions;
   }
   /**
    * @param string
@@ -324,6 +354,20 @@ class Instance extends \Google\Collection
   public function getMaintenanceSchedule()
   {
     return $this->maintenanceSchedule;
+  }
+  /**
+   * @param string
+   */
+  public function setMaintenanceVersion($maintenanceVersion)
+  {
+    $this->maintenanceVersion = $maintenanceVersion;
+  }
+  /**
+   * @return string
+   */
+  public function getMaintenanceVersion()
+  {
+    return $this->maintenanceVersion;
   }
   /**
    * @param int
@@ -506,6 +550,34 @@ class Instance extends \Google\Collection
   public function getReservedIpRange()
   {
     return $this->reservedIpRange;
+  }
+  /**
+   * @param bool
+   */
+  public function setSatisfiesPzi($satisfiesPzi)
+  {
+    $this->satisfiesPzi = $satisfiesPzi;
+  }
+  /**
+   * @return bool
+   */
+  public function getSatisfiesPzi()
+  {
+    return $this->satisfiesPzi;
+  }
+  /**
+   * @param bool
+   */
+  public function setSatisfiesPzs($satisfiesPzs)
+  {
+    $this->satisfiesPzs = $satisfiesPzs;
+  }
+  /**
+   * @return bool
+   */
+  public function getSatisfiesPzs()
+  {
+    return $this->satisfiesPzs;
   }
   /**
    * @param string

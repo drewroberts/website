@@ -46,6 +46,7 @@ class InventorySourceGroups extends \Google\Service\Resource
    * advertisers to which this group is explicitly shared will have read access to
    * this group.
    * @return InventorySourceGroup
+   * @throws \Google\Service\Exception
    */
   public function create(InventorySourceGroup $postBody, $optParams = [])
   {
@@ -66,6 +67,7 @@ class InventorySourceGroups extends \Google\Service\Resource
    * @opt_param string partnerId The ID of the partner that owns the inventory
    * source group. Only this partner has write access to this group.
    * @return DisplayvideoEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($inventorySourceGroupId, $optParams = [])
   {
@@ -88,6 +90,7 @@ class InventorySourceGroups extends \Google\Service\Resource
    * inventory source group. A partner cannot access an advertiser-owned inventory
    * source group.
    * @return InventorySourceGroup
+   * @throws \Google\Service\Exception
    */
   public function get($inventorySourceGroupId, $optParams = [])
   {
@@ -106,17 +109,19 @@ class InventorySourceGroups extends \Google\Service\Resource
    * the inventory source group. If an inventory source group is partner-owned,
    * only advertisers to which the group is explicitly shared can access the
    * group.
-   * @opt_param string filter Allows filtering by inventory source group
-   * properties. Supported syntax: * Filter expressions are made up of one or more
+   * @opt_param string filter Allows filtering by inventory source group fields.
+   * Supported syntax: * Filter expressions are made up of one or more
    * restrictions. * Restrictions can be combined by the logical operator `OR`. *
-   * A restriction has the form of `{field} {operator} {value}`. * The operator
-   * must be `EQUALS (=)`. * Supported fields: - `inventorySourceGroupId` The
-   * length of this field should be no more than 500 characters.
+   * A restriction has the form of `{field} {operator} {value}`. * All fields must
+   * use the `EQUALS (=)` operator. Supported fields: * `inventorySourceGroupId`
+   * The length of this field should be no more than 500 characters. Reference our
+   * [filter `LIST` requests](/display-video/api/guides/how-tos/filters) guide for
+   * more information.
    * @opt_param string orderBy Field by which to sort the list. Acceptable values
    * are: * `displayName` (default) * `inventorySourceGroupId` The default sorting
    * order is ascending. To specify descending order for a field, a suffix "desc"
    * should be added to the field name. For example, `displayName desc`.
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
    * If unspecified will default to `100`.
    * @opt_param string pageToken A token identifying a page of results the server
    * should return. Typically, this is the value of next_page_token returned from
@@ -126,6 +131,7 @@ class InventorySourceGroups extends \Google\Service\Resource
    * inventory source group. A partner cannot access advertiser-owned inventory
    * source groups.
    * @return ListInventorySourceGroupsResponse
+   * @throws \Google\Service\Exception
    */
   public function listInventorySourceGroups($optParams = [])
   {
@@ -150,6 +156,7 @@ class InventorySourceGroups extends \Google\Service\Resource
    * @opt_param string updateMask Required. The mask to control which fields to
    * update.
    * @return InventorySourceGroup
+   * @throws \Google\Service\Exception
    */
   public function patch($inventorySourceGroupId, InventorySourceGroup $postBody, $optParams = [])
   {

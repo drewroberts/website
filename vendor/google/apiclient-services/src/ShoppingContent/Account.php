@@ -36,8 +36,12 @@ class Account extends \Google\Collection
    * @var string[]
    */
   public $automaticLabelIds;
+  protected $businessIdentityType = AccountBusinessIdentity::class;
+  protected $businessIdentityDataType = '';
   protected $businessInformationType = AccountBusinessInformation::class;
   protected $businessInformationDataType = '';
+  protected $conversionSettingsType = AccountConversionSettings::class;
+  protected $conversionSettingsDataType = '';
   /**
    * @var string
    */
@@ -144,6 +148,20 @@ class Account extends \Google\Collection
     return $this->automaticLabelIds;
   }
   /**
+   * @param AccountBusinessIdentity
+   */
+  public function setBusinessIdentity(AccountBusinessIdentity $businessIdentity)
+  {
+    $this->businessIdentity = $businessIdentity;
+  }
+  /**
+   * @return AccountBusinessIdentity
+   */
+  public function getBusinessIdentity()
+  {
+    return $this->businessIdentity;
+  }
+  /**
    * @param AccountBusinessInformation
    */
   public function setBusinessInformation(AccountBusinessInformation $businessInformation)
@@ -156,6 +174,20 @@ class Account extends \Google\Collection
   public function getBusinessInformation()
   {
     return $this->businessInformation;
+  }
+  /**
+   * @param AccountConversionSettings
+   */
+  public function setConversionSettings(AccountConversionSettings $conversionSettings)
+  {
+    $this->conversionSettings = $conversionSettings;
+  }
+  /**
+   * @return AccountConversionSettings
+   */
+  public function getConversionSettings()
+  {
+    return $this->conversionSettings;
   }
   /**
    * @param string

@@ -25,7 +25,7 @@ use Google\Service\ServiceNetworking\Operation;
  * Typical usage is:
  *  <code>
  *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
- *   $roles = $servicenetworkingService->roles;
+ *   $roles = $servicenetworkingService->services_roles;
  *  </code>
  */
 class ServicesRoles extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class ServicesRoles extends \Google\Service\Resource
    * @param AddRolesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function add($parent, AddRolesRequest $postBody, $optParams = [])
   {

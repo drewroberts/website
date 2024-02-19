@@ -24,7 +24,7 @@ use Google\Service\Apigee\GoogleCloudApigeeV1Keystore;
  * Typical usage is:
  *  <code>
  *   $apigeeService = new Google\Service\Apigee(...);
- *   $keystores = $apigeeService->keystores;
+ *   $keystores = $apigeeService->organizations_environments_keystores;
  *  </code>
  */
 class OrganizationsEnvironmentsKeystores extends \Google\Service\Resource
@@ -45,6 +45,7 @@ class OrganizationsEnvironmentsKeystores extends \Google\Service\Resource
    * @opt_param string name Optional. Name of the keystore. Overrides the value in
    * Keystore.
    * @return GoogleCloudApigeeV1Keystore
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudApigeeV1Keystore $postBody, $optParams = [])
   {
@@ -60,6 +61,7 @@ class OrganizationsEnvironmentsKeystores extends \Google\Service\Resource
    * `organizations/{org}/environments/{env}/keystores/{keystore}`
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1Keystore
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -75,6 +77,7 @@ class OrganizationsEnvironmentsKeystores extends \Google\Service\Resource
    * `organizations/{org}/environments/{env}/keystores/{keystore}`.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1Keystore
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

@@ -23,6 +23,10 @@ use Symfony\Component\Intl\Intl;
 use Symfony\Component\Intl\Locale;
 use Symfony\Component\Intl\Util\GitRepository;
 
+if ('cli' !== \PHP_SAPI) {
+    throw new Exception('This script must be run from the command line.');
+}
+
 require_once __DIR__.'/common.php';
 require_once __DIR__.'/autoload.php';
 
@@ -156,7 +160,11 @@ if ($argc >= 3) {
 }
 
 $genrb = $buildDir.'/bin/genrb';
-$genrbEnv = 'LD_LIBRARY_PATH='.$buildDir.'/lib ';
+if (\PHP_OS === 'Darwin') {
+    $genrbEnv = 'DYLD_LIBRARY_PATH='.$buildDir.'/lib ';
+} else {
+    $genrbEnv = 'LD_LIBRARY_PATH='.$buildDir.'/lib ';
+}
 
 echo "Using $genrb.\n";
 

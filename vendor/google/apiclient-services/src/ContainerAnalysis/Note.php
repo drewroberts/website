@@ -62,6 +62,8 @@ class Note extends \Google\Collection
   public $relatedNoteNames;
   protected $relatedUrlType = RelatedUrl::class;
   protected $relatedUrlDataType = 'array';
+  protected $sbomReferenceType = SBOMReferenceNote::class;
+  protected $sbomReferenceDataType = '';
   /**
    * @var string
    */
@@ -74,6 +76,8 @@ class Note extends \Google\Collection
   protected $upgradeDataType = '';
   protected $vulnerabilityType = VulnerabilityNote::class;
   protected $vulnerabilityDataType = '';
+  protected $vulnerabilityAssessmentType = VulnerabilityAssessmentNote::class;
+  protected $vulnerabilityAssessmentDataType = '';
 
   /**
    * @param AttestationNote
@@ -286,6 +290,20 @@ class Note extends \Google\Collection
     return $this->relatedUrl;
   }
   /**
+   * @param SBOMReferenceNote
+   */
+  public function setSbomReference(SBOMReferenceNote $sbomReference)
+  {
+    $this->sbomReference = $sbomReference;
+  }
+  /**
+   * @return SBOMReferenceNote
+   */
+  public function getSbomReference()
+  {
+    return $this->sbomReference;
+  }
+  /**
    * @param string
    */
   public function setShortDescription($shortDescription)
@@ -340,6 +358,20 @@ class Note extends \Google\Collection
   public function getVulnerability()
   {
     return $this->vulnerability;
+  }
+  /**
+   * @param VulnerabilityAssessmentNote
+   */
+  public function setVulnerabilityAssessment(VulnerabilityAssessmentNote $vulnerabilityAssessment)
+  {
+    $this->vulnerabilityAssessment = $vulnerabilityAssessment;
+  }
+  /**
+   * @return VulnerabilityAssessmentNote
+   */
+  public function getVulnerabilityAssessment()
+  {
+    return $this->vulnerabilityAssessment;
   }
 }
 

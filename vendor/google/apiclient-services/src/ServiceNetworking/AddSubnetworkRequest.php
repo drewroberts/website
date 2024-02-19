@@ -23,6 +23,10 @@ class AddSubnetworkRequest extends \Google\Collection
   /**
    * @var bool
    */
+  public $allowSubnetCidrRoutesOverlap;
+  /**
+   * @var bool
+   */
   public $checkServiceNetworkingUsePermission;
   /**
    * @var string
@@ -40,6 +44,10 @@ class AddSubnetworkRequest extends \Google\Collection
    * @var string
    */
   public $description;
+  /**
+   * @var string
+   */
+  public $internalRange;
   /**
    * @var int
    */
@@ -68,6 +76,10 @@ class AddSubnetworkRequest extends \Google\Collection
    * @var string[]
    */
   public $requestedRanges;
+  /**
+   * @var string
+   */
+  public $role;
   protected $secondaryIpRangeSpecsType = SecondaryIpRangeSpec::class;
   protected $secondaryIpRangeSpecsDataType = 'array';
   /**
@@ -83,6 +95,20 @@ class AddSubnetworkRequest extends \Google\Collection
    */
   public $useCustomComputeIdempotencyWindow;
 
+  /**
+   * @param bool
+   */
+  public function setAllowSubnetCidrRoutesOverlap($allowSubnetCidrRoutesOverlap)
+  {
+    $this->allowSubnetCidrRoutesOverlap = $allowSubnetCidrRoutesOverlap;
+  }
+  /**
+   * @return bool
+   */
+  public function getAllowSubnetCidrRoutesOverlap()
+  {
+    return $this->allowSubnetCidrRoutesOverlap;
+  }
   /**
    * @param bool
    */
@@ -152,6 +178,20 @@ class AddSubnetworkRequest extends \Google\Collection
   public function getDescription()
   {
     return $this->description;
+  }
+  /**
+   * @param string
+   */
+  public function setInternalRange($internalRange)
+  {
+    $this->internalRange = $internalRange;
+  }
+  /**
+   * @return string
+   */
+  public function getInternalRange()
+  {
+    return $this->internalRange;
   }
   /**
    * @param int
@@ -250,6 +290,20 @@ class AddSubnetworkRequest extends \Google\Collection
   public function getRequestedRanges()
   {
     return $this->requestedRanges;
+  }
+  /**
+   * @param string
+   */
+  public function setRole($role)
+  {
+    $this->role = $role;
+  }
+  /**
+   * @return string
+   */
+  public function getRole()
+  {
+    return $this->role;
   }
   /**
    * @param SecondaryIpRangeSpec[]

@@ -26,13 +26,16 @@ use Google\Service\Monitoring\MonitoringEmpty;
  * Typical usage is:
  *  <code>
  *   $monitoringService = new Google\Service\Monitoring(...);
- *   $alertPolicies = $monitoringService->alertPolicies;
+ *   $alertPolicies = $monitoringService->projects_alertPolicies;
  *  </code>
  */
 class ProjectsAlertPolicies extends \Google\Service\Resource
 {
   /**
-   * Creates a new alerting policy. (alertPolicies.create)
+   * Creates a new alerting policy.Design your application to single-thread API
+   * calls that modify the state of alerting policies in a single project. This
+   * includes calls to CreateAlertPolicy, DeleteAlertPolicy and UpdateAlertPolicy.
+   * (alertPolicies.create)
    *
    * @param string $name Required. The project
    * (https://cloud.google.com/monitoring/api/v3#project_name) in which to create
@@ -46,6 +49,7 @@ class ProjectsAlertPolicies extends \Google\Service\Resource
    * @param AlertPolicy $postBody
    * @param array $optParams Optional parameters.
    * @return AlertPolicy
+   * @throws \Google\Service\Exception
    */
   public function create($name, AlertPolicy $postBody, $optParams = [])
   {
@@ -54,13 +58,17 @@ class ProjectsAlertPolicies extends \Google\Service\Resource
     return $this->call('create', [$params], AlertPolicy::class);
   }
   /**
-   * Deletes an alerting policy. (alertPolicies.delete)
+   * Deletes an alerting policy.Design your application to single-thread API calls
+   * that modify the state of alerting policies in a single project. This includes
+   * calls to CreateAlertPolicy, DeleteAlertPolicy and UpdateAlertPolicy.
+   * (alertPolicies.delete)
    *
    * @param string $name Required. The alerting policy to delete. The format is:
    * projects/[PROJECT_ID_OR_NUMBER]/alertPolicies/[ALERT_POLICY_ID] For more
    * information, see AlertPolicy.
    * @param array $optParams Optional parameters.
    * @return MonitoringEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -75,6 +83,7 @@ class ProjectsAlertPolicies extends \Google\Service\Resource
    * projects/[PROJECT_ID_OR_NUMBER]/alertPolicies/[ALERT_POLICY_ID]
    * @param array $optParams Optional parameters.
    * @return AlertPolicy
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -110,6 +119,7 @@ class ProjectsAlertPolicies extends \Google\Service\Resource
    * this field causes the method to return more results from the previous method
    * call.
    * @return ListAlertPoliciesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsAlertPolicies($name, $optParams = [])
   {
@@ -121,7 +131,10 @@ class ProjectsAlertPolicies extends \Google\Service\Resource
    * Updates an alerting policy. You can either replace the entire policy with a
    * new one or replace only certain fields in the current alerting policy by
    * specifying the fields to be updated via updateMask. Returns the updated
-   * alerting policy. (alertPolicies.patch)
+   * alerting policy.Design your application to single-thread API calls that
+   * modify the state of alerting policies in a single project. This includes
+   * calls to CreateAlertPolicy, DeleteAlertPolicy and UpdateAlertPolicy.
+   * (alertPolicies.patch)
    *
    * @param string $name Required if the policy exists. The resource name for this
    * policy. The format is:
@@ -149,6 +162,7 @@ class ProjectsAlertPolicies extends \Google\Service\Resource
    * with that [CONDITION_ID]. If the supplied condition omits the name field,
    * then a new [CONDITION_ID] is created.
    * @return AlertPolicy
+   * @throws \Google\Service\Exception
    */
   public function patch($name, AlertPolicy $postBody, $optParams = [])
   {

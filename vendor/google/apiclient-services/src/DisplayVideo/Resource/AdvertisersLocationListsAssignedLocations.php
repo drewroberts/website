@@ -28,7 +28,7 @@ use Google\Service\DisplayVideo\ListAssignedLocationsResponse;
  * Typical usage is:
  *  <code>
  *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $assignedLocations = $displayvideoService->assignedLocations;
+ *   $assignedLocations = $displayvideoService->advertisers_locationLists_assignedLocations;
  *  </code>
  */
 class AdvertisersLocationListsAssignedLocations extends \Google\Service\Resource
@@ -36,10 +36,8 @@ class AdvertisersLocationListsAssignedLocations extends \Google\Service\Resource
   /**
    * Bulk edits multiple assignments between locations and a single location list.
    * The operation will delete the assigned locations provided in
-   * BulkEditAssignedLocationsRequest.deleted_assigned_locations and then create
-   * the assigned locations provided in
-   * BulkEditAssignedLocationsRequest.created_assigned_locations.
-   * (assignedLocations.bulkEdit)
+   * deletedAssignedLocations and then create the assigned locations provided in
+   * createdAssignedLocations. (assignedLocations.bulkEdit)
    *
    * @param string $advertiserId Required. The ID of the DV360 advertiser to which
    * the location list belongs.
@@ -48,6 +46,7 @@ class AdvertisersLocationListsAssignedLocations extends \Google\Service\Resource
    * @param BulkEditAssignedLocationsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return BulkEditAssignedLocationsResponse
+   * @throws \Google\Service\Exception
    */
   public function bulkEdit($advertiserId, $locationListId, BulkEditAssignedLocationsRequest $postBody, $optParams = [])
   {
@@ -66,6 +65,7 @@ class AdvertisersLocationListsAssignedLocations extends \Google\Service\Resource
    * @param AssignedLocation $postBody
    * @param array $optParams Optional parameters.
    * @return AssignedLocation
+   * @throws \Google\Service\Exception
    */
   public function create($advertiserId, $locationListId, AssignedLocation $postBody, $optParams = [])
   {
@@ -85,6 +85,7 @@ class AdvertisersLocationListsAssignedLocations extends \Google\Service\Resource
    * to delete.
    * @param array $optParams Optional parameters.
    * @return DisplayvideoEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($advertiserId, $locationListId, $assignedLocationId, $optParams = [])
   {
@@ -104,15 +105,17 @@ class AdvertisersLocationListsAssignedLocations extends \Google\Service\Resource
    *
    * @opt_param string filter Allows filtering by location list assignment fields.
    * Supported syntax: * Filter expressions are made up of one or more
-   * restrictions. * Restrictions can be combined by the logical operator `OR`. *
-   * A restriction has the form of `{field} {operator} {value}`. * The operator
-   * must be `EQUALS (=)`. * Supported fields: - `assignedLocationId` The length
-   * of this field should be no more than 500 characters.
+   * restrictions. * Restrictions can be combined by the `OR` logical operator. *
+   * A restriction has the form of `{field} {operator} {value}`. * All fields must
+   * use the `EQUALS (=)` operator. Supported fields: * `assignedLocationId` The
+   * length of this field should be no more than 500 characters. Reference our
+   * [filter `LIST` requests](/display-video/api/guides/how-tos/filters) guide for
+   * more information.
    * @opt_param string orderBy Field by which to sort the list. Acceptable values
    * are: * `assignedLocationId` (default) The default sorting order is ascending.
    * To specify descending order for a field, a suffix " desc" should be added to
    * the field name. Example: `assignedLocationId desc`.
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
    * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
    * if an invalid value is specified.
    * @opt_param string pageToken A token identifying a page of results the server
@@ -120,6 +123,7 @@ class AdvertisersLocationListsAssignedLocations extends \Google\Service\Resource
    * the previous call to `ListAssignedLocations` method. If not specified, the
    * first page of results will be returned.
    * @return ListAssignedLocationsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAdvertisersLocationListsAssignedLocations($advertiserId, $locationListId, $optParams = [])
   {

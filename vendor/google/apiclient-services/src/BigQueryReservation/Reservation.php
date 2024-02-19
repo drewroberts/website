@@ -19,6 +19,8 @@ namespace Google\Service\BigQueryReservation;
 
 class Reservation extends \Google\Model
 {
+  protected $autoscaleType = Autoscale::class;
+  protected $autoscaleDataType = '';
   /**
    * @var string
    */
@@ -27,6 +29,10 @@ class Reservation extends \Google\Model
    * @var string
    */
   public $creationTime;
+  /**
+   * @var string
+   */
+  public $edition;
   /**
    * @var bool
    */
@@ -48,6 +54,20 @@ class Reservation extends \Google\Model
    */
   public $updateTime;
 
+  /**
+   * @param Autoscale
+   */
+  public function setAutoscale(Autoscale $autoscale)
+  {
+    $this->autoscale = $autoscale;
+  }
+  /**
+   * @return Autoscale
+   */
+  public function getAutoscale()
+  {
+    return $this->autoscale;
+  }
   /**
    * @param string
    */
@@ -75,6 +95,20 @@ class Reservation extends \Google\Model
   public function getCreationTime()
   {
     return $this->creationTime;
+  }
+  /**
+   * @param string
+   */
+  public function setEdition($edition)
+  {
+    $this->edition = $edition;
+  }
+  /**
+   * @return string
+   */
+  public function getEdition()
+  {
+    return $this->edition;
   }
   /**
    * @param bool

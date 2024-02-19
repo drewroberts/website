@@ -25,7 +25,7 @@ use Google\Service\ArtifactRegistry\ListDockerImagesResponse;
  * Typical usage is:
  *  <code>
  *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $dockerImages = $artifactregistryService->dockerImages;
+ *   $dockerImages = $artifactregistryService->projects_locations_repositories_dockerImages;
  *  </code>
  */
 class ProjectsLocationsRepositoriesDockerImages extends \Google\Service\Resource
@@ -36,6 +36,7 @@ class ProjectsLocationsRepositoriesDockerImages extends \Google\Service\Resource
    * @param string $name Required. The name of the docker images.
    * @param array $optParams Optional parameters.
    * @return DockerImage
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -56,6 +57,7 @@ class ProjectsLocationsRepositoriesDockerImages extends \Google\Service\Resource
    * @opt_param string pageToken The next_page_token value returned from a
    * previous list request, if any.
    * @return ListDockerImagesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsRepositoriesDockerImages($parent, $optParams = [])
   {

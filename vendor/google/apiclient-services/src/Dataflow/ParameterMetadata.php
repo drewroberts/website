@@ -27,7 +27,21 @@ class ParameterMetadata extends \Google\Collection
   /**
    * @var string
    */
+  public $defaultValue;
+  protected $enumOptionsType = ParameterMetadataEnumOption::class;
+  protected $enumOptionsDataType = 'array';
+  /**
+   * @var string
+   */
+  public $groupName;
+  /**
+   * @var string
+   */
   public $helpText;
+  /**
+   * @var bool
+   */
+  public $hiddenUi;
   /**
    * @var bool
    */
@@ -44,6 +58,14 @@ class ParameterMetadata extends \Google\Collection
    * @var string
    */
   public $paramType;
+  /**
+   * @var string
+   */
+  public $parentName;
+  /**
+   * @var string[]
+   */
+  public $parentTriggerValues;
   /**
    * @var string[]
    */
@@ -66,6 +88,48 @@ class ParameterMetadata extends \Google\Collection
   /**
    * @param string
    */
+  public function setDefaultValue($defaultValue)
+  {
+    $this->defaultValue = $defaultValue;
+  }
+  /**
+   * @return string
+   */
+  public function getDefaultValue()
+  {
+    return $this->defaultValue;
+  }
+  /**
+   * @param ParameterMetadataEnumOption[]
+   */
+  public function setEnumOptions($enumOptions)
+  {
+    $this->enumOptions = $enumOptions;
+  }
+  /**
+   * @return ParameterMetadataEnumOption[]
+   */
+  public function getEnumOptions()
+  {
+    return $this->enumOptions;
+  }
+  /**
+   * @param string
+   */
+  public function setGroupName($groupName)
+  {
+    $this->groupName = $groupName;
+  }
+  /**
+   * @return string
+   */
+  public function getGroupName()
+  {
+    return $this->groupName;
+  }
+  /**
+   * @param string
+   */
   public function setHelpText($helpText)
   {
     $this->helpText = $helpText;
@@ -76,6 +140,20 @@ class ParameterMetadata extends \Google\Collection
   public function getHelpText()
   {
     return $this->helpText;
+  }
+  /**
+   * @param bool
+   */
+  public function setHiddenUi($hiddenUi)
+  {
+    $this->hiddenUi = $hiddenUi;
+  }
+  /**
+   * @return bool
+   */
+  public function getHiddenUi()
+  {
+    return $this->hiddenUi;
   }
   /**
    * @param bool
@@ -132,6 +210,34 @@ class ParameterMetadata extends \Google\Collection
   public function getParamType()
   {
     return $this->paramType;
+  }
+  /**
+   * @param string
+   */
+  public function setParentName($parentName)
+  {
+    $this->parentName = $parentName;
+  }
+  /**
+   * @return string
+   */
+  public function getParentName()
+  {
+    return $this->parentName;
+  }
+  /**
+   * @param string[]
+   */
+  public function setParentTriggerValues($parentTriggerValues)
+  {
+    $this->parentTriggerValues = $parentTriggerValues;
+  }
+  /**
+   * @return string[]
+   */
+  public function getParentTriggerValues()
+  {
+    return $this->parentTriggerValues;
   }
   /**
    * @param string[]

@@ -35,6 +35,10 @@ class GoogleCloudRunV2RevisionTemplate extends \Google\Collection
    */
   public $executionEnvironment;
   /**
+   * @var bool
+   */
+  public $healthCheckDisabled;
+  /**
    * @var string[]
    */
   public $labels;
@@ -52,6 +56,10 @@ class GoogleCloudRunV2RevisionTemplate extends \Google\Collection
    * @var string
    */
   public $serviceAccount;
+  /**
+   * @var bool
+   */
+  public $sessionAffinity;
   /**
    * @var string
    */
@@ -116,6 +124,20 @@ class GoogleCloudRunV2RevisionTemplate extends \Google\Collection
   public function getExecutionEnvironment()
   {
     return $this->executionEnvironment;
+  }
+  /**
+   * @param bool
+   */
+  public function setHealthCheckDisabled($healthCheckDisabled)
+  {
+    $this->healthCheckDisabled = $healthCheckDisabled;
+  }
+  /**
+   * @return bool
+   */
+  public function getHealthCheckDisabled()
+  {
+    return $this->healthCheckDisabled;
   }
   /**
    * @param string[]
@@ -186,6 +208,20 @@ class GoogleCloudRunV2RevisionTemplate extends \Google\Collection
   public function getServiceAccount()
   {
     return $this->serviceAccount;
+  }
+  /**
+   * @param bool
+   */
+  public function setSessionAffinity($sessionAffinity)
+  {
+    $this->sessionAffinity = $sessionAffinity;
+  }
+  /**
+   * @return bool
+   */
+  public function getSessionAffinity()
+  {
+    return $this->sessionAffinity;
   }
   /**
    * @param string

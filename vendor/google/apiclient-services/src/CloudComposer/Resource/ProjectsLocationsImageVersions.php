@@ -24,7 +24,7 @@ use Google\Service\CloudComposer\ListImageVersionsResponse;
  * Typical usage is:
  *  <code>
  *   $composerService = new Google\Service\CloudComposer(...);
- *   $imageVersions = $composerService->imageVersions;
+ *   $imageVersions = $composerService->projects_locations_imageVersions;
  *  </code>
  */
 class ProjectsLocationsImageVersions extends \Google\Service\Resource
@@ -43,6 +43,7 @@ class ProjectsLocationsImageVersions extends \Google\Service\Resource
    * @opt_param string pageToken The next_page_token value returned from a
    * previous List request, if any.
    * @return ListImageVersionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsImageVersions($parent, $optParams = [])
   {

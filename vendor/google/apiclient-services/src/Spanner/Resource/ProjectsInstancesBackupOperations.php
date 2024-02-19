@@ -24,7 +24,7 @@ use Google\Service\Spanner\ListBackupOperationsResponse;
  * Typical usage is:
  *  <code>
  *   $spannerService = new Google\Service\Spanner(...);
- *   $backupOperations = $spannerService->backupOperations;
+ *   $backupOperations = $spannerService->projects_instances_backupOperations;
  *  </code>
  */
 class ProjectsInstancesBackupOperations extends \Google\Service\Resource
@@ -92,6 +92,7 @@ class ProjectsInstancesBackupOperations extends \Google\Service\Resource
    * next_page_token from a previous ListBackupOperationsResponse to the same
    * `parent` and with the same `filter`.
    * @return ListBackupOperationsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsInstancesBackupOperations($parent, $optParams = [])
   {

@@ -25,7 +25,7 @@ use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
  * Typical usage is:
  *  <code>
  *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $insightsdata = $contactcenterinsightsService->insightsdata;
+ *   $insightsdata = $contactcenterinsightsService->projects_locations_insightsdata;
  *  </code>
  */
 class ProjectsLocationsInsightsdata extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class ProjectsLocationsInsightsdata extends \Google\Service\Resource
    * @param GoogleCloudContactcenterinsightsV1ExportInsightsDataRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function export($parent, GoogleCloudContactcenterinsightsV1ExportInsightsDataRequest $postBody, $optParams = [])
   {

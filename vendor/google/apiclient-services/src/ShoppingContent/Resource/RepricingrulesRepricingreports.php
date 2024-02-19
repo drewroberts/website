@@ -24,13 +24,14 @@ use Google\Service\ShoppingContent\ListRepricingRuleReportsResponse;
  * Typical usage is:
  *  <code>
  *   $contentService = new Google\Service\ShoppingContent(...);
- *   $repricingreports = $contentService->repricingreports;
+ *   $repricingreports = $contentService->repricingrules_repricingreports;
  *  </code>
  */
 class RepricingrulesRepricingreports extends \Google\Service\Resource
 {
   /**
-   * Lists the metrics report for a given Repricing rule.
+   * *Deprecated*: New merchants can't start using this service. Lists the metrics
+   * report for a given Repricing rule.
    * (repricingreports.listRepricingrulesRepricingreports)
    *
    * @param string $merchantId Required. Id of the merchant who owns the Repricing

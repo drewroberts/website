@@ -26,6 +26,8 @@ class GoogleChromeManagementV1TelemetryDevice extends \Google\Collection
   protected $batteryInfoDataType = 'array';
   protected $batteryStatusReportType = GoogleChromeManagementV1BatteryStatusReport::class;
   protected $batteryStatusReportDataType = 'array';
+  protected $bootPerformanceReportType = GoogleChromeManagementV1BootPerformanceReport::class;
+  protected $bootPerformanceReportDataType = 'array';
   protected $cpuInfoType = GoogleChromeManagementV1CpuInfo::class;
   protected $cpuInfoDataType = 'array';
   protected $cpuStatusReportType = GoogleChromeManagementV1CpuStatusReport::class;
@@ -42,6 +44,10 @@ class GoogleChromeManagementV1TelemetryDevice extends \Google\Collection
   protected $graphicsInfoDataType = '';
   protected $graphicsStatusReportType = GoogleChromeManagementV1GraphicsStatusReport::class;
   protected $graphicsStatusReportDataType = 'array';
+  protected $heartbeatStatusReportType = GoogleChromeManagementV1HeartbeatStatusReport::class;
+  protected $heartbeatStatusReportDataType = 'array';
+  protected $kioskAppStatusReportType = GoogleChromeManagementV1KioskAppStatusReport::class;
+  protected $kioskAppStatusReportDataType = 'array';
   protected $memoryInfoType = GoogleChromeManagementV1MemoryInfo::class;
   protected $memoryInfoDataType = '';
   protected $memoryStatusReportType = GoogleChromeManagementV1MemoryStatusReport::class;
@@ -50,6 +56,8 @@ class GoogleChromeManagementV1TelemetryDevice extends \Google\Collection
    * @var string
    */
   public $name;
+  protected $networkBandwidthReportType = GoogleChromeManagementV1NetworkBandwidthReport::class;
+  protected $networkBandwidthReportDataType = 'array';
   protected $networkDiagnosticsReportType = GoogleChromeManagementV1NetworkDiagnosticsReport::class;
   protected $networkDiagnosticsReportDataType = 'array';
   protected $networkInfoType = GoogleChromeManagementV1NetworkInfo::class;
@@ -62,6 +70,8 @@ class GoogleChromeManagementV1TelemetryDevice extends \Google\Collection
   public $orgUnitId;
   protected $osUpdateStatusType = GoogleChromeManagementV1OsUpdateStatus::class;
   protected $osUpdateStatusDataType = 'array';
+  protected $peripheralsReportType = GoogleChromeManagementV1PeripheralsReport::class;
+  protected $peripheralsReportDataType = 'array';
   /**
    * @var string
    */
@@ -114,6 +124,20 @@ class GoogleChromeManagementV1TelemetryDevice extends \Google\Collection
   public function getBatteryStatusReport()
   {
     return $this->batteryStatusReport;
+  }
+  /**
+   * @param GoogleChromeManagementV1BootPerformanceReport[]
+   */
+  public function setBootPerformanceReport($bootPerformanceReport)
+  {
+    $this->bootPerformanceReport = $bootPerformanceReport;
+  }
+  /**
+   * @return GoogleChromeManagementV1BootPerformanceReport[]
+   */
+  public function getBootPerformanceReport()
+  {
+    return $this->bootPerformanceReport;
   }
   /**
    * @param GoogleChromeManagementV1CpuInfo[]
@@ -200,6 +224,34 @@ class GoogleChromeManagementV1TelemetryDevice extends \Google\Collection
     return $this->graphicsStatusReport;
   }
   /**
+   * @param GoogleChromeManagementV1HeartbeatStatusReport[]
+   */
+  public function setHeartbeatStatusReport($heartbeatStatusReport)
+  {
+    $this->heartbeatStatusReport = $heartbeatStatusReport;
+  }
+  /**
+   * @return GoogleChromeManagementV1HeartbeatStatusReport[]
+   */
+  public function getHeartbeatStatusReport()
+  {
+    return $this->heartbeatStatusReport;
+  }
+  /**
+   * @param GoogleChromeManagementV1KioskAppStatusReport[]
+   */
+  public function setKioskAppStatusReport($kioskAppStatusReport)
+  {
+    $this->kioskAppStatusReport = $kioskAppStatusReport;
+  }
+  /**
+   * @return GoogleChromeManagementV1KioskAppStatusReport[]
+   */
+  public function getKioskAppStatusReport()
+  {
+    return $this->kioskAppStatusReport;
+  }
+  /**
    * @param GoogleChromeManagementV1MemoryInfo
    */
   public function setMemoryInfo(GoogleChromeManagementV1MemoryInfo $memoryInfo)
@@ -240,6 +292,20 @@ class GoogleChromeManagementV1TelemetryDevice extends \Google\Collection
   public function getName()
   {
     return $this->name;
+  }
+  /**
+   * @param GoogleChromeManagementV1NetworkBandwidthReport[]
+   */
+  public function setNetworkBandwidthReport($networkBandwidthReport)
+  {
+    $this->networkBandwidthReport = $networkBandwidthReport;
+  }
+  /**
+   * @return GoogleChromeManagementV1NetworkBandwidthReport[]
+   */
+  public function getNetworkBandwidthReport()
+  {
+    return $this->networkBandwidthReport;
   }
   /**
    * @param GoogleChromeManagementV1NetworkDiagnosticsReport[]
@@ -310,6 +376,20 @@ class GoogleChromeManagementV1TelemetryDevice extends \Google\Collection
   public function getOsUpdateStatus()
   {
     return $this->osUpdateStatus;
+  }
+  /**
+   * @param GoogleChromeManagementV1PeripheralsReport[]
+   */
+  public function setPeripheralsReport($peripheralsReport)
+  {
+    $this->peripheralsReport = $peripheralsReport;
+  }
+  /**
+   * @return GoogleChromeManagementV1PeripheralsReport[]
+   */
+  public function getPeripheralsReport()
+  {
+    return $this->peripheralsReport;
   }
   /**
    * @param string

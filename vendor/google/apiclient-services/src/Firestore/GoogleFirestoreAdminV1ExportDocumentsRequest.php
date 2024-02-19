@@ -19,15 +19,23 @@ namespace Google\Service\Firestore;
 
 class GoogleFirestoreAdminV1ExportDocumentsRequest extends \Google\Collection
 {
-  protected $collection_key = 'collectionIds';
+  protected $collection_key = 'namespaceIds';
   /**
    * @var string[]
    */
   public $collectionIds;
   /**
+   * @var string[]
+   */
+  public $namespaceIds;
+  /**
    * @var string
    */
   public $outputUriPrefix;
+  /**
+   * @var string
+   */
+  public $snapshotTime;
 
   /**
    * @param string[]
@@ -44,6 +52,20 @@ class GoogleFirestoreAdminV1ExportDocumentsRequest extends \Google\Collection
     return $this->collectionIds;
   }
   /**
+   * @param string[]
+   */
+  public function setNamespaceIds($namespaceIds)
+  {
+    $this->namespaceIds = $namespaceIds;
+  }
+  /**
+   * @return string[]
+   */
+  public function getNamespaceIds()
+  {
+    return $this->namespaceIds;
+  }
+  /**
    * @param string
    */
   public function setOutputUriPrefix($outputUriPrefix)
@@ -56,6 +78,20 @@ class GoogleFirestoreAdminV1ExportDocumentsRequest extends \Google\Collection
   public function getOutputUriPrefix()
   {
     return $this->outputUriPrefix;
+  }
+  /**
+   * @param string
+   */
+  public function setSnapshotTime($snapshotTime)
+  {
+    $this->snapshotTime = $snapshotTime;
+  }
+  /**
+   * @return string
+   */
+  public function getSnapshotTime()
+  {
+    return $this->snapshotTime;
   }
 }
 

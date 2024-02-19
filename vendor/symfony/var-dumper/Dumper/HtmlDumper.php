@@ -77,7 +77,7 @@ class HtmlDumper extends CliDumper
     /**
      * {@inheritdoc}
      */
-    public function __construct($output = null, string $charset = null, int $flags = 0)
+    public function __construct($output = null, ?string $charset = null, int $flags = 0)
     {
         AbstractDumper::__construct($output, $charset, $flags);
         $this->dumpId = 'sf-dump-'.mt_rand();
@@ -167,9 +167,9 @@ var refStyle = doc.createElement('style'),
     };
 
 refStyle.innerHTML = 'pre.sf-dump .sf-dump-compact, .sf-dump-str-collapse .sf-dump-str-collapse, .sf-dump-str-expand .sf-dump-str-expand { display: none; }';
-(doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle);
+doc.head.appendChild(refStyle);
 refStyle = doc.createElement('style');
-(doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle);
+doc.head.appendChild(refStyle);
 
 if (!doc.addEventListener) {
     addEventListener = function (element, eventName, callback) {

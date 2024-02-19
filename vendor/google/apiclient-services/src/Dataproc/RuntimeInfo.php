@@ -19,6 +19,10 @@ namespace Google\Service\Dataproc;
 
 class RuntimeInfo extends \Google\Model
 {
+  protected $approximateUsageType = UsageMetrics::class;
+  protected $approximateUsageDataType = '';
+  protected $currentUsageType = UsageSnapshot::class;
+  protected $currentUsageDataType = '';
   /**
    * @var string
    */
@@ -32,6 +36,34 @@ class RuntimeInfo extends \Google\Model
    */
   public $outputUri;
 
+  /**
+   * @param UsageMetrics
+   */
+  public function setApproximateUsage(UsageMetrics $approximateUsage)
+  {
+    $this->approximateUsage = $approximateUsage;
+  }
+  /**
+   * @return UsageMetrics
+   */
+  public function getApproximateUsage()
+  {
+    return $this->approximateUsage;
+  }
+  /**
+   * @param UsageSnapshot
+   */
+  public function setCurrentUsage(UsageSnapshot $currentUsage)
+  {
+    $this->currentUsage = $currentUsage;
+  }
+  /**
+   * @return UsageSnapshot
+   */
+  public function getCurrentUsage()
+  {
+    return $this->currentUsage;
+  }
   /**
    * @param string
    */

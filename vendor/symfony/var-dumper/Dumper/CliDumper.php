@@ -64,7 +64,7 @@ class CliDumper extends AbstractDumper
     /**
      * {@inheritdoc}
      */
-    public function __construct($output = null, string $charset = null, int $flags = 0)
+    public function __construct($output = null, ?string $charset = null, int $flags = 0)
     {
         parent::__construct($output, $charset, $flags);
 
@@ -128,6 +128,7 @@ class CliDumper extends AbstractDumper
     public function dumpScalar(Cursor $cursor, string $type, $value)
     {
         $this->dumpKey($cursor);
+        $this->collapseNextHash = $this->expandNextHash = false;
 
         $style = 'const';
         $attr = $cursor->attr;
@@ -191,6 +192,7 @@ class CliDumper extends AbstractDumper
     public function dumpString(Cursor $cursor, string $str, bool $bin, int $cut)
     {
         $this->dumpKey($cursor);
+        $this->collapseNextHash = $this->expandNextHash = false;
         $attr = $cursor->attr;
 
         if ($bin) {
@@ -198,6 +200,9 @@ class CliDumper extends AbstractDumper
         }
         if ('' === $str) {
             $this->line .= '""';
+            if ($cut) {
+                $this->line .= '…'.$cut;
+            }
             $this->endValue($cursor);
         } else {
             $attr += [
@@ -283,6 +288,7 @@ class CliDumper extends AbstractDumper
         }
 
         $this->dumpKey($cursor);
+        $this->expandNextHash = false;
         $attr = $cursor->attr;
 
         if ($this->collapseNextHash) {
@@ -445,7 +451,8 @@ class CliDumper extends AbstractDumper
 
         if (null === $this->handlesHrefGracefully) {
             $this->handlesHrefGracefully = 'JetBrains-JediTerm' !== getenv('TERMINAL_EMULATOR')
-                && (!getenv('KONSOLE_VERSION') || (int) getenv('KONSOLE_VERSION') > 201100);
+                && (!getenv('KONSOLE_VERSION') || (int) getenv('KONSOLE_VERSION') > 201100)
+                && !isset($_SERVER['IDEA_INITIAL_DIRECTORY']);
         }
 
         if (isset($attr['ellipsis'], $attr['ellipsis-type'])) {
@@ -557,6 +564,10 @@ class CliDumper extends AbstractDumper
      */
     protected function dumpLine(int $depth, bool $endOfValue = false)
     {
+        if (null === $this->colors) {
+            $this->colors = $this->supportsColors();
+        }
+
         if ($this->colors) {
             $this->line = sprintf("\033[%sm%s\033[m", $this->styles['default'], $this->line);
         }

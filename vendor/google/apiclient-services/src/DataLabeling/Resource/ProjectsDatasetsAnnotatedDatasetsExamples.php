@@ -25,7 +25,7 @@ use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListExamplesRespon
  * Typical usage is:
  *  <code>
  *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $examples = $datalabelingService->examples;
+ *   $examples = $datalabelingService->projects_datasets_annotatedDatasets_examples;
  *  </code>
  */
 class ProjectsDatasetsAnnotatedDatasetsExamples extends \Google\Service\Resource
@@ -43,6 +43,7 @@ class ProjectsDatasetsAnnotatedDatasetsExamples extends \Google\Service\Resource
    * Filter by annotation_spec.display_name is supported. Format
    * "annotation_spec.display_name = {display_name}"
    * @return GoogleCloudDatalabelingV1beta1Example
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -68,6 +69,7 @@ class ProjectsDatasetsAnnotatedDatasetsExamples extends \Google\Service\Resource
    * ListExamplesResponse.next_page_token of the previous
    * [DataLabelingService.ListExamples] call. Return first page if empty.
    * @return GoogleCloudDatalabelingV1beta1ListExamplesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsDatasetsAnnotatedDatasetsExamples($parent, $optParams = [])
   {

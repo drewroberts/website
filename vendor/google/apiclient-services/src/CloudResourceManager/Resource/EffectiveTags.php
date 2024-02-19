@@ -30,8 +30,8 @@ use Google\Service\CloudResourceManager\ListEffectiveTagsResponse;
 class EffectiveTags extends \Google\Service\Resource
 {
   /**
-   * Return a list of effective tags for the given cloud resource, as specified in
-   * `parent`. (effectiveTags.listEffectiveTags)
+   * Return a list of effective tags for the given Google Cloud resource, as
+   * specified in `parent`. (effectiveTags.listEffectiveTags)
    *
    * @param array $optParams Optional parameters.
    *
@@ -46,6 +46,7 @@ class EffectiveTags extends \Google\Service\Resource
    * which you want to list the effective tags. E.g.
    * "//cloudresourcemanager.googleapis.com/projects/123"
    * @return ListEffectiveTagsResponse
+   * @throws \Google\Service\Exception
    */
   public function listEffectiveTags($optParams = [])
   {

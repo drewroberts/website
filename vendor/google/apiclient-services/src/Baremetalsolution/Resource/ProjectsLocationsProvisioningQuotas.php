@@ -24,7 +24,7 @@ use Google\Service\Baremetalsolution\ListProvisioningQuotasResponse;
  * Typical usage is:
  *  <code>
  *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $provisioningQuotas = $baremetalsolutionService->provisioningQuotas;
+ *   $provisioningQuotas = $baremetalsolutionService->projects_locations_provisioningQuotas;
  *  </code>
  */
 class ProjectsLocationsProvisioningQuotas extends \Google\Service\Resource
@@ -44,6 +44,7 @@ class ProjectsLocationsProvisioningQuotas extends \Google\Service\Resource
    * @opt_param string pageToken A token identifying a page of results from the
    * server.
    * @return ListProvisioningQuotasResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsProvisioningQuotas($parent, $optParams = [])
   {

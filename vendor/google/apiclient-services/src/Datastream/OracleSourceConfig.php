@@ -28,6 +28,10 @@ class OracleSourceConfig extends \Google\Model
   /**
    * @var int
    */
+  public $maxConcurrentBackfillTasks;
+  /**
+   * @var int
+   */
   public $maxConcurrentCdcTasks;
   protected $streamLargeObjectsType = StreamLargeObjects::class;
   protected $streamLargeObjectsDataType = '';
@@ -73,6 +77,20 @@ class OracleSourceConfig extends \Google\Model
   public function getIncludeObjects()
   {
     return $this->includeObjects;
+  }
+  /**
+   * @param int
+   */
+  public function setMaxConcurrentBackfillTasks($maxConcurrentBackfillTasks)
+  {
+    $this->maxConcurrentBackfillTasks = $maxConcurrentBackfillTasks;
+  }
+  /**
+   * @return int
+   */
+  public function getMaxConcurrentBackfillTasks()
+  {
+    return $this->maxConcurrentBackfillTasks;
   }
   /**
    * @param int

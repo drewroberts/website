@@ -25,7 +25,7 @@ use Google\Service\FirebaseCloudMessaging\SendMessageRequest;
  * Typical usage is:
  *  <code>
  *   $fcmService = new Google\Service\FirebaseCloudMessaging(...);
- *   $messages = $fcmService->messages;
+ *   $messages = $fcmService->projects_messages;
  *  </code>
  */
 class ProjectsMessages extends \Google\Service\Resource
@@ -41,6 +41,7 @@ class ProjectsMessages extends \Google\Service\Resource
    * @param SendMessageRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Message
+   * @throws \Google\Service\Exception
    */
   public function send($parent, SendMessageRequest $postBody, $optParams = [])
   {

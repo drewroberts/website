@@ -25,6 +25,8 @@ class ProcessingFailureDetails extends \Google\Model
   protected $imuDataGapDetailsDataType = '';
   protected $insufficientGpsDetailsType = InsufficientGpsFailureDetails::class;
   protected $insufficientGpsDetailsDataType = '';
+  protected $noOverlapGpsDetailsType = NoOverlapGpsFailureDetails::class;
+  protected $noOverlapGpsDetailsDataType = '';
   protected $notOutdoorsDetailsType = NotOutdoorsFailureDetails::class;
   protected $notOutdoorsDetailsDataType = '';
 
@@ -69,6 +71,20 @@ class ProcessingFailureDetails extends \Google\Model
   public function getInsufficientGpsDetails()
   {
     return $this->insufficientGpsDetails;
+  }
+  /**
+   * @param NoOverlapGpsFailureDetails
+   */
+  public function setNoOverlapGpsDetails(NoOverlapGpsFailureDetails $noOverlapGpsDetails)
+  {
+    $this->noOverlapGpsDetails = $noOverlapGpsDetails;
+  }
+  /**
+   * @return NoOverlapGpsFailureDetails
+   */
+  public function getNoOverlapGpsDetails()
+  {
+    return $this->noOverlapGpsDetails;
   }
   /**
    * @param NotOutdoorsFailureDetails

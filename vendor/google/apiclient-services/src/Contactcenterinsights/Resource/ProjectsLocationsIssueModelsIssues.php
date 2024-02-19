@@ -19,23 +19,39 @@ namespace Google\Service\Contactcenterinsights\Resource;
 
 use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Issue;
 use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListIssuesResponse;
+use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
 
 /**
  * The "issues" collection of methods.
  * Typical usage is:
  *  <code>
  *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $issues = $contactcenterinsightsService->issues;
+ *   $issues = $contactcenterinsightsService->projects_locations_issueModels_issues;
  *  </code>
  */
 class ProjectsLocationsIssueModelsIssues extends \Google\Service\Resource
 {
+  /**
+   * Deletes an issue. (issues.delete)
+   *
+   * @param string $name Required. The name of the issue to delete.
+   * @param array $optParams Optional parameters.
+   * @return GoogleProtobufEmpty
+   * @throws \Google\Service\Exception
+   */
+  public function delete($name, $optParams = [])
+  {
+    $params = ['name' => $name];
+    $params = array_merge($params, $optParams);
+    return $this->call('delete', [$params], GoogleProtobufEmpty::class);
+  }
   /**
    * Gets an issue. (issues.get)
    *
    * @param string $name Required. The name of the issue to get.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudContactcenterinsightsV1Issue
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -49,6 +65,7 @@ class ProjectsLocationsIssueModelsIssues extends \Google\Service\Resource
    * @param string $parent Required. The parent resource of the issue.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudContactcenterinsightsV1ListIssuesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsIssueModelsIssues($parent, $optParams = [])
   {
@@ -66,6 +83,7 @@ class ProjectsLocationsIssueModelsIssues extends \Google\Service\Resource
    *
    * @opt_param string updateMask The list of fields to be updated.
    * @return GoogleCloudContactcenterinsightsV1Issue
+   * @throws \Google\Service\Exception
    */
   public function patch($name, GoogleCloudContactcenterinsightsV1Issue $postBody, $optParams = [])
   {

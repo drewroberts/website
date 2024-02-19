@@ -42,6 +42,10 @@ class ExternalDataConfiguration extends \Google\Collection
    * @var string[]
    */
   public $decimalTargetTypes;
+  /**
+   * @var string
+   */
+  public $fileSetSpecType;
   protected $googleSheetsOptionsType = GoogleSheetsOptions::class;
   protected $googleSheetsOptionsDataType = '';
   protected $hivePartitioningOptionsType = HivePartitioningOptions::class;
@@ -51,9 +55,23 @@ class ExternalDataConfiguration extends \Google\Collection
    */
   public $ignoreUnknownValues;
   /**
+   * @var string
+   */
+  public $jsonExtension;
+  protected $jsonOptionsType = JsonOptions::class;
+  protected $jsonOptionsDataType = '';
+  /**
    * @var int
    */
   public $maxBadRecords;
+  /**
+   * @var string
+   */
+  public $metadataCacheMode;
+  /**
+   * @var string
+   */
+  public $objectMetadata;
   protected $parquetOptionsType = ParquetOptions::class;
   protected $parquetOptionsDataType = '';
   /**
@@ -170,6 +188,20 @@ class ExternalDataConfiguration extends \Google\Collection
     return $this->decimalTargetTypes;
   }
   /**
+   * @param string
+   */
+  public function setFileSetSpecType($fileSetSpecType)
+  {
+    $this->fileSetSpecType = $fileSetSpecType;
+  }
+  /**
+   * @return string
+   */
+  public function getFileSetSpecType()
+  {
+    return $this->fileSetSpecType;
+  }
+  /**
    * @param GoogleSheetsOptions
    */
   public function setGoogleSheetsOptions(GoogleSheetsOptions $googleSheetsOptions)
@@ -212,6 +244,34 @@ class ExternalDataConfiguration extends \Google\Collection
     return $this->ignoreUnknownValues;
   }
   /**
+   * @param string
+   */
+  public function setJsonExtension($jsonExtension)
+  {
+    $this->jsonExtension = $jsonExtension;
+  }
+  /**
+   * @return string
+   */
+  public function getJsonExtension()
+  {
+    return $this->jsonExtension;
+  }
+  /**
+   * @param JsonOptions
+   */
+  public function setJsonOptions(JsonOptions $jsonOptions)
+  {
+    $this->jsonOptions = $jsonOptions;
+  }
+  /**
+   * @return JsonOptions
+   */
+  public function getJsonOptions()
+  {
+    return $this->jsonOptions;
+  }
+  /**
    * @param int
    */
   public function setMaxBadRecords($maxBadRecords)
@@ -224,6 +284,34 @@ class ExternalDataConfiguration extends \Google\Collection
   public function getMaxBadRecords()
   {
     return $this->maxBadRecords;
+  }
+  /**
+   * @param string
+   */
+  public function setMetadataCacheMode($metadataCacheMode)
+  {
+    $this->metadataCacheMode = $metadataCacheMode;
+  }
+  /**
+   * @return string
+   */
+  public function getMetadataCacheMode()
+  {
+    return $this->metadataCacheMode;
+  }
+  /**
+   * @param string
+   */
+  public function setObjectMetadata($objectMetadata)
+  {
+    $this->objectMetadata = $objectMetadata;
+  }
+  /**
+   * @return string
+   */
+  public function getObjectMetadata()
+  {
+    return $this->objectMetadata;
   }
   /**
    * @param ParquetOptions

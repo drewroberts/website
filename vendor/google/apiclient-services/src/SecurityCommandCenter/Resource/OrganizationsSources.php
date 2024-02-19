@@ -30,7 +30,7 @@ use Google\Service\SecurityCommandCenter\TestIamPermissionsResponse;
  * Typical usage is:
  *  <code>
  *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $sources = $securitycenterService->sources;
+ *   $sources = $securitycenterService->organizations_sources;
  *  </code>
  */
 class OrganizationsSources extends \Google\Service\Resource
@@ -43,6 +43,7 @@ class OrganizationsSources extends \Google\Service\Resource
    * @param Source $postBody
    * @param array $optParams Optional parameters.
    * @return Source
+   * @throws \Google\Service\Exception
    */
   public function create($parent, Source $postBody, $optParams = [])
   {
@@ -57,6 +58,7 @@ class OrganizationsSources extends \Google\Service\Resource
    * format is "organizations/[organization_id]/source/[source_id]".
    * @param array $optParams Optional parameters.
    * @return Source
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -75,6 +77,7 @@ class OrganizationsSources extends \Google\Service\Resource
    * @param GetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -87,8 +90,8 @@ class OrganizationsSources extends \Google\Service\Resource
    * (sources.listOrganizationsSources)
    *
    * @param string $parent Required. Resource name of the parent of sources to
-   * list. Its format should be "organizations/[organization_id],
-   * folders/[folder_id], or projects/[project_id]".
+   * list. Its format should be "organizations/[organization_id]",
+   * "folders/[folder_id]", or "projects/[project_id]".
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize The maximum number of results to return in a single
@@ -97,6 +100,7 @@ class OrganizationsSources extends \Google\Service\Resource
    * `ListSourcesResponse`; indicates that this is a continuation of a prior
    * `ListSources` call, and that the system should return the next page of data.
    * @return ListSourcesResponse
+   * @throws \Google\Service\Exception
    */
   public function listOrganizationsSources($parent, $optParams = [])
   {
@@ -116,6 +120,7 @@ class OrganizationsSources extends \Google\Service\Resource
    * @opt_param string updateMask The FieldMask to use when updating the source
    * resource. If empty all mutable fields will be updated.
    * @return Source
+   * @throws \Google\Service\Exception
    */
   public function patch($name, Source $postBody, $optParams = [])
   {
@@ -134,6 +139,7 @@ class OrganizationsSources extends \Google\Service\Resource
    * @param SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -152,6 +158,7 @@ class OrganizationsSources extends \Google\Service\Resource
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
   {

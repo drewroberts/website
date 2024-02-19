@@ -32,7 +32,7 @@ use Google\Service\BeyondCorp\GoogleLongrunningOperation;
  * Typical usage is:
  *  <code>
  *   $beyondcorpService = new Google\Service\BeyondCorp(...);
- *   $appConnectors = $beyondcorpService->appConnectors;
+ *   $appConnectors = $beyondcorpService->projects_locations_appConnectors;
  *  </code>
  */
 class ProjectsLocationsAppConnectors extends \Google\Service\Resource
@@ -54,7 +54,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * the server will know to ignore the request if it has already been completed.
    * The server will guarantee that for at least 60 minutes since the first
    * request. For example, consider a situation where you make an initial request
-   * and t he request times out. If you make the request again with the same
+   * and the request times out. If you make the request again with the same
    * request ID, the server can check if original operation with the same request
    * ID was received, and if so, will ignore the second request. This prevents
    * clients from accidentally creating duplicate commitments. The request ID must
@@ -63,6 +63,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * @opt_param bool validateOnly Optional. If set, validates request by executing
    * a dry-run which would not alter the resource in any way.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudBeyondcorpAppconnectorsV1AppConnector $postBody, $optParams = [])
   {
@@ -83,7 +84,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * the server will know to ignore the request if it has already been completed.
    * The server will guarantee that for at least 60 minutes after the first
    * request. For example, consider a situation where you make an initial request
-   * and t he request times out. If you make the request again with the same
+   * and the request times out. If you make the request again with the same
    * request ID, the server can check if original operation with the same request
    * ID was received, and if so, will ignore the second request. This prevents
    * clients from accidentally creating duplicate commitments. The request ID must
@@ -92,6 +93,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * @opt_param bool validateOnly Optional. If set, validates request by executing
    * a dry-run which would not alter the resource in any way.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -107,6 +109,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * `
    * @param array $optParams Optional parameters.
    * @return GoogleCloudBeyondcorpAppconnectorsV1AppConnector
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -137,6 +140,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * documentation](https://cloud.google.com/iam/help/conditions/resource-
    * policies).
    * @return GoogleIamV1Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, $optParams = [])
   {
@@ -166,6 +170,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * @opt_param string pageToken Optional. The next_page_token value returned from
    * a previous ListAppConnectorsRequest, if any.
    * @return GoogleCloudBeyondcorpAppconnectorsV1ListAppConnectorsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsAppConnectors($parent, $optParams = [])
   {
@@ -186,7 +191,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * the server will know to ignore the request if it has already been completed.
    * The server will guarantee that for at least 60 minutes since the first
    * request. For example, consider a situation where you make an initial request
-   * and t he request times out. If you make the request again with the same
+   * and the request times out. If you make the request again with the same
    * request ID, the server can check if original operation with the same request
    * ID was received, and if so, will ignore the second request. This prevents
    * clients from accidentally creating duplicate commitments. The request ID must
@@ -199,6 +204,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * @opt_param bool validateOnly Optional. If set, validates request by executing
    * a dry-run which would not alter the resource in any way.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, GoogleCloudBeyondcorpAppconnectorsV1AppConnector $postBody, $optParams = [])
   {
@@ -214,6 +220,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * @param GoogleCloudBeyondcorpAppconnectorsV1ReportStatusRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function reportStatus($appConnector, GoogleCloudBeyondcorpAppconnectorsV1ReportStatusRequest $postBody, $optParams = [])
   {
@@ -231,6 +238,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * `projects/{project_id}/locations/{location_id}/appConnectors/{app_connector}`
    * @param array $optParams Optional parameters.
    * @return GoogleCloudBeyondcorpAppconnectorsV1ResolveInstanceConfigResponse
+   * @throws \Google\Service\Exception
    */
   public function resolveInstanceConfig($appConnector, $optParams = [])
   {
@@ -250,6 +258,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * @param GoogleIamV1SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleIamV1Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, GoogleIamV1SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -272,6 +281,7 @@ class ProjectsLocationsAppConnectors extends \Google\Service\Resource
    * @param GoogleIamV1TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleIamV1TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, GoogleIamV1TestIamPermissionsRequest $postBody, $optParams = [])
   {

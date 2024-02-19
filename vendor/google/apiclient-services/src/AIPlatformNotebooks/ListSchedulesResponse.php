@@ -26,10 +26,11 @@ class ListSchedulesResponse extends \Google\Collection
   public $nextPageToken;
   protected $schedulesType = Schedule::class;
   protected $schedulesDataType = 'array';
+  public $schedules = [];
   /**
    * @var string[]
    */
-  public $unreachable;
+  public $unreachable = [];
 
   /**
    * @param string

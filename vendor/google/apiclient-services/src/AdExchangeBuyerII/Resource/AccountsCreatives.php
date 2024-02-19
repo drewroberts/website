@@ -28,7 +28,7 @@ use Google\Service\AdExchangeBuyerII\WatchCreativeRequest;
  * Typical usage is:
  *  <code>
  *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
- *   $creatives = $adexchangebuyer2Service->creatives;
+ *   $creatives = $adexchangebuyer2Service->accounts_creatives;
  *  </code>
  */
 class AccountsCreatives extends \Google\Service\Resource
@@ -44,6 +44,7 @@ class AccountsCreatives extends \Google\Service\Resource
    * @opt_param string duplicateIdMode Indicates if multiple creatives can share
    * an ID or not. Default is NO_DUPLICATES (one ID per creative).
    * @return Creative
+   * @throws \Google\Service\Exception
    */
   public function create($accountId, Creative $postBody, $optParams = [])
   {
@@ -58,6 +59,7 @@ class AccountsCreatives extends \Google\Service\Resource
    * @param string $creativeId The ID of the creative to retrieve.
    * @param array $optParams Optional parameters.
    * @return Creative
+   * @throws \Google\Service\Exception
    */
   public function get($accountId, $creativeId, $optParams = [])
   {
@@ -74,8 +76,8 @@ class AccountsCreatives extends \Google\Service\Resource
    *
    * @opt_param int pageSize Requested page size. The server may return fewer
    * creatives than requested (due to timeout constraint) even if more are
-   * available via another call. If unspecified, server will pick an appropriate
-   * default. Acceptable values are 1 to 1000, inclusive.
+   * available through another call. If unspecified, server will pick an
+   * appropriate default. Acceptable values are 1 to 1000, inclusive.
    * @opt_param string pageToken A token identifying a page of results the server
    * should return. Typically, this is the value of
    * ListCreativesResponse.next_page_token returned from the previous call to
@@ -90,6 +92,7 @@ class AccountsCreatives extends \Google\Service\Resource
    * 'accountId=12345 AND (dealsStatus:disapproved AND
    * disapprovalReason:unacceptable_content) OR attribute:47'
    * @return ListCreativesResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsCreatives($accountId, $optParams = [])
   {
@@ -109,6 +112,7 @@ class AccountsCreatives extends \Google\Service\Resource
    * @param StopWatchingCreativeRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Adexchangebuyer2Empty
+   * @throws \Google\Service\Exception
    */
   public function stopWatching($accountId, $creativeId, StopWatchingCreativeRequest $postBody, $optParams = [])
   {
@@ -126,6 +130,7 @@ class AccountsCreatives extends \Google\Service\Resource
    * @param Creative $postBody
    * @param array $optParams Optional parameters.
    * @return Creative
+   * @throws \Google\Service\Exception
    */
   public function update($accountId, $creativeId, Creative $postBody, $optParams = [])
   {
@@ -145,6 +150,7 @@ class AccountsCreatives extends \Google\Service\Resource
    * @param WatchCreativeRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Adexchangebuyer2Empty
+   * @throws \Google\Service\Exception
    */
   public function watch($accountId, $creativeId, WatchCreativeRequest $postBody, $optParams = [])
   {

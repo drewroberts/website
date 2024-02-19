@@ -24,7 +24,7 @@ use Google\Service\AdSenseHost\Report;
  * Typical usage is:
  *  <code>
  *   $adsensehostService = new Google\Service\AdSenseHost(...);
- *   $reports = $adsensehostService->reports;
+ *   $reports = $adsensehostService->accounts_reports;
  *  </code>
  */
 class AccountsReports extends \Google\Service\Resource
@@ -53,6 +53,7 @@ class AccountsReports extends \Google\Service\Resource
    * sort descending. If no prefix is specified, the column is sorted ascending.
    * @opt_param string startIndex Index of the first row of report data to return.
    * @return Report
+   * @throws \Google\Service\Exception
    */
   public function generate($accountId, $startDate, $endDate, $optParams = [])
   {

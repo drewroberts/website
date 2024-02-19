@@ -26,7 +26,7 @@ use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1Que
  * Typical usage is:
  *  <code>
  *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
- *   $crashrate = $playdeveloperreportingService->crashrate;
+ *   $crashrate = $playdeveloperreportingService->vitals_crashrate;
  *  </code>
  */
 class VitalsCrashrate extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class VitalsCrashrate extends \Google\Service\Resource
    * apps/{app}/crashRateMetricSet
    * @param array $optParams Optional parameters.
    * @return GooglePlayDeveloperReportingV1beta1CrashRateMetricSet
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -53,6 +54,7 @@ class VitalsCrashrate extends \Google\Service\Resource
    * @param GooglePlayDeveloperReportingV1beta1QueryCrashRateMetricSetRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GooglePlayDeveloperReportingV1beta1QueryCrashRateMetricSetResponse
+   * @throws \Google\Service\Exception
    */
   public function query($name, GooglePlayDeveloperReportingV1beta1QueryCrashRateMetricSetRequest $postBody, $optParams = [])
   {

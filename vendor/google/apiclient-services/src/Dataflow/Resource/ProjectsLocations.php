@@ -25,7 +25,7 @@ use Google\Service\Dataflow\SendWorkerMessagesResponse;
  * Typical usage is:
  *  <code>
  *   $dataflowService = new Google\Service\Dataflow(...);
- *   $locations = $dataflowService->locations;
+ *   $locations = $dataflowService->projects_locations;
  *  </code>
  */
 class ProjectsLocations extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class ProjectsLocations extends \Google\Service\Resource
    * @param SendWorkerMessagesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return SendWorkerMessagesResponse
+   * @throws \Google\Service\Exception
    */
   public function workerMessages($projectId, $location, SendWorkerMessagesRequest $postBody, $optParams = [])
   {

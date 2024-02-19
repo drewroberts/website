@@ -24,7 +24,7 @@ use Google\Service\ToolResults\PerfMetricsSummary;
  * Typical usage is:
  *  <code>
  *   $toolresultsService = new Google\Service\ToolResults(...);
- *   $perfMetricsSummary = $toolresultsService->perfMetricsSummary;
+ *   $perfMetricsSummary = $toolresultsService->projects_histories_executions_steps_perfMetricsSummary;
  *  </code>
  */
 class ProjectsHistoriesExecutionsStepsPerfMetricsSummary extends \Google\Service\Resource
@@ -41,6 +41,7 @@ class ProjectsHistoriesExecutionsStepsPerfMetricsSummary extends \Google\Service
    * @param PerfMetricsSummary $postBody
    * @param array $optParams Optional parameters.
    * @return PerfMetricsSummary
+   * @throws \Google\Service\Exception
    */
   public function create($projectId, $historyId, $executionId, $stepId, PerfMetricsSummary $postBody, $optParams = [])
   {

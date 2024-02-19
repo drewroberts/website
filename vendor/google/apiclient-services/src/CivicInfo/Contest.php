@@ -57,10 +57,6 @@ class Contest extends \Google\Collection
    */
   public $primaryParties;
   /**
-   * @var string
-   */
-  public $primaryParty;
-  /**
    * @var string[]
    */
   public $referendumBallotResponses;
@@ -254,20 +250,6 @@ class Contest extends \Google\Collection
   public function getPrimaryParties()
   {
     return $this->primaryParties;
-  }
-  /**
-   * @param string
-   */
-  public function setPrimaryParty($primaryParty)
-  {
-    $this->primaryParty = $primaryParty;
-  }
-  /**
-   * @return string
-   */
-  public function getPrimaryParty()
-  {
-    return $this->primaryParty;
   }
   /**
    * @param string[]

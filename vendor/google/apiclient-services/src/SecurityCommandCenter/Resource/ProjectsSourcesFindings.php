@@ -30,7 +30,7 @@ use Google\Service\SecurityCommandCenter\SetMuteRequest;
  * Typical usage is:
  *  <code>
  *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $findings = $securitycenterService->findings;
+ *   $findings = $securitycenterService->projects_sources_findings;
  *  </code>
  */
 class ProjectsSourcesFindings extends \Google\Service\Resource
@@ -52,6 +52,7 @@ class ProjectsSourcesFindings extends \Google\Service\Resource
    * @param GroupFindingsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GroupFindingsResponse
+   * @throws \Google\Service\Exception
    */
   public function group($parent, GroupFindingsRequest $postBody, $optParams = [])
   {
@@ -143,6 +144,7 @@ class ProjectsSourcesFindings extends \Google\Service\Resource
    * their values are those at that specific time. Absence of this field will
    * default to the API's version of NOW.
    * @return ListFindingsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsSourcesFindings($parent, $optParams = [])
   {
@@ -154,10 +156,11 @@ class ProjectsSourcesFindings extends \Google\Service\Resource
    * Creates or updates a finding. The corresponding source must exist for a
    * finding creation to succeed. (findings.patch)
    *
-   * @param string $name The relative resource name of this finding. See:
-   * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-   * Example:
-   * "organizations/{organization_id}/sources/{source_id}/findings/{finding_id}"
+   * @param string $name The [relative resource name](https://cloud.google.com/api
+   * s/design/resource_names#relative_resource_name) of the finding. Example:
+   * "organizations/{organization_id}/sources/{source_id}/findings/{finding_id}",
+   * "folders/{folder_id}/sources/{source_id}/findings/{finding_id}",
+   * "projects/{project_id}/sources/{source_id}/findings/{finding_id}".
    * @param Finding $postBody
    * @param array $optParams Optional parameters.
    *
@@ -167,6 +170,7 @@ class ProjectsSourcesFindings extends \Google\Service\Resource
    * and replacing source_properties. Individual source_properties can be
    * added/updated by using "source_properties." in the field mask.
    * @return Finding
+   * @throws \Google\Service\Exception
    */
   public function patch($name, Finding $postBody, $optParams = [])
   {
@@ -177,15 +181,16 @@ class ProjectsSourcesFindings extends \Google\Service\Resource
   /**
    * Updates the mute state of a finding. (findings.setMute)
    *
-   * @param string $name Required. The relative resource name of the finding. See:
-   * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+   * @param string $name Required. The [relative resource name](https://cloud.goog
+   * le.com/apis/design/resource_names#relative_resource_name) of the finding.
    * Example:
-   * "organizations/{organization_id}/sources/{source_id}/finding/{finding_id}",
-   * "folders/{folder_id}/sources/{source_id}/finding/{finding_id}",
-   * "projects/{project_id}/sources/{source_id}/finding/{finding_id}".
+   * "organizations/{organization_id}/sources/{source_id}/findings/{finding_id}",
+   * "folders/{folder_id}/sources/{source_id}/findings/{finding_id}",
+   * "projects/{project_id}/sources/{source_id}/findings/{finding_id}".
    * @param SetMuteRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Finding
+   * @throws \Google\Service\Exception
    */
   public function setMute($name, SetMuteRequest $postBody, $optParams = [])
   {
@@ -196,13 +201,16 @@ class ProjectsSourcesFindings extends \Google\Service\Resource
   /**
    * Updates the state of a finding. (findings.setState)
    *
-   * @param string $name Required. The relative resource name of the finding. See:
-   * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+   * @param string $name Required. The [relative resource name](https://cloud.goog
+   * le.com/apis/design/resource_names#relative_resource_name) of the finding.
    * Example:
-   * "organizations/{organization_id}/sources/{source_id}/finding/{finding_id}".
+   * "organizations/{organization_id}/sources/{source_id}/findings/{finding_id}",
+   * "folders/{folder_id}/sources/{source_id}/findings/{finding_id}",
+   * "projects/{project_id}/sources/{source_id}/findings/{finding_id}".
    * @param SetFindingStateRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Finding
+   * @throws \Google\Service\Exception
    */
   public function setState($name, SetFindingStateRequest $postBody, $optParams = [])
   {
@@ -230,6 +238,7 @@ class ProjectsSourcesFindings extends \Google\Service\Resource
    * set to "marks", all marks will be replaced. Individual marks can be updated
    * using "marks.".
    * @return SecurityMarks
+   * @throws \Google\Service\Exception
    */
   public function updateSecurityMarks($name, SecurityMarks $postBody, $optParams = [])
   {

@@ -26,21 +26,22 @@ use Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubsc
  * Typical usage is:
  *  <code>
  *   $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
- *   $promotions = $paymentsresellersubscriptionService->promotions;
+ *   $promotions = $paymentsresellersubscriptionService->partners_promotions;
  *  </code>
  */
 class PartnersPromotions extends \Google\Service\Resource
 {
   /**
    * To find eligible promotions for the current user. The API requires user
-   * authorization via OAuth. The user is inferred from the authenticated OAuth
-   * credential. (promotions.findEligible)
+   * authorization via OAuth. The bare minimum oauth scope `openid` is sufficient,
+   * which will skip the consent screen. (promotions.findEligible)
    *
    * @param string $parent Required. The parent, the partner that can resell.
    * Format: partners/{partner}
    * @param GoogleCloudPaymentsResellerSubscriptionV1FindEligiblePromotionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudPaymentsResellerSubscriptionV1FindEligiblePromotionsResponse
+   * @throws \Google\Service\Exception
    */
   public function findEligible($parent, GoogleCloudPaymentsResellerSubscriptionV1FindEligiblePromotionsRequest $postBody, $optParams = [])
   {
@@ -58,13 +59,16 @@ class PartnersPromotions extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string filter Optional. Specifies the filters for the promotion
-   * results. The syntax defined in the EBNF grammar:
-   * https://google.aip.dev/assets/misc/ebnf-filtering.txt. An error will be
-   * thrown if the specified parameter(s) is not supported. Currently, it can only
-   * be used by Youtube partners. Allowed parameters are: - region_codes: "US" -
-   * zip_code: "94043" - eligibility_id: "2022H1Campaign" Multiple parameters can
-   * be specified, for example: "region_codes=US zip_code=94043
-   * eligibility_id=2022H1Campaign"
+   * results. The syntax is defined in https://google.aip.dev/160 with the
+   * following caveats: - Only the following features are supported: - Logical
+   * operator `AND` - Comparison operator `=` (no wildcards `*`) - Traversal
+   * operator `.` - Has operator `:` (no wildcards `*`) - Only the following
+   * fields are supported: - `applicableProducts` - `regionCodes` -
+   * `youtubePayload.partnerEligibilityId` - `youtubePayload.postalCode` - Unless
+   * explicitly mentioned above, other features are not supported. Example:
+   * `applicableProducts:partners/partner1/products/product1 AND regionCodes:US
+   * AND youtubePayload.postalCode=94043 AND
+   * youtubePayload.partnerEligibilityId=eligibility-id`
    * @opt_param int pageSize Optional. The maximum number of promotions to return.
    * The service may return fewer than this value. If unspecified, at most 50
    * products will be returned. The maximum value is 1000; values above 1000 will
@@ -74,6 +78,7 @@ class PartnersPromotions extends \Google\Service\Resource
    * paginating, all other parameters provided to `ListPromotions` must match the
    * call that provided the page token.
    * @return GoogleCloudPaymentsResellerSubscriptionV1ListPromotionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listPartnersPromotions($parent, $optParams = [])
   {

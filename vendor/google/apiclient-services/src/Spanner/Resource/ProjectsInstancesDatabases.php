@@ -37,7 +37,7 @@ use Google\Service\Spanner\UpdateDatabaseDdlRequest;
  * Typical usage is:
  *  <code>
  *   $spannerService = new Google\Service\Spanner(...);
- *   $databases = $spannerService->databases;
+ *   $databases = $spannerService->projects_instances_databases;
  *  </code>
  */
 class ProjectsInstancesDatabases extends \Google\Service\Resource
@@ -54,6 +54,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * @param CreateDatabaseRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, CreateDatabaseRequest $postBody, $optParams = [])
   {
@@ -70,6 +71,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * @param string $database Required. The database to be dropped.
    * @param array $optParams Optional parameters.
    * @return SpannerEmpty
+   * @throws \Google\Service\Exception
    */
   public function dropDatabase($database, $optParams = [])
   {
@@ -84,6 +86,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * of the form `projects//instances//databases/`.
    * @param array $optParams Optional parameters.
    * @return Database
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -100,6 +103,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * Values are of the form `projects//instances//databases/`
    * @param array $optParams Optional parameters.
    * @return GetDatabaseDdlResponse
+   * @throws \Google\Service\Exception
    */
   public function getDdl($database, $optParams = [])
   {
@@ -120,6 +124,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * @param GetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -146,6 +151,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * @opt_param string view Specifies which parts of the Scan should be returned
    * in the response. Note, if left unspecified, the FULL view is assumed.
    * @return Scan
+   * @throws \Google\Service\Exception
    */
   public function getScans($name, $optParams = [])
   {
@@ -165,12 +171,49 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * @opt_param string pageToken If non-empty, `page_token` should contain a
    * next_page_token from a previous ListDatabasesResponse.
    * @return ListDatabasesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsInstancesDatabases($parent, $optParams = [])
   {
     $params = ['parent' => $parent];
     $params = array_merge($params, $optParams);
     return $this->call('list', [$params], ListDatabasesResponse::class);
+  }
+  /**
+   * Updates a Cloud Spanner database. The returned long-running operation can be
+   * used to track the progress of updating the database. If the named database
+   * does not exist, returns `NOT_FOUND`. While the operation is pending: * The
+   * database's reconciling field is set to true. * Cancelling the operation is
+   * best-effort. If the cancellation succeeds, the operation metadata's
+   * cancel_time is set, the updates are reverted, and the operation terminates
+   * with a `CANCELLED` status. * New UpdateDatabase requests will return a
+   * `FAILED_PRECONDITION` error until the pending operation is done (returns
+   * successfully or with error). * Reading the database via the API continues to
+   * give the pre-request values. Upon completion of the returned operation: * The
+   * new values are in effect and readable via the API. * The database's
+   * reconciling field becomes false. The returned long-running operation will
+   * have a name of the format `projects//instances//databases//operations/` and
+   * can be used to track the database modification. The metadata field type is
+   * UpdateDatabaseMetadata. The response field type is Database, if successful.
+   * (databases.patch)
+   *
+   * @param string $name Required. The name of the database. Values are of the
+   * form `projects//instances//databases/`, where `` is as specified in the
+   * `CREATE DATABASE` statement. This name can be passed to other API methods to
+   * identify the database.
+   * @param Database $postBody
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string updateMask Required. The list of fields to update.
+   * Currently, only `enable_drop_protection` field can be updated.
+   * @return Operation
+   * @throws \Google\Service\Exception
+   */
+  public function patch($name, Database $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('patch', [$params], Operation::class);
   }
   /**
    * Create a new database by restoring from a completed backup. The new database
@@ -193,6 +236,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * @param RestoreDatabaseRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function restore($parent, RestoreDatabaseRequest $postBody, $optParams = [])
   {
@@ -213,6 +257,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * @param SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -236,6 +281,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
   {
@@ -254,6 +300,7 @@ class ProjectsInstancesDatabases extends \Google\Service\Resource
    * @param UpdateDatabaseDdlRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function updateDdl($database, UpdateDatabaseDdlRequest $postBody, $optParams = [])
   {

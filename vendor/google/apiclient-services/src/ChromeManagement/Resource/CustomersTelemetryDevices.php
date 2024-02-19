@@ -25,7 +25,7 @@ use Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryDevice;
  * Typical usage is:
  *  <code>
  *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $devices = $chromemanagementService->devices;
+ *   $devices = $chromemanagementService->customers_telemetry_devices;
  *  </code>
  */
 class CustomersTelemetryDevices extends \Google\Service\Resource
@@ -39,6 +39,7 @@ class CustomersTelemetryDevices extends \Google\Service\Resource
    * @opt_param string readMask Required. Read mask to specify which fields to
    * return.
    * @return GoogleChromeManagementV1TelemetryDevice
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -54,13 +55,19 @@ class CustomersTelemetryDevices extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string filter Optional. Only include resources that match the
-   * filter. Supported filter fields: - org_unit_id - serial_number - device_id
+   * filter. Supported filter fields: - org_unit_id - serial_number - device_id -
+   * reports_timestamp The "reports_timestamp" filter accepts either the Unix
+   * Epoch milliseconds format or the RFC3339 UTC "Zulu" format with nanosecond
+   * resolution and up to nine fractional digits. Both formats should be
+   * surrounded by simple double quotes. Examples: "2014-10-02T15:01:23Z",
+   * "2014-10-02T15:01:23.045123456Z", "1679283943823".
    * @opt_param int pageSize Maximum number of results to return. Default value is
    * 100. Maximum value is 1000.
    * @opt_param string pageToken Token to specify next page in the list.
    * @opt_param string readMask Required. Read mask to specify which fields to
    * return.
    * @return GoogleChromeManagementV1ListTelemetryDevicesResponse
+   * @throws \Google\Service\Exception
    */
   public function listCustomersTelemetryDevices($parent, $optParams = [])
   {

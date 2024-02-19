@@ -82,7 +82,7 @@ final class Statement implements StatementInterface
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function bindValue($param, $value, $type = ParameterType::STRING): bool
     {
@@ -93,7 +93,7 @@ final class Statement implements StatementInterface
                 'doctrine/dbal',
                 'https://github.com/doctrine/dbal/pull/5558',
                 'Not passing $type to Statement::bindValue() is deprecated.'
-                    . ' Pass the type corresponding to the parameter being bound.'
+                    . ' Pass the type corresponding to the parameter being bound.',
             );
         }
 
@@ -104,7 +104,7 @@ final class Statement implements StatementInterface
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated Use {@see bindValue()} instead.
      */
@@ -114,7 +114,7 @@ final class Statement implements StatementInterface
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5563',
             '%s is deprecated. Use bindValue() instead.',
-            __METHOD__
+            __METHOD__,
         );
 
         assert(is_int($param));
@@ -124,7 +124,7 @@ final class Statement implements StatementInterface
                 'doctrine/dbal',
                 'https://github.com/doctrine/dbal/pull/5558',
                 'Not passing $type to Statement::bindParam() is deprecated.'
-                    . ' Pass the type corresponding to the parameter being bound.'
+                    . ' Pass the type corresponding to the parameter being bound.',
             );
         }
 
@@ -138,7 +138,7 @@ final class Statement implements StatementInterface
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function execute($params = null): ResultInterface
     {
@@ -147,7 +147,7 @@ final class Statement implements StatementInterface
                 'doctrine/dbal',
                 'https://github.com/doctrine/dbal/pull/5556',
                 'Passing $params to Statement::execute() is deprecated. Bind parameters using'
-                    . ' Statement::bindParam() or Statement::bindValue() instead.'
+                    . ' Statement::bindParam() or Statement::bindValue() instead.',
             );
 
             foreach ($params as $key => $val) {

@@ -24,7 +24,7 @@ use Google\Service\OnDemandScanning\ListVulnerabilitiesResponseV1;
  * Typical usage is:
  *  <code>
  *   $ondemandscanningService = new Google\Service\OnDemandScanning(...);
- *   $vulnerabilities = $ondemandscanningService->vulnerabilities;
+ *   $vulnerabilities = $ondemandscanningService->projects_locations_scans_vulnerabilities;
  *  </code>
  */
 class ProjectsLocationsScansVulnerabilities extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class ProjectsLocationsScansVulnerabilities extends \Google\Service\Resource
    * @opt_param string pageToken The page token, resulting from a previous call to
    * ListVulnerabilities.
    * @return ListVulnerabilitiesResponseV1
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsScansVulnerabilities($parent, $optParams = [])
   {

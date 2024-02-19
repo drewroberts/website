@@ -64,10 +64,14 @@ class Product extends \Google\Collection
    * @var string
    */
   public $canonicalLink;
+  protected $certificationsType = ProductCertification::class;
+  protected $certificationsDataType = 'array';
   /**
    * @var string
    */
   public $channel;
+  protected $cloudExportAdditionalPropertiesType = CloudExportAdditionalProperties::class;
+  protected $cloudExportAdditionalPropertiesDataType = 'array';
   /**
    * @var string
    */
@@ -108,6 +112,10 @@ class Product extends \Google\Collection
    * @var string
    */
   public $description;
+  /**
+   * @var string
+   */
+  public $disclosureDate;
   /**
    * @var string
    */
@@ -187,6 +195,10 @@ class Product extends \Google\Collection
    * @var string
    */
   public $kind;
+  /**
+   * @var string[]
+   */
+  public $lifestyleImageLinks;
   /**
    * @var string
    */
@@ -345,6 +357,10 @@ class Product extends \Google\Collection
   protected $unitPricingBaseMeasureDataType = '';
   protected $unitPricingMeasureType = ProductUnitPricingMeasure::class;
   protected $unitPricingMeasureDataType = '';
+  /**
+   * @var string
+   */
+  public $virtualModelLink;
 
   /**
    * @param string[]
@@ -501,6 +517,20 @@ class Product extends \Google\Collection
     return $this->canonicalLink;
   }
   /**
+   * @param ProductCertification[]
+   */
+  public function setCertifications($certifications)
+  {
+    $this->certifications = $certifications;
+  }
+  /**
+   * @return ProductCertification[]
+   */
+  public function getCertifications()
+  {
+    return $this->certifications;
+  }
+  /**
    * @param string
    */
   public function setChannel($channel)
@@ -513,6 +543,20 @@ class Product extends \Google\Collection
   public function getChannel()
   {
     return $this->channel;
+  }
+  /**
+   * @param CloudExportAdditionalProperties[]
+   */
+  public function setCloudExportAdditionalProperties($cloudExportAdditionalProperties)
+  {
+    $this->cloudExportAdditionalProperties = $cloudExportAdditionalProperties;
+  }
+  /**
+   * @return CloudExportAdditionalProperties[]
+   */
+  public function getCloudExportAdditionalProperties()
+  {
+    return $this->cloudExportAdditionalProperties;
   }
   /**
    * @param string
@@ -667,6 +711,20 @@ class Product extends \Google\Collection
   public function getDescription()
   {
     return $this->description;
+  }
+  /**
+   * @param string
+   */
+  public function setDisclosureDate($disclosureDate)
+  {
+    $this->disclosureDate = $disclosureDate;
+  }
+  /**
+   * @return string
+   */
+  public function getDisclosureDate()
+  {
+    return $this->disclosureDate;
   }
   /**
    * @param string
@@ -955,6 +1013,20 @@ class Product extends \Google\Collection
   public function getKind()
   {
     return $this->kind;
+  }
+  /**
+   * @param string[]
+   */
+  public function setLifestyleImageLinks($lifestyleImageLinks)
+  {
+    $this->lifestyleImageLinks = $lifestyleImageLinks;
+  }
+  /**
+   * @return string[]
+   */
+  public function getLifestyleImageLinks()
+  {
+    return $this->lifestyleImageLinks;
   }
   /**
    * @param string
@@ -1627,6 +1699,20 @@ class Product extends \Google\Collection
   public function getUnitPricingMeasure()
   {
     return $this->unitPricingMeasure;
+  }
+  /**
+   * @param string
+   */
+  public function setVirtualModelLink($virtualModelLink)
+  {
+    $this->virtualModelLink = $virtualModelLink;
+  }
+  /**
+   * @return string
+   */
+  public function getVirtualModelLink()
+  {
+    return $this->virtualModelLink;
   }
 }
 

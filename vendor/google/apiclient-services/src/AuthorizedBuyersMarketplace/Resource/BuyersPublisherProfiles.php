@@ -25,7 +25,7 @@ use Google\Service\AuthorizedBuyersMarketplace\PublisherProfile;
  * Typical usage is:
  *  <code>
  *   $authorizedbuyersmarketplaceService = new Google\Service\AuthorizedBuyersMarketplace(...);
- *   $publisherProfiles = $authorizedbuyersmarketplaceService->publisherProfiles;
+ *   $publisherProfiles = $authorizedbuyersmarketplaceService->buyers_publisherProfiles;
  *  </code>
  */
 class BuyersPublisherProfiles extends \Google\Service\Resource
@@ -37,6 +37,7 @@ class BuyersPublisherProfiles extends \Google\Service\Resource
    * `buyers/{buyerId}/publisherProfiles/{publisherProfileId}`
    * @param array $optParams Optional parameters.
    * @return PublisherProfile
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -45,15 +46,18 @@ class BuyersPublisherProfiles extends \Google\Service\Resource
     return $this->call('get', [$params], PublisherProfile::class);
   }
   /**
-   * Lists publisher profiles (publisherProfiles.listBuyersPublisherProfiles)
+   * Lists publisher profiles. The returned publisher profiles aren't in any
+   * defined order. The order of the results might change. A new publisher profile
+   * can appear in any place in the list of returned results.
+   * (publisherProfiles.listBuyersPublisherProfiles)
    *
    * @param string $parent Required. Parent that owns the collection of publisher
    * profiles Format: `buyers/{buyerId}`
    * @param array $optParams Optional parameters.
    *
    * @opt_param string filter Optional query string using the [Cloud API list
-   * filtering] (https://developers.google.com/authorized-buyers/apis/guides/v2
-   * /list-filters) syntax.
+   * filtering] (https://developers.google.com/authorized-buyers/apis/guides/list-
+   * filters) syntax.
    * @opt_param int pageSize Requested page size. The server may return fewer
    * results than requested. If requested more than 500, the server will return
    * 500 results per page. If unspecified, the server will pick a default page
@@ -61,6 +65,7 @@ class BuyersPublisherProfiles extends \Google\Service\Resource
    * @opt_param string pageToken The page token as returned from a previous
    * ListPublisherProfilesResponse.
    * @return ListPublisherProfilesResponse
+   * @throws \Google\Service\Exception
    */
   public function listBuyersPublisherProfiles($parent, $optParams = [])
   {

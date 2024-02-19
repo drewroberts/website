@@ -15,6 +15,7 @@ use Nette\MemberAccessException;
 
 /**
  * Nette\SmartObject helpers.
+ * @internal
  */
 final class ObjectHelpers
 {
@@ -75,7 +76,7 @@ final class ObjectHelpers
 		} else {
 			$hint = self::getSuggestion(array_merge(
 				get_class_methods($class),
-				self::parseFullDoc(new \ReflectionClass($class), '~^[ \t*]*@method[ \t]+(?:\S+[ \t]+)??(\w+)\(~m'),
+				self::parseFullDoc(new \ReflectionClass($class), '~^[ \t*]*@method[ \t]+(?:static[ \t]+)?(?:\S+[ \t]+)??(\w+)\(~m'),
 				$additionalMethods
 			), $method);
 			throw new MemberAccessException("Call to undefined method $class::$method()" . ($hint ? ", did you mean $hint()?" : '.'));
