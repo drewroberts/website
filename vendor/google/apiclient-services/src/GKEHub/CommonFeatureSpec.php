@@ -21,6 +21,12 @@ class CommonFeatureSpec extends \Google\Model
 {
   protected $appdevexperienceType = AppDevExperienceFeatureSpec::class;
   protected $appdevexperienceDataType = '';
+  protected $clusterupgradeType = ClusterUpgradeFleetSpec::class;
+  protected $clusterupgradeDataType = '';
+  protected $dataplanev2Type = DataplaneV2FeatureSpec::class;
+  protected $dataplanev2DataType = '';
+  protected $fleetobservabilityType = FleetObservabilityFeatureSpec::class;
+  protected $fleetobservabilityDataType = '';
   protected $multiclusteringressType = MultiClusterIngressFeatureSpec::class;
   protected $multiclusteringressDataType = '';
 
@@ -37,6 +43,48 @@ class CommonFeatureSpec extends \Google\Model
   public function getAppdevexperience()
   {
     return $this->appdevexperience;
+  }
+  /**
+   * @param ClusterUpgradeFleetSpec
+   */
+  public function setClusterupgrade(ClusterUpgradeFleetSpec $clusterupgrade)
+  {
+    $this->clusterupgrade = $clusterupgrade;
+  }
+  /**
+   * @return ClusterUpgradeFleetSpec
+   */
+  public function getClusterupgrade()
+  {
+    return $this->clusterupgrade;
+  }
+  /**
+   * @param DataplaneV2FeatureSpec
+   */
+  public function setDataplanev2(DataplaneV2FeatureSpec $dataplanev2)
+  {
+    $this->dataplanev2 = $dataplanev2;
+  }
+  /**
+   * @return DataplaneV2FeatureSpec
+   */
+  public function getDataplanev2()
+  {
+    return $this->dataplanev2;
+  }
+  /**
+   * @param FleetObservabilityFeatureSpec
+   */
+  public function setFleetobservability(FleetObservabilityFeatureSpec $fleetobservability)
+  {
+    $this->fleetobservability = $fleetobservability;
+  }
+  /**
+   * @return FleetObservabilityFeatureSpec
+   */
+  public function getFleetobservability()
+  {
+    return $this->fleetobservability;
   }
   /**
    * @param MultiClusterIngressFeatureSpec

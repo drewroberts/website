@@ -26,7 +26,7 @@ use Google\Service\Cloudchannel\GoogleProtobufEmpty;
  * Typical usage is:
  *  <code>
  *   $cloudchannelService = new Google\Service\Cloudchannel(...);
- *   $channelPartnerRepricingConfigs = $cloudchannelService->channelPartnerRepricingConfigs;
+ *   $channelPartnerRepricingConfigs = $cloudchannelService->accounts_channelPartnerLinks_channelPartnerRepricingConfigs;
  *  </code>
  */
 class AccountsChannelPartnerLinksChannelPartnerRepricingConfigs extends \Google\Service\Resource
@@ -43,8 +43,9 @@ class AccountsChannelPartnerLinksChannelPartnerRepricingConfigs extends \Google\
    * not be used for regular business cases. * The new config will not modify
    * exports used with other configs. Changes to the config may be immediate, but
    * may take up to 24 hours. * There is a limit of ten configs for any
-   * ChannelPartner or RepricingConfig.effective_invoice_month. * The contained
-   * ChannelPartnerRepricingConfig.repricing_config vaule must be different from
+   * ChannelPartner or RepricingConfig.EntitlementGranularity.entitlement, for any
+   * RepricingConfig.effective_invoice_month. * The contained
+   * ChannelPartnerRepricingConfig.repricing_config value must be different from
    * the value used in the current config for a ChannelPartner. Possible Error
    * Codes: * PERMISSION_DENIED: If the account making the request and the account
    * being queried are different. * INVALID_ARGUMENT: Missing or invalid required
@@ -62,6 +63,7 @@ class AccountsChannelPartnerLinksChannelPartnerRepricingConfigs extends \Google\
    * @param GoogleCloudChannelV1ChannelPartnerRepricingConfig $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudChannelV1ChannelPartnerRepricingConfig
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudChannelV1ChannelPartnerRepricingConfig $postBody, $optParams = [])
   {
@@ -83,6 +85,7 @@ class AccountsChannelPartnerLinksChannelPartnerRepricingConfigs extends \Google\
    * repricing config rule to delete.
    * @param array $optParams Optional parameters.
    * @return GoogleProtobufEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -105,6 +108,7 @@ class AccountsChannelPartnerLinksChannelPartnerRepricingConfigs extends \Google\
    * ks/{channel_partner_id}/channelPartnerRepricingConfigs/{id}.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudChannelV1ChannelPartnerRepricingConfig
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -121,7 +125,7 @@ class AccountsChannelPartnerLinksChannelPartnerRepricingConfigs extends \Google\
    * to technical issues in the backend. In this case, contact Cloud Channel
    * support. Return Value: If successful, the ChannelPartnerRepricingConfig
    * resources. The data for each resource is displayed in the ascending order of:
-   * * channel partner ID * RepricingConfig.effective_invoice_month *
+   * * Channel Partner ID * RepricingConfig.effective_invoice_month *
    * ChannelPartnerRepricingConfig.update_time If unsuccessful, returns an error.
    * (channelPartnerRepricingConfigs.listAccountsChannelPartnerLinksChannelPartner
    * RepricingConfigs)
@@ -149,6 +153,7 @@ class AccountsChannelPartnerLinksChannelPartnerRepricingConfigs extends \Google\
    * ListChannelPartnerRepricingConfigsResponse.next_page_token of the previous
    * CloudChannelService.ListChannelPartnerRepricingConfigs call.
    * @return GoogleCloudChannelV1ListChannelPartnerRepricingConfigsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsChannelPartnerLinksChannelPartnerRepricingConfigs($parent, $optParams = [])
   {
@@ -181,6 +186,7 @@ class AccountsChannelPartnerLinksChannelPartnerRepricingConfigs extends \Google\
    * @param GoogleCloudChannelV1ChannelPartnerRepricingConfig $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudChannelV1ChannelPartnerRepricingConfig
+   * @throws \Google\Service\Exception
    */
   public function patch($name, GoogleCloudChannelV1ChannelPartnerRepricingConfig $postBody, $optParams = [])
   {

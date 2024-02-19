@@ -27,6 +27,10 @@ class ServiceConfig extends \Google\Collection
   /**
    * @var string
    */
+  public $availableCpu;
+  /**
+   * @var string
+   */
   public $availableMemory;
   /**
    * @var string[]
@@ -43,6 +47,10 @@ class ServiceConfig extends \Google\Collection
   /**
    * @var int
    */
+  public $maxInstanceRequestConcurrency;
+  /**
+   * @var int
+   */
   public $minInstanceCount;
   /**
    * @var string
@@ -52,6 +60,10 @@ class ServiceConfig extends \Google\Collection
   protected $secretEnvironmentVariablesDataType = 'array';
   protected $secretVolumesType = SecretVolume::class;
   protected $secretVolumesDataType = 'array';
+  /**
+   * @var string
+   */
+  public $securityLevel;
   /**
    * @var string
    */
@@ -90,6 +102,20 @@ class ServiceConfig extends \Google\Collection
   public function getAllTrafficOnLatestRevision()
   {
     return $this->allTrafficOnLatestRevision;
+  }
+  /**
+   * @param string
+   */
+  public function setAvailableCpu($availableCpu)
+  {
+    $this->availableCpu = $availableCpu;
+  }
+  /**
+   * @return string
+   */
+  public function getAvailableCpu()
+  {
+    return $this->availableCpu;
   }
   /**
    * @param string
@@ -150,6 +176,20 @@ class ServiceConfig extends \Google\Collection
   /**
    * @param int
    */
+  public function setMaxInstanceRequestConcurrency($maxInstanceRequestConcurrency)
+  {
+    $this->maxInstanceRequestConcurrency = $maxInstanceRequestConcurrency;
+  }
+  /**
+   * @return int
+   */
+  public function getMaxInstanceRequestConcurrency()
+  {
+    return $this->maxInstanceRequestConcurrency;
+  }
+  /**
+   * @param int
+   */
   public function setMinInstanceCount($minInstanceCount)
   {
     $this->minInstanceCount = $minInstanceCount;
@@ -202,6 +242,20 @@ class ServiceConfig extends \Google\Collection
   public function getSecretVolumes()
   {
     return $this->secretVolumes;
+  }
+  /**
+   * @param string
+   */
+  public function setSecurityLevel($securityLevel)
+  {
+    $this->securityLevel = $securityLevel;
+  }
+  /**
+   * @return string
+   */
+  public function getSecurityLevel()
+  {
+    return $this->securityLevel;
   }
   /**
    * @param string

@@ -24,7 +24,7 @@ use Google\Service\CloudTrace\Span;
  * Typical usage is:
  *  <code>
  *   $cloudtraceService = new Google\Service\CloudTrace(...);
- *   $spans = $cloudtraceService->spans;
+ *   $spans = $cloudtraceService->projects_traces_spans;
  *  </code>
  */
 class ProjectsTracesSpans extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class ProjectsTracesSpans extends \Google\Service\Resource
    * @param Span $postBody
    * @param array $optParams Optional parameters.
    * @return Span
+   * @throws \Google\Service\Exception
    */
   public function createSpan($name, Span $postBody, $optParams = [])
   {

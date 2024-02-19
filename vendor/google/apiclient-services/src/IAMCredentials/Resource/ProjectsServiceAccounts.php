@@ -31,7 +31,7 @@ use Google\Service\IAMCredentials\SignJwtResponse;
  * Typical usage is:
  *  <code>
  *   $iamcredentialsService = new Google\Service\IAMCredentials(...);
- *   $serviceAccounts = $iamcredentialsService->serviceAccounts;
+ *   $serviceAccounts = $iamcredentialsService->projects_serviceAccounts;
  *  </code>
  */
 class ProjectsServiceAccounts extends \Google\Service\Resource
@@ -47,6 +47,7 @@ class ProjectsServiceAccounts extends \Google\Service\Resource
    * @param GenerateAccessTokenRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GenerateAccessTokenResponse
+   * @throws \Google\Service\Exception
    */
   public function generateAccessToken($name, GenerateAccessTokenRequest $postBody, $optParams = [])
   {
@@ -65,6 +66,7 @@ class ProjectsServiceAccounts extends \Google\Service\Resource
    * @param GenerateIdTokenRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GenerateIdTokenResponse
+   * @throws \Google\Service\Exception
    */
   public function generateIdToken($name, GenerateIdTokenRequest $postBody, $optParams = [])
   {
@@ -83,6 +85,7 @@ class ProjectsServiceAccounts extends \Google\Service\Resource
    * @param SignBlobRequest $postBody
    * @param array $optParams Optional parameters.
    * @return SignBlobResponse
+   * @throws \Google\Service\Exception
    */
   public function signBlob($name, SignBlobRequest $postBody, $optParams = [])
   {
@@ -101,6 +104,7 @@ class ProjectsServiceAccounts extends \Google\Service\Resource
    * @param SignJwtRequest $postBody
    * @param array $optParams Optional parameters.
    * @return SignJwtResponse
+   * @throws \Google\Service\Exception
    */
   public function signJwt($name, SignJwtRequest $postBody, $optParams = [])
   {

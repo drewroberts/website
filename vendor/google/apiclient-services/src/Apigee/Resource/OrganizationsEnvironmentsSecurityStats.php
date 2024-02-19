@@ -27,7 +27,7 @@ use Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsResponse;
  * Typical usage is:
  *  <code>
  *   $apigeeService = new Google\Service\Apigee(...);
- *   $securityStats = $apigeeService->securityStats;
+ *   $securityStats = $apigeeService->organizations_environments_securityStats;
  *  </code>
  */
 class OrganizationsEnvironmentsSecurityStats extends \Google\Service\Resource
@@ -41,6 +41,7 @@ class OrganizationsEnvironmentsSecurityStats extends \Google\Service\Resource
    * @param GoogleCloudApigeeV1QueryTabularStatsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1QueryTabularStatsResponse
+   * @throws \Google\Service\Exception
    */
   public function queryTabularStats($orgenv, GoogleCloudApigeeV1QueryTabularStatsRequest $postBody, $optParams = [])
   {
@@ -57,6 +58,7 @@ class OrganizationsEnvironmentsSecurityStats extends \Google\Service\Resource
    * @param GoogleCloudApigeeV1QueryTimeSeriesStatsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1QueryTimeSeriesStatsResponse
+   * @throws \Google\Service\Exception
    */
   public function queryTimeSeriesStats($orgenv, GoogleCloudApigeeV1QueryTimeSeriesStatsRequest $postBody, $optParams = [])
   {

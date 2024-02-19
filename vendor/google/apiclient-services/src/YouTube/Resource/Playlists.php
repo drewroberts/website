@@ -46,6 +46,7 @@ class Playlists extends \Google\Service\Resource
    * without having to provide authentication credentials for each individual
    * channel. The CMS account that the user authenticates with must be linked to
    * the specified YouTube content owner.
+   * @throws \Google\Service\Exception
    */
   public function delete($id, $optParams = [])
   {
@@ -89,6 +90,7 @@ class Playlists extends \Google\Service\Resource
    * without having to provide authentication credentials for each separate
    * channel.
    * @return Playlist
+   * @throws \Google\Service\Exception
    */
   public function insert($part, Playlist $postBody, $optParams = [])
   {
@@ -110,7 +112,7 @@ class Playlists extends \Google\Service\Resource
    *
    * @opt_param string channelId Return the playlists owned by the specified
    * channel ID.
-   * @opt_param string hl Returen content in specified language
+   * @opt_param string hl Return content in specified language
    * @opt_param string id Return the playlists with the given IDs for Stubby or
    * Apiary.
    * @opt_param string maxResults The *maxResults* parameter specifies the maximum
@@ -147,6 +149,7 @@ class Playlists extends \Google\Service\Resource
    * nextPageToken and prevPageToken properties identify other pages that could be
    * retrieved.
    * @return PlaylistListResponse
+   * @throws \Google\Service\Exception
    */
   public function listPlaylists($part, $optParams = [])
   {
@@ -180,6 +183,7 @@ class Playlists extends \Google\Service\Resource
    * channel. The CMS account that the user authenticates with must be linked to
    * the specified YouTube content owner.
    * @return Playlist
+   * @throws \Google\Service\Exception
    */
   public function update($part, Playlist $postBody, $optParams = [])
   {

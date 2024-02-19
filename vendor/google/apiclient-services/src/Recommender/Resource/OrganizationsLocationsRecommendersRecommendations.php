@@ -19,6 +19,7 @@ namespace Google\Service\Recommender\Resource;
 
 use Google\Service\Recommender\GoogleCloudRecommenderV1ListRecommendationsResponse;
 use Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationClaimedRequest;
+use Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationDismissedRequest;
 use Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationFailedRequest;
 use Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationSucceededRequest;
 use Google\Service\Recommender\GoogleCloudRecommenderV1Recommendation;
@@ -28,7 +29,7 @@ use Google\Service\Recommender\GoogleCloudRecommenderV1Recommendation;
  * Typical usage is:
  *  <code>
  *   $recommenderService = new Google\Service\Recommender(...);
- *   $recommendations = $recommenderService->recommendations;
+ *   $recommendations = $recommenderService->organizations_locations_recommenders_recommendations;
  *  </code>
  */
 class OrganizationsLocationsRecommendersRecommendations extends \Google\Service\Resource
@@ -40,6 +41,7 @@ class OrganizationsLocationsRecommendersRecommendations extends \Google\Service\
    * @param string $name Required. Name of the recommendation.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRecommenderV1Recommendation
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -67,10 +69,13 @@ class OrganizationsLocationsRecommendersRecommendations extends \Google\Service\
    *
    * @opt_param string filter Filter expression to restrict the recommendations
    * returned. Supported filter fields: * `state_info.state` *
-   * `recommenderSubtype` * `priority` Examples: * `stateInfo.state = ACTIVE OR
-   * stateInfo.state = DISMISSED` * `recommenderSubtype = REMOVE_ROLE OR
-   * recommenderSubtype = REPLACE_ROLE` * `priority = P1 OR priority = P2` *
-   * `stateInfo.state = ACTIVE AND (priority = P1 OR priority = P2)` (These
+   * `recommenderSubtype` * `priority` * `targetResources` Examples: *
+   * `stateInfo.state = ACTIVE OR stateInfo.state = DISMISSED` *
+   * `recommenderSubtype = REMOVE_ROLE OR recommenderSubtype = REPLACE_ROLE` *
+   * `priority = P1 OR priority = P2` * `targetResources :
+   * //compute.googleapis.com/projects/1234/zones/us-
+   * central1-a/instances/instance-1` * `stateInfo.state = ACTIVE AND (priority =
+   * P1 OR priority = P2)` The max allowed filter length is 500 characters. (These
    * expressions are based on the filter language described at
    * https://google.aip.dev/160)
    * @opt_param int pageSize Optional. The maximum number of results to return
@@ -81,6 +86,7 @@ class OrganizationsLocationsRecommendersRecommendations extends \Google\Service\
    * value of `next_page_token` from the previous response. The values of other
    * method parameters must be identical to those in the previous call.
    * @return GoogleCloudRecommenderV1ListRecommendationsResponse
+   * @throws \Google\Service\Exception
    */
   public function listOrganizationsLocationsRecommendersRecommendations($parent, $optParams = [])
   {
@@ -101,12 +107,32 @@ class OrganizationsLocationsRecommendersRecommendations extends \Google\Service\
    * @param GoogleCloudRecommenderV1MarkRecommendationClaimedRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRecommenderV1Recommendation
+   * @throws \Google\Service\Exception
    */
   public function markClaimed($name, GoogleCloudRecommenderV1MarkRecommendationClaimedRequest $postBody, $optParams = [])
   {
     $params = ['name' => $name, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);
     return $this->call('markClaimed', [$params], GoogleCloudRecommenderV1Recommendation::class);
+  }
+  /**
+   * Mark the Recommendation State as Dismissed. Users can use this method to
+   * indicate to the Recommender API that an ACTIVE recommendation has to be
+   * marked back as DISMISSED. MarkRecommendationDismissed can be applied to
+   * recommendations in ACTIVE state. Requires the recommender.*.update IAM
+   * permission for the specified recommender. (recommendations.markDismissed)
+   *
+   * @param string $name Required. Name of the recommendation.
+   * @param GoogleCloudRecommenderV1MarkRecommendationDismissedRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return GoogleCloudRecommenderV1Recommendation
+   * @throws \Google\Service\Exception
+   */
+  public function markDismissed($name, GoogleCloudRecommenderV1MarkRecommendationDismissedRequest $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('markDismissed', [$params], GoogleCloudRecommenderV1Recommendation::class);
   }
   /**
    * Marks the Recommendation State as Failed. Users can use this method to
@@ -121,6 +147,7 @@ class OrganizationsLocationsRecommendersRecommendations extends \Google\Service\
    * @param GoogleCloudRecommenderV1MarkRecommendationFailedRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRecommenderV1Recommendation
+   * @throws \Google\Service\Exception
    */
   public function markFailed($name, GoogleCloudRecommenderV1MarkRecommendationFailedRequest $postBody, $optParams = [])
   {
@@ -142,6 +169,7 @@ class OrganizationsLocationsRecommendersRecommendations extends \Google\Service\
    * @param GoogleCloudRecommenderV1MarkRecommendationSucceededRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRecommenderV1Recommendation
+   * @throws \Google\Service\Exception
    */
   public function markSucceeded($name, GoogleCloudRecommenderV1MarkRecommendationSucceededRequest $postBody, $optParams = [])
   {

@@ -27,6 +27,10 @@ class ProvisioningConfig extends \Google\Collection
   /**
    * @var string
    */
+  public $customId;
+  /**
+   * @var string
+   */
   public $email;
   /**
    * @var string
@@ -44,6 +48,10 @@ class ProvisioningConfig extends \Google\Collection
   public $name;
   protected $networksType = NetworkConfig::class;
   protected $networksDataType = 'array';
+  /**
+   * @var string
+   */
+  public $pod;
   /**
    * @var string
    */
@@ -80,6 +88,20 @@ class ProvisioningConfig extends \Google\Collection
   public function getCloudConsoleUri()
   {
     return $this->cloudConsoleUri;
+  }
+  /**
+   * @param string
+   */
+  public function setCustomId($customId)
+  {
+    $this->customId = $customId;
+  }
+  /**
+   * @return string
+   */
+  public function getCustomId()
+  {
+    return $this->customId;
   }
   /**
    * @param string
@@ -164,6 +186,20 @@ class ProvisioningConfig extends \Google\Collection
   public function getNetworks()
   {
     return $this->networks;
+  }
+  /**
+   * @param string
+   */
+  public function setPod($pod)
+  {
+    $this->pod = $pod;
+  }
+  /**
+   * @return string
+   */
+  public function getPod()
+  {
+    return $this->pod;
   }
   /**
    * @param string

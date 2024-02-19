@@ -24,7 +24,7 @@ use Google\Service\PubsubLite\ListTopicSubscriptionsResponse;
  * Typical usage is:
  *  <code>
  *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $subscriptions = $pubsubliteService->subscriptions;
+ *   $subscriptions = $pubsubliteService->admin_projects_locations_topics_subscriptions;
  *  </code>
  */
 class AdminProjectsLocationsTopicsSubscriptions extends \Google\Service\Resource
@@ -45,6 +45,7 @@ class AdminProjectsLocationsTopicsSubscriptions extends \Google\Service\Resource
    * When paginating, all other parameters provided to `ListTopicSubscriptions`
    * must match the call that provided the page token.
    * @return ListTopicSubscriptionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAdminProjectsLocationsTopicsSubscriptions($name, $optParams = [])
   {

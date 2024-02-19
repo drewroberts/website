@@ -130,6 +130,7 @@ class Directory extends \Google\Service
   public $customer_devices_chromeos;
   public $customer_devices_chromeos_commands;
   public $customers;
+  public $customers_chrome_printServers;
   public $customers_chrome_printers;
   public $domainAliases;
   public $domains;
@@ -377,7 +378,17 @@ class Directory extends \Google\Service
         'chromeos',
         [
           'methods' => [
-            'issueCommand' => [
+            'batchChangeStatus' => [
+              'path' => 'admin/directory/v1/customer/{customerId}/devices/chromeos:batchChangeStatus',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'customerId' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'issueCommand' => [
               'path' => 'admin/directory/v1/customer/{customerId}/devices/chromeos/{deviceId}:issueCommand',
               'httpMethod' => 'POST',
               'parameters' => [
@@ -460,6 +471,110 @@ class Directory extends \Google\Service
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->customers_chrome_printServers = new Directory\Resource\CustomersChromePrintServers(
+        $this,
+        $this->serviceName,
+        'printServers',
+        [
+          'methods' => [
+            'batchCreatePrintServers' => [
+              'path' => 'admin/directory/v1/{+parent}/chrome/printServers:batchCreatePrintServers',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'batchDeletePrintServers' => [
+              'path' => 'admin/directory/v1/{+parent}/chrome/printServers:batchDeletePrintServers',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'create' => [
+              'path' => 'admin/directory/v1/{+parent}/chrome/printServers',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'delete' => [
+              'path' => 'admin/directory/v1/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'get' => [
+              'path' => 'admin/directory/v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'list' => [
+              'path' => 'admin/directory/v1/{+parent}/chrome/printServers',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'filter' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'orderBy' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'orgUnitId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'pageSize' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'pageToken' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'patch' => [
+              'path' => 'admin/directory/v1/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'updateMask' => [
+                  'location' => 'query',
+                  'type' => 'string',
                 ],
               ],
             ],
@@ -1572,6 +1687,10 @@ class Directory extends \Google\Service
                   'type' => 'string',
                   'required' => true,
                 ],
+                'includeIndirectRoleAssignments' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
                 'maxResults' => [
                   'location' => 'query',
                   'type' => 'integer',
@@ -1892,7 +2011,12 @@ class Directory extends \Google\Service
             ],'insert' => [
               'path' => 'admin/directory/v1/users',
               'httpMethod' => 'POST',
-              'parameters' => [],
+              'parameters' => [
+                'resolveConflictAccount' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
+              ],
             ],'list' => [
               'path' => 'admin/directory/v1/users',
               'httpMethod' => 'GET',

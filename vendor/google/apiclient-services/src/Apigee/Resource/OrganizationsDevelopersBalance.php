@@ -26,7 +26,7 @@ use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperBalance;
  * Typical usage is:
  *  <code>
  *   $apigeeService = new Google\Service\Apigee(...);
- *   $balance = $apigeeService->balance;
+ *   $balance = $apigeeService->organizations_developers_balance;
  *  </code>
  */
 class OrganizationsDevelopersBalance extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class OrganizationsDevelopersBalance extends \Google\Service\Resource
    * @param GoogleCloudApigeeV1AdjustDeveloperBalanceRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1DeveloperBalance
+   * @throws \Google\Service\Exception
    */
   public function adjust($name, GoogleCloudApigeeV1AdjustDeveloperBalanceRequest $postBody, $optParams = [])
   {
@@ -58,6 +59,7 @@ class OrganizationsDevelopersBalance extends \Google\Service\Resource
    * @param GoogleCloudApigeeV1CreditDeveloperBalanceRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1DeveloperBalance
+   * @throws \Google\Service\Exception
    */
   public function credit($name, GoogleCloudApigeeV1CreditDeveloperBalanceRequest $postBody, $optParams = [])
   {

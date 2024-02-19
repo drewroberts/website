@@ -11,6 +11,7 @@
  */
 
 return array (
+  52220 => 'Puebla',
   52221 => 'Puebla',
   52222 => 'Puebla',
   52223 => 'Puebla',
@@ -219,7 +220,8 @@ return array (
   52652 => 'Chihuahua',
   52653 => 'Luis B. Sanchez/San Luis Rio Colorado, SON',
   52656 => 'Chihuahua',
-  52657 => 'Chihuahua',
+  526571 => 'Chihuahua',
+  526572 => 'Juarez/Chihuahua',
   52658 => 'Baja California',
   52659 => 'Chihuahua',
   52661 => 'Primo Tapia/Rosarito, BCN',
@@ -247,6 +249,7 @@ return array (
   52717 => 'Estado de Mexico',
   52718 => 'Estado de Mexico',
   52719 => 'San Francisco Xonacatlan/Temoaya, MEX',
+  52720 => 'Toluca',
   52721 => 'Ixtapan de la Sal, MEX',
   52722 => 'Estado de Mexico',
   52723 => 'Coatepec Harinas, MEX',
@@ -291,6 +294,7 @@ return array (
   52767 => 'Guerrero',
   52768 => 'Veracruz',
   52769 => 'Morelos',
+  52770 => 'Cuernavaca/Emiliano Zapata/Temixco/Xochitepec/Jiutepec',
   52771 => 'Pachuca/Real Del Monte, HGO',
   52772 => 'Actopan, HGO',
   52773 => 'Hidalgo',
@@ -335,6 +339,7 @@ return array (
   52867 => 'Nuevo Laredo/Tamaulipas',
   52868 => 'Tamaulipas',
   52869 => 'Cuatro Cienegas/San Buenaventura, COAH',
+  52870 => 'Coahuila/Durango',
   52871 => 'Coahuila',
   52872 => 'Coahuila/Durango',
   52873 => 'Nuevo Leon',

@@ -26,7 +26,7 @@ use Google\Service\CloudRedis\RedisEmpty;
  * Typical usage is:
  *  <code>
  *   $redisService = new Google\Service\CloudRedis(...);
- *   $operations = $redisService->operations;
+ *   $operations = $redisService->projects_locations_operations;
  *  </code>
  */
 class ProjectsLocationsOperations extends \Google\Service\Resource
@@ -45,6 +45,7 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
    * @param string $name The name of the operation resource to be cancelled.
    * @param array $optParams Optional parameters.
    * @return RedisEmpty
+   * @throws \Google\Service\Exception
    */
   public function cancel($name, $optParams = [])
   {
@@ -61,6 +62,7 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
    * @param string $name The name of the operation resource to be deleted.
    * @param array $optParams Optional parameters.
    * @return RedisEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -76,6 +78,7 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -85,14 +88,8 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
   }
   /**
    * Lists operations that match the specified filter in the request. If the
-   * server doesn't support this method, it returns `UNIMPLEMENTED`. NOTE: the
-   * `name` binding allows API services to override the binding to use different
-   * resource name schemes, such as `users/operations`. To override the binding,
-   * API services can add a binding such as `"/v1/{name=users}/operations"` to
-   * their service configuration. For backwards compatibility, the default name
-   * includes the operations collection id, however overriding users must ensure
-   * the name binding is the parent resource, without the operations collection
-   * id. (operations.listProjectsLocationsOperations)
+   * server doesn't support this method, it returns `UNIMPLEMENTED`.
+   * (operations.listProjectsLocationsOperations)
    *
    * @param string $name The name of the operation's parent resource.
    * @param array $optParams Optional parameters.
@@ -101,6 +98,7 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
    * @opt_param int pageSize The standard list page size.
    * @opt_param string pageToken The standard list page token.
    * @return ListOperationsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsOperations($name, $optParams = [])
   {

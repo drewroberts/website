@@ -17,8 +17,8 @@
 
 namespace Google\Service\ChromePolicy\Resource;
 
-use Google\Service\ChromePolicy\GoogleChromePolicyV1BatchInheritOrgUnitPoliciesRequest;
-use Google\Service\ChromePolicy\GoogleChromePolicyV1BatchModifyOrgUnitPoliciesRequest;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchInheritOrgUnitPoliciesRequest;
+use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchModifyOrgUnitPoliciesRequest;
 use Google\Service\ChromePolicy\GoogleProtobufEmpty;
 
 /**
@@ -26,7 +26,7 @@ use Google\Service\ChromePolicy\GoogleProtobufEmpty;
  * Typical usage is:
  *  <code>
  *   $chromepolicyService = new Google\Service\ChromePolicy(...);
- *   $orgunits = $chromepolicyService->orgunits;
+ *   $orgunits = $chromepolicyService->customers_policies_orgunits;
  *  </code>
  */
 class CustomersPoliciesOrgunits extends \Google\Service\Resource
@@ -42,11 +42,12 @@ class CustomersPoliciesOrgunits extends \Google\Service\Resource
    *
    * @param string $customer ID of the G Suite account or literal "my_customer"
    * for the customer associated to the request.
-   * @param GoogleChromePolicyV1BatchInheritOrgUnitPoliciesRequest $postBody
+   * @param GoogleChromePolicyVersionsV1BatchInheritOrgUnitPoliciesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleProtobufEmpty
+   * @throws \Google\Service\Exception
    */
-  public function batchInherit($customer, GoogleChromePolicyV1BatchInheritOrgUnitPoliciesRequest $postBody, $optParams = [])
+  public function batchInherit($customer, GoogleChromePolicyVersionsV1BatchInheritOrgUnitPoliciesRequest $postBody, $optParams = [])
   {
     $params = ['customer' => $customer, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);
@@ -62,11 +63,12 @@ class CustomersPoliciesOrgunits extends \Google\Service\Resource
    *
    * @param string $customer ID of the G Suite account or literal "my_customer"
    * for the customer associated to the request.
-   * @param GoogleChromePolicyV1BatchModifyOrgUnitPoliciesRequest $postBody
+   * @param GoogleChromePolicyVersionsV1BatchModifyOrgUnitPoliciesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleProtobufEmpty
+   * @throws \Google\Service\Exception
    */
-  public function batchModify($customer, GoogleChromePolicyV1BatchModifyOrgUnitPoliciesRequest $postBody, $optParams = [])
+  public function batchModify($customer, GoogleChromePolicyVersionsV1BatchModifyOrgUnitPoliciesRequest $postBody, $optParams = [])
   {
     $params = ['customer' => $customer, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);

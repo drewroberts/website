@@ -25,7 +25,7 @@ use Google\Service\TagManager\ListContainerVersionsResponse;
  * Typical usage is:
  *  <code>
  *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $version_headers = $tagmanagerService->version_headers;
+ *   $version_headers = $tagmanagerService->accounts_containers_version_headers;
  *  </code>
  */
 class AccountsContainersVersionHeaders extends \Google\Service\Resource
@@ -37,6 +37,7 @@ class AccountsContainersVersionHeaders extends \Google\Service\Resource
    * accounts/{account_id}/containers/{container_id}
    * @param array $optParams Optional parameters.
    * @return ContainerVersionHeader
+   * @throws \Google\Service\Exception
    */
   public function latest($parent, $optParams = [])
   {
@@ -57,6 +58,7 @@ class AccountsContainersVersionHeaders extends \Google\Service\Resource
    * @opt_param string pageToken Continuation token for fetching the next page of
    * results.
    * @return ListContainerVersionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsContainersVersionHeaders($parent, $optParams = [])
   {

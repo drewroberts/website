@@ -43,6 +43,7 @@ class Groups extends \Google\Service\Resource
    * @opt_param string initialGroupConfig Optional. The initial configuration
    * option for the `Group`.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create(Group $postBody, $optParams = [])
   {
@@ -58,6 +59,7 @@ class Groups extends \Google\Service\Resource
    * retrieve. Must be of the form `groups/{group}`.
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -73,6 +75,7 @@ class Groups extends \Google\Service\Resource
    * retrieve. Must be of the form `groups/{group}`.
    * @param array $optParams Optional parameters.
    * @return Group
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -91,6 +94,7 @@ class Groups extends \Google\Service\Resource
    * "*" returns all fields. If not specified, all fields will be returned. May
    * only contain the following field: `member_restriction`.
    * @return SecuritySettings
+   * @throws \Google\Service\Exception
    */
   public function getSecuritySettings($name, $optParams = [])
   {
@@ -116,11 +120,13 @@ class Groups extends \Google\Service\Resource
    * @opt_param string parent Required. The parent resource under which to list
    * all `Group` resources. Must be of the form
    * `identitysources/{identity_source}` for external- identity-mapped groups or
-   * `customers/{customer}` for Google Groups. The `customer` must begin with "C"
-   * (for example, 'C046psxkn').
+   * `customers/{customer_id}` for Google Groups. The `customer_id` must begin
+   * with "C" (for example, 'C046psxkn'). [Find your customer ID.]
+   * (https://support.google.com/cloudidentity/answer/10070793)
    * @opt_param string view The level of detail to be returned. If unspecified,
    * defaults to `View.BASIC`.
    * @return ListGroupsResponse
+   * @throws \Google\Service\Exception
    */
   public function listGroups($optParams = [])
   {
@@ -137,8 +143,10 @@ class Groups extends \Google\Service\Resource
    *
    * @opt_param string groupKey.id The ID of the entity. For Google-managed
    * entities, the `id` should be the email address of an existing group or user.
-   * For external-identity-mapped entities, the `id` must be a string conforming
-   * to the Identity Source's requirements. Must be unique within a `namespace`.
+   * Email addresses need to adhere to [name guidelines for users and
+   * groups](https://support.google.com/a/answer/9193374). For external-identity-
+   * mapped entities, the `id` must be a string conforming to the Identity
+   * Source's requirements. Must be unique within a `namespace`.
    * @opt_param string groupKey.namespace The namespace in which the entity
    * exists. If not specified, the `EntityKey` represents a Google-managed entity
    * such as a Google user or a Google Group. If specified, the `EntityKey`
@@ -146,6 +154,7 @@ class Groups extends \Google\Service\Resource
    * to an identity source created in Admin Console and must be in the form of
    * `identitysources/{identity_source}`.
    * @return LookupGroupNameResponse
+   * @throws \Google\Service\Exception
    */
   public function lookup($optParams = [])
   {
@@ -166,6 +175,7 @@ class Groups extends \Google\Service\Resource
    * only contain the following field names: `display_name`, `description`,
    * `labels`.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, Group $postBody, $optParams = [])
   {
@@ -187,15 +197,25 @@ class Groups extends \Google\Service\Resource
    * or 500 for `GroupView.FULL`.
    * @opt_param string pageToken The `next_page_token` value returned from a
    * previous search request, if any.
-   * @opt_param string query Required. The search query. Must be specified in
-   * [Common Expression Language](https://opensource.google/projects/cel). May
-   * only contain equality operators on the parent and inclusion operators on
-   * labels (e.g., `parent == 'customers/{customer}' &&
-   * 'cloudidentity.googleapis.com/groups.discussion_forum' in labels`). The
-   * `customer` must begin with "C" (for example, 'C046psxkn').
+   * @opt_param string query Required. The search query. * Must be specified in
+   * [Common Expression Language](https://opensource.google/projects/cel). * Must
+   * contain equality operators on the parent, e.g. `parent ==
+   * 'customers/{customer_id}'`. The `customer_id` must begin with "C" (for
+   * example, 'C046psxkn'). [Find your customer ID.]
+   * (https://support.google.com/cloudidentity/answer/10070793) * Can contain
+   * optional inclusion operators on `labels` such as
+   * `'cloudidentity.googleapis.com/groups.discussion_forum' in labels`). * Can
+   * contain an optional equality operator on `domain_name`. e.g. `domain_name ==
+   * 'examplepetstore.com'` * Can contain optional `startsWith/contains/equality`
+   * operators on `group_key`, e.g. `group_key.startsWith('dev')`,
+   * `group_key.contains('dev'), group_key == 'dev@examplepetstore.com'` * Can
+   * contain optional `startsWith/contains/equality` operators on `display_name`,
+   * such as `display_name.startsWith('dev')` , `display_name.contains('dev')`,
+   * `display_name == 'dev'`
    * @opt_param string view The level of detail to be returned. If unspecified,
    * defaults to `View.BASIC`.
    * @return SearchGroupsResponse
+   * @throws \Google\Service\Exception
    */
   public function search($optParams = [])
   {
@@ -214,6 +234,7 @@ class Groups extends \Google\Service\Resource
    * @opt_param string updateMask Required. The fully-qualified names of fields to
    * update. May only contain the following field: `member_restriction.query`.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function updateSecuritySettings($name, SecuritySettings $postBody, $optParams = [])
   {

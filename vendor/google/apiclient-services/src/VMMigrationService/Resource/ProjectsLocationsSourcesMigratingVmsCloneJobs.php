@@ -27,7 +27,7 @@ use Google\Service\VMMigrationService\Operation;
  * Typical usage is:
  *  <code>
  *   $vmmigrationService = new Google\Service\VMMigrationService(...);
- *   $cloneJobs = $vmmigrationService->cloneJobs;
+ *   $cloneJobs = $vmmigrationService->projects_locations_sources_migratingVms_cloneJobs;
  *  </code>
  */
 class ProjectsLocationsSourcesMigratingVmsCloneJobs extends \Google\Service\Resource
@@ -39,6 +39,7 @@ class ProjectsLocationsSourcesMigratingVmsCloneJobs extends \Google\Service\Reso
    * @param CancelCloneJobRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function cancel($name, CancelCloneJobRequest $postBody, $optParams = [])
   {
@@ -58,7 +59,7 @@ class ProjectsLocationsSourcesMigratingVmsCloneJobs extends \Google\Service\Reso
    * unique request ID so that if you must retry your request, the server will
    * know to ignore the request if it has already been completed. The server will
    * guarantee that for at least 60 minutes since the first request. For example,
-   * consider a situation where you make an initial request and t he request times
+   * consider a situation where you make an initial request and the request times
    * out. If you make the request again with the same request ID, the server can
    * check if original operation with the same request ID was received, and if so,
    * will ignore the second request. This prevents clients from accidentally
@@ -66,6 +67,7 @@ class ProjectsLocationsSourcesMigratingVmsCloneJobs extends \Google\Service\Reso
    * exception that zero UUID is not supported
    * (00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, CloneJob $postBody, $optParams = [])
   {
@@ -79,6 +81,7 @@ class ProjectsLocationsSourcesMigratingVmsCloneJobs extends \Google\Service\Reso
    * @param string $name Required. The name of the CloneJob.
    * @param array $optParams Optional parameters.
    * @return CloneJob
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -87,8 +90,8 @@ class ProjectsLocationsSourcesMigratingVmsCloneJobs extends \Google\Service\Reso
     return $this->call('get', [$params], CloneJob::class);
   }
   /**
-   * Lists CloneJobs of a given migrating VM.
-   * (cloneJobs.listProjectsLocationsSourcesMigratingVmsCloneJobs)
+   * Lists the CloneJobs of a migrating VM. Only 25 most recent CloneJobs are
+   * listed. (cloneJobs.listProjectsLocationsSourcesMigratingVmsCloneJobs)
    *
    * @param string $parent Required. The parent, which owns this collection of
    * source VMs.
@@ -105,6 +108,7 @@ class ProjectsLocationsSourcesMigratingVmsCloneJobs extends \Google\Service\Reso
    * paginating, all other parameters provided to `ListCloneJobs` must match the
    * call that provided the page token.
    * @return ListCloneJobsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsSourcesMigratingVmsCloneJobs($parent, $optParams = [])
   {

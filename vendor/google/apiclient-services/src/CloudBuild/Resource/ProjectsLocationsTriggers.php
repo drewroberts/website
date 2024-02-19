@@ -30,7 +30,7 @@ use Google\Service\CloudBuild\RunBuildTriggerRequest;
  * Typical usage is:
  *  <code>
  *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $triggers = $cloudbuildService->triggers;
+ *   $triggers = $cloudbuildService->projects_locations_triggers;
  *  </code>
  */
 class ProjectsLocationsTriggers extends \Google\Service\Resource
@@ -126,6 +126,9 @@ class ProjectsLocationsTriggers extends \Google\Service\Resource
    * @opt_param string projectId Required. ID of the project that owns the
    * trigger.
    * @opt_param string triggerId Required. ID of the `BuildTrigger` to update.
+   * @opt_param string updateMask Update mask for the resource. If this is set,
+   * the server will only update the fields specified in the field mask.
+   * Otherwise, a full update of the mutable resource fields will be performed.
    * @return BuildTrigger
    */
   public function patch($resourceName, BuildTrigger $postBody, $optParams = [])
@@ -137,8 +140,10 @@ class ProjectsLocationsTriggers extends \Google\Service\Resource
   /**
    * Runs a `BuildTrigger` at a particular source revision. To run a regional or
    * global trigger, use the POST request that includes the location endpoint in
-   * the path. The POST request that does not include the location endpoint in the
-   * path can only be used when running global triggers. (triggers.run)
+   * the path (ex.
+   * v1/projects/{projectId}/locations/{region}/triggers/{triggerId}:run). The
+   * POST request that does not include the location endpoint in the path can only
+   * be used when running global triggers. (triggers.run)
    *
    * @param string $name The name of the `Trigger` to run. Format:
    * `projects/{project}/locations/{location}/triggers/{trigger}`

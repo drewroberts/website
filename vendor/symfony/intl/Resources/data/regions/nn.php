@@ -4,8 +4,6 @@ return [
     'Names' => [
         'AE' => 'Dei sameinte arabiske emirata',
         'AT' => 'Austerrike',
-        'BL' => 'Saint Barthélemy',
-        'BY' => 'Kviterussland',
         'CC' => 'Kokosøyane',
         'CD' => 'Kongo-Kinshasa',
         'CF' => 'Den sentralafrikanske republikken',

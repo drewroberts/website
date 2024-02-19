@@ -26,7 +26,7 @@ use Google\Service\VMMigrationService\UtilizationReport;
  * Typical usage is:
  *  <code>
  *   $vmmigrationService = new Google\Service\VMMigrationService(...);
- *   $utilizationReports = $vmmigrationService->utilizationReports;
+ *   $utilizationReports = $vmmigrationService->projects_locations_sources_utilizationReports;
  *  </code>
  */
 class ProjectsLocationsSourcesUtilizationReports extends \Google\Service\Resource
@@ -42,7 +42,7 @@ class ProjectsLocationsSourcesUtilizationReports extends \Google\Service\Resourc
    * unique request ID so that if you must retry your request, the server will
    * know to ignore the request if it has already been completed. The server will
    * guarantee that for at least 60 minutes since the first request. For example,
-   * consider a situation where you make an initial request and t he request times
+   * consider a situation where you make an initial request and the request times
    * out. If you make the request again with the same request ID, the server can
    * check if original operation with the same request ID was received, and if so,
    * will ignore the second request. This prevents clients from accidentally
@@ -54,6 +54,7 @@ class ProjectsLocationsSourcesUtilizationReports extends \Google\Service\Resourc
    * value maximum length is 63 characters, and valid characters are /a-z-/. It
    * must start with an english letter and must not end with a hyphen.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, UtilizationReport $postBody, $optParams = [])
   {
@@ -71,7 +72,7 @@ class ProjectsLocationsSourcesUtilizationReports extends \Google\Service\Resourc
    * Specify a unique request ID so that if you must retry your request, the
    * server will know to ignore the request if it has already been completed. The
    * server will guarantee that for at least 60 minutes after the first request.
-   * For example, consider a situation where you make an initial request and t he
+   * For example, consider a situation where you make an initial request and the
    * request times out. If you make the request again with the same request ID,
    * the server can check if original operation with the same request ID was
    * received, and if so, will ignore the second request. This prevents clients
@@ -79,6 +80,7 @@ class ProjectsLocationsSourcesUtilizationReports extends \Google\Service\Resourc
    * valid UUID with the exception that zero UUID is not supported
    * (00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -95,6 +97,7 @@ class ProjectsLocationsSourcesUtilizationReports extends \Google\Service\Resourc
    * @opt_param string view Optional. The level of details of the report. Defaults
    * to FULL
    * @return UtilizationReport
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -122,6 +125,7 @@ class ProjectsLocationsSourcesUtilizationReports extends \Google\Service\Resourc
    * @opt_param string view Optional. The level of details of each report.
    * Defaults to BASIC.
    * @return ListUtilizationReportsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsSourcesUtilizationReports($parent, $optParams = [])
   {

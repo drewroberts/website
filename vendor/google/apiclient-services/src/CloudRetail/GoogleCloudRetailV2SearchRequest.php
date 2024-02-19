@@ -32,6 +32,10 @@ class GoogleCloudRetailV2SearchRequest extends \Google\Collection
   public $canonicalFilter;
   protected $dynamicFacetSpecType = GoogleCloudRetailV2SearchRequestDynamicFacetSpec::class;
   protected $dynamicFacetSpecDataType = '';
+  /**
+   * @var string
+   */
+  public $entity;
   protected $facetSpecsType = GoogleCloudRetailV2SearchRequestFacetSpec::class;
   protected $facetSpecsDataType = 'array';
   /**
@@ -142,6 +146,20 @@ class GoogleCloudRetailV2SearchRequest extends \Google\Collection
   public function getDynamicFacetSpec()
   {
     return $this->dynamicFacetSpec;
+  }
+  /**
+   * @param string
+   */
+  public function setEntity($entity)
+  {
+    $this->entity = $entity;
+  }
+  /**
+   * @return string
+   */
+  public function getEntity()
+  {
+    return $this->entity;
   }
   /**
    * @param GoogleCloudRetailV2SearchRequestFacetSpec[]

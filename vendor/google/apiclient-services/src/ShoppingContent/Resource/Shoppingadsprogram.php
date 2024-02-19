@@ -32,11 +32,14 @@ class Shoppingadsprogram extends \Google\Service\Resource
 {
   /**
    * Retrieves the status and review eligibility for the Shopping Ads program.
-   * (shoppingadsprogram.get)
+   * Returns errors and warnings if they require action to resolve, will become
+   * disapprovals, or impact impressions. Use `accountstatuses` to view all issues
+   * for an account. (shoppingadsprogram.get)
    *
    * @param string $merchantId Required. The ID of the account.
    * @param array $optParams Optional parameters.
    * @return ShoppingAdsProgramStatus
+   * @throws \Google\Service\Exception
    */
   public function get($merchantId, $optParams = [])
   {
@@ -45,12 +48,14 @@ class Shoppingadsprogram extends \Google\Service\Resource
     return $this->call('get', [$params], ShoppingAdsProgramStatus::class);
   }
   /**
-   * Requests a review of Shopping ads in a specific region. This method is only
-   * available to selected merchants. (shoppingadsprogram.requestreview)
+   * Requests a review of Shopping ads in a specific region. This method
+   * deprecated. Use the `MerchantSupportService` to view product and account
+   * issues and request a review. (shoppingadsprogram.requestreview)
    *
    * @param string $merchantId Required. The ID of the account.
    * @param RequestReviewShoppingAdsRequest $postBody
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function requestreview($merchantId, RequestReviewShoppingAdsRequest $postBody, $optParams = [])
   {

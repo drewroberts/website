@@ -24,7 +24,7 @@ use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListRelat
  * Typical usage is:
  *  <code>
  *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
- *   $memberships = $recaptchaenterpriseService->memberships;
+ *   $memberships = $recaptchaenterpriseService->projects_relatedaccountgroups_memberships;
  *  </code>
  */
 class ProjectsRelatedaccountgroupsMemberships extends \Google\Service\Resource
@@ -47,6 +47,7 @@ class ProjectsRelatedaccountgroupsMemberships extends \Google\Service\Resource
    * parameters provided to `ListRelatedAccountGroupMemberships` must match the
    * call that provided the page token.
    * @return GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupMembershipsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsRelatedaccountgroupsMemberships($parent, $optParams = [])
   {

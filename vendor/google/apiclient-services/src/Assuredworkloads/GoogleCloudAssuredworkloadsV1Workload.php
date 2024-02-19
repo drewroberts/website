@@ -28,6 +28,12 @@ class GoogleCloudAssuredworkloadsV1Workload extends \Google\Collection
    * @var string
    */
   public $complianceRegime;
+  protected $complianceStatusType = GoogleCloudAssuredworkloadsV1WorkloadComplianceStatus::class;
+  protected $complianceStatusDataType = '';
+  /**
+   * @var string[]
+   */
+  public $compliantButDisallowedServices;
   /**
    * @var string
    */
@@ -36,6 +42,8 @@ class GoogleCloudAssuredworkloadsV1Workload extends \Google\Collection
    * @var string
    */
   public $displayName;
+  protected $ekmProvisioningResponseType = GoogleCloudAssuredworkloadsV1WorkloadEkmProvisioningResponse::class;
+  protected $ekmProvisioningResponseDataType = '';
   /**
    * @var bool
    */
@@ -61,13 +69,27 @@ class GoogleCloudAssuredworkloadsV1Workload extends \Google\Collection
   /**
    * @var string
    */
+  public $partner;
+  protected $partnerPermissionsType = GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions::class;
+  protected $partnerPermissionsDataType = '';
+  /**
+   * @var string
+   */
   public $provisionedResourcesParent;
+  /**
+   * @var bool
+   */
+  public $resourceMonitoringEnabled;
   protected $resourceSettingsType = GoogleCloudAssuredworkloadsV1WorkloadResourceSettings::class;
   protected $resourceSettingsDataType = 'array';
   protected $resourcesType = GoogleCloudAssuredworkloadsV1WorkloadResourceInfo::class;
   protected $resourcesDataType = 'array';
   protected $saaEnrollmentResponseType = GoogleCloudAssuredworkloadsV1WorkloadSaaEnrollmentResponse::class;
   protected $saaEnrollmentResponseDataType = '';
+  /**
+   * @var bool
+   */
+  public $violationNotificationsEnabled;
 
   /**
    * @param string
@@ -98,6 +120,34 @@ class GoogleCloudAssuredworkloadsV1Workload extends \Google\Collection
     return $this->complianceRegime;
   }
   /**
+   * @param GoogleCloudAssuredworkloadsV1WorkloadComplianceStatus
+   */
+  public function setComplianceStatus(GoogleCloudAssuredworkloadsV1WorkloadComplianceStatus $complianceStatus)
+  {
+    $this->complianceStatus = $complianceStatus;
+  }
+  /**
+   * @return GoogleCloudAssuredworkloadsV1WorkloadComplianceStatus
+   */
+  public function getComplianceStatus()
+  {
+    return $this->complianceStatus;
+  }
+  /**
+   * @param string[]
+   */
+  public function setCompliantButDisallowedServices($compliantButDisallowedServices)
+  {
+    $this->compliantButDisallowedServices = $compliantButDisallowedServices;
+  }
+  /**
+   * @return string[]
+   */
+  public function getCompliantButDisallowedServices()
+  {
+    return $this->compliantButDisallowedServices;
+  }
+  /**
    * @param string
    */
   public function setCreateTime($createTime)
@@ -124,6 +174,20 @@ class GoogleCloudAssuredworkloadsV1Workload extends \Google\Collection
   public function getDisplayName()
   {
     return $this->displayName;
+  }
+  /**
+   * @param GoogleCloudAssuredworkloadsV1WorkloadEkmProvisioningResponse
+   */
+  public function setEkmProvisioningResponse(GoogleCloudAssuredworkloadsV1WorkloadEkmProvisioningResponse $ekmProvisioningResponse)
+  {
+    $this->ekmProvisioningResponse = $ekmProvisioningResponse;
+  }
+  /**
+   * @return GoogleCloudAssuredworkloadsV1WorkloadEkmProvisioningResponse
+   */
+  public function getEkmProvisioningResponse()
+  {
+    return $this->ekmProvisioningResponse;
   }
   /**
    * @param bool
@@ -212,6 +276,34 @@ class GoogleCloudAssuredworkloadsV1Workload extends \Google\Collection
   /**
    * @param string
    */
+  public function setPartner($partner)
+  {
+    $this->partner = $partner;
+  }
+  /**
+   * @return string
+   */
+  public function getPartner()
+  {
+    return $this->partner;
+  }
+  /**
+   * @param GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions
+   */
+  public function setPartnerPermissions(GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions $partnerPermissions)
+  {
+    $this->partnerPermissions = $partnerPermissions;
+  }
+  /**
+   * @return GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions
+   */
+  public function getPartnerPermissions()
+  {
+    return $this->partnerPermissions;
+  }
+  /**
+   * @param string
+   */
   public function setProvisionedResourcesParent($provisionedResourcesParent)
   {
     $this->provisionedResourcesParent = $provisionedResourcesParent;
@@ -222,6 +314,20 @@ class GoogleCloudAssuredworkloadsV1Workload extends \Google\Collection
   public function getProvisionedResourcesParent()
   {
     return $this->provisionedResourcesParent;
+  }
+  /**
+   * @param bool
+   */
+  public function setResourceMonitoringEnabled($resourceMonitoringEnabled)
+  {
+    $this->resourceMonitoringEnabled = $resourceMonitoringEnabled;
+  }
+  /**
+   * @return bool
+   */
+  public function getResourceMonitoringEnabled()
+  {
+    return $this->resourceMonitoringEnabled;
   }
   /**
    * @param GoogleCloudAssuredworkloadsV1WorkloadResourceSettings[]
@@ -264,6 +370,20 @@ class GoogleCloudAssuredworkloadsV1Workload extends \Google\Collection
   public function getSaaEnrollmentResponse()
   {
     return $this->saaEnrollmentResponse;
+  }
+  /**
+   * @param bool
+   */
+  public function setViolationNotificationsEnabled($violationNotificationsEnabled)
+  {
+    $this->violationNotificationsEnabled = $violationNotificationsEnabled;
+  }
+  /**
+   * @return bool
+   */
+  public function getViolationNotificationsEnabled()
+  {
+    return $this->violationNotificationsEnabled;
   }
 }
 

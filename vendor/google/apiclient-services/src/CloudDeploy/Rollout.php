@@ -17,8 +17,9 @@
 
 namespace Google\Service\CloudDeploy;
 
-class Rollout extends \Google\Model
+class Rollout extends \Google\Collection
 {
+  protected $collection_key = 'rolledBackByRollouts';
   /**
    * @var string[]
    */
@@ -31,6 +32,10 @@ class Rollout extends \Google\Model
    * @var string
    */
   public $approveTime;
+  /**
+   * @var string
+   */
+  public $controllerRollout;
   /**
    * @var string
    */
@@ -71,10 +76,22 @@ class Rollout extends \Google\Model
    * @var string[]
    */
   public $labels;
+  protected $metadataType = Metadata::class;
+  protected $metadataDataType = '';
   /**
    * @var string
    */
   public $name;
+  protected $phasesType = Phase::class;
+  protected $phasesDataType = 'array';
+  /**
+   * @var string
+   */
+  public $rollbackOfRollout;
+  /**
+   * @var string[]
+   */
+  public $rolledBackByRollouts;
   /**
    * @var string
    */
@@ -129,6 +146,20 @@ class Rollout extends \Google\Model
   public function getApproveTime()
   {
     return $this->approveTime;
+  }
+  /**
+   * @param string
+   */
+  public function setControllerRollout($controllerRollout)
+  {
+    $this->controllerRollout = $controllerRollout;
+  }
+  /**
+   * @return string
+   */
+  public function getControllerRollout()
+  {
+    return $this->controllerRollout;
   }
   /**
    * @param string
@@ -271,6 +302,20 @@ class Rollout extends \Google\Model
     return $this->labels;
   }
   /**
+   * @param Metadata
+   */
+  public function setMetadata(Metadata $metadata)
+  {
+    $this->metadata = $metadata;
+  }
+  /**
+   * @return Metadata
+   */
+  public function getMetadata()
+  {
+    return $this->metadata;
+  }
+  /**
    * @param string
    */
   public function setName($name)
@@ -283,6 +328,48 @@ class Rollout extends \Google\Model
   public function getName()
   {
     return $this->name;
+  }
+  /**
+   * @param Phase[]
+   */
+  public function setPhases($phases)
+  {
+    $this->phases = $phases;
+  }
+  /**
+   * @return Phase[]
+   */
+  public function getPhases()
+  {
+    return $this->phases;
+  }
+  /**
+   * @param string
+   */
+  public function setRollbackOfRollout($rollbackOfRollout)
+  {
+    $this->rollbackOfRollout = $rollbackOfRollout;
+  }
+  /**
+   * @return string
+   */
+  public function getRollbackOfRollout()
+  {
+    return $this->rollbackOfRollout;
+  }
+  /**
+   * @param string[]
+   */
+  public function setRolledBackByRollouts($rolledBackByRollouts)
+  {
+    $this->rolledBackByRollouts = $rolledBackByRollouts;
+  }
+  /**
+   * @return string[]
+   */
+  public function getRolledBackByRollouts()
+  {
+    return $this->rolledBackByRollouts;
   }
   /**
    * @param string

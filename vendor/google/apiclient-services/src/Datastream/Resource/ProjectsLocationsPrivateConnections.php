@@ -26,7 +26,7 @@ use Google\Service\Datastream\PrivateConnection;
  * Typical usage is:
  *  <code>
  *   $datastreamService = new Google\Service\Datastream(...);
- *   $privateConnections = $datastreamService->privateConnections;
+ *   $privateConnections = $datastreamService->projects_locations_privateConnections;
  *  </code>
  */
 class ProjectsLocationsPrivateConnections extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class ProjectsLocationsPrivateConnections extends \Google\Service\Resource
    * @param PrivateConnection $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param bool force Optional. If set to true, will skip validations.
    * @opt_param string privateConnectionId Required. The private connectivity
    * identifier.
    * @opt_param string requestId Optional. A request ID to identify requests.
@@ -54,6 +55,7 @@ class ProjectsLocationsPrivateConnections extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported
    * (00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, PrivateConnection $postBody, $optParams = [])
   {
@@ -83,6 +85,7 @@ class ProjectsLocationsPrivateConnections extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported
    * (00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -98,6 +101,7 @@ class ProjectsLocationsPrivateConnections extends \Google\Service\Resource
    * configuration to get.
    * @param array $optParams Optional parameters.
    * @return PrivateConnection
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -124,6 +128,7 @@ class ProjectsLocationsPrivateConnections extends \Google\Service\Resource
    * When paginating, all other parameters provided to `ListPrivateConnections`
    * must match the call that provided the page token.
    * @return ListPrivateConnectionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsPrivateConnections($parent, $optParams = [])
   {

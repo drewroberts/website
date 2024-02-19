@@ -19,6 +19,12 @@ namespace Google\Service\ArtifactRegistry;
 
 class Repository extends \Google\Model
 {
+  protected $cleanupPoliciesType = CleanupPolicy::class;
+  protected $cleanupPoliciesDataType = 'map';
+  /**
+   * @var bool
+   */
+  public $cleanupPolicyDryRun;
   /**
    * @var string
    */
@@ -27,6 +33,12 @@ class Repository extends \Google\Model
    * @var string
    */
   public $description;
+  /**
+   * @var bool
+   */
+  public $disallowUnspecifiedMode;
+  protected $dockerConfigType = DockerRepositoryConfig::class;
+  protected $dockerConfigDataType = '';
   /**
    * @var string
    */
@@ -44,7 +56,17 @@ class Repository extends \Google\Model
   /**
    * @var string
    */
+  public $mode;
+  /**
+   * @var string
+   */
   public $name;
+  protected $remoteRepositoryConfigType = RemoteRepositoryConfig::class;
+  protected $remoteRepositoryConfigDataType = '';
+  /**
+   * @var bool
+   */
+  public $satisfiesPzs;
   /**
    * @var string
    */
@@ -53,7 +75,37 @@ class Repository extends \Google\Model
    * @var string
    */
   public $updateTime;
+  protected $virtualRepositoryConfigType = VirtualRepositoryConfig::class;
+  protected $virtualRepositoryConfigDataType = '';
 
+  /**
+   * @param CleanupPolicy[]
+   */
+  public function setCleanupPolicies($cleanupPolicies)
+  {
+    $this->cleanupPolicies = $cleanupPolicies;
+  }
+  /**
+   * @return CleanupPolicy[]
+   */
+  public function getCleanupPolicies()
+  {
+    return $this->cleanupPolicies;
+  }
+  /**
+   * @param bool
+   */
+  public function setCleanupPolicyDryRun($cleanupPolicyDryRun)
+  {
+    $this->cleanupPolicyDryRun = $cleanupPolicyDryRun;
+  }
+  /**
+   * @return bool
+   */
+  public function getCleanupPolicyDryRun()
+  {
+    return $this->cleanupPolicyDryRun;
+  }
   /**
    * @param string
    */
@@ -81,6 +133,34 @@ class Repository extends \Google\Model
   public function getDescription()
   {
     return $this->description;
+  }
+  /**
+   * @param bool
+   */
+  public function setDisallowUnspecifiedMode($disallowUnspecifiedMode)
+  {
+    $this->disallowUnspecifiedMode = $disallowUnspecifiedMode;
+  }
+  /**
+   * @return bool
+   */
+  public function getDisallowUnspecifiedMode()
+  {
+    return $this->disallowUnspecifiedMode;
+  }
+  /**
+   * @param DockerRepositoryConfig
+   */
+  public function setDockerConfig(DockerRepositoryConfig $dockerConfig)
+  {
+    $this->dockerConfig = $dockerConfig;
+  }
+  /**
+   * @return DockerRepositoryConfig
+   */
+  public function getDockerConfig()
+  {
+    return $this->dockerConfig;
   }
   /**
    * @param string
@@ -141,6 +221,20 @@ class Repository extends \Google\Model
   /**
    * @param string
    */
+  public function setMode($mode)
+  {
+    $this->mode = $mode;
+  }
+  /**
+   * @return string
+   */
+  public function getMode()
+  {
+    return $this->mode;
+  }
+  /**
+   * @param string
+   */
   public function setName($name)
   {
     $this->name = $name;
@@ -151,6 +245,34 @@ class Repository extends \Google\Model
   public function getName()
   {
     return $this->name;
+  }
+  /**
+   * @param RemoteRepositoryConfig
+   */
+  public function setRemoteRepositoryConfig(RemoteRepositoryConfig $remoteRepositoryConfig)
+  {
+    $this->remoteRepositoryConfig = $remoteRepositoryConfig;
+  }
+  /**
+   * @return RemoteRepositoryConfig
+   */
+  public function getRemoteRepositoryConfig()
+  {
+    return $this->remoteRepositoryConfig;
+  }
+  /**
+   * @param bool
+   */
+  public function setSatisfiesPzs($satisfiesPzs)
+  {
+    $this->satisfiesPzs = $satisfiesPzs;
+  }
+  /**
+   * @return bool
+   */
+  public function getSatisfiesPzs()
+  {
+    return $this->satisfiesPzs;
   }
   /**
    * @param string
@@ -179,6 +301,20 @@ class Repository extends \Google\Model
   public function getUpdateTime()
   {
     return $this->updateTime;
+  }
+  /**
+   * @param VirtualRepositoryConfig
+   */
+  public function setVirtualRepositoryConfig(VirtualRepositoryConfig $virtualRepositoryConfig)
+  {
+    $this->virtualRepositoryConfig = $virtualRepositoryConfig;
+  }
+  /**
+   * @return VirtualRepositoryConfig
+   */
+  public function getVirtualRepositoryConfig()
+  {
+    return $this->virtualRepositoryConfig;
   }
 }
 

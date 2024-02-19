@@ -19,11 +19,29 @@ namespace Google\Service\Dialogflow;
 
 class GoogleCloudDialogflowCxV3MatchIntentRequest extends \Google\Model
 {
+  /**
+   * @var bool
+   */
+  public $persistParameterChanges;
   protected $queryInputType = GoogleCloudDialogflowCxV3QueryInput::class;
   protected $queryInputDataType = '';
   protected $queryParamsType = GoogleCloudDialogflowCxV3QueryParameters::class;
   protected $queryParamsDataType = '';
 
+  /**
+   * @param bool
+   */
+  public function setPersistParameterChanges($persistParameterChanges)
+  {
+    $this->persistParameterChanges = $persistParameterChanges;
+  }
+  /**
+   * @return bool
+   */
+  public function getPersistParameterChanges()
+  {
+    return $this->persistParameterChanges;
+  }
   /**
    * @param GoogleCloudDialogflowCxV3QueryInput
    */

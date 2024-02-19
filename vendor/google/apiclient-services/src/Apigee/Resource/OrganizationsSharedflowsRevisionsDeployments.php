@@ -24,7 +24,7 @@ use Google\Service\Apigee\GoogleCloudApigeeV1ListDeploymentsResponse;
  * Typical usage is:
  *  <code>
  *   $apigeeService = new Google\Service\Apigee(...);
- *   $deployments = $apigeeService->deployments;
+ *   $deployments = $apigeeService->organizations_sharedflows_revisions_deployments;
  *  </code>
  */
 class OrganizationsSharedflowsRevisionsDeployments extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class OrganizationsSharedflowsRevisionsDeployments extends \Google\Service\Resou
    * `organizations/{org}/sharedflows/{sharedflow}/revisions/{rev}`.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1ListDeploymentsResponse
+   * @throws \Google\Service\Exception
    */
   public function listOrganizationsSharedflowsRevisionsDeployments($parent, $optParams = [])
   {

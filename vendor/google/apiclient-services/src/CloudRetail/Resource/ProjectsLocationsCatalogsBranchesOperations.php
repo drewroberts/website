@@ -24,7 +24,7 @@ use Google\Service\CloudRetail\GoogleLongrunningOperation;
  * Typical usage is:
  *  <code>
  *   $retailService = new Google\Service\CloudRetail(...);
- *   $operations = $retailService->operations;
+ *   $operations = $retailService->projects_locations_catalogs_branches_operations;
  *  </code>
  */
 class ProjectsLocationsCatalogsBranchesOperations extends \Google\Service\Resource
@@ -37,6 +37,7 @@ class ProjectsLocationsCatalogsBranchesOperations extends \Google\Service\Resour
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

@@ -26,7 +26,7 @@ use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1Assessmen
  * Typical usage is:
  *  <code>
  *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
- *   $assessments = $recaptchaenterpriseService->assessments;
+ *   $assessments = $recaptchaenterpriseService->projects_assessments;
  *  </code>
  */
 class ProjectsAssessments extends \Google\Service\Resource
@@ -37,10 +37,11 @@ class ProjectsAssessments extends \Google\Service\Resource
    * (assessments.annotate)
    *
    * @param string $name Required. The resource name of the Assessment, in the
-   * format "projects/{project}/assessments/{assessment}".
+   * format `projects/{project}/assessments/{assessment}`.
    * @param GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentResponse
+   * @throws \Google\Service\Exception
    */
   public function annotate($name, GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest $postBody, $optParams = [])
   {
@@ -53,10 +54,11 @@ class ProjectsAssessments extends \Google\Service\Resource
    * (assessments.create)
    *
    * @param string $parent Required. The name of the project in which the
-   * assessment will be created, in the format "projects/{project}".
+   * assessment will be created, in the format `projects/{project}`.
    * @param GoogleCloudRecaptchaenterpriseV1Assessment $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRecaptchaenterpriseV1Assessment
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudRecaptchaenterpriseV1Assessment $postBody, $optParams = [])
   {

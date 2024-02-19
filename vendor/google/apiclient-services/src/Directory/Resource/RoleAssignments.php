@@ -36,6 +36,7 @@ class RoleAssignments extends \Google\Service\Resource
    * @param string $customer Immutable ID of the Google Workspace account.
    * @param string $roleAssignmentId Immutable ID of the role assignment.
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function delete($customer, $roleAssignmentId, $optParams = [])
   {
@@ -46,10 +47,17 @@ class RoleAssignments extends \Google\Service\Resource
   /**
    * Retrieves a role assignment. (roleAssignments.get)
    *
-   * @param string $customer Immutable ID of the Google Workspace account.
+   * @param string $customer The unique ID for the customer's Google Workspace
+   * account. In case of a multi-domain account, to fetch all groups for a
+   * customer, use this field instead of `domain`. You can also use the
+   * `my_customer` alias to represent your account's `customerId`. The
+   * `customerId` is also returned as part of the [Users](/admin-
+   * sdk/directory/v1/reference/users) resource. You must provide either the
+   * `customer` or the `domain` parameter.
    * @param string $roleAssignmentId Immutable ID of the role assignment.
    * @param array $optParams Optional parameters.
    * @return RoleAssignment
+   * @throws \Google\Service\Exception
    */
   public function get($customer, $roleAssignmentId, $optParams = [])
   {
@@ -64,6 +72,7 @@ class RoleAssignments extends \Google\Service\Resource
    * @param RoleAssignment $postBody
    * @param array $optParams Optional parameters.
    * @return RoleAssignment
+   * @throws \Google\Service\Exception
    */
   public function insert($customer, RoleAssignment $postBody, $optParams = [])
   {
@@ -75,17 +84,28 @@ class RoleAssignments extends \Google\Service\Resource
    * Retrieves a paginated list of all roleAssignments.
    * (roleAssignments.listRoleAssignments)
    *
-   * @param string $customer Immutable ID of the Google Workspace account.
+   * @param string $customer The unique ID for the customer's Google Workspace
+   * account. In case of a multi-domain account, to fetch all groups for a
+   * customer, use this field instead of `domain`. You can also use the
+   * `my_customer` alias to represent your account's `customerId`. The
+   * `customerId` is also returned as part of the [Users](/admin-
+   * sdk/directory/v1/reference/users) resource. You must provide either the
+   * `customer` or the `domain` parameter.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param bool includeIndirectRoleAssignments When set to `true`, fetches
+   * indirect role assignments (i.e. role assignment via a group) as well as
+   * direct ones. Defaults to `false`. You must specify `user_key` or the indirect
+   * role assignments will not be included.
    * @opt_param int maxResults Maximum number of results to return.
    * @opt_param string pageToken Token to specify the next page in the list.
    * @opt_param string roleId Immutable ID of a role. If included in the request,
    * returns only role assignments containing this role ID.
-   * @opt_param string userKey The user's primary email address, alias email
-   * address, or unique user ID. If included in the request, returns role
-   * assignments only for this user.
+   * @opt_param string userKey The primary email address, alias email address, or
+   * unique user or group ID. If included in the request, returns role assignments
+   * only for this user or group.
    * @return RoleAssignmentsModel
+   * @throws \Google\Service\Exception
    */
   public function listRoleAssignments($customer, $optParams = [])
   {

@@ -22,11 +22,19 @@ class PostgreSqlConnectionProfile extends \Google\Model
   /**
    * @var string
    */
+  public $alloydbClusterId;
+  /**
+   * @var string
+   */
   public $cloudSqlId;
   /**
    * @var string
    */
   public $host;
+  /**
+   * @var string
+   */
+  public $networkArchitecture;
   /**
    * @var string
    */
@@ -39,13 +47,31 @@ class PostgreSqlConnectionProfile extends \Google\Model
    * @var int
    */
   public $port;
+  protected $privateServiceConnectConnectivityType = PrivateServiceConnectConnectivity::class;
+  protected $privateServiceConnectConnectivityDataType = '';
   protected $sslType = SslConfig::class;
   protected $sslDataType = '';
+  protected $staticIpConnectivityType = StaticIpConnectivity::class;
+  protected $staticIpConnectivityDataType = '';
   /**
    * @var string
    */
   public $username;
 
+  /**
+   * @param string
+   */
+  public function setAlloydbClusterId($alloydbClusterId)
+  {
+    $this->alloydbClusterId = $alloydbClusterId;
+  }
+  /**
+   * @return string
+   */
+  public function getAlloydbClusterId()
+  {
+    return $this->alloydbClusterId;
+  }
   /**
    * @param string
    */
@@ -73,6 +99,20 @@ class PostgreSqlConnectionProfile extends \Google\Model
   public function getHost()
   {
     return $this->host;
+  }
+  /**
+   * @param string
+   */
+  public function setNetworkArchitecture($networkArchitecture)
+  {
+    $this->networkArchitecture = $networkArchitecture;
+  }
+  /**
+   * @return string
+   */
+  public function getNetworkArchitecture()
+  {
+    return $this->networkArchitecture;
   }
   /**
    * @param string
@@ -117,6 +157,20 @@ class PostgreSqlConnectionProfile extends \Google\Model
     return $this->port;
   }
   /**
+   * @param PrivateServiceConnectConnectivity
+   */
+  public function setPrivateServiceConnectConnectivity(PrivateServiceConnectConnectivity $privateServiceConnectConnectivity)
+  {
+    $this->privateServiceConnectConnectivity = $privateServiceConnectConnectivity;
+  }
+  /**
+   * @return PrivateServiceConnectConnectivity
+   */
+  public function getPrivateServiceConnectConnectivity()
+  {
+    return $this->privateServiceConnectConnectivity;
+  }
+  /**
    * @param SslConfig
    */
   public function setSsl(SslConfig $ssl)
@@ -129,6 +183,20 @@ class PostgreSqlConnectionProfile extends \Google\Model
   public function getSsl()
   {
     return $this->ssl;
+  }
+  /**
+   * @param StaticIpConnectivity
+   */
+  public function setStaticIpConnectivity(StaticIpConnectivity $staticIpConnectivity)
+  {
+    $this->staticIpConnectivity = $staticIpConnectivity;
+  }
+  /**
+   * @return StaticIpConnectivity
+   */
+  public function getStaticIpConnectivity()
+  {
+    return $this->staticIpConnectivity;
   }
   /**
    * @param string

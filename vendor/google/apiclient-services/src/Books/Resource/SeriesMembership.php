@@ -24,7 +24,7 @@ use Google\Service\Books\Seriesmembership as SeriesmembershipModel;
  * Typical usage is:
  *  <code>
  *   $booksService = new Google\Service\Books(...);
- *   $membership = $booksService->membership;
+ *   $membership = $booksService->series_membership;
  *  </code>
  */
 class SeriesMembership extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class SeriesMembership extends \Google\Service\Resource
    * @opt_param string page_token The value of the nextToken from the previous
    * page.
    * @return SeriesmembershipModel
+   * @throws \Google\Service\Exception
    */
   public function get($seriesId, $optParams = [])
   {

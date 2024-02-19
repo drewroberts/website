@@ -11,3 +11,6 @@ phpseclib ongoing development is made possible by [Tidelift](https://tidelift.co
 - [Setasign](https://www.setasign.com/)
 - [Charles Severance](https://github.com/csev)
 - [Rachel Fish](https://github.com/itsrachelfish)
+- Tharyrok
+- [cjhaas](https://github.com/cjhaas)
+- [istiak-tridip](https://github.com/istiak-tridip)

@@ -24,7 +24,7 @@ use Google\Service\Dataflow\ListJobMessagesResponse;
  * Typical usage is:
  *  <code>
  *   $dataflowService = new Google\Service\Dataflow(...);
- *   $messages = $dataflowService->messages;
+ *   $messages = $dataflowService->projects_locations_jobs_messages;
  *  </code>
  */
 class ProjectsLocationsJobsMessages extends \Google\Service\Resource
@@ -58,6 +58,7 @@ class ProjectsLocationsJobsMessages extends \Google\Service\Resource
    * timestamps >= start_time. The default is the job creation time (i.e.
    * beginning of messages).
    * @return ListJobMessagesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsJobsMessages($projectId, $location, $jobId, $optParams = [])
   {

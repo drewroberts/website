@@ -20,6 +20,8 @@ namespace Google\Service\Dataproc;
 class OrderedJob extends \Google\Collection
 {
   protected $collection_key = 'prerequisiteStepIds';
+  protected $flinkJobType = FlinkJob::class;
+  protected $flinkJobDataType = '';
   protected $hadoopJobType = HadoopJob::class;
   protected $hadoopJobDataType = '';
   protected $hiveJobType = HiveJob::class;
@@ -50,7 +52,23 @@ class OrderedJob extends \Google\Collection
    * @var string
    */
   public $stepId;
+  protected $trinoJobType = TrinoJob::class;
+  protected $trinoJobDataType = '';
 
+  /**
+   * @param FlinkJob
+   */
+  public function setFlinkJob(FlinkJob $flinkJob)
+  {
+    $this->flinkJob = $flinkJob;
+  }
+  /**
+   * @return FlinkJob
+   */
+  public function getFlinkJob()
+  {
+    return $this->flinkJob;
+  }
   /**
    * @param HadoopJob
    */
@@ -218,6 +236,20 @@ class OrderedJob extends \Google\Collection
   public function getStepId()
   {
     return $this->stepId;
+  }
+  /**
+   * @param TrinoJob
+   */
+  public function setTrinoJob(TrinoJob $trinoJob)
+  {
+    $this->trinoJob = $trinoJob;
+  }
+  /**
+   * @return TrinoJob
+   */
+  public function getTrinoJob()
+  {
+    return $this->trinoJob;
   }
 }
 

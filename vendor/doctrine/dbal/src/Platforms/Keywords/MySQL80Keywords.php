@@ -12,7 +12,7 @@ use function array_merge;
 class MySQL80Keywords extends MySQL57Keywords
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated
      */
@@ -21,14 +21,14 @@ class MySQL80Keywords extends MySQL57Keywords
         Deprecation::triggerIfCalledFromOutside(
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5433',
-            'MySQL80Keywords::getName() is deprecated.'
+            'MySQL80Keywords::getName() is deprecated.',
         );
 
         return 'MySQL80';
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @link https://dev.mysql.com/doc/refman/8.0/en/keywords.html
      */

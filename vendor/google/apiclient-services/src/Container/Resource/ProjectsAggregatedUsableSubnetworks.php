@@ -24,7 +24,7 @@ use Google\Service\Container\ListUsableSubnetworksResponse;
  * Typical usage is:
  *  <code>
  *   $containerService = new Google\Service\Container(...);
- *   $usableSubnetworks = $containerService->usableSubnetworks;
+ *   $usableSubnetworks = $containerService->projects_aggregated_usableSubnetworks;
  *  </code>
  */
 class ProjectsAggregatedUsableSubnetworks extends \Google\Service\Resource
@@ -50,6 +50,7 @@ class ProjectsAggregatedUsableSubnetworks extends \Google\Service\Resource
    * nextPageToken returned by previous list requests to get the next page of
    * results.
    * @return ListUsableSubnetworksResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsAggregatedUsableSubnetworks($parent, $optParams = [])
   {

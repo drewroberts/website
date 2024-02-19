@@ -24,7 +24,7 @@ use Google\Service\Vision\Operation;
  * Typical usage is:
  *  <code>
  *   $visionService = new Google\Service\Vision(...);
- *   $operations = $visionService->operations;
+ *   $operations = $visionService->locations_operations;
  *  </code>
  */
 class LocationsOperations extends \Google\Service\Resource
@@ -37,6 +37,7 @@ class LocationsOperations extends \Google\Service\Resource
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

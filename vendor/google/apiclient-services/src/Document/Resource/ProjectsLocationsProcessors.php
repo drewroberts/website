@@ -32,7 +32,7 @@ use Google\Service\Document\GoogleLongrunningOperation;
  * Typical usage is:
  *  <code>
  *   $documentaiService = new Google\Service\Document(...);
- *   $processors = $documentaiService->processors;
+ *   $processors = $documentaiService->projects_locations_processors;
  *  </code>
  */
 class ProjectsLocationsProcessors extends \Google\Service\Resource
@@ -49,6 +49,7 @@ class ProjectsLocationsProcessors extends \Google\Service\Resource
    * @param GoogleCloudDocumentaiV1BatchProcessRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function batchProcess($name, GoogleCloudDocumentaiV1BatchProcessRequest $postBody, $optParams = [])
   {
@@ -57,15 +58,15 @@ class ProjectsLocationsProcessors extends \Google\Service\Resource
     return $this->call('batchProcess', [$params], GoogleLongrunningOperation::class);
   }
   /**
-   * Creates a processor from the type processor that the user chose. The
-   * processor will be at "ENABLED" state by default after its creation.
-   * (processors.create)
+   * Creates a processor from the ProcessorType provided. The processor will be at
+   * `ENABLED` state by default after its creation. (processors.create)
    *
    * @param string $parent Required. The parent (project and location) under which
    * to create the processor. Format: `projects/{project}/locations/{location}`
    * @param GoogleCloudDocumentaiV1Processor $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDocumentaiV1Processor
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudDocumentaiV1Processor $postBody, $optParams = [])
   {
@@ -81,6 +82,7 @@ class ProjectsLocationsProcessors extends \Google\Service\Resource
    * @param string $name Required. The processor resource name to be deleted.
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -95,6 +97,7 @@ class ProjectsLocationsProcessors extends \Google\Service\Resource
    * @param GoogleCloudDocumentaiV1DisableProcessorRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function disable($name, GoogleCloudDocumentaiV1DisableProcessorRequest $postBody, $optParams = [])
   {
@@ -109,6 +112,7 @@ class ProjectsLocationsProcessors extends \Google\Service\Resource
    * @param GoogleCloudDocumentaiV1EnableProcessorRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function enable($name, GoogleCloudDocumentaiV1EnableProcessorRequest $postBody, $optParams = [])
   {
@@ -122,6 +126,7 @@ class ProjectsLocationsProcessors extends \Google\Service\Resource
    * @param string $name Required. The processor resource name.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDocumentaiV1Processor
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -139,11 +144,12 @@ class ProjectsLocationsProcessors extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize The maximum number of processors to return. If
-   * unspecified, at most 50 processors will be returned. The maximum value is
-   * 100; values above 100 will be coerced to 100.
+   * unspecified, at most `50` processors will be returned. The maximum value is
+   * `100`. Values above `100` will be coerced to `100`.
    * @opt_param string pageToken We will return the processors sorted by creation
    * time. The page token will point to the next processor.
    * @return GoogleCloudDocumentaiV1ListProcessorsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsProcessors($parent, $optParams = [])
   {
@@ -163,6 +169,7 @@ class ProjectsLocationsProcessors extends \Google\Service\Resource
    * @param GoogleCloudDocumentaiV1ProcessRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDocumentaiV1ProcessResponse
+   * @throws \Google\Service\Exception
    */
   public function process($name, GoogleCloudDocumentaiV1ProcessRequest $postBody, $optParams = [])
   {
@@ -180,6 +187,7 @@ class ProjectsLocationsProcessors extends \Google\Service\Resource
    * @param GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function setDefaultProcessorVersion($processor, GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest $postBody, $optParams = [])
   {

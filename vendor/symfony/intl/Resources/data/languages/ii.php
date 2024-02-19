@@ -13,9 +13,5 @@ return [
         'ru' => 'ꊉꇩꉙ',
         'zh' => 'ꍏꇩꉙ',
     ],
-    'LocalizedNames' => [
-        'pt_BR' => 'ꀠꑟꁍꄨꑸꉙ',
-        'zh_Hans' => 'ꈝꐯꍏꇩꉙ',
-        'zh_Hant' => 'ꀎꋏꍏꇩꉙ',
-    ],
+    'LocalizedNames' => [],
 ];

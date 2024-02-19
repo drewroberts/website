@@ -24,7 +24,7 @@ use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListContinuousTestResults
  * Typical usage is:
  *  <code>
  *   $dialogflowService = new Google\Service\Dialogflow(...);
- *   $continuousTestResults = $dialogflowService->continuousTestResults;
+ *   $continuousTestResults = $dialogflowService->projects_locations_agents_environments_continuousTestResults;
  *  </code>
  */
 class ProjectsLocationsAgentsEnvironmentsContinuousTestResults extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class ProjectsLocationsAgentsEnvironmentsContinuousTestResults extends \Google\S
    * @opt_param string pageToken The next_page_token value returned from a
    * previous list request.
    * @return GoogleCloudDialogflowCxV3ListContinuousTestResultsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsAgentsEnvironmentsContinuousTestResults($parent, $optParams = [])
   {

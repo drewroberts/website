@@ -31,7 +31,7 @@ use Google\Service\GKEHub\TestIamPermissionsResponse;
  * Typical usage is:
  *  <code>
  *   $gkehubService = new Google\Service\GKEHub(...);
- *   $memberships = $gkehubService->memberships;
+ *   $memberships = $gkehubService->projects_locations_memberships;
  *  </code>
  */
 class ProjectsLocationsMemberships extends \Google\Service\Resource
@@ -39,8 +39,8 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
   /**
    * Creates a new Membership. **This is currently only supported for GKE clusters
    * on Google Cloud**. To register other clusters, follow the instructions at
-   * https://cloud.google.com/anthos/multicluster-
-   * management/connect/registering-a-cluster. (memberships.create)
+   * https://cloud.google.com/anthos/multicluster-management/connect/registering-
+   * a-cluster. (memberships.create)
    *
    * @param string $parent Required. The parent (project and location) where the
    * Memberships will be created. Specified in the format `projects/locations`.
@@ -65,6 +65,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported
    * (00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, Membership $postBody, $optParams = [])
   {
@@ -82,6 +83,9 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * `projects/locations/memberships`.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param bool force Optional. If set to true, any subresource from this
+   * Membership will also be deleted. Otherwise, the request will only work if the
+   * Membership has no subresource.
    * @opt_param string requestId Optional. A request ID to identify requests.
    * Specify a unique request ID so that if you must retry your request, the
    * server will know to ignore the request if it has already been completed. The
@@ -94,6 +98,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * valid UUID with the exception that zero UUID is not supported
    * (00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -129,6 +134,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * @opt_param string version Optional. The Connect agent version to use.
    * Defaults to the most current version.
    * @return GenerateConnectManifestResponse
+   * @throws \Google\Service\Exception
    */
   public function generateConnectManifest($name, $optParams = [])
   {
@@ -143,6 +149,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * `projects/locations/memberships`.
    * @param array $optParams Optional parameters.
    * @return Membership
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -173,6 +180,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * documentation](https://cloud.google.com/iam/help/conditions/resource-
    * policies).
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, $optParams = [])
   {
@@ -186,6 +194,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    *
    * @param string $parent Required. The parent (project and location) where the
    * Memberships will be listed. Specified in the format `projects/locations`.
+   * `projects/locations/-` list memberships in all the regions.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string filter Optional. Lists Memberships that match the filter
@@ -204,6 +213,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * `ListMemberships` which specifies the position in the list from where to
    * continue listing the resources.
    * @return ListMembershipsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsMemberships($parent, $optParams = [])
   {
@@ -232,6 +242,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * (00000000-0000-0000-0000-000000000000).
    * @opt_param string updateMask Required. Mask of fields to update.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, Membership $postBody, $optParams = [])
   {
@@ -251,6 +262,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * @param SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -273,6 +285,7 @@ class ProjectsLocationsMemberships extends \Google\Service\Resource
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
   {

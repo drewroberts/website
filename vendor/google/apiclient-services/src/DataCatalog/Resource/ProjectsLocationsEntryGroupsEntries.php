@@ -22,6 +22,7 @@ use Google\Service\DataCatalog\GetIamPolicyRequest;
 use Google\Service\DataCatalog\GoogleCloudDatacatalogV1Contacts;
 use Google\Service\DataCatalog\GoogleCloudDatacatalogV1Entry;
 use Google\Service\DataCatalog\GoogleCloudDatacatalogV1EntryOverview;
+use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportEntriesRequest;
 use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListEntriesResponse;
 use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryContactsRequest;
 use Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryOverviewRequest;
@@ -29,6 +30,7 @@ use Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryRequest;
 use Google\Service\DataCatalog\GoogleCloudDatacatalogV1StarEntryResponse;
 use Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryRequest;
 use Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryResponse;
+use Google\Service\DataCatalog\Operation;
 use Google\Service\DataCatalog\Policy;
 use Google\Service\DataCatalog\TestIamPermissionsRequest;
 use Google\Service\DataCatalog\TestIamPermissionsResponse;
@@ -38,7 +40,7 @@ use Google\Service\DataCatalog\TestIamPermissionsResponse;
  * Typical usage is:
  *  <code>
  *   $datacatalogService = new Google\Service\DataCatalog(...);
- *   $entries = $datacatalogService->entries;
+ *   $entries = $datacatalogService->projects_locations_entryGroups_entries;
  *  </code>
  */
 class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
@@ -63,6 +65,7 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * must contain only letters (a-z, A-Z), numbers (0-9), and underscores (_). The
    * maximum size is 64 bytes when encoded in UTF-8.
    * @return GoogleCloudDatacatalogV1Entry
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudDatacatalogV1Entry $postBody, $optParams = [])
   {
@@ -74,12 +77,13 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * Deletes an existing entry. You can delete only the entries created by the
    * CreateEntry method. You must enable the Data Catalog API in the project
    * identified by the `name` parameter. For more information, see [Data Catalog
-   * resource project](https://cloud.google.com/data-catalog/docs/concepts
-   * /resource-project). (entries.delete)
+   * resource project](https://cloud.google.com/data-
+   * catalog/docs/concepts/resource-project). (entries.delete)
    *
    * @param string $name Required. The name of the entry to delete.
    * @param array $optParams Optional parameters.
    * @return DatacatalogEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -93,6 +97,7 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * @param string $name Required. The name of the entry to get.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDatacatalogV1Entry
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -118,12 +123,36 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * @param GetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
   {
     $params = ['resource' => $resource, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);
     return $this->call('getIamPolicy', [$params], Policy::class);
+  }
+  /**
+   * Imports entries from a source, such as data previously dumped into a Cloud
+   * Storage bucket, into Data Catalog. Import of entries is a sync operation that
+   * reconciles the state of the third-party system with the Data Catalog.
+   * `ImportEntries` accepts source data snapshots of a third-party system.
+   * Snapshot should be delivered as a .wire or base65-encoded .txt file
+   * containing a sequence of Protocol Buffer messages of DumpItem type.
+   * `ImportEntries` returns a long-running operation resource that can be queried
+   * with Operations.GetOperation to return ImportEntriesMetadata and an
+   * ImportEntriesResponse message. (entries.import)
+   *
+   * @param string $parent Required. Target entry group for ingested entries.
+   * @param GoogleCloudDatacatalogV1ImportEntriesRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Operation
+   * @throws \Google\Service\Exception
+   */
+  public function import($parent, GoogleCloudDatacatalogV1ImportEntriesRequest $postBody, $optParams = [])
+  {
+    $params = ['parent' => $parent, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('import', [$params], Operation::class);
   }
   /**
    * Lists entries. Note: Currently, this method can list only custom entries. To
@@ -144,6 +173,7 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * with only the `name` field, set `read_mask` to only one path with the `name`
    * value.
    * @return GoogleCloudDatacatalogV1ListEntriesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsEntryGroupsEntries($parent, $optParams = [])
   {
@@ -160,6 +190,7 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * @param GoogleCloudDatacatalogV1ModifyEntryContactsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDatacatalogV1Contacts
+   * @throws \Google\Service\Exception
    */
   public function modifyEntryContacts($name, GoogleCloudDatacatalogV1ModifyEntryContactsRequest $postBody, $optParams = [])
   {
@@ -176,6 +207,7 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * @param GoogleCloudDatacatalogV1ModifyEntryOverviewRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDatacatalogV1EntryOverview
+   * @throws \Google\Service\Exception
    */
   public function modifyEntryOverview($name, GoogleCloudDatacatalogV1ModifyEntryOverviewRequest $postBody, $optParams = [])
   {
@@ -205,6 +237,7 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * `schema` * `display_name` * `description` * `user_specified_type` *
    * `user_specified_system` * `linked_resource` * `source_system_timestamps`
    * @return GoogleCloudDatacatalogV1Entry
+   * @throws \Google\Service\Exception
    */
   public function patch($name, GoogleCloudDatacatalogV1Entry $postBody, $optParams = [])
   {
@@ -220,6 +253,7 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * @param GoogleCloudDatacatalogV1StarEntryRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDatacatalogV1StarEntryResponse
+   * @throws \Google\Service\Exception
    */
   public function star($name, GoogleCloudDatacatalogV1StarEntryRequest $postBody, $optParams = [])
   {
@@ -243,6 +277,7 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
   {
@@ -259,6 +294,7 @@ class ProjectsLocationsEntryGroupsEntries extends \Google\Service\Resource
    * @param GoogleCloudDatacatalogV1UnstarEntryRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDatacatalogV1UnstarEntryResponse
+   * @throws \Google\Service\Exception
    */
   public function unstar($name, GoogleCloudDatacatalogV1UnstarEntryRequest $postBody, $optParams = [])
   {

@@ -24,7 +24,7 @@ use Google\Service\BigtableAdmin\ListHotTabletsResponse;
  * Typical usage is:
  *  <code>
  *   $bigtableadminService = new Google\Service\BigtableAdmin(...);
- *   $hotTablets = $bigtableadminService->hotTablets;
+ *   $hotTablets = $bigtableadminService->projects_instances_clusters_hotTablets;
  *  </code>
  */
 class ProjectsInstancesClustersHotTablets extends \Google\Service\Resource
@@ -57,6 +57,7 @@ class ProjectsInstancesClustersHotTablets extends \Google\Service\Resource
    * time is 48 hours. Start time and end time should have values between Now and
    * Now - 14 days.
    * @return ListHotTabletsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsInstancesClustersHotTablets($parent, $optParams = [])
   {

@@ -25,7 +25,7 @@ use Google\Service\ShoppingContent\ListAccountReturnCarrierResponse;
  * Typical usage is:
  *  <code>
  *   $contentService = new Google\Service\ShoppingContent(...);
- *   $returncarrier = $contentService->returncarrier;
+ *   $returncarrier = $contentService->accounts_returncarrier;
  *  </code>
  */
 class AccountsReturncarrier extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class AccountsReturncarrier extends \Google\Service\Resource
    * @param AccountReturnCarrier $postBody
    * @param array $optParams Optional parameters.
    * @return AccountReturnCarrier
+   * @throws \Google\Service\Exception
    */
   public function create($accountId, AccountReturnCarrier $postBody, $optParams = [])
   {
@@ -53,6 +54,7 @@ class AccountsReturncarrier extends \Google\Service\Resource
    * @param string $carrierAccountId Required. The Google-provided unique carrier
    * ID, used to update the resource.
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function delete($accountId, $carrierAccountId, $optParams = [])
   {
@@ -68,6 +70,7 @@ class AccountsReturncarrier extends \Google\Service\Resource
    * the Return Carrier is to be linked.
    * @param array $optParams Optional parameters.
    * @return ListAccountReturnCarrierResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsReturncarrier($accountId, $optParams = [])
   {
@@ -85,6 +88,7 @@ class AccountsReturncarrier extends \Google\Service\Resource
    * @param AccountReturnCarrier $postBody
    * @param array $optParams Optional parameters.
    * @return AccountReturnCarrier
+   * @throws \Google\Service\Exception
    */
   public function patch($accountId, $carrierAccountId, AccountReturnCarrier $postBody, $optParams = [])
   {

@@ -24,7 +24,7 @@ use Google\Service\BigQueryDataTransfer\ListTransferLogsResponse;
  * Typical usage is:
  *  <code>
  *   $bigquerydatatransferService = new Google\Service\BigQueryDataTransfer(...);
- *   $transferLogs = $bigquerydatatransferService->transferLogs;
+ *   $transferLogs = $bigquerydatatransferService->projects_locations_transferConfigs_runs_transferLogs;
  *  </code>
  */
 class ProjectsLocationsTransferConfigsRunsTransferLogs extends \Google\Service\Resource
@@ -48,6 +48,7 @@ class ProjectsLocationsTransferConfigsRunsTransferLogs extends \Google\Service\R
    * results, `ListTransferLogsResponse` outputs a `next_page` token, which can be
    * used as the `page_token` value to request the next page of list results.
    * @return ListTransferLogsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsTransferConfigsRunsTransferLogs($parent, $optParams = [])
   {

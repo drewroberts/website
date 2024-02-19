@@ -24,7 +24,7 @@ use Google\Service\PubsubLite\ListPartitionCursorsResponse;
  * Typical usage is:
  *  <code>
  *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $cursors = $pubsubliteService->cursors;
+ *   $cursors = $pubsubliteService->cursor_projects_locations_subscriptions_cursors;
  *  </code>
  */
 class CursorProjectsLocationsSubscriptionsCursors extends \Google\Service\Resource
@@ -46,6 +46,7 @@ class CursorProjectsLocationsSubscriptionsCursors extends \Google\Service\Resour
    * When paginating, all other parameters provided to `ListPartitionCursors` must
    * match the call that provided the page token.
    * @return ListPartitionCursorsResponse
+   * @throws \Google\Service\Exception
    */
   public function listCursorProjectsLocationsSubscriptionsCursors($parent, $optParams = [])
   {

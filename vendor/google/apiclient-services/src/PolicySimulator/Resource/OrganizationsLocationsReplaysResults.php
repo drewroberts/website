@@ -24,7 +24,7 @@ use Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ListReplayResults
  * Typical usage is:
  *  <code>
  *   $policysimulatorService = new Google\Service\PolicySimulator(...);
- *   $results = $policysimulatorService->results;
+ *   $results = $policysimulatorService->organizations_locations_replays_results;
  *  </code>
  */
 class OrganizationsLocationsReplaysResults extends \Google\Service\Resource
@@ -48,6 +48,7 @@ class OrganizationsLocationsReplaysResults extends \Google\Service\Resource
    * [Simulator.ListReplayResults[] must match the call that provided the page
    * token.
    * @return GoogleCloudPolicysimulatorV1ListReplayResultsResponse
+   * @throws \Google\Service\Exception
    */
   public function listOrganizationsLocationsReplaysResults($parent, $optParams = [])
   {

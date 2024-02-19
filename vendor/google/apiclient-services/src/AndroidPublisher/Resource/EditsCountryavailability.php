@@ -24,7 +24,7 @@ use Google\Service\AndroidPublisher\TrackCountryAvailability;
  * Typical usage is:
  *  <code>
  *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $countryavailability = $androidpublisherService->countryavailability;
+ *   $countryavailability = $androidpublisherService->edits_countryavailability;
  *  </code>
  */
 class EditsCountryavailability extends \Google\Service\Resource
@@ -37,6 +37,7 @@ class EditsCountryavailability extends \Google\Service\Resource
    * @param string $track The track to read from.
    * @param array $optParams Optional parameters.
    * @return TrackCountryAvailability
+   * @throws \Google\Service\Exception
    */
   public function get($packageName, $editId, $track, $optParams = [])
   {

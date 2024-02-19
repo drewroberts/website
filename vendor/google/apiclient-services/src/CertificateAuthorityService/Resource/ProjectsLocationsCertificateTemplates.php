@@ -30,7 +30,7 @@ use Google\Service\CertificateAuthorityService\TestIamPermissionsResponse;
  * Typical usage is:
  *  <code>
  *   $privatecaService = new Google\Service\CertificateAuthorityService(...);
- *   $certificateTemplates = $privatecaService->certificateTemplates;
+ *   $certificateTemplates = $privatecaService->projects_locations_certificateTemplates;
  *  </code>
  */
 class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
@@ -50,7 +50,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * unique request ID so that if you must retry your request, the server will
    * know to ignore the request if it has already been completed. The server will
    * guarantee that for at least 60 minutes since the first request. For example,
-   * consider a situation where you make an initial request and t he request times
+   * consider a situation where you make an initial request and the request times
    * out. If you make the request again with the same request ID, the server can
    * check if original operation with the same request ID was received, and if so,
    * will ignore the second request. This prevents clients from accidentally
@@ -58,6 +58,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * exception that zero UUID is not supported
    * (00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, CertificateTemplate $postBody, $optParams = [])
   {
@@ -77,7 +78,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * unique request ID so that if you must retry your request, the server will
    * know to ignore the request if it has already been completed. The server will
    * guarantee that for at least 60 minutes since the first request. For example,
-   * consider a situation where you make an initial request and t he request times
+   * consider a situation where you make an initial request and the request times
    * out. If you make the request again with the same request ID, the server can
    * check if original operation with the same request ID was received, and if so,
    * will ignore the second request. This prevents clients from accidentally
@@ -85,6 +86,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * exception that zero UUID is not supported
    * (00000000-0000-0000-0000-000000000000).
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -98,6 +100,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * @param string $name Required. The name of the CertificateTemplate to get.
    * @param array $optParams Optional parameters.
    * @return CertificateTemplate
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -129,6 +132,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * documentation](https://cloud.google.com/iam/help/conditions/resource-
    * policies).
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, $optParams = [])
   {
@@ -155,6 +159,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * @opt_param string pageToken Optional. Pagination token, returned earlier via
    * ListCertificateTemplatesResponse.next_page_token.
    * @return ListCertificateTemplatesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsCertificateTemplates($parent, $optParams = [])
   {
@@ -174,7 +179,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * unique request ID so that if you must retry your request, the server will
    * know to ignore the request if it has already been completed. The server will
    * guarantee that for at least 60 minutes since the first request. For example,
-   * consider a situation where you make an initial request and t he request times
+   * consider a situation where you make an initial request and the request times
    * out. If you make the request again with the same request ID, the server can
    * check if original operation with the same request ID was received, and if so,
    * will ignore the second request. This prevents clients from accidentally
@@ -184,6 +189,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * @opt_param string updateMask Required. A list of fields to be updated in this
    * request.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, CertificateTemplate $postBody, $optParams = [])
   {
@@ -203,6 +209,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * @param SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -225,6 +232,7 @@ class ProjectsLocationsCertificateTemplates extends \Google\Service\Resource
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
   {

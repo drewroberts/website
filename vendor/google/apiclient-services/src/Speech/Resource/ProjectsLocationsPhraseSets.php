@@ -27,7 +27,7 @@ use Google\Service\Speech\SpeechEmpty;
  * Typical usage is:
  *  <code>
  *   $speechService = new Google\Service\Speech(...);
- *   $phraseSets = $speechService->phraseSets;
+ *   $phraseSets = $speechService->projects_locations_phraseSets;
  *  </code>
  */
 class ProjectsLocationsPhraseSets extends \Google\Service\Resource
@@ -38,15 +38,16 @@ class ProjectsLocationsPhraseSets extends \Google\Service\Resource
    * model when you send a call that includes the PhraseSet. (phraseSets.create)
    *
    * @param string $parent Required. The parent resource where this phrase set
-   * will be created. Format: `projects/{project}/locations/{location}/phraseSets`
-   * Speech-to-Text supports three locations: `global`, `us` (US North America),
-   * and `eu` (Europe). If you are calling the `speech.googleapis.com` endpoint,
-   * use the `global` location. To specify a region, use a [regional
+   * will be created. Format: `projects/{project}/locations/{location}` Speech-to-
+   * Text supports three locations: `global`, `us` (US North America), and `eu`
+   * (Europe). If you are calling the `speech.googleapis.com` endpoint, use the
+   * `global` location. To specify a region, use a [regional
    * endpoint](https://cloud.google.com/speech-to-text/docs/endpoints) with
    * matching `us` or `eu` location value.
    * @param CreatePhraseSetRequest $postBody
    * @param array $optParams Optional parameters.
    * @return PhraseSet
+   * @throws \Google\Service\Exception
    */
   public function create($parent, CreatePhraseSetRequest $postBody, $optParams = [])
   {
@@ -61,6 +62,7 @@ class ProjectsLocationsPhraseSets extends \Google\Service\Resource
    * `projects/{project}/locations/{location}/phraseSets/{phrase_set}`
    * @param array $optParams Optional parameters.
    * @return SpeechEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -80,6 +82,7 @@ class ProjectsLocationsPhraseSets extends \Google\Service\Resource
    * matching `us` or `eu` location value.
    * @param array $optParams Optional parameters.
    * @return PhraseSet
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -108,6 +111,7 @@ class ProjectsLocationsPhraseSets extends \Google\Service\Resource
    * paginating, all other parameters provided to `ListPhraseSet` must match the
    * call that provided the page token.
    * @return ListPhraseSetResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsPhraseSets($parent, $optParams = [])
   {
@@ -124,6 +128,7 @@ class ProjectsLocationsPhraseSets extends \Google\Service\Resource
    *
    * @opt_param string updateMask The list of fields to be updated.
    * @return PhraseSet
+   * @throws \Google\Service\Exception
    */
   public function patch($name, PhraseSet $postBody, $optParams = [])
   {

@@ -26,7 +26,7 @@ use Google\Service\CloudFilestore\Operation;
  * Typical usage is:
  *  <code>
  *   $fileService = new Google\Service\CloudFilestore(...);
- *   $backups = $fileService->backups;
+ *   $backups = $fileService->projects_locations_backups;
  *  </code>
  */
 class ProjectsLocationsBackups extends \Google\Service\Resource
@@ -36,7 +36,7 @@ class ProjectsLocationsBackups extends \Google\Service\Resource
    *
    * @param string $parent Required. The backup's project and location, in the
    * format `projects/{project_number}/locations/{location}`. In Filestore, backup
-   * locations map to GCP regions, for example **us-west1**.
+   * locations map to Google Cloud regions, for example **us-west1**.
    * @param Backup $postBody
    * @param array $optParams Optional parameters.
    *
@@ -46,6 +46,7 @@ class ProjectsLocationsBackups extends \Google\Service\Resource
    * numbers, or hyphens, and cannot end with a hyphen. Values that do not match
    * this pattern will trigger an INVALID_ARGUMENT error.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, Backup $postBody, $optParams = [])
   {
@@ -60,6 +61,7 @@ class ProjectsLocationsBackups extends \Google\Service\Resource
    * `projects/{project_number}/locations/{location}/backups/{backup_id}`
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -74,6 +76,7 @@ class ProjectsLocationsBackups extends \Google\Service\Resource
    * `projects/{project_number}/locations/{location}/backups/{backup_id}`.
    * @param array $optParams Optional parameters.
    * @return Backup
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -88,8 +91,8 @@ class ProjectsLocationsBackups extends \Google\Service\Resource
    * @param string $parent Required. The project and location for which to
    * retrieve backup information, in the format
    * `projects/{project_number}/locations/{location}`. In Filestore, backup
-   * locations map to GCP regions, for example **us-west1**. To retrieve backup
-   * information for all locations, use "-" for the `{location}` value.
+   * locations map to Google Cloud regions, for example **us-west1**. To retrieve
+   * backup information for all locations, use "-" for the `{location}` value.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string filter List filter.
@@ -99,6 +102,7 @@ class ProjectsLocationsBackups extends \Google\Service\Resource
    * @opt_param string pageToken The next_page_token value to use if there are
    * additional results to retrieve for this list request.
    * @return ListBackupsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsBackups($parent, $optParams = [])
   {
@@ -118,6 +122,7 @@ class ProjectsLocationsBackups extends \Google\Service\Resource
    * @opt_param string updateMask Required. Mask of fields to update. At least one
    * path must be supplied in this field.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, Backup $postBody, $optParams = [])
   {

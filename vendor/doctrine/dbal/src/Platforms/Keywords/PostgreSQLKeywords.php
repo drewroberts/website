@@ -10,7 +10,7 @@ use Doctrine\Deprecations\Deprecation;
 class PostgreSQLKeywords extends KeywordList
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated
      */
@@ -19,14 +19,14 @@ class PostgreSQLKeywords extends KeywordList
         Deprecation::triggerIfCalledFromOutside(
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5433',
-            'PostgreSQLKeywords::getName() is deprecated.'
+            'PostgreSQLKeywords::getName() is deprecated.',
         );
 
         return 'PostgreSQL';
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     protected function getKeywords()
     {

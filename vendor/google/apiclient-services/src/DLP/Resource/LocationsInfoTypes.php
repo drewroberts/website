@@ -24,7 +24,7 @@ use Google\Service\DLP\GooglePrivacyDlpV2ListInfoTypesResponse;
  * Typical usage is:
  *  <code>
  *   $dlpService = new Google\Service\DLP(...);
- *   $infoTypes = $dlpService->infoTypes;
+ *   $infoTypes = $dlpService->locations_infoTypes;
  *  </code>
  */
 class LocationsInfoTypes extends \Google\Service\Resource
@@ -45,6 +45,7 @@ class LocationsInfoTypes extends \Google\Service\Resource
    * strings will be returned.
    * @opt_param string locationId Deprecated. This field has no effect.
    * @return GooglePrivacyDlpV2ListInfoTypesResponse
+   * @throws \Google\Service\Exception
    */
   public function listLocationsInfoTypes($parent, $optParams = [])
   {

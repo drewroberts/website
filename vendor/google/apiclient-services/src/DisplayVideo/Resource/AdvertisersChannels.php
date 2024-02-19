@@ -25,7 +25,7 @@ use Google\Service\DisplayVideo\ListChannelsResponse;
  * Typical usage is:
  *  <code>
  *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $channels = $displayvideoService->channels;
+ *   $channels = $displayvideoService->advertisers_channels;
  *  </code>
  */
 class AdvertisersChannels extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class AdvertisersChannels extends \Google\Service\Resource
    * @opt_param string partnerId The ID of the partner that owns the created
    * channel.
    * @return Channel
+   * @throws \Google\Service\Exception
    */
   public function create($advertiserId, Channel $postBody, $optParams = [])
   {
@@ -60,6 +61,7 @@ class AdvertisersChannels extends \Google\Service\Resource
    * @opt_param string partnerId The ID of the partner that owns the fetched
    * channel.
    * @return Channel
+   * @throws \Google\Service\Exception
    */
   public function get($advertiserId, $channelId, $optParams = [])
   {
@@ -75,17 +77,18 @@ class AdvertisersChannels extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string filter Allows filtering by channel fields. Supported
-   * syntax: * Filter expressions for channel currently can only contain at most
-   * one * restriction. * A restriction has the form of `{field} {operator}
-   * {value}`. * The operator must be `CONTAINS (:)`. * Supported fields: -
-   * `displayName` Examples: * All channels for which the display name contains
-   * "google": `displayName : "google"`. The length of this field should be no
-   * more than 500 characters.
+   * syntax: * Filter expressions for channel can only contain at most one
+   * restriction. * A restriction has the form of `{field} {operator} {value}`. *
+   * All fields must use the `HAS (:)` operator. Supported fields: * `displayName`
+   * Examples: * All channels for which the display name contains "google":
+   * `displayName : "google"`. The length of this field should be no more than 500
+   * characters. Reference our [filter `LIST` requests](/display-
+   * video/api/guides/how-tos/filters) guide for more information.
    * @opt_param string orderBy Field by which to sort the list. Acceptable values
    * are: * `displayName` (default) * `channelId` The default sorting order is
    * ascending. To specify descending order for a field, a suffix " desc" should
    * be added to the field name. Example: `displayName desc`.
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
    * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
    * if an invalid value is specified.
    * @opt_param string pageToken A token identifying a page of results the server
@@ -94,6 +97,7 @@ class AdvertisersChannels extends \Google\Service\Resource
    * of results will be returned.
    * @opt_param string partnerId The ID of the partner that owns the channels.
    * @return ListChannelsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAdvertisersChannels($advertiserId, $optParams = [])
   {
@@ -117,6 +121,7 @@ class AdvertisersChannels extends \Google\Service\Resource
    * @opt_param string updateMask Required. The mask to control which fields to
    * update.
    * @return Channel
+   * @throws \Google\Service\Exception
    */
   public function patch($advertiserId, $channelId, Channel $postBody, $optParams = [])
   {

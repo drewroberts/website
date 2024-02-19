@@ -22,6 +22,10 @@ class App extends \Google\Model
   /**
    * @var string
    */
+  public $appApprovalState;
+  /**
+   * @var string
+   */
   public $appId;
   protected $linkedAppInfoType = AppLinkedAppInfo::class;
   protected $linkedAppInfoDataType = '';
@@ -36,6 +40,20 @@ class App extends \Google\Model
    */
   public $platform;
 
+  /**
+   * @param string
+   */
+  public function setAppApprovalState($appApprovalState)
+  {
+    $this->appApprovalState = $appApprovalState;
+  }
+  /**
+   * @return string
+   */
+  public function getAppApprovalState()
+  {
+    return $this->appApprovalState;
+  }
   /**
    * @param string
    */

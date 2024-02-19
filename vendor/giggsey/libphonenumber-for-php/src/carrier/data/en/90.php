@@ -13,7 +13,11 @@
 return array (
   9050 => 'Turk Telekom',
   90510210 => 'Pasifik Telekom',
+  90510220 => 'Netgsm',
+  90510221 => 'Netgsm',
   90510222 => 'Netgsm',
+  90510223 => 'Netgsm',
+  90510227 => 'Netgsm',
   90510232 => 'Foniv Telecommunications Services',
   90510244 => 'Nida Telekomunikasyon',
   90510255 => 'TTM',
@@ -39,5 +43,6 @@ return array (
   9054287 => 'KKTC Telsim',
   9054288 => 'KKTC Telsim',
   9055 => 'Turk Telekom',
-  9056 => 'Turkcell',
+  905610 => 'Selam Mobile',
+  905616 => 'Turkcell',
 );

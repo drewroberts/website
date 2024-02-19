@@ -40,6 +40,7 @@ class Members extends \Google\Service\Resource
    * group member can be a user or another group. The value can be the member's
    * (group or user) primary email address, alias, or unique ID.
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function delete($groupKey, $memberKey, $optParams = [])
   {
@@ -57,6 +58,7 @@ class Members extends \Google\Service\Resource
    * (group or user) primary email address, alias, or unique ID.
    * @param array $optParams Optional parameters.
    * @return Member
+   * @throws \Google\Service\Exception
    */
   public function get($groupKey, $memberKey, $optParams = [])
   {
@@ -66,7 +68,12 @@ class Members extends \Google\Service\Resource
   }
   /**
    * Checks whether the given user is a member of the group. Membership can be
-   * direct or nested. (members.hasMember)
+   * direct or nested, but if nested, the `memberKey` and `groupKey` must be
+   * entities in the same domain or an `Invalid input` error is returned. To check
+   * for nested memberships that include entities outside of the group's domain,
+   * use the [`checkTransitiveMembership()`](https://cloud.google.com/identity/doc
+   * s/reference/rest/v1/groups.memberships/checkTransitiveMembership) method in
+   * the Cloud Identity Groups API. (members.hasMember)
    *
    * @param string $groupKey Identifies the group in the API request. The value
    * can be the group's email address, group alias, or the unique group ID.
@@ -74,6 +81,7 @@ class Members extends \Google\Service\Resource
    * value can be the user's primary email address, alias, or unique ID.
    * @param array $optParams Optional parameters.
    * @return MembersHasMember
+   * @throws \Google\Service\Exception
    */
   public function hasMember($groupKey, $memberKey, $optParams = [])
   {
@@ -89,6 +97,7 @@ class Members extends \Google\Service\Resource
    * @param Member $postBody
    * @param array $optParams Optional parameters.
    * @return Member
+   * @throws \Google\Service\Exception
    */
   public function insert($groupKey, Member $postBody, $optParams = [])
   {
@@ -97,7 +106,10 @@ class Members extends \Google\Service\Resource
     return $this->call('insert', [$params], Member::class);
   }
   /**
-   * Retrieves a paginated list of all members in a group. (members.listMembers)
+   * Retrieves a paginated list of all members in a group. This method times out
+   * after 60 minutes. For more information, see [Troubleshoot error
+   * codes](https://developers.google.com/admin-
+   * sdk/directory/v1/guides/troubleshoot-error-codes). (members.listMembers)
    *
    * @param string $groupKey Identifies the group in the API request. The value
    * can be the group's email address, group alias, or the unique group ID.
@@ -111,6 +123,7 @@ class Members extends \Google\Service\Resource
    * @opt_param string roles The `roles` query parameter allows you to retrieve
    * group members by role. Allowed values are `OWNER`, `MANAGER`, and `MEMBER`.
    * @return MembersModel
+   * @throws \Google\Service\Exception
    */
   public function listMembers($groupKey, $optParams = [])
   {
@@ -131,6 +144,7 @@ class Members extends \Google\Service\Resource
    * @param Member $postBody
    * @param array $optParams Optional parameters.
    * @return Member
+   * @throws \Google\Service\Exception
    */
   public function patch($groupKey, $memberKey, Member $postBody, $optParams = [])
   {
@@ -149,6 +163,7 @@ class Members extends \Google\Service\Resource
    * @param Member $postBody
    * @param array $optParams Optional parameters.
    * @return Member
+   * @throws \Google\Service\Exception
    */
   public function update($groupKey, $memberKey, Member $postBody, $optParams = [])
   {

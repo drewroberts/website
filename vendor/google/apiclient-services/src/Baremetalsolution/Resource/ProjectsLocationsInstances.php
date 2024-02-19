@@ -18,9 +18,13 @@
 namespace Google\Service\Baremetalsolution\Resource;
 
 use Google\Service\Baremetalsolution\DetachLunRequest;
+use Google\Service\Baremetalsolution\DisableInteractiveSerialConsoleRequest;
+use Google\Service\Baremetalsolution\EnableInteractiveSerialConsoleRequest;
 use Google\Service\Baremetalsolution\Instance;
 use Google\Service\Baremetalsolution\ListInstancesResponse;
+use Google\Service\Baremetalsolution\LoadInstanceAuthInfoResponse;
 use Google\Service\Baremetalsolution\Operation;
+use Google\Service\Baremetalsolution\RenameInstanceRequest;
 use Google\Service\Baremetalsolution\ResetInstanceRequest;
 use Google\Service\Baremetalsolution\StartInstanceRequest;
 use Google\Service\Baremetalsolution\StopInstanceRequest;
@@ -30,25 +34,11 @@ use Google\Service\Baremetalsolution\StopInstanceRequest;
  * Typical usage is:
  *  <code>
  *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $instances = $baremetalsolutionService->instances;
+ *   $instances = $baremetalsolutionService->projects_locations_instances;
  *  </code>
  */
 class ProjectsLocationsInstances extends \Google\Service\Resource
 {
-  /**
-   * Create an Instance. (instances.create)
-   *
-   * @param string $parent Required. The parent project and location.
-   * @param Instance $postBody
-   * @param array $optParams Optional parameters.
-   * @return Operation
-   */
-  public function create($parent, Instance $postBody, $optParams = [])
-  {
-    $params = ['parent' => $parent, 'postBody' => $postBody];
-    $params = array_merge($params, $optParams);
-    return $this->call('create', [$params], Operation::class);
-  }
   /**
    * Detach LUN from Instance. (instances.detachLun)
    *
@@ -56,6 +46,7 @@ class ProjectsLocationsInstances extends \Google\Service\Resource
    * @param DetachLunRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function detachLun($instance, DetachLunRequest $postBody, $optParams = [])
   {
@@ -64,11 +55,44 @@ class ProjectsLocationsInstances extends \Google\Service\Resource
     return $this->call('detachLun', [$params], Operation::class);
   }
   /**
+   * Disable the interactive serial console feature on an instance.
+   * (instances.disableInteractiveSerialConsole)
+   *
+   * @param string $name Required. Name of the resource.
+   * @param DisableInteractiveSerialConsoleRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Operation
+   * @throws \Google\Service\Exception
+   */
+  public function disableInteractiveSerialConsole($name, DisableInteractiveSerialConsoleRequest $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('disableInteractiveSerialConsole', [$params], Operation::class);
+  }
+  /**
+   * Enable the interactive serial console feature on an instance.
+   * (instances.enableInteractiveSerialConsole)
+   *
+   * @param string $name Required. Name of the resource.
+   * @param EnableInteractiveSerialConsoleRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Operation
+   * @throws \Google\Service\Exception
+   */
+  public function enableInteractiveSerialConsole($name, EnableInteractiveSerialConsoleRequest $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('enableInteractiveSerialConsole', [$params], Operation::class);
+  }
+  /**
    * Get details about a single server. (instances.get)
    *
    * @param string $name Required. Name of the resource.
    * @param array $optParams Optional parameters.
    * @return Instance
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -89,12 +113,27 @@ class ProjectsLocationsInstances extends \Google\Service\Resource
    * @opt_param string pageToken A token identifying a page of results from the
    * server.
    * @return ListInstancesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsInstances($parent, $optParams = [])
   {
     $params = ['parent' => $parent];
     $params = array_merge($params, $optParams);
     return $this->call('list', [$params], ListInstancesResponse::class);
+  }
+  /**
+   * Load auth info for a server. (instances.loadAuthInfo)
+   *
+   * @param string $name Required. Name of the server.
+   * @param array $optParams Optional parameters.
+   * @return LoadInstanceAuthInfoResponse
+   * @throws \Google\Service\Exception
+   */
+  public function loadAuthInfo($name, $optParams = [])
+  {
+    $params = ['name' => $name];
+    $params = array_merge($params, $optParams);
+    return $this->call('loadAuthInfo', [$params], LoadInstanceAuthInfoResponse::class);
   }
   /**
    * Update details of a single server. (instances.patch)
@@ -107,14 +146,34 @@ class ProjectsLocationsInstances extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string updateMask The list of fields to update. The currently
-   * supported fields are: `labels` `hyperthreading_enabled` `os_image`
+   * supported fields are: `labels` `hyperthreading_enabled` `os_image` `ssh_keys`
+   * `kms_key_version`
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, Instance $postBody, $optParams = [])
   {
     $params = ['name' => $name, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);
     return $this->call('patch', [$params], Operation::class);
+  }
+  /**
+   * RenameInstance sets a new name for an instance. Use with caution, previous
+   * names become immediately invalidated. (instances.rename)
+   *
+   * @param string $name Required. The `name` field is used to identify the
+   * instance. Format:
+   * projects/{project}/locations/{location}/instances/{instance}
+   * @param RenameInstanceRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Instance
+   * @throws \Google\Service\Exception
+   */
+  public function rename($name, RenameInstanceRequest $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('rename', [$params], Instance::class);
   }
   /**
    * Perform an ungraceful, hard reset on a server. Equivalent to shutting the
@@ -124,6 +183,7 @@ class ProjectsLocationsInstances extends \Google\Service\Resource
    * @param ResetInstanceRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function reset($name, ResetInstanceRequest $postBody, $optParams = [])
   {
@@ -138,6 +198,7 @@ class ProjectsLocationsInstances extends \Google\Service\Resource
    * @param StartInstanceRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function start($name, StartInstanceRequest $postBody, $optParams = [])
   {
@@ -152,6 +213,7 @@ class ProjectsLocationsInstances extends \Google\Service\Resource
    * @param StopInstanceRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function stop($name, StopInstanceRequest $postBody, $optParams = [])
   {

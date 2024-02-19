@@ -27,7 +27,7 @@ use Google\Service\CloudHealthcare\Operation;
  * Typical usage is:
  *  <code>
  *   $healthcareService = new Google\Service\CloudHealthcare(...);
- *   $operations = $healthcareService->operations;
+ *   $operations = $healthcareService->projects_locations_datasets_operations;
  *  </code>
  */
 class ProjectsLocationsDatasetsOperations extends \Google\Service\Resource
@@ -47,6 +47,7 @@ class ProjectsLocationsDatasetsOperations extends \Google\Service\Resource
    * @param CancelOperationRequest $postBody
    * @param array $optParams Optional parameters.
    * @return HealthcareEmpty
+   * @throws \Google\Service\Exception
    */
   public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
   {
@@ -62,6 +63,7 @@ class ProjectsLocationsDatasetsOperations extends \Google\Service\Resource
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -71,14 +73,8 @@ class ProjectsLocationsDatasetsOperations extends \Google\Service\Resource
   }
   /**
    * Lists operations that match the specified filter in the request. If the
-   * server doesn't support this method, it returns `UNIMPLEMENTED`. NOTE: the
-   * `name` binding allows API services to override the binding to use different
-   * resource name schemes, such as `users/operations`. To override the binding,
-   * API services can add a binding such as `"/v1/{name=users}/operations"` to
-   * their service configuration. For backwards compatibility, the default name
-   * includes the operations collection id, however overriding users must ensure
-   * the name binding is the parent resource, without the operations collection
-   * id. (operations.listProjectsLocationsDatasetsOperations)
+   * server doesn't support this method, it returns `UNIMPLEMENTED`.
+   * (operations.listProjectsLocationsDatasetsOperations)
    *
    * @param string $name The name of the operation's parent resource.
    * @param array $optParams Optional parameters.
@@ -87,6 +83,7 @@ class ProjectsLocationsDatasetsOperations extends \Google\Service\Resource
    * @opt_param int pageSize The standard list page size.
    * @opt_param string pageToken The standard list page token.
    * @return ListOperationsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsDatasetsOperations($name, $optParams = [])
   {

@@ -29,15 +29,25 @@ class IpConfiguration extends \Google\Collection
   /**
    * @var bool
    */
+  public $enablePrivatePathForGoogleCloudServices;
+  /**
+   * @var bool
+   */
   public $ipv4Enabled;
   /**
    * @var string
    */
   public $privateNetwork;
+  protected $pscConfigType = PscConfig::class;
+  protected $pscConfigDataType = '';
   /**
    * @var bool
    */
   public $requireSsl;
+  /**
+   * @var string
+   */
+  public $sslMode;
 
   /**
    * @param string
@@ -70,6 +80,20 @@ class IpConfiguration extends \Google\Collection
   /**
    * @param bool
    */
+  public function setEnablePrivatePathForGoogleCloudServices($enablePrivatePathForGoogleCloudServices)
+  {
+    $this->enablePrivatePathForGoogleCloudServices = $enablePrivatePathForGoogleCloudServices;
+  }
+  /**
+   * @return bool
+   */
+  public function getEnablePrivatePathForGoogleCloudServices()
+  {
+    return $this->enablePrivatePathForGoogleCloudServices;
+  }
+  /**
+   * @param bool
+   */
   public function setIpv4Enabled($ipv4Enabled)
   {
     $this->ipv4Enabled = $ipv4Enabled;
@@ -96,6 +120,20 @@ class IpConfiguration extends \Google\Collection
     return $this->privateNetwork;
   }
   /**
+   * @param PscConfig
+   */
+  public function setPscConfig(PscConfig $pscConfig)
+  {
+    $this->pscConfig = $pscConfig;
+  }
+  /**
+   * @return PscConfig
+   */
+  public function getPscConfig()
+  {
+    return $this->pscConfig;
+  }
+  /**
    * @param bool
    */
   public function setRequireSsl($requireSsl)
@@ -108,6 +146,20 @@ class IpConfiguration extends \Google\Collection
   public function getRequireSsl()
   {
     return $this->requireSsl;
+  }
+  /**
+   * @param string
+   */
+  public function setSslMode($sslMode)
+  {
+    $this->sslMode = $sslMode;
+  }
+  /**
+   * @return string
+   */
+  public function getSslMode()
+  {
+    return $this->sslMode;
   }
 }
 

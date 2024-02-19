@@ -26,7 +26,7 @@ use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1Que
  * Typical usage is:
  *  <code>
  *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
- *   $anrrate = $playdeveloperreportingService->anrrate;
+ *   $anrrate = $playdeveloperreportingService->vitals_anrrate;
  *  </code>
  */
 class VitalsAnrrate extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class VitalsAnrrate extends \Google\Service\Resource
    * apps/{app}/anrRateMetricSet
    * @param array $optParams Optional parameters.
    * @return GooglePlayDeveloperReportingV1beta1AnrRateMetricSet
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -53,6 +54,7 @@ class VitalsAnrrate extends \Google\Service\Resource
    * @param GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetResponse
+   * @throws \Google\Service\Exception
    */
   public function query($name, GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetRequest $postBody, $optParams = [])
   {

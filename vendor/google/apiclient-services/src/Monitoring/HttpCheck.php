@@ -33,6 +33,10 @@ class HttpCheck extends \Google\Collection
    */
   public $contentType;
   /**
+   * @var string
+   */
+  public $customContentType;
+  /**
    * @var string[]
    */
   public $headers;
@@ -44,6 +48,8 @@ class HttpCheck extends \Google\Collection
    * @var string
    */
   public $path;
+  protected $pingConfigType = PingConfig::class;
+  protected $pingConfigDataType = '';
   /**
    * @var int
    */
@@ -118,6 +124,20 @@ class HttpCheck extends \Google\Collection
     return $this->contentType;
   }
   /**
+   * @param string
+   */
+  public function setCustomContentType($customContentType)
+  {
+    $this->customContentType = $customContentType;
+  }
+  /**
+   * @return string
+   */
+  public function getCustomContentType()
+  {
+    return $this->customContentType;
+  }
+  /**
    * @param string[]
    */
   public function setHeaders($headers)
@@ -158,6 +178,20 @@ class HttpCheck extends \Google\Collection
   public function getPath()
   {
     return $this->path;
+  }
+  /**
+   * @param PingConfig
+   */
+  public function setPingConfig(PingConfig $pingConfig)
+  {
+    $this->pingConfig = $pingConfig;
+  }
+  /**
+   * @return PingConfig
+   */
+  public function getPingConfig()
+  {
+    return $this->pingConfig;
   }
   /**
    * @param int

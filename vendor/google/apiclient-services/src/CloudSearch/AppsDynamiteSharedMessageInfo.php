@@ -19,26 +19,44 @@ namespace Google\Service\CloudSearch;
 
 class AppsDynamiteSharedMessageInfo extends \Google\Model
 {
-  protected $messageIdType = AppsDynamiteMessageId::class;
+  protected $messageIdType = MessageId::class;
   protected $messageIdDataType = '';
+  /**
+   * @var string
+   */
+  public $messageType;
   /**
    * @var string
    */
   public $topicReadTimeUsec;
 
   /**
-   * @param AppsDynamiteMessageId
+   * @param MessageId
    */
-  public function setMessageId(AppsDynamiteMessageId $messageId)
+  public function setMessageId(MessageId $messageId)
   {
     $this->messageId = $messageId;
   }
   /**
-   * @return AppsDynamiteMessageId
+   * @return MessageId
    */
   public function getMessageId()
   {
     return $this->messageId;
+  }
+  /**
+   * @param string
+   */
+  public function setMessageType($messageType)
+  {
+    $this->messageType = $messageType;
+  }
+  /**
+   * @return string
+   */
+  public function getMessageType()
+  {
+    return $this->messageType;
   }
   /**
    * @param string

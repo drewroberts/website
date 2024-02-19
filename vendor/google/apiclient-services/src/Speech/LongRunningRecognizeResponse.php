@@ -24,8 +24,14 @@ class LongRunningRecognizeResponse extends \Google\Collection
   protected $outputConfigDataType = '';
   protected $outputErrorType = Status::class;
   protected $outputErrorDataType = '';
+  /**
+   * @var string
+   */
+  public $requestId;
   protected $resultsType = SpeechRecognitionResult::class;
   protected $resultsDataType = 'array';
+  protected $speechAdaptationInfoType = SpeechAdaptationInfo::class;
+  protected $speechAdaptationInfoDataType = '';
   /**
    * @var string
    */
@@ -60,6 +66,20 @@ class LongRunningRecognizeResponse extends \Google\Collection
     return $this->outputError;
   }
   /**
+   * @param string
+   */
+  public function setRequestId($requestId)
+  {
+    $this->requestId = $requestId;
+  }
+  /**
+   * @return string
+   */
+  public function getRequestId()
+  {
+    return $this->requestId;
+  }
+  /**
    * @param SpeechRecognitionResult[]
    */
   public function setResults($results)
@@ -72,6 +92,20 @@ class LongRunningRecognizeResponse extends \Google\Collection
   public function getResults()
   {
     return $this->results;
+  }
+  /**
+   * @param SpeechAdaptationInfo
+   */
+  public function setSpeechAdaptationInfo(SpeechAdaptationInfo $speechAdaptationInfo)
+  {
+    $this->speechAdaptationInfo = $speechAdaptationInfo;
+  }
+  /**
+   * @return SpeechAdaptationInfo
+   */
+  public function getSpeechAdaptationInfo()
+  {
+    return $this->speechAdaptationInfo;
   }
   /**
    * @param string

@@ -17,6 +17,7 @@
 
 namespace Google\Service\Games\Resource;
 
+use Google\Service\Games\GetMultipleApplicationPlayerIdsResponse;
 use Google\Service\Games\Player;
 use Google\Service\Games\PlayerListResponse;
 use Google\Service\Games\ScopedPlayerIds;
@@ -45,6 +46,7 @@ class Players extends \Google\Service\Resource
    * id. The call returns a 'not found' result when the token is present and
    * invalid. Empty value is ignored. See also GlobalPlayerIdConsistencyTokenProto
    * @return Player
+   * @throws \Google\Service\Exception
    */
   public function get($playerId, $optParams = [])
   {
@@ -53,11 +55,31 @@ class Players extends \Google\Service\Resource
     return $this->call('get', [$params], Player::class);
   }
   /**
+   * Get the application player ids for the currently authenticated player across
+   * all requested games by the same developer as the calling application. This
+   * will only return ids for players that actually have an id (scoped or
+   * otherwise) with that game. (players.getMultipleApplicationPlayerIds)
+   *
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string applicationIds Required. The application IDs from the
+   * Google Play developer console for the games to return scoped ids for.
+   * @return GetMultipleApplicationPlayerIdsResponse
+   * @throws \Google\Service\Exception
+   */
+  public function getMultipleApplicationPlayerIds($optParams = [])
+  {
+    $params = [];
+    $params = array_merge($params, $optParams);
+    return $this->call('getMultipleApplicationPlayerIds', [$params], GetMultipleApplicationPlayerIdsResponse::class);
+  }
+  /**
    * Retrieves scoped player identifiers for currently authenticated user.
    * (players.getScopedPlayerIds)
    *
    * @param array $optParams Optional parameters.
    * @return ScopedPlayerIds
+   * @throws \Google\Service\Exception
    */
   public function getScopedPlayerIds($optParams = [])
   {
@@ -79,6 +101,7 @@ class Players extends \Google\Service\Resource
    * resources returned may be less than the specified `maxResults`.
    * @opt_param string pageToken The token returned by the previous request.
    * @return PlayerListResponse
+   * @throws \Google\Service\Exception
    */
   public function listPlayers($collection, $optParams = [])
   {

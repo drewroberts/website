@@ -23,6 +23,10 @@ class GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest extends \Google\
   /**
    * @var string
    */
+  public $accountId;
+  /**
+   * @var string
+   */
   public $annotation;
   /**
    * @var string
@@ -32,7 +36,23 @@ class GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest extends \Google\
    * @var string[]
    */
   public $reasons;
+  protected $transactionEventType = GoogleCloudRecaptchaenterpriseV1TransactionEvent::class;
+  protected $transactionEventDataType = '';
 
+  /**
+   * @param string
+   */
+  public function setAccountId($accountId)
+  {
+    $this->accountId = $accountId;
+  }
+  /**
+   * @return string
+   */
+  public function getAccountId()
+  {
+    return $this->accountId;
+  }
   /**
    * @param string
    */
@@ -74,6 +94,20 @@ class GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest extends \Google\
   public function getReasons()
   {
     return $this->reasons;
+  }
+  /**
+   * @param GoogleCloudRecaptchaenterpriseV1TransactionEvent
+   */
+  public function setTransactionEvent(GoogleCloudRecaptchaenterpriseV1TransactionEvent $transactionEvent)
+  {
+    $this->transactionEvent = $transactionEvent;
+  }
+  /**
+   * @return GoogleCloudRecaptchaenterpriseV1TransactionEvent
+   */
+  public function getTransactionEvent()
+  {
+    return $this->transactionEvent;
   }
 }
 

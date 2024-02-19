@@ -10,7 +10,7 @@ use Doctrine\Deprecations\Deprecation;
 class MySQLKeywords extends KeywordList
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated
      */
@@ -19,14 +19,14 @@ class MySQLKeywords extends KeywordList
         Deprecation::triggerIfCalledFromOutside(
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5433',
-            'MySQLKeywords::getName() is deprecated.'
+            'MySQLKeywords::getName() is deprecated.',
         );
 
         return 'MySQL';
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     protected function getKeywords()
     {

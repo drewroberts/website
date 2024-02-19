@@ -30,7 +30,7 @@ class DropSchemaSqlCollector extends AbstractVisitor
         Deprecation::trigger(
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5416',
-            'DropSchemaSqlCollector is deprecated. Use DropSchemaObjectsSQLBuilder instead.'
+            'DropSchemaSqlCollector is deprecated. Use DropSchemaObjectsSQLBuilder instead.',
         );
 
         $this->platform = $platform;
@@ -38,7 +38,7 @@ class DropSchemaSqlCollector extends AbstractVisitor
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function acceptTable(Table $table)
     {
@@ -46,7 +46,7 @@ class DropSchemaSqlCollector extends AbstractVisitor
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function acceptForeignKey(Table $localTable, ForeignKeyConstraint $fkConstraint)
     {
@@ -58,24 +58,20 @@ class DropSchemaSqlCollector extends AbstractVisitor
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function acceptSequence(Sequence $sequence)
     {
         $this->sequences->attach($sequence);
     }
 
-    /**
-     * @return void
-     */
+    /** @return void */
     public function clearQueries()
     {
         $this->initializeQueries();
     }
 
-    /**
-     * @return string[]
-     */
+    /** @return string[] */
     public function getQueries()
     {
         $sql = [];
@@ -85,7 +81,7 @@ class DropSchemaSqlCollector extends AbstractVisitor
             $localTable = $this->constraints[$fkConstraint];
             $sql[]      = $this->platform->getDropForeignKeySQL(
                 $fkConstraint->getQuotedName($this->platform),
-                $localTable->getQuotedName($this->platform)
+                $localTable->getQuotedName($this->platform),
             );
         }
 

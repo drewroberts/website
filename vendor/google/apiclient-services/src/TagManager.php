@@ -58,6 +58,7 @@ class TagManager extends \Google\Service
 
   public $accounts;
   public $accounts_containers;
+  public $accounts_containers_destinations;
   public $accounts_containers_environments;
   public $accounts_containers_version_headers;
   public $accounts_containers_versions;
@@ -65,8 +66,10 @@ class TagManager extends \Google\Service
   public $accounts_containers_workspaces_built_in_variables;
   public $accounts_containers_workspaces_clients;
   public $accounts_containers_workspaces_folders;
+  public $accounts_containers_workspaces_gtag_config;
   public $accounts_containers_workspaces_tags;
   public $accounts_containers_workspaces_templates;
+  public $accounts_containers_workspaces_transformations;
   public $accounts_containers_workspaces_triggers;
   public $accounts_containers_workspaces_variables;
   public $accounts_containers_workspaces_zones;
@@ -108,6 +111,10 @@ class TagManager extends \Google\Service
               'path' => 'tagmanager/v2/accounts',
               'httpMethod' => 'GET',
               'parameters' => [
+                'includeGoogleTags' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
                 'pageToken' => [
                   'location' => 'query',
                   'type' => 'string',
@@ -137,7 +144,29 @@ class TagManager extends \Google\Service
         'containers',
         [
           'methods' => [
-            'create' => [
+            'combine' => [
+              'path' => 'tagmanager/v2/{+path}:combine',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'allowUserPermissionFeatureUpdate' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
+                'containerId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'settingSource' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'create' => [
               'path' => 'tagmanager/v2/{+parent}/containers',
               'httpMethod' => 'POST',
               'parameters' => [
@@ -181,6 +210,59 @@ class TagManager extends \Google\Service
                   'type' => 'string',
                 ],
               ],
+            ],'lookup' => [
+              'path' => 'tagmanager/v2/accounts/containers:lookup',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'destinationId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'move_tag_id' => [
+              'path' => 'tagmanager/v2/{+path}:move_tag_id',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'allowUserPermissionFeatureUpdate' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
+                'copySettings' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
+                'copyTermsOfService' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
+                'copyUsers' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
+                'tagId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'tagName' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'snippet' => [
+              'path' => 'tagmanager/v2/{+path}:snippet',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
             ],'update' => [
               'path' => 'tagmanager/v2/{+path}',
               'httpMethod' => 'PUT',
@@ -193,6 +275,54 @@ class TagManager extends \Google\Service
                 'fingerprint' => [
                   'location' => 'query',
                   'type' => 'string',
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->accounts_containers_destinations = new TagManager\Resource\AccountsContainersDestinations(
+        $this,
+        $this->serviceName,
+        'destinations',
+        [
+          'methods' => [
+            'get' => [
+              'path' => 'tagmanager/v2/{+path}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'link' => [
+              'path' => 'tagmanager/v2/{+parent}/destinations:link',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'allowUserPermissionFeatureUpdate' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
+                'destinationId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'list' => [
+              'path' => 'tagmanager/v2/{+parent}/destinations',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ],
               ],
             ],
@@ -800,6 +930,74 @@ class TagManager extends \Google\Service
           ]
         ]
     );
+    $this->accounts_containers_workspaces_gtag_config = new TagManager\Resource\AccountsContainersWorkspacesGtagConfig(
+        $this,
+        $this->serviceName,
+        'gtag_config',
+        [
+          'methods' => [
+            'create' => [
+              'path' => 'tagmanager/v2/{+parent}/gtag_config',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'delete' => [
+              'path' => 'tagmanager/v2/{+path}',
+              'httpMethod' => 'DELETE',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'get' => [
+              'path' => 'tagmanager/v2/{+path}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'list' => [
+              'path' => 'tagmanager/v2/{+parent}/gtag_config',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'pageToken' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'update' => [
+              'path' => 'tagmanager/v2/{+path}',
+              'httpMethod' => 'PUT',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'fingerprint' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
     $this->accounts_containers_workspaces_tags = new TagManager\Resource\AccountsContainersWorkspacesTags(
         $this,
         $this->serviceName,
@@ -920,6 +1118,88 @@ class TagManager extends \Google\Service
               ],
             ],'list' => [
               'path' => 'tagmanager/v2/{+parent}/templates',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'pageToken' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'revert' => [
+              'path' => 'tagmanager/v2/{+path}:revert',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'fingerprint' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'update' => [
+              'path' => 'tagmanager/v2/{+path}',
+              'httpMethod' => 'PUT',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'fingerprint' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->accounts_containers_workspaces_transformations = new TagManager\Resource\AccountsContainersWorkspacesTransformations(
+        $this,
+        $this->serviceName,
+        'transformations',
+        [
+          'methods' => [
+            'create' => [
+              'path' => 'tagmanager/v2/{+parent}/transformations',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'delete' => [
+              'path' => 'tagmanager/v2/{+path}',
+              'httpMethod' => 'DELETE',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'get' => [
+              'path' => 'tagmanager/v2/{+path}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'path' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'list' => [
+              'path' => 'tagmanager/v2/{+parent}/transformations',
               'httpMethod' => 'GET',
               'parameters' => [
                 'parent' => [

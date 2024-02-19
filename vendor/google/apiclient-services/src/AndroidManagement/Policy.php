@@ -91,6 +91,10 @@ class Policy extends \Google\Collection
    */
   public $createWindowsDisabled;
   /**
+   * @var string
+   */
+  public $credentialProviderPolicyDefault;
+  /**
    * @var bool
    */
   public $credentialsConfigDisabled;
@@ -108,8 +112,12 @@ class Policy extends \Google\Collection
    * @var string
    */
   public $defaultPermissionPolicy;
+  protected $deviceConnectivityManagementType = DeviceConnectivityManagement::class;
+  protected $deviceConnectivityManagementDataType = '';
   protected $deviceOwnerLockScreenInfoType = UserFacingMessage::class;
   protected $deviceOwnerLockScreenInfoDataType = '';
+  protected $deviceRadioStateType = DeviceRadioState::class;
+  protected $deviceRadioStateDataType = '';
   /**
    * @var string
    */
@@ -232,6 +240,10 @@ class Policy extends \Google\Collection
    * @var string
    */
   public $preferentialNetworkService;
+  /**
+   * @var string
+   */
+  public $printingPolicy;
   /**
    * @var bool
    */
@@ -606,6 +618,20 @@ class Policy extends \Google\Collection
     return $this->createWindowsDisabled;
   }
   /**
+   * @param string
+   */
+  public function setCredentialProviderPolicyDefault($credentialProviderPolicyDefault)
+  {
+    $this->credentialProviderPolicyDefault = $credentialProviderPolicyDefault;
+  }
+  /**
+   * @return string
+   */
+  public function getCredentialProviderPolicyDefault()
+  {
+    return $this->credentialProviderPolicyDefault;
+  }
+  /**
    * @param bool
    */
   public function setCredentialsConfigDisabled($credentialsConfigDisabled)
@@ -676,6 +702,20 @@ class Policy extends \Google\Collection
     return $this->defaultPermissionPolicy;
   }
   /**
+   * @param DeviceConnectivityManagement
+   */
+  public function setDeviceConnectivityManagement(DeviceConnectivityManagement $deviceConnectivityManagement)
+  {
+    $this->deviceConnectivityManagement = $deviceConnectivityManagement;
+  }
+  /**
+   * @return DeviceConnectivityManagement
+   */
+  public function getDeviceConnectivityManagement()
+  {
+    return $this->deviceConnectivityManagement;
+  }
+  /**
    * @param UserFacingMessage
    */
   public function setDeviceOwnerLockScreenInfo(UserFacingMessage $deviceOwnerLockScreenInfo)
@@ -688,6 +728,20 @@ class Policy extends \Google\Collection
   public function getDeviceOwnerLockScreenInfo()
   {
     return $this->deviceOwnerLockScreenInfo;
+  }
+  /**
+   * @param DeviceRadioState
+   */
+  public function setDeviceRadioState(DeviceRadioState $deviceRadioState)
+  {
+    $this->deviceRadioState = $deviceRadioState;
+  }
+  /**
+   * @return DeviceRadioState
+   */
+  public function getDeviceRadioState()
+  {
+    return $this->deviceRadioState;
   }
   /**
    * @param string
@@ -1192,6 +1246,20 @@ class Policy extends \Google\Collection
   public function getPreferentialNetworkService()
   {
     return $this->preferentialNetworkService;
+  }
+  /**
+   * @param string
+   */
+  public function setPrintingPolicy($printingPolicy)
+  {
+    $this->printingPolicy = $printingPolicy;
+  }
+  /**
+   * @return string
+   */
+  public function getPrintingPolicy()
+  {
+    return $this->printingPolicy;
   }
   /**
    * @param bool

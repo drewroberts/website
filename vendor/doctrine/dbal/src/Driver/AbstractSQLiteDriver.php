@@ -19,7 +19,7 @@ use function assert;
 abstract class AbstractSQLiteDriver implements Driver
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getDatabasePlatform()
     {
@@ -27,7 +27,7 @@ abstract class AbstractSQLiteDriver implements Driver
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated Use {@link SqlitePlatform::createSchemaManager()} instead.
      */
@@ -37,7 +37,7 @@ abstract class AbstractSQLiteDriver implements Driver
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5458',
             'AbstractSQLiteDriver::getSchemaManager() is deprecated.'
-                . ' Use SqlitePlatform::createSchemaManager() instead.'
+                . ' Use SqlitePlatform::createSchemaManager() instead.',
         );
 
         assert($platform instanceof SqlitePlatform);

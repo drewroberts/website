@@ -24,7 +24,7 @@ use Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkusResponse;
  * Typical usage is:
  *  <code>
  *   $cloudchannelService = new Google\Service\Cloudchannel(...);
- *   $skus = $cloudchannelService->skus;
+ *   $skus = $cloudchannelService->products_skus;
  *  </code>
  */
 class ProductsSkus extends \Google\Service\Resource
@@ -50,6 +50,7 @@ class ProductsSkus extends \Google\Service\Resource
    * @opt_param string pageToken Optional. A token for a page of results other
    * than the first page. Optional.
    * @return GoogleCloudChannelV1ListSkusResponse
+   * @throws \Google\Service\Exception
    */
   public function listProductsSkus($parent, $optParams = [])
   {

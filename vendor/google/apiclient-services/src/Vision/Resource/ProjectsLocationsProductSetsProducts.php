@@ -24,7 +24,7 @@ use Google\Service\Vision\ListProductsInProductSetResponse;
  * Typical usage is:
  *  <code>
  *   $visionService = new Google\Service\Vision(...);
- *   $products = $visionService->products;
+ *   $products = $visionService->projects_locations_productSets_products;
  *  </code>
  */
 class ProjectsLocationsProductSetsProducts extends \Google\Service\Resource
@@ -45,6 +45,7 @@ class ProjectsLocationsProductSetsProducts extends \Google\Service\Resource
    * @opt_param string pageToken The next_page_token returned from a previous List
    * request, if any.
    * @return ListProductsInProductSetResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsProductSetsProducts($name, $optParams = [])
   {

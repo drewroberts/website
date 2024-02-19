@@ -25,7 +25,7 @@ use Google\Service\SearchConsole\InspectUrlIndexResponse;
  * Typical usage is:
  *  <code>
  *   $searchconsoleService = new Google\Service\SearchConsole(...);
- *   $index = $searchconsoleService->index;
+ *   $index = $searchconsoleService->urlInspection_index;
  *  </code>
  */
 class UrlInspectionIndex extends \Google\Service\Resource
@@ -36,6 +36,7 @@ class UrlInspectionIndex extends \Google\Service\Resource
    * @param InspectUrlIndexRequest $postBody
    * @param array $optParams Optional parameters.
    * @return InspectUrlIndexResponse
+   * @throws \Google\Service\Exception
    */
   public function inspect(InspectUrlIndexRequest $postBody, $optParams = [])
   {

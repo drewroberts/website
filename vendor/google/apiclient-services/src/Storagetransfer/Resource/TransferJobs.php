@@ -20,6 +20,7 @@ namespace Google\Service\Storagetransfer\Resource;
 use Google\Service\Storagetransfer\ListTransferJobsResponse;
 use Google\Service\Storagetransfer\Operation;
 use Google\Service\Storagetransfer\RunTransferJobRequest;
+use Google\Service\Storagetransfer\StoragetransferEmpty;
 use Google\Service\Storagetransfer\TransferJob;
 use Google\Service\Storagetransfer\UpdateTransferJobRequest;
 
@@ -39,12 +40,30 @@ class TransferJobs extends \Google\Service\Resource
    * @param TransferJob $postBody
    * @param array $optParams Optional parameters.
    * @return TransferJob
+   * @throws \Google\Service\Exception
    */
   public function create(TransferJob $postBody, $optParams = [])
   {
     $params = ['postBody' => $postBody];
     $params = array_merge($params, $optParams);
     return $this->call('create', [$params], TransferJob::class);
+  }
+  /**
+   * Deletes a transfer job. Deleting a transfer job sets its status to DELETED.
+   * (transferJobs.delete)
+   *
+   * @param string $jobName Required. The job to delete.
+   * @param string $projectId Required. The ID of the Google Cloud project that
+   * owns the job.
+   * @param array $optParams Optional parameters.
+   * @return StoragetransferEmpty
+   * @throws \Google\Service\Exception
+   */
+  public function delete($jobName, $projectId, $optParams = [])
+  {
+    $params = ['jobName' => $jobName, 'projectId' => $projectId];
+    $params = array_merge($params, $optParams);
+    return $this->call('delete', [$params], StoragetransferEmpty::class);
   }
   /**
    * Gets a transfer job. (transferJobs.get)
@@ -54,6 +73,7 @@ class TransferJobs extends \Google\Service\Resource
    * owns the job.
    * @param array $optParams Optional parameters.
    * @return TransferJob
+   * @throws \Google\Service\Exception
    */
   public function get($jobName, $projectId, $optParams = [])
   {
@@ -76,6 +96,7 @@ class TransferJobs extends \Google\Service\Resource
    * @opt_param int pageSize The list page size. The max allowed value is 256.
    * @opt_param string pageToken The list page token.
    * @return ListTransferJobsResponse
+   * @throws \Google\Service\Exception
    */
   public function listTransferJobs($filter, $optParams = [])
   {
@@ -93,6 +114,7 @@ class TransferJobs extends \Google\Service\Resource
    * @param UpdateTransferJobRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TransferJob
+   * @throws \Google\Service\Exception
    */
   public function patch($jobName, UpdateTransferJobRequest $postBody, $optParams = [])
   {
@@ -101,15 +123,15 @@ class TransferJobs extends \Google\Service\Resource
     return $this->call('patch', [$params], TransferJob::class);
   }
   /**
-   * Attempts to start a new TransferOperation for the current TransferJob. A
-   * TransferJob has a maximum of one active TransferOperation. If this method is
-   * called while a TransferOperation is active, an error will be returned.
-   * (transferJobs.run)
+   * Starts a new operation for the specified transfer job. A `TransferJob` has a
+   * maximum of one active `TransferOperation`. If this method is called while a
+   * `TransferOperation` is active, an error is returned. (transferJobs.run)
    *
    * @param string $jobName Required. The name of the transfer job.
    * @param RunTransferJobRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function run($jobName, RunTransferJobRequest $postBody, $optParams = [])
   {

@@ -30,6 +30,8 @@ class ApkManifest extends \Google\Collection
    * @var int
    */
   public $maxSdkVersion;
+  protected $metadataType = Metadata::class;
+  protected $metadataDataType = 'array';
   /**
    * @var int
    */
@@ -38,14 +40,26 @@ class ApkManifest extends \Google\Collection
    * @var string
    */
   public $packageName;
+  protected $servicesType = Service::class;
+  protected $servicesDataType = 'array';
   /**
    * @var int
    */
   public $targetSdkVersion;
+  protected $usesFeatureType = UsesFeature::class;
+  protected $usesFeatureDataType = 'array';
   /**
    * @var string[]
    */
   public $usesPermission;
+  /**
+   * @var string
+   */
+  public $versionCode;
+  /**
+   * @var string
+   */
+  public $versionName;
 
   /**
    * @param string
@@ -90,6 +104,20 @@ class ApkManifest extends \Google\Collection
     return $this->maxSdkVersion;
   }
   /**
+   * @param Metadata[]
+   */
+  public function setMetadata($metadata)
+  {
+    $this->metadata = $metadata;
+  }
+  /**
+   * @return Metadata[]
+   */
+  public function getMetadata()
+  {
+    return $this->metadata;
+  }
+  /**
    * @param int
    */
   public function setMinSdkVersion($minSdkVersion)
@@ -118,6 +146,20 @@ class ApkManifest extends \Google\Collection
     return $this->packageName;
   }
   /**
+   * @param Service[]
+   */
+  public function setServices($services)
+  {
+    $this->services = $services;
+  }
+  /**
+   * @return Service[]
+   */
+  public function getServices()
+  {
+    return $this->services;
+  }
+  /**
    * @param int
    */
   public function setTargetSdkVersion($targetSdkVersion)
@@ -132,6 +174,20 @@ class ApkManifest extends \Google\Collection
     return $this->targetSdkVersion;
   }
   /**
+   * @param UsesFeature[]
+   */
+  public function setUsesFeature($usesFeature)
+  {
+    $this->usesFeature = $usesFeature;
+  }
+  /**
+   * @return UsesFeature[]
+   */
+  public function getUsesFeature()
+  {
+    return $this->usesFeature;
+  }
+  /**
    * @param string[]
    */
   public function setUsesPermission($usesPermission)
@@ -144,6 +200,34 @@ class ApkManifest extends \Google\Collection
   public function getUsesPermission()
   {
     return $this->usesPermission;
+  }
+  /**
+   * @param string
+   */
+  public function setVersionCode($versionCode)
+  {
+    $this->versionCode = $versionCode;
+  }
+  /**
+   * @return string
+   */
+  public function getVersionCode()
+  {
+    return $this->versionCode;
+  }
+  /**
+   * @param string
+   */
+  public function setVersionName($versionName)
+  {
+    $this->versionName = $versionName;
+  }
+  /**
+   * @return string
+   */
+  public function getVersionName()
+  {
+    return $this->versionName;
   }
 }
 

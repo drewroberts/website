@@ -20,15 +20,33 @@ namespace Google\Service\CloudDeploy;
 class Stage extends \Google\Collection
 {
   protected $collection_key = 'profiles';
+  protected $deployParametersType = DeployParameters::class;
+  protected $deployParametersDataType = 'array';
   /**
    * @var string[]
    */
   public $profiles;
+  protected $strategyType = Strategy::class;
+  protected $strategyDataType = '';
   /**
    * @var string
    */
   public $targetId;
 
+  /**
+   * @param DeployParameters[]
+   */
+  public function setDeployParameters($deployParameters)
+  {
+    $this->deployParameters = $deployParameters;
+  }
+  /**
+   * @return DeployParameters[]
+   */
+  public function getDeployParameters()
+  {
+    return $this->deployParameters;
+  }
   /**
    * @param string[]
    */
@@ -42,6 +60,20 @@ class Stage extends \Google\Collection
   public function getProfiles()
   {
     return $this->profiles;
+  }
+  /**
+   * @param Strategy
+   */
+  public function setStrategy(Strategy $strategy)
+  {
+    $this->strategy = $strategy;
+  }
+  /**
+   * @return Strategy
+   */
+  public function getStrategy()
+  {
+    return $this->strategy;
   }
   /**
    * @param string

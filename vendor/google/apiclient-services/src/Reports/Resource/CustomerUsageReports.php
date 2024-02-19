@@ -36,9 +36,9 @@ class CustomerUsageReports extends \Google\Service\Resource
    * see the Customers Usage parameters reference guides.
    * (customerUsageReports.get)
    *
-   * @param string $date Represents the date the usage occurred. The timestamp is
-   * in the ISO 8601 format, yyyy-mm-dd. We recommend you use your account's time
-   * zone for this.
+   * @param string $date Represents the date the usage occurred, based on UTC-8:00
+   * (Pacific Standard Time). The timestamp is in the [ISO 8601
+   * format](https://en.wikipedia.org/wiki/ISO_8601), `yyyy-mm-dd`.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string customerId The unique ID of the customer to retrieve data
@@ -62,6 +62,7 @@ class CustomerUsageReports extends \Google\Service\Resource
    * An example of an invalid request parameter is one that does not belong to the
    * application. If no parameters are requested, all parameters are returned.
    * @return UsageReports
+   * @throws \Google\Service\Exception
    */
   public function get($date, $optParams = [])
   {

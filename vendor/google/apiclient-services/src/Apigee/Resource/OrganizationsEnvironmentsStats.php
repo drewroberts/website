@@ -24,7 +24,7 @@ use Google\Service\Apigee\GoogleCloudApigeeV1Stats;
  * Typical usage is:
  *  <code>
  *   $apigeeService = new Google\Service\Apigee(...);
- *   $stats = $apigeeService->stats;
+ *   $stats = $apigeeService->organizations_environments_stats;
  *  </code>
  */
 class OrganizationsEnvironmentsStats extends \Google\Service\Resource
@@ -79,6 +79,7 @@ class OrganizationsEnvironmentsStats extends \Google\Service\Resource
    * set this value to `true` if you are using `sortby` with `sort=DESC`.
    * @opt_param string tzo Timezone offset value.
    * @return GoogleCloudApigeeV1Stats
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

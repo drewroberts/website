@@ -22,7 +22,9 @@ class AppsDynamiteSharedActivityFeedAnnotationData extends \Google\Model
   /**
    * @var string
    */
-  public $activityFeedMessageId;
+  public $activityFeedMessageCreateTime;
+  protected $activityFeedMessageIdType = MessageId::class;
+  protected $activityFeedMessageIdDataType = '';
   protected $chatItemType = AppsDynamiteSharedChatItem::class;
   protected $chatItemDataType = '';
   protected $sharedUserInfoType = UserInfo::class;
@@ -33,12 +35,26 @@ class AppsDynamiteSharedActivityFeedAnnotationData extends \Google\Model
   /**
    * @param string
    */
-  public function setActivityFeedMessageId($activityFeedMessageId)
+  public function setActivityFeedMessageCreateTime($activityFeedMessageCreateTime)
+  {
+    $this->activityFeedMessageCreateTime = $activityFeedMessageCreateTime;
+  }
+  /**
+   * @return string
+   */
+  public function getActivityFeedMessageCreateTime()
+  {
+    return $this->activityFeedMessageCreateTime;
+  }
+  /**
+   * @param MessageId
+   */
+  public function setActivityFeedMessageId(MessageId $activityFeedMessageId)
   {
     $this->activityFeedMessageId = $activityFeedMessageId;
   }
   /**
-   * @return string
+   * @return MessageId
    */
   public function getActivityFeedMessageId()
   {

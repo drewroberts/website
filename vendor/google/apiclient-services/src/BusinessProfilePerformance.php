@@ -24,7 +24,8 @@ use Google\Client;
  *
  * <p>
  * The Business Profile Performance API allows merchants to fetch performance
- * reports about their business profile on Google.</p>
+ * reports about their business profile on Google. Note - If you have a quota of
+ * 0 after enabling the API, please request for GBP API access.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -63,7 +64,46 @@ class BusinessProfilePerformance extends \Google\Service
         'locations',
         [
           'methods' => [
-            'getDailyMetricsTimeSeries' => [
+            'fetchMultiDailyMetricsTimeSeries' => [
+              'path' => 'v1/{+location}:fetchMultiDailyMetricsTimeSeries',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'location' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'dailyMetrics' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ],
+                'dailyRange.endDate.day' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'dailyRange.endDate.month' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'dailyRange.endDate.year' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'dailyRange.startDate.day' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'dailyRange.startDate.month' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'dailyRange.startDate.year' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+              ],
+            ],'getDailyMetricsTimeSeries' => [
               'path' => 'v1/{+name}:getDailyMetricsTimeSeries',
               'httpMethod' => 'GET',
               'parameters' => [

@@ -29,7 +29,7 @@ use Google\Service\AccessContextManager\TestIamPermissionsResponse;
  * Typical usage is:
  *  <code>
  *   $accesscontextmanagerService = new Google\Service\AccessContextManager(...);
- *   $accessLevels = $accesscontextmanagerService->accessLevels;
+ *   $accessLevels = $accesscontextmanagerService->accessPolicies_accessLevels;
  *  </code>
  */
 class AccessPoliciesAccessLevels extends \Google\Service\Resource
@@ -45,6 +45,7 @@ class AccessPoliciesAccessLevels extends \Google\Service\Resource
    * @param AccessLevel $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, AccessLevel $postBody, $optParams = [])
   {
@@ -61,6 +62,7 @@ class AccessPoliciesAccessLevels extends \Google\Service\Resource
    * `accessPolicies/{policy_id}/accessLevels/{access_level_id}`
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -82,6 +84,7 @@ class AccessPoliciesAccessLevels extends \Google\Service\Resource
    * Levels are returned as `CustomLevels`. In the CEL case, `BasicLevels` are
    * translated to equivalent `CustomLevels`.
    * @return AccessLevel
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -106,6 +109,7 @@ class AccessPoliciesAccessLevels extends \Google\Service\Resource
    * @opt_param string pageToken Next page token for the next batch of Access
    * Level instances. Defaults to the first page of results.
    * @return ListAccessLevelsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccessPoliciesAccessLevels($parent, $optParams = [])
   {
@@ -119,17 +123,18 @@ class AccessPoliciesAccessLevels extends \Google\Service\Resource
    * lasting storage. If access levels contain errors, an error response is
    * returned for the first error encountered. (accessLevels.patch)
    *
-   * @param string $name Required. Resource name for the Access Level. The
-   * `short_name` component must begin with a letter and only include alphanumeric
-   * and '_'. Format:
-   * `accessPolicies/{access_policy}/accessLevels/{access_level}`. The maximum
-   * length of the `access_level` component is 50 characters.
+   * @param string $name Resource name for the `AccessLevel`. Format:
+   * `accessPolicies/{access_policy}/accessLevels/{access_level}`. The
+   * `access_level` component must begin with a letter, followed by alphanumeric
+   * characters or `_`. Its maximum length is 50 characters. After you create an
+   * `AccessLevel`, you cannot change its `name`.
    * @param AccessLevel $postBody
    * @param array $optParams Optional parameters.
    *
    * @opt_param string updateMask Required. Mask to control which fields get
    * updated. Must be non-empty.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, AccessLevel $postBody, $optParams = [])
   {
@@ -153,6 +158,7 @@ class AccessPoliciesAccessLevels extends \Google\Service\Resource
    * @param ReplaceAccessLevelsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function replaceAll($parent, ReplaceAccessLevelsRequest $postBody, $optParams = [])
   {
@@ -173,6 +179,7 @@ class AccessPoliciesAccessLevels extends \Google\Service\Resource
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
   {

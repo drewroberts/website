@@ -34,7 +34,7 @@ abstract class AbstractConnectionMiddleware implements ServerInfoAwareConnection
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function quote($value, $type = ParameterType::STRING)
     {
@@ -47,7 +47,7 @@ abstract class AbstractConnectionMiddleware implements ServerInfoAwareConnection
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function lastInsertId($name = null)
     {
@@ -55,7 +55,7 @@ abstract class AbstractConnectionMiddleware implements ServerInfoAwareConnection
             Deprecation::triggerIfCalledFromOutside(
                 'doctrine/dbal',
                 'https://github.com/doctrine/dbal/issues/4687',
-                'The usage of Connection::lastInsertId() with a sequence name is deprecated.'
+                'The usage of Connection::lastInsertId() with a sequence name is deprecated.',
             );
         }
 
@@ -63,7 +63,7 @@ abstract class AbstractConnectionMiddleware implements ServerInfoAwareConnection
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function beginTransaction()
     {
@@ -71,7 +71,7 @@ abstract class AbstractConnectionMiddleware implements ServerInfoAwareConnection
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function commit()
     {
@@ -79,7 +79,7 @@ abstract class AbstractConnectionMiddleware implements ServerInfoAwareConnection
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function rollBack()
     {
@@ -87,7 +87,7 @@ abstract class AbstractConnectionMiddleware implements ServerInfoAwareConnection
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getServerVersion()
     {
@@ -98,15 +98,13 @@ abstract class AbstractConnectionMiddleware implements ServerInfoAwareConnection
         return $this->wrappedConnection->getServerVersion();
     }
 
-    /**
-     * @return resource|object
-     */
+    /** @return resource|object */
     public function getNativeConnection()
     {
         if (! method_exists($this->wrappedConnection, 'getNativeConnection')) {
             throw new LogicException(sprintf(
                 'The driver connection %s does not support accessing the native connection.',
-                get_class($this->wrappedConnection)
+                get_class($this->wrappedConnection),
             ));
         }
 

@@ -26,7 +26,7 @@ use Google\Service\Monitoring\UptimeCheckConfig;
  * Typical usage is:
  *  <code>
  *   $monitoringService = new Google\Service\Monitoring(...);
- *   $uptimeCheckConfigs = $monitoringService->uptimeCheckConfigs;
+ *   $uptimeCheckConfigs = $monitoringService->projects_uptimeCheckConfigs;
  *  </code>
  */
 class ProjectsUptimeCheckConfigs extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class ProjectsUptimeCheckConfigs extends \Google\Service\Resource
    * @param UptimeCheckConfig $postBody
    * @param array $optParams Optional parameters.
    * @return UptimeCheckConfig
+   * @throws \Google\Service\Exception
    */
   public function create($parent, UptimeCheckConfig $postBody, $optParams = [])
   {
@@ -58,6 +59,7 @@ class ProjectsUptimeCheckConfigs extends \Google\Service\Resource
    * projects/[PROJECT_ID_OR_NUMBER]/uptimeCheckConfigs/[UPTIME_CHECK_ID]
    * @param array $optParams Optional parameters.
    * @return MonitoringEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -73,6 +75,7 @@ class ProjectsUptimeCheckConfigs extends \Google\Service\Resource
    * projects/[PROJECT_ID_OR_NUMBER]/uptimeCheckConfigs/[UPTIME_CHECK_ID]
    * @param array $optParams Optional parameters.
    * @return UptimeCheckConfig
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -90,6 +93,10 @@ class ProjectsUptimeCheckConfigs extends \Google\Service\Resource
    * configurations are listed. The format is: projects/[PROJECT_ID_OR_NUMBER]
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string filter If provided, this field specifies the criteria that
+   * must be met by uptime checks to be included in the response.For more details,
+   * see Filtering syntax (https://cloud.google.com/monitoring/api/v3/sorting-and-
+   * filtering#filter_syntax).
    * @opt_param int pageSize The maximum number of results to return in a single
    * response. The server may further constrain the maximum number of results
    * returned in a single page. If the page_size is <=0, the server will decide
@@ -99,6 +106,7 @@ class ProjectsUptimeCheckConfigs extends \Google\Service\Resource
    * this field causes the method to return more results from the previous method
    * call.
    * @return ListUptimeCheckConfigsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsUptimeCheckConfigs($parent, $optParams = [])
   {
@@ -112,7 +120,7 @@ class ProjectsUptimeCheckConfigs extends \Google\Service\Resource
    * configuration by specifying the fields to be updated via updateMask. Returns
    * the updated configuration. (uptimeCheckConfigs.patch)
    *
-   * @param string $name A unique resource name for this Uptime check
+   * @param string $name Identifier. A unique resource name for this Uptime check
    * configuration. The format is:
    * projects/[PROJECT_ID_OR_NUMBER]/uptimeCheckConfigs/[UPTIME_CHECK_ID]
    * [PROJECT_ID_OR_NUMBER] is the Workspace host project associated with the
@@ -127,6 +135,7 @@ class ProjectsUptimeCheckConfigs extends \Google\Service\Resource
    * configuration. If this field is empty, then the current configuration is
    * completely replaced with the new configuration.
    * @return UptimeCheckConfig
+   * @throws \Google\Service\Exception
    */
   public function patch($name, UptimeCheckConfig $postBody, $optParams = [])
   {

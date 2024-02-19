@@ -26,7 +26,7 @@ use Google\Service\Clouderrorreporting\ReportedErrorEvent;
  * Typical usage is:
  *  <code>
  *   $clouderrorreportingService = new Google\Service\Clouderrorreporting(...);
- *   $events = $clouderrorreportingService->events;
+ *   $events = $clouderrorreportingService->projects_events;
  *  </code>
  */
 class ProjectsEvents extends \Google\Service\Resource
@@ -42,7 +42,11 @@ class ProjectsEvents extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string groupId Required. The group for which events shall be
-   * returned.
+   * returned. The `group_id` is a unique identifier for a particular error group.
+   * The identifier is derived from key parts of the error-log content and is
+   * treated as Service Data. For information about how Service Data is handled,
+   * see [Google Cloud Privacy Notice](https://cloud.google.com/terms/cloud-
+   * privacy-notice).
    * @opt_param int pageSize Optional. The maximum number of results to return per
    * response.
    * @opt_param string pageToken Optional. A `next_page_token` provided by a
@@ -59,6 +63,7 @@ class ProjectsEvents extends \Google\Service\Resource
    * @opt_param string timeRange.period Restricts the query to the specified time
    * range.
    * @return ListEventsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsEvents($projectName, $optParams = [])
   {
@@ -75,18 +80,17 @@ class ProjectsEvents extends \Google\Service\Resource
    * e}/events:report?key=123ABC456` **Note:** [Error Reporting]
    * (https://cloud.google.com/error-reporting) is a global service built on Cloud
    * Logging and doesn't analyze logs stored in regional log buckets or logs
-   * routed to other Google Cloud projects. For more information, see [Using Error
-   * Reporting with regionalized logs] (https://cloud.google.com/error-
-   * reporting/docs/regionalization). (events.report)
+   * routed to other Google Cloud projects. (events.report)
    *
    * @param string $projectName Required. The resource name of the Google Cloud
    * Platform project. Written as `projects/{projectId}`, where `{projectId}` is
    * the [Google Cloud Platform project
-   * ID](https://support.google.com/cloud/answer/6158840). Example: // `projects
-   * /my-project-123`.
+   * ID](https://support.google.com/cloud/answer/6158840). Example: //
+   * `projects/my-project-123`.
    * @param ReportedErrorEvent $postBody
    * @param array $optParams Optional parameters.
    * @return ReportErrorEventResponse
+   * @throws \Google\Service\Exception
    */
   public function report($projectName, ReportedErrorEvent $postBody, $optParams = [])
   {

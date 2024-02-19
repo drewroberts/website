@@ -46,6 +46,7 @@ class Devices extends \Google\Service\Resource
    * @param QueryRequest $postBody
    * @param array $optParams Optional parameters.
    * @return QueryResponse
+   * @throws \Google\Service\Exception
    */
   public function query(QueryRequest $postBody, $optParams = [])
   {
@@ -57,19 +58,20 @@ class Devices extends \Google\Service\Resource
    * Reports device state and optionally sends device notifications. Called by
    * your smart home Action when the state of a third-party device changes or you
    * need to send a notification about the device. See [Implement Report
-   * State](https://developers.google.com/assistant/smarthome/develop/report-
+   * State](https://developers.home.google.com/cloud-to-cloud/integration/report-
    * state) for more information. This method updates the device state according
-   * to its declared
-   * [traits](https://developers.google.com/assistant/smarthome/concepts/devices-
-   * traits). Publishing a new state value outside of these traits will result in
-   * an `INVALID_ARGUMENT` error response. The third-party user's identity is
-   * passed in via the `agent_user_id` (see ReportStateAndNotificationRequest).
-   * This request must be authorized using service account credentials from your
-   * Actions console project. (devices.reportStateAndNotification)
+   * to its declared [traits](https://developers.home.google.com/cloud-to-
+   * cloud/primer/device-types-and-traits). Publishing a new state value outside
+   * of these traits will result in an `INVALID_ARGUMENT` error response. The
+   * third-party user's identity is passed in via the `agent_user_id` (see
+   * ReportStateAndNotificationRequest). This request must be authorized using
+   * service account credentials from your Actions console project.
+   * (devices.reportStateAndNotification)
    *
    * @param ReportStateAndNotificationRequest $postBody
    * @param array $optParams Optional parameters.
    * @return ReportStateAndNotificationResponse
+   * @throws \Google\Service\Exception
    */
   public function reportStateAndNotification(ReportStateAndNotificationRequest $postBody, $optParams = [])
   {
@@ -78,16 +80,17 @@ class Devices extends \Google\Service\Resource
     return $this->call('reportStateAndNotification', [$params], ReportStateAndNotificationResponse::class);
   }
   /**
-   * Requests Google to send an `action.devices.SYNC` [intent](https://developers.
-   * google.com/assistant/smarthome/reference/intent/sync) to your smart home
-   * Action to update device metadata for the given user. The third-party user's
-   * identity is passed via the `agent_user_id` (see RequestSyncDevicesRequest).
-   * This request must be authorized using service account credentials from your
-   * Actions console project. (devices.requestSync)
+   * Requests Google to send an `action.devices.SYNC`
+   * [intent](https://developers.home.google.com/cloud-to-cloud/intents/sync) to
+   * your smart home Action to update device metadata for the given user. The
+   * third-party user's identity is passed via the `agent_user_id` (see
+   * RequestSyncDevicesRequest). This request must be authorized using service
+   * account credentials from your Actions console project. (devices.requestSync)
    *
    * @param RequestSyncDevicesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return RequestSyncDevicesResponse
+   * @throws \Google\Service\Exception
    */
   public function requestSync(RequestSyncDevicesRequest $postBody, $optParams = [])
   {
@@ -104,6 +107,7 @@ class Devices extends \Google\Service\Resource
    * @param SyncRequest $postBody
    * @param array $optParams Optional parameters.
    * @return SyncResponse
+   * @throws \Google\Service\Exception
    */
   public function sync(SyncRequest $postBody, $optParams = [])
   {

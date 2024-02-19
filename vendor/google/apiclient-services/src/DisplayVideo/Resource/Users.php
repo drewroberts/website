@@ -37,14 +37,18 @@ class Users extends \Google\Service\Resource
    * Bulk edits user roles for a user. The operation will delete the assigned user
    * roles provided in BulkEditAssignedUserRolesRequest.deletedAssignedUserRoles
    * and then assign the user roles provided in
-   * BulkEditAssignedUserRolesRequest.createdAssignedUserRoles.
-   * (users.bulkEditAssignedUserRoles)
+   * BulkEditAssignedUserRolesRequest.createdAssignedUserRoles. This method has
+   * unique authentication requirements. Read the prerequisites in our [Managing
+   * Users guide](/display-video/api/guides/users/overview#prerequisites) before
+   * using this method. The "Try this method" feature does not work for this
+   * method. (users.bulkEditAssignedUserRoles)
    *
    * @param string $userId Required. The ID of the user to which the assigned user
    * roles belong.
    * @param BulkEditAssignedUserRolesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return BulkEditAssignedUserRolesResponse
+   * @throws \Google\Service\Exception
    */
   public function bulkEditAssignedUserRoles($userId, BulkEditAssignedUserRolesRequest $postBody, $optParams = [])
   {
@@ -53,12 +57,16 @@ class Users extends \Google\Service\Resource
     return $this->call('bulkEditAssignedUserRoles', [$params], BulkEditAssignedUserRolesResponse::class);
   }
   /**
-   * Creates a new user. Returns the newly created user if successful.
-   * (users.create)
+   * Creates a new user. Returns the newly created user if successful. This method
+   * has unique authentication requirements. Read the prerequisites in our
+   * [Managing Users guide](/display-
+   * video/api/guides/users/overview#prerequisites) before using this method. The
+   * "Try this method" feature does not work for this method. (users.create)
    *
    * @param User $postBody
    * @param array $optParams Optional parameters.
    * @return User
+   * @throws \Google\Service\Exception
    */
   public function create(User $postBody, $optParams = [])
   {
@@ -67,11 +75,15 @@ class Users extends \Google\Service\Resource
     return $this->call('create', [$params], User::class);
   }
   /**
-   * Deletes a user. (users.delete)
+   * Deletes a user. This method has unique authentication requirements. Read the
+   * prerequisites in our [Managing Users guide](/display-
+   * video/api/guides/users/overview#prerequisites) before using this method. The
+   * "Try this method" feature does not work for this method. (users.delete)
    *
    * @param string $userId Required. The ID of the user to delete.
    * @param array $optParams Optional parameters.
    * @return DisplayvideoEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($userId, $optParams = [])
   {
@@ -80,11 +92,15 @@ class Users extends \Google\Service\Resource
     return $this->call('delete', [$params], DisplayvideoEmpty::class);
   }
   /**
-   * Gets a user. (users.get)
+   * Gets a user. This method has unique authentication requirements. Read the
+   * prerequisites in our [Managing Users guide](/display-
+   * video/api/guides/users/overview#prerequisites) before using this method. The
+   * "Try this method" feature does not work for this method. (users.get)
    *
    * @param string $userId Required. The ID of the user to fetch.
    * @param array $optParams Optional parameters.
    * @return User
+   * @throws \Google\Service\Exception
    */
   public function get($userId, $optParams = [])
   {
@@ -94,44 +110,51 @@ class Users extends \Google\Service\Resource
   }
   /**
    * Lists users that are accessible to the current user. If two users have user
-   * roles on the same partner or advertiser, they can access each other.
-   * (users.listUsers)
+   * roles on the same partner or advertiser, they can access each other. This
+   * method has unique authentication requirements. Read the prerequisites in our
+   * [Managing Users guide](/display-
+   * video/api/guides/users/overview#prerequisites) before using this method. The
+   * "Try this method" feature does not work for this method. (users.listUsers)
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filter Allows filtering by user properties. Supported
-   * syntax: * Filter expressions are made up of one or more restrictions. *
-   * Restrictions can be combined by the logical operator `AND`. * A restriction
-   * has the form of `{field} {operator} {value}`. * The operator must be
-   * `CONTAINS (:)` or `EQUALS (=)`. * The operator must be `CONTAINS (:)` for the
-   * following fields: - `displayName` - `email` * The operator must be `EQUALS
-   * (=)` for the following fields: - `assignedUserRole.userRole` -
-   * `assignedUserRole.partnerId` - `assignedUserRole.advertiserId` -
-   * `assignedUserRole.entityType`: A synthetic field of AssignedUserRole used for
-   * filtering. Identifies the type of entity to which the user role is assigned.
-   * Valid values are `Partner` and `Advertiser`. -
-   * `assignedUserRole.parentPartnerId`: A synthetic field of AssignedUserRole
-   * used for filtering. Identifies the parent partner of the entity to which the
-   * user role is assigned." Examples: * The user with displayName containing
-   * `foo`: `displayName:"foo"` * The user with email containing `bar`:
-   * `email:"bar"` * All users with standard user roles:
-   * `assignedUserRole.userRole="STANDARD"` * All users with user roles for
-   * partner 123: `assignedUserRole.partnerId="123"` * All users with user roles
-   * for advertiser 123: `assignedUserRole.advertiserId="123"` * All users with
-   * partner level user roles: `entityType="PARTNER"` * All users with user roles
-   * for partner 123 and advertisers under partner 123: `parentPartnerId="123"`
-   * The length of this field should be no more than 500 characters.
+   * @opt_param string filter Allows filtering by user fields. Supported syntax: *
+   * Filter expressions are made up of one or more restrictions. * Restrictions
+   * can be combined by the logical operator `AND`. * A restriction has the form
+   * of `{field} {operator} {value}`. * The
+   * `budget.budget_segments.date_range.end_date` field must use the `LESS THAN
+   * (<)` operator. * The `displayName and `email` field must use the `HAS (:)`
+   * operator. * All other fields must use the `EQUALS (=)` operator. Supported
+   * fields: * `assignedUserRole.advertiserId` * `assignedUserRole.entityType` *
+   * This is synthetic field of `AssignedUserRole` used for filtering. Identifies
+   * the type of entity to which the user role is assigned. Valid values are
+   * `Partner` and `Advertiser`. * `assignedUserRole.parentPartnerId` * This is a
+   * synthetic field of `AssignedUserRole` used for filtering. Identifies the
+   * parent partner of the entity to which the user role is assigned. *
+   * `assignedUserRole.partnerId` * `assignedUserRole.userRole` * `displayName` *
+   * `email` Examples: * The user with `displayName` containing "foo":
+   * `displayName:"foo"` * The user with `email` containing "bar": `email:"bar"` *
+   * All users with standard user roles: `assignedUserRole.userRole="STANDARD"` *
+   * All users with user roles for partner 123: `assignedUserRole.partnerId="123"`
+   * * All users with user roles for advertiser 123:
+   * `assignedUserRole.advertiserId="123"` * All users with partner level user
+   * roles: `entityType="PARTNER"` * All users with user roles for partner 123 and
+   * advertisers under partner 123: `parentPartnerId="123"` The length of this
+   * field should be no more than 500 characters. Reference our [filter `LIST`
+   * requests](/display-video/api/guides/how-tos/filters) guide for more
+   * information.
    * @opt_param string orderBy Field by which to sort the list. Acceptable values
    * are: * `displayName` (default) The default sorting order is ascending. To
    * specify descending order for a field, a suffix "desc" should be added to the
    * field name. For example, `displayName desc`.
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
    * If unspecified will default to `100`.
    * @opt_param string pageToken A token identifying a page of results the server
    * should return. Typically, this is the value of next_page_token returned from
    * the previous call to `ListUsers` method. If not specified, the first page of
    * results will be returned.
    * @return ListUsersResponse
+   * @throws \Google\Service\Exception
    */
   public function listUsers($optParams = [])
   {
@@ -140,8 +163,11 @@ class Users extends \Google\Service\Resource
     return $this->call('list', [$params], ListUsersResponse::class);
   }
   /**
-   * Updates an existing user. Returns the updated user if successful.
-   * (users.patch)
+   * Updates an existing user. Returns the updated user if successful. This method
+   * has unique authentication requirements. Read the prerequisites in our
+   * [Managing Users guide](/display-
+   * video/api/guides/users/overview#prerequisites) before using this method. The
+   * "Try this method" feature does not work for this method. (users.patch)
    *
    * @param string $userId Output only. The unique ID of the user. Assigned by the
    * system.
@@ -151,6 +177,7 @@ class Users extends \Google\Service\Resource
    * @opt_param string updateMask Required. The mask to control which fields to
    * update.
    * @return User
+   * @throws \Google\Service\Exception
    */
   public function patch($userId, User $postBody, $optParams = [])
   {

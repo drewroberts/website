@@ -25,7 +25,7 @@ use Google\Service\CloudLifeSciences\RunPipelineRequest;
  * Typical usage is:
  *  <code>
  *   $lifesciencesService = new Google\Service\CloudLifeSciences(...);
- *   $pipelines = $lifesciencesService->pipelines;
+ *   $pipelines = $lifesciencesService->projects_locations_pipelines;
  *  </code>
  */
 class ProjectsLocationsPipelines extends \Google\Service\Resource
@@ -48,6 +48,7 @@ class ProjectsLocationsPipelines extends \Google\Service\Resource
    * @param RunPipelineRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function run($parent, RunPipelineRequest $postBody, $optParams = [])
   {

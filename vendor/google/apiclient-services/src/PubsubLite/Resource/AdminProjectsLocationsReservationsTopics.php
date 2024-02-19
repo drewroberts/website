@@ -24,7 +24,7 @@ use Google\Service\PubsubLite\ListReservationTopicsResponse;
  * Typical usage is:
  *  <code>
  *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $topics = $pubsubliteService->topics;
+ *   $topics = $pubsubliteService->admin_projects_locations_reservations_topics;
  *  </code>
  */
 class AdminProjectsLocationsReservationsTopics extends \Google\Service\Resource
@@ -46,6 +46,7 @@ class AdminProjectsLocationsReservationsTopics extends \Google\Service\Resource
    * When paginating, all other parameters provided to `ListReservationTopics`
    * must match the call that provided the page token.
    * @return ListReservationTopicsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAdminProjectsLocationsReservationsTopics($name, $optParams = [])
   {

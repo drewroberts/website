@@ -39,6 +39,7 @@ class Users extends \Google\Service\Resource
    * @param string $userKey Identifies the user in the API request. The value can
    * be the user's primary email address, alias email address, or unique user ID.
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function delete($userKey, $optParams = [])
   {
@@ -62,6 +63,7 @@ class Users extends \Google\Service\Resource
    * non-administrator](/admin-sdk/directory/v1/guides/manage-
    * users#retrieve_users_non_admin).
    * @return User
+   * @throws \Google\Service\Exception
    */
   public function get($userKey, $optParams = [])
   {
@@ -70,11 +72,21 @@ class Users extends \Google\Service\Resource
     return $this->call('get', [$params], User::class);
   }
   /**
-   * Creates a user. (users.insert)
+   * Creates a user. Mutate calls immediately following user creation might
+   * sometimes fail as the user isn't fully created due to propagation delay in
+   * our backends. Check the error details for the "User creation is not complete"
+   * message to see if this is the case. Retrying the calls after some time can
+   * help in this case. (users.insert)
    *
    * @param User $postBody
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param bool resolveConflictAccount Optional. If set to `true`, the option
+   * selected for [handling unmanaged user
+   * accounts](https://support.google.com/a/answer/11112794) will apply. Default:
+   * `false`
    * @return User
+   * @throws \Google\Service\Exception
    */
   public function insert(User $postBody, $optParams = [])
   {
@@ -93,11 +105,11 @@ class Users extends \Google\Service\Resource
    * `projection=custom`.
    * @opt_param string customer The unique ID for the customer's Google Workspace
    * account. In case of a multi-domain account, to fetch all groups for a
-   * customer, fill this field instead of domain. You can also use the
+   * customer, use this field instead of `domain`. You can also use the
    * `my_customer` alias to represent your account's `customerId`. The
-   * `customerId` is also returned as part of the [Users resource](/admin-
-   * sdk/directory/v1/reference/users). Either the `customer` or the `domain`
-   * parameter must be provided.
+   * `customerId` is also returned as part of the [Users](/admin-
+   * sdk/directory/v1/reference/users) resource. You must provide either the
+   * `customer` or the `domain` parameter.
    * @opt_param string domain The domain name. Use this field to get groups from
    * only one domain. To return all domains for a customer account, use the
    * `customer` query parameter instead. Either the `customer` or the `domain`
@@ -120,6 +132,7 @@ class Users extends \Google\Service\Resource
    * non-administrator](/admin-sdk/directory/v1/guides/manage-
    * users#retrieve_users_non_admin).
    * @return UsersModel
+   * @throws \Google\Service\Exception
    */
   public function listUsers($optParams = [])
   {
@@ -134,6 +147,7 @@ class Users extends \Google\Service\Resource
    * be the user's primary email address, alias email address, or unique user ID.
    * @param UserMakeAdmin $postBody
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function makeAdmin($userKey, UserMakeAdmin $postBody, $optParams = [])
   {
@@ -143,8 +157,11 @@ class Users extends \Google\Service\Resource
   }
   /**
    * Updates a user using patch semantics. The update method should be used
-   * instead, since it also supports patch semantics and has better performance.
-   * This method is unable to clear fields that contain repeated objects
+   * instead, because it also supports patch semantics and has better performance.
+   * If you're mapping an external identity to a Google identity, use the
+   * [`update`](https://developers.google.com/admin-
+   * sdk/directory/v1/reference/users/update) method instead of the `patch`
+   * method. This method is unable to clear fields that contain repeated objects
    * (`addresses`, `phones`, etc). Use the update method instead. (users.patch)
    *
    * @param string $userKey Identifies the user in the API request. The value can
@@ -152,6 +169,7 @@ class Users extends \Google\Service\Resource
    * @param User $postBody
    * @param array $optParams Optional parameters.
    * @return User
+   * @throws \Google\Service\Exception
    */
   public function patch($userKey, User $postBody, $optParams = [])
   {
@@ -167,6 +185,7 @@ class Users extends \Google\Service\Resource
    * value can be the user's primary email address, alias email address, or unique
    * user ID.
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function signOut($userKey, $optParams = [])
   {
@@ -180,6 +199,7 @@ class Users extends \Google\Service\Resource
    * @param string $userKey The immutable id of the user
    * @param UserUndelete $postBody
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function undelete($userKey, UserUndelete $postBody, $optParams = [])
   {
@@ -188,16 +208,21 @@ class Users extends \Google\Service\Resource
     return $this->call('undelete', [$params]);
   }
   /**
-   * Updates a user. This method supports patch semantics, meaning you only need
-   * to include the fields you wish to update. Fields that are not present in the
-   * request will be preserved, and fields set to `null` will be cleared.
-   * (users.update)
+   * Updates a user. This method supports patch semantics, meaning that you only
+   * need to include the fields you wish to update. Fields that are not present in
+   * the request will be preserved, and fields set to `null` will be cleared. For
+   * repeating fields that contain arrays, individual items in the array can't be
+   * patched piecemeal; they must be supplied in the request body with the desired
+   * values for all items. See the [user accounts
+   * guide](https://developers.google.com/admin-sdk/directory/v1/guides/manage-
+   * users#update_user) for more information. (users.update)
    *
    * @param string $userKey Identifies the user in the API request. The value can
    * be the user's primary email address, alias email address, or unique user ID.
    * @param User $postBody
    * @param array $optParams Optional parameters.
    * @return User
+   * @throws \Google\Service\Exception
    */
   public function update($userKey, User $postBody, $optParams = [])
   {
@@ -237,6 +262,7 @@ class Users extends \Google\Service\Resource
    * non-administrator](/admin-sdk/directory/v1/guides/manage-
    * users#retrieve_users_non_admin).
    * @return Channel
+   * @throws \Google\Service\Exception
    */
   public function watch(Channel $postBody, $optParams = [])
   {

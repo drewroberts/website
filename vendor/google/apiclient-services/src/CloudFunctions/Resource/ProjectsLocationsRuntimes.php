@@ -24,7 +24,7 @@ use Google\Service\CloudFunctions\ListRuntimesResponse;
  * Typical usage is:
  *  <code>
  *   $cloudfunctionsService = new Google\Service\CloudFunctions(...);
- *   $runtimes = $cloudfunctionsService->runtimes;
+ *   $runtimes = $cloudfunctionsService->projects_locations_runtimes;
  *  </code>
  */
 class ProjectsLocationsRuntimes extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class ProjectsLocationsRuntimes extends \Google\Service\Resource
    * @opt_param string filter The filter for Runtimes that match the filter
    * expression, following the syntax outlined in https://google.aip.dev/160.
    * @return ListRuntimesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsRuntimes($parent, $optParams = [])
   {

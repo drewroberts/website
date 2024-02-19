@@ -27,7 +27,7 @@ use Google\Service\CloudSearch\UpdateDataSourceRequest;
  * Typical usage is:
  *  <code>
  *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $datasources = $cloudsearchService->datasources;
+ *   $datasources = $cloudsearchService->settings_datasources;
  *  </code>
  */
 class SettingsDatasources extends \Google\Service\Resource
@@ -39,6 +39,7 @@ class SettingsDatasources extends \Google\Service\Resource
    * @param DataSource $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create(DataSource $postBody, $optParams = [])
   {
@@ -57,6 +58,7 @@ class SettingsDatasources extends \Google\Service\Resource
    * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
    * help with debugging, set this field. Otherwise, ignore this field.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -75,6 +77,7 @@ class SettingsDatasources extends \Google\Service\Resource
    * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
    * help with debugging, set this field. Otherwise, ignore this field.
    * @return DataSource
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -94,6 +97,7 @@ class SettingsDatasources extends \Google\Service\Resource
    * The max value is 1000. The default value is 1000.
    * @opt_param string pageToken Starting index of the results.
    * @return ListDataSourceResponse
+   * @throws \Google\Service\Exception
    */
   public function listSettingsDatasources($optParams = [])
   {
@@ -112,7 +116,17 @@ class SettingsDatasources extends \Google\Service\Resource
    *
    * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
    * help with debugging, set this field. Otherwise, ignore this field.
+   * @opt_param string updateMask Only applies to
+   * [`settings.datasources.patch`](https://developers.google.com/cloud-
+   * search/docs/reference/rest/v1/settings.datasources/patch). Update mask to
+   * control which fields to update. Example field paths: `name`, `displayName`. *
+   * If `update_mask` is non-empty, then only the fields specified in the
+   * `update_mask` are updated. * If you specify a field in the `update_mask`, but
+   * don't specify its value in the source, that field is cleared. * If the
+   * `update_mask` is not present or empty or has the value `*`, then all fields
+   * are updated.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, DataSource $postBody, $optParams = [])
   {
@@ -129,6 +143,7 @@ class SettingsDatasources extends \Google\Service\Resource
    * @param UpdateDataSourceRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function update($name, UpdateDataSourceRequest $postBody, $optParams = [])
   {

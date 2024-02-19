@@ -26,7 +26,7 @@ use Google\Service\DataLabeling\GoogleProtobufEmpty;
  * Typical usage is:
  *  <code>
  *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $annotatedDatasets = $datalabelingService->annotatedDatasets;
+ *   $annotatedDatasets = $datalabelingService->projects_datasets_annotatedDatasets;
  *  </code>
  */
 class ProjectsDatasetsAnnotatedDatasets extends \Google\Service\Resource
@@ -39,6 +39,7 @@ class ProjectsDatasetsAnnotatedDatasets extends \Google\Service\Resource
    * {annotated_dataset_id}
    * @param array $optParams Optional parameters.
    * @return GoogleProtobufEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -54,6 +55,7 @@ class ProjectsDatasetsAnnotatedDatasets extends \Google\Service\Resource
    * {annotated_dataset_id}
    * @param array $optParams Optional parameters.
    * @return GoogleCloudDatalabelingV1beta1AnnotatedDataset
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -77,6 +79,7 @@ class ProjectsDatasetsAnnotatedDatasets extends \Google\Service\Resource
    * ListAnnotatedDatasetsResponse.next_page_token of the previous
    * [DataLabelingService.ListAnnotatedDatasets] call. Return first page if empty.
    * @return GoogleCloudDatalabelingV1beta1ListAnnotatedDatasetsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsDatasetsAnnotatedDatasets($parent, $optParams = [])
   {

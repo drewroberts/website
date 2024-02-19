@@ -19,7 +19,7 @@ namespace Google\Service\Firestore;
 
 class GoogleFirestoreAdminV1ExportDocumentsMetadata extends \Google\Collection
 {
-  protected $collection_key = 'collectionIds';
+  protected $collection_key = 'namespaceIds';
   /**
    * @var string[]
    */
@@ -28,6 +28,10 @@ class GoogleFirestoreAdminV1ExportDocumentsMetadata extends \Google\Collection
    * @var string
    */
   public $endTime;
+  /**
+   * @var string[]
+   */
+  public $namespaceIds;
   /**
    * @var string
    */
@@ -40,6 +44,10 @@ class GoogleFirestoreAdminV1ExportDocumentsMetadata extends \Google\Collection
   protected $progressBytesDataType = '';
   protected $progressDocumentsType = GoogleFirestoreAdminV1Progress::class;
   protected $progressDocumentsDataType = '';
+  /**
+   * @var string
+   */
+  public $snapshotTime;
   /**
    * @var string
    */
@@ -72,6 +80,20 @@ class GoogleFirestoreAdminV1ExportDocumentsMetadata extends \Google\Collection
   public function getEndTime()
   {
     return $this->endTime;
+  }
+  /**
+   * @param string[]
+   */
+  public function setNamespaceIds($namespaceIds)
+  {
+    $this->namespaceIds = $namespaceIds;
+  }
+  /**
+   * @return string[]
+   */
+  public function getNamespaceIds()
+  {
+    return $this->namespaceIds;
   }
   /**
    * @param string
@@ -128,6 +150,20 @@ class GoogleFirestoreAdminV1ExportDocumentsMetadata extends \Google\Collection
   public function getProgressDocuments()
   {
     return $this->progressDocuments;
+  }
+  /**
+   * @param string
+   */
+  public function setSnapshotTime($snapshotTime)
+  {
+    $this->snapshotTime = $snapshotTime;
+  }
+  /**
+   * @return string
+   */
+  public function getSnapshotTime()
+  {
+    return $this->snapshotTime;
   }
   /**
    * @param string

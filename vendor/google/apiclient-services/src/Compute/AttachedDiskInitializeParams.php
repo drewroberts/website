@@ -41,6 +41,10 @@ class AttachedDiskInitializeParams extends \Google\Collection
    */
   public $diskType;
   /**
+   * @var bool
+   */
+  public $enableConfidentialCompute;
+  /**
    * @var string[]
    */
   public $labels;
@@ -56,6 +60,14 @@ class AttachedDiskInitializeParams extends \Google\Collection
    * @var string
    */
   public $provisionedIops;
+  /**
+   * @var string
+   */
+  public $provisionedThroughput;
+  /**
+   * @var string[]
+   */
+  public $replicaZones;
   /**
    * @var string[]
    */
@@ -148,6 +160,20 @@ class AttachedDiskInitializeParams extends \Google\Collection
     return $this->diskType;
   }
   /**
+   * @param bool
+   */
+  public function setEnableConfidentialCompute($enableConfidentialCompute)
+  {
+    $this->enableConfidentialCompute = $enableConfidentialCompute;
+  }
+  /**
+   * @return bool
+   */
+  public function getEnableConfidentialCompute()
+  {
+    return $this->enableConfidentialCompute;
+  }
+  /**
    * @param string[]
    */
   public function setLabels($labels)
@@ -202,6 +228,34 @@ class AttachedDiskInitializeParams extends \Google\Collection
   public function getProvisionedIops()
   {
     return $this->provisionedIops;
+  }
+  /**
+   * @param string
+   */
+  public function setProvisionedThroughput($provisionedThroughput)
+  {
+    $this->provisionedThroughput = $provisionedThroughput;
+  }
+  /**
+   * @return string
+   */
+  public function getProvisionedThroughput()
+  {
+    return $this->provisionedThroughput;
+  }
+  /**
+   * @param string[]
+   */
+  public function setReplicaZones($replicaZones)
+  {
+    $this->replicaZones = $replicaZones;
+  }
+  /**
+   * @return string[]
+   */
+  public function getReplicaZones()
+  {
+    return $this->replicaZones;
   }
   /**
    * @param string[]

@@ -30,6 +30,8 @@ class X509Parameters extends \Google\Collection
   protected $caOptionsDataType = '';
   protected $keyUsageType = KeyUsage::class;
   protected $keyUsageDataType = '';
+  protected $nameConstraintsType = NameConstraints::class;
+  protected $nameConstraintsDataType = '';
   protected $policyIdsType = ObjectId::class;
   protected $policyIdsDataType = 'array';
 
@@ -88,6 +90,20 @@ class X509Parameters extends \Google\Collection
   public function getKeyUsage()
   {
     return $this->keyUsage;
+  }
+  /**
+   * @param NameConstraints
+   */
+  public function setNameConstraints(NameConstraints $nameConstraints)
+  {
+    $this->nameConstraints = $nameConstraints;
+  }
+  /**
+   * @return NameConstraints
+   */
+  public function getNameConstraints()
+  {
+    return $this->nameConstraints;
   }
   /**
    * @param ObjectId[]

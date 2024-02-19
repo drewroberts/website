@@ -24,7 +24,7 @@ use Google\Service\Oauth2\Userinfo as UserinfoModel;
  * Typical usage is:
  *  <code>
  *   $oauth2Service = new Google\Service\Oauth2(...);
- *   $me = $oauth2Service->me;
+ *   $me = $oauth2Service->userinfo_v2_me;
  *  </code>
  */
 class UserinfoV2Me extends \Google\Service\Resource
@@ -33,7 +33,8 @@ class UserinfoV2Me extends \Google\Service\Resource
    * (me.get)
    *
    * @param array $optParams Optional parameters.
-   * @return Userinfo
+   * @return UserinfoModel
+   * @throws \Google\Service\Exception
    */
   public function get($optParams = [])
   {

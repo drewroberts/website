@@ -26,7 +26,7 @@ use Google\Service\DisplayVideo\NegativeKeywordList;
  * Typical usage is:
  *  <code>
  *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $negativeKeywordLists = $displayvideoService->negativeKeywordLists;
+ *   $negativeKeywordLists = $displayvideoService->advertisers_negativeKeywordLists;
  *  </code>
  */
 class AdvertisersNegativeKeywordLists extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class AdvertisersNegativeKeywordLists extends \Google\Service\Resource
    * @param NegativeKeywordList $postBody
    * @param array $optParams Optional parameters.
    * @return NegativeKeywordList
+   * @throws \Google\Service\Exception
    */
   public function create($advertiserId, NegativeKeywordList $postBody, $optParams = [])
   {
@@ -57,6 +58,7 @@ class AdvertisersNegativeKeywordLists extends \Google\Service\Resource
    * list to delete.
    * @param array $optParams Optional parameters.
    * @return DisplayvideoEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($advertiserId, $negativeKeywordListId, $optParams = [])
   {
@@ -74,6 +76,7 @@ class AdvertisersNegativeKeywordLists extends \Google\Service\Resource
    * list to fetch.
    * @param array $optParams Optional parameters.
    * @return NegativeKeywordList
+   * @throws \Google\Service\Exception
    */
   public function get($advertiserId, $negativeKeywordListId, $optParams = [])
   {
@@ -89,7 +92,7 @@ class AdvertisersNegativeKeywordLists extends \Google\Service\Resource
    * the fetched negative keyword lists belong.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
    * Defaults to `100` if not set. Returns error code `INVALID_ARGUMENT` if an
    * invalid value is specified.
    * @opt_param string pageToken A token identifying a page of results the server
@@ -97,6 +100,7 @@ class AdvertisersNegativeKeywordLists extends \Google\Service\Resource
    * the previous call to `ListNegativeKeywordLists` method. If not specified, the
    * first page of results will be returned.
    * @return ListNegativeKeywordListsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAdvertisersNegativeKeywordLists($advertiserId, $optParams = [])
   {
@@ -118,6 +122,7 @@ class AdvertisersNegativeKeywordLists extends \Google\Service\Resource
    * @opt_param string updateMask Required. The mask to control which fields to
    * update.
    * @return NegativeKeywordList
+   * @throws \Google\Service\Exception
    */
   public function patch($advertiserId, $negativeKeywordListId, NegativeKeywordList $postBody, $optParams = [])
   {

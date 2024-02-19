@@ -25,7 +25,7 @@ use Google\Service\ArtifactRegistry\ListFilesResponse;
  * Typical usage is:
  *  <code>
  *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $files = $artifactregistryService->files;
+ *   $files = $artifactregistryService->projects_locations_repositories_files;
  *  </code>
  */
 class ProjectsLocationsRepositoriesFiles extends \Google\Service\Resource
@@ -33,9 +33,10 @@ class ProjectsLocationsRepositoriesFiles extends \Google\Service\Resource
   /**
    * Gets a file. (files.get)
    *
-   * @param string $name The name of the file to retrieve.
+   * @param string $name Required. The name of the file to retrieve.
    * @param array $optParams Optional parameters.
    * @return GoogleDevtoolsArtifactregistryV1File
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -46,8 +47,8 @@ class ProjectsLocationsRepositoriesFiles extends \Google\Service\Resource
   /**
    * Lists files. (files.listProjectsLocationsRepositoriesFiles)
    *
-   * @param string $parent The name of the repository whose files will be listed.
-   * For example: "projects/p1/locations/us-central1/repositories/repo1
+   * @param string $parent Required. The name of the repository whose files will
+   * be listed. For example: "projects/p1/locations/us-central1/repositories/repo1
    * @param array $optParams Optional parameters.
    *
    * @opt_param string filter An expression for filtering the results of the
@@ -62,6 +63,7 @@ class ProjectsLocationsRepositoriesFiles extends \Google\Service\Resource
    * @opt_param string pageToken The next_page_token value returned from a
    * previous list request, if any.
    * @return ListFilesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsRepositoriesFiles($parent, $optParams = [])
   {

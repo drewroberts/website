@@ -18,6 +18,7 @@
 namespace Google\Service\AndroidPublisher\Resource;
 
 use Google\Service\AndroidPublisher\Track;
+use Google\Service\AndroidPublisher\TrackConfig;
 use Google\Service\AndroidPublisher\TracksListResponse;
 
 /**
@@ -25,19 +26,37 @@ use Google\Service\AndroidPublisher\TracksListResponse;
  * Typical usage is:
  *  <code>
  *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $tracks = $androidpublisherService->tracks;
+ *   $tracks = $androidpublisherService->edits_tracks;
  *  </code>
  */
 class EditsTracks extends \Google\Service\Resource
 {
   /**
+   * Creates a new track. (tracks.create)
+   *
+   * @param string $packageName Required. Package name of the app.
+   * @param string $editId Required. Identifier of the edit.
+   * @param TrackConfig $postBody
+   * @param array $optParams Optional parameters.
+   * @return Track
+   * @throws \Google\Service\Exception
+   */
+  public function create($packageName, $editId, TrackConfig $postBody, $optParams = [])
+  {
+    $params = ['packageName' => $packageName, 'editId' => $editId, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('create', [$params], Track::class);
+  }
+  /**
    * Gets a track. (tracks.get)
    *
    * @param string $packageName Package name of the app.
    * @param string $editId Identifier of the edit.
-   * @param string $track Identifier of the track.
+   * @param string $track Identifier of the track. [More on track
+   * name](https://developers.google.com/android-publisher/tracks#ff-track-name)
    * @param array $optParams Optional parameters.
    * @return Track
+   * @throws \Google\Service\Exception
    */
   public function get($packageName, $editId, $track, $optParams = [])
   {
@@ -52,6 +71,7 @@ class EditsTracks extends \Google\Service\Resource
    * @param string $editId Identifier of the edit.
    * @param array $optParams Optional parameters.
    * @return TracksListResponse
+   * @throws \Google\Service\Exception
    */
   public function listEditsTracks($packageName, $editId, $optParams = [])
   {
@@ -64,10 +84,12 @@ class EditsTracks extends \Google\Service\Resource
    *
    * @param string $packageName Package name of the app.
    * @param string $editId Identifier of the edit.
-   * @param string $track Identifier of the track.
+   * @param string $track Identifier of the track. [More on track
+   * name](https://developers.google.com/android-publisher/tracks#ff-track-name)
    * @param Track $postBody
    * @param array $optParams Optional parameters.
    * @return Track
+   * @throws \Google\Service\Exception
    */
   public function patch($packageName, $editId, $track, Track $postBody, $optParams = [])
   {
@@ -80,10 +102,12 @@ class EditsTracks extends \Google\Service\Resource
    *
    * @param string $packageName Package name of the app.
    * @param string $editId Identifier of the edit.
-   * @param string $track Identifier of the track.
+   * @param string $track Identifier of the track. [More on track
+   * name](https://developers.google.com/android-publisher/tracks#ff-track-name)
    * @param Track $postBody
    * @param array $optParams Optional parameters.
    * @return Track
+   * @throws \Google\Service\Exception
    */
   public function update($packageName, $editId, $track, Track $postBody, $optParams = [])
   {

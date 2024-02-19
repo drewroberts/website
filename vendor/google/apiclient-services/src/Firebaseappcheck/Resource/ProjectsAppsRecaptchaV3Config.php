@@ -25,7 +25,7 @@ use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1RecaptchaV3Config;
  * Typical usage is:
  *  <code>
  *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
- *   $recaptchaV3Config = $firebaseappcheckService->recaptchaV3Config;
+ *   $recaptchaV3Config = $firebaseappcheckService->projects_apps_recaptchaV3Config;
  *  </code>
  */
 class ProjectsAppsRecaptchaV3Config extends \Google\Service\Resource
@@ -47,6 +47,7 @@ class ProjectsAppsRecaptchaV3Config extends \Google\Service\Resource
    * projects/{project_number}/apps/{app_id}/recaptchaV3Config ``` A maximum of
    * 100 objects can be retrieved in a batch.
    * @return GoogleFirebaseAppcheckV1BatchGetRecaptchaV3ConfigsResponse
+   * @throws \Google\Service\Exception
    */
   public function batchGet($parent, $optParams = [])
   {
@@ -64,6 +65,7 @@ class ProjectsAppsRecaptchaV3Config extends \Google\Service\Resource
    * projects/{project_number}/apps/{app_id}/recaptchaV3Config ```
    * @param array $optParams Optional parameters.
    * @return GoogleFirebaseAppcheckV1RecaptchaV3Config
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -86,6 +88,7 @@ class ProjectsAppsRecaptchaV3Config extends \Google\Service\Resource
    * @opt_param string updateMask Required. A comma-separated list of names of
    * fields in the RecaptchaV3Config to update. Example: `site_secret`.
    * @return GoogleFirebaseAppcheckV1RecaptchaV3Config
+   * @throws \Google\Service\Exception
    */
   public function patch($name, GoogleFirebaseAppcheckV1RecaptchaV3Config $postBody, $optParams = [])
   {

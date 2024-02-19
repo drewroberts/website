@@ -24,7 +24,7 @@ use Google\Service\Appengine\ListAuthorizedDomainsResponse;
  * Typical usage is:
  *  <code>
  *   $appengineService = new Google\Service\Appengine(...);
- *   $authorizedDomains = $appengineService->authorizedDomains;
+ *   $authorizedDomains = $appengineService->apps_authorizedDomains;
  *  </code>
  */
 class AppsAuthorizedDomains extends \Google\Service\Resource
@@ -41,6 +41,7 @@ class AppsAuthorizedDomains extends \Google\Service\Resource
    * @opt_param string pageToken Continuation token for fetching the next page of
    * results.
    * @return ListAuthorizedDomainsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAppsAuthorizedDomains($appsId, $optParams = [])
   {

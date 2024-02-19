@@ -22,6 +22,10 @@ class MaterializedViewDefinition extends \Google\Model
   /**
    * @var bool
    */
+  public $allowNonIncrementalDefinition;
+  /**
+   * @var bool
+   */
   public $enableRefresh;
   /**
    * @var string
@@ -40,6 +44,20 @@ class MaterializedViewDefinition extends \Google\Model
    */
   public $refreshIntervalMs;
 
+  /**
+   * @param bool
+   */
+  public function setAllowNonIncrementalDefinition($allowNonIncrementalDefinition)
+  {
+    $this->allowNonIncrementalDefinition = $allowNonIncrementalDefinition;
+  }
+  /**
+   * @return bool
+   */
+  public function getAllowNonIncrementalDefinition()
+  {
+    return $this->allowNonIncrementalDefinition;
+  }
   /**
    * @param bool
    */

@@ -35,6 +35,8 @@ use Google\Service\Firestore\ListenResponse;
 use Google\Service\Firestore\PartitionQueryRequest;
 use Google\Service\Firestore\PartitionQueryResponse;
 use Google\Service\Firestore\RollbackRequest;
+use Google\Service\Firestore\RunAggregationQueryRequest;
+use Google\Service\Firestore\RunAggregationQueryResponse;
 use Google\Service\Firestore\RunQueryRequest;
 use Google\Service\Firestore\RunQueryResponse;
 use Google\Service\Firestore\WriteRequest;
@@ -45,7 +47,7 @@ use Google\Service\Firestore\WriteResponse;
  * Typical usage is:
  *  <code>
  *   $firestoreService = new Google\Service\Firestore(...);
- *   $documents = $firestoreService->documents;
+ *   $documents = $firestoreService->projects_databases_documents;
  *  </code>
  */
 class ProjectsDatabasesDocuments extends \Google\Service\Resource
@@ -60,6 +62,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @param BatchGetDocumentsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return BatchGetDocumentsResponse
+   * @throws \Google\Service\Exception
    */
   public function batchGet($database, BatchGetDocumentsRequest $postBody, $optParams = [])
   {
@@ -80,6 +83,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @param BatchWriteRequest $postBody
    * @param array $optParams Optional parameters.
    * @return BatchWriteResponse
+   * @throws \Google\Service\Exception
    */
   public function batchWrite($database, BatchWriteRequest $postBody, $optParams = [])
   {
@@ -95,6 +99,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @param BeginTransactionRequest $postBody
    * @param array $optParams Optional parameters.
    * @return BeginTransactionResponse
+   * @throws \Google\Service\Exception
    */
   public function beginTransaction($database, BeginTransactionRequest $postBody, $optParams = [])
   {
@@ -111,6 +116,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @param CommitRequest $postBody
    * @param array $optParams Optional parameters.
    * @return CommitResponse
+   * @throws \Google\Service\Exception
    */
   public function commit($database, CommitRequest $postBody, $optParams = [])
   {
@@ -134,6 +140,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @opt_param string mask.fieldPaths The list of field paths in the mask. See
    * Document.fields for a field path syntax reference.
    * @return Document
+   * @throws \Google\Service\Exception
    */
   public function createDocument($parent, $collectionId, Document $postBody, $optParams = [])
   {
@@ -155,6 +162,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * must exist and have been last updated at that time. Timestamp must be
    * microsecond aligned.
    * @return FirestoreEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -173,9 +181,12 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @opt_param string mask.fieldPaths The list of field paths in the mask. See
    * Document.fields for a field path syntax reference.
    * @opt_param string readTime Reads the version of the document at the given
-   * time. This may not be older than 270 seconds.
+   * time. This must be a microsecond precision timestamp within the past one
+   * hour, or if Point-in-Time Recovery is enabled, can additionally be a whole
+   * minute timestamp within the past 7 days.
    * @opt_param string transaction Reads the document in a transaction.
    * @return Document
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -191,26 +202,37 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
    * For example: `projects/my-project/databases/my-database/documents` or
    * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
-   * @param string $collectionId Required. The collection ID, relative to
-   * `parent`, to list. For example: `chatrooms` or `messages`.
+   * @param string $collectionId Optional. The collection ID, relative to
+   * `parent`, to list. For example: `chatrooms` or `messages`. This is optional,
+   * and when not provided, Firestore will list documents from all collections
+   * under the provided `parent`.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string mask.fieldPaths The list of field paths in the mask. See
    * Document.fields for a field path syntax reference.
-   * @opt_param string orderBy The order to sort results by. For example:
-   * `priority desc, name`.
-   * @opt_param int pageSize The maximum number of documents to return.
-   * @opt_param string pageToken The `next_page_token` value returned from a
-   * previous List request, if any.
-   * @opt_param string readTime Reads documents as they were at the given time.
-   * This may not be older than 270 seconds.
+   * @opt_param string orderBy Optional. The optional ordering of the documents to
+   * return. For example: `priority desc, __name__ desc`. This mirrors the `ORDER
+   * BY` used in Firestore queries but in a string representation. When absent,
+   * documents are ordered based on `__name__ ASC`.
+   * @opt_param int pageSize Optional. The maximum number of documents to return
+   * in a single response. Firestore may return fewer than this value.
+   * @opt_param string pageToken Optional. A page token, received from a previous
+   * `ListDocuments` response. Provide this to retrieve the subsequent page. When
+   * paginating, all other parameters (with the exception of `page_size`) must
+   * match the values set in the request that generated the page token.
+   * @opt_param string readTime Perform the read at the provided time. This must
+   * be a microsecond precision timestamp within the past one hour, or if Point-
+   * in-Time Recovery is enabled, can additionally be a whole minute timestamp
+   * within the past 7 days.
    * @opt_param bool showMissing If the list should show missing documents. A
-   * missing document is a document that does not exist but has sub-documents.
-   * These documents will be returned with a key but will not have fields,
-   * Document.create_time, or Document.update_time set. Requests with
+   * document is missing if it does not exist, but there are sub-documents nested
+   * underneath it. When true, such missing documents will be returned with a key
+   * but will not have fields, `create_time`, or `update_time` set. Requests with
    * `show_missing` may not specify `where` or `order_by`.
-   * @opt_param string transaction Reads documents in a transaction.
+   * @opt_param string transaction Perform the read as part of an already active
+   * transaction.
    * @return ListDocumentsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsDatabasesDocuments($parent, $collectionId, $optParams = [])
   {
@@ -224,11 +246,12 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    *
    * @param string $parent Required. The parent document. In the format:
    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-   * For example: `projects/my-project/databases/my-database/documents/chatrooms
-   * /my-chatroom`
+   * For example: `projects/my-project/databases/my-
+   * database/documents/chatrooms/my-chatroom`
    * @param ListCollectionIdsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return ListCollectionIdsResponse
+   * @throws \Google\Service\Exception
    */
   public function listCollectionIds($parent, ListCollectionIdsRequest $postBody, $optParams = [])
   {
@@ -244,26 +267,37 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
    * For example: `projects/my-project/databases/my-database/documents` or
    * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
-   * @param string $collectionId Required. The collection ID, relative to
-   * `parent`, to list. For example: `chatrooms` or `messages`.
+   * @param string $collectionId Optional. The collection ID, relative to
+   * `parent`, to list. For example: `chatrooms` or `messages`. This is optional,
+   * and when not provided, Firestore will list documents from all collections
+   * under the provided `parent`.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string mask.fieldPaths The list of field paths in the mask. See
    * Document.fields for a field path syntax reference.
-   * @opt_param string orderBy The order to sort results by. For example:
-   * `priority desc, name`.
-   * @opt_param int pageSize The maximum number of documents to return.
-   * @opt_param string pageToken The `next_page_token` value returned from a
-   * previous List request, if any.
-   * @opt_param string readTime Reads documents as they were at the given time.
-   * This may not be older than 270 seconds.
+   * @opt_param string orderBy Optional. The optional ordering of the documents to
+   * return. For example: `priority desc, __name__ desc`. This mirrors the `ORDER
+   * BY` used in Firestore queries but in a string representation. When absent,
+   * documents are ordered based on `__name__ ASC`.
+   * @opt_param int pageSize Optional. The maximum number of documents to return
+   * in a single response. Firestore may return fewer than this value.
+   * @opt_param string pageToken Optional. A page token, received from a previous
+   * `ListDocuments` response. Provide this to retrieve the subsequent page. When
+   * paginating, all other parameters (with the exception of `page_size`) must
+   * match the values set in the request that generated the page token.
+   * @opt_param string readTime Perform the read at the provided time. This must
+   * be a microsecond precision timestamp within the past one hour, or if Point-
+   * in-Time Recovery is enabled, can additionally be a whole minute timestamp
+   * within the past 7 days.
    * @opt_param bool showMissing If the list should show missing documents. A
-   * missing document is a document that does not exist but has sub-documents.
-   * These documents will be returned with a key but will not have fields,
-   * Document.create_time, or Document.update_time set. Requests with
+   * document is missing if it does not exist, but there are sub-documents nested
+   * underneath it. When true, such missing documents will be returned with a key
+   * but will not have fields, `create_time`, or `update_time` set. Requests with
    * `show_missing` may not specify `where` or `order_by`.
-   * @opt_param string transaction Reads documents in a transaction.
+   * @opt_param string transaction Perform the read as part of an already active
+   * transaction.
    * @return ListDocumentsResponse
+   * @throws \Google\Service\Exception
    */
   public function listDocuments($parent, $collectionId, $optParams = [])
   {
@@ -272,13 +306,15 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
     return $this->call('listDocuments', [$params], ListDocumentsResponse::class);
   }
   /**
-   * Listens to changes. (documents.listen)
+   * Listens to changes. This method is only available via gRPC or WebChannel (not
+   * REST). (documents.listen)
    *
    * @param string $database Required. The database name. In the format:
    * `projects/{project_id}/databases/{database_id}`.
    * @param ListenRequest $postBody
    * @param array $optParams Optional parameters.
    * @return ListenResponse
+   * @throws \Google\Service\Exception
    */
   public function listen($database, ListenRequest $postBody, $optParams = [])
   {
@@ -298,6 +334,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @param PartitionQueryRequest $postBody
    * @param array $optParams Optional parameters.
    * @return PartitionQueryResponse
+   * @throws \Google\Service\Exception
    */
   public function partitionQuery($parent, PartitionQueryRequest $postBody, $optParams = [])
   {
@@ -323,6 +360,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @opt_param string updateMask.fieldPaths The list of field paths in the mask.
    * See Document.fields for a field path syntax reference.
    * @return Document
+   * @throws \Google\Service\Exception
    */
   public function patch($name, Document $postBody, $optParams = [])
   {
@@ -338,12 +376,36 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @param RollbackRequest $postBody
    * @param array $optParams Optional parameters.
    * @return FirestoreEmpty
+   * @throws \Google\Service\Exception
    */
   public function rollback($database, RollbackRequest $postBody, $optParams = [])
   {
     $params = ['database' => $database, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);
     return $this->call('rollback', [$params], FirestoreEmpty::class);
+  }
+  /**
+   * Runs an aggregation query. Rather than producing Document results like
+   * Firestore.RunQuery, this API allows running an aggregation to produce a
+   * series of AggregationResult server-side. High-Level Example: ``` -- Return
+   * the number of documents in table given a filter. SELECT COUNT(*) FROM (
+   * SELECT * FROM k where a = true ); ``` (documents.runAggregationQuery)
+   *
+   * @param string $parent Required. The parent resource name. In the format:
+   * `projects/{project_id}/databases/{database_id}/documents` or
+   * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+   * For example: `projects/my-project/databases/my-database/documents` or
+   * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
+   * @param RunAggregationQueryRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return RunAggregationQueryResponse
+   * @throws \Google\Service\Exception
+   */
+  public function runAggregationQuery($parent, RunAggregationQueryRequest $postBody, $optParams = [])
+  {
+    $params = ['parent' => $parent, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('runAggregationQuery', [$params], RunAggregationQueryResponse::class);
   }
   /**
    * Runs a query. (documents.runQuery)
@@ -356,6 +418,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @param RunQueryRequest $postBody
    * @param array $optParams Optional parameters.
    * @return RunQueryResponse
+   * @throws \Google\Service\Exception
    */
   public function runQuery($parent, RunQueryRequest $postBody, $optParams = [])
   {
@@ -364,7 +427,8 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
     return $this->call('runQuery', [$params], RunQueryResponse::class);
   }
   /**
-   * Streams batches of document updates and deletes, in order. (documents.write)
+   * Streams batches of document updates and deletes, in order. This method is
+   * only available via gRPC or WebChannel (not REST). (documents.write)
    *
    * @param string $database Required. The database name. In the format:
    * `projects/{project_id}/databases/{database_id}`. This is only required in the
@@ -372,6 +436,7 @@ class ProjectsDatabasesDocuments extends \Google\Service\Resource
    * @param WriteRequest $postBody
    * @param array $optParams Optional parameters.
    * @return WriteResponse
+   * @throws \Google\Service\Exception
    */
   public function write($database, WriteRequest $postBody, $optParams = [])
   {

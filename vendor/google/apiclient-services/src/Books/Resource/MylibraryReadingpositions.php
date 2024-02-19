@@ -25,7 +25,7 @@ use Google\Service\Books\ReadingPosition;
  * Typical usage is:
  *  <code>
  *   $booksService = new Google\Service\Books(...);
- *   $readingpositions = $booksService->readingpositions;
+ *   $readingpositions = $booksService->mylibrary_readingpositions;
  *  </code>
  */
 class MylibraryReadingpositions extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class MylibraryReadingpositions extends \Google\Service\Resource
    * reading position is requested.
    * @opt_param string source String to identify the originator of this request.
    * @return ReadingPosition
+   * @throws \Google\Service\Exception
    */
   public function get($volumeId, $optParams = [])
   {
@@ -67,6 +68,7 @@ class MylibraryReadingpositions extends \Google\Service\Resource
    * set position.
    * @opt_param string source String to identify the originator of this request.
    * @return BooksEmpty
+   * @throws \Google\Service\Exception
    */
   public function setPosition($volumeId, $position, $timestamp, $optParams = [])
   {

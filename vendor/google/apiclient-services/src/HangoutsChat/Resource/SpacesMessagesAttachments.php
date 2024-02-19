@@ -24,21 +24,25 @@ use Google\Service\HangoutsChat\Attachment;
  * Typical usage is:
  *  <code>
  *   $chatService = new Google\Service\HangoutsChat(...);
- *   $attachments = $chatService->attachments;
+ *   $attachments = $chatService->spaces_messages_attachments;
  *  </code>
  */
 class SpacesMessagesAttachments extends \Google\Service\Resource
 {
   /**
    * Gets the metadata of a message attachment. The attachment data is fetched
-   * using the media API. Requires [service account
+   * using the [media API](https://developers.google.com/chat/api/reference/rest/v
+   * 1/media/download). For an example, see [Get a message
+   * attachment](https://developers.google.com/chat/api/guides/v1/media-and-
+   * attachments/get). Requires [app
    * authentication](https://developers.google.com/chat/api/guides/auth/service-
    * accounts). (attachments.get)
    *
    * @param string $name Required. Resource name of the attachment, in the form
-   * "spaces/messages/attachments".
+   * `spaces/messages/attachments`.
    * @param array $optParams Optional parameters.
    * @return Attachment
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

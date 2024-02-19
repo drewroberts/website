@@ -25,7 +25,7 @@ use Google\Service\Dfareporting\Report;
  * Typical usage is:
  *  <code>
  *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $compatibleFields = $dfareportingService->compatibleFields;
+ *   $compatibleFields = $dfareportingService->reports_compatibleFields;
  *  </code>
  */
 class ReportsCompatibleFields extends \Google\Service\Resource
@@ -39,6 +39,7 @@ class ReportsCompatibleFields extends \Google\Service\Resource
    * @param Report $postBody
    * @param array $optParams Optional parameters.
    * @return CompatibleFields
+   * @throws \Google\Service\Exception
    */
   public function query($profileId, Report $postBody, $optParams = [])
   {

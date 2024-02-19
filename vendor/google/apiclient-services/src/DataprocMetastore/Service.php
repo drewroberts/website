@@ -67,6 +67,8 @@ class Service extends \Google\Model
    * @var string
    */
   public $releaseChannel;
+  protected $scalingConfigType = ScalingConfig::class;
+  protected $scalingConfigDataType = '';
   /**
    * @var string
    */
@@ -75,6 +77,8 @@ class Service extends \Google\Model
    * @var string
    */
   public $stateMessage;
+  protected $telemetryConfigType = TelemetryConfig::class;
+  protected $telemetryConfigDataType = '';
   /**
    * @var string
    */
@@ -299,6 +303,20 @@ class Service extends \Google\Model
     return $this->releaseChannel;
   }
   /**
+   * @param ScalingConfig
+   */
+  public function setScalingConfig(ScalingConfig $scalingConfig)
+  {
+    $this->scalingConfig = $scalingConfig;
+  }
+  /**
+   * @return ScalingConfig
+   */
+  public function getScalingConfig()
+  {
+    return $this->scalingConfig;
+  }
+  /**
    * @param string
    */
   public function setState($state)
@@ -325,6 +343,20 @@ class Service extends \Google\Model
   public function getStateMessage()
   {
     return $this->stateMessage;
+  }
+  /**
+   * @param TelemetryConfig
+   */
+  public function setTelemetryConfig(TelemetryConfig $telemetryConfig)
+  {
+    $this->telemetryConfig = $telemetryConfig;
+  }
+  /**
+   * @return TelemetryConfig
+   */
+  public function getTelemetryConfig()
+  {
+    return $this->telemetryConfig;
   }
   /**
    * @param string

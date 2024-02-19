@@ -26,7 +26,7 @@ use Google\Service\TagManager\Trigger;
  * Typical usage is:
  *  <code>
  *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $triggers = $tagmanagerService->triggers;
+ *   $triggers = $tagmanagerService->accounts_containers_workspaces_triggers;
  *  </code>
  */
 class AccountsContainersWorkspacesTriggers extends \Google\Service\Resource
@@ -34,11 +34,12 @@ class AccountsContainersWorkspacesTriggers extends \Google\Service\Resource
   /**
    * Creates a GTM Trigger. (triggers.create)
    *
-   * @param string $parent GTM Workspaces's API relative path. Example:
+   * @param string $parent GTM Workspace's API relative path. Example:
    * accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}
    * @param Trigger $postBody
    * @param array $optParams Optional parameters.
    * @return Trigger
+   * @throws \Google\Service\Exception
    */
   public function create($parent, Trigger $postBody, $optParams = [])
   {
@@ -53,6 +54,7 @@ class AccountsContainersWorkspacesTriggers extends \Google\Service\Resource
    * nt_id}/containers/{container_id}/workspaces/{workspace_id}/triggers/{trigger_
    * id}
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function delete($path, $optParams = [])
   {
@@ -68,6 +70,7 @@ class AccountsContainersWorkspacesTriggers extends \Google\Service\Resource
    * id}
    * @param array $optParams Optional parameters.
    * @return Trigger
+   * @throws \Google\Service\Exception
    */
   public function get($path, $optParams = [])
   {
@@ -79,13 +82,14 @@ class AccountsContainersWorkspacesTriggers extends \Google\Service\Resource
    * Lists all GTM Triggers of a Container.
    * (triggers.listAccountsContainersWorkspacesTriggers)
    *
-   * @param string $parent GTM Workspaces's API relative path. Example:
+   * @param string $parent GTM Workspace's API relative path. Example:
    * accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id}
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pageToken Continuation token for fetching the next page of
    * results.
    * @return ListTriggersResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsContainersWorkspacesTriggers($parent, $optParams = [])
   {
@@ -104,6 +108,7 @@ class AccountsContainersWorkspacesTriggers extends \Google\Service\Resource
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the trigger in storage.
    * @return RevertTriggerResponse
+   * @throws \Google\Service\Exception
    */
   public function revert($path, $optParams = [])
   {
@@ -123,6 +128,7 @@ class AccountsContainersWorkspacesTriggers extends \Google\Service\Resource
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the trigger in storage.
    * @return Trigger
+   * @throws \Google\Service\Exception
    */
   public function update($path, Trigger $postBody, $optParams = [])
   {

@@ -28,13 +28,15 @@ use Google\Service\AndroidManagement\Operation;
  * Typical usage is:
  *  <code>
  *   $androidmanagementService = new Google\Service\AndroidManagement(...);
- *   $devices = $androidmanagementService->devices;
+ *   $devices = $androidmanagementService->enterprises_devices;
  *  </code>
  */
 class EnterprisesDevices extends \Google\Service\Resource
 {
   /**
-   * Deletes a device. This operation wipes the device. (devices.delete)
+   * Deletes a device. This operation wipes the device. Deleted devices do not
+   * show up in enterprises.devices.list calls and a 404 is returned from
+   * enterprises.devices.get. (devices.delete)
    *
    * @param string $name The name of the device in the form
    * enterprises/{enterpriseId}/devices/{deviceId}.
@@ -47,6 +49,7 @@ class EnterprisesDevices extends \Google\Service\Resource
    * effect on company owned devices. The maximum message length is 200
    * characters.
    * @return AndroidmanagementEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -55,12 +58,13 @@ class EnterprisesDevices extends \Google\Service\Resource
     return $this->call('delete', [$params], AndroidmanagementEmpty::class);
   }
   /**
-   * Gets a device. (devices.get)
+   * Gets a device. Deleted devices will respond with a 404 error. (devices.get)
    *
    * @param string $name The name of the device in the form
    * enterprises/{enterpriseId}/devices/{deviceId}.
    * @param array $optParams Optional parameters.
    * @return Device
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -78,6 +82,7 @@ class EnterprisesDevices extends \Google\Service\Resource
    * @param Command $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function issueCommand($name, Command $postBody, $optParams = [])
   {
@@ -86,7 +91,8 @@ class EnterprisesDevices extends \Google\Service\Resource
     return $this->call('issueCommand', [$params], Operation::class);
   }
   /**
-   * Lists devices for a given enterprise. (devices.listEnterprisesDevices)
+   * Lists devices for a given enterprise. Deleted devices are not returned in the
+   * response. (devices.listEnterprisesDevices)
    *
    * @param string $parent The name of the enterprise in the form
    * enterprises/{enterpriseId}.
@@ -97,6 +103,7 @@ class EnterprisesDevices extends \Google\Service\Resource
    * @opt_param string pageToken A token identifying a page of results returned by
    * the server.
    * @return ListDevicesResponse
+   * @throws \Google\Service\Exception
    */
   public function listEnterprisesDevices($parent, $optParams = [])
   {
@@ -115,6 +122,7 @@ class EnterprisesDevices extends \Google\Service\Resource
    * @opt_param string updateMask The field mask indicating the fields to update.
    * If not set, all modifiable fields will be modified.
    * @return Device
+   * @throws \Google\Service\Exception
    */
   public function patch($name, Device $postBody, $optParams = [])
   {

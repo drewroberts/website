@@ -28,7 +28,7 @@ use Google\Service\Dataflow\LaunchTemplateResponse;
  * Typical usage is:
  *  <code>
  *   $dataflowService = new Google\Service\Dataflow(...);
- *   $templates = $dataflowService->templates;
+ *   $templates = $dataflowService->projects_templates;
  *  </code>
  */
 class ProjectsTemplates extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class ProjectsTemplates extends \Google\Service\Resource
    * @param CreateJobFromTemplateRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Job
+   * @throws \Google\Service\Exception
    */
   public function create($projectId, CreateJobFromTemplateRequest $postBody, $optParams = [])
   {
@@ -64,6 +65,7 @@ class ProjectsTemplates extends \Google\Service\Resource
    * to direct the request.
    * @opt_param string view The view to retrieve. Defaults to METADATA_ONLY.
    * @return GetTemplateResponse
+   * @throws \Google\Service\Exception
    */
   public function get($projectId, $optParams = [])
   {
@@ -93,6 +95,7 @@ class ProjectsTemplates extends \Google\Service\Resource
    * @opt_param bool validateOnly If true, the request is validated but not
    * actually executed. Defaults to false.
    * @return LaunchTemplateResponse
+   * @throws \Google\Service\Exception
    */
   public function launch($projectId, LaunchTemplateParameters $postBody, $optParams = [])
   {

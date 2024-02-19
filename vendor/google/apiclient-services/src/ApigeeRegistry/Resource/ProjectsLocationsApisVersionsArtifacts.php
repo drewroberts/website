@@ -31,16 +31,16 @@ use Google\Service\ApigeeRegistry\TestIamPermissionsResponse;
  * Typical usage is:
  *  <code>
  *   $apigeeregistryService = new Google\Service\ApigeeRegistry(...);
- *   $artifacts = $apigeeregistryService->artifacts;
+ *   $artifacts = $apigeeregistryService->projects_locations_apis_versions_artifacts;
  *  </code>
  */
 class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
 {
   /**
-   * CreateArtifact creates a specified artifact. (artifacts.create)
+   * Creates a specified artifact. (artifacts.create)
    *
    * @param string $parent Required. The parent, which owns this collection of
-   * artifacts. Format: {parent}
+   * artifacts. Format: `{parent}`
    * @param Artifact $postBody
    * @param array $optParams Optional parameters.
    *
@@ -49,6 +49,7 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
    * should be 4-63 characters, and valid characters are /a-z-/. Following
    * AIP-162, IDs must not have the form of a UUID.
    * @return Artifact
+   * @throws \Google\Service\Exception
    */
   public function create($parent, Artifact $postBody, $optParams = [])
   {
@@ -57,12 +58,13 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
     return $this->call('create', [$params], Artifact::class);
   }
   /**
-   * DeleteArtifact removes a specified artifact. (artifacts.delete)
+   * Removes a specified artifact. (artifacts.delete)
    *
    * @param string $name Required. The name of the artifact to delete. Format:
-   * {parent}/artifacts
+   * `{parent}/artifacts`
    * @param array $optParams Optional parameters.
    * @return ApigeeregistryEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -71,12 +73,13 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
     return $this->call('delete', [$params], ApigeeregistryEmpty::class);
   }
   /**
-   * GetArtifact returns a specified artifact. (artifacts.get)
+   * Returns a specified artifact. (artifacts.get)
    *
    * @param string $name Required. The name of the artifact to retrieve. Format:
-   * {parent}/artifacts
+   * `{parent}/artifacts`
    * @param array $optParams Optional parameters.
    * @return Artifact
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -85,15 +88,16 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
     return $this->call('get', [$params], Artifact::class);
   }
   /**
-   * GetArtifactContents returns the contents of a specified artifact. If
-   * artifacts are stored with GZip compression, the default behavior is to return
-   * the artifact uncompressed (the mime_type response field indicates the exact
-   * format returned). (artifacts.getContents)
+   * Returns the contents of a specified artifact. If artifacts are stored with
+   * GZip compression, the default behavior is to return the artifact uncompressed
+   * (the mime_type response field indicates the exact format returned).
+   * (artifacts.getContents)
    *
    * @param string $name Required. The name of the artifact whose contents should
-   * be retrieved. Format: {parent}/artifacts
+   * be retrieved. Format: `{parent}/artifacts`
    * @param array $optParams Optional parameters.
    * @return HttpBody
+   * @throws \Google\Service\Exception
    */
   public function getContents($name, $optParams = [])
   {
@@ -124,6 +128,7 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
    * documentation](https://cloud.google.com/iam/help/conditions/resource-
    * policies).
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, $optParams = [])
   {
@@ -132,16 +137,19 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
     return $this->call('getIamPolicy', [$params], Policy::class);
   }
   /**
-   * ListArtifacts returns matching artifacts.
+   * Returns matching artifacts.
    * (artifacts.listProjectsLocationsApisVersionsArtifacts)
    *
    * @param string $parent Required. The parent, which owns this collection of
-   * artifacts. Format: {parent}
+   * artifacts. Format: `{parent}`
    * @param array $optParams Optional parameters.
    *
    * @opt_param string filter An expression that can be used to filter the list.
    * Filters use the Common Expression Language and can refer to all message
    * fields except contents.
+   * @opt_param string orderBy A comma-separated list of fields, e.g. "foo,bar"
+   * Fields can be sorted in descending order using the "desc" identifier, e.g.
+   * "foo desc,bar"
    * @opt_param int pageSize The maximum number of artifacts to return. The
    * service may return fewer than this value. If unspecified, at most 50 values
    * will be returned. The maximum is 1000; values above 1000 will be coerced to
@@ -151,6 +159,7 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
    * paginating, all other parameters provided to `ListArtifacts` must match the
    * call that provided the page token.
    * @return ListArtifactsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsApisVersionsArtifacts($parent, $optParams = [])
   {
@@ -159,13 +168,13 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
     return $this->call('list', [$params], ListArtifactsResponse::class);
   }
   /**
-   * ReplaceArtifact can be used to replace a specified artifact.
-   * (artifacts.replaceArtifact)
+   * Used to replace a specified artifact. (artifacts.replaceArtifact)
    *
    * @param string $name Resource name.
    * @param Artifact $postBody
    * @param array $optParams Optional parameters.
    * @return Artifact
+   * @throws \Google\Service\Exception
    */
   public function replaceArtifact($name, Artifact $postBody, $optParams = [])
   {
@@ -185,6 +194,7 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
    * @param SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -207,6 +217,7 @@ class ProjectsLocationsApisVersionsArtifacts extends \Google\Service\Resource
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
   {

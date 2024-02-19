@@ -30,7 +30,7 @@ use Google\Service\CloudRun\GoogleLongrunningOperation;
  * Typical usage is:
  *  <code>
  *   $runService = new Google\Service\CloudRun(...);
- *   $services = $runService->services;
+ *   $services = $runService->projects_locations_services;
  *  </code>
  */
 class ProjectsLocationsServices extends \Google\Service\Resource
@@ -39,19 +39,21 @@ class ProjectsLocationsServices extends \Google\Service\Resource
    * Creates a new Service in a given project and location. (services.create)
    *
    * @param string $parent Required. The location and project in which this
-   * service should be created. Format:
-   * projects/{projectnumber}/locations/{location} Only lowercase, digits, and
-   * hyphens; must begin with letter, and may not end with hyphen; must contain
-   * fewer than 50 characters.
+   * service should be created. Format: projects/{project}/locations/{location},
+   * where {project} can be project id or number. Only lowercase characters,
+   * digits, and hyphens.
    * @param GoogleCloudRunV2Service $postBody
    * @param array $optParams Optional parameters.
    *
    * @opt_param string serviceId Required. The unique identifier for the Service.
-   * The name of the service becomes {parent}/services/{service_id}.
+   * It must begin with letter, and cannot end with hyphen; must contain fewer
+   * than 50 characters. The name of the service becomes
+   * {parent}/services/{service_id}.
    * @opt_param bool validateOnly Indicates that the request should be validated
    * and default values populated, without persisting the request or creating any
    * resources.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudRunV2Service $postBody, $optParams = [])
   {
@@ -64,7 +66,8 @@ class ProjectsLocationsServices extends \Google\Service\Resource
    * will delete all revisions. (services.delete)
    *
    * @param string $name Required. The full name of the Service. Format:
-   * projects/{projectnumber}/locations/{location}/services/{service}
+   * projects/{project}/locations/{location}/services/{service}, where {project}
+   * can be project id or number.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string etag A system-generated fingerprint for this version of the
@@ -72,6 +75,7 @@ class ProjectsLocationsServices extends \Google\Service\Resource
    * @opt_param bool validateOnly Indicates that the request should be validated
    * without actually deleting any resources.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -83,9 +87,11 @@ class ProjectsLocationsServices extends \Google\Service\Resource
    * Gets information about a Service. (services.get)
    *
    * @param string $name Required. The full name of the Service. Format:
-   * projects/{projectnumber}/locations/{location}/services/{service}
+   * projects/{project}/locations/{location}/services/{service}, where {project}
+   * can be project id or number.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudRunV2Service
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -94,8 +100,8 @@ class ProjectsLocationsServices extends \Google\Service\Resource
     return $this->call('get', [$params], GoogleCloudRunV2Service::class);
   }
   /**
-   * Get the IAM Access Control policy currently in effect for the given Cloud Run
-   * Service. This result does not include any inherited policies.
+   * Gets the IAM Access Control policy currently in effect for the given Cloud
+   * Run Service. This result does not include any inherited policies.
    * (services.getIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
@@ -117,6 +123,7 @@ class ProjectsLocationsServices extends \Google\Service\Resource
    * documentation](https://cloud.google.com/iam/help/conditions/resource-
    * policies).
    * @return GoogleIamV1Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, $optParams = [])
   {
@@ -125,11 +132,12 @@ class ProjectsLocationsServices extends \Google\Service\Resource
     return $this->call('getIamPolicy', [$params], GoogleIamV1Policy::class);
   }
   /**
-   * List Services. (services.listProjectsLocationsServices)
+   * Lists Services. (services.listProjectsLocationsServices)
    *
    * @param string $parent Required. The location and project to list resources
-   * on. Location must be a valid GCP region, and may not be the "-" wildcard.
-   * Format: projects/{projectnumber}/locations/{location}
+   * on. Location must be a valid Google Cloud region, and cannot be the "-"
+   * wildcard. Format: projects/{project}/locations/{location}, where {project}
+   * can be project id or number.
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize Maximum number of Services to return in this call.
@@ -138,6 +146,7 @@ class ProjectsLocationsServices extends \Google\Service\Resource
    * @opt_param bool showDeleted If true, returns deleted (but unexpired)
    * resources along with active ones.
    * @return GoogleCloudRunV2ListServicesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsServices($parent, $optParams = [])
   {
@@ -156,12 +165,13 @@ class ProjectsLocationsServices extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool allowMissing If set to true, and if the Service does not
-   * exist, it will create a new one. Caller must have both create and update
-   * permissions for this call if this is set to true.
+   * exist, it will create a new one. The caller must have 'run.services.create'
+   * permissions if this is set to true and the Service does not exist.
    * @opt_param bool validateOnly Indicates that the request should be validated
    * and default values populated, without persisting the request or updating any
    * resources.
    * @return GoogleLongrunningOperation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, GoogleCloudRunV2Service $postBody, $optParams = [])
   {
@@ -180,6 +190,7 @@ class ProjectsLocationsServices extends \Google\Service\Resource
    * @param GoogleIamV1SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleIamV1Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, GoogleIamV1SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -198,6 +209,7 @@ class ProjectsLocationsServices extends \Google\Service\Resource
    * @param GoogleIamV1TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleIamV1TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, GoogleIamV1TestIamPermissionsRequest $postBody, $optParams = [])
   {

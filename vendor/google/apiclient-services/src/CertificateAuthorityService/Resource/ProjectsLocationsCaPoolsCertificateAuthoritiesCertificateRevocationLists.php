@@ -30,7 +30,7 @@ use Google\Service\CertificateAuthorityService\TestIamPermissionsResponse;
  * Typical usage is:
  *  <code>
  *   $privatecaService = new Google\Service\CertificateAuthorityService(...);
- *   $certificateRevocationLists = $privatecaService->certificateRevocationLists;
+ *   $certificateRevocationLists = $privatecaService->projects_locations_caPools_certificateAuthorities_certificateRevocationLists;
  *  </code>
  */
 class ProjectsLocationsCaPoolsCertificateAuthoritiesCertificateRevocationLists extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class ProjectsLocationsCaPoolsCertificateAuthoritiesCertificateRevocationLists e
    * get.
    * @param array $optParams Optional parameters.
    * @return CertificateRevocationList
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -73,6 +74,7 @@ class ProjectsLocationsCaPoolsCertificateAuthoritiesCertificateRevocationLists e
    * documentation](https://cloud.google.com/iam/help/conditions/resource-
    * policies).
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function getIamPolicy($resource, $optParams = [])
   {
@@ -100,6 +102,7 @@ class ProjectsLocationsCaPoolsCertificateAuthoritiesCertificateRevocationLists e
    * @opt_param string pageToken Optional. Pagination token, returned earlier via
    * ListCertificateRevocationListsResponse.next_page_token.
    * @return ListCertificateRevocationListsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsCaPoolsCertificateAuthoritiesCertificateRevocationLists($parent, $optParams = [])
   {
@@ -121,7 +124,7 @@ class ProjectsLocationsCaPoolsCertificateAuthoritiesCertificateRevocationLists e
    * unique request ID so that if you must retry your request, the server will
    * know to ignore the request if it has already been completed. The server will
    * guarantee that for at least 60 minutes since the first request. For example,
-   * consider a situation where you make an initial request and t he request times
+   * consider a situation where you make an initial request and the request times
    * out. If you make the request again with the same request ID, the server can
    * check if original operation with the same request ID was received, and if so,
    * will ignore the second request. This prevents clients from accidentally
@@ -131,6 +134,7 @@ class ProjectsLocationsCaPoolsCertificateAuthoritiesCertificateRevocationLists e
    * @opt_param string updateMask Required. A list of fields to be updated in this
    * request.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, CertificateRevocationList $postBody, $optParams = [])
   {
@@ -150,6 +154,7 @@ class ProjectsLocationsCaPoolsCertificateAuthoritiesCertificateRevocationLists e
    * @param SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Policy
+   * @throws \Google\Service\Exception
    */
   public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
   {
@@ -172,6 +177,7 @@ class ProjectsLocationsCaPoolsCertificateAuthoritiesCertificateRevocationLists e
    * @param TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return TestIamPermissionsResponse
+   * @throws \Google\Service\Exception
    */
   public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
   {

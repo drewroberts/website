@@ -52,6 +52,9 @@ class ChromeManagement extends \Google\Service
   public $customers_apps_web;
   public $customers_reports;
   public $customers_telemetry_devices;
+  public $customers_telemetry_events;
+  public $customers_telemetry_notificationConfigs;
+  public $customers_telemetry_users;
 
   /**
    * Constructs the internal representation of the ChromeManagement service.
@@ -171,7 +174,21 @@ class ChromeManagement extends \Google\Service
         'reports',
         [
           'methods' => [
-            'countChromeDevicesReachingAutoExpirationDate' => [
+            'countChromeBrowsersNeedingAttention' => [
+              'path' => 'v1/{+customer}/reports:countChromeBrowsersNeedingAttention',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'customer' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'orgUnitId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'countChromeDevicesReachingAutoExpirationDate' => [
               'path' => 'v1/{+customer}/reports:countChromeDevicesReachingAutoExpirationDate',
               'httpMethod' => 'GET',
               'parameters' => [
@@ -195,6 +212,24 @@ class ChromeManagement extends \Google\Service
               ],
             ],'countChromeDevicesThatNeedAttention' => [
               'path' => 'v1/{+customer}/reports:countChromeDevicesThatNeedAttention',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'customer' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'orgUnitId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'readMask' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'countChromeHardwareFleetDevices' => [
+              'path' => 'v1/{+customer}/reports:countChromeHardwareFleetDevices',
               'httpMethod' => 'GET',
               'parameters' => [
                 'customer' => [
@@ -267,6 +302,96 @@ class ChromeManagement extends \Google\Service
                   'type' => 'string',
                 ],
               ],
+            ],'countPrintJobsByPrinter' => [
+              'path' => 'v1/{+customer}/reports:countPrintJobsByPrinter',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'customer' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'filter' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'orderBy' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'pageSize' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'pageToken' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'printerOrgUnitId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'countPrintJobsByUser' => [
+              'path' => 'v1/{+customer}/reports:countPrintJobsByUser',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'customer' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'filter' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'orderBy' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'pageSize' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'pageToken' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'printerOrgUnitId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'enumeratePrintJobs' => [
+              'path' => 'v1/{+customer}/reports:enumeratePrintJobs',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'customer' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'filter' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'orderBy' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'pageSize' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'pageToken' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'printerOrgUnitId' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
             ],'findInstalledAppDevices' => [
               'path' => 'v1/{+customer}/reports:findInstalledAppDevices',
               'httpMethod' => 'GET',
@@ -331,6 +456,140 @@ class ChromeManagement extends \Google\Service
               ],
             ],'list' => [
               'path' => 'v1/{+parent}/telemetry/devices',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'filter' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'pageSize' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'pageToken' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'readMask' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->customers_telemetry_events = new ChromeManagement\Resource\CustomersTelemetryEvents(
+        $this,
+        $this->serviceName,
+        'events',
+        [
+          'methods' => [
+            'list' => [
+              'path' => 'v1/{+parent}/telemetry/events',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'filter' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'pageSize' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'pageToken' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'readMask' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->customers_telemetry_notificationConfigs = new ChromeManagement\Resource\CustomersTelemetryNotificationConfigs(
+        $this,
+        $this->serviceName,
+        'notificationConfigs',
+        [
+          'methods' => [
+            'create' => [
+              'path' => 'v1/{+parent}/telemetry/notificationConfigs',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'delete' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'list' => [
+              'path' => 'v1/{+parent}/telemetry/notificationConfigs',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'pageSize' => [
+                  'location' => 'query',
+                  'type' => 'integer',
+                ],
+                'pageToken' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->customers_telemetry_users = new ChromeManagement\Resource\CustomersTelemetryUsers(
+        $this,
+        $this->serviceName,
+        'users',
+        [
+          'methods' => [
+            'get' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'readMask' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],'list' => [
+              'path' => 'v1/{+parent}/telemetry/users',
               'httpMethod' => 'GET',
               'parameters' => [
                 'parent' => [

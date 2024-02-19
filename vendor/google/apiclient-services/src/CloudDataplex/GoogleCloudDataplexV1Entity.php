@@ -19,6 +19,8 @@ namespace Google\Service\CloudDataplex;
 
 class GoogleCloudDataplexV1Entity extends \Google\Model
 {
+  protected $accessType = GoogleCloudDataplexV1StorageAccess::class;
+  protected $accessDataType = '';
   /**
    * @var string
    */
@@ -76,8 +78,26 @@ class GoogleCloudDataplexV1Entity extends \Google\Model
   /**
    * @var string
    */
+  public $uid;
+  /**
+   * @var string
+   */
   public $updateTime;
 
+  /**
+   * @param GoogleCloudDataplexV1StorageAccess
+   */
+  public function setAccess(GoogleCloudDataplexV1StorageAccess $access)
+  {
+    $this->access = $access;
+  }
+  /**
+   * @return GoogleCloudDataplexV1StorageAccess
+   */
+  public function getAccess()
+  {
+    return $this->access;
+  }
   /**
    * @param string
    */
@@ -287,6 +307,20 @@ class GoogleCloudDataplexV1Entity extends \Google\Model
   public function getType()
   {
     return $this->type;
+  }
+  /**
+   * @param string
+   */
+  public function setUid($uid)
+  {
+    $this->uid = $uid;
+  }
+  /**
+   * @return string
+   */
+  public function getUid()
+  {
+    return $this->uid;
   }
   /**
    * @param string

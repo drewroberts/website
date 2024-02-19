@@ -27,6 +27,8 @@ class Feature extends \Google\Model
    * @var string
    */
   public $deleteTime;
+  protected $fleetDefaultMemberConfigType = CommonFleetDefaultMemberConfigSpec::class;
+  protected $fleetDefaultMemberConfigDataType = '';
   /**
    * @var string[]
    */
@@ -41,6 +43,10 @@ class Feature extends \Google\Model
   public $name;
   protected $resourceStateType = FeatureResourceState::class;
   protected $resourceStateDataType = '';
+  protected $scopeSpecsType = ScopeFeatureSpec::class;
+  protected $scopeSpecsDataType = 'map';
+  protected $scopeStatesType = ScopeFeatureState::class;
+  protected $scopeStatesDataType = 'map';
   protected $specType = CommonFeatureSpec::class;
   protected $specDataType = '';
   protected $stateType = CommonFeatureState::class;
@@ -77,6 +83,20 @@ class Feature extends \Google\Model
   public function getDeleteTime()
   {
     return $this->deleteTime;
+  }
+  /**
+   * @param CommonFleetDefaultMemberConfigSpec
+   */
+  public function setFleetDefaultMemberConfig(CommonFleetDefaultMemberConfigSpec $fleetDefaultMemberConfig)
+  {
+    $this->fleetDefaultMemberConfig = $fleetDefaultMemberConfig;
+  }
+  /**
+   * @return CommonFleetDefaultMemberConfigSpec
+   */
+  public function getFleetDefaultMemberConfig()
+  {
+    return $this->fleetDefaultMemberConfig;
   }
   /**
    * @param string[]
@@ -147,6 +167,34 @@ class Feature extends \Google\Model
   public function getResourceState()
   {
     return $this->resourceState;
+  }
+  /**
+   * @param ScopeFeatureSpec[]
+   */
+  public function setScopeSpecs($scopeSpecs)
+  {
+    $this->scopeSpecs = $scopeSpecs;
+  }
+  /**
+   * @return ScopeFeatureSpec[]
+   */
+  public function getScopeSpecs()
+  {
+    return $this->scopeSpecs;
+  }
+  /**
+   * @param ScopeFeatureState[]
+   */
+  public function setScopeStates($scopeStates)
+  {
+    $this->scopeStates = $scopeStates;
+  }
+  /**
+   * @return ScopeFeatureState[]
+   */
+  public function getScopeStates()
+  {
+    return $this->scopeStates;
   }
   /**
    * @param CommonFeatureSpec

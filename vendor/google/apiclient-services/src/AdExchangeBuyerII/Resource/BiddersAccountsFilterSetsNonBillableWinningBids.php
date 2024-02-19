@@ -24,7 +24,7 @@ use Google\Service\AdExchangeBuyerII\ListNonBillableWinningBidsResponse;
  * Typical usage is:
  *  <code>
  *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
- *   $nonBillableWinningBids = $adexchangebuyer2Service->nonBillableWinningBids;
+ *   $nonBillableWinningBids = $adexchangebuyer2Service->bidders_accounts_filterSets_nonBillableWinningBids;
  *  </code>
  */
 class BiddersAccountsFilterSetsNonBillableWinningBids extends \Google\Service\Resource
@@ -51,6 +51,7 @@ class BiddersAccountsFilterSetsNonBillableWinningBids extends \Google\Service\Re
    * ListNonBillableWinningBidsResponse.nextPageToken returned from the previous
    * call to the nonBillableWinningBids.list method.
    * @return ListNonBillableWinningBidsResponse
+   * @throws \Google\Service\Exception
    */
   public function listBiddersAccountsFilterSetsNonBillableWinningBids($filterSetName, $optParams = [])
   {

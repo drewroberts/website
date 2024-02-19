@@ -25,7 +25,7 @@ use Google\Service\PeopleService\ModifyContactGroupMembersResponse;
  * Typical usage is:
  *  <code>
  *   $peopleService = new Google\Service\PeopleService(...);
- *   $members = $peopleService->members;
+ *   $members = $peopleService->contactGroups_members;
  *  </code>
  */
 class ContactGroupsMembers extends \Google\Service\Resource
@@ -41,6 +41,7 @@ class ContactGroupsMembers extends \Google\Service\Resource
    * @param ModifyContactGroupMembersRequest $postBody
    * @param array $optParams Optional parameters.
    * @return ModifyContactGroupMembersResponse
+   * @throws \Google\Service\Exception
    */
   public function modify($resourceName, ModifyContactGroupMembersRequest $postBody, $optParams = [])
   {

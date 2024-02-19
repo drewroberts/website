@@ -17,6 +17,7 @@
 
 namespace Google\Service\DatabaseMigrationService\Resource;
 
+use Google\Service\DatabaseMigrationService\FetchStaticIpsResponse;
 use Google\Service\DatabaseMigrationService\ListLocationsResponse;
 use Google\Service\DatabaseMigrationService\Location;
 
@@ -25,17 +26,39 @@ use Google\Service\DatabaseMigrationService\Location;
  * Typical usage is:
  *  <code>
  *   $datamigrationService = new Google\Service\DatabaseMigrationService(...);
- *   $locations = $datamigrationService->locations;
+ *   $locations = $datamigrationService->projects_locations;
  *  </code>
  */
 class ProjectsLocations extends \Google\Service\Resource
 {
+  /**
+   * Fetches a set of static IP addresses that need to be allowlisted by the
+   * customer when using the static-IP connectivity method.
+   * (locations.fetchStaticIps)
+   *
+   * @param string $name Required. The resource name for the location for which
+   * static IPs should be returned. Must be in the format `projects/locations`.
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param int pageSize Maximum number of IPs to return.
+   * @opt_param string pageToken A page token, received from a previous
+   * `FetchStaticIps` call.
+   * @return FetchStaticIpsResponse
+   * @throws \Google\Service\Exception
+   */
+  public function fetchStaticIps($name, $optParams = [])
+  {
+    $params = ['name' => $name];
+    $params = array_merge($params, $optParams);
+    return $this->call('fetchStaticIps', [$params], FetchStaticIpsResponse::class);
+  }
   /**
    * Gets information about a location. (locations.get)
    *
    * @param string $name Resource name for the location.
    * @param array $optParams Optional parameters.
    * @return Location
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -59,6 +82,7 @@ class ProjectsLocations extends \Google\Service\Resource
    * @opt_param string pageToken A page token received from the `next_page_token`
    * field in the response. Send that page token to receive the subsequent page.
    * @return ListLocationsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocations($name, $optParams = [])
   {

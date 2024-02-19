@@ -22,6 +22,7 @@ class ListEnvironmentsResponse extends \Google\Collection
   protected $collection_key = 'unreachable';
   protected $environmentsType = Environment::class;
   protected $environmentsDataType = 'array';
+  public $environments = [];
   /**
    * @var string
    */
@@ -29,7 +30,7 @@ class ListEnvironmentsResponse extends \Google\Collection
   /**
    * @var string[]
    */
-  public $unreachable;
+  public $unreachable = [];
 
   /**
    * @param Environment[]

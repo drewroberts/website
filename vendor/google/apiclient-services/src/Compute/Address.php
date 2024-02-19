@@ -47,7 +47,19 @@ class Address extends \Google\Collection
   /**
    * @var string
    */
+  public $ipv6EndpointType;
+  /**
+   * @var string
+   */
   public $kind;
+  /**
+   * @var string
+   */
+  public $labelFingerprint;
+  /**
+   * @var string[]
+   */
+  public $labels;
   /**
    * @var string
    */
@@ -176,6 +188,20 @@ class Address extends \Google\Collection
   /**
    * @param string
    */
+  public function setIpv6EndpointType($ipv6EndpointType)
+  {
+    $this->ipv6EndpointType = $ipv6EndpointType;
+  }
+  /**
+   * @return string
+   */
+  public function getIpv6EndpointType()
+  {
+    return $this->ipv6EndpointType;
+  }
+  /**
+   * @param string
+   */
   public function setKind($kind)
   {
     $this->kind = $kind;
@@ -186,6 +212,34 @@ class Address extends \Google\Collection
   public function getKind()
   {
     return $this->kind;
+  }
+  /**
+   * @param string
+   */
+  public function setLabelFingerprint($labelFingerprint)
+  {
+    $this->labelFingerprint = $labelFingerprint;
+  }
+  /**
+   * @return string
+   */
+  public function getLabelFingerprint()
+  {
+    return $this->labelFingerprint;
+  }
+  /**
+   * @param string[]
+   */
+  public function setLabels($labels)
+  {
+    $this->labels = $labels;
+  }
+  /**
+   * @return string[]
+   */
+  public function getLabels()
+  {
+    return $this->labels;
   }
   /**
    * @param string

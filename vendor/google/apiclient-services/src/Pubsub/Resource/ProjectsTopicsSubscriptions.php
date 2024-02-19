@@ -24,7 +24,7 @@ use Google\Service\Pubsub\ListTopicSubscriptionsResponse;
  * Typical usage is:
  *  <code>
  *   $pubsubService = new Google\Service\Pubsub(...);
- *   $subscriptions = $pubsubService->subscriptions;
+ *   $subscriptions = $pubsubService->projects_topics_subscriptions;
  *  </code>
  */
 class ProjectsTopicsSubscriptions extends \Google\Service\Resource
@@ -37,12 +37,14 @@ class ProjectsTopicsSubscriptions extends \Google\Service\Resource
    * attached to. Format is `projects/{project}/topics/{topic}`.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize Maximum number of subscription names to return.
-   * @opt_param string pageToken The value returned by the last
+   * @opt_param int pageSize Optional. Maximum number of subscription names to
+   * return.
+   * @opt_param string pageToken Optional. The value returned by the last
    * `ListTopicSubscriptionsResponse`; indicates that this is a continuation of a
    * prior `ListTopicSubscriptions` call, and that the system should return the
    * next page of data.
    * @return ListTopicSubscriptionsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsTopicsSubscriptions($topic, $optParams = [])
   {

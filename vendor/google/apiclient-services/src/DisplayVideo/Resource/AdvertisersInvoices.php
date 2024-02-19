@@ -25,7 +25,7 @@ use Google\Service\DisplayVideo\LookupInvoiceCurrencyResponse;
  * Typical usage is:
  *  <code>
  *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $invoices = $displayvideoService->invoices;
+ *   $invoices = $displayvideoService->advertisers_invoices;
  *  </code>
  */
 class AdvertisersInvoices extends \Google\Service\Resource
@@ -45,7 +45,7 @@ class AdvertisersInvoices extends \Google\Service\Resource
    * @opt_param string loiSapinInvoiceType Select type of invoice to retrieve for
    * Loi Sapin advertisers. Only applicable to Loi Sapin advertisers. Will be
    * ignored otherwise.
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
    * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
    * if an invalid value is specified.
    * @opt_param string pageToken A token identifying a page of results the server
@@ -53,6 +53,7 @@ class AdvertisersInvoices extends \Google\Service\Resource
    * the previous call to `ListInvoices` method. If not specified, the first page
    * of results will be returned.
    * @return ListInvoicesResponse
+   * @throws \Google\Service\Exception
    */
   public function listAdvertisersInvoices($advertiserId, $optParams = [])
   {
@@ -72,6 +73,7 @@ class AdvertisersInvoices extends \Google\Service\Resource
    * set, the request will return existing currency settings for the advertiser.
    * Must be in the format YYYYMM.
    * @return LookupInvoiceCurrencyResponse
+   * @throws \Google\Service\Exception
    */
   public function lookupInvoiceCurrency($advertiserId, $optParams = [])
   {

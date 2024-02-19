@@ -17,6 +17,7 @@
 
 namespace Google\Service\CloudKMS\Resource;
 
+use Google\Service\CloudKMS\EkmConfig;
 use Google\Service\CloudKMS\GenerateRandomBytesRequest;
 use Google\Service\CloudKMS\GenerateRandomBytesResponse;
 use Google\Service\CloudKMS\ListLocationsResponse;
@@ -27,7 +28,7 @@ use Google\Service\CloudKMS\Location;
  * Typical usage is:
  *  <code>
  *   $cloudkmsService = new Google\Service\CloudKMS(...);
- *   $locations = $cloudkmsService->locations;
+ *   $locations = $cloudkmsService->projects_locations;
  *  </code>
  */
 class ProjectsLocations extends \Google\Service\Resource
@@ -41,6 +42,7 @@ class ProjectsLocations extends \Google\Service\Resource
    * @param GenerateRandomBytesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GenerateRandomBytesResponse
+   * @throws \Google\Service\Exception
    */
   public function generateRandomBytes($location, GenerateRandomBytesRequest $postBody, $optParams = [])
   {
@@ -54,12 +56,28 @@ class ProjectsLocations extends \Google\Service\Resource
    * @param string $name Resource name for the location.
    * @param array $optParams Optional parameters.
    * @return Location
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
     $params = ['name' => $name];
     $params = array_merge($params, $optParams);
     return $this->call('get', [$params], Location::class);
+  }
+  /**
+   * Returns the EkmConfig singleton resource for a given project and location.
+   * (locations.getEkmConfig)
+   *
+   * @param string $name Required. The name of the EkmConfig to get.
+   * @param array $optParams Optional parameters.
+   * @return EkmConfig
+   * @throws \Google\Service\Exception
+   */
+  public function getEkmConfig($name, $optParams = [])
+  {
+    $params = ['name' => $name];
+    $params = array_merge($params, $optParams);
+    return $this->call('getEkmConfig', [$params], EkmConfig::class);
   }
   /**
    * Lists information about the supported locations for this service.
@@ -77,12 +95,33 @@ class ProjectsLocations extends \Google\Service\Resource
    * @opt_param string pageToken A page token received from the `next_page_token`
    * field in the response. Send that page token to receive the subsequent page.
    * @return ListLocationsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocations($name, $optParams = [])
   {
     $params = ['name' => $name];
     $params = array_merge($params, $optParams);
     return $this->call('list', [$params], ListLocationsResponse::class);
+  }
+  /**
+   * Updates the EkmConfig singleton resource for a given project and location.
+   * (locations.updateEkmConfig)
+   *
+   * @param string $name Output only. The resource name for the EkmConfig in the
+   * format `projects/locations/ekmConfig`.
+   * @param EkmConfig $postBody
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string updateMask Required. List of fields to be updated in this
+   * request.
+   * @return EkmConfig
+   * @throws \Google\Service\Exception
+   */
+  public function updateEkmConfig($name, EkmConfig $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('updateEkmConfig', [$params], EkmConfig::class);
   }
 }
 

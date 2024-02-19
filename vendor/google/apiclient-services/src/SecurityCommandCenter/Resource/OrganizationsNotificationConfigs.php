@@ -26,7 +26,7 @@ use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
  * Typical usage is:
  *  <code>
  *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $notificationConfigs = $securitycenterService->notificationConfigs;
+ *   $notificationConfigs = $securitycenterService->organizations_notificationConfigs;
  *  </code>
  */
 class OrganizationsNotificationConfigs extends \Google\Service\Resource
@@ -35,15 +35,16 @@ class OrganizationsNotificationConfigs extends \Google\Service\Resource
    * Creates a notification config. (notificationConfigs.create)
    *
    * @param string $parent Required. Resource name of the new notification
-   * config's parent. Its format is "organizations/[organization_id]" or
-   * "projects/[project_id]".
+   * config's parent. Its format is "organizations/[organization_id]",
+   * "folders/[folder_id]", or "projects/[project_id]".
    * @param NotificationConfig $postBody
    * @param array $optParams Optional parameters.
    *
    * @opt_param string configId Required. Unique identifier provided by the client
-   * within the parent scope. It must be between 1 and 128 characters, and
-   * contains alphanumeric characters, underscores or hyphens only.
+   * within the parent scope. It must be between 1 and 128 characters and contain
+   * alphanumeric characters, underscores, or hyphens only.
    * @return NotificationConfig
+   * @throws \Google\Service\Exception
    */
   public function create($parent, NotificationConfig $postBody, $optParams = [])
   {
@@ -55,9 +56,12 @@ class OrganizationsNotificationConfigs extends \Google\Service\Resource
    * Deletes a notification config. (notificationConfigs.delete)
    *
    * @param string $name Required. Name of the notification config to delete. Its
-   * format is "organizations/[organization_id]/notificationConfigs/[config_id]".
+   * format is "organizations/[organization_id]/notificationConfigs/[config_id]",
+   * "folders/[folder_id]/notificationConfigs/[config_id]", or
+   * "projects/[project_id]/notificationConfigs/[config_id]".
    * @param array $optParams Optional parameters.
    * @return SecuritycenterEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -69,9 +73,12 @@ class OrganizationsNotificationConfigs extends \Google\Service\Resource
    * Gets a notification config. (notificationConfigs.get)
    *
    * @param string $name Required. Name of the notification config to get. Its
-   * format is "organizations/[organization_id]/notificationConfigs/[config_id]".
+   * format is "organizations/[organization_id]/notificationConfigs/[config_id]",
+   * "folders/[folder_id]/notificationConfigs/[config_id]", or
+   * "projects/[project_id]/notificationConfigs/[config_id]".
    * @param array $optParams Optional parameters.
    * @return NotificationConfig
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -83,9 +90,9 @@ class OrganizationsNotificationConfigs extends \Google\Service\Resource
    * Lists notification configs.
    * (notificationConfigs.listOrganizationsNotificationConfigs)
    *
-   * @param string $parent Required. Name of the organization to list notification
-   * configs. Its format is "organizations/[organization_id]" or
-   * "projects/[project_id]".
+   * @param string $parent Required. The name of the parent in which to list the
+   * notification configurations. Its format is "organizations/[organization_id]",
+   * "folders/[folder_id]", or "projects/[project_id]".
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize The maximum number of results to return in a single
@@ -95,6 +102,7 @@ class OrganizationsNotificationConfigs extends \Google\Service\Resource
    * prior `ListNotificationConfigs` call, and that the system should return the
    * next page of data.
    * @return ListNotificationConfigsResponse
+   * @throws \Google\Service\Exception
    */
   public function listOrganizationsNotificationConfigs($parent, $optParams = [])
   {
@@ -111,13 +119,16 @@ class OrganizationsNotificationConfigs extends \Google\Service\Resource
    * See:
    * https://cloud.google.com/apis/design/resource_names#relative_resource_name
    * Example:
-   * "organizations/{organization_id}/notificationConfigs/notify_public_bucket".
+   * "organizations/{organization_id}/notificationConfigs/notify_public_bucket",
+   * "folders/{folder_id}/notificationConfigs/notify_public_bucket", or
+   * "projects/{project_id}/notificationConfigs/notify_public_bucket".
    * @param NotificationConfig $postBody
    * @param array $optParams Optional parameters.
    *
    * @opt_param string updateMask The FieldMask to use when updating the
    * notification config. If empty all mutable fields will be updated.
    * @return NotificationConfig
+   * @throws \Google\Service\Exception
    */
   public function patch($name, NotificationConfig $postBody, $optParams = [])
   {

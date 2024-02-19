@@ -25,14 +25,15 @@ use Google\Service\Apigee\GoogleCloudApigeeV1ListKeyValueEntriesResponse;
  * Typical usage is:
  *  <code>
  *   $apigeeService = new Google\Service\Apigee(...);
- *   $entries = $apigeeService->entries;
+ *   $entries = $apigeeService->organizations_keyvaluemaps_entries;
  *  </code>
  */
 class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
 {
   /**
    * Creates key value entries in a key value map scoped to an organization,
-   * environment, or API proxy. (entries.create)
+   * environment, or API proxy. **Note**: Supported for Apigee hybrid 1.8.x and
+   * higher. (entries.create)
    *
    * @param string $parent Required. Scope as indicated by the URI in which to
    * create the key value map entry. Use **one** of the following structures in
@@ -43,6 +44,7 @@ class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
    * @param GoogleCloudApigeeV1KeyValueEntry $postBody
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1KeyValueEntry
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GoogleCloudApigeeV1KeyValueEntry $postBody, $optParams = [])
   {
@@ -52,9 +54,10 @@ class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
   }
   /**
    * Deletes a key value entry from a key value map scoped to an organization,
-   * environment, or API proxy. **Note:** After you delete the key value entry,
+   * environment, or API proxy. **Notes:** * After you delete the key value entry,
    * the policy consuming the entry will continue to function with its cached
-   * values for a few minutes. This is expected behavior. (entries.delete)
+   * values for a few minutes. This is expected behavior. * Supported for Apigee
+   * hybrid 1.8.x and higher. (entries.delete)
    *
    * @param string $name Required. Scope as indicated by the URI in which to
    * delete the key value map entry. Use **one** of the following structures in
@@ -64,6 +67,7 @@ class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
    * `organizations/{organization}/keyvaluemaps/{keyvaluemap}/entries/{entry}`.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1KeyValueEntry
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -72,8 +76,9 @@ class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
     return $this->call('delete', [$params], GoogleCloudApigeeV1KeyValueEntry::class);
   }
   /**
-   * Get the Key value entry value for org, env or apis scoped Key value map.
-   * (entries.get)
+   * Get the key value entry value for a key value map scoped to an organization,
+   * environment, or API proxy. **Note**: Supported for Apigee hybrid 1.8.x and
+   * higher. (entries.get)
    *
    * @param string $name Required. Scope as indicated by the URI in which to fetch
    * the key value map entry/value. Use **one** of the following structures in
@@ -83,6 +88,7 @@ class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
    * `organizations/{organization}/keyvaluemaps/{keyvaluemap}/entries/{entry}`.
    * @param array $optParams Optional parameters.
    * @return GoogleCloudApigeeV1KeyValueEntry
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -92,7 +98,8 @@ class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
   }
   /**
    * Lists key value entries for key values maps scoped to an organization,
-   * environment, or API proxy. (entries.listOrganizationsKeyvaluemapsEntries)
+   * environment, or API proxy. **Note**: Supported for Apigee hybrid 1.8.x and
+   * higher. (entries.listOrganizationsKeyvaluemapsEntries)
    *
    * @param string $parent Required. Scope as indicated by the URI in which to
    * list key value maps. Use **one** of the following structures in your request:
@@ -107,12 +114,34 @@ class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
    * valid key value entry returned from a previous call that can be used to
    * retrieve the next page.
    * @return GoogleCloudApigeeV1ListKeyValueEntriesResponse
+   * @throws \Google\Service\Exception
    */
   public function listOrganizationsKeyvaluemapsEntries($parent, $optParams = [])
   {
     $params = ['parent' => $parent];
     $params = array_merge($params, $optParams);
     return $this->call('list', [$params], GoogleCloudApigeeV1ListKeyValueEntriesResponse::class);
+  }
+  /**
+   * Update key value entry scoped to an organization, environment, or API proxy
+   * for an existing key. (entries.update)
+   *
+   * @param string $name Required. Scope as indicated by the URI in which to
+   * create the key value map entry. Use **one** of the following structures in
+   * your request: *
+   * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyvaluemap}`. * `orga
+   * nizations/{organization}/environments/{environment}/keyvaluemaps/{keyvaluemap
+   * }` * `organizations/{organization}/keyvaluemaps/{keyvaluemap}`.
+   * @param GoogleCloudApigeeV1KeyValueEntry $postBody
+   * @param array $optParams Optional parameters.
+   * @return GoogleCloudApigeeV1KeyValueEntry
+   * @throws \Google\Service\Exception
+   */
+  public function update($name, GoogleCloudApigeeV1KeyValueEntry $postBody, $optParams = [])
+  {
+    $params = ['name' => $name, 'postBody' => $postBody];
+    $params = array_merge($params, $optParams);
+    return $this->call('update', [$params], GoogleCloudApigeeV1KeyValueEntry::class);
   }
 }
 

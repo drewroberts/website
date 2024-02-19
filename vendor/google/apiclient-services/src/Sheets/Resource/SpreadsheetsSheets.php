@@ -25,7 +25,7 @@ use Google\Service\Sheets\SheetProperties;
  * Typical usage is:
  *  <code>
  *   $sheetsService = new Google\Service\Sheets(...);
- *   $sheets = $sheetsService->sheets;
+ *   $sheets = $sheetsService->spreadsheets_sheets;
  *  </code>
  */
 class SpreadsheetsSheets extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class SpreadsheetsSheets extends \Google\Service\Resource
    * @param CopySheetToAnotherSpreadsheetRequest $postBody
    * @param array $optParams Optional parameters.
    * @return SheetProperties
+   * @throws \Google\Service\Exception
    */
   public function copyTo($spreadsheetId, $sheetId, CopySheetToAnotherSpreadsheetRequest $postBody, $optParams = [])
   {

@@ -20,7 +20,7 @@ use function assert;
 abstract class AbstractSQLServerDriver implements Driver
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getDatabasePlatform()
     {
@@ -28,7 +28,7 @@ abstract class AbstractSQLServerDriver implements Driver
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated Use {@link SQLServerPlatform::createSchemaManager()} instead.
      */
@@ -38,7 +38,7 @@ abstract class AbstractSQLServerDriver implements Driver
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5458',
             'AbstractSQLServerDriver::getSchemaManager() is deprecated.'
-                . ' Use SQLServerPlatform::createSchemaManager() instead.'
+                . ' Use SQLServerPlatform::createSchemaManager() instead.',
         );
 
         assert($platform instanceof SQLServerPlatform);

@@ -24,7 +24,7 @@ use Google\Service\CloudSearch\ListItemNamesForUnmappedIdentityResponse;
  * Typical usage is:
  *  <code>
  *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $items = $cloudsearchService->items;
+ *   $items = $cloudsearchService->debug_identitysources_items;
  *  </code>
  */
 class DebugIdentitysourcesItems extends \Google\Service\Resource
@@ -46,6 +46,7 @@ class DebugIdentitysourcesItems extends \Google\Service\Resource
    * previous List request, if any.
    * @opt_param string userResourceName
    * @return ListItemNamesForUnmappedIdentityResponse
+   * @throws \Google\Service\Exception
    */
   public function listForunmappedidentity($parent, $optParams = [])
   {

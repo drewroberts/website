@@ -2,6 +2,7 @@
 
 namespace Doctrine\DBAL\Driver\PDO\SQLSrv;
 
+use Doctrine\DBAL\Driver\Exception\UnknownParameterType;
 use Doctrine\DBAL\Driver\Middleware\AbstractStatementMiddleware;
 use Doctrine\DBAL\Driver\PDO\Statement as PDOStatement;
 use Doctrine\DBAL\ParameterType;
@@ -14,9 +15,7 @@ final class Statement extends AbstractStatementMiddleware
 {
     private PDOStatement $statement;
 
-    /**
-     * @internal The statement can be only instantiated by its driver connection.
-     */
+    /** @internal The statement can be only instantiated by its driver connection. */
     public function __construct(PDOStatement $statement)
     {
         parent::__construct($statement);
@@ -25,7 +24,7 @@ final class Statement extends AbstractStatementMiddleware
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @deprecated Use {@see bindValue()} instead.
      *
@@ -34,6 +33,10 @@ final class Statement extends AbstractStatementMiddleware
      * @param int        $type
      * @param int|null   $length
      * @param mixed      $driverOptions The usage of the argument is deprecated.
+     *
+     * @throws UnknownParameterType
+     *
+     * @psalm-assert ParameterType::* $type
      */
     public function bindParam(
         $param,
@@ -46,7 +49,7 @@ final class Statement extends AbstractStatementMiddleware
             'doctrine/dbal',
             'https://github.com/doctrine/dbal/pull/5563',
             '%s is deprecated. Use bindValue() instead.',
-            __METHOD__
+            __METHOD__,
         );
 
         if (func_num_args() < 3) {
@@ -54,7 +57,7 @@ final class Statement extends AbstractStatementMiddleware
                 'doctrine/dbal',
                 'https://github.com/doctrine/dbal/pull/5558',
                 'Not passing $type to Statement::bindParam() is deprecated.'
-                    . ' Pass the type corresponding to the parameter being bound.'
+                    . ' Pass the type corresponding to the parameter being bound.',
             );
         }
 
@@ -62,7 +65,7 @@ final class Statement extends AbstractStatementMiddleware
             Deprecation::triggerIfCalledFromOutside(
                 'doctrine/dbal',
                 'https://github.com/doctrine/dbal/issues/4533',
-                'The $driverOptions argument of Statement::bindParam() is deprecated.'
+                'The $driverOptions argument of Statement::bindParam() is deprecated.',
             );
         }
 
@@ -84,7 +87,11 @@ final class Statement extends AbstractStatementMiddleware
     }
 
     /**
-     * {@inheritdoc}
+     * @throws UnknownParameterType
+     *
+     * {@inheritDoc}
+     *
+     * @psalm-assert ParameterType::* $type
      */
     public function bindValue($param, $value, $type = ParameterType::STRING): bool
     {
@@ -93,7 +100,7 @@ final class Statement extends AbstractStatementMiddleware
                 'doctrine/dbal',
                 'https://github.com/doctrine/dbal/pull/5558',
                 'Not passing $type to Statement::bindValue() is deprecated.'
-                    . ' Pass the type corresponding to the parameter being bound.'
+                    . ' Pass the type corresponding to the parameter being bound.',
             );
         }
 

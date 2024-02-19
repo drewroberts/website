@@ -25,7 +25,7 @@ use Google\Service\DLP\GooglePrivacyDlpV2RedactImageResponse;
  * Typical usage is:
  *  <code>
  *   $dlpService = new Google\Service\DLP(...);
- *   $image = $dlpService->image;
+ *   $image = $dlpService->projects_image;
  *  </code>
  */
 class ProjectsImage extends \Google\Service\Resource
@@ -51,6 +51,7 @@ class ProjectsImage extends \Google\Service\Resource
    * @param GooglePrivacyDlpV2RedactImageRequest $postBody
    * @param array $optParams Optional parameters.
    * @return GooglePrivacyDlpV2RedactImageResponse
+   * @throws \Google\Service\Exception
    */
   public function redact($parent, GooglePrivacyDlpV2RedactImageRequest $postBody, $optParams = [])
   {

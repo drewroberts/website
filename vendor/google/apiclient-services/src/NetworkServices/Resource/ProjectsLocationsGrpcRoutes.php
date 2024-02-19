@@ -26,7 +26,7 @@ use Google\Service\NetworkServices\Operation;
  * Typical usage is:
  *  <code>
  *   $networkservicesService = new Google\Service\NetworkServices(...);
- *   $grpcRoutes = $networkservicesService->grpcRoutes;
+ *   $grpcRoutes = $networkservicesService->projects_locations_grpcRoutes;
  *  </code>
  */
 class ProjectsLocationsGrpcRoutes extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class ProjectsLocationsGrpcRoutes extends \Google\Service\Resource
    * @opt_param string grpcRouteId Required. Short name of the GrpcRoute resource
    * to be created.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function create($parent, GrpcRoute $postBody, $optParams = [])
   {
@@ -56,6 +57,7 @@ class ProjectsLocationsGrpcRoutes extends \Google\Service\Resource
    * the format `projects/locations/global/grpcRoutes`.
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function delete($name, $optParams = [])
   {
@@ -70,6 +72,7 @@ class ProjectsLocationsGrpcRoutes extends \Google\Service\Resource
    * format `projects/locations/global/grpcRoutes`.
    * @param array $optParams Optional parameters.
    * @return GrpcRoute
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {
@@ -92,6 +95,7 @@ class ProjectsLocationsGrpcRoutes extends \Google\Service\Resource
    * `ListGrpcRoutes` call, and that the system should return the next page of
    * data.
    * @return ListGrpcRoutesResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsLocationsGrpcRoutes($parent, $optParams = [])
   {
@@ -113,6 +117,7 @@ class ProjectsLocationsGrpcRoutes extends \Google\Service\Resource
    * request. A field will be overwritten if it is in the mask. If the user does
    * not provide a mask then all fields will be overwritten.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function patch($name, GrpcRoute $postBody, $optParams = [])
   {

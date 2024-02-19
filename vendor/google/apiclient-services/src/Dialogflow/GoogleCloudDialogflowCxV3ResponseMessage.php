@@ -19,10 +19,16 @@ namespace Google\Service\Dialogflow;
 
 class GoogleCloudDialogflowCxV3ResponseMessage extends \Google\Model
 {
+  /**
+   * @var string
+   */
+  public $channel;
   protected $conversationSuccessType = GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess::class;
   protected $conversationSuccessDataType = '';
   protected $endInteractionType = GoogleCloudDialogflowCxV3ResponseMessageEndInteraction::class;
   protected $endInteractionDataType = '';
+  protected $knowledgeInfoCardType = GoogleCloudDialogflowCxV3ResponseMessageKnowledgeInfoCard::class;
+  protected $knowledgeInfoCardDataType = '';
   protected $liveAgentHandoffType = GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff::class;
   protected $liveAgentHandoffDataType = '';
   protected $mixedAudioType = GoogleCloudDialogflowCxV3ResponseMessageMixedAudio::class;
@@ -35,11 +41,31 @@ class GoogleCloudDialogflowCxV3ResponseMessage extends \Google\Model
   public $payload;
   protected $playAudioType = GoogleCloudDialogflowCxV3ResponseMessagePlayAudio::class;
   protected $playAudioDataType = '';
+  /**
+   * @var string
+   */
+  public $responseType;
   protected $telephonyTransferCallType = GoogleCloudDialogflowCxV3ResponseMessageTelephonyTransferCall::class;
   protected $telephonyTransferCallDataType = '';
   protected $textType = GoogleCloudDialogflowCxV3ResponseMessageText::class;
   protected $textDataType = '';
+  protected $toolCallType = GoogleCloudDialogflowCxV3ToolCall::class;
+  protected $toolCallDataType = '';
 
+  /**
+   * @param string
+   */
+  public function setChannel($channel)
+  {
+    $this->channel = $channel;
+  }
+  /**
+   * @return string
+   */
+  public function getChannel()
+  {
+    return $this->channel;
+  }
   /**
    * @param GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess
    */
@@ -67,6 +93,20 @@ class GoogleCloudDialogflowCxV3ResponseMessage extends \Google\Model
   public function getEndInteraction()
   {
     return $this->endInteraction;
+  }
+  /**
+   * @param GoogleCloudDialogflowCxV3ResponseMessageKnowledgeInfoCard
+   */
+  public function setKnowledgeInfoCard(GoogleCloudDialogflowCxV3ResponseMessageKnowledgeInfoCard $knowledgeInfoCard)
+  {
+    $this->knowledgeInfoCard = $knowledgeInfoCard;
+  }
+  /**
+   * @return GoogleCloudDialogflowCxV3ResponseMessageKnowledgeInfoCard
+   */
+  public function getKnowledgeInfoCard()
+  {
+    return $this->knowledgeInfoCard;
   }
   /**
    * @param GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff
@@ -139,6 +179,20 @@ class GoogleCloudDialogflowCxV3ResponseMessage extends \Google\Model
     return $this->playAudio;
   }
   /**
+   * @param string
+   */
+  public function setResponseType($responseType)
+  {
+    $this->responseType = $responseType;
+  }
+  /**
+   * @return string
+   */
+  public function getResponseType()
+  {
+    return $this->responseType;
+  }
+  /**
    * @param GoogleCloudDialogflowCxV3ResponseMessageTelephonyTransferCall
    */
   public function setTelephonyTransferCall(GoogleCloudDialogflowCxV3ResponseMessageTelephonyTransferCall $telephonyTransferCall)
@@ -165,6 +219,20 @@ class GoogleCloudDialogflowCxV3ResponseMessage extends \Google\Model
   public function getText()
   {
     return $this->text;
+  }
+  /**
+   * @param GoogleCloudDialogflowCxV3ToolCall
+   */
+  public function setToolCall(GoogleCloudDialogflowCxV3ToolCall $toolCall)
+  {
+    $this->toolCall = $toolCall;
+  }
+  /**
+   * @return GoogleCloudDialogflowCxV3ToolCall
+   */
+  public function getToolCall()
+  {
+    return $this->toolCall;
   }
 }
 

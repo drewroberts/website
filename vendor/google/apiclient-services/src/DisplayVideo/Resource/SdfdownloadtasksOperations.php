@@ -24,7 +24,7 @@ use Google\Service\DisplayVideo\Operation;
  * Typical usage is:
  *  <code>
  *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $operations = $displayvideoService->operations;
+ *   $operations = $displayvideoService->sdfdownloadtasks_operations;
  *  </code>
  */
 class SdfdownloadtasksOperations extends \Google\Service\Resource
@@ -36,6 +36,7 @@ class SdfdownloadtasksOperations extends \Google\Service\Resource
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function get($name, $optParams = [])
   {

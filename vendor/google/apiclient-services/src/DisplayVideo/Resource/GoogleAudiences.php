@@ -42,6 +42,7 @@ class GoogleAudiences extends \Google\Service\Resource
    * @opt_param string partnerId The ID of the partner that has access to the
    * fetched Google audience.
    * @return GoogleAudience
+   * @throws \Google\Service\Exception
    */
   public function get($googleAudienceId, $optParams = [])
   {
@@ -58,17 +59,18 @@ class GoogleAudiences extends \Google\Service\Resource
    * @opt_param string advertiserId The ID of the advertiser that has access to
    * the fetched Google audiences.
    * @opt_param string filter Allows filtering by Google audience fields.
-   * Supported syntax: * Filter expressions for Google audiences currently can
-   * only contain at most one restriction. * A restriction has the form of
-   * `{field} {operator} {value}`. * The operator must be `CONTAINS (:)`. *
-   * Supported fields: - `displayName` Examples: * All Google audiences for which
-   * the display name contains "Google": `displayName : "Google"`. The length of
-   * this field should be no more than 500 characters.
+   * Supported syntax: * Filter expressions for Google audiences can only contain
+   * at most one restriction. * A restriction has the form of `{field} {operator}
+   * {value}`. * All fields must use the `HAS (:)` operator. Supported fields: *
+   * `displayName` Examples: * All Google audiences for which the display name
+   * contains "Google": `displayName:"Google"`. The length of this field should be
+   * no more than 500 characters. Reference our [filter `LIST` requests](/display-
+   * video/api/guides/how-tos/filters) guide for more information.
    * @opt_param string orderBy Field by which to sort the list. Acceptable values
    * are: * `googleAudienceId` (default) * `displayName` The default sorting order
    * is ascending. To specify descending order for a field, a suffix "desc" should
    * be added to the field name. Example: `displayName desc`.
-   * @opt_param int pageSize Requested page size. Must be between `1` and `100`.
+   * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
    * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
    * if an invalid value is specified.
    * @opt_param string pageToken A token identifying a page of results the server
@@ -78,6 +80,7 @@ class GoogleAudiences extends \Google\Service\Resource
    * @opt_param string partnerId The ID of the partner that has access to the
    * fetched Google audiences.
    * @return ListGoogleAudiencesResponse
+   * @throws \Google\Service\Exception
    */
   public function listGoogleAudiences($optParams = [])
   {

@@ -26,7 +26,7 @@ use Google\Service\Classroom\ListGuardiansResponse;
  * Typical usage is:
  *  <code>
  *   $classroomService = new Google\Service\Classroom(...);
- *   $guardians = $classroomService->guardians;
+ *   $guardians = $classroomService->userProfiles_guardians;
  *  </code>
  */
 class UserProfilesGuardians extends \Google\Service\Resource
@@ -51,6 +51,7 @@ class UserProfilesGuardians extends \Google\Service\Resource
    * @param string $guardianId The `id` field from a `Guardian`.
    * @param array $optParams Optional parameters.
    * @return ClassroomEmpty
+   * @throws \Google\Service\Exception
    */
   public function delete($studentId, $guardianId, $optParams = [])
   {
@@ -77,6 +78,7 @@ class UserProfilesGuardians extends \Google\Service\Resource
    * @param string $guardianId The `id` field from a `Guardian`.
    * @param array $optParams Optional parameters.
    * @return Guardian
+   * @throws \Google\Service\Exception
    */
   public function get($studentId, $guardianId, $optParams = [])
   {
@@ -120,6 +122,7 @@ class UserProfilesGuardians extends \Google\Service\Resource
    * list request must be otherwise identical to the one that resulted in this
    * token.
    * @return ListGuardiansResponse
+   * @throws \Google\Service\Exception
    */
   public function listUserProfilesGuardians($studentId, $optParams = [])
   {

@@ -54,6 +54,8 @@ class ContainerVersion extends \Google\Collection
   public $fingerprint;
   protected $folderType = Folder::class;
   protected $folderDataType = 'array';
+  protected $gtagConfigType = GtagConfig::class;
+  protected $gtagConfigDataType = 'array';
   /**
    * @var string
    */
@@ -68,6 +70,8 @@ class ContainerVersion extends \Google\Collection
    * @var string
    */
   public $tagManagerUrl;
+  protected $transformationType = Transformation::class;
+  protected $transformationDataType = 'array';
   protected $triggerType = Trigger::class;
   protected $triggerDataType = 'array';
   protected $variableType = Variable::class;
@@ -230,6 +234,20 @@ class ContainerVersion extends \Google\Collection
     return $this->folder;
   }
   /**
+   * @param GtagConfig[]
+   */
+  public function setGtagConfig($gtagConfig)
+  {
+    $this->gtagConfig = $gtagConfig;
+  }
+  /**
+   * @return GtagConfig[]
+   */
+  public function getGtagConfig()
+  {
+    return $this->gtagConfig;
+  }
+  /**
    * @param string
    */
   public function setName($name)
@@ -284,6 +302,20 @@ class ContainerVersion extends \Google\Collection
   public function getTagManagerUrl()
   {
     return $this->tagManagerUrl;
+  }
+  /**
+   * @param Transformation[]
+   */
+  public function setTransformation($transformation)
+  {
+    $this->transformation = $transformation;
+  }
+  /**
+   * @return Transformation[]
+   */
+  public function getTransformation()
+  {
+    return $this->transformation;
   }
   /**
    * @param Trigger[]

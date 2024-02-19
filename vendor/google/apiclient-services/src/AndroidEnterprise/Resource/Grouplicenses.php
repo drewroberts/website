@@ -31,14 +31,16 @@ use Google\Service\AndroidEnterprise\GroupLicensesListResponse;
 class Grouplicenses extends \Google\Service\Resource
 {
   /**
-   * Retrieves details of an enterprise's group license for a product.
-   * (grouplicenses.get)
+   * Retrieves details of an enterprise's group license for a product. **Note:**
+   * This item has been deprecated. New integrations cannot use this method and
+   * can refer to our new recommendations. (grouplicenses.get)
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $groupLicenseId The ID of the product the group license is for,
    * e.g. "app:com.google.android.gm".
    * @param array $optParams Optional parameters.
    * @return GroupLicense
+   * @throws \Google\Service\Exception
    */
   public function get($enterpriseId, $groupLicenseId, $optParams = [])
   {
@@ -48,11 +50,14 @@ class Grouplicenses extends \Google\Service\Resource
   }
   /**
    * Retrieves IDs of all products for which the enterprise has a group license.
+   * **Note:** This item has been deprecated. New integrations cannot use this
+   * method and can refer to our new recommendations.
    * (grouplicenses.listGrouplicenses)
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param array $optParams Optional parameters.
    * @return GroupLicensesListResponse
+   * @throws \Google\Service\Exception
    */
   public function listGrouplicenses($enterpriseId, $optParams = [])
   {

@@ -24,7 +24,7 @@ use Google\Service\Playcustomapp\CustomApp;
  * Typical usage is:
  *  <code>
  *   $playcustomappService = new Google\Service\Playcustomapp(...);
- *   $customApps = $playcustomappService->customApps;
+ *   $customApps = $playcustomappService->accounts_customApps;
  *  </code>
  */
 class AccountsCustomApps extends \Google\Service\Resource
@@ -36,6 +36,7 @@ class AccountsCustomApps extends \Google\Service\Resource
    * @param CustomApp $postBody
    * @param array $optParams Optional parameters.
    * @return CustomApp
+   * @throws \Google\Service\Exception
    */
   public function create($account, CustomApp $postBody, $optParams = [])
   {

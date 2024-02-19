@@ -1,10 +1,7 @@
 <?php
 /**
  * @package dompdf
- * @link    http://dompdf.github.com/
- * @author  Benj Carson <benjcarson@digitaljunkies.ca>
- * @author  Helmut Tischer <htischer@weihenstephan.org>
- * @author  Fabien Ménager <fabien.menager@gmail.com>
+ * @link    https://github.com/dompdf/dompdf
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
 namespace Dompdf\Image;
@@ -33,6 +30,14 @@ class Cache
      * @var array
      */
     protected static $tempImages = [];
+
+    /**
+     * Array of image references from an SVG document.
+     * Used to detect circular references across SVG documents.
+     *
+     * @var array
+     */
+    protected static $svgRefs = [];
 
     /**
      * The url to the "broken image" used when images can't be loaded
@@ -136,14 +141,26 @@ class Cache
                 xml_set_element_handler(
                     $parser,
                     function ($parser, $name, $attributes) use ($options, $parsed_url, $full_url) {
-                        if ($name === "image") {
+                        if (strtolower($name) === "image") {
+                            if (!\array_key_exists($full_url, self::$svgRefs)) {
+                                self::$svgRefs[$full_url] = [];
+                            }
                             $attributes = array_change_key_case($attributes, CASE_LOWER);
-                            $url = $attributes["xlink:href"] ?? $attributes["href"];
-                            if (!empty($url)) {
-                                $inner_full_url = Helpers::build_url($parsed_url["protocol"], $parsed_url["host"], $parsed_url["path"], $url);
-                                if ($inner_full_url === $full_url) {
-                                    throw new ImageException("SVG self-reference is not allowed", E_WARNING);
+                            $urls = [];
+                            $urls[] = $attributes["xlink:href"] ?? "";
+                            $urls[] = $attributes["href"] ?? "";
+                            foreach ($urls as $url) {
+                                if (empty($url)) {
+                                    continue;
                                 }
+
+                                $inner_full_url = Helpers::build_url($parsed_url["protocol"], $parsed_url["host"], $parsed_url["path"], $url);
+                                if (empty($inner_full_url)) {
+                                    continue;
+                                }
+                                
+                                self::detectCircularRef($full_url, $inner_full_url);
+                                self::$svgRefs[$full_url][] = $inner_full_url;
                                 [$resolved_url, $type, $message] = self::resolve_url($url, $parsed_url["protocol"], $parsed_url["host"], $parsed_url["path"], $options);
                                 if (!empty($message)) {
                                     throw new ImageException("This SVG document references a restricted resource. $message", E_WARNING);
@@ -159,6 +176,7 @@ class Cache
                         xml_parse($parser, $line, false);
                     }
                     fclose($fp);
+                    xml_parse($parser, "", true);
                 }
                 xml_parser_free($parser);
             }
@@ -174,6 +192,19 @@ class Cache
         }
 
         return [$resolved_url, $type, $message];
+    }
+
+    static function detectCircularRef(string $src, string $target)
+    {
+        if (!\array_key_exists($target, self::$svgRefs)) {
+            return;
+        }
+        foreach (self::$svgRefs[$target] as $ref) {
+            if ($ref === $src) {
+                throw new ImageException("Circular external SVG image reference detected.", E_WARNING);
+            }
+            self::detectCircularRef($src, $ref);
+        }
     }
 
     /**
@@ -237,6 +268,7 @@ class Cache
 
         self::$_cache = [];
         self::$tempImages = [];
+        self::$svgRefs = [];
     }
 
     static function detect_type($file, $context = null)

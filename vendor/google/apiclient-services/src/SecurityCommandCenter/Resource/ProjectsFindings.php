@@ -25,7 +25,7 @@ use Google\Service\SecurityCommandCenter\Operation;
  * Typical usage is:
  *  <code>
  *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $findings = $securitycenterService->findings;
+ *   $findings = $securitycenterService->projects_findings;
  *  </code>
  */
 class ProjectsFindings extends \Google\Service\Resource
@@ -41,6 +41,7 @@ class ProjectsFindings extends \Google\Service\Resource
    * @param BulkMuteFindingsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Operation
+   * @throws \Google\Service\Exception
    */
   public function bulkMute($parent, BulkMuteFindingsRequest $postBody, $optParams = [])
   {

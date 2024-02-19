@@ -19,6 +19,10 @@ namespace Google\Service\VMMigrationService;
 
 class Source extends \Google\Model
 {
+  protected $awsType = AwsSourceDetails::class;
+  protected $awsDataType = '';
+  protected $azureType = AzureSourceDetails::class;
+  protected $azureDataType = '';
   /**
    * @var string
    */
@@ -27,6 +31,8 @@ class Source extends \Google\Model
    * @var string
    */
   public $description;
+  protected $encryptionType = Encryption::class;
+  protected $encryptionDataType = '';
   /**
    * @var string[]
    */
@@ -42,6 +48,34 @@ class Source extends \Google\Model
   protected $vmwareType = VmwareSourceDetails::class;
   protected $vmwareDataType = '';
 
+  /**
+   * @param AwsSourceDetails
+   */
+  public function setAws(AwsSourceDetails $aws)
+  {
+    $this->aws = $aws;
+  }
+  /**
+   * @return AwsSourceDetails
+   */
+  public function getAws()
+  {
+    return $this->aws;
+  }
+  /**
+   * @param AzureSourceDetails
+   */
+  public function setAzure(AzureSourceDetails $azure)
+  {
+    $this->azure = $azure;
+  }
+  /**
+   * @return AzureSourceDetails
+   */
+  public function getAzure()
+  {
+    return $this->azure;
+  }
   /**
    * @param string
    */
@@ -69,6 +103,20 @@ class Source extends \Google\Model
   public function getDescription()
   {
     return $this->description;
+  }
+  /**
+   * @param Encryption
+   */
+  public function setEncryption(Encryption $encryption)
+  {
+    $this->encryption = $encryption;
+  }
+  /**
+   * @return Encryption
+   */
+  public function getEncryption()
+  {
+    return $this->encryption;
   }
   /**
    * @param string[]

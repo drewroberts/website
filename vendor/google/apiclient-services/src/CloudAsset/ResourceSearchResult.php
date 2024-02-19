@@ -42,6 +42,8 @@ class ResourceSearchResult extends \Google\Collection
    * @var string
    */
   public $displayName;
+  protected $effectiveTagsType = EffectiveTagDetails::class;
+  protected $effectiveTagsDataType = 'array';
   /**
    * @var string[]
    */
@@ -50,6 +52,10 @@ class ResourceSearchResult extends \Google\Collection
    * @var string
    */
   public $kmsKey;
+  /**
+   * @var string[]
+   */
+  public $kmsKeys;
   /**
    * @var string[]
    */
@@ -85,6 +91,10 @@ class ResourceSearchResult extends \Google\Collection
   protected $relationshipsType = RelatedResources::class;
   protected $relationshipsDataType = 'map';
   /**
+   * @var string[]
+   */
+  public $sccSecurityMarks;
+  /**
    * @var string
    */
   public $state;
@@ -100,6 +110,8 @@ class ResourceSearchResult extends \Google\Collection
    * @var string[]
    */
   public $tagValues;
+  protected $tagsType = Tag::class;
+  protected $tagsDataType = 'array';
   /**
    * @var string
    */
@@ -192,6 +204,20 @@ class ResourceSearchResult extends \Google\Collection
     return $this->displayName;
   }
   /**
+   * @param EffectiveTagDetails[]
+   */
+  public function setEffectiveTags($effectiveTags)
+  {
+    $this->effectiveTags = $effectiveTags;
+  }
+  /**
+   * @return EffectiveTagDetails[]
+   */
+  public function getEffectiveTags()
+  {
+    return $this->effectiveTags;
+  }
+  /**
    * @param string[]
    */
   public function setFolders($folders)
@@ -218,6 +244,20 @@ class ResourceSearchResult extends \Google\Collection
   public function getKmsKey()
   {
     return $this->kmsKey;
+  }
+  /**
+   * @param string[]
+   */
+  public function setKmsKeys($kmsKeys)
+  {
+    $this->kmsKeys = $kmsKeys;
+  }
+  /**
+   * @return string[]
+   */
+  public function getKmsKeys()
+  {
+    return $this->kmsKeys;
   }
   /**
    * @param string[]
@@ -346,6 +386,20 @@ class ResourceSearchResult extends \Google\Collection
     return $this->relationships;
   }
   /**
+   * @param string[]
+   */
+  public function setSccSecurityMarks($sccSecurityMarks)
+  {
+    $this->sccSecurityMarks = $sccSecurityMarks;
+  }
+  /**
+   * @return string[]
+   */
+  public function getSccSecurityMarks()
+  {
+    return $this->sccSecurityMarks;
+  }
+  /**
    * @param string
    */
   public function setState($state)
@@ -400,6 +454,20 @@ class ResourceSearchResult extends \Google\Collection
   public function getTagValues()
   {
     return $this->tagValues;
+  }
+  /**
+   * @param Tag[]
+   */
+  public function setTags($tags)
+  {
+    $this->tags = $tags;
+  }
+  /**
+   * @return Tag[]
+   */
+  public function getTags()
+  {
+    return $this->tags;
   }
   /**
    * @param string

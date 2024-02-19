@@ -24,7 +24,7 @@ use Google\Service\AndroidPublisher\VoidedPurchasesListResponse;
  * Typical usage is:
  *  <code>
  *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $voidedpurchases = $androidpublisherService->voidedpurchases;
+ *   $voidedpurchases = $androidpublisherService->purchases_voidedpurchases;
  *  </code>
  */
 class PurchasesVoidedpurchases extends \Google\Service\Resource
@@ -65,6 +65,7 @@ class PurchasesVoidedpurchases extends \Google\Service\Resource
    * subscription orders with the same PurchaseToken, because subscription renewal
    * orders share the same PurchaseToken.
    * @return VoidedPurchasesListResponse
+   * @throws \Google\Service\Exception
    */
   public function listPurchasesVoidedpurchases($packageName, $optParams = [])
   {

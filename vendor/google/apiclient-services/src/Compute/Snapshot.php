@@ -53,6 +53,12 @@ class Snapshot extends \Google\Collection
    */
   public $downloadBytes;
   /**
+   * @var bool
+   */
+  public $enableConfidentialCompute;
+  protected $guestOsFeaturesType = GuestOsFeature::class;
+  protected $guestOsFeaturesDataType = 'array';
+  /**
    * @var string
    */
   public $id;
@@ -87,6 +93,10 @@ class Snapshot extends \Google\Collection
   /**
    * @var bool
    */
+  public $satisfiesPzi;
+  /**
+   * @var bool
+   */
   public $satisfiesPzs;
   /**
    * @var string
@@ -104,6 +114,10 @@ class Snapshot extends \Google\Collection
   public $sourceDisk;
   protected $sourceDiskEncryptionKeyType = CustomerEncryptionKey::class;
   protected $sourceDiskEncryptionKeyDataType = '';
+  /**
+   * @var string
+   */
+  public $sourceDiskForRecoveryCheckpoint;
   /**
    * @var string
    */
@@ -246,6 +260,34 @@ class Snapshot extends \Google\Collection
     return $this->downloadBytes;
   }
   /**
+   * @param bool
+   */
+  public function setEnableConfidentialCompute($enableConfidentialCompute)
+  {
+    $this->enableConfidentialCompute = $enableConfidentialCompute;
+  }
+  /**
+   * @return bool
+   */
+  public function getEnableConfidentialCompute()
+  {
+    return $this->enableConfidentialCompute;
+  }
+  /**
+   * @param GuestOsFeature[]
+   */
+  public function setGuestOsFeatures($guestOsFeatures)
+  {
+    $this->guestOsFeatures = $guestOsFeatures;
+  }
+  /**
+   * @return GuestOsFeature[]
+   */
+  public function getGuestOsFeatures()
+  {
+    return $this->guestOsFeatures;
+  }
+  /**
    * @param string
    */
   public function setId($id)
@@ -360,6 +402,20 @@ class Snapshot extends \Google\Collection
   /**
    * @param bool
    */
+  public function setSatisfiesPzi($satisfiesPzi)
+  {
+    $this->satisfiesPzi = $satisfiesPzi;
+  }
+  /**
+   * @return bool
+   */
+  public function getSatisfiesPzi()
+  {
+    return $this->satisfiesPzi;
+  }
+  /**
+   * @param bool
+   */
   public function setSatisfiesPzs($satisfiesPzs)
   {
     $this->satisfiesPzs = $satisfiesPzs;
@@ -440,6 +496,20 @@ class Snapshot extends \Google\Collection
   public function getSourceDiskEncryptionKey()
   {
     return $this->sourceDiskEncryptionKey;
+  }
+  /**
+   * @param string
+   */
+  public function setSourceDiskForRecoveryCheckpoint($sourceDiskForRecoveryCheckpoint)
+  {
+    $this->sourceDiskForRecoveryCheckpoint = $sourceDiskForRecoveryCheckpoint;
+  }
+  /**
+   * @return string
+   */
+  public function getSourceDiskForRecoveryCheckpoint()
+  {
+    return $this->sourceDiskForRecoveryCheckpoint;
   }
   /**
    * @param string

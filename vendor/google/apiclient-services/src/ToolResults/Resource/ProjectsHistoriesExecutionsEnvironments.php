@@ -25,7 +25,7 @@ use Google\Service\ToolResults\ListEnvironmentsResponse;
  * Typical usage is:
  *  <code>
  *   $toolresultsService = new Google\Service\ToolResults(...);
- *   $environments = $toolresultsService->environments;
+ *   $environments = $toolresultsService->projects_histories_executions_environments;
  *  </code>
  */
 class ProjectsHistoriesExecutionsEnvironments extends \Google\Service\Resource
@@ -42,6 +42,7 @@ class ProjectsHistoriesExecutionsEnvironments extends \Google\Service\Resource
    * @param string $environmentId Required. An Environment id.
    * @param array $optParams Optional parameters.
    * @return Environment
+   * @throws \Google\Service\Exception
    */
   public function get($projectId, $historyId, $executionId, $environmentId, $optParams = [])
   {
@@ -68,6 +69,7 @@ class ProjectsHistoriesExecutionsEnvironments extends \Google\Service\Resource
    * @opt_param string pageToken A continuation token to resume the query at the
    * next item.
    * @return ListEnvironmentsResponse
+   * @throws \Google\Service\Exception
    */
   public function listProjectsHistoriesExecutionsEnvironments($projectId, $historyId, $executionId, $optParams = [])
   {

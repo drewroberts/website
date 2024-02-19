@@ -22,6 +22,12 @@ class MigrationJob extends \Google\Model
   /**
    * @var string
    */
+  public $cmekKeyName;
+  protected $conversionWorkspaceType = ConversionWorkspaceInfo::class;
+  protected $conversionWorkspaceDataType = '';
+  /**
+   * @var string
+   */
   public $createTime;
   /**
    * @var string
@@ -50,6 +56,10 @@ class MigrationJob extends \Google\Model
   protected $errorType = Status::class;
   protected $errorDataType = '';
   /**
+   * @var string
+   */
+  public $filter;
+  /**
    * @var string[]
    */
   public $labels;
@@ -57,6 +67,8 @@ class MigrationJob extends \Google\Model
    * @var string
    */
   public $name;
+  protected $performanceConfigType = PerformanceConfig::class;
+  protected $performanceConfigDataType = '';
   /**
    * @var string
    */
@@ -86,6 +98,34 @@ class MigrationJob extends \Google\Model
   protected $vpcPeeringConnectivityType = VpcPeeringConnectivity::class;
   protected $vpcPeeringConnectivityDataType = '';
 
+  /**
+   * @param string
+   */
+  public function setCmekKeyName($cmekKeyName)
+  {
+    $this->cmekKeyName = $cmekKeyName;
+  }
+  /**
+   * @return string
+   */
+  public function getCmekKeyName()
+  {
+    return $this->cmekKeyName;
+  }
+  /**
+   * @param ConversionWorkspaceInfo
+   */
+  public function setConversionWorkspace(ConversionWorkspaceInfo $conversionWorkspace)
+  {
+    $this->conversionWorkspace = $conversionWorkspace;
+  }
+  /**
+   * @return ConversionWorkspaceInfo
+   */
+  public function getConversionWorkspace()
+  {
+    return $this->conversionWorkspace;
+  }
   /**
    * @param string
    */
@@ -213,6 +253,20 @@ class MigrationJob extends \Google\Model
     return $this->error;
   }
   /**
+   * @param string
+   */
+  public function setFilter($filter)
+  {
+    $this->filter = $filter;
+  }
+  /**
+   * @return string
+   */
+  public function getFilter()
+  {
+    return $this->filter;
+  }
+  /**
    * @param string[]
    */
   public function setLabels($labels)
@@ -239,6 +293,20 @@ class MigrationJob extends \Google\Model
   public function getName()
   {
     return $this->name;
+  }
+  /**
+   * @param PerformanceConfig
+   */
+  public function setPerformanceConfig(PerformanceConfig $performanceConfig)
+  {
+    $this->performanceConfig = $performanceConfig;
+  }
+  /**
+   * @return PerformanceConfig
+   */
+  public function getPerformanceConfig()
+  {
+    return $this->performanceConfig;
   }
   /**
    * @param string

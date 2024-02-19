@@ -24,7 +24,7 @@ use Google\Service\YouTube\CommentThread;
  * Typical usage is:
  *  <code>
  *   $youtubeService = new Google\Service\YouTube(...);
- *   $v3 = $youtubeService->v3;
+ *   $v3 = $youtubeService->youtube_v3;
  *  </code>
  */
 class YoutubeV3 extends \Google\Service\Resource
@@ -40,6 +40,7 @@ class YoutubeV3 extends \Google\Service\Resource
    * must at least include the snippet part in the parameter value since that part
    * contains all of the properties that the API request can update.
    * @return CommentThread
+   * @throws \Google\Service\Exception
    */
   public function updateCommentThreads(CommentThread $postBody, $optParams = [])
   {

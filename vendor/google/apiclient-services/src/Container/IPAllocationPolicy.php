@@ -19,6 +19,8 @@ namespace Google\Service\Container;
 
 class IPAllocationPolicy extends \Google\Model
 {
+  protected $additionalPodRangesConfigType = AdditionalPodRangesConfig::class;
+  protected $additionalPodRangesConfigDataType = '';
   /**
    * @var string
    */
@@ -35,6 +37,11 @@ class IPAllocationPolicy extends \Google\Model
    * @var bool
    */
   public $createSubnetwork;
+  public $defaultPodIpv4RangeUtilization;
+  /**
+   * @var string
+   */
+  public $ipv6AccessType;
   /**
    * @var string
    */
@@ -43,6 +50,8 @@ class IPAllocationPolicy extends \Google\Model
    * @var string
    */
   public $nodeIpv4CidrBlock;
+  protected $podCidrOverprovisionConfigType = PodCIDROverprovisionConfig::class;
+  protected $podCidrOverprovisionConfigDataType = '';
   /**
    * @var string
    */
@@ -54,7 +63,19 @@ class IPAllocationPolicy extends \Google\Model
   /**
    * @var string
    */
+  public $servicesIpv6CidrBlock;
+  /**
+   * @var string
+   */
   public $servicesSecondaryRangeName;
+  /**
+   * @var string
+   */
+  public $stackType;
+  /**
+   * @var string
+   */
+  public $subnetIpv6CidrBlock;
   /**
    * @var string
    */
@@ -72,6 +93,20 @@ class IPAllocationPolicy extends \Google\Model
    */
   public $useRoutes;
 
+  /**
+   * @param AdditionalPodRangesConfig
+   */
+  public function setAdditionalPodRangesConfig(AdditionalPodRangesConfig $additionalPodRangesConfig)
+  {
+    $this->additionalPodRangesConfig = $additionalPodRangesConfig;
+  }
+  /**
+   * @return AdditionalPodRangesConfig
+   */
+  public function getAdditionalPodRangesConfig()
+  {
+    return $this->additionalPodRangesConfig;
+  }
   /**
    * @param string
    */
@@ -128,6 +163,28 @@ class IPAllocationPolicy extends \Google\Model
   {
     return $this->createSubnetwork;
   }
+  public function setDefaultPodIpv4RangeUtilization($defaultPodIpv4RangeUtilization)
+  {
+    $this->defaultPodIpv4RangeUtilization = $defaultPodIpv4RangeUtilization;
+  }
+  public function getDefaultPodIpv4RangeUtilization()
+  {
+    return $this->defaultPodIpv4RangeUtilization;
+  }
+  /**
+   * @param string
+   */
+  public function setIpv6AccessType($ipv6AccessType)
+  {
+    $this->ipv6AccessType = $ipv6AccessType;
+  }
+  /**
+   * @return string
+   */
+  public function getIpv6AccessType()
+  {
+    return $this->ipv6AccessType;
+  }
   /**
    * @param string
    */
@@ -155,6 +212,20 @@ class IPAllocationPolicy extends \Google\Model
   public function getNodeIpv4CidrBlock()
   {
     return $this->nodeIpv4CidrBlock;
+  }
+  /**
+   * @param PodCIDROverprovisionConfig
+   */
+  public function setPodCidrOverprovisionConfig(PodCIDROverprovisionConfig $podCidrOverprovisionConfig)
+  {
+    $this->podCidrOverprovisionConfig = $podCidrOverprovisionConfig;
+  }
+  /**
+   * @return PodCIDROverprovisionConfig
+   */
+  public function getPodCidrOverprovisionConfig()
+  {
+    return $this->podCidrOverprovisionConfig;
   }
   /**
    * @param string
@@ -187,6 +258,20 @@ class IPAllocationPolicy extends \Google\Model
   /**
    * @param string
    */
+  public function setServicesIpv6CidrBlock($servicesIpv6CidrBlock)
+  {
+    $this->servicesIpv6CidrBlock = $servicesIpv6CidrBlock;
+  }
+  /**
+   * @return string
+   */
+  public function getServicesIpv6CidrBlock()
+  {
+    return $this->servicesIpv6CidrBlock;
+  }
+  /**
+   * @param string
+   */
   public function setServicesSecondaryRangeName($servicesSecondaryRangeName)
   {
     $this->servicesSecondaryRangeName = $servicesSecondaryRangeName;
@@ -197,6 +282,34 @@ class IPAllocationPolicy extends \Google\Model
   public function getServicesSecondaryRangeName()
   {
     return $this->servicesSecondaryRangeName;
+  }
+  /**
+   * @param string
+   */
+  public function setStackType($stackType)
+  {
+    $this->stackType = $stackType;
+  }
+  /**
+   * @return string
+   */
+  public function getStackType()
+  {
+    return $this->stackType;
+  }
+  /**
+   * @param string
+   */
+  public function setSubnetIpv6CidrBlock($subnetIpv6CidrBlock)
+  {
+    $this->subnetIpv6CidrBlock = $subnetIpv6CidrBlock;
+  }
+  /**
+   * @return string
+   */
+  public function getSubnetIpv6CidrBlock()
+  {
+    return $this->subnetIpv6CidrBlock;
   }
   /**
    * @param string

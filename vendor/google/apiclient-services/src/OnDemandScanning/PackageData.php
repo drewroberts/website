@@ -23,6 +23,14 @@ class PackageData extends \Google\Collection
   /**
    * @var string
    */
+  public $architecture;
+  protected $binarySourceInfoType = BinarySourceInfo::class;
+  protected $binarySourceInfoDataType = 'array';
+  protected $binaryVersionType = PackageVersion::class;
+  protected $binaryVersionDataType = '';
+  /**
+   * @var string
+   */
   public $cpeUri;
   protected $dependencyChainType = LanguagePackageDependency::class;
   protected $dependencyChainDataType = 'array';
@@ -32,6 +40,12 @@ class PackageData extends \Google\Collection
    * @var string
    */
   public $hashDigest;
+  /**
+   * @var string[]
+   */
+  public $licenses;
+  protected $maintainerType = Maintainer::class;
+  protected $maintainerDataType = '';
   /**
    * @var string
    */
@@ -52,6 +66,8 @@ class PackageData extends \Google\Collection
    * @var string[]
    */
   public $patchedCve;
+  protected $sourceVersionType = PackageVersion::class;
+  protected $sourceVersionDataType = '';
   /**
    * @var string
    */
@@ -61,6 +77,48 @@ class PackageData extends \Google\Collection
    */
   public $version;
 
+  /**
+   * @param string
+   */
+  public function setArchitecture($architecture)
+  {
+    $this->architecture = $architecture;
+  }
+  /**
+   * @return string
+   */
+  public function getArchitecture()
+  {
+    return $this->architecture;
+  }
+  /**
+   * @param BinarySourceInfo[]
+   */
+  public function setBinarySourceInfo($binarySourceInfo)
+  {
+    $this->binarySourceInfo = $binarySourceInfo;
+  }
+  /**
+   * @return BinarySourceInfo[]
+   */
+  public function getBinarySourceInfo()
+  {
+    return $this->binarySourceInfo;
+  }
+  /**
+   * @param PackageVersion
+   */
+  public function setBinaryVersion(PackageVersion $binaryVersion)
+  {
+    $this->binaryVersion = $binaryVersion;
+  }
+  /**
+   * @return PackageVersion
+   */
+  public function getBinaryVersion()
+  {
+    return $this->binaryVersion;
+  }
   /**
    * @param string
    */
@@ -116,6 +174,34 @@ class PackageData extends \Google\Collection
   public function getHashDigest()
   {
     return $this->hashDigest;
+  }
+  /**
+   * @param string[]
+   */
+  public function setLicenses($licenses)
+  {
+    $this->licenses = $licenses;
+  }
+  /**
+   * @return string[]
+   */
+  public function getLicenses()
+  {
+    return $this->licenses;
+  }
+  /**
+   * @param Maintainer
+   */
+  public function setMaintainer(Maintainer $maintainer)
+  {
+    $this->maintainer = $maintainer;
+  }
+  /**
+   * @return Maintainer
+   */
+  public function getMaintainer()
+  {
+    return $this->maintainer;
   }
   /**
    * @param string
@@ -186,6 +272,20 @@ class PackageData extends \Google\Collection
   public function getPatchedCve()
   {
     return $this->patchedCve;
+  }
+  /**
+   * @param PackageVersion
+   */
+  public function setSourceVersion(PackageVersion $sourceVersion)
+  {
+    $this->sourceVersion = $sourceVersion;
+  }
+  /**
+   * @return PackageVersion
+   */
+  public function getSourceVersion()
+  {
+    return $this->sourceVersion;
   }
   /**
    * @param string

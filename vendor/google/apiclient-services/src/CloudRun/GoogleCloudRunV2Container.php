@@ -28,12 +28,18 @@ class GoogleCloudRunV2Container extends \Google\Collection
    * @var string[]
    */
   public $command;
+  /**
+   * @var string[]
+   */
+  public $dependsOn;
   protected $envType = GoogleCloudRunV2EnvVar::class;
   protected $envDataType = 'array';
   /**
    * @var string
    */
   public $image;
+  protected $livenessProbeType = GoogleCloudRunV2Probe::class;
+  protected $livenessProbeDataType = '';
   /**
    * @var string
    */
@@ -42,6 +48,8 @@ class GoogleCloudRunV2Container extends \Google\Collection
   protected $portsDataType = 'array';
   protected $resourcesType = GoogleCloudRunV2ResourceRequirements::class;
   protected $resourcesDataType = '';
+  protected $startupProbeType = GoogleCloudRunV2Probe::class;
+  protected $startupProbeDataType = '';
   protected $volumeMountsType = GoogleCloudRunV2VolumeMount::class;
   protected $volumeMountsDataType = 'array';
   /**
@@ -78,6 +86,20 @@ class GoogleCloudRunV2Container extends \Google\Collection
     return $this->command;
   }
   /**
+   * @param string[]
+   */
+  public function setDependsOn($dependsOn)
+  {
+    $this->dependsOn = $dependsOn;
+  }
+  /**
+   * @return string[]
+   */
+  public function getDependsOn()
+  {
+    return $this->dependsOn;
+  }
+  /**
    * @param GoogleCloudRunV2EnvVar[]
    */
   public function setEnv($env)
@@ -104,6 +126,20 @@ class GoogleCloudRunV2Container extends \Google\Collection
   public function getImage()
   {
     return $this->image;
+  }
+  /**
+   * @param GoogleCloudRunV2Probe
+   */
+  public function setLivenessProbe(GoogleCloudRunV2Probe $livenessProbe)
+  {
+    $this->livenessProbe = $livenessProbe;
+  }
+  /**
+   * @return GoogleCloudRunV2Probe
+   */
+  public function getLivenessProbe()
+  {
+    return $this->livenessProbe;
   }
   /**
    * @param string
@@ -146,6 +182,20 @@ class GoogleCloudRunV2Container extends \Google\Collection
   public function getResources()
   {
     return $this->resources;
+  }
+  /**
+   * @param GoogleCloudRunV2Probe
+   */
+  public function setStartupProbe(GoogleCloudRunV2Probe $startupProbe)
+  {
+    $this->startupProbe = $startupProbe;
+  }
+  /**
+   * @return GoogleCloudRunV2Probe
+   */
+  public function getStartupProbe()
+  {
+    return $this->startupProbe;
   }
   /**
    * @param GoogleCloudRunV2VolumeMount[]

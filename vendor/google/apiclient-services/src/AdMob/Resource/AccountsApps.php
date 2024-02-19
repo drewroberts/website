@@ -24,7 +24,7 @@ use Google\Service\AdMob\ListAppsResponse;
  * Typical usage is:
  *  <code>
  *   $admobService = new Google\Service\AdMob(...);
- *   $apps = $admobService->apps;
+ *   $apps = $admobService->accounts_apps;
  *  </code>
  */
 class AccountsApps extends \Google\Service\Resource
@@ -43,6 +43,7 @@ class AccountsApps extends \Google\Service\Resource
    * `ListAppsResponse`; indicates that this is a continuation of a prior
    * `ListApps` call, and that the system should return the next page of data.
    * @return ListAppsResponse
+   * @throws \Google\Service\Exception
    */
   public function listAccountsApps($parent, $optParams = [])
   {

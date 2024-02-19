@@ -26,6 +26,14 @@ class CallInfo extends \Google\Collection
   protected $artifactOwnerDataType = '';
   protected $attachedDocumentsType = DocumentInfo::class;
   protected $attachedDocumentsDataType = 'array';
+  /**
+   * @var string[]
+   */
+  public $availableAccessTypes;
+  /**
+   * @var string[]
+   */
+  public $availableAnnotationToolTypes;
   protected $availableReactionsType = ReactionInfo::class;
   protected $availableReactionsDataType = 'array';
   protected $broadcastSessionInfoType = BroadcastSessionInfo::class;
@@ -47,10 +55,6 @@ class CallInfo extends \Google\Collection
   /**
    * @var string
    */
-  public $mediaBackendInfo;
-  /**
-   * @var string
-   */
   public $organizationName;
   protected $paygateInfoType = PaygateInfo::class;
   protected $paygateInfoDataType = '';
@@ -64,10 +68,6 @@ class CallInfo extends \Google\Collection
   protected $settingsDataType = '';
   protected $streamingSessionsType = StreamingSessionInfo::class;
   protected $streamingSessionsDataType = 'array';
-  /**
-   * @var string[]
-   */
-  public $supportedCaptionLanguages;
   protected $transcriptionSessionInfoType = TranscriptionSessionInfo::class;
   protected $transcriptionSessionInfoDataType = '';
   /**
@@ -118,6 +118,34 @@ class CallInfo extends \Google\Collection
   public function getAttachedDocuments()
   {
     return $this->attachedDocuments;
+  }
+  /**
+   * @param string[]
+   */
+  public function setAvailableAccessTypes($availableAccessTypes)
+  {
+    $this->availableAccessTypes = $availableAccessTypes;
+  }
+  /**
+   * @return string[]
+   */
+  public function getAvailableAccessTypes()
+  {
+    return $this->availableAccessTypes;
+  }
+  /**
+   * @param string[]
+   */
+  public function setAvailableAnnotationToolTypes($availableAnnotationToolTypes)
+  {
+    $this->availableAnnotationToolTypes = $availableAnnotationToolTypes;
+  }
+  /**
+   * @return string[]
+   */
+  public function getAvailableAnnotationToolTypes()
+  {
+    return $this->availableAnnotationToolTypes;
   }
   /**
    * @param ReactionInfo[]
@@ -220,20 +248,6 @@ class CallInfo extends \Google\Collection
   /**
    * @param string
    */
-  public function setMediaBackendInfo($mediaBackendInfo)
-  {
-    $this->mediaBackendInfo = $mediaBackendInfo;
-  }
-  /**
-   * @return string
-   */
-  public function getMediaBackendInfo()
-  {
-    return $this->mediaBackendInfo;
-  }
-  /**
-   * @param string
-   */
   public function setOrganizationName($organizationName)
   {
     $this->organizationName = $organizationName;
@@ -328,20 +342,6 @@ class CallInfo extends \Google\Collection
   public function getStreamingSessions()
   {
     return $this->streamingSessions;
-  }
-  /**
-   * @param string[]
-   */
-  public function setSupportedCaptionLanguages($supportedCaptionLanguages)
-  {
-    $this->supportedCaptionLanguages = $supportedCaptionLanguages;
-  }
-  /**
-   * @return string[]
-   */
-  public function getSupportedCaptionLanguages()
-  {
-    return $this->supportedCaptionLanguages;
   }
   /**
    * @param TranscriptionSessionInfo

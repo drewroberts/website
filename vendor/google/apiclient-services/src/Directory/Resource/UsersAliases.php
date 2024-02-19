@@ -26,7 +26,7 @@ use Google\Service\Directory\Channel;
  * Typical usage is:
  *  <code>
  *   $adminService = new Google\Service\Directory(...);
- *   $aliases = $adminService->aliases;
+ *   $aliases = $adminService->users_aliases;
  *  </code>
  */
 class UsersAliases extends \Google\Service\Resource
@@ -38,6 +38,7 @@ class UsersAliases extends \Google\Service\Resource
    * be the user's primary email address, alias email address, or unique user ID.
    * @param string $alias The alias to be removed.
    * @param array $optParams Optional parameters.
+   * @throws \Google\Service\Exception
    */
   public function delete($userKey, $alias, $optParams = [])
   {
@@ -53,6 +54,7 @@ class UsersAliases extends \Google\Service\Resource
    * @param Alias $postBody
    * @param array $optParams Optional parameters.
    * @return Alias
+   * @throws \Google\Service\Exception
    */
   public function insert($userKey, Alias $postBody, $optParams = [])
   {
@@ -69,6 +71,7 @@ class UsersAliases extends \Google\Service\Resource
    *
    * @opt_param string event Events to watch for.
    * @return Aliases
+   * @throws \Google\Service\Exception
    */
   public function listUsersAliases($userKey, $optParams = [])
   {
@@ -85,6 +88,7 @@ class UsersAliases extends \Google\Service\Resource
    *
    * @opt_param string event Events to watch for.
    * @return Channel
+   * @throws \Google\Service\Exception
    */
   public function watch($userKey, Channel $postBody, $optParams = [])
   {
