@@ -1,6 +1,0 @@
-/vendor/
-/node_modules/
-/dist-js/
-.vs
-composer.lock
-package-lock.json
