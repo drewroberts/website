@@ -1,0 +1,30 @@
+{
+    "name": "davidpiesse/nova-audio",
+    "description": "Audio Field for Laravel Nova",
+    "keywords": [
+        "laravel",
+        "nova",
+        "audio"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Davidpiesse\\Audio\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Davidpiesse\\Audio\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

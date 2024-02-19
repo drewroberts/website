@@ -1,0 +1,65 @@
+{
+    "name": "drewroberts/blog",
+    "description": "Laravel package for opinionated blog implementation",
+    "keywords": [
+        "laravel",
+        "laravel package",
+        "blog"
+    ],
+    "homepage": "https://github.com/drewroberts/blog",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Drew Roberts",
+            "email": "github@drewroberts.com",
+            "homepage": "https://drewroberts.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "tipoff/authorization": "^2.10.0",
+        "tipoff/seo": "^2.8.0",
+        "tipoff/support": "^2.2.0"
+    },
+    "require-dev": {
+        "tipoff/test-support": "^2.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DrewRoberts\\Blog\\": "src",
+            "DrewRoberts\\Blog\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DrewRoberts\\Blog\\Tests\\": "tests"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DrewRoberts\\Blog\\BlogServiceProvider"
+            ],
+            "aliases": {
+                "LayoutManager": "DrewRoberts\\Blog\\Facade\\LayoutManager"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

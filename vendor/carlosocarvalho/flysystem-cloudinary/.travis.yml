@@ -1,0 +1,13 @@
+language: php
+
+php:
+ 
+  - 7.3
+
+install:
+  - travis_retry composer update
+
+script:
+  - bin/phpunit
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  composer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: composer-tipoff
+    volumes:
+      - /vdock/tipoff/support:/var/www/app
