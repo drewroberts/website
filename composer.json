@@ -6,6 +6,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "drewroberts/blog": "^4.6.0",
+        "fakerphp/faker": "^1.9.1",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
@@ -13,8 +15,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "tipoff/authorization": "^2.10",
-        "drewroberts/blog": "^4.6.0",
-        "fakerphp/faker": "^1.9.1"
+        "wildbit/swiftmailer-postmark": "^3.4"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

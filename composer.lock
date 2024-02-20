@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16613123229c93e8d25c269b50892d9b",
+    "content-hash": "03f1491a3aaa23f9d53ac78eda425cf6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -10549,6 +10549,50 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "wildbit/swiftmailer-postmark",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ActiveCampaign/swiftmailer-postmark.git",
+                "reference": "17771bdc1eeff93eb6efe37d762a22fa1cfcebeb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ActiveCampaign/swiftmailer-postmark/zipball/17771bdc1eeff93eb6efe37d762a22fa1cfcebeb",
+                "reference": "17771bdc1eeff93eb6efe37d762a22fa1cfcebeb",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "swiftmailer/swiftmailer": "^6.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Postmark\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Postmark",
+                    "email": "support@postmarkapp.com"
+                }
+            ],
+            "description": "A Swiftmailer Transport for Postmark.",
+            "support": {
+                "issues": "https://github.com/ActiveCampaign/swiftmailer-postmark/issues",
+                "source": "https://github.com/ActiveCampaign/swiftmailer-postmark/tree/3.4.0"
+            },
+            "time": "2022-09-05T08:46:47+00:00"
         }
     ],
     "packages-dev": [
