@@ -13,7 +13,8 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "tipoff/authorization": "^2.10",
-        "drewroberts/blog": "^4.6.0"
+        "drewroberts/blog": "^4.6.0",
+        "fakerphp/faker": "^1.9.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
