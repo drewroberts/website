@@ -68,6 +68,8 @@
 <meta name="theme-color" content="#000000">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
 
 <title>AMP Project Tutorial by Drew Roberts</title>
 <meta name="description" content="Willie Taggart is a “see something, say something” kind of guy, and his good deed for 200 football campers this week is a testament to that. The Florida State U&#8230;" />
@@ -120,6 +122,9 @@
 </head>
 
 <body>
+
+@include('global-header.nav')
+
 
 @yield('content')
 
