@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AMPController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Route::get('amp', function () {
     return view('amp');
 });
+
+Route::get('/amp-tailwind', [AMPController::class, 'index'])->name('amp.index');
