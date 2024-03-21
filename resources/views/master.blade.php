@@ -125,8 +125,9 @@
 
 @include('global-header.nav')
 
-
-@yield('content')
+<div class="max-w-screen-2xl mt-4 mx-auto">
+    @yield('content')
+</div>
 
 </body>
 </html>

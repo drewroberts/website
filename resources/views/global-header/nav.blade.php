@@ -1,4 +1,9 @@
 <nav class="bg-gray-800 p-4 flex justify-between items-center">
+    <!-- Logo (left side) -->
+    <div class="flex items-center">
+        <span class="text-white text-lg font-semibold">Your Logo</span>
+    </div>
+
     <!-- Mobile Menu Icon (right side) -->
     <button class="text-white focus:outline-none">
         <!-- Hamburger icon -->
@@ -6,9 +11,4 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
     </button>
-
-    <!-- Logo (left side) -->
-    <div class="flex items-center">
-        <span class="text-white text-lg font-semibold">Your Logo</span>
-    </div>
 </nav>
