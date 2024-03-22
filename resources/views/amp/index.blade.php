@@ -15,4 +15,7 @@
     </div>
 </div>
 
+<!-- add footer -->
+@include('global-footer.footer')
+
 @endsection
