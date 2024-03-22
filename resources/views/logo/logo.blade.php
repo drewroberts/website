@@ -1,5 +1,5 @@
 <!-- Logo (left side) -->
-<div class="flex items-center w-full">
+<div class="flex items-center">
     <div class="logo flex items-center">
         <div class="left w-4 h-34">
             <svg height="34px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 242">

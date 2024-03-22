@@ -1,5 +1,5 @@
 <footer class="main-footer bg-black text-white py-8">
-    <a href="https://DrewRoberts.com">
+    <a href="https://DrewRoberts.com" class="flex items-center justify-center mb-8 mt-4">
         @include('logo.logo')
     </a>
     <ul class="socials flex justify-center space-x-4">
@@ -29,12 +29,12 @@
             </a>
         </li>
     </ul>
-    <ul class="links flex justify-center space-x-6 mt-4">
+    <ul class="links flex justify-center space-x-6 mt-8 text-gray-400">
         <li><a href="https://drewroberts.com/about">About</a></li>
         <li><a href="https://drewroberts.com/contact">Contact</a></li>
         <li><a href="https://drewroberts.com/terms">Privacy &amp; Terms</a></li>
         <li><a href="https://Tipoff.com">Tipoff</a></li>
         <li><a href="https://drewroberts.com/newsletter">Newsletter</a></li>
     </ul>
-    <div class="copyright text-center mt-4">© 2018 DrewRoberts.com LLC</div>
+    <div class="copyright text-center mt-8 text-xs text-gray-400">© 2018 DrewRoberts.com LLC</div>
 </footer>
