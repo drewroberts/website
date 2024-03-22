@@ -125,7 +125,7 @@
 
 @include('global-header.nav')
 
-<div class="max-w-screen-2xl mt-4 mx-auto">
+<div class="bg-black bg-opacity-85">
     @yield('content')
 </div>
 
