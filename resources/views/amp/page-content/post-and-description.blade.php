@@ -46,37 +46,37 @@
 
 
                 <div class="flex items-center">
-    <h4 class="text-xs mr-4">Tags</h4>
-    <ul class="flex flex-wrap">
-        <li class="mr-2 mb-2">
-            <a href="/topics/japanese" class="text-xs bg-black text-white px-3 py-1 rounded">JAPANESE</a>
-        </li>
-        <li class="mr-2 mb-2">
-            <a href="/topics/documentary" class="text-xs bg-black text-white px-3 py-1 rounded">DOCUMENTARY</a>
-        </li>
-        <li class="mr-2 mb-2">
-            <a href="/topics/art" class="text-xs bg-black text-white px-3 py-1 rounded">ART</a>
-        </li>
-        <li class="mr-2 mb-2">
-            <a href="/topics/history" class="text-xs bg-black text-white px-3 py-1 rounded">HISTORY</a>
-        </li>
-        <li class="mr-2 mb-2">
-            <a href="/topics/tattoo" class="text-xs bg-black text-white px-3 py-1 rounded">TATTOO</a>
-        </li>
-        <li class="mr-2 mb-2">
-            <a href="/topics/body-modification" class="text-xs bg-black text-white px-3 py-1 rounded">BODY MODIFICATION</a>
-        </li>
-        <li class="mr-2 mb-2">
-            <a href="/topics/dan-santoro" class="text-xs bg-black text-white px-3 py-1 rounded">DAN SANTORO</a>
-        </li>
-        <li class="mr-2 mb-2">
-            <a href="/topics/traditional-american" class="text-xs bg-black text-white px-3 py-1 rounded">TRADITIONAL AMERICAN</a>
-        </li>
-        <li class="mr-2 mb-2">
-            <a href="/topics/skin-art" class="text-xs bg-black text-white px-3 py-1 rounded">SKIN ART</a>
-        </li>
-    </ul>
-</div>
+                    <h4 class="text-xs mr-4">Tags</h4>
+                    <ul class="flex flex-wrap">
+                        <li class="mr-2 mb-2">
+                            <a href="/topics/japanese" class="text-xs bg-black text-white px-3 py-1 rounded">JAPANESE</a>
+                        </li>
+                        <li class="mr-2 mb-2">
+                            <a href="/topics/documentary" class="text-xs bg-black text-white px-3 py-1 rounded">DOCUMENTARY</a>
+                        </li>
+                        <li class="mr-2 mb-2">
+                            <a href="/topics/art" class="text-xs bg-black text-white px-3 py-1 rounded">ART</a>
+                        </li>
+                        <li class="mr-2 mb-2">
+                            <a href="/topics/history" class="text-xs bg-black text-white px-3 py-1 rounded">HISTORY</a>
+                        </li>
+                        <li class="mr-2 mb-2">
+                            <a href="/topics/tattoo" class="text-xs bg-black text-white px-3 py-1 rounded">TATTOO</a>
+                        </li>
+                        <li class="mr-2 mb-2">
+                            <a href="/topics/body-modification" class="text-xs bg-black text-white px-3 py-1 rounded">BODY MODIFICATION</a>
+                        </li>
+                        <li class="mr-2 mb-2">
+                            <a href="/topics/dan-santoro" class="text-xs bg-black text-white px-3 py-1 rounded">DAN SANTORO</a>
+                        </li>
+                        <li class="mr-2 mb-2">
+                            <a href="/topics/traditional-american" class="text-xs bg-black text-white px-3 py-1 rounded">TRADITIONAL AMERICAN</a>
+                        </li>
+                        <li class="mr-2 mb-2">
+                            <a href="/topics/skin-art" class="text-xs bg-black text-white px-3 py-1 rounded">SKIN ART</a>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
         </div>
