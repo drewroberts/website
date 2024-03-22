@@ -11,7 +11,7 @@
                 <div class="share-button text-sm bg-black text-white rounded py-2 px-4" on="tap:share-lightbox" role="button" tabindex="3">Share</div>
 
             </div>
-            <div class="text-2xl font-bold">AMP and PWA</div>
+            <div class="text-3xl font-bold">AMP and PWA</div>
             <div class="text-base mt-2">In this tutorial we dive into integrating both AMP (Accelerated Mobile Pages) and PWA (Progressive Web Apps) in your web development. AMP can preload the service worker for your PWA and Progressive Webs Apps can serve Accelerated Mobile Pages. This framework is important for fast first pageloads and fast subsequent views.</div>
             <div class="my-4">
 

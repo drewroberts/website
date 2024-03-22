@@ -9,4 +9,13 @@
             @include('amp.page-content.newsletter-widget')
         </div>
     </div>
+
+    <div class="mt-4">
+        @include('amp.post-slider.tutorials-slider')
+    </div>
+    
+    <div class="mt-12">
+        @include('amp.post-slider.quick-tips-slider')
+    </div>
+
 </div>
