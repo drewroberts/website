@@ -125,7 +125,7 @@
 
 @include('global-header.nav')
 
-<div class="bg-black bg-opacity-85">
+<div class="page-content-wrapper">
     @yield('content')
 </div>
 
