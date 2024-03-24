@@ -22,4 +22,6 @@ Route::get('amp', function () {
     return view('amp');
 });
 
-Route::get('/amp-tailwind', [AMPController::class, 'index'])->name('amp.index');
+Route::get('amp-single', function () {
+    return view('amp-single');
+});
