@@ -26,7 +26,7 @@ npm install
 npm run dev
 ```
 
-You can then view the homepage if you're using Laravel Homestead at https://website.test and can access Laravel Nova at http://website.test/admin
+You can then view the homepage if you're using Laravel Homestead at https://quid.test and can access Laravel Nova at http://quid.test/admin
 
 ## Packages
 
