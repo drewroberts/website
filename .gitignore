@@ -20,3 +20,6 @@ yarn-error.log
 *.icloud
 old.composer.lock
 old.package-lock.json
+composer.lock
+package-lock.json
+resources/.DS_Store
