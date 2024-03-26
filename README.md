@@ -1,12 +1,12 @@
-# QuidPixels Code Repository
+# Quidpixels Code Repository
 
-This [GitHub Repository](https://github.com/roberts/quid) contains the code behind the smart contract & website of QuidPixels - [QuidPixels.com](https://quidpixels.com "QuidPixels")
+This [GitHub Repository](https://github.com/roberts/quid) contains the code behind the smart contract & website of Quidpixels - [Quidpixels.com](https://quidpixels.com "Quidpixels")
 
 ## Connect with QuidPixels
 
-- [t.me/QuidPixels](https://t.me/QuidPixels)
-- [X.com/QuidPixels](https://X.com/QuidPixels)
-- [YouTube.com/QuidPixels](https://youtube.com/QuidPixels)
+- [t.me/Quidpixels](https://t.me/Quidpixels)
+- [X.com/Quidpixels](https://X.com/Quidpixels)
+- [YouTube.com/Quidpixels](https://youtube.com/Quidpixels)
 
 ## LitePaper
 
