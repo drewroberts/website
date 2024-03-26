@@ -1227,9 +1227,9 @@ contract Quidpixels is ERC20, Ownable {
         developerLopsidedSellTax = 4;
         totalLopsidedSellTax = communityLopsidedSellTax + marketingLopsidedSellTax + developerLopsidedSellTax;
 
-        communityWallet = address(0xC6aa2f0FF6b8563EA418ec2558890D6027413699); // Community Funds
-        marketingWallet = address(0xC6aa2f0FF6b8563EA418ec2558890D6027413699); // Marketing Funds
-        developerWallet = address(0xC6aa2f0FF6b8563EA418ec2558890D6027413699); // Developer Funds
+        communityWallet = address(0x3FDD96650BE504cA7154a2ed6862e09073b9dca5); // Community Funds (Quidpixels.eth)
+        marketingWallet = address(0xc1da207587249AEF5feBAfB4151367cdE6326c29); // Marketing Funds
+        developerWallet = address(0xEB6601AB897119aa3e5fDF16ac967CCF959f364d); // Developer Funds
 
         _mint(address(this), totalSupply);
     }
