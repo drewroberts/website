@@ -1,6 +1,13 @@
 /**
  *
  *
+   Quidpixels
+   $QUID on Base
+   https://Quidpixels.com
+   https://t.me/Quidpixels
+   https://x.com/Quidpixels
+
+
    Contract features:
    100,000,000 tokens
    3% buy tax in ETH sent to community, marketing & developer
@@ -1136,7 +1143,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
     ) external;
 }
 
-contract fresh is ERC20, Ownable {
+contract Quidpixels is ERC20, Ownable {
     using SafeMath for uint256;
 
     IUniswapV2Router02 public immutable uniswapV2Router;
@@ -1198,7 +1205,7 @@ contract fresh is ERC20, Ownable {
         address indexed oldWallet
     );
 
-    constructor() ERC20("Drew Roberts Contract Standard", "FRESH") {
+    constructor() ERC20("Quidpixels", "QUID") {
         uniswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
         _approve(address(this), address(uniswapV2Router), type(uint256).max);
 
