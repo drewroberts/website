@@ -1,25 +1,22 @@
-# Welcome to the Internet Home of Drew Roberts
+# Quidpixels Code Repository
 
-This [GitHub Repository](https://github.com/drewroberts/website) contains the code behind the website of Drew Roberts - [DrewRoberts.com](https://drewroberts.com "Drew Roberts")
+This [GitHub Repository](https://github.com/roberts/quid) contains the code behind the smart contract & website of Quidpixels - [Quidpixels.com](https://quidpixels.com "Quidpixels")
 
-## Connect with Drew Roberts
+## Connect with QuidPixels
 
-- [X.com/DrewRoberts](https://X.com/DrewRoberts)
-- [FB.com/DrewRoberts](https://facebook.com/DrewRoberts)
-- [t.me/DrewRoberts](https://t.me/DrewRoberts)
-- [YouTube.com/DrewRoberts](https://youtube.com/DrewRoberts)
-- [Instagram.com/DrewRobertsETH](https://instagram.com/DrewRobertsETH)
-- [LinkedIn.com/in/DrewRoberts](https://linkedin.com/in/DrewRoberts)
+- [t.me/Quidpixels](https://t.me/Quidpixels)
+- [X.com/Quidpixels](https://X.com/Quidpixels)
+- [YouTube.com/Quidpixels](https://youtube.com/Quidpixels)
 
-## Projects
+## LitePaper
 
-[Bear Fund](https://t.me/BearFund) is my launchpad for projects during the upcoming cryptocurrency cycle.
+Coming Soon..
 
-## Installation
+## Website Installation
 
-After setting up local dev environment with PHP 7.4, you will launch this Laravel 8 app by copying the ``.env.example`` file to ``.env``
+After setting up local dev environment with PHP 8, you will launch this Laravel 8 app by copying the ``.env.example`` file to ``.env``
 
-From there, create the ``website`` database in MySQL and from the command line run the following commands:
+From there, create the ``quid`` database in MySQL and from the command line run the following commands:
 
 ```bash
 composer install
@@ -29,7 +26,7 @@ npm install
 npm run dev
 ```
 
-You can then view the homepage if you're using Laravel Homestead at https://website.test and can access Laravel Nova at http://website.test/admin
+You can then view the homepage if you're using Laravel Homestead at https://quid.test and can access Laravel Nova at http://quid.test/admin
 
 ## Packages
 
@@ -50,4 +47,4 @@ You can then view the homepage if you're using Laravel Homestead at https://webs
 
 ## Contributing
 
-Feel free to send me a feature request or submit pull requests and improve the website where you see it needs it. I appreciate the help..
+Feel free to send a feature request or submit pull requests to improve the website where you see opportunities for improvement. We appreciate the help..
