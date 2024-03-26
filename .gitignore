@@ -23,3 +23,4 @@ old.package-lock.json
 composer.lock
 package-lock.json
 resources/.DS_Store
+*.icloud

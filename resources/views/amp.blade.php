@@ -2544,76 +2544,76 @@
 
 
 
-		<div class="page-content">
-			<article>
-				<div class="content">
-					<div class="video-infocard__show-summary">
-						<div class="season-and-share dsp-flex-xs">
-							<div>
-								<h6 class="episode-info hed-xs"><a href="/amp">
-										<div class="show__season__episode hed-xs m-b-1-xs"><span>AMP / EP1</span></div>
-									</a></h6>
-							</div>
-							<div class="share-button hed-xs" on="tap:share-lightbox" role="button" tabindex="3">Share</div>
-						</div>
-						<h4 class="video-title hed-l">AMP and PWA</h4>
-						<div class="video-description bod-m">In this tutorial we dive into integrating both AMP (Accelerated Mobile Pages) and PWA (Progressive Web Apps) in your web development. AMP can preload the service worker for your PWA and Progressive Webs Apps can serve Accelerated Mobile Pages. This framework is important for fast first pageloads and fast subsequent views.</div>
-						<div class="more-info-card">
-							<div class="details">
-								<section>
-									<div class="channel">
-										<h4 class="bod-xs">Topic</h4>
-										<a class="bod-xs" href="/amp">AMP</a>
-									</div>
-									<div class="runtime">
-										<h4 class="bod-xs">Runtime</h4>
-										<span class="bod-xs">21:58</span>
-									</div>
-									<div class="rating">
-										<h4 class="bod-xs">Rating</h4><span class="bod-xs">TV-14</span>
-									</div>
-								</section>
-								<div class="topics dsp-flex-xs">
-									<h4 class="bod-xs">Tags</h4>
-									<ul>
-										<li><a href="/topics/japanese" class="hed-xs">JAPANESE</a></li>
-										<li><a href="/topics/documentary" class="hed-xs">DOCUMENTARY</a></li>
-										<li><a href="/topics/art" class="hed-xs">ART</a></li>
-										<li><a href="/topics/history" class="hed-xs">HISTORY</a></li>
-										<li><a href="/topics/tattoo" class="hed-xs">TATTOO</a></li>
-										<li><a href="/topics/body-modification" class="hed-xs">BODY MODIFICATION</a></li>
-										<li><a href="/topics/dan-santoro" class="hed-xs">DAN SANTORO</a></li>
-										<li><a href="/topics/traditional-american" class="hed-xs">TRADITIONAL AMERICAN</a></li>
-										<li><a href="/topics/skin-art" class="hed-xs">SKIN ART</a></li>
-									</ul>
+	<div class="page-content">
+		<article>
+			<div class="content">
+				<div class="video-infocard__show-summary">
+					<div class="season-and-share dsp-flex-xs">
+						<div><h6 class="episode-info hed-xs"><a href="/amp"><div class="show__season__episode hed-xs m-b-1-xs"><span>AMP / EP1</span></div></a></h6></div>
+						<div class="share-button hed-xs" on="tap:share-lightbox" role="button" tabindex="3">Share</div>
+					</div>
+					<h4 class="video-title hed-l">AMP and PWA</h4>
+					<div class="video-description bod-m">In this tutorial we dive into integrating both AMP (Accelerated Mobile Pages) and PWA (Progressive Web Apps) in your web development. AMP can preload the service worker for your PWA and Progressive Webs Apps can serve Accelerated Mobile Pages. This framework is important for fast first pageloads and fast subsequent views.</div>
+					<div class="more-info-card">
+						<div class="details">
+							<section>
+								<div class="channel">
+									<h4 class="bod-xs">Topic</h4>
+									<a class="bod-xs" href="/amp">AMP</a>
 								</div>
+								<div class="runtime">
+									<h4 class="bod-xs">Runtime</h4>
+									<span class="bod-xs">21:58</span>
+								</div>
+								<div class="rating"><h4 class="bod-xs">Rating</h4><span class="bod-xs">TV-14</span></div>
+							</section>
+							<div class="topics dsp-flex-xs">
+								<h4 class="bod-xs">Tags</h4>
+								<ul>
+									<li><a href="/topics/japanese" class="hed-xs">JAPANESE</a></li>
+									<li><a href="/topics/documentary" class="hed-xs">DOCUMENTARY</a></li>
+									<li><a href="/topics/art" class="hed-xs">ART</a></li>
+									<li><a href="/topics/history" class="hed-xs">HISTORY</a></li>
+									<li><a href="/topics/tattoo" class="hed-xs">TATTOO</a></li>
+									<li><a href="/topics/body-modification" class="hed-xs">BODY MODIFICATION</a></li>
+									<li><a href="/topics/dan-santoro" class="hed-xs">DAN SANTORO</a></li>
+									<li><a href="/topics/traditional-american" class="hed-xs">TRADITIONAL AMERICAN</a></li>
+									<li><a href="/topics/skin-art" class="hed-xs">SKIN ART</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="sidebar">
-					<form method="post" class="p2" action-xhr="" target="_top" custom-validation-reporting="show-first-on-submit">
-						{{csrf_field()}}
-						<div class="newsletter p-4-xs p-5-m dsp-flex-xs flex-wrap col-12-xs">
-							<div class="newsletter__text col-12-xs">
-								<h2 class="newsletter__heading hed-l m-b-3-xs">Get the #1 Newsletter for Programmers.</h2>
-								<p class="newsletter__subheading hed-xs">Sign up for coding tips and personalized insights, delivered weekly.</p>
+			</div>
+			<div class="sidebar">
+				<form method="post"
+				class="p2"
+				action-xhr=""
+				target="_top"
+				custom-validation-reporting="show-first-on-submit">
+					{{csrf_field()}}
+					<div class="newsletter p-4-xs p-5-m dsp-flex-xs flex-wrap col-12-xs">
+						<div class="newsletter__text col-12-xs">
+							<h2 class="newsletter__heading hed-l m-b-3-xs">Get the #1 Newsletter for Programmers.</h2>
+							<p class="newsletter__subheading hed-xs">Sign up for coding tips and personalized insights, delivered weekly.</p>
+						</div>
+						<div class="newsletter__input__container__top dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
+							<div class="newsletter__input dsp-flex-xs">
+								<input id="email" type="email" required placeholder="Email Address" class="input-text" value="">
 							</div>
-							<div class="newsletter__input__container__top dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
-								<div class="newsletter__input dsp-flex-xs">
-									<input id="email" type="email" required placeholder="Email Address" class="input-text" value="">
-								</div>
+						</div>
+						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-name"></span>
+						
+						<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
+							<div class="newsletter__input dsp-flex-xs">
+								<input id="name" type="text" required placeholder="Name" class="input-text" value="">
 							</div>
-							<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-name"></span>
-
-							<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
-								<div class="newsletter__input dsp-flex-xs">
-									<input id="name" type="text" required placeholder="Name" class="input-text" value="">
-								</div>
-								<input type="submit" value="Subscribe" class="newsletter__submit__button btn btn-branded dsp-block-xs">
-							</div>
-							<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-email"></span>
-							<span visible-when-invalid="typeMismatch" validation-for="show-first-on-submit-email"></span>
+							<input type="submit"
+							value="Subscribe"
+							class="newsletter__submit__button btn btn-branded dsp-block-xs">
+						</div>
+						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-email"></span>
+						<span visible-when-invalid="typeMismatch" validation-for="show-first-on-submit-email"></span>
 
 							<div submit-success>
 								<template type="amp-mustache">
