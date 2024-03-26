@@ -18,3 +18,9 @@ npm-debug.log
 yarn-error.log
 .DS_Store
 *.icloud
+old.composer.lock
+old.package-lock.json
+composer.lock
+package-lock.json
+resources/.DS_Store
+*.icloud
