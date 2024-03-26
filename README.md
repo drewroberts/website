@@ -1,6 +1,6 @@
-# Welcome to the Internet Home of Drew Roberts
+# QuidPixels Code Repository
 
-This [GitHub Repository](https://github.com/drewroberts/website) contains the code behind the smart contract & website of QuidPixels - [QuidPixels.com](https://quidpixels.com "QuidPixels")
+This [GitHub Repository](https://github.com/roberts/quid) contains the code behind the smart contract & website of QuidPixels - [QuidPixels.com](https://quidpixels.com "QuidPixels")
 
 ## Connect with QuidPixels
 
