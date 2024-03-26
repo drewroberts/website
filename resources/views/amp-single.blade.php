@@ -545,45 +545,48 @@
         }
     </style>
     <script>
-        /* tabs.js */
+    /* tabs.js */
 
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get all tab buttons
-            const tabButtons = document.querySelectorAll('.tabButton');
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all tab buttons
+        const tabButtons = document.querySelectorAll('.tabButton');
 
-            // Add click event listener to each tab button
-            tabButtons.forEach(function(button) {
-                button.addEventListener('click', function() {
-                    // Remove 'selected' class from all tab buttons
-                    tabButtons.forEach(function(btn) {
-                        btn.classList.remove('bg-white', 'text-black'); // Reset background color for all buttons
-                    });
-
-                    // Add background color to the clicked tab button
-                    button.classList.add('bg-white', 'text-black'); // Apply background color to the clicked button
-
-                    // Hide all tab contents
-                    const tabContents = document.querySelectorAll('.tabContent');
-                    tabContents.forEach(function(content) {
-                        content.classList.add('hidden'); // Hide all tab contents
-                    });
-
-                    // Get the corresponding tab content and display it
-                    const tabId = button.getAttribute('aria-controls');
-                    const tabContent = document.getElementById(tabId);
-                    if (tabContent) {
-                        tabContent.classList.remove('hidden'); // Remove 'hidden' class to display the content
-                    }
+        // Add click event listener to each tab button
+        tabButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Remove 'selected' class from all tab buttons
+                tabButtons.forEach(function(btn) {
+                    btn.classList.remove('bg-white', 'text-black'); // Reset background color for all buttons
+                    btn.classList.add('text-white'); // Ensure text is white for all buttons
                 });
-            });
 
-            // Set the default selected tab and display its content
-            const defaultTab = document.querySelector('.tabButton:first-of-type');
-            if (defaultTab) {
-                defaultTab.click(); // Trigger click event on the default tab to apply initial styles
-            }
+                // Add background color to the clicked tab button
+                button.classList.add('bg-white', 'text-black'); // Apply background color to the clicked button
+                button.classList.remove('text-white'); // Remove text-white for the clicked button
+
+                // Hide all tab contents
+                const tabContents = document.querySelectorAll('.tabContent');
+                tabContents.forEach(function(content) {
+                    content.classList.add('hidden'); // Hide all tab contents
+                });
+
+                // Get the corresponding tab content and display it
+                const tabId = button.getAttribute('aria-controls');
+                const tabContent = document.getElementById(tabId);
+                if (tabContent) {
+                    tabContent.classList.remove('hidden'); // Remove 'hidden' class to display the content
+                }
+            });
         });
-    </script>
+
+        // Set the default selected tab and display its content
+        const defaultTab = document.querySelector('.tabButton:first-of-type');
+        if (defaultTab) {
+            defaultTab.click(); // Trigger click event on the default tab to apply initial styles
+        }
+    });
+</script>
+
 
 </body>
 
