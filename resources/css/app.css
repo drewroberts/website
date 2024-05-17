@@ -2,16 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-.a-custom {
-  @apply text-blue-400
-}
+@layer components {
+  @keyframes fadein {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
 
-.b-style {
-  @apply text-green-900
-}
+  .animation-fadein {
+      animation: fadein 2s;
+  }
+  body {
+    border:5px solid yellow;
+  }
+  .container {
+    /* Tailwind provides a cross-browser sans-serif stack*/
+    @apply text-white font-sans animation-fadein ;
+    border:2px solid red;
+  }
 
-@layer base {
-  .a-style {
-    @apply text-purple-400 inline-block mx-4 relative no-underline;
+  .introduction {
+    @apply absolute top-1/2 transform -translate-y-1/2 w-full flex justify-center;
+  }
+  
+  a {
+    @apply text-white inline-block mx-20 relative no-underline
+  }
+   a:after {
+    @apply h-[1px] 
+    bg-white 
+    pointer-events-none 
+    absolute bottom-[-5px] 
+    left-0 right-0 opacity-0 
+    scale-50
+    transition-all duration-200
+  }
+
+  a:hover:after{
+      @apply opacity-100 scale-100;
+  }
+
+  .logo svg {
+    @apply w-[300px] h-[150px];
+  }
+
+  .footer {
+    @apply absolute bottom-20 w-full text-center text-[#666] text-[14px] mb-20 flex justify-center;
+  }
+
+  .footer a {
+    @apply text-[#666] m-0 transition-all duration-200;
+  }
+
+  .footer a:hover {
+    @apply text-white; /* Note, not much happening here... */
+  }
+
+  .footer .left {
+    @apply inline-block mb-[30px] mr-[30px] ml-0 sm-c:block sm-c:mr-0;
+  }
+  .footer a {
+    @apply inline-block mr-[33px];
+  }
+
+  .footer .right {
+    @apply inline-block sm-c:block;
+  }
+
+  .footer .right a:last-child {
+    @apply mr-0;
   }
 }
