@@ -530,7 +530,7 @@
 	}
 	.video-infocard header{display:-webkit-box;display:-ms-flexbox;display:flex;}
 
-	
+
 	.video-infocard__show-card{position:relative;max-height:120px;}
 	@media only screen and (min-width:1050px){
 	.video-infocard__show-card{max-height:150px;}
@@ -556,8 +556,8 @@
 	.season-and-share{
 		justify-content: space-between;
 	}
-	.episode-info{ 
-		color:#000; 
+	.episode-info{
+		color:#000;
 		text-transform:uppercase;
 	}
 	.share-button{
@@ -571,7 +571,7 @@
 	.share-button:hover {
 		background:#aaa;
 	}
-	.video-infocard__show-summary .video-title{ 
+	.video-infocard__show-summary .video-title{
 		color:#000;
 	}
 	.video-infocard__show-summary .video-description{margin-bottom:15px;}
@@ -1216,7 +1216,7 @@
 							</div>
 						</div>
 						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-name"></span>
-						
+
 						<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
 							<div class="newsletter__input dsp-flex-xs">
 								<input id="name" type="text" required placeholder="Name" class="input-text" value="">
@@ -1246,7 +1246,7 @@
 
 			</div>
 			<div class="content-expandable">
-				
+
 
 			</div>
 		</article>

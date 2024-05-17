@@ -33,14 +33,14 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
         <link rel="manifest" href="/img/favicon/site.webmanifest">
         <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#000000">
-        <meta name="apple-mobile-web-app-title" content="Drew Roberts">
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+		<meta name="apple-mobile-web-app-title" content="Drew Roberts">
         <meta name="application-name" content="Drew Roberts">
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="theme-color" content="#000000">
 
         <meta property="og:description" content="">
         <meta property="og:image" content="">
-
 
       	<style type="text/css">
       		html,
@@ -135,7 +135,7 @@
       		}
 
       		.footer a {
-      			color: #666;
+      			color: white;
       			margin: 0;
       			transition: all 200ms;
       		}
@@ -174,7 +174,7 @@
       		}
 
       	</style>
-
+	    @vite('resources/css/app.css')
       </head>
       <body>
 

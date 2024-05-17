@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.a-custom {
+  @apply text-blue-400
+}
+
+.b-style {
+  @apply text-green-900
+}
+
+@layer base {
+  .a-style {
+    @apply text-purple-400 inline-block mx-4 relative no-underline;
+  }
+}
