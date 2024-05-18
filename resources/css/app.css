@@ -18,7 +18,7 @@
   body {
     border:5px solid yellow;
   }
-  .container {
+  .page-container {
     /* Tailwind provides a cross-browser sans-serif stack*/
     @apply text-white font-sans animation-fadein ;
     border:2px solid red;
