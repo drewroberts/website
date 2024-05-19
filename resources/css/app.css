@@ -16,12 +16,13 @@
       animation: fadein 2s;
   }
   body {
-    border:5px solid yellow;
   }
   .page-container {
     /* Tailwind provides a cross-browser sans-serif stack*/
-    @apply text-white font-sans animation-fadein ;
-    border:2px solid red;
+    @apply text-white font-sans animation-fadein h-screen;
+    /* border:5px solid yellow; */
+
+   
   }
 
   .introduction {
@@ -49,30 +50,31 @@
     @apply w-[300px] h-[150px];
   }
 
-  .footer {
-    @apply absolute bottom-20 w-full text-center text-[#666] text-[14px] mb-20 flex justify-center;
+  .page-footer {
+    @apply absolute bottom-[-50px] w-full text-center text-[#666] text-[14px] mb-20 flex justify-center;
+    /* border:1px solid red; */
   }
 
-  .footer a {
+  .page-footer a {
     @apply text-[#666] m-0 transition-all duration-200;
   }
 
-  .footer a:hover {
+  .page-footer a:hover {
     @apply text-white; /* Note, not much happening here... */
   }
 
-  .footer .left {
+  .page-footer .left {
     @apply inline-block mb-[30px] mr-[30px] ml-0 sm-c:block sm-c:mr-0;
   }
-  .footer a {
+  .page-footer a {
     @apply inline-block mr-[33px];
   }
 
-  .footer .right {
+  .page-footer .right {
     @apply inline-block sm-c:block;
   }
 
-  .footer .right a:last-child {
+  .page-footer .right a:last-child {
     @apply mr-0;
   }
 }
