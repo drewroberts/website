@@ -18,7 +18,7 @@ class Conversation extends Seeder
          $data = [
             [
                 'question' => 'Thanks. What was the best part about your experience?',
-                'answers' => ['Mary Mary Bar', '>>Mrkt', 'Brightline+']
+                'answers' => ['Mary Mary Bar', '>>Mrkt', 'Brightline+', 'Parking', 'Overall Guest Service', 'Cleanliness']
             ],
             [
                 'question' => 'Tell us more about what you loved.',
@@ -34,6 +34,16 @@ class Conversation extends Seeder
                     'Florida Resident Family Leisure...',
                     'Florida Resident Senior',
                     'US Domestic Business Travel'
+                    ]
+
+            ],
+            [
+                'question' => 'How did you last hear about Brightline?',
+                'answers' => [
+                    'Online Advertising',
+                    'Radio',
+                    'Social Media',
+                    'News Coverage'
                     ]
 
             ]

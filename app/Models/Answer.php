@@ -3,13 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Answer extends Model
 {
-    protected $fillable = ['question_id', 'response'];
-
-    public function question()
-    {
-        return $this->belongsTo(Question::class);
-    }
+    use HasFactory;
 }

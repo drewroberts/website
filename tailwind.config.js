@@ -3,6 +3,10 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+  // corePlugins: {
+  //   preflight: false, // disable preflight to avoid conflicts
+  // },
+  // important: true,
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
@@ -17,9 +21,14 @@ module.exports = {
         '14px': '14px',
       },
       colors: {
-        '#666': '#666'
+        'cgray': '#666',
+        'corange':'#FF6100'
+      },
+      backgroundColor:{
+        'corange':'#FF6100'
       },
       screens: {
+        'mm-c': '22em',
         'sm-c': '40em', 
         'lg-c': '64em', 
       },
