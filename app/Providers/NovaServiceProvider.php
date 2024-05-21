@@ -7,6 +7,8 @@ use Laravel\Nova\Cards\Help;
 use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
 
+use App\Nova\Conversation;
+
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
     /**
@@ -77,7 +79,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     public function tools()
     {
-        return [];
+        // return [];
+        return [
+            Conversation::class
+            // Other tools
+        ];
     }
 
     /**

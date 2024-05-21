@@ -14,6 +14,7 @@
         "laravel/nova": "^3.22",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "livewire/livewire": "^2.12",
         "tipoff/authorization": "^2.10",
         "wildbit/swiftmailer-postmark": "^3.4"
     },

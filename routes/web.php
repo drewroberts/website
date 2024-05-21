@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('temporary');
+    // return view('temporary');
+    return view('chatlanding');
 });
 
 Route::get('amp', function () {
