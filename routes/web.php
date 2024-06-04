@@ -23,4 +23,8 @@ Route::get('amp', function () {
 
 Route::get('amp-single', function () {
     return view('amp-single');
+
+Route::get('new', function () {
+    return view('new');
+
 });
