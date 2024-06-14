@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-full bg-gray-100">
+<html lang="en" class="h-full bg-gray-200">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,54 +42,6 @@
         <meta property="og:image" content="">
 
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-
-        <style>
-            .logo {
-                max-width: 184px;
-                height: 34px;
-                overflow: hidden;
-            }
-
-            .logo .left {
-                width: 16px;
-                height: 34px;
-                float: left;
-                display: inline-block;
-            }
-
-            .logo .center {
-                float: left;
-                width: 152px;
-                height: 34px;
-                animation-name: transformer;
-                animation-duration: 15s;
-                animation-delay: 3s;
-                animation-iteration-count: 7;
-                animation-timing-function: ease-in-out;
-                display: inline-block;
-                overflow: hidden;
-            }
-
-            @keyframes transformer {
-                0%   {width: 152px;background:black;}
-                14%  {width: 152px;background:black;}
-                15%  {width: 152px;background:white;}
-                17%  {width: 0px;background:white;}
-                93%  {width: 0px;background:white;}
-                95%  {width: 152px;background:white;}
-                96%  {width: 152px;background:black;}
-                100% {width: 152px;background:black;}
-            }
-
-            .logo .right {
-                width: 16px;
-                height: 34px;
-                float: left;
-                display: inline-block;
-            }
-
-        </style>
-
 
       </head>
       <body class="h-full">
@@ -141,6 +93,7 @@
                                 </nav>
                             </div>
                         <div>
+                            <!--
                             <div class="mx-auto w-full max-w-md">
                                 <label for="mobile-search" class="sr-only">Search</label>
                                 <div class="relative text-white focus-within:text-gray-600">
@@ -152,6 +105,7 @@
                                     <input id="mobile-search" class="block w-full rounded-md border-0 bg-white/20 py-1.5 pl-10 pr-3 text-white placeholder:text-white focus:bg-white focus:text-gray-900 focus:ring-0 focus:placeholder:text-gray-500 sm:text-sm sm:leading-6" placeholder="Search" type="search" name="search">
                                 </div>
                             </div>
+                            -->
                         </div>
                         </div>
                     </div>
@@ -167,13 +121,103 @@
                     <div class="grid grid-cols-1 gap-4 lg:col-span-2">
                         <section aria-labelledby="section-1-title">
                             <h2 class="sr-only" id="section-1-title">Drew Roberts Intro Video</h2>
-                            <div class="overflow-hidden rounded-lg bg-white shadow aspect-w-16 aspect-h-9">
-                                <iframe src="https://www.youtube.com/embed/Y131gqlup88?si=YY-yEQ6V8YX9JRdz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg bg-white shadow">
+                                <iframe src="https://www.youtube.com/embed/Y131gqlup88?si=YY-yEQ6V8YX9JRdz" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </section>
+
+                        <!--
+                        <section class="rounded-lg">
+                            <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:px-16 rounded-lg">
+                                <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Boost your productivity today.</h2>
+                                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
+                                <div class="mt-10 flex items-center justify-center gap-x-6">
+                                    <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
+                                    <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+                                </div>
+                                <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+                                    <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
+                                    <defs>
+                                    <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+                                        <stop stop-color="#7775D6" />
+                                        <stop offset="1" stop-color="#E935C1" />
+                                    </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </section>
+                        -->
+
+                        <section class="bg-black py-24 sm:py-32 rounded-lg">
+                            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                                <div class="mx-auto max-w-2xl lg:mx-0">
+                                    <h2 class="text-base font-semibold leading-7 text-blue-700">Developer expertise</h2>
+                                    <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Consulting by Drew Roberts</p>
+                                    <p class="mt-6 text-lg leading-8 text-gray-300">18 years of programming & marketing experience with 12 years in the cryptocurrency space & over 3 years of tokenizing projects.</p>
+                                </div>
+                                <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+                                    <div class="relative pl-9">
+                                    <dt class="inline font-semibold text-white">
+                                        <svg class="absolute left-1 top-1 h-5 w-5 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+                                        </svg>
+                                        Web Apps.
+                                    </dt>
+                                    <dd class="inline">Full interactive database applications with wallet connect & 3rd party APIs.</dd>
+                                    </div>
+                                    <div class="relative pl-9">
+                                    <dt class="inline font-semibold text-white">
+                                        <svg class="absolute left-1 top-1 h-5 w-5 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+                                        </svg>
+                                        Security Audits.
+                                    </dt>
+                                    <dd class="inline">Smart contract audits for security & elimination of perceived bearish functions.</dd>
+                                    </div>
+                                    <div class="relative pl-9">
+                                    <dt class="inline font-semibold text-white">
+                                        <svg class="absolute left-1 top-1 h-5 w-5 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 01-9.201 2.466l-.312-.311h2.433a.75.75 0 000-1.5H3.989a.75.75 0 00-.75.75v4.242a.75.75 0 001.5 0v-2.43l.31.31a7 7 0 0011.712-3.138.75.75 0 00-1.449-.39zm1.23-3.723a.75.75 0 00.219-.53V2.929a.75.75 0 00-1.5 0V5.36l-.31-.31A7 7 0 003.239 8.188a.75.75 0 101.448.389A5.5 5.5 0 0113.89 6.11l.311.31h-2.432a.75.75 0 000 1.5h4.243a.75.75 0 00.53-.219z" clip-rule="evenodd" />
+                                        </svg>
+                                        Tokenization Expert.
+                                    </dt>
+                                    <dd class="inline">Over 100 token launches experimenting with launch mechanics & community involvement.</dd>
+                                    </div>
+                                    <div class="relative pl-9">
+                                    <dt class="inline font-semibold text-white">
+                                        <svg class="absolute left-1 top-1 h-5 w-5 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M10 2.5c-1.31 0-2.526.386-3.546 1.051a.75.75 0 01-.82-1.256A8 8 0 0118 9a22.47 22.47 0 01-1.228 7.351.75.75 0 11-1.417-.49A20.97 20.97 0 0016.5 9 6.5 6.5 0 0010 2.5zM4.333 4.416a.75.75 0 01.218 1.038A6.466 6.466 0 003.5 9a7.966 7.966 0 01-1.293 4.362.75.75 0 01-1.257-.819A6.466 6.466 0 002 9c0-1.61.476-3.11 1.295-4.365a.75.75 0 011.038-.219zM10 6.12a3 3 0 00-3.001 3.041 11.455 11.455 0 01-2.697 7.24.75.75 0 01-1.148-.965A9.957 9.957 0 005.5 9c0-.028.002-.055.004-.082a4.5 4.5 0 018.996.084V9.15l-.005.297a.75.75 0 11-1.5-.034c.003-.11.004-.219.005-.328a3 3 0 00-3-2.965zm0 2.13a.75.75 0 01.75.75c0 3.51-1.187 6.745-3.181 9.323a.75.75 0 11-1.186-.918A13.687 13.687 0 009.25 9a.75.75 0 01.75-.75zm3.529 3.698a.75.75 0 01.584.885 18.883 18.883 0 01-2.257 5.84.75.75 0 11-1.29-.764 17.386 17.386 0 002.078-5.377.75.75 0 01.885-.584z" clip-rule="evenodd" />
+                                        </svg>
+                                        Doxxed Developer.
+                                    </dt>
+                                    <dd class="inline">Fully transparent token launches from trusted dev who operates off best practices.</dd>
+                                    </div>
+                                    <div class="relative pl-9">
+                                    <dt class="inline font-semibold text-white">
+                                        <svg class="absolute left-1 top-1 h-5 w-5 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M7.84 1.804A1 1 0 018.82 1h2.36a1 1 0 01.98.804l.331 1.652a6.993 6.993 0 011.929 1.115l1.598-.54a1 1 0 011.186.447l1.18 2.044a1 1 0 01-.205 1.251l-1.267 1.113a7.047 7.047 0 010 2.228l1.267 1.113a1 1 0 01.206 1.25l-1.18 2.045a1 1 0 01-1.187.447l-1.598-.54a6.993 6.993 0 01-1.929 1.115l-.33 1.652a1 1 0 01-.98.804H8.82a1 1 0 01-.98-.804l-.331-1.652a6.993 6.993 0 01-1.929-1.115l-1.598.54a1 1 0 01-1.186-.447l-1.18-2.044a1 1 0 01.205-1.251l1.267-1.114a7.05 7.05 0 010-2.227L1.821 7.773a1 1 0 01-.206-1.25l1.18-2.045a1 1 0 011.187-.447l1.598.54A6.993 6.993 0 017.51 3.456l.33-1.652zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                        </svg>
+                                        Custom Smart Contracts.
+                                    </dt>
+                                    <dd class="inline">Oracles, contract splitters, NFT mints, vesting, tokens, and buy/sell bots.</dd>
+                                    </div>
+                                    <div class="relative pl-9">
+                                    <dt class="inline font-semibold text-white">
+                                        <svg class="absolute left-1 top-1 h-5 w-5 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
+                                        <path fill-rule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clip-rule="evenodd" />
+                                        </svg>
+                                        Launch Marketing.
+                                    </dt>
+                                    <dd class="inline">X Spaces, Telegram setup, bots, deployment, liquidity pools, anti-whale mechanics.</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </section>
+
                     </div>
 
-                    <!-- Search Bar -->
+                    <!-- Search Bar 
                     <div class="min-w-0 flex-1 px-12 lg:hidden">
                     <div class="mx-auto w-full max-w-xs">
                         <label for="desktop-search" class="sr-only">Search</label>
@@ -187,6 +231,7 @@
                         </div>
                     </div>
                     </div>
+                    -->
 
                     <!-- Right column -->
                     <div class="grid grid-cols-1 gap-4">
@@ -217,7 +262,7 @@
                                         <dd class="text-sm font-medium leading-6 text-gray-900">Drew Roberts</dd>
                                     </div>
                                     <div class="mt-4 w-full px-6">
-                                        <a href="mailto:email@drewroberts.com" class="group flex w-full flex-none gap-x-4">
+                                        <a href="mailto:gm@drewroberts.com" class="group flex w-full flex-none gap-x-4">
                                             <dt class="flex-none">
                                             <span class="sr-only">Email</span>
                                             <svg class="h-6 w-5 text-gray-400 group-hover:text-gray-900" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -226,7 +271,7 @@
                                             </svg>
                                             </dt>
                                             <dd class="text-sm leading-6 text-gray-500 group-hover:text-gray-900">
-                                            <time datetime="2023-01-31">email@drewroberts.com</time>
+                                            <time datetime="2023-01-31">gm@drewroberts.com</time>
                                             </dd>
                                         </a>
                                     </div>
@@ -277,7 +322,7 @@
             </main>
             <footer>
                 <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div class="border-t border-gray-200 py-8 text-center text-sm text-gray-500 sm:text-left"><span class="block sm:inline">&copy; 2024 Drew Roberts Digital LLC</span> <span class="block sm:inline">All rights reserved.</span></div>
+                <div class="border-t border-gray-500 py-8 text-center text-sm text-gray-500 sm:text-left"><span class="block sm:inline">&copy; 2024 Drew Roberts Digital LLC</span> <span class="block sm:inline">All rights reserved.</span></div>
                 </div>
             </footer>
         </div>
