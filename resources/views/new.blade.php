@@ -5,19 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <script>
-            tailwind.config = {
-            theme: {
-                extend: {
-                colors: {
-                    clifford: '#da373d',
-                }
-                }
-            }
-            }
-
-        </script>
-
         <title>Drew Roberts</title>
 
         <!-- Structured Data -->
@@ -107,20 +94,6 @@
       </head>
       <body class="h-full">
 
-        <!--
-            This example requires some changes to your config:
-            
-            ```
-            // tailwind.config.js
-            module.exports = {
-                // ...
-                plugins: [
-                // ...
-                require('@tailwindcss/forms'),
-                ],
-            }
-            ```
-        -->
         <div class="min-h-full">
             <header class="bg-black pb-24">
                 <div class="mx-auto max-w-7xl px-8">
