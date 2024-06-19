@@ -377,79 +377,79 @@
                     <div class="grid grid-cols-2 gap-8 xl:col-span-2">
                         <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
-                            <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Consulting</h3>
                             <ul role="list" class="mt-6 space-y-4">
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
-                            </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Cost</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Book</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Schedule</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="mt-10 md:mt-0">
-                            <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Cryptocurrency</h3>
                             <ul role="list" class="mt-6 space-y-4">
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">API Status</a>
-                            </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Smart Contracts</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Tokenomics</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Audits</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Advisory Roles</a>
+                                </li>
                             </ul>
                         </div>
                         </div>
                         <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
-                            <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Programming</h3>
                             <ul role="list" class="mt-6 space-y-4">
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Partners</a>
-                            </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Full Stack</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Web Apps</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Laravel</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">APIs</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="mt-10 md:mt-0">
-                            <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Marketing</h3>
                             <ul role="list" class="mt-6 space-y-4">
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
-                            </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">SEM</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Social</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Launches</a>
+                                </li>
                             </ul>
                         </div>
                         </div>
                     </div>
                     <div class="mt-10 xl:mt-0">
-                        <h3 class="text-sm font-semibold leading-6 text-white">Subscribe to our newsletter</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-white">Subscribe to my newsletter</h3>
                         <p class="mt-2 text-sm leading-6 text-gray-300">The latest news, articles, and resources, sent to your inbox weekly.</p>
                         <form class="mt-6 sm:flex sm:max-w-md">
                         <label for="email-address" class="sr-only">Email address</label>
