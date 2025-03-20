@@ -48,6 +48,23 @@ You can then view the homepage if you're using Laravel Homestead at https://webs
 - Laravel Nova
 - Laravel Socialite
 
+## Strongly Opinionated:
+
+- no.js
+- laravel
+- ma.tt
+- tailwindcss
+- laracasts
+- ligonier
+- desiring god
+- github
+- hedera
+- base
+- solami
+- carnivore
+- evernode
+- laravel cloud.
+
 ## Contributing
 
 Feel free to send me a feature request or submit pull requests and improve the website where you see it needs it. I appreciate the help..
