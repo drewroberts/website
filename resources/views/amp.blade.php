@@ -2603,7 +2603,7 @@
 							</div>
 						</div>
 						<span visible-when-invalid="valueMissing" validation-for="show-first-on-submit-name"></span>
-						
+
 						<div class="newsletter__input__container dsp-flex-xs col-12-xs grd-algn-item-flex-end-xs">
 							<div class="newsletter__input dsp-flex-xs">
 								<input id="name" type="text" required placeholder="Name" class="input-text" value="">

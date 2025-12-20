@@ -13,5 +13,20 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
+        //
+    ])
+    .browserSync({
+        proxy: 'website.test', 
+        host: 'website.test',
+        open: 'external',
+        port: 3000,
+        files: [
+            'resources/views/**/*.blade.php',
+            'resources/css/**/*.css',
+            'resources/js/**/*.js',
+            'public/**/*.(css|js)'
+        ],
+        open: false,
+    });
         require('tailwindcss'),
     ]).version();
