@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,48 +21,10 @@ Route::get('amp', function () {
     return view('amp');
 });
 
-Route::get('newsletter', 'Auth\RegisterController@showNewsletter')->name('newsletter'); // Build longer style landing page
-Route::group(['prefix' => 'newsletter'], function () {
-    Route::get('subscribe', 'Auth\RegisterController@showRegistrationForm')->name('subscribe'); // Build short form landing page
-    Route::post('subscribe', 'Auth\RegisterController@register');
-    Route::get('thanks', 'Auth\ProfileController@thanks')->name('requested');
-    Route::get('confirm/{id_token}', 'Auth\UserController@confirmEmail');
-    Route::get('confirm', 'Auth\UserController@showConfirmed')->name('confirmed');
+Route::get('amp-single', function () {
+    return view('amp-single');
 });
 
-Route::get('together', 'Auth\ProfileController@index')->name('together'); // Not index of profiles, but index of things subscribers can do with me. Password protected.
-Route::group(['prefix' => 'together'], function () {
-    Route::get('you', 'Auth\ProfileController@show')->name('profile');
-    // Authentication Routes...
-    Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
-    Route::post('login', 'Auth\LoginController@login');
-    Route::post('logout', 'Auth\LoginController@logout')->name('logout');
-    Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
-    Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
-    Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
-    Route::post('password/reset', 'Auth\ResetPasswordController@reset');
-    // Contact/Message Routes...
-    Route::get('contact', 'Auth\MessageController@contact')->name('contact'); // Contact me is for subscribers only to send messages.
-    Route::post('messages', 'Auth\MessageController@index'); // Historical correspondence with the subscriber.
+Route::get('new', function () {
+    return view('new');
 });
-
-
-
-Route::get('recommendations', function () {
-    return redirect('recommends');
-});
-Route::get('recommends', 'RecommendationController@index')->name('recommendations');
-Route::group(['prefix' => 'recommends'], function () {
-    // All subURLs of /recommends/ will be in those controllers and included in this group.
-});
-
-Route::get('{topic}/resources', 'ResourceController@index');
-Route::get('{topic}/resources/{resource}', 'ResourceController@show');
-Route::get('{topic}/{post}', 'PostController@show');
-Route::get('{topic}', 'TopicController@show');
-
-
-Route::any('{all}', function () {
-    return view('temporary');
-})
-->where(['all' => '.*']);

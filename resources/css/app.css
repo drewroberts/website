@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+    max-width: 184px;
+    height: 34px;
+    overflow: hidden;
+}
+
+.logo .left {
+    width: 16px;
+    height: 34px;
+    float: left;
+    display: inline-block;
+}
+
+.logo .center {
+    float: left;
+    width: 152px;
+    height: 34px;
+    animation-name: transformer;
+    animation-duration: 15s;
+    animation-delay: 3s;
+    animation-iteration-count: 7;
+    animation-timing-function: ease-in-out;
+    display: inline-block;
+    overflow: hidden;
+}
+
+@keyframes transformer {
+    0%   {width: 152px;background:black;}
+    14%  {width: 152px;background:black;}
+    15%  {width: 152px;background:white;}
+    17%  {width: 0px;background:white;}
+    93%  {width: 0px;background:white;}
+    95%  {width: 152px;background:white;}
+    96%  {width: 152px;background:black;}
+    100% {width: 152px;background:black;}
+}
+
+.logo .right {
+    width: 16px;
+    height: 34px;
+    float: left;
+    display: inline-block;
+}
