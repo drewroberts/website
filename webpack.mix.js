@@ -28,3 +28,5 @@ mix.js('resources/js/app.js', 'public/js')
         ],
         open: false,
     });
+        require('tailwindcss'),
+    ]).version();

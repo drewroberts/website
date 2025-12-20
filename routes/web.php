@@ -21,3 +21,11 @@ Route::get('/', function () {
 Route::get('amp', function () {
     return view('amp');
 });
+
+Route::get('amp-single', function () {
+    return view('amp-single');
+});
+
+Route::get('new', function () {
+    return view('new');
+});
