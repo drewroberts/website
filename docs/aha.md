@@ -76,6 +76,7 @@ To maintain professional standards and predictability, the repository shall foll
 
 1. **Typography Plugin:** The `@tailwindcss/typography` plugin is mandatory for all content-heavy areas.
 2. **The Prose Class:** All content rendered via the MDX map must be wrapped in a `prose` container to maintain vertical rhythm and typographic hierarchy.
+3. **Class Integrity:** All reusable UI components must utilize a standard `cn()` utility (combining `clsx` and `tailwind-merge`) to allow for safe, conflict-free class overrides.
 
 ---
 
@@ -83,5 +84,13 @@ To maintain professional standards and predictability, the repository shall foll
 
 1. **Decoupled Logic:** The frontend shall remain backend-agnostic. Connection to Laravel APIs must occur via client-side `fetch` or HTMX.
 2. **Security Standards:** No private API keys or sensitive environment variables shall be exposed in client-side scripts. Public endpoints must be protected via CORS and Rate Limiting on the Laravel side.
+
+---
+
+## Article VIII: Code Quality & Standards
+
+1. **Automated Formatting:** All code must be formatted via Prettier.
+2. **Sorting:** Tailwind classes must be automatically sorted via the `prettier-plugin-tailwindcss` to ensure consistency and reduce merge conflicts.
+3. **Type Safety:** All components and scripts must utilize TypeScript (`.ts`, `.tsx`) where applicable, adhering to the installed TypeScript configuration.
 
 ---
