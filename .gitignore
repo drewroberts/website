@@ -11,8 +11,6 @@ dist/
 .astro/
 
 # Environment Secrets
-.env
-.env.*
 !.env.example
 
 # Search Index (Local)
@@ -28,3 +26,4 @@ yarn-error.log*
 # OS Files
 .DS_Store
 Thumbs.db
+config.bat
