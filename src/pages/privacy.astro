@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const lastUpdated = 'February 2026';
+---
+
+<BaseLayout 
+  title="Privacy Policy — John Doe"
+  description="Privacy policy for the personal brand site of John Doe. Learn how your data is handled."
+>
+  <!-- Page Hero -->
+  <section class="section text-center pb-6">
+    <div class="container">
+      <span class="label">Legal</span>
+      <h1 class="mb-4">Privacy Policy</h1>
+      <p class="font-mono text-xs text-text-muted">Last updated: {lastUpdated}</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="pt-0 pb-16">
+    <div class="container">
+      <article class="card max-w-[700px] mx-auto p-8 md:p-12">
+        
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Overview</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">
+            This personal website respects your privacy and is committed to protecting any 
+            information you share while visiting. This policy explains what data may be 
+            collected, how it's used, and your rights regarding that information.
+          </p>
+          <p class="text-text-secondary leading-relaxed">
+            By using this website, you agree to the collection and use of information in 
+            accordance with this policy. If you disagree with any part, please discontinue 
+            use of the site.
+          </p>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Information Collected</h2>
+          
+          <h3 class="text-base text-text-secondary mt-6 mb-3 text-center">Automatically Collected Data</h3>
+          <p class="text-text-secondary leading-relaxed mb-4">When you visit this site, certain information may be automatically collected:</p>
+          <ul class="list-disc pl-6 mb-6 text-text-secondary space-y-1">
+            <li>Browser type and version</li>
+            <li>Operating system</li>
+            <li>Referring website (if applicable)</li>
+            <li>Pages visited and time spent</li>
+            <li>Approximate geographic location (country/region level)</li>
+            <li>Device type (desktop, mobile, tablet)</li>
+          </ul>
+
+          <h3 class="text-base text-text-secondary mt-6 mb-3 text-center">Voluntarily Provided Data</h3>
+          <p class="text-text-secondary leading-relaxed mb-4">You may choose to provide information when:</p>
+          <ul class="list-disc pl-6 text-text-secondary space-y-1">
+            <li>Contacting me through email or contact forms</li>
+            <li>Subscribing to any newsletter or updates</li>
+            <li>Downloading resources that require email submission</li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Analytics</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">
+            This site may use privacy-focused analytics tools to understand how visitors 
+            interact with the content. These tools are configured to:
+          </p>
+          <ul class="list-disc pl-6 mb-4 text-text-secondary space-y-1">
+            <li>Not use cookies where possible</li>
+            <li>Not track users across websites</li>
+            <li>Not collect personally identifiable information</li>
+            <li>Store data in aggregate form only</li>
+          </ul>
+          <p class="text-text-secondary leading-relaxed">
+            Analytics data helps improve the site's content, structure, and user experience. 
+            It is never sold or shared with third parties for advertising purposes.
+          </p>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Contact</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">
+            For questions, concerns, or requests related to this privacy policy, please 
+            contact:
+          </p>
+          <div class="bg-bg-surface border-l-4 border-l-accent p-4 text-center mb-4">
+            <p class="text-text-primary"><strong>Email:</strong> <a href="mailto:privacy@example.com" class="text-accent-bright hover:text-accent">privacy@example.com</a></p>
+          </div>
+          <p class="text-text-secondary leading-relaxed">
+            Responses to privacy-related inquiries are typically provided within 30 days.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Changes to This Policy</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">
+            This privacy policy may be updated periodically to reflect changes in practices 
+            or legal requirements. Significant changes will be noted by updating the 
+            "Last updated" date at the top of this page.
+          </p>
+          <p class="text-text-secondary leading-relaxed">
+            Continued use of the site after changes constitutes acceptance of the revised 
+            policy. Please review this page periodically for updates.
+          </p>
+        </section>
+
+      </article>
+    </div>
+  </section>
+</BaseLayout>

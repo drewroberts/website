@@ -1,0 +1,87 @@
+---
+const principles = [
+  {
+    id: 'understand',
+    title: 'Understand Before Building',
+    content: 'Every engagement begins with deep discovery. I invest time upfront to understand your goals, constraints, users, and context. This prevents costly pivots later and ensures we build the right thing, not just something.',
+    icon: '◈'
+  },
+  {
+    id: 'simple',
+    title: 'Keep It Simple, Make It Solid',
+    content: 'Complexity is the enemy of reliability. I favor proven patterns over clever hacks, readable code over compact code, and straightforward architecture over intricate systems. The best solutions are often the simplest ones that actually work.',
+    icon: '◇'
+  },
+  {
+    id: 'iterate',
+    title: 'Iterate and Improve',
+    content: 'No plan survives contact with reality unchanged. I work in focused cycles, delivering working increments and gathering feedback continuously. This allows us to adapt, refine, and improve based on real-world usage.',
+    icon: '◎'
+  },
+  {
+    id: 'document',
+    title: 'Document What Matters',
+    content: 'Knowledge should not live only in one person\'s head. I document decisions, architectures, and processes so that teams can maintain and extend the work long after I\'m gone. Good documentation is an act of respect for future maintainers.',
+    icon: '□'
+  },
+  {
+    id: 'own',
+    title: 'Own the Outcome',
+    content: 'I don\'t just write code and walk away. I take responsibility for the success of the project, proactively flagging risks, suggesting improvements, and staying engaged until the work delivers real value.',
+    icon: '▣'
+  }
+];
+---
+
+<section class="section bg-bg-primary" x-data="{ openItem: null }">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <span class="label">Philosophy</span>
+      <h2 class="mb-4">Operating Principles</h2>
+      <p class="text-text-muted text-lg">
+        The foundational beliefs that guide how I approach every project.
+      </p>
+    </div>
+    
+    <!-- Accordion -->
+    <div class="flex flex-col gap-2 max-w-[600px] mx-auto">
+      {principles.map((principle, index) => (
+        <div 
+          class="bg-bg-elevated border border-steel rounded overflow-hidden transition-colors"
+          :class="{ 'border-accent': openItem === `${principle.id}`, 'hover:border-steel-light': openItem !== `${principle.id}` }"
+        >
+          <button
+            class="w-full flex flex-col items-center gap-3 p-4 md:p-6 text-center cursor-pointer hover:bg-bg-surface transition-colors"
+            @click={`openItem = openItem === '${principle.id}' ? null : '${principle.id}'`}
+            :aria-expanded={`openItem === '${principle.id}'`}
+            aria-controls={`content-${principle.id}`}
+          >
+            <div class="flex flex-col items-center gap-2">
+              <span class="font-mono text-xs text-text-muted">{String(index + 1).padStart(2, '0')}</span>
+              <span class="text-xl text-accent">{principle.icon}</span>
+              <span class="font-display font-semibold tracking-[0.02em]">{principle.title}</span>
+            </div>
+            <span 
+              class="text-text-muted transition-transform"
+              :class="{ 'rotate-180': openItem === `${principle.id}` }"
+            >
+              ▾
+            </span>
+          </button>
+          
+          <div
+            id={`content-${principle.id}`}
+            x-show={`openItem === '${principle.id}'`}
+            x-collapse
+            x-cloak
+          >
+            <div class="px-4 md:px-6 pb-6 text-center">
+              <p class="text-text-secondary leading-relaxed">{principle.content}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

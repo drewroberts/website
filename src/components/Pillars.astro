@@ -1,0 +1,58 @@
+---
+const pillars = [
+  {
+    number: '01',
+    title: 'Strategic Thinking',
+    description: 'Every project starts with understanding the real problem. I dig deep before writing a single line of code.',
+    icon: '◆'
+  },
+  {
+    number: '02',
+    title: 'Technical Excellence',
+    description: 'Clean architecture, maintainable code, and battle-tested solutions. Built to last, not just to ship.',
+    icon: '◇'
+  },
+  {
+    number: '03',
+    title: 'Clear Communication',
+    description: 'No jargon, no mysteries. I keep you informed and involved throughout the entire process.',
+    icon: '○'
+  },
+  {
+    number: '04',
+    title: 'Reliability',
+    description: 'Deadlines met, promises kept. When I commit to something, consider it done.',
+    icon: '□'
+  }
+];
+---
+
+<section class="section bg-bg-primary relative">
+  <!-- Top border gradient -->
+  <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-steel to-transparent"></div>
+  
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center max-w-[600px] mx-auto mb-16">
+      <span class="label">Core Values</span>
+      <h2 class="mb-4">What I Bring to Every Project</h2>
+      <p class="text-text-muted text-lg">
+        Four foundational principles that guide how I work and deliver.
+      </p>
+    </div>
+    
+    <!-- Pillars list -->
+    <div class="flex flex-col gap-4 max-w-[600px] mx-auto">
+      {pillars.map((pillar) => (
+        <article class="card text-center hover:border-accent hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4),0_0_0_1px_var(--color-accent-muted)]">
+          <div class="flex items-center justify-center gap-6 mb-4">
+            <span class="font-mono text-xs text-text-muted tracking-[0.1em]">{pillar.number}</span>
+            <span class="text-2xl text-accent">{pillar.icon}</span>
+          </div>
+          <h3 class="text-xl mb-3 normal-case tracking-normal">{pillar.title}</h3>
+          <p class="text-text-muted text-[0.95rem] leading-relaxed">{pillar.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

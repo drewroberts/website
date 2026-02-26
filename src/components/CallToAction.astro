@@ -1,0 +1,52 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  primaryText?: string;
+  primaryHref?: string;
+  secondaryText?: string;
+  secondaryHref?: string;
+}
+
+const {
+  title = "Ready to Build Something?",
+  description = "Whether you have a project in mind or just want to explore possibilities, I'd be glad to hear from you.",
+  primaryText = "Book a Call",
+  primaryHref = "mailto:hello@example.com?subject=Project%20Inquiry",
+  secondaryText = "View Resources",
+  secondaryHref = "/downloads"
+} = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <div class="relative bg-gradient-to-br from-bg-elevated to-bg-surface border border-steel rounded p-12 md:p-16 max-w-[600px] mx-auto overflow-hidden">
+      <!-- Grid pattern -->
+      <div class="absolute inset-0 bg-[linear-gradient(rgba(217,119,6,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(217,119,6,0.03)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
+      
+      <div class="relative z-10 text-center">
+        <!-- Visual -->
+        <div class="mb-6">
+          <div class="flex items-center justify-center gap-6 font-display text-5xl text-steel">
+            <span class="hover:text-steel-light transition-colors">[</span>
+            <span class="text-accent animate-pulse-glow">▸</span>
+            <span class="hover:text-steel-light transition-colors">]</span>
+          </div>
+        </div>
+        
+        <h2 class="mb-4">{title}</h2>
+        <p class="text-lg text-text-secondary max-w-[450px] mx-auto mb-8">{description}</p>
+        
+        <div class="flex flex-col gap-4 items-center">
+          <a href={primaryHref} class="btn btn-primary w-full max-w-[260px]">
+            {primaryText}
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+          <a href={secondaryHref} class="btn btn-secondary w-full max-w-[260px]">
+            {secondaryText}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

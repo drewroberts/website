@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const guides = [
+  {
+    title: 'For Clients',
+    description: 'What to expect when working together, communication protocols, and how to get the most out of our engagement.',
+    href: '/docs/for-clients',
+    icon: '◈',
+    tag: 'Client Guide'
+  },
+  {
+    title: 'For Collaborators',
+    description: 'Guidelines for fellow developers, designers, and team members on working styles and preferences.',
+    href: '/docs/for-collaborators',
+    icon: '◇',
+    tag: 'Team Guide'
+  }
+];
+---
+
+<BaseLayout 
+  title="Guides — John Doe"
+  description="Quick reference guides for clients and collaborators on how to work with me effectively."
+>
+  <!-- Page Hero -->
+  <section class="section text-center pb-6">
+    <div class="container">
+      <span class="label">Documentation</span>
+      <h1 class="mb-6">Guides Hub</h1>
+      <p class="text-xl text-text-secondary max-w-[600px] mx-auto leading-relaxed">
+        Quick references to help us work together smoothly. Pick the guide that applies to you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section class="pt-0 pb-16">
+    <div class="container">
+      <div class="flex flex-col gap-6 max-w-[600px] mx-auto">
+        {guides.map(guide => (
+          <a href={guide.href} class="group block">
+            <div class="card text-center hover:border-accent hover:-translate-y-1 hover:shadow-lg transition-all">
+              <div class="flex items-center justify-center gap-6 mb-6">
+                <span class="text-3xl text-accent">{guide.icon}</span>
+                <span class="tag">{guide.tag}</span>
+              </div>
+              
+              <h2 class="text-2xl mb-4 text-text-primary normal-case tracking-normal">{guide.title}</h2>
+              <p class="text-text-muted leading-relaxed">{guide.description}</p>
+              
+              <div class="mt-6 pt-4 border-t border-steel">
+                <span class="inline-flex items-center gap-2 font-display text-sm uppercase tracking-[0.05em] text-text-secondary group-hover:text-accent-bright transition-colors">
+                  Read Guide
+                  <span class="transition-transform group-hover:translate-x-1">→</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Note -->
+  <section class="section bg-bg-primary">
+    <div class="container">
+      <div class="card text-center max-w-[600px] mx-auto">
+        <div class="text-3xl text-steel-light mb-4">◎</div>
+        <h3 class="text-lg mb-2 normal-case tracking-normal">Need something specific?</h3>
+        <p class="text-text-muted leading-relaxed mb-6">
+          These guides cover the essentials. For project-specific documentation, 
+          detailed technical specs, or custom requirements, reach out directly and 
+          I'll provide what you need.
+        </p>
+        <a href="mailto:hello@example.com" class="btn btn-secondary">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

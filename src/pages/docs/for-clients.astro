@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="For Clients — John Doe"
+  description="What to expect when working together, communication protocols, and how to get the most out of our engagement."
+>
+  <!-- Page Hero -->
+  <section class="section text-center pb-6">
+    <div class="container">
+      <a href="/docs" class="inline-flex items-center gap-2 font-mono text-xs text-text-muted hover:text-accent-bright transition-colors mb-6">
+        <span>←</span>
+        Back to Guides
+      </a>
+      <span class="label block">Client Guide</span>
+      <h1 class="mb-4">For Clients</h1>
+      <p class="text-lg text-text-secondary max-w-[600px] mx-auto leading-relaxed">
+        Everything you need to know about working with me. Clear expectations make for successful projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="pt-0 pb-16">
+    <div class="container">
+      <article class="card max-w-[700px] mx-auto p-8 md:p-12">
+        
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">What You Can Expect</h2>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent-bright font-semibold">✓</span> Clear, jargon-free communication throughout the project</li>
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent-bright font-semibold">✓</span> Regular progress updates at agreed-upon intervals</li>
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent-bright font-semibold">✓</span> Honest assessment of timelines and potential challenges</li>
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent-bright font-semibold">✓</span> Proactive problem-solving rather than waiting for direction</li>
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent-bright font-semibold">✓</span> Thorough documentation for ongoing maintenance</li>
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent-bright font-semibold">✓</span> Respect for your time, budget, and business constraints</li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Communication</h2>
+          <div class="space-y-4">
+            <div class="bg-bg-surface p-4 rounded border-l-4 border-l-steel text-center">
+              <h3 class="text-base text-text-primary mb-2">Response Time</h3>
+              <p class="text-text-muted text-sm">Business day messages typically get responses within 4-8 hours. Urgent issues are flagged and addressed immediately.</p>
+            </div>
+            <div class="bg-bg-surface p-4 rounded border-l-4 border-l-steel text-center">
+              <h3 class="text-base text-text-primary mb-2">Preferred Channels</h3>
+              <p class="text-text-muted text-sm">Email for formal decisions and documentation. Slack or similar for day-to-day questions. Video calls for complex discussions.</p>
+            </div>
+            <div class="bg-bg-surface p-4 rounded border-l-4 border-l-steel text-center">
+              <h3 class="text-base text-text-primary mb-2">Status Updates</h3>
+              <p class="text-text-muted text-sm">Weekly written summaries covering progress, blockers, and next steps. More frequent updates during intensive phases.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Project Phases</h2>
+          <ol class="list-decimal pl-6 space-y-2 text-text-secondary">
+            <li><strong class="text-text-primary">Discovery:</strong> We align on goals, constraints, and success criteria before any work begins.</li>
+            <li><strong class="text-text-primary">Proposal:</strong> You receive a clear scope document with timeline, milestones, and pricing.</li>
+            <li><strong class="text-text-primary">Development:</strong> Iterative work with regular demos and opportunities for feedback.</li>
+            <li><strong class="text-text-primary">Review:</strong> Dedicated time for refinements based on your input.</li>
+            <li><strong class="text-text-primary">Delivery:</strong> Final handoff with documentation, training if needed, and post-launch support.</li>
+          </ol>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Billing & Payment</h2>
+          <ul class="list-disc pl-6 space-y-1 text-text-secondary">
+            <li>Projects begin after signed agreement and deposit</li>
+            <li>Milestone-based billing for larger projects</li>
+            <li>Net 14 payment terms on invoices</li>
+            <li>Scope changes documented and priced before implementation</li>
+            <li>Detailed time tracking available upon request</li>
+          </ul>
+        </section>
+
+        <div class="text-center pt-8 border-t border-steel">
+          <p class="text-text-muted mb-4">Ready to start a project or have questions?</p>
+          <a href="mailto:hello@example.com" class="btn btn-primary">
+            Get in Touch
+            <span>→</span>
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </section>
+</BaseLayout>

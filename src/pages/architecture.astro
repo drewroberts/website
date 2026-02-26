@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PrinciplesAccordion from '../components/PrinciplesAccordion.astro';
+
+const workflowSteps = [
+  { phase: 'Discovery', duration: '1-2 weeks', description: 'Deep dive into requirements, stakeholders, and constraints.' },
+  { phase: 'Strategy', duration: '1 week', description: 'Define architecture, scope, timeline, and success metrics.' },
+  { phase: 'Build', duration: 'Varies', description: 'Iterative development with regular check-ins and demos.' },
+  { phase: 'Refine', duration: '1-2 weeks', description: 'Testing, feedback integration, and polish.' },
+  { phase: 'Launch', duration: '1 week', description: 'Deployment, monitoring, and handoff documentation.' }
+];
+
+const tools = [
+  { category: 'Frontend', items: ['TypeScript', 'React/Vue/Astro', 'CSS Architecture', 'Accessibility'] },
+  { category: 'Backend', items: ['Node.js', 'Python', 'PostgreSQL', 'Redis'] },
+  { category: 'Infrastructure', items: ['Docker', 'CI/CD', 'Cloud Platforms', 'Monitoring'] },
+  { category: 'Process', items: ['Git Workflows', 'Code Review', 'Documentation', 'Agile Methods'] }
+];
+---
+
+<BaseLayout 
+  title="My Approach — John Doe"
+  description="Learn about my principles, workflow, and the tools I use to deliver exceptional digital experiences."
+>
+  <!-- Page Hero -->
+  <section class="section text-center pb-8">
+    <div class="container">
+      <span class="label">Approach</span>
+      <h1 class="mb-6">How I Work</h1>
+      <p class="text-xl text-text-secondary max-w-[600px] mx-auto leading-relaxed">
+        A systematic approach to building digital products that actually work. 
+        No magic, no hand-waving — just proven methods applied with discipline.
+      </p>
+    </div>
+  </section>
+
+  <PrinciplesAccordion />
+
+  <!-- Workflow Section -->
+  <section class="section bg-bg-deep">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="label">Process</span>
+        <h2 class="mb-4">The Workflow</h2>
+        <p class="text-text-muted text-lg">
+          A structured approach that adapts to project needs while maintaining quality.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-4 max-w-[500px] mx-auto">
+        {workflowSteps.map((step, index) => (
+          <div class="card text-center hover:border-accent">
+            <div class="w-12 h-12 bg-bg-surface border-2 border-steel rounded-full flex items-center justify-center mx-auto mb-4 hover:border-accent transition-colors">
+              <span class="font-mono text-xs text-text-muted">{String(index + 1).padStart(2, '0')}</span>
+            </div>
+            <h3 class="text-lg normal-case tracking-normal mb-1">{step.phase}</h3>
+            <span class="font-mono text-[0.7rem] text-text-muted uppercase tracking-[0.1em]">{step.duration}</span>
+            <p class="text-text-muted text-[0.95rem] mt-3">{step.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="label">Stack</span>
+        <h2 class="mb-4">Tools of the Trade</h2>
+        <p class="text-text-muted text-lg">
+          Technology choices are context-dependent. Here's what I reach for most often.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-4 max-w-[500px] mx-auto">
+        {tools.map(tool => (
+          <div class="card text-center">
+            <h3 class="font-mono text-xs uppercase tracking-[0.15em] text-accent-bright mb-4 pb-2 border-b border-steel">{tool.category}</h3>
+            <ul class="flex flex-col gap-2">
+              {tool.items.map(item => (
+                <li class="flex items-center justify-center gap-2 text-text-secondary text-sm">
+                  <span class="text-steel-light text-xs">▸</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

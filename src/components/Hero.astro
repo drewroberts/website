@@ -1,0 +1,82 @@
+---
+interface Props {
+  name?: string;
+  tagline?: string;
+  description?: string;
+}
+
+const {
+  name = "John Doe",
+  tagline = "Digital Craftsman",
+  description = "I build robust digital experiences that stand the test of time. Strategy, design, and code — forged together."
+} = Astro.props;
+---
+
+<section class="section min-h-[90vh] flex items-center relative overflow-hidden">
+  <!-- Background glow -->
+  <div class="absolute top-[-30%] left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_center,rgba(217,119,6,0.1)_0%,transparent_50%)] pointer-events-none"></div>
+  
+  <div class="container">
+    <div class="flex flex-col items-center text-center max-w-[700px] mx-auto">
+      <!-- Orbital graphic -->
+      <div class="mb-8">
+        <div class="relative w-[200px] h-[200px] flex items-center justify-center">
+          <!-- Outer ring -->
+          <div class="absolute w-full h-full rounded-full border border-steel animate-rotate-slow">
+            <div class="absolute -top-1 left-1/2 w-2 h-2 bg-accent rounded-full"></div>
+          </div>
+          <!-- Middle ring -->
+          <div class="absolute w-[70%] h-[70%] rounded-full border border-dashed border-steel animate-rotate-slow-reverse"></div>
+          <!-- Inner ring -->
+          <div class="absolute w-[40%] h-[40%] rounded-full border border-accent-muted animate-rotate-slow-fast"></div>
+          <!-- Core -->
+          <div class="w-[60px] h-[60px] bg-gradient-to-br from-bg-surface to-bg-elevated border-2 border-accent rounded-full flex items-center justify-center text-2xl text-accent-bright shadow-[0_0_40px_rgba(217,119,6,0.3),inset_0_0_20px_rgba(217,119,6,0.1)]">
+            ▸
+          </div>
+        </div>
+      </div>
+      
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.15em] text-text-muted mb-6 px-4 py-2 bg-bg-elevated border border-steel rounded-sm">
+        <span class="w-2 h-2 rounded-full bg-success animate-pulse-dot"></span>
+        <span>Available for projects</span>
+      </div>
+      
+      <!-- Name -->
+      <h1 class="text-[clamp(2.5rem,8vw,4.5rem)] leading-none mb-4 text-gradient">{name}</h1>
+      
+      <!-- Tagline -->
+      <p class="font-display text-[clamp(1.125rem,3vw,1.5rem)] text-accent-bright uppercase tracking-[0.1em] mb-6">{tagline}</p>
+      
+      <!-- Description -->
+      <p class="text-lg text-text-secondary mb-8 leading-relaxed">{description}</p>
+      
+      <!-- Actions -->
+      <div class="flex flex-col gap-4 mb-12 w-full max-w-[280px]">
+        <a href="/architecture" class="btn btn-primary">
+          See My Approach
+          <span class="transition-transform group-hover:translate-x-1">→</span>
+        </a>
+        <a href="/downloads" class="btn btn-secondary">
+          Get Resources
+        </a>
+      </div>
+      
+      <!-- Metrics -->
+      <div class="flex flex-col gap-6 pt-6 border-t border-steel w-full max-w-[300px]">
+        <div class="flex flex-col items-center">
+          <span class="font-display text-3xl font-bold text-text-primary leading-none mb-1">12+</span>
+          <span class="font-mono text-[0.7rem] uppercase tracking-[0.1em] text-text-muted">Years Experience</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="font-display text-3xl font-bold text-text-primary leading-none mb-1">50+</span>
+          <span class="font-mono text-[0.7rem] uppercase tracking-[0.1em] text-text-muted">Projects Delivered</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="font-display text-3xl font-bold text-text-primary leading-none mb-1">100%</span>
+          <span class="font-mono text-[0.7rem] uppercase tracking-[0.1em] text-text-muted">Commitment</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

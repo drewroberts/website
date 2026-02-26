@@ -1,0 +1,75 @@
+---
+const currentYear = new Date().getFullYear();
+
+const socialLinks = [
+  { label: 'GitHub', href: 'https://github.com', icon: 'GH' },
+  { label: 'LinkedIn', href: 'https://linkedin.com', icon: 'LI' },
+  { label: 'Twitter', href: 'https://twitter.com', icon: 'TW' },
+  { label: 'Email', href: 'mailto:hello@example.com', icon: '✉' },
+];
+
+const footerLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/architecture', label: 'Approach' },
+  { href: '/downloads', label: 'Resources' },
+  { href: '/docs', label: 'Guides' },
+  { href: '/privacy', label: 'Privacy' },
+];
+---
+
+<footer class="bg-bg-primary border-t border-steel py-16 mt-16">
+  <div class="container">
+    <div class="flex flex-col items-center text-center mb-12">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2 font-display text-xl font-bold text-text-primary tracking-[0.1em] mb-4 hover:text-text-primary">
+        <span class="text-accent">▸</span>
+        <span>JOHN DOE</span>
+      </a>
+      
+      <p class="text-text-muted text-sm max-w-[280px] mb-8">
+        Building digital experiences with precision and purpose.
+      </p>
+      
+      <!-- Navigation -->
+      <nav class="mb-8" aria-label="Footer navigation">
+        <ul class="flex flex-wrap justify-center gap-x-6 gap-y-3">
+          {footerLinks.map(link => (
+            <li>
+              <a href={link.href} class="text-text-secondary text-sm hover:text-accent-bright transition-colors">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      
+      <!-- Social -->
+      <div class="flex gap-3">
+        {socialLinks.map(link => (
+          <a 
+            href={link.href} 
+            class="flex items-center justify-center w-10 h-10 bg-bg-elevated border border-steel rounded text-text-secondary hover:border-accent hover:text-accent-bright transition-all"
+            aria-label={link.label}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="font-mono text-xs">{link.icon}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+    
+    <!-- Bottom -->
+    <div class="flex flex-col items-center gap-4 pt-6 border-t border-steel">
+      <div class="flex items-center gap-2 text-xs text-text-muted">
+        <span class="font-mono text-text-secondary">© {currentYear}</span>
+        <span class="text-steel">—</span>
+        <span>All rights reserved.</span>
+      </div>
+      <div class="flex items-center gap-2 font-mono text-xs text-text-muted">
+        <span class="w-2 h-2 rounded-full bg-success animate-pulse-dot"></span>
+        <span>All systems operational</span>
+      </div>
+    </div>
+  </div>
+</footer>

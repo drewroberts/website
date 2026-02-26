@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="For Collaborators — John Doe"
+  description="Guidelines for fellow developers, designers, and team members on working styles and preferences."
+>
+  <!-- Page Hero -->
+  <section class="section text-center pb-6">
+    <div class="container">
+      <a href="/docs" class="inline-flex items-center gap-2 font-mono text-xs text-text-muted hover:text-accent-bright transition-colors mb-6">
+        <span>←</span>
+        Back to Guides
+      </a>
+      <span class="label block">Team Guide</span>
+      <h1 class="mb-4">For Collaborators</h1>
+      <p class="text-lg text-text-secondary max-w-[600px] mx-auto leading-relaxed">
+        How I like to work with developers, designers, and other team members. Let's build something great together.
+      </p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="pt-0 pb-16">
+    <div class="container">
+      <article class="card max-w-[700px] mx-auto p-8 md:p-12">
+        
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Working Style</h2>
+          <ul class="space-y-4">
+            <li class="flex flex-col items-center text-center py-3 border-b border-steel last:border-b-0">
+              <span class="font-mono text-xs text-accent-bright mb-1">Communication</span>
+              <span class="text-text-secondary">Direct and specific. I prefer clarity over diplomacy.</span>
+            </li>
+            <li class="flex flex-col items-center text-center py-3 border-b border-steel last:border-b-0">
+              <span class="font-mono text-xs text-accent-bright mb-1">Feedback</span>
+              <span class="text-text-secondary">Give it straight, receive it gracefully. No ego protection needed.</span>
+            </li>
+            <li class="flex flex-col items-center text-center py-3 border-b border-steel last:border-b-0">
+              <span class="font-mono text-xs text-accent-bright mb-1">Decisions</span>
+              <span class="text-text-secondary">Data and reasoning over opinions. Show your work.</span>
+            </li>
+            <li class="flex flex-col items-center text-center py-3 border-b border-steel last:border-b-0">
+              <span class="font-mono text-xs text-accent-bright mb-1">Meetings</span>
+              <span class="text-text-secondary">Purposeful and time-boxed. Async first when possible.</span>
+            </li>
+            <li class="flex flex-col items-center text-center py-3">
+              <span class="font-mono text-xs text-accent-bright mb-1">Focus</span>
+              <span class="text-text-secondary">Deep work in mornings, collaborative work afternoons.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Code Preferences</h2>
+          <div class="space-y-4">
+            <div class="bg-bg-surface p-4 rounded border-l-4 border-l-steel text-center">
+              <h3 class="text-base text-text-primary mb-2">Readability First</h3>
+              <p class="text-text-muted text-sm">Clear code beats clever code. If it needs a comment to explain, it probably needs rewriting.</p>
+            </div>
+            <div class="bg-bg-surface p-4 rounded border-l-4 border-l-steel text-center">
+              <h3 class="text-base text-text-primary mb-2">Small, Focused PRs</h3>
+              <p class="text-text-muted text-sm">Easier to review, easier to revert, easier to understand. One concern per PR.</p>
+            </div>
+            <div class="bg-bg-surface p-4 rounded border-l-4 border-l-steel text-center">
+              <h3 class="text-base text-text-primary mb-2">Tests Where It Matters</h3>
+              <p class="text-text-muted text-sm">Critical paths and complex logic get tests. Not chasing coverage metrics.</p>
+            </div>
+            <div class="bg-bg-surface p-4 rounded border-l-4 border-l-steel text-center">
+              <h3 class="text-base text-text-primary mb-2">Documentation</h3>
+              <p class="text-text-muted text-sm">READMEs, inline docs for complex functions, decision logs for architecture choices.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">What I Value in Teammates</h2>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent">▸</span> Ownership mentality — see problems, solve problems</li>
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent">▸</span> Intellectual honesty — admit gaps, ask questions</li>
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent">▸</span> Follow-through — do what you say, say what you'll do</li>
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent">▸</span> Craft pride — care about the details</li>
+            <li class="flex items-start gap-3 text-text-secondary"><span class="text-accent">▸</span> Team over ego — best idea wins, regardless of source</li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-xl mb-4 pb-2 border-b border-steel text-center">Tools I'm Comfortable With</h2>
+          <div class="flex flex-wrap justify-center gap-2">
+            <span class="font-mono text-xs px-3 py-2 bg-bg-surface border border-steel rounded text-text-secondary">Git / GitHub</span>
+            <span class="font-mono text-xs px-3 py-2 bg-bg-surface border border-steel rounded text-text-secondary">VS Code</span>
+            <span class="font-mono text-xs px-3 py-2 bg-bg-surface border border-steel rounded text-text-secondary">Figma</span>
+            <span class="font-mono text-xs px-3 py-2 bg-bg-surface border border-steel rounded text-text-secondary">Linear / Jira</span>
+            <span class="font-mono text-xs px-3 py-2 bg-bg-surface border border-steel rounded text-text-secondary">Slack</span>
+            <span class="font-mono text-xs px-3 py-2 bg-bg-surface border border-steel rounded text-text-secondary">Notion</span>
+            <span class="font-mono text-xs px-3 py-2 bg-bg-surface border border-steel rounded text-text-secondary">Terminal / CLI</span>
+            <span class="font-mono text-xs px-3 py-2 bg-bg-surface border border-steel rounded text-text-secondary">Docker</span>
+          </div>
+        </section>
+
+        <div class="text-center pt-8 border-t border-steel">
+          <p class="text-text-muted mb-4">Want to collaborate or have questions about working together?</p>
+          <a href="mailto:hello@example.com" class="btn btn-primary">
+            Reach Out
+            <span>→</span>
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </section>
+</BaseLayout>

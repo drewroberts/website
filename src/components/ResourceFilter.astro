@@ -1,0 +1,42 @@
+---
+interface Props {
+  activeCategory?: string;
+}
+
+const { activeCategory = 'all' } = Astro.props;
+
+const categories = [
+  { id: 'all', label: 'All Resources' },
+  { id: 'documents', label: 'Documents' },
+  { id: 'media', label: 'Media Kit' },
+  { id: 'links', label: 'Useful Links' }
+];
+---
+
+<div class="mb-8">
+  <div class="flex flex-col gap-2 p-2 bg-bg-elevated border border-steel rounded" role="tablist" aria-label="Resource categories">
+    {categories.map(category => (
+      <button
+        role="tab"
+        class:list={[
+          'px-4 py-2 font-display text-xs font-semibold uppercase tracking-[0.05em] text-center rounded-sm cursor-pointer transition-all border',
+          activeCategory === category.id 
+            ? 'text-accent-bright bg-bg-surface border-accent' 
+            : 'text-text-muted bg-transparent border-transparent hover:text-text-primary hover:bg-bg-surface'
+        ]}
+        aria-selected={activeCategory === category.id ? 'true' : 'false'}
+        hx-get={`/api/resources?category=${category.id}`}
+        hx-target="#resource-list"
+        hx-swap="innerHTML"
+        hx-indicator="#loading-indicator"
+      >
+        {category.label}
+      </button>
+    ))}
+  </div>
+  
+  <div id="loading-indicator" class="htmx-indicator flex items-center justify-center gap-2 p-4 font-mono text-xs text-text-muted">
+    <span class="w-4 h-4 border-2 border-steel border-t-accent rounded-full animate-spin-fast"></span>
+    <span>Loading...</span>
+  </div>
+</div>

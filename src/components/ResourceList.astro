@@ -1,0 +1,49 @@
+---
+interface Resource {
+  title: string;
+  description: string;
+  href: string;
+  type: string;
+  category: string;
+  icon: string;
+}
+
+interface Props {
+  resources: Resource[];
+}
+
+const { resources } = Astro.props;
+---
+
+<div>
+  {resources.length === 0 ? (
+    <div class="text-center py-16 px-6 bg-bg-elevated border border-dashed border-steel rounded">
+      <span class="block text-3xl text-steel-light mb-4">◇</span>
+      <p class="text-text-muted">No resources found in this category.</p>
+    </div>
+  ) : (
+    <div class="flex flex-col gap-4">
+      {resources.map(resource => (
+        <a 
+          href={resource.href} 
+          class="group flex flex-col items-center text-center p-6 bg-bg-elevated border border-steel rounded transition-all hover:border-accent hover:-translate-y-0.5 hover:shadow-lg"
+          target={resource.href.startsWith('http') ? '_blank' : undefined} 
+          rel={resource.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+        >
+          <div class="flex items-center justify-center gap-4 mb-4">
+            <span class="text-2xl text-accent">{resource.icon}</span>
+            <span class="tag">{resource.type}</span>
+          </div>
+          
+          <h3 class="text-lg text-text-primary mb-2 normal-case tracking-normal">{resource.title}</h3>
+          <p class="text-text-muted text-sm leading-relaxed">{resource.description}</p>
+          
+          <div class="flex items-center justify-center gap-2 mt-4 pt-4 border-t border-steel w-full font-display text-xs uppercase tracking-[0.05em] text-text-secondary group-hover:text-accent-bright transition-colors">
+            <span>{resource.href.startsWith('http') ? 'Visit' : 'Download'}</span>
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  )}
+</div>

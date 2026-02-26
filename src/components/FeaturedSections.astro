@@ -1,0 +1,59 @@
+---
+const sections = [
+  {
+    title: 'My Approach',
+    description: 'Discover the principles, workflows, and methodologies I use to deliver exceptional results.',
+    href: '/architecture',
+    tag: 'Methodology',
+    icon: '⚙'
+  },
+  {
+    title: 'Resources',
+    description: 'Download my resume, grab the media kit, or find useful links for collaboration.',
+    href: '/downloads',
+    tag: 'Downloads',
+    icon: '↓'
+  },
+  {
+    title: 'Guides',
+    description: 'Quick references for clients and collaborators on how we can work together effectively.',
+    href: '/docs',
+    tag: 'Documentation',
+    icon: '◎'
+  }
+];
+---
+
+<section class="section">
+  <div class="container">
+    <!-- Header -->
+    <div class="mb-12">
+      <span class="label block text-center">Explore</span>
+      <h2 class="text-center">Dig Deeper</h2>
+    </div>
+    
+    <!-- Cards list -->
+    <div class="flex flex-col gap-6 max-w-[600px] mx-auto">
+      {sections.map((section) => (
+        <a href={section.href} class="group block">
+          <div class="card text-center hover:border-accent hover:-translate-y-0.5">
+            <div class="flex items-center justify-center gap-6 mb-6">
+              <span class="tag">{section.tag}</span>
+              <span class="text-2xl text-steel-light group-hover:text-accent-bright transition-colors">{section.icon}</span>
+            </div>
+            
+            <h3 class="text-2xl mb-4 text-text-primary normal-case tracking-normal">{section.title}</h3>
+            <p class="text-text-muted text-[0.95rem] leading-relaxed">{section.description}</p>
+            
+            <div class="mt-6 pt-4 border-t border-steel">
+              <span class="inline-flex items-center gap-2 font-display text-sm uppercase tracking-[0.05em] text-text-secondary group-hover:text-accent-bright transition-colors">
+                Explore
+                <span class="transition-transform group-hover:translate-x-1">→</span>
+              </span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

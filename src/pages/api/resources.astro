@@ -1,0 +1,85 @@
+---
+import ResourceList from '../../components/ResourceList.astro';
+
+// All resources data
+const allResources = [
+  {
+    title: 'Resume / CV',
+    description: 'A comprehensive overview of my professional experience, skills, and accomplishments.',
+    href: '/files/resume.pdf',
+    type: 'PDF',
+    category: 'documents',
+    icon: '◧'
+  },
+  {
+    title: 'One-Page Bio',
+    description: 'A concise professional biography suitable for introductions, events, or press materials.',
+    href: '/files/bio.pdf',
+    type: 'PDF',
+    category: 'documents',
+    icon: '◨'
+  },
+  {
+    title: 'Profile Photo (High Res)',
+    description: 'Professional headshot in high resolution for press, conferences, or publications.',
+    href: '/files/photo-highres.zip',
+    type: 'ZIP',
+    category: 'media',
+    icon: '◩'
+  },
+  {
+    title: 'Logo Package',
+    description: 'Personal brand mark in various formats (SVG, PNG, EPS) for different use cases.',
+    href: '/files/logo-package.zip',
+    type: 'ZIP',
+    category: 'media',
+    icon: '◪'
+  },
+  {
+    title: 'Brand Guidelines',
+    description: 'Colors, typography, and usage guidelines for consistent brand representation.',
+    href: '/files/brand-guidelines.pdf',
+    type: 'PDF',
+    category: 'media',
+    icon: '▣'
+  },
+  {
+    title: 'GitHub Profile',
+    description: 'Open source contributions, side projects, and code samples.',
+    href: 'https://github.com',
+    type: 'Link',
+    category: 'links',
+    icon: '◈'
+  },
+  {
+    title: 'LinkedIn',
+    description: 'Professional network profile with recommendations and career history.',
+    href: 'https://linkedin.com',
+    type: 'Link',
+    category: 'links',
+    icon: '◇'
+  },
+  {
+    title: 'Calendar Booking',
+    description: 'Schedule a call or meeting directly through my booking page.',
+    href: 'https://cal.com',
+    type: 'Link',
+    category: 'links',
+    icon: '○'
+  }
+];
+
+// Get the category from query params
+const url = new URL(Astro.request.url);
+const category = url.searchParams.get('category') || 'all';
+
+// Filter resources based on category
+const filteredResources = category === 'all' 
+  ? allResources 
+  : allResources.filter(resource => resource.category === category);
+
+// Return only the partial HTML for HTMX swap
+// This endpoint returns just the ResourceList component, not a full page
+---
+
+<ResourceList resources={filteredResources} />

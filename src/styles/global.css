@@ -1,0 +1,256 @@
+@import "tailwindcss";
+
+/* ========================================
+   FORGE — Rugged Personal Brand Theme
+   Tailwind CSS 4 Configuration
+   ======================================== */
+
+@theme {
+  /* Core palette - industrial dark */
+  --color-bg-deep: #0a0b0d;
+  --color-bg-primary: #121418;
+  --color-bg-elevated: #1a1d23;
+  --color-bg-surface: #22262e;
+  
+  /* Metal accents */
+  --color-steel: #3d4654;
+  --color-steel-light: #5a6677;
+  --color-iron: #8a939f;
+  
+  /* Text hierarchy */
+  --color-text-primary: #e8eaed;
+  --color-text-secondary: #a1a8b3;
+  --color-text-muted: #6b737e;
+  
+  /* Accent - forge orange/amber */
+  --color-accent: #d97706;
+  --color-accent-bright: #f59e0b;
+  --color-accent-muted: #92400e;
+  
+  /* Utility colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  /* Typography */
+  --font-display: 'Courier Prime', 'Courier New', Courier, monospace;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+}
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-deep);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Background grid pattern */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-image: 
+      linear-gradient(rgba(61, 70, 84, 0.15) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(61, 70, 84, 0.15) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+  }
+
+  a {
+    color: var(--color-accent-bright);
+    text-decoration: none;
+    transition: color 150ms ease;
+  }
+
+  a:hover {
+    color: var(--color-accent);
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-bg-deep);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-bright);
+    outline-offset: 2px;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg-primary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-steel);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-steel-light);
+  }
+}
+
+/* Component styles */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-sm uppercase tracking-wider border-2 border-transparent rounded-sm cursor-pointer transition-all duration-150;
+    font-family: var(--font-display);
+  }
+
+  .btn-primary {
+    @apply bg-accent text-bg-deep border-accent hover:bg-accent-bright hover:border-accent-bright;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-text-primary border-steel-light hover:border-accent hover:text-accent-bright;
+  }
+
+  .container {
+    @apply w-full max-w-[1200px] mx-auto px-4 md:px-6;
+  }
+
+  .container-narrow {
+    @apply w-full max-w-[800px] mx-auto px-4 md:px-6;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .card {
+    @apply bg-bg-elevated border border-steel rounded p-6 transition-all duration-250;
+  }
+
+  .card:hover {
+    @apply border-steel-light shadow-lg;
+  }
+
+  .tag {
+    @apply inline-block px-2 py-1 text-xs uppercase tracking-widest bg-bg-surface text-text-muted rounded-sm;
+    font-family: var(--font-mono);
+  }
+
+  .label {
+    @apply inline-block text-xs uppercase tracking-[0.2em] text-accent-bright mb-4;
+    font-family: var(--font-mono);
+  }
+}
+
+/* Utility classes */
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-iron) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Alpine.js cloak */
+  [x-cloak] {
+    display: none !important;
+  }
+}
+
+/* Animations */
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { text-shadow: 0 0 20px rgba(217, 119, 6, 0.5); }
+  50% { text-shadow: 0 0 40px rgba(217, 119, 6, 0.8); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 60s linear infinite;
+}
+
+.animate-rotate-slow-reverse {
+  animation: rotate-slow 40s linear infinite reverse;
+}
+
+.animate-rotate-slow-fast {
+  animation: rotate-slow 20s linear infinite;
+}
+
+.animate-pulse-dot {
+  animation: pulse 2s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-spin-fast {
+  animation: spin 0.8s linear infinite;
+}
+
+/* HTMX indicator */
+.htmx-indicator {
+  display: none;
+}
+
+.htmx-indicator.htmx-request {
+  display: flex;
+}

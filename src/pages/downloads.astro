@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ResourceFilter from '../components/ResourceFilter.astro';
+import ResourceList from '../components/ResourceList.astro';
+
+const allResources = [
+  {
+    title: 'Resume / CV',
+    description: 'A comprehensive overview of my professional experience, skills, and accomplishments.',
+    href: '/files/resume.pdf',
+    type: 'PDF',
+    category: 'documents',
+    icon: '◧'
+  },
+  {
+    title: 'One-Page Bio',
+    description: 'A concise professional biography suitable for introductions, events, or press materials.',
+    href: '/files/bio.pdf',
+    type: 'PDF',
+    category: 'documents',
+    icon: '◨'
+  },
+  {
+    title: 'Profile Photo (High Res)',
+    description: 'Professional headshot in high resolution for press, conferences, or publications.',
+    href: '/files/photo-highres.zip',
+    type: 'ZIP',
+    category: 'media',
+    icon: '◩'
+  },
+  {
+    title: 'Logo Package',
+    description: 'Personal brand mark in various formats (SVG, PNG, EPS) for different use cases.',
+    href: '/files/logo-package.zip',
+    type: 'ZIP',
+    category: 'media',
+    icon: '◪'
+  },
+  {
+    title: 'Brand Guidelines',
+    description: 'Colors, typography, and usage guidelines for consistent brand representation.',
+    href: '/files/brand-guidelines.pdf',
+    type: 'PDF',
+    category: 'media',
+    icon: '▣'
+  },
+  {
+    title: 'GitHub Profile',
+    description: 'Open source contributions, side projects, and code samples.',
+    href: 'https://github.com',
+    type: 'Link',
+    category: 'links',
+    icon: '◈'
+  },
+  {
+    title: 'LinkedIn',
+    description: 'Professional network profile with recommendations and career history.',
+    href: 'https://linkedin.com',
+    type: 'Link',
+    category: 'links',
+    icon: '◇'
+  },
+  {
+    title: 'Calendar Booking',
+    description: 'Schedule a call or meeting directly through my booking page.',
+    href: 'https://cal.com',
+    type: 'Link',
+    category: 'links',
+    icon: '○'
+  }
+];
+---
+
+<BaseLayout 
+  title="Resources — John Doe"
+  description="Download my resume, media kit, and find useful links for collaboration."
+>
+  <!-- Page Hero -->
+  <section class="section text-center pb-6">
+    <div class="container">
+      <span class="label">Resources</span>
+      <h1 class="mb-6">Get What You Need</h1>
+      <p class="text-xl text-text-secondary max-w-[600px] mx-auto leading-relaxed">
+        Everything you might need for collaboration, press, or just getting to know my work better.
+      </p>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section class="pt-0 pb-16">
+    <div class="container">
+      <div class="max-w-[600px] mx-auto">
+        <ResourceFilter activeCategory="all" />
+        <div id="resource-list">
+          <ResourceList resources={allResources} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press Section -->
+  <section class="section bg-bg-primary">
+    <div class="container">
+      <div class="card border-l-4 border-l-accent text-center max-w-[600px] mx-auto">
+        <h2 class="text-2xl mb-4">Press & Speaking</h2>
+        <p class="text-text-muted max-w-[500px] mx-auto mb-6 leading-relaxed">
+          For press inquiries, interview requests, or speaking opportunities, 
+          please reach out directly via email. I'm happy to provide additional 
+          materials, quotes, or custom assets as needed.
+        </p>
+        <a href="mailto:press@example.com" class="btn btn-primary">
+          Contact for Press
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

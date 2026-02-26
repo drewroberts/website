@@ -1,38 +1,23 @@
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
-import tailwind from '@tailwindcss/vite';
+import node from '@astrojs/node';
+
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  // 1. Set to static for GitHub Pages
-  output: 'static',
-  
-  // 2. Your custom domain (important for sitemaps/canonical URLs)
-  site: 'https://your-custom-domain.com',
-
-  integrations: [
-    mdx({
-      // MDX configuration goes here
-      optimize: true,
-    })
-  ],
-
+  output: 'server',
+  adapter: node({
+    mode: 'standalone'
+  }),
+  site: 'https://example.com',
+  server: {
+    port: 4321,
+    host: true
+  },
   vite: {
-    plugins: [tailwind()],
-  },
-
-  image: {
-    // Article III of your Constitution: Mandate AVIF/WebP
-    service: {
-      entrypoint: 'astro/assets/services/sharp',
+    server: {
+      allowedHosts: ['localhost', '.ngrok-free.app', '.ngrok.io']
     },
-    domains: [], // Add remote domains if you fetch images from your Laravel API
-  },
 
-  markdown: {
-    // Professional typography defaults
-    shikiConfig: {
-      theme: 'dracula', // High-quality code highlighting for your Markdown
-      wrap: true,
-    },
-  },
+    plugins: [tailwindcss()]
+  }
 });
