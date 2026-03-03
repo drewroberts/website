@@ -7,6 +7,7 @@ This [GitHub Repository](https://github.com/drewroberts/website) contains the co
 - [X.com/DrewRoberts](https://X.com/DrewRoberts)
 - [t.me/DrewRoberts](https://t.me/DrewRoberts)
 - [YouTube.com/DrewRoberts](https://youtube.com/DrewRoberts)
+- [Kick.com/DrewRoberts](https://kick.com/DrewRoberts)
 - [LinkedIn.com/in/DrewRoberts](https://linkedin.com/in/DrewRoberts)
 
 ## AHA Stack
